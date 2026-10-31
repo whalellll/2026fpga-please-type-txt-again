@@ -1,0 +1,468 @@
+##### Written on 2026/10/19 05:59:59 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PG2L100H-6FBG676
+
+Top Module : 
+	soc_top
+
+Constraint File(s) : 
+	G:/fpga/c75tp/pds/soc.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 39 critical warning(s), 0 warning(s), out of 1171 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:mem_dq[15]} {PAP_IO_LOC} {G6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 171)] | Port mem_dq[15] has been placed at location G6, whose type is share pin.
+
+define_attribute {p:mem_dq[13]} {PAP_IO_LOC} {E6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 185)] | Port mem_dq[13] has been placed at location E6, whose type is share pin.
+
+define_attribute {p:mem_dq[12]} {PAP_IO_LOC} {G8}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 192)] | Port mem_dq[12] has been placed at location G8, whose type is share pin.
+
+define_attribute {p:mem_dq[11]} {PAP_IO_LOC} {D6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 199)] | Port mem_dq[11] has been placed at location D6, whose type is share pin.
+
+define_attribute {p:mem_dq[10]} {PAP_IO_LOC} {H8}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 206)] | Port mem_dq[10] has been placed at location H8, whose type is share pin.
+
+define_attribute {p:mem_dq[8]} {PAP_IO_LOC} {H6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 220)] | Port mem_dq[8] has been placed at location H6, whose type is share pin.
+
+define_attribute {p:mem_dq[7]} {PAP_IO_LOC} {J5}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 227)] | Port mem_dq[7] has been placed at location J5, whose type is share pin.
+
+define_attribute {p:mem_dq[5]} {PAP_IO_LOC} {K7}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 241)] | Port mem_dq[5] has been placed at location K7, whose type is share pin.
+
+define_attribute {p:mem_dq[3]} {PAP_IO_LOC} {L8}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 255)] | Port mem_dq[3] has been placed at location L8, whose type is share pin.
+
+define_attribute {p:mem_dq[1]} {PAP_IO_LOC} {J6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 269)] | Port mem_dq[1] has been placed at location J6, whose type is share pin.
+
+define_attribute {p:mem_dqs[1]} {PAP_IO_LOC} {H7}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 402)] | Port mem_dqs[1] has been placed at location H7, whose type is share pin.
+
+define_attribute {p:mem_dqs[0]} {PAP_IO_LOC} {J4}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 409)] | Port mem_dqs[0] has been placed at location J4, whose type is share pin.
+
+define_attribute {p:mem_dqs_n[1]} {PAP_IO_LOC} {G7}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 430)] | Port mem_dqs_n[1] has been placed at location G7, whose type is share pin.
+
+define_attribute {p:mem_dqs_n[0]} {PAP_IO_LOC} {H4}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 437)] | Port mem_dqs_n[0] has been placed at location H4, whose type is share pin.
+
+define_attribute {p:mem_dm[0]} {PAP_IO_LOC} {K6}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 486)] | Port mem_dm[0] has been placed at location K6, whose type is share pin.
+
+define_attribute {p:phy_rstn} {PAP_IO_LOC} {G25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 623)] | Port phy_rstn has been placed at location G25, whose type is share pin.
+
+define_attribute {p:spi_cs} {PAP_IO_LOC} {P18}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 661)] | Port spi_cs has been placed at location P18, whose type is share pin.
+
+define_attribute {p:spi_dq0} {PAP_IO_LOC} {R14}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 668)] | Port spi_dq0 has been placed at location R14, whose type is share pin.
+
+define_attribute {p:spi_dq1} {PAP_IO_LOC} {R15}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 675)] | Port spi_dq1 has been placed at location R15, whose type is share pin.
+
+define_attribute {p:vs_out} {PAP_IO_LOC} {R21}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 767)] | Port vs_out has been placed at location R21, whose type is share pin.
+
+define_attribute {p:hs_out} {PAP_IO_LOC} {R20}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 775)] | Port hs_out has been placed at location R20, whose type is share pin.
+
+define_attribute {p:de_out} {PAP_IO_LOC} {N19}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 783)] | Port de_out has been placed at location N19, whose type is share pin.
+
+define_attribute {p:r_out[7]} {PAP_IO_LOC} {P16}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 791)] | Port r_out[7] has been placed at location P16, whose type is share pin.
+
+define_attribute {p:r_out[6]} {PAP_IO_LOC} {K25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 793)] | Port r_out[6] has been placed at location K25, whose type is share pin.
+
+define_attribute {p:r_out[5]} {PAP_IO_LOC} {K26}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 795)] | Port r_out[5] has been placed at location K26, whose type is share pin.
+
+define_attribute {p:r_out[3]} {PAP_IO_LOC} {L25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 799)] | Port r_out[3] has been placed at location L25, whose type is share pin.
+
+define_attribute {p:g_out[6]} {PAP_IO_LOC} {N23}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 810)] | Port g_out[6] has been placed at location N23, whose type is share pin.
+
+define_attribute {p:g_out[5]} {PAP_IO_LOC} {N24}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 812)] | Port g_out[5] has been placed at location N24, whose type is share pin.
+
+define_attribute {p:g_out[4]} {PAP_IO_LOC} {P23}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 814)] | Port g_out[4] has been placed at location P23, whose type is share pin.
+
+define_attribute {p:g_out[3]} {PAP_IO_LOC} {P24}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 816)] | Port g_out[3] has been placed at location P24, whose type is share pin.
+
+define_attribute {p:g_out[2]} {PAP_IO_LOC} {R25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 818)] | Port g_out[2] has been placed at location R25, whose type is share pin.
+
+define_attribute {p:g_out[1]} {PAP_IO_LOC} {P25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 820)] | Port g_out[1] has been placed at location P25, whose type is share pin.
+
+define_attribute {p:g_out[0]} {PAP_IO_LOC} {T25}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 822)] | Port g_out[0] has been placed at location T25, whose type is share pin.
+
+define_attribute {p:b_out[7]} {PAP_IO_LOC} {T22}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 825)] | Port b_out[7] has been placed at location T22, whose type is share pin.
+
+define_attribute {p:b_out[6]} {PAP_IO_LOC} {R22}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 827)] | Port b_out[6] has been placed at location R22, whose type is share pin.
+
+define_attribute {p:b_out[5]} {PAP_IO_LOC} {N18}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 829)] | Port b_out[5] has been placed at location N18, whose type is share pin.
+
+define_attribute {p:b_out[0]} {PAP_IO_LOC} {P19}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 839)] | Port b_out[0] has been placed at location P19, whose type is share pin.
+
+define_attribute {p:hd_scl} {PAP_IO_LOC} {K22}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 966)] | Port hd_scl has been placed at location K22, whose type is share pin.
+
+define_attribute {p:hd_sda} {PAP_IO_LOC} {K23}
+	C: ConstraintEditor-2002: [G:/fpga/c75tp/pds/soc.fdc(line number: 974)] | Port hd_sda has been placed at location K23, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/storage
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/storage
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}]
+	I: The pattern '.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/storage
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}]
+	I: The pattern '.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/storage
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]
+	I: The pattern '.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/storage
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]
+
+set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}]
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]
+
+set_false_path -hold -from [get_clocks {cpu_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/cpu_ready_sys\[1:0\]$}]
+	I: The pattern '.*u_axi_cdc/cpu_ready_sys\[1:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/cpu_ready_sys\[1:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/cpu_ready_sys[1:0]
+
+set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/sys_ready_cpu\[1:0\]$}]
+	I: The pattern '.*u_axi_cdc/sys_ready_cpu\[1:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/sys_ready_cpu\[1:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/sys_ready_cpu[1:0]
+
+set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/software_c1$}]
+	I: The pattern '.*u_irq_sync/software_c1$' in command 'get_cells -hierarchical -regexp .*u_irq_sync/software_c1$' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_irq_sync/software_c1
+
+set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/timer_c1$}]
+	I: The pattern '.*u_irq_sync/timer_c1$' in command 'get_cells -hierarchical -regexp .*u_irq_sync/timer_c1$' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_irq_sync/timer_c1
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/storage
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/storage
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/storage
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/storage
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/storage
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]
+
+set_max_delay -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]
+
+set_max_delay -from [get_clocks {cpu_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/cpu_ready_sys\[1:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/cpu_ready_sys\[1:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/cpu_ready_sys\[1:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/cpu_ready_sys[1:0]
+
+set_max_delay -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/sys_ready_cpu\[1:0\]$}] -datapath_only 12.52
+	I: The pattern '.*u_axi_cdc/sys_ready_cpu\[1:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/sys_ready_cpu\[1:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/sys_ready_cpu[1:0]
+
+set_max_delay -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/software_c1$}] -datapath_only 12.52
+	I: The pattern '.*u_irq_sync/software_c1$' in command 'get_cells -hierarchical -regexp .*u_irq_sync/software_c1$' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_irq_sync/software_c1
+
+set_max_delay -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/timer_c1$}] -datapath_only 12.52
+	I: The pattern '.*u_irq_sync/timer_c1$' in command 'get_cells -hierarchical -regexp .*u_irq_sync/timer_c1$' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_irq_sync/timer_c1
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]
+
+set_max_skew -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\[4:0\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}] 12.52
+	I: The pattern '.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$' in command 'get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\[4:0\]$}' match 1 objects below:
+	I: instance u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]
+
+

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "status": "GUI1080_OFFLINE_CANDIDATE_NOT_NATIVE_STA_OR_BOARD",
+  "source_base_commit": "836090ec36bceab9e55085f89cfae97810918271",
+  "gui_elf_sha256": "23eaf0eae2cc8ef72071e908dcb16eb05553bd5bfa794c2c3a8c625d3b351e08",
+  "dtb_sha256": "3700330a63a5dba6c38eee5c3e57a1b4b3eaeb50ccc223ac379ce33c37aab8f1",
+  "final_sta": "NOT_RUN",
+  "board": "NOT_RUN"
+}

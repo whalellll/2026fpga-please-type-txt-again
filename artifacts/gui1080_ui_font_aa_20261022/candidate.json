@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "status": "GUI_UI_FONT_AA_SOFTWARE_CANDIDATE_NOT_BOARD_VERIFIED",
+  "source_parent": "6c504a4a4ab8a80c32be17c288b771790ce1c8e1",
+  "gui_elf_sha256": "d36f7b189b2754aed777ecf7bb56c43271f90ae8f55d97f2e086acaa857e877d",
+  "gui_elf_bytes": 2116688,
+  "board": "NOT_RUN"
+}

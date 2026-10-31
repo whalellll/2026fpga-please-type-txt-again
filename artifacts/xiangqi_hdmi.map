@@ -1,0 +1,649 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+                              /tmp/cc1PrxSs.o (__lshrdi3)
+/usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+                              /tmp/ccpOYIWq.o (__divdi3)
+/usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                              /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o) (__clz_tab)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /tmp/cciadRgs.o
+ .data          0x0000000000000000        0x0 /tmp/cciadRgs.o
+ .bss           0x0000000000000000        0x0 /tmp/cciadRgs.o
+ .text          0x0000000000000000        0x0 /tmp/ccE7A4Jp.o
+ .data          0x0000000000000000        0x0 /tmp/ccE7A4Jp.o
+ .bss           0x0000000000000000        0x0 /tmp/ccE7A4Jp.o
+ .text          0x0000000000000000        0x0 /tmp/ccpOYIWq.o
+ .data          0x0000000000000000        0x0 /tmp/ccpOYIWq.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpOYIWq.o
+ .text.process_go
+                0x0000000000000000      0x374 /tmp/ccpOYIWq.o
+ .text.xq_uart_service_main
+                0x0000000000000000      0x498 /tmp/ccpOYIWq.o
+ .rodata.start_fen.1
+                0x0000000000000000       0x3e /tmp/ccpOYIWq.o
+ .comment       0x0000000000000000       0x10 /tmp/ccpOYIWq.o
+ .text          0x0000000000000000        0x0 /tmp/ccbAIsRM.o
+ .data          0x0000000000000000        0x0 /tmp/ccbAIsRM.o
+ .bss           0x0000000000000000        0x0 /tmp/ccbAIsRM.o
+ .comment       0x0000000000000000       0x10 /tmp/ccbAIsRM.o
+ .text          0x0000000000000000        0x0 /tmp/cca4VVzF.o
+ .data          0x0000000000000000        0x0 /tmp/cca4VVzF.o
+ .bss           0x0000000000000000        0x0 /tmp/cca4VVzF.o
+ .comment       0x0000000000000000       0x10 /tmp/cca4VVzF.o
+ .text          0x0000000000000000        0x0 /tmp/cckJZr2s.o
+ .data          0x0000000000000000        0x0 /tmp/cckJZr2s.o
+ .bss           0x0000000000000000        0x0 /tmp/cckJZr2s.o
+ .comment       0x0000000000000000       0x10 /tmp/cckJZr2s.o
+ .text          0x0000000000000000        0x0 /tmp/cckyYzox.o
+ .data          0x0000000000000000        0x0 /tmp/cckyYzox.o
+ .bss           0x0000000000000000        0x0 /tmp/cckyYzox.o
+ .comment       0x0000000000000000       0x10 /tmp/cckyYzox.o
+ .text          0x0000000000000000        0x0 /tmp/cc1PrxSs.o
+ .data          0x0000000000000000        0x0 /tmp/cc1PrxSs.o
+ .bss           0x0000000000000000        0x0 /tmp/cc1PrxSs.o
+ .comment       0x0000000000000000       0x10 /tmp/cc1PrxSs.o
+ .text          0x0000000000000000        0x0 /tmp/ccaEMx96.o
+ .data          0x0000000000000000        0x0 /tmp/ccaEMx96.o
+ .bss           0x0000000000000000        0x0 /tmp/ccaEMx96.o
+ .text.mac_kernel_write
+                0x0000000000000000        0xc /tmp/ccaEMx96.o
+ .text.mac_kernel_transfer_sizes
+                0x0000000000000000       0xf4 /tmp/ccaEMx96.o
+ .text.mac_kernel_submit_resident
+                0x0000000000000000        0x8 /tmp/ccaEMx96.o
+ .text.mac_kernel_invalidate_resident
+                0x0000000000000000        0xc /tmp/ccaEMx96.o
+ .text.mac_kernel_resident_status
+                0x0000000000000000        0x8 /tmp/ccaEMx96.o
+ .comment       0x0000000000000000       0x10 /tmp/ccaEMx96.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .comment       0x0000000000000000       0x10 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .comment       0x0000000000000000       0x10 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .eh_frame      0x0000000000000000       0x28 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .comment       0x0000000000000000       0x10 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+DDR              0x0000000001000000 0x0000000000100000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /tmp/cciadRgs.o
+LOAD /tmp/ccE7A4Jp.o
+LOAD /tmp/ccpOYIWq.o
+LOAD /tmp/ccbAIsRM.o
+LOAD /tmp/cca4VVzF.o
+LOAD /tmp/cckJZr2s.o
+LOAD /tmp/cckyYzox.o
+LOAD /tmp/cc1PrxSs.o
+LOAD /tmp/ccaEMx96.o
+LOAD /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a
+                0x0000000001000000                . = ORIGIN (DDR)
+
+.text           0x0000000001000000     0x8e30
+ *(.text.start)
+ .text.start    0x0000000001000000       0x3c /tmp/cciadRgs.o
+                0x0000000001000000                _start
+ *(.text .text.*)
+ .text.memory_fence
+                0x000000000100003c        0x8 /tmp/ccpOYIWq.o
+ .text.uart_putc
+                0x0000000001000044       0x20 /tmp/ccpOYIWq.o
+ .text.uart_puts
+                0x0000000001000064       0x38 /tmp/ccpOYIWq.o
+ .text.uart_put_hex
+                0x000000000100009c       0x78 /tmp/ccpOYIWq.o
+ .text.read_le32
+                0x0000000001000114       0x2c /tmp/ccpOYIWq.o
+ .text.perspective_bucket
+                0x0000000001000140       0x48 /tmp/ccpOYIWq.o
+ .text.feature_offset
+                0x0000000001000188       0xdc /tmp/ccpOYIWq.o
+ .text.feature_row
+                0x0000000001000264       0x34 /tmp/ccpOYIWq.o
+ .text.initialize_scoring
+                0x0000000001000298       0x88 /tmp/ccpOYIWq.o
+ .text.score_accumulators
+                0x0000000001000320      0x160 /tmp/ccpOYIWq.o
+ .text.build_sparse_delta
+                0x0000000001000480      0x110 /tmp/ccpOYIWq.o
+ .text.append_batch_delta
+                0x0000000001000590       0xa0 /tmp/ccpOYIWq.o
+ .text.search_clock
+                0x0000000001000630        0xc /tmp/ccpOYIWq.o
+ .text.parse_uint_argument
+                0x000000000100063c       0x80 /tmp/ccpOYIWq.o
+ .text.uart_put_uint.part.0
+                0x00000000010006bc       0x68 /tmp/ccpOYIWq.o
+ .text.uart_put_uint
+                0x0000000001000724       0x1c /tmp/ccpOYIWq.o
+ .text.print_info
+                0x0000000001000740      0x270 /tmp/ccpOYIWq.o
+ .text.uart_put_int
+                0x00000000010009b0       0x1c /tmp/ccpOYIWq.o
+ .text.print_search_result
+                0x00000000010009cc      0x2b8 /tmp/ccpOYIWq.o
+ .text.model_valid
+                0x0000000001000c84       0xc8 /tmp/ccpOYIWq.o
+ .text.process_black_reply.part.0
+                0x0000000001000d4c      0x208 /tmp/ccpOYIWq.o
+ .text.apply_feature_delta.constprop.0
+                0x0000000001000f54       0x34 /tmp/ccpOYIWq.o
+ .text.text_starts_with.constprop.0
+                0x0000000001000f88       0x30 /tmp/ccpOYIWq.o
+ .text.text_equal.constprop.0
+                0x0000000001000fb8       0x30 /tmp/ccpOYIWq.o
+ .text.request_pikafish_reply.isra.0
+                0x0000000001000fe8      0x150 /tmp/ccpOYIWq.o
+ .text.parse_int_argument
+                0x0000000001001138       0xc8 /tmp/ccpOYIWq.o
+ .text.score_sparse_child
+                0x0000000001001200      0x1cc /tmp/ccpOYIWq.o
+ .text.memset   0x00000000010013cc       0x1c /tmp/ccpOYIWq.o
+                0x00000000010013cc                memset
+ .text.configure_mac
+                0x00000000010013e8      0x108 /tmp/ccpOYIWq.o
+ .text.parse_fen
+                0x00000000010014f0      0x1ec /tmp/ccpOYIWq.o
+ .text.process_go_hdmi
+                0x00000000010016dc      0x238 /tmp/ccpOYIWq.o
+ .text.refresh_perspective.constprop.0
+                0x0000000001001914      0x150 /tmp/ccpOYIWq.o
+ .text.update_perspective.constprop.0
+                0x0000000001001a64      0x1b4 /tmp/ccpOYIWq.o
+ .text.memcpy   0x0000000001001c18       0x24 /tmp/ccpOYIWq.o
+                0x0000000001001c18                memcpy
+ .text.initialize_sparse_hardware
+                0x0000000001001c3c       0xac /tmp/ccpOYIWq.o
+ .text.prepare_accumulators
+                0x0000000001001ce8      0x148 /tmp/ccpOYIWq.o
+ .text.evaluate
+                0x0000000001001e30       0x68 /tmp/ccpOYIWq.o
+ .text.search_evaluate
+                0x0000000001001e98       0x30 /tmp/ccpOYIWq.o
+ .text.restart_game
+                0x0000000001001ec8      0x1a0 /tmp/ccpOYIWq.o
+ .text.prepare_sparse_parent.constprop.0
+                0x0000000001002068       0xc8 /tmp/ccpOYIWq.o
+ .text.evaluate_sparse_move
+                0x0000000001002130      0x154 /tmp/ccpOYIWq.o
+ .text.apply_move_delta_cpu
+                0x0000000001002284      0x124 /tmp/ccpOYIWq.o
+ .text.evaluate_sparse_hardware_batch
+                0x00000000010023a8      0x648 /tmp/ccpOYIWq.o
+ .text.run_delta_batch
+                0x00000000010029f0      0x27c /tmp/ccpOYIWq.o
+ .text.evaluate_batch.part.0
+                0x0000000001002c6c      0x43c /tmp/ccpOYIWq.o
+ .text.evaluate_batch
+                0x00000000010030a8       0x30 /tmp/ccpOYIWq.o
+ .text.startup.main
+                0x00000000010030d8     0x11ec /tmp/ccpOYIWq.o
+                0x00000000010030d8                main
+ .text.fill_rect
+                0x00000000010042c4       0x84 /tmp/ccbAIsRM.o
+ .text.draw_text
+                0x0000000001004348      0x1a8 /tmp/ccbAIsRM.o
+ .text.put_pixel
+                0x00000000010044f0       0x4c /tmp/ccbAIsRM.o
+ .text.draw_disc
+                0x000000000100453c       0xcc /tmp/ccbAIsRM.o
+ .text.draw_ring
+                0x0000000001004608       0xe0 /tmp/ccbAIsRM.o
+ .text.draw_uint.constprop.0
+                0x00000000010046e8       0xa0 /tmp/ccbAIsRM.o
+ .text.draw_hanzi.part.0.constprop.0
+                0x0000000001004788       0xf8 /tmp/ccbAIsRM.o
+ .text.diagonal.constprop.0
+                0x0000000001004880      0x108 /tmp/ccbAIsRM.o
+ .text.draw_hanzi_text.constprop.0
+                0x0000000001004988       0x94 /tmp/ccbAIsRM.o
+ .text.draw_panel_time_value
+                0x0000000001004a1c      0x100 /tmp/ccbAIsRM.o
+ .text.draw_panel_status
+                0x0000000001004b1c      0x130 /tmp/ccbAIsRM.o
+ .text.draw_panel_nodes
+                0x0000000001004c4c       0x88 /tmp/ccbAIsRM.o
+ .text.draw_panel_score
+                0x0000000001004cd4      0x138 /tmp/ccbAIsRM.o
+ .text.draw_panel_turn
+                0x0000000001004e0c       0x8c /tmp/ccbAIsRM.o
+ .text.draw_position
+                0x0000000001004e98      0x29c /tmp/ccbAIsRM.o
+ .text.draw_board
+                0x0000000001005134      0x20c /tmp/ccbAIsRM.o
+ .text.draw_scene
+                0x0000000001005340      0x2b8 /tmp/ccbAIsRM.o
+ .text.redraw_dirty_scene
+                0x00000000010055f8      0x2d0 /tmp/ccbAIsRM.o
+ .text.xq_fb_gui_init
+                0x00000000010058c8       0x54 /tmp/ccbAIsRM.o
+                0x00000000010058c8                xq_fb_gui_init
+ .text.xq_fb_gui_show
+                0x000000000100591c      0x250 /tmp/ccbAIsRM.o
+                0x000000000100591c                xq_fb_gui_show
+ .text.xq_fb_gui_status
+                0x0000000001005b6c        0xc /tmp/ccbAIsRM.o
+                0x0000000001005b6c                xq_fb_gui_status
+ .text.xq_mouse_input_init
+                0x0000000001005b78       0x18 /tmp/cca4VVzF.o
+                0x0000000001005b78                xq_mouse_input_init
+ .text.xq_mouse_screen_to_square
+                0x0000000001005b90       0x74 /tmp/cca4VVzF.o
+                0x0000000001005b90                xq_mouse_screen_to_square
+ .text.xq_mouse_input_update
+                0x0000000001005c04      0x190 /tmp/cca4VVzF.o
+                0x0000000001005c04                xq_mouse_input_update
+ .text.xq_pikafish_board_to_fen
+                0x0000000001005d94      0x130 /tmp/cckJZr2s.o
+                0x0000000001005d94                xq_pikafish_board_to_fen
+ .text.xq_pikafish_parse_move
+                0x0000000001005ec4       0x9c /tmp/cckJZr2s.o
+                0x0000000001005ec4                xq_pikafish_parse_move
+ .text.xq_pikafish_apply_move
+                0x0000000001005f60       0x98 /tmp/cckJZr2s.o
+                0x0000000001005f60                xq_pikafish_apply_move
+ .text.same_side
+                0x0000000001005ff8       0x34 /tmp/cckyYzox.o
+ .text.find_king
+                0x000000000100602c       0x34 /tmp/cckyYzox.o
+ .text.count_between
+                0x0000000001006060       0x94 /tmp/cckyYzox.o
+ .text.apply_move
+                0x00000000010060f4       0x40 /tmp/cckyYzox.o
+ .text.in_board
+                0x0000000001006134       0x18 /tmp/cckyYzox.o
+ .text.insert_candidate
+                0x000000000100614c       0xac /tmp/cckyYzox.o
+ .text.in_palace
+                0x00000000010061f8       0x2c /tmp/cckyYzox.o
+ .text.can_move_piece
+                0x0000000001006224      0x260 /tmp/cckyYzox.o
+ .text.add_target
+                0x0000000001006484       0xa8 /tmp/cckyYzox.o
+ .text.attacker_at
+                0x000000000100652c       0xac /tmp/cckyYzox.o
+ .text.square_attacked
+                0x00000000010065d8      0x27c /tmp/cckyYzox.o
+ .text.xq_search_legal_moves.part.0
+                0x0000000001006854      0x668 /tmp/cckyYzox.o
+ .text.xq_search_is_legal
+                0x0000000001006ebc       0xf0 /tmp/cckyYzox.o
+                0x0000000001006ebc                xq_search_is_legal
+ .text.xq_search_legal_moves
+                0x0000000001006fac       0x1c /tmp/cckyYzox.o
+                0x0000000001006fac                xq_search_legal_moves
+ .text.negamax  0x0000000001006fc8      0x5ec /tmp/cckyYzox.o
+ .text.xq_search_move_to_iccs
+                0x00000000010075b4       0x50 /tmp/cckyYzox.o
+                0x00000000010075b4                xq_search_move_to_iccs
+ .text.xq_search_go
+                0x0000000001007604      0x5c4 /tmp/cckyYzox.o
+                0x0000000001007604                xq_search_go
+ .text.buffers_fit
+                0x0000000001007bc8       0x70 /tmp/cc1PrxSs.o
+ .text.xiangqi_nnue_mac_prepare
+                0x0000000001007c38      0x288 /tmp/cc1PrxSs.o
+                0x0000000001007c38                xiangqi_nnue_mac_prepare
+ .text.xiangqi_nnue_mac_accum
+                0x0000000001007ec0      0x1cc /tmp/cc1PrxSs.o
+                0x0000000001007ec0                xiangqi_nnue_mac_accum
+ .text.xiangqi_nnue_mac_prepare_batch_delta
+                0x000000000100808c      0x34c /tmp/cc1PrxSs.o
+                0x000000000100808c                xiangqi_nnue_mac_prepare_batch_delta
+ .text.xiangqi_nnue_mac_batch_delta
+                0x00000000010083d8      0x1d0 /tmp/cc1PrxSs.o
+                0x00000000010083d8                xiangqi_nnue_mac_batch_delta
+ .text.mac_kernel_read
+                0x00000000010085a8        0xc /tmp/ccaEMx96.o
+                0x00000000010085a8                mac_kernel_read
+ .text.mac_kernel_validate_job
+                0x00000000010085b4       0xbc /tmp/ccaEMx96.o
+                0x00000000010085b4                mac_kernel_validate_job
+ .text.mac_kernel_buffer_sizes
+                0x0000000001008670       0xd4 /tmp/ccaEMx96.o
+                0x0000000001008670                mac_kernel_buffer_sizes
+ .text.mac_kernel_clear
+                0x0000000001008744       0x14 /tmp/ccaEMx96.o
+                0x0000000001008744                mac_kernel_clear
+ .text.mac_kernel_submit_options
+                0x0000000001008758      0x170 /tmp/ccaEMx96.o
+                0x0000000001008758                mac_kernel_submit_options
+ .text.mac_kernel_submit
+                0x00000000010088c8        0xc /tmp/ccaEMx96.o
+                0x00000000010088c8                mac_kernel_submit
+ .text.mac_kernel_poll
+                0x00000000010088d4       0x28 /tmp/ccaEMx96.o
+                0x00000000010088d4                mac_kernel_poll
+ .text.mac_kernel_wait
+                0x00000000010088fc       0x64 /tmp/ccaEMx96.o
+                0x00000000010088fc                mac_kernel_wait
+ .text.mac_kernel_cycles
+                0x0000000001008960        0x8 /tmp/ccaEMx96.o
+                0x0000000001008960                mac_kernel_cycles
+ .text.mac_kernel_error_code
+                0x0000000001008968       0x10 /tmp/ccaEMx96.o
+                0x0000000001008968                mac_kernel_error_code
+ .text          0x0000000001008978       0x38 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+                0x0000000001008978                __lshrdi3
+ .text          0x00000000010089b0      0x480 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+                0x00000000010089b0                __divdi3
+
+.rodata         0x0000000001008e30    0x3434c
+ *(.rodata.model)
+ .rodata.model  0x0000000001008e30    0x32bb0 /tmp/ccE7A4Jp.o
+                0x0000000001008e30                xq_model_start
+                0x000000000103b9e0                xq_model_end
+ *(.rodata .rodata.*)
+ .rodata.uart_put_hex.str1.4
+                0x000000000103b9e0        0x3 /tmp/ccpOYIWq.o
+ *fill*         0x000000000103b9e3        0x1 
+ .rodata.print_info.str1.4
+                0x000000000103b9e4      0x1a4 /tmp/ccpOYIWq.o
+ .rodata.print_search_result.str1.4
+                0x000000000103bb88       0xba /tmp/ccpOYIWq.o
+                                         0xc2 (size before relaxing)
+ *fill*         0x000000000103bc42        0x2 
+ .rodata.process_black_reply.part.0.str1.4
+                0x000000000103bc44       0x30 /tmp/ccpOYIWq.o
+ .rodata.request_pikafish_reply.isra.0.str1.4
+                0x000000000103bc74       0x5b /tmp/ccpOYIWq.o
+ *fill*         0x000000000103bccf        0x1 
+ .rodata.parse_fen
+                0x000000000103bcd0       0x90 /tmp/ccpOYIWq.o
+ .rodata.process_go.str1.4
+                0x000000000103bd60        0xc /tmp/ccpOYIWq.o
+ .rodata.restart_game.str1.4
+                0x000000000103bd6c       0x23 /tmp/ccpOYIWq.o
+ *fill*         0x000000000103bd8f        0x1 
+ .rodata.xq_uart_service_main.str1.4
+                0x000000000103bd90      0x1d4 /tmp/ccpOYIWq.o
+ .rodata.main.str1.4
+                0x000000000103bf64      0x4d5 /tmp/ccpOYIWq.o
+ *fill*         0x000000000103c439        0x3 
+ .rodata.main   0x000000000103c43c       0x18 /tmp/ccpOYIWq.o
+ .rodata.digits.0
+                0x000000000103c454       0x11 /tmp/ccpOYIWq.o
+ *fill*         0x000000000103c465        0x3 
+ .rodata.king_bucket
+                0x000000000103c468       0x5a /tmp/ccpOYIWq.o
+ *fill*         0x000000000103c4c2        0x2 
+ .rodata.start_fen
+                0x000000000103c4c4       0x3e /tmp/ccpOYIWq.o
+ *fill*         0x000000000103c502        0x2 
+ .rodata.zero_feature_row
+                0x000000000103c504       0x80 /tmp/ccpOYIWq.o
+ .rodata.draw_panel_time_value.str1.4
+                0x000000000103c584        0x3 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c587        0x1 
+ .rodata.draw_scene.str1.4
+                0x000000000103c588       0x20 /tmp/ccbAIsRM.o
+ .rodata.CSWTCH.78
+                0x000000000103c5a8       0x3c /tmp/ccbAIsRM.o
+ .rodata.CSWTCH.79
+                0x000000000103c5e4        0xf /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c5f3        0x1 
+ .rodata.black_labels.1
+                0x000000000103c5f4        0x8 /tmp/ccbAIsRM.o
+ .rodata.chu_he.3
+                0x000000000103c5fc        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c5fe        0x2 
+ .rodata.font5x7
+                0x000000000103c600       0xfc /tmp/ccbAIsRM.o
+ .rodata.han_jie.2
+                0x000000000103c6fc        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c6fe        0x2 
+ .rodata.red_labels.0
+                0x000000000103c700        0x8 /tmp/ccbAIsRM.o
+ .rodata.state_best_move
+                0x000000000103c708        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_black_move
+                0x000000000103c70c        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_black_think
+                0x000000000103c710        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_cancelled
+                0x000000000103c714        0x3 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c717        0x1 
+ .rodata.state_eval_error
+                0x000000000103c718        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_evaluated
+                0x000000000103c71c        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_illegal
+                0x000000000103c720        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_mouse_move
+                0x000000000103c724        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_no_move
+                0x000000000103c728        0x3 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c72b        0x1 
+ .rodata.state_ready
+                0x000000000103c72c        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_red_wins
+                0x000000000103c730        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_reselected
+                0x000000000103c734        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_restarted
+                0x000000000103c738        0x5 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c73d        0x3 
+ .rodata.state_search_error
+                0x000000000103c740        0x4 /tmp/ccbAIsRM.o
+ .rodata.state_select_own
+                0x000000000103c744        0x6 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c74a        0x2 
+ .rodata.state_selected
+                0x000000000103c74c        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_black_turn
+                0x000000000103c750        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_chinese_chess
+                0x000000000103c754        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_inference_time
+                0x000000000103c758        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_microseconds
+                0x000000000103c75c        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c75e        0x2 
+ .rodata.text_milliseconds
+                0x000000000103c760        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c762        0x2 
+ .rodata.text_nodes
+                0x000000000103c764        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c766        0x2 
+ .rodata.text_red_turn
+                0x000000000103c768        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_restart
+                0x000000000103c76c        0x4 /tmp/ccbAIsRM.o
+ .rodata.text_score
+                0x000000000103c770        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c772        0x2 
+ .rodata.text_status
+                0x000000000103c774        0x2 /tmp/ccbAIsRM.o
+ *fill*         0x000000000103c776        0x2 
+ .rodata.xq_font16x16
+                0x000000000103c778      0x8a0 /tmp/ccbAIsRM.o
+ .rodata.red_pieces.0
+                0x000000000103d018        0x9 /tmp/cckJZr2s.o
+ *fill*         0x000000000103d021        0x3 
+ .rodata.can_move_piece
+                0x000000000103d024       0x1c /tmp/cckyYzox.o
+ .rodata.xq_search_legal_moves.part.0
+                0x000000000103d040       0x1c /tmp/cckyYzox.o
+ .rodata.diagonal.1
+                0x000000000103d05c        0x8 /tmp/cckyYzox.o
+ .rodata.horse.0
+                0x000000000103d064       0x10 /tmp/cckyYzox.o
+ .rodata.orthogonal.2
+                0x000000000103d074        0x8 /tmp/cckyYzox.o
+ .rodata        0x000000000103d07c      0x100 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                0x000000000103d07c                __clz_tab
+ *(.srodata .srodata.*)
+
+.rela.dyn       0x000000000103d17c        0x0
+ .rela.text.start
+                0x000000000103d17c        0x0 /tmp/cciadRgs.o
+
+.data           0x000000000103d17c        0x8
+                0x000000000103d17c                __data_start = .
+ *(.data .data.*)
+ .data.clip_x1  0x000000000103d17c        0x4 /tmp/ccbAIsRM.o
+ .data.clip_y1  0x000000000103d180        0x4 /tmp/ccbAIsRM.o
+ *(.sdata .sdata.*)
+                0x000000000103d184                __data_end = .
+                0x000000000103d97c                PROVIDE (__global_pointer$ = (__data_start + 0x800))
+
+.bss            0x000000000103d188     0x5904
+                0x000000000103d188                __bss_start = .
+ *(.sbss .sbss.*)
+ *(.bss .bss.*)
+ .bss.accum_black
+                0x000000000103d188      0x200 /tmp/ccpOYIWq.o
+ .bss.accum_red
+                0x000000000103d388      0x200 /tmp/ccpOYIWq.o
+ .bss.accumulator_cache
+                0x000000000103d588       0x84 /tmp/ccpOYIWq.o
+ .bss.batch_accum_black
+                0x000000000103d60c     0x2000 /tmp/ccpOYIWq.o
+ .bss.batch_accum_red
+                0x000000000103f60c     0x2000 /tmp/ccpOYIWq.o
+ .bss.batch_delta_matrix
+                0x000000000104160c      0x300 /tmp/ccpOYIWq.o
+ .bss.batch_delta_packed
+                0x000000000104190c      0x300 /tmp/ccpOYIWq.o
+ .bss.batch_feature_offsets
+                0x0000000001041c0c       0xc0 /tmp/ccpOYIWq.o
+ .bss.command_length
+                0x0000000001041ccc        0x4 /tmp/ccpOYIWq.o
+ .bss.command_line
+                0x0000000001041cd0       0xa0 /tmp/ccpOYIWq.o
+ .bss.crc32_table
+                0x0000000001041d70      0x400 /tmp/ccpOYIWq.o
+ .bss.mac       0x0000000001042170       0x54 /tmp/ccpOYIWq.o
+ .bss.pikafish_host_mode
+                0x00000000010421c4        0x4 /tmp/ccpOYIWq.o
+ .bss.pikafish_model_resident
+                0x00000000010421c8        0x4 /tmp/ccpOYIWq.o
+ .bss.pikafish_pending
+                0x00000000010421cc        0x4 /tmp/ccpOYIWq.o
+ .bss.pikafish_request_ticks
+                0x00000000010421d0        0x4 /tmp/ccpOYIWq.o
+ .bss.scaled_output_weights
+                0x00000000010421d4      0x400 /tmp/ccpOYIWq.o
+ *fill*         0x00000000010425d4        0x4 
+ .bss.score_bias_numerator
+                0x00000000010425d8        0x8 /tmp/ccpOYIWq.o
+ .bss.sparse_base_black
+                0x00000000010425e0      0x200 /tmp/ccpOYIWq.o
+ .bss.sparse_base_red
+                0x00000000010427e0      0x200 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_available
+                0x00000000010429e0        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_cycles
+                0x00000000010429e4        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_errors
+                0x00000000010429e8        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_fallbacks
+                0x00000000010429ec        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_jobs
+                0x00000000010429f0        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_last_error
+                0x00000000010429f4        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_hw_positions
+                0x00000000010429f8        0x4 /tmp/ccpOYIWq.o
+ .bss.sparse_parent_bucket
+                0x00000000010429fc        0x8 /tmp/ccpOYIWq.o
+ .bss.clip_x0   0x0000000001042a04        0x4 /tmp/ccbAIsRM.o
+ .bss.clip_y0   0x0000000001042a08        0x4 /tmp/ccbAIsRM.o
+ .bss.current_front
+                0x0000000001042a0c        0x4 /tmp/ccbAIsRM.o
+ .bss.display_started
+                0x0000000001042a10        0x4 /tmp/ccbAIsRM.o
+ .bss.displayed_scene
+                0x0000000001042a14       0x78 /tmp/ccbAIsRM.o
+ *(COMMON)
+                0x0000000001042a8c                . = ALIGN (0x4)
+                0x0000000001042a8c                __bss_end = .
+                0x0000000001042a8c                __image_end = .
+                0x00000000010fc000                __stack_bottom = ((ORIGIN (DDR) + LENGTH (DDR)) - 0x4000)
+                0x0000000001100000                __stack_top = (ORIGIN (DDR) + LENGTH (DDR))
+                0x0000000000000001                ASSERT ((__image_end <= __stack_bottom), Xiangqi HDMI service image overlaps its stack)
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+ *(.eh_frame*)
+OUTPUT(artifacts/xiangqi_hdmi.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x0000000000000000       0x21
+ .riscv.attributes
+                0x0000000000000000       0x1f /tmp/cciadRgs.o
+ .riscv.attributes
+                0x000000000000001f       0x1f /tmp/ccE7A4Jp.o
+ .riscv.attributes
+                0x000000000000003e       0x21 /tmp/ccpOYIWq.o
+ .riscv.attributes
+                0x000000000000005f       0x21 /tmp/ccbAIsRM.o
+ .riscv.attributes
+                0x0000000000000080       0x21 /tmp/cca4VVzF.o
+ .riscv.attributes
+                0x00000000000000a1       0x21 /tmp/cckJZr2s.o
+ .riscv.attributes
+                0x00000000000000c2       0x21 /tmp/cckyYzox.o
+ .riscv.attributes
+                0x00000000000000e3       0x21 /tmp/cc1PrxSs.o
+ .riscv.attributes
+                0x0000000000000104       0x21 /tmp/ccaEMx96.o
+ .riscv.attributes
+                0x0000000000000125       0x21 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .riscv.attributes
+                0x0000000000000146       0x21 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .riscv.attributes
+                0x0000000000000167       0x21 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_info     0x0000000000000000      0xa41
+ .debug_info    0x0000000000000000      0x19e /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_info    0x000000000000019e      0x7da /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .debug_info    0x0000000000000978       0xc9 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_abbrev   0x0000000000000000      0x33d
+ .debug_abbrev  0x0000000000000000      0x118 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x0000000000000118      0x1b5 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000000000002cd       0x70 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_loc      0x0000000000000000      0x9ad
+ .debug_loc     0x0000000000000000       0x7e /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_loc     0x000000000000007e      0x92f /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+
+.debug_aranges  0x0000000000000000       0x58
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x0000000000000040       0x18 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_line     0x0000000000000000      0x968
+ .debug_line    0x0000000000000000      0x121 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_line    0x0000000000000121      0x7fa /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+ .debug_line    0x000000000000091b       0x4d /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_str      0x0000000000000000      0x319
+ .debug_str     0x0000000000000000      0x1e8 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+                                        0x22d (size before relaxing)
+ .debug_str     0x00000000000001e8      0x131 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)
+                                        0x2a8 (size before relaxing)
+ .debug_str     0x0000000000000319      0x1f0 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_frame    0x0000000000000000       0x20
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+
+.debug_ranges   0x0000000000000000       0xf8
+ .debug_ranges  0x0000000000000000       0xf8 /usr/lib/gcc/riscv64-unknown-elf/10.2.0/rv32im/ilp32/libgcc.a(_divdi3.o)

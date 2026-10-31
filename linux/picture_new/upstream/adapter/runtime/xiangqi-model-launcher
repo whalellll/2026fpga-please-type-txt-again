@@ -1,0 +1,53 @@
+#!/bin/sh
+# Explicit native experiment; no STUB/PC/MMIO fallback. RAM installation only.
+set -eu
+. /etc/xq-picture.conf
+test "$XQ_PICTURE_MODE" = model-experimental
+test "$XQ_MODEL_BACKEND" = rv32-driver-quantized-mac
+test "$PIKAFISH_MAC_BACKEND" = driver
+test "$PIKAFISH_MAC_REQUIRE_DRIVER" = 1
+if pidof xiangqi-pikafish-gui >/dev/null; then
+ echo 'XQ_MODEL_GUI_ALREADY_RUNNING' >&2
+ exit 1
+fi
+# Cold RAM boot candidate carries a compressed, fixed archive to stay inside
+# the existing 16 MiB loader aperture. Current live RAM overlays skip this.
+if test ! -f "$XQ_MODEL_MODELS/board.xqm"; then
+ test "$XQ_MODEL_MODELS" = /run/xq-native
+ test -f /opt/xq-native/native-models.tar.gz
+ gzip -dc /opt/xq-native/native-models.tar.gz | tar -xf - -C /run
+fi
+mkdir -p "$XQ_MODEL_DIRECTORY"
+native_pid_file=/run/xq-native-staging.pid
+native_log=/run/xq-native-start.log
+alive=0
+if test -s "$native_pid_file"; then
+ candidate_pid=$(cat "$native_pid_file")
+ case "$candidate_pid" in ''|*[!0-9]*) ;; *)
+  if kill -0 "$candidate_pid" 2>/dev/null &&
+     tr '\000' ' ' <"/proc/$candidate_pid/cmdline" | grep -F "$XQ_MODEL_WORKER" >/dev/null; then
+   alive=1
+  fi ;;
+ esac
+fi
+if test "$alive" = 0; then
+ rm -f "$XQ_MODEL_DIRECTORY/request.txt" "$XQ_MODEL_DIRECTORY/result.txt"
+ : >"$native_log"
+ "$XQ_MODEL_WORKER" --models "$XQ_MODEL_MODELS" --serve "$XQ_MODEL_DIRECTORY" --driver >"$native_log" 2>&1 &
+ candidate_pid=$!
+ printf '%s\n' "$candidate_pid" >"$native_pid_file"
+fi
+native_wait=0
+until grep -q '^XQ_NATIVE_READY models=3 backend=rv32-driver-quantized-mac ' "$native_log"; do
+ if ! kill -0 "$candidate_pid" 2>/dev/null || test "$native_wait" -ge 60; then
+  echo 'XQ_MODEL_START_FAILED no_fallback=1' >&2
+  exit 1
+ fi
+ native_wait=$((native_wait+1))
+ sleep 1
+done
+export XQ_PICTURE_MODE XQ_MODEL_BACKEND XQ_MODEL_DIRECTORY
+export XQ_MODEL_TIMEOUT_SECONDS
+export XQ_PICTURE_VOICE XQ_PICTURE_PCM XQ_PICTURE_VOLUME
+export PIKAFISH_MAC_BACKEND PIKAFISH_MAC_REQUIRE_DRIVER PIKAFISH_MAC_REQUIRE_FEATURES
+exec /usr/bin/xq-camera-exec

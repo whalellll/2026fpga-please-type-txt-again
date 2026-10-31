@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "scope": "24-word experimental CPU XQT1; not independent accuracy or board acceptance",
+  "architecture": [
+    40,
+    64,
+    32,
+    25
+  ],
+  "token_ids": [
+    "<blank>",
+    "ju",
+    "ma",
+    "pao",
+    "bing",
+    "zu",
+    "shuai",
+    "jiang",
+    "shi",
+    "xiang",
+    "yi",
+    "er",
+    "san",
+    "si",
+    "wu",
+    "liu",
+    "qi",
+    "ba",
+    "jiu",
+    "jin",
+    "tui",
+    "ping",
+    "chonglai",
+    "quxiao",
+    "tuichu"
+  ],
+  "models": {
+    "all24-candidate.xqt": {
+      "sha256": "f31b38e2cf3a46eeb2bf6d59e2179a0038fd46907353843020f587a4a313ae90",
+      "bytes": 6020
+    },
+    "all24-candidate.pt": {
+      "sha256": "28f8b767d8ef2fae8b119d602d052f866a87838a2dc7c8cee34f13c093a9136b",
+      "bytes": 25176
+    },
+    "holdout-eval.xqt": {
+      "sha256": "2f416745e201857ac402e289e6650f2de77ad3882401091dbfd9fc3703da9a9d",
+      "bytes": 6020
+    },
+    "holdout-eval.pt": {
+      "sha256": "db6efee23a1fcd173df96918d18b31a188b6614f64951670a653109dabab0a7b",
+      "bytes": 25146
+    }
+  },
+  "all_fit_model": "all24-candidate.xqt",
+  "holdout_evaluation_model": "holdout-eval.xqt",
+  "data_fingerprint": "7a55d962d7731adf64b86706b8bdaac037fa575ab581f55b8385e0d99f7533e1",
+  "source_sha256": {
+    "train_recorded_classifier.py": "530edaea943db735e5e8ae0e278f30a03d18be66cdbc837fd01d8acba695a118",
+    "train_pilot_classifier.py": "8d68c71d4d637a8b74859a9f41783ae280079dca6ec3af9a24c8f84b11a22d99",
+    "train_token_classifier.py": "685488a2cc881b8562079e0f5ad29be5385b0e6e76789ab1480fa24ff88084b0",
+    "train_tdnn_ctc.py": "79f414a880d3dcd2db543658f45c0f33522c084cacd5f49cfcca1cd5d88512fe",
+    "extract_recorded_vad.py": "bd0a803dc3c260c7208574857203651456274b73807217a1f659bce629bb3849",
+    "xqvoice_daemon.c": "2ba89fff914ac1d12ef6ef74b6f6086f659d3b63f6d528495a4393a0a4feb630",
+    "xqvoice_model.c": "fc09276034cb20192bc0016c94b0e0da6c1134d0ddd169b03420557c80837af6",
+    "xqvoice_features.c": "d4726c8cbdc1dd637fc9713315deef0f44c8c843bf092539d80a291f21a43414"
+  },
+  "blank_background_trained": false,
+  "board_deployed": false
+}

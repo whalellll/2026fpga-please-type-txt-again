@@ -1,0 +1,112 @@
+{
+  "status": "TRANSFER_FIXED_INPUT_BOARD_COMMANDS_PASS",
+  "started_utc": "2026-10-25T05:04:47.495534+00:00",
+  "software_commit": "15c0baa81c5021f831458614a19bd3dc974729a6",
+  "bitstream_sha256": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+  "hardware_run": "c8282c991f494ddc8144e35245872c02",
+  "startup_receipt_sha256": "3fd60972d667e6c1a4abf7822982297f1aa630602379fc5275d13e509d9d2404",
+  "plan_sha256": "a54266f1246788d52a02bae4f375b99d8d8a796657302487c93a5cbbe616e309",
+  "checks": [
+    {
+      "name": "clock",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "c65f82b1687c36ae098fe1287609ad8170eaaeebdd0a4e6d82a2cb943db2f4c8"
+    },
+    {
+      "name": "environment",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "5b2d17a1403b7cb93835ffec3477f5785f98fd4fab0ab549db1cd40094916a15"
+    },
+    {
+      "name": "classifier-reference",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "4f42f4468e81f36465a84f296920cd4a227890cba771408bcba611a9a28b003d"
+    },
+    {
+      "name": "classifier-new",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "7e0eac2a6408d6e972e6fcfbf8e4f6dadf47728ed018328a3229c8f4ff4fcb83"
+    },
+    {
+      "name": "board-reference",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "b926d0a863f2851ded1d070320bea9833507e09b60907e74c6abdc6733633cf0"
+    },
+    {
+      "name": "board-new",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "416e71b4cb80d21dd91e6ac40860db6302a49a73a7099f207405583fd983f17c"
+    },
+    {
+      "name": "voice-reference",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "ee7c0f6ee9ce85ab1afd7961a21ca9be0725386c2c9752f397a54a8c4e89b808"
+    },
+    {
+      "name": "voice-new",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "f21d178d3eacdd657f255485024286e83be57adbcf061109e4c8369a60095181"
+    },
+    {
+      "name": "voice-profile",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "4c8bcd5cbe919221aad9da6d89c63ea19967fa11de35d1ccdbd8058e1786ee09"
+    },
+    {
+      "name": "pikafish-reference",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "bc3f8efb0b4e49a82c1b6a1e8524130e5ddd01e226d843e09b78b55f449b3622"
+    },
+    {
+      "name": "pikafish-new",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "47b267471cfa0a76134d633ccfd4275c1c41b0fe7cf8fcee651af2717ec0e63d"
+    },
+    {
+      "name": "search",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "4fb48916c513ace32c70f2b3025f21ea19607dbd60b0b90f297d5c95ee55cb53"
+    },
+    {
+      "name": "concurrent",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "3fe28e2c87d7716139bfa813965598edf78dc4b19099b495f9b3bc50d1f33031"
+    },
+    {
+      "name": "detector-reference",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "7c3d0f36a176b785393d5ae0e27d172f36d9e6291793b0cbdc8210d52c8b13b6"
+    },
+    {
+      "name": "detector-new",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "37f2254d9793cd2cb1bda5cdfd06a87bb2ad671a9b861e5b83d95702e5e55647"
+    },
+    {
+      "name": "post",
+      "status": "BOARD_COMMAND_SPEC_PASS",
+      "exit": 0,
+      "receipt_sha256": "7b259394fb4161f736d1de81ab2b2147499bdc37d06fe07a9c512e9f16518dc1"
+    }
+  ],
+  "coremark_tested": false,
+  "flash_written": false,
+  "scope": "Fixed files; reference programs share new kernel and new hardware. No old-kernel A/B or real capture.",
+  "current_check": "post",
+  "completed_utc": "2026-10-25T05:21:38.652722+00:00"
+}

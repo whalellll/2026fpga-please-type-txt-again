@@ -1,0 +1,605 @@
+{
+  "status": "IMAGE_HWC_OFFLINE_VALIDATED_ROUTED_FULL_STA_PASS_NOT_BOARD",
+  "source_commit": "85ed00197a199e06ecccb0bd0bc9c5184ea24c98",
+  "source_root": "G:\\fpga\\performance_soc_image_hwc_20261025",
+  "native_root": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-physical-01",
+  "run_id": "c8282c991f494ddc8144e35245872c02",
+  "gates_sha256": "025f55db8bc5b251d3db7dd955ae71ab71f8ee9ae7c42aceffc47d3bc423a571",
+  "offline_checks": {
+    "serial-legacy-02": {
+      "path": "build/serial-legacy-02/result.json",
+      "status": "VISION32_NUMPY_DIFFERENTIAL_DMA_PASS_NOT_BOARD",
+      "sha256": "be48cd4feb411177ab4637632fa5d7a97ed70b57bae26ffe65fd7149fafba548"
+    },
+    "serial-edges-01": {
+      "path": "build/serial-edges-01/result.json",
+      "status": "VISION32_NUMPY_DIFFERENTIAL_DMA_PASS_NOT_BOARD",
+      "sha256": "ac39be01635603ef19688f87adae29e01d05ff76cd93016eda5acf407bc70cbb"
+    },
+    "serial-exact-01": {
+      "path": "build/serial-exact-01/result.json",
+      "status": "VISION32_EXACT_S16_LUT65536_RTL_PASS_NOT_BOARD",
+      "sha256": "6413748b23d16c5e2be53ed959035e8530a7e3b3d2a2d9a092625142fa70f978"
+    },
+    "serial-exact-soc-01": {
+      "path": "build/serial-exact-soc-01/result.json",
+      "status": "VISION32_EXACT_S16_LUT65536_RTL_PASS_NOT_BOARD",
+      "sha256": "039fc2b073bec3e8c6cd77f0679bbe45d5b7f13c888ce4f4d83322ebde6c325c"
+    },
+    "serial-product-01": {
+      "path": "build/serial-product-01/result.json",
+      "status": "SERIAL_LEGACY_SIGNED33_UNSIGNED31_PRODUCT_ABORT_RESET_PASS_NOT_BOARD",
+      "sha256": "19a49be10071a12cee0dfa8e6b464cbf4e1bb53b6d235b7df8339dc2afd7e212"
+    },
+    "serial-active-cycles-02": {
+      "path": "build/serial-active-cycles-02/result.json",
+      "status": "ACTIVE_VISION_RAW_AND_EXACT_CYCLES_BYTES_ERRORS_UNCHANGED_NOT_BOARD",
+      "sha256": "08d0c3bad9067f91b98f699ccbbbaa25bc0da2ac7ac372d40e55fd7614493f78"
+    },
+    "hwc-models-02": {
+      "path": "build/hwc-models-02/result.json",
+      "status": "ORIGINAL_THREE_GRAPHS_SPATIAL_ORACLE_AND_JOB_REDUCTION_PASS_NOT_BOARD",
+      "sha256": "f3084a04fe3b5c7d866303146491218d0700b85254679ad482a475a3c8e6f084"
+    },
+    "hwc-disabled-01": {
+      "path": "build/hwc-disabled-01/result.json",
+      "status": "ORIGINAL_THREE_GRAPHS_SPATIAL_ORACLE_AND_JOB_REDUCTION_PASS_NOT_BOARD",
+      "sha256": "6a356d8fc140394df3f05c02514d37a48aef7859521fc07b694b9d1b7e67829e"
+    },
+    "hwc-interface-03": {
+      "path": "build/hwc-interface-03/result.json",
+      "status": "PICTURE_NEW_VISION32_HOST_RV32_INTERFACE_PASS_WEIGHTS_DEFERRED_NOT_BOARD",
+      "sha256": "77ac2713a197498c4e7eae9a35a35cc98f74afeec099692619935c6aad8226f8"
+    },
+    "hwc-ddr-01": {
+      "path": "build/hwc-ddr-01/result.json",
+      "status": "VISION32_PRODUCTION_DDR_CDC_INTEGER_ORACLE_PASS_NOT_BOARD",
+      "sha256": "18ab1c0d6986f4afebe1067104c92f68288716a3354552b1d6db8ed3434151b7"
+    },
+    "hwc-driver-01": {
+      "path": "build/hwc-driver-01/result.json",
+      "status": "ACTUAL_VISION32_DRIVER_OWNERSHIP_CONFIG_FAILURE_AND_DRAIN_PASS_NOT_KERNEL_OR_BOARD",
+      "sha256": "8d069f29ef1eae1dda577a3ca6b74dff2c0afb160d0e605a262f854bc73da456"
+    },
+    "hwc-uapi-01": {
+      "path": "build/hwc-uapi-01/result.json",
+      "status": "VISION_EXACT_UAPI_HOST_RV32_BOUNDS_PASS",
+      "sha256": "1a2f091c920aa63ac9488a19d4309a6215c9365a8306e86a4c509b1ae436a7c0"
+    },
+    "hwc-model-replay-01": {
+      "path": "build/hwc-model-replay-01/result.json",
+      "status": "ORIGINAL_THREE_MODEL_WINDOWS_REAL_SOC_RTL_EXACT_PASS_NOT_FULL_GRAPH_OR_BOARD",
+      "sha256": "858ca80609a2c4e35873db68d71535c6a6c1ac87d1e21744c21a1dcfdeab8048"
+    },
+    "hwc-resources-01": {
+      "path": "build/hwc-resources-01/result.json",
+      "status": "IMAGE_HWC_NATIVE_32_PE_RETAINED_FOUR_APM_SAVED_PASS_NOT_STA_OR_BOARD",
+      "sha256": "df79acb9df9531d192373489d9fdefc6dd5a1eac2a4b428a0912657f415d94dd"
+    },
+    "hwc-old-models-02": {
+      "path": "build/hwc-old-models-02/result.json",
+      "status": "ORIGINAL_THREE_GRAPHS_SPATIAL_ORACLE_AND_JOB_REDUCTION_PASS_NOT_BOARD",
+      "sha256": "0bb188238bc6867c65e72f4fe9eed7fe8b4d13831b353d66cb2c9b22093e39dd"
+    },
+    "hwc-bench-02": {
+      "path": "build/hwc-bench-02/result.json",
+      "status": "ORIGINAL_THREE_GRAPHS_HOST_CPU_AND_RV32_LOAD_PASS_NOT_BOARD",
+      "sha256": "03c0a68d266d57b2edf54b55845896f4b1e1ba39b52b4e76dd12050d1353346c"
+    },
+    "hwc-model-capture-01": {
+      "path": "build/hwc-model-capture-01/result.json",
+      "status": "ORIGINAL_THREE_GRAPHS_SPATIAL_ORACLE_AND_JOB_REDUCTION_PASS_NOT_BOARD",
+      "sha256": "0f378718b1b52a34d19fd4202e3fb8fe786d6ddbbd1e8186c1c003870c5c3491"
+    },
+    "hwc-shared-02": {
+      "path": "build/hwc-shared-02/result.json",
+      "status": "VISION32_AND_PIKAFISH_SIMULTANEOUS_AXI_PASS_NOT_BOARD",
+      "sha256": "0e982c7b44e4e6840ef4bde6119c7da31cae6c9b122e0dfa0bfa8c19ce87da35"
+    },
+    "native_cache": {
+      "path": "build/hwc-native-cache-02.json",
+      "status": "VISION32_NATIVE_CACHE_PORTS_CAPACITY_DECODERS_AND_MUTATIONS_PASS_NOT_STA",
+      "sha256": "393f725ea365308e9fbafa53b66d04a3f30e28d02f7af75e1ddaec7d3da42e92"
+    },
+    "full_soc": {
+      "path": "build/batch60-full-regression-image-hwc-01.json",
+      "status": "SOC_ALL_TESTS_PASS_NOT_BOARD",
+      "sha256": "dee182dc3cd4fe032106f0d3e8f2712ae41142a6da8feac9e7fe9828281458e4"
+    }
+  },
+  "additional_generic_check": {
+    "path": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\hwc-generic-01\\result.json",
+    "sha256": "3d4644b3f24c037f7b1366df8fcc0c66f6213c00d786697337e8ccae88581563",
+    "status": "PICTURE_GENERIC_CPU_MAC_CHW_HOST_RV32_COMPATIBILITY_PASS"
+  },
+  "resources": {
+    "lut": 46823.0,
+    "ff": 30401.0,
+    "lutram": 4114.0,
+    "drm36k": 133.5,
+    "apm": 101.0
+  },
+  "resource_delta": {
+    "lut": 48.0,
+    "ff": 29.0,
+    "lutram": 0.0,
+    "drm36k": 0.0,
+    "apm": -4.0
+  },
+  "routed_resources": {
+    "total": {
+      "lut": 46491,
+      "ff": 30390,
+      "lutram": 4114.0,
+      "apm": 101.0,
+      "drm36k": 133.5
+    },
+    "path": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-physical-01\\pds\\place_route\\soc_top.prr",
+    "sha256": "acfc4a9d0aef2b512e2ebefd8d88d46eb6130c6759102325b299d9a0e6338eaa"
+  },
+  "baseline_routed_resources": {
+    "total": {
+      "lut": 46408,
+      "ff": 30361,
+      "lutram": 4114.0,
+      "apm": 105.0,
+      "drm36k": 133.5
+    },
+    "path": "G:\\fpga\\performance_soc_vision_epilogue_20261024\\build\\native-physical-01\\pds\\place_route\\soc_top.prr",
+    "sha256": "186b75b487ef3def1d162be363359316d6d3e6d0e7b5ce898870a3facf14729e"
+  },
+  "routed_resource_delta": {
+    "lut": 83,
+    "ff": 29,
+    "lutram": 0.0,
+    "apm": -4.0,
+    "drm36k": 0.0
+  },
+  "sta_summary_sha256": "673d4cf13818825af713e606b88d8ba164683c3389026fea1ea9a36d9ac2ef41",
+  "sta_focus": {
+    "cpu_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.43,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    "cpu_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.108,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    "sys_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 3.942,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    "sys_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.216,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    }
+  },
+  "violations": [],
+  "native_max_skew_tables": {
+    "report_timing_slow_path_max_skew": [
+      [
+        "MaxSkew Path 15.850ns, Line Num 1206",
+        "14.896",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.954",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1212",
+        "14.761",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.089",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1233",
+        "14.725",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.125",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1218",
+        "15.084",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.766",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1227",
+        "14.565",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.285",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1209",
+        "14.425",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.425",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1215",
+        "14.726",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.124",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1230",
+        "14.912",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.938",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1224",
+        "14.367",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.483",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1221",
+        "14.663",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "1.187",
+        "",
+        ""
+      ]
+    ],
+    "report_timing_fast_path_max_skew": [
+      [
+        "MaxSkew Path 15.850ns, Line Num 1206",
+        "15.179",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.671",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1212",
+        "15.111",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.739",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1233",
+        "15.068",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.782",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1218",
+        "15.344",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.506",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1227",
+        "14.930",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.920",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1209",
+        "14.893",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.957",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1215",
+        "15.053",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.797",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1230",
+        "15.193",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.657",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1224",
+        "14.874",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.976",
+        "",
+        ""
+      ],
+      [
+        "MaxSkew Path 15.850ns, Line Num 1221",
+        "15.023",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "15.850",
+        "0.827",
+        "",
+        ""
+      ]
+    ]
+  },
+  "native_max_skew_violations": [],
+  "timing_scope": {
+    "clocks": 18,
+    "summary_rows": 116,
+    "unconstrained_ports": 187,
+    "status": "PASS_WITH_DISCLOSED_BASELINE_IO_GAPS"
+  },
+  "physical_launch_sha256": "5b36db92368470d77295119ec4f93923daabe8a5c379c175572b214ecc8e4563",
+  "offline_sd_manifest_sha256": "aececc225c3e838bcf91834cca81c30e41928f2d3401e21eedd82ec8b91ad35f",
+  "offline_sd_tests": 18,
+  "offline_sd_files": {
+    "fw_jump.bin": {
+      "bytes": 266448,
+      "sha256": "e709883480124396dddb68ab353c86afbac17e4da99393cfafd765ec379b5f2b"
+    },
+    "Image": {
+      "bytes": 7497368,
+      "sha256": "b6ced0fa3659e07fec3d90ad3bbef9c45d238eb43c053a1a5d445d51681f5fda"
+    },
+    "Image.mmode": {
+      "bytes": 14040,
+      "sha256": "fa94c29c90e4d46f09840c89977c55b30c5ff2fdeaeec6ab23a63da309f57949"
+    },
+    "mmode.dtb": {
+      "bytes": 2695,
+      "sha256": "7c981ea99b32b49368cd2bb2c09dc730e424449b0f9fd718ef8f07a077423854"
+    },
+    "pikafish.atk": {
+      "bytes": 34603072,
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    },
+    "pikafish.pff": {
+      "bytes": 68122688,
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    "rootfs.cpio": {
+      "bytes": 33108480,
+      "sha256": "a2c3adc1d02e9c420360b51fd2f571ed45e76531631c8c0d213766a6e40f23cf"
+    },
+    "soc.dtb": {
+      "bytes": 2695,
+      "sha256": "febdd55b4a668fcbf8eba0940f0932806a579821535d5d7b2c37dc36a7cf95ed"
+    }
+  },
+  "reports_sha256": {
+    "synthesize/soc_top.snr": "d46a7d670f78fbe99796e4735c4237763d70a050505ef67a52a4b1b9c68b7cd3",
+    "synthesize/soc_top_syn.vm": "56c02dbf0db25839ca4e2b3f599da1ec099a81556dd88ecfd53d56a20261276f",
+    "synthesize/soc_top_syn.adf": "52a49c611519a73de55dde14e08f7941735af37c16495b9b48cc37d42d14727d",
+    "place_route/soc_top.prr": "acfc4a9d0aef2b512e2ebefd8d88d46eb6130c6759102325b299d9a0e6338eaa",
+    "place_route/soc_top_pnr.adf": "3cdcd77fc8add1c8510d7bd57dda57a086388f0e99476a28009495e63a9c7e13",
+    "place_route/soc_top_pnr.netlist": "7bf6ceefc1ee8f1418d8f1458f0b390e3694d5493c9e1b07f5e4bd052cfc9001",
+    "report_timing/soc_top.rtr": "234512c2369383633f9b5807b4aeef50f85866eace357ac79ae531d23bfe2b34",
+    "report_timing/rtr.db": "ad3f6d6c35a03baebacb024a3049410c0f4e34db6c9ba24e82da1426bfce87d9",
+    "generate_bitstream/soc_top.sbit": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+    "impl.tcl": "c58fbe86ec21087a747558070acc09d6e3e2cd7b9d3d1ea5a8bba65c1801d3b0",
+    "flow.log": "f853eebcbb844a9d5d6c101289247e4f2b8492a038c4476fa25c9ff8e1ea2fdd"
+  },
+  "bitstream_sha256": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+  "board_tested": false,
+  "phase_times_measured": false,
+  "physical_media_written": false,
+  "remote_pushed": false,
+  "formal_delivery": false,
+  "user_instruction": "Offline image optimization; no SD swap now",
+  "offline_hardware_binding_sha256": "b50ca5d513ee3e702871aed0638eb6e6a3dab3c23ba8be3f1afff8c3f57dcfe5"
+}

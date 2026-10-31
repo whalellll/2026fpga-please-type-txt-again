@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "architecture": [
+    40,
+    64,
+    32,
+    25
+  ],
+  "models": {
+    "sd77-candidate.xqt": {
+      "sha256": "10186411d091dc85efefc921f29300e49a1e5de7b308f6e8d49602ea349ee41a",
+      "bytes": 6020
+    },
+    "sd77-candidate.pt": {
+      "sha256": "6317fc75368291e15c4814d314cbbdbaece5d11a7a31dd8e8f0808d733bf3c68",
+      "bytes": 25166
+    },
+    "sd77-holdout.xqt": {
+      "sha256": "c130f2c349008cc0c869ffdd5ac8ed3b3df6d2b8e38d94d35c86d808e6727c36",
+      "bytes": 6020
+    },
+    "sd77-holdout.pt": {
+      "sha256": "44d78db9d56041569ccde9ee241b6043966563d2c156681d325ba8c68ea224c7",
+      "bytes": 25146
+    }
+  },
+  "token_ids": [
+    "<blank>",
+    "ju",
+    "ma",
+    "pao",
+    "bing",
+    "zu",
+    "shuai",
+    "jiang",
+    "shi",
+    "xiang",
+    "yi",
+    "er",
+    "san",
+    "si",
+    "wu",
+    "liu",
+    "qi",
+    "ba",
+    "jiu",
+    "jin",
+    "tui",
+    "ping",
+    "chonglai",
+    "quxiao",
+    "tuichu"
+  ],
+  "positive_classes": 22,
+  "missing_tokens": [
+    "chonglai",
+    "tuichu"
+  ],
+  "recording_count": 77,
+  "older_recordings_included": false,
+  "data_fingerprint": "14910f0149550653e5b6e2e215d7b4a391a496930af9063a49564fe4fb6ba880",
+  "source_sha256": {
+    "train_sd_classifier.py": "91bb7204aba8411f3b3bb9778d1917a36d15d08ea1ddba7ea8f0666e16f83414",
+    "train_recorded_classifier.py": "a7f36ed1b5654f63f35c0530a8b6de60024a5644d1ec233858124e0363a30502",
+    "train_pilot_classifier.py": "8d68c71d4d637a8b74859a9f41783ae280079dca6ec3af9a24c8f84b11a22d99",
+    "train_token_classifier.py": "685488a2cc881b8562079e0f5ad29be5385b0e6e76789ab1480fa24ff88084b0",
+    "train_tdnn_ctc.py": "79f414a880d3dcd2db543658f45c0f33522c084cacd5f49cfcca1cd5d88512fe"
+  },
+  "board_deployed_at_training": false
+}

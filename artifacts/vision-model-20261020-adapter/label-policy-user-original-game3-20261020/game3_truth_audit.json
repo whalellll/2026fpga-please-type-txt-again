@@ -1,0 +1,1352 @@
+[
+  {
+    "frame": "IMG00908",
+    "original_label_sha256": "80e2c5886fae9d83f14dfd8b298c6a913727a7e83a0b488b87d360deb0673992",
+    "board_label_sha256": "a3c10c292879861ceb66f3d02f4e14cdf59bc364ab773db0192f1f0d2019d864",
+    "historical_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1N/1C5C1/9/RNBAKABNR",
+    "original_label_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR"
+  },
+  {
+    "frame": "IMG00909",
+    "original_label_sha256": "b648f8078bdfba302d51960210fee925cb38dfcff922f7e4032a5ab12d9694ab",
+    "board_label_sha256": "f8d848b1716121a3911334e3daa5da9871f9ed97f233b18c0230f2bca8791606",
+    "historical_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/6P2/P1P1P3N/1C5C1/9/RNBAKABNR",
+    "original_label_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/6P2/P1P1P3P/1C5C1/9/RNBAKABNR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/1c5c1/p1p1p1p1p/9/6P2/P1P1P3P/1C5C1/9/RNBAKABNR"
+  },
+  {
+    "frame": "IMG00910",
+    "original_label_sha256": "ef96d4ead77e16dd3162fdef40ac7005bcbb04456cb6ae2cd1f580572b43082b",
+    "board_label_sha256": "3528df9e8f2c4262d779c4d378cced8660f0acb7dd63b3f1dd51bd17ae5cda1f",
+    "historical_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3N/1C5C1/9/RNBAKABNR",
+    "original_label_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3P/1C5C1/9/RNBAKABNR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3P/1C5C1/9/RNBAKABNR"
+  },
+  {
+    "frame": "IMG00911",
+    "original_label_sha256": "61bd79bd65a4be6ac3e132b5b6c58d105222620d1c54681d9aa76c83259289b5",
+    "board_label_sha256": "5a6f88f1cb9c574270276d39ed8352759b1057abe697dd952dc3376b0596674d",
+    "historical_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3N/1C2B2C1/9/RNBAKA1NR",
+    "original_label_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3P/1C2B2C1/9/RNBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/1c4c2/p1p1p1p1p/9/6P2/P1P1P3P/1C2B2C1/9/RNBAKA1NR"
+  },
+  {
+    "frame": "IMG00912",
+    "original_label_sha256": "a3c7c725f7f3ffcac0067bf5fad401038682ae60c6b45b966e7d27cfd32b93aa",
+    "board_label_sha256": "8ce9dab8872c3f0dc648fdcca695825c2a86405e89c0d60ba7a4bcc4e56cec0d",
+    "historical_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3N/1C2B2C1/9/RNBAKA1NR",
+    "original_label_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1C2B2C1/9/RNBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1C2B2C1/9/RNBAKA1NR"
+  },
+  {
+    "frame": "IMG00913",
+    "original_label_sha256": "fac0c261c8b15d70b8a8e7177d4d615f7e2b868c745589d01bca667f790c97c5",
+    "board_label_sha256": "ac0530145dd5cdf8d8a49e0b632bbed1cf82afb30b5274e112606165ed701b26",
+    "historical_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3N/1CN1B2C1/9/R1BAKA1NR",
+    "original_label_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/R1BAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "rnbakabnr/9/4c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/R1BAKA1NR"
+  },
+  {
+    "frame": "IMG00914",
+    "original_label_sha256": "9f2affee41a76ec1939b427ae043c984aceaaa453046c89fb47c405dfc489e8a",
+    "board_label_sha256": "f9c864fa6b86757cb2a555237909070a1a020fd999313bd26853645894943992",
+    "historical_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3N/1CN1B2C1/9/R1BAKA1NR",
+    "original_label_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/R1BAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/R1BAKA1NR"
+  },
+  {
+    "frame": "IMG00915",
+    "original_label_sha256": "18a586a6c8bb08b48d48bb480709a16b446c86810d1bba8b558ddef64ca69ddb",
+    "board_label_sha256": "2e6b945b1f1c2ea32e7afdae1d6246ea781eb8376d9be13b99561a0329204164",
+    "historical_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3N/1CN1B2C1/9/1RBAKA1NR",
+    "original_label_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/1RBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakabnr/9/2n1c1c2/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/1RBAKA1NR"
+  },
+  {
+    "frame": "IMG00916",
+    "original_label_sha256": "d992d29afaa2967e613acf2b0e8cd181f5d1a17489f44ce39207855cbd5fb5c8",
+    "board_label_sha256": "b0e347e92cc0b535496aa2538036d4391ce3f99feaf531bf990ee71c98ada169",
+    "historical_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/1CN1B2C1/9/1RBAKA1NR",
+    "original_label_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/1RBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/1CN1B2C1/9/1RBAKA1NR"
+  },
+  {
+    "frame": "IMG00917",
+    "original_label_sha256": "040b6ef1cf729e2a3f9e1e5a52738091f21766c89707eff6dad167289c1c6862",
+    "board_label_sha256": "da2fad664d88e8c4a570f007364812e59173094c626b44d17c13558df5e72e3f",
+    "historical_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B2C1/9/1RBAKA1NR",
+    "original_label_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/9/1RBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakab1r/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/9/1RBAKA1NR"
+  },
+  {
+    "frame": "IMG00918",
+    "original_label_sha256": "90a2836122f1f37fc350f66432735b0e4c31aacd24d40b8cb2385b1f5d436f79",
+    "board_label_sha256": "5247e0d50db873aeaa2daeb4cb2c9712d30f7691afdb2694814ae84b44b0d2b3",
+    "historical_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B2C1/9/1RBAKA1NR",
+    "original_label_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/9/1RBAKA1NR",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/9/1RBAKA1NR"
+  },
+  {
+    "frame": "IMG00919",
+    "original_label_sha256": "b64288f9173e5f2510f0b171ea52d9015ca9b01b6ba90b253028b6c36d1cc8bb",
+    "board_label_sha256": "dece77c7755cee7c57a545b9292cdacc797f1615d53a156e45c682cfc7e21252",
+    "historical_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B2C1/5N3/1RBAKA2R",
+    "original_label_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/5N3/1RBAKA2R",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "r1bakabr1/9/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/5N3/1RBAKA2R"
+  },
+  {
+    "frame": "IMG00920",
+    "original_label_sha256": "7fbe58a73b682ecdfd703657d7313e2925fcd17b8657fcec64bd0e6b391bba00",
+    "board_label_sha256": "157ebffe2f795b7d33ce814e118bb57d197fc59fdfe4775fb7e927a4b67ebf67",
+    "historical_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B2C1/5N3/1RBAKA2R",
+    "original_label_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/2P1P3P/C1N1B2C1/5N3/1RBAKA2R",
+    "changed": true,
+    "changed_cells": 2,
+    "retained_missing_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B2C1/5N3/1RBAKA2R"
+  },
+  {
+    "frame": "IMG00921",
+    "original_label_sha256": "d701c33880f30e54f730285de75190063f2b2c57230a2248686ece44c47f7f9e",
+    "board_label_sha256": "da3f17460bb7313dde1e860a007334cb503d87a0c75787ca265e2f99e98585f3",
+    "historical_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/2P1P3N/2N1B1C2/5N3/1RBAKA2R",
+    "original_label_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/2P1P3P/2N1B1C2/5N3/1RBAKA2R",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/r8/2n1c1c1n/p1p1p1p1p/9/6P2/2P1P3P/2N1B1C2/5N3/1RBAKA2R"
+  },
+  {
+    "frame": "IMG00922",
+    "original_label_sha256": "c251b613561e85a5cd01772f87ffcd70ad024cf5babf5532bda5424056dcdbc2",
+    "board_label_sha256": "8df4e35f4aa343776297ac17e501f5696d65e9ab2eaec673b249fe1b9f94b180",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B1C2/5N3/1RBAKA2R",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B1C2/5N3/1RBAKA2R",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B1C2/5N3/1RBAKA2R"
+  },
+  {
+    "frame": "IMG00923",
+    "original_label_sha256": "43e4b165aea9f8ea1ad393b02a070bc8f999a4dc3cf1f570c675e78ca10bece0",
+    "board_label_sha256": "d0820008bfa020e98c030c5c64793ebd4b624013b8f559d15dc0d50074931204",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3N/C1N1B1C2/5N2R/1RBAKA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B1C2/5N2R/1RBAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p1p1p1p1p/9/6P2/P1P1P3P/C1N1B1C2/5N2R/1RBAKA3"
+  },
+  {
+    "frame": "IMG00924",
+    "original_label_sha256": "4eaf3c76a6b62e6855662d4781e19055378b4a3c91a5bad1c0347a87de3c8646",
+    "board_label_sha256": "67e9613cd2d2e446033b4c3dde6ec00910f9ebdaf2241affdd1989fd3094bda8",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/6P2/P1P1P3N/C1N1B1C2/5N2R/1RBAKA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/6P2/P1P1P3P/C1N1B1C2/5N2R/1RBAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/6P2/P1P1P3P/C1N1B1C2/5N2R/1RBAKA3"
+  },
+  {
+    "frame": "IMG00925",
+    "original_label_sha256": "9db3c416268f30a36de0d03b0180c2df2ccebae282be8cd909d53270cb129f0b",
+    "board_label_sha256": "ad50b7aa48f73e7c7586371c71971c1847549b1b35e0c43e85d74e4bf11ccdef",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/1R4P2/P1P1P3N/C1N1B1C2/5N2R/2BAKA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/1R4P2/P1P1P3P/C1N1B1C2/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p1p/2p6/1R4P2/P1P1P3P/C1N1B1C2/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00926",
+    "original_label_sha256": "9aec5636ebb4a0be00e11a90333aeb7d95ff5321081047b7c898ee88bd408ff1",
+    "board_label_sha256": "081753e5e773c395745b2ae6602927cb2118de751b28a1917ca1fe9a833075b0",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1R4P2/P1P1P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1R4P2/P1P1P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1R4P2/P1P1P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00927",
+    "original_label_sha256": "448df07e77cef65b435e88e10fe089d6c2fc0d631aef4b4e85dfd6b47b49f8cd",
+    "board_label_sha256": "84d3fba9d0028c6e5bd9edf25504708623b7cf5bc60fdc77278120c33fdd1b45",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1RP3P2/P3P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1RP3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/2p5p/1RP3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00928",
+    "original_label_sha256": "5acf804b6bf43946b54ae2a9fd022ae1c017c5e1b385cc1b40750eb38ddd695f",
+    "board_label_sha256": "d5ce48d50c21718d4edc33f69b0d5b477882a6dbe49d33cb697343a45a74f5bf",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/1Rp3P2/P3P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/1Rp3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/1Rp3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00929",
+    "original_label_sha256": "03e9b3fba8644534fb6edb97cebbd9dcdba3bea8111cfe8ec01609110752db83",
+    "board_label_sha256": "d5a46bd2888c117641a554092a20b47956d1bcede639e625b40621a2a7568b24",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/2R3P2/P3P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/2R3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p1p2/8p/2R3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00930",
+    "original_label_sha256": "9c79d97e75198e2f7dd83472e0f47666c6db73f71f672732242cc9f67a997241",
+    "board_label_sha256": "8f262dc381c6d0ac750a481c2ecdba36f0a875ca406b93313d7360225377362d",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6p1p/2R3P2/P3P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6p1p/2R3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6p1p/2R3P2/P3P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00931",
+    "original_label_sha256": "e3a3a55a2f4fdc63f543ef10b33dd836455c215b9ab1f71939726a21afd91516",
+    "board_label_sha256": "fdc6bf3fb65b73d175f73dc3329b4852d612adaef5cc15dc2b08d2df85ba7ee2",
+    "historical_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6P1p/2R6/P3P3N/C1N1B1C2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6P1p/2R6/P3P3P/C1N1B1C2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c1c1n/p3p4/6P1p/2R6/P3P3P/C1N1B1C2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00932",
+    "original_label_sha256": "d713d12ee5e05c05cdadd23a5b8d2d46ec668a688f3efc03079d6b3e3f98620c",
+    "board_label_sha256": "c89247464b0f083d560dfffc17151b6db340b5afbb026666d65d33246c9236c0",
+    "historical_fen": "2bakabr1/5r3/2n1c3n/p3p4/6P1p/2R6/P3P3N/C1N1B1c2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2n1c3n/p3p4/6P1p/2R6/P3P3P/C1N1B1c2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2n1c3n/p3p4/6P1p/2R6/P3P3P/C1N1B1c2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00933",
+    "original_label_sha256": "d91f78faf0e7f4b4c3451a30fe4825a986ac049dca80a7783294a055925354d6",
+    "board_label_sha256": "d62cd38cd5ef582cd828339e2564100e0fabf8f03471f86eff8c4a0ff2d24d32",
+    "historical_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3N/C1N1B1c2/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3P/C1N1B1c2/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3P/C1N1B1c2/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00934",
+    "original_label_sha256": "0debaaa35a39397ea14228c3e4cdc4e14bc63ff7d43ae85a54244c43f15df90c",
+    "board_label_sha256": "bea7a36f5719783f155351042f87d3d953c10d29c22a32dd4e852c804d7656a3",
+    "historical_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3N/C3B4/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3P/C3B4/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/2R1c3n/p3p4/6P1p/9/P3P3P/C3B4/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00935",
+    "original_label_sha256": "8ff9b0d36f52717e06ed3b53a23598769015e2d0604b161aefa7b94553afaef9",
+    "board_label_sha256": "db18528332e033af5c2264a479600c2207799b88f2b6902920f7b181abf56eef",
+    "historical_fen": "2bakabr1/5r3/4c3n/p3p4/6P1p/9/P3P3N/C1R1B4/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/5r3/4c3n/p3p4/6P1p/9/P3P3P/C1R1B4/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/5r3/4c3n/p3p4/6P1p/9/P3P3P/C1R1B4/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00936",
+    "original_label_sha256": "97019ad435fb150704101f6592479c60dd1ef589cb9b72da42d5b9c262897e48",
+    "board_label_sha256": "85af6232f7e0f5acc6d23e7624664191b7c41e98705531b90e48c15a94a639da",
+    "historical_fen": "2bakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3N/C1R1B4/5N2R/2B1KA3",
+    "original_label_fen": "2bakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3P/C1R1B4/5N2R/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2bakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3P/C1R1B4/5N2R/2B1KA3"
+  },
+  {
+    "frame": "IMG00937",
+    "original_label_sha256": "c7f0b7c95e0cb1551deb8846658c4d898697c44a248b65c5cbc55dd5591d63af",
+    "board_label_sha256": "b3e0eaeda7819e11887d688b0e842e5deee6008d71513b0954ed3bca5407e7c2",
+    "historical_fen": "2Rakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3N/C3B4/5N2R/2BAKA3",
+    "original_label_fen": "2Rakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3P/C3B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Rakabr1/6r2/4c3n/p3p4/6P1p/9/P3P3P/C3B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00938",
+    "original_label_sha256": "f4f2bf16cad6b65c35a8631cb2edccfefe14f2817815d1173cb17f4159de2fa0",
+    "board_label_sha256": "a7a2711a2f6930473e4e5df1754e0d08b5cecb30a8809d6a99cb31d337709bb2",
+    "historical_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3N/C3B4/5N2R/2BAKA3",
+    "original_label_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3P/C3B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3P/C3B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00939",
+    "original_label_sha256": "24ab43c6eb00f17fa943bd191048aae15c076505f649217bf8ac4c1ff94c9765",
+    "board_label_sha256": "89027089012dc1b8cb5448e1bb0d7b9f7992b5bb9b8bd2c35872523ff2a0bf28",
+    "historical_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3N/C3B4/5N2R/2BAKA3",
+    "original_label_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3P/C3B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Rakabr1/9/4c3n/p3p4/6r1p/9/P3P3P/C3B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00940",
+    "original_label_sha256": "5dc1d5572492fe2352719e64269ded05392b36c3939a0bb723fa0a66d433df3a",
+    "board_label_sha256": "d462f8839e8a44968a440d6de2ecc4d4cb55bc4e6bf1b7a414b18a2544dbfa13",
+    "historical_fen": "2Rakabr1/9/4c3n/C3p4/6r1p/9/P3P3N/4B4/5N2R/2BAKA3",
+    "original_label_fen": "2Rakabr1/9/4c3n/C3p4/6r1p/9/P3P3P/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Rakabr1/9/4c3n/C3p4/6r1p/9/P3P3P/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00941",
+    "original_label_sha256": "071768ab719c2e943f50c6957823a7225ff98585fb950316c209a281cc204b26",
+    "board_label_sha256": "759d68f16dc8f8e2c264c8bee6e10a18d2badce42cd5bc8b93525f8ae9fde04e",
+    "historical_fen": "2Rakabr1/9/4c3n/C3p4/r7p/9/P3P3N/4B4/5N2R/2BAKA3",
+    "original_label_fen": "2Rakabr1/9/4c3n/C3p4/r7p/9/P3P3P/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Rakabr1/9/4c3n/C3p4/r7p/9/P3P3P/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00942",
+    "original_label_sha256": "0e1b23a0fe476f7e0f81c785ca64e84593e126625b5dc47ec96ba13af2515598",
+    "board_label_sha256": "1ad74e73dbaca74762eec7ad38918e3beac70c74a6598c96e742fc666d3a94f7",
+    "historical_fen": "3akabr1/9/4c3n/C1R1p4/r7p/9/P3P3N/4B4/5N2R/2BAKA3",
+    "original_label_fen": "3akabr1/9/4c3n/C1R1p4/r7p/9/P3P3P/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akabr1/9/4c3n/C1R1p4/r7p/9/P3P3P/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00943",
+    "original_label_sha256": "2c18a3f91d41c241d77a106c6aa4f3ba8977d751ad810b86edd4328ef0fd5fd4",
+    "board_label_sha256": "2cbc7f7ced615f5becb2a24a67bdd30912b1eebff684255968e410d62fb44325",
+    "historical_fen": "3akab2/9/4c3n/C1R1p4/r7p/9/P3P2rN/4B4/5N2R/2BAKA3",
+    "original_label_fen": "3akab2/9/4c3n/C1R1p4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akab2/9/4c3n/C1R1p4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00944",
+    "original_label_sha256": "1b30a54009b41dac28de8e6a93046c438f1c541b0605ff01ac30dc248b086c24",
+    "board_label_sha256": "199ff634ab77fc844d08003173e7939f2977320883f142f8bfca7de5c7a277da",
+    "historical_fen": "3akab2/9/4c3n/2R1C4/r7p/9/P3P2rN/4B4/5N2R/2BAKA3",
+    "original_label_fen": "3akab2/9/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akab2/9/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00945",
+    "original_label_sha256": "b2eae525d2d21f15c3be9776be073f5bb080a7177794b42b44c3ecab10d0b36c",
+    "board_label_sha256": "ef7e27f08c3cfaceab587333d349b8c7329dd1207f5e55c2740fd19f46a17b7a",
+    "historical_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rN/4B4/5N2R/2BAKA3",
+    "original_label_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5N2R/2BAKA3"
+  },
+  {
+    "frame": "IMG00946",
+    "original_label_sha256": "da818bb3a20569065581cec56495ee7b89141902079851db9c24f84e2ea99ca2",
+    "board_label_sha256": "35d00f583cab3092d9aed7f9bc82b22ceb516dfadef4a51f83898884b1249339",
+    "historical_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rN/4B4/5NR2/2BAKA3",
+    "original_label_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5NR2/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak1b2/4a4/4c3n/2R1C4/r7p/9/P3P2rP/4B4/5NR2/2BAKA3"
+  },
+  {
+    "frame": "IMG00947",
+    "original_label_sha256": "5a793e0f49c577b78bfe23776118279aa667c8f995193bf1fce3ebeb38f2e044",
+    "board_label_sha256": "c77074e1a93fbe913a9c30790340021de3a020d54034f946db2dbd6af4fb09c9",
+    "historical_fen": "3ak1b2/4a4/4c3n/2R1C4/5r2p/9/P3P2rN/4B4/5NR2/2BAKA3",
+    "original_label_fen": "3ak1b2/4a4/4c3n/2R1C4/5r2p/9/P3P2rP/4B4/5NR2/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak1b2/4a4/4c3n/2R1C4/5r2p/9/P3P2rP/4B4/5NR2/2BAKA3"
+  },
+  {
+    "frame": "IMG00948",
+    "original_label_sha256": "d4514165ed53b730e29b0a70de85ec7d542fdb9a2eaa0f0536040ae5c03e7061",
+    "board_label_sha256": "02e5d5280f63746692f79595451f5c7997ed110659f8159adb018ff48367d770",
+    "historical_fen": "3ak1R2/4a4/4c3n/2R1C4/5r2p/9/P3P2rN/4B4/5N3/2BAKA3",
+    "original_label_fen": "3ak1R2/4a4/4c3n/2R1C4/5r2p/9/P3P2rP/4B4/5N3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak1R2/4a4/4c3n/2R1C4/5r2p/9/P3P2rP/4B4/5N3/2BAKA3"
+  },
+  {
+    "frame": "IMG00949",
+    "original_label_sha256": "418d1e8b7581a1e2e741b262e32734bf9e1fb3742fab88b2738b994dc5b93420",
+    "board_label_sha256": "656cb1170bfe671bae858c2c45f13f34cf563019ed9855472d5127009f6365f6",
+    "historical_fen": "3akrR2/4a4/4c3n/2R1C4/8p/9/P3P2rN/4B4/5N3/2BAKA3",
+    "original_label_fen": "3akrR2/4a4/4c3n/2R1C4/8p/9/P3P2rP/4B4/5N3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akrR2/4a4/4c3n/2R1C4/8p/9/P3P2rP/4B4/5N3/2BAKA3"
+  },
+  {
+    "frame": "IMG00950",
+    "original_label_sha256": "4c62634f97bc6719edcde77a39dc97fdb8a79fdfb1fc5d8b4946040eb84c7e70",
+    "board_label_sha256": "f0dba9f331742260c8b8c38faede8750c26c39339d1da3320eb523fc07c88b40",
+    "historical_fen": "3akr3/4a4/4c1R1n/2R1C4/8p/9/P3P2rN/4B4/5N3/2BAKA3",
+    "original_label_fen": "3akr3/4a4/4c1R1n/2R1C4/8p/9/P3P2rP/4B4/5N3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akr3/4a4/4c1R1n/2R1C4/8p/9/P3P2rP/4B4/5N3/2BAKA3"
+  },
+  {
+    "frame": "IMG00951",
+    "original_label_sha256": "0d2bf1f31faf8e2153bd76bedc43ed76e5062e23562327f3e8d44136fa479716",
+    "board_label_sha256": "72f962c28ac59105b7e264460e3b0e08f81c91b8b2873755ff43caad161b033b",
+    "historical_fen": "3ak4/4a4/4c1R1n/2R1C4/8p/9/P3P2rN/4B4/5r3/2BAKA3",
+    "original_label_fen": "3ak4/4a4/4c1R1n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak4/4a4/4c1R1n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3"
+  },
+  {
+    "frame": "IMG00952",
+    "original_label_sha256": "ee8d1e79a441ec82173772961f5b51b1373f04e5368257002ac736fa50204342",
+    "board_label_sha256": "cbad32002f07d7ecc1549769e93b24b9cac3c989315b0883f84811992857e7cd",
+    "historical_fen": "3ak4/4a4/4R3n/2R1C4/8p/9/P3P2rN/4B4/5r3/2BAKA3",
+    "original_label_fen": "3ak4/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak4/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3"
+  },
+  {
+    "frame": "IMG00953",
+    "original_label_sha256": "37fc69c52eb37b79c91b3f5356ceb7804444fad86970814fb8fa23ad664aca18",
+    "board_label_sha256": "08db203838f5b1ca2c8cb06050c76f41f5c763378c3720b924e93d56b6de8f68",
+    "historical_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rN/4B4/5r3/2BAKA3",
+    "original_label_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/5r3/2BAKA3"
+  },
+  {
+    "frame": "IMG00954",
+    "original_label_sha256": "df313c5f7973fe7dee8a54e5f83e4d2fa8111a94dcf1919f14b447b9f0092fd1",
+    "board_label_sha256": "2749692343e8a143538fd9c663d20c494868997aa3c52733ef58ef6c11c11da1",
+    "historical_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a4/4R3n/2R1C4/8p/9/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00955",
+    "original_label_sha256": "b6218d36c8a76a33d10c485f1d78e0329453479089e1e6ff09271f94bf0ea08f",
+    "board_label_sha256": "4847c53fc3db3e1910131f66d4b2ad5ee8252e7e3da8219d0b0fe973e3618620",
+    "historical_fen": "3a1k3/4a4/4R4/2R1C1n2/8p/9/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a4/4R4/2R1C1n2/8p/9/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a4/4R4/2R1C1n2/8p/9/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00956",
+    "original_label_sha256": "a845e827e56302db5317f174a3cd43459504a0f956e834e1922a80024bba997d",
+    "board_label_sha256": "b1c45b384f4ece4477e0c9c0881595d7e86ecc89b34206b7de018e4813b4f0d7",
+    "historical_fen": "3a1k3/4a4/6R2/2R1C1n2/8p/9/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a4/6R2/2R1C1n2/8p/9/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a4/6R2/2R1C1n2/8p/9/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00957",
+    "original_label_sha256": "63e31bd8b4e5badbd996ff9e510c3e520255988ca346f6d0b4dcec92c4e677c6",
+    "board_label_sha256": "e04d4b47ddb873a623e74a55b51d7ca35068e2bf78d84c087e3d8fef1d791b16",
+    "historical_fen": "3a1k3/4a4/6R2/2R1C4/8p/5n3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a4/6R2/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a4/6R2/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00958",
+    "original_label_sha256": "ce8905db8528fc25a52a4607dbfb14fde7cd9e1e70aeafdc67af2bfc9165c423",
+    "board_label_sha256": "c0664b4139c947ffbd4bce6a53d58e3a6ad7335eec4cdf9c96f818805b94e314",
+    "historical_fen": "3a1kR2/4a4/9/2R1C4/8p/5n3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1kR2/4a4/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1kR2/4a4/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00959",
+    "original_label_sha256": "5d078fcd30a80cd7a76aa8a5c367c4dd83e3b821af86ca5e80dec86df441923f",
+    "board_label_sha256": "bc0f98d4bf1c900a4dbbb975779d89c07f43cbedf8fa137a3e686260498793b8",
+    "historical_fen": "3a2R2/4ak3/9/2R1C4/8p/5n3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a2R2/4ak3/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00960",
+    "original_label_sha256": "02eca32d79cad656262340ae694b7dde9ab3840a300dc4f91ca034010107471c",
+    "board_label_sha256": "859c23c5f442ee1751d755de67cd278e7e37f9e0b8869b38c0f30e8db2eb27c9",
+    "historical_fen": "3a5/4akR2/9/2R1C4/8p/5n3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a5/4akR2/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a5/4akR2/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00961",
+    "original_label_sha256": "23af34bba42da725b36efba33ef75e3c2dcdd5b1a442b1c0844f168cba75efa8",
+    "board_label_sha256": "fb8cfdd3df58c73eacef9b655d8a1eb325687c3fef3cd9e43084f588ed7eae97",
+    "historical_fen": "3a1k3/4a1R2/9/2R1C4/8p/5n3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a1R2/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a1R2/9/2R1C4/8p/5n3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00962",
+    "original_label_sha256": "353bb24a573af07b1eb2dbaab34d40d3e07576e6abb80f71dbadc28839a54524",
+    "board_label_sha256": "c3af985d59ed8073830f1f13831a13087e03a33ea8a874cfffc1de92295f3c6c",
+    "historical_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3P2rN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3P2rP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3P2rP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00963",
+    "original_label_sha256": "f750544858e6e2659f8a5440daa7970ee1fbf3a562076b66629cde6a6b4d51b4",
+    "board_label_sha256": "8e27a7ff6b2c49507848ae96c08ff465faf8044c88c90a3420d3dc6bc012b295",
+    "historical_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3r3N/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3r3P/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a1R2/9/2R6/8p/4Cn3/P3r3P/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00964",
+    "original_label_sha256": "4b39eadb5508dd863ca5f48c218968ca714afb3a7eee62e26770f1978e82144e",
+    "board_label_sha256": "3eabcefd2f317efd4aa79af80db0a262b3cee53a7d8e164fb92d3a6525ca2fc2",
+    "historical_fen": "3a1k3/4a1R2/9/9/8p/2R1Cn3/P3r3N/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a1R2/9/9/8p/2R1Cn3/P3r3P/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a1R2/9/9/8p/2R1Cn3/P3r3P/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00965",
+    "original_label_sha256": "fe7d5945f0445878441656d2faf564986a7d63959fa52a24d45bfff37d711f69",
+    "board_label_sha256": "ef4f4d1222765621ca581f2a12b3e7ef141ac25c20735ac369f86ad8dbdb6d9a",
+    "historical_fen": "3a1k3/4a1R2/9/9/8p/2R1C4/P3r2nN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1k3/4a1R2/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1k3/4a1R2/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00966",
+    "original_label_sha256": "92b2fec6cdcb5e8b08e42ad07fa808b4447059c8db787e5665c1812104951f5f",
+    "board_label_sha256": "1114aba9b012ee418619b9deda4404e1c436c3fbdc6444e642dd6cab071b2594",
+    "historical_fen": "3a1kR2/4a4/9/9/8p/2R1C4/P3r2nN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a1kR2/4a4/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1kR2/4a4/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00967",
+    "original_label_sha256": "a43306d7b0f417468b996262ff37dc1fc5cf7ec8b7b3ca9a03c4795e77fd92de",
+    "board_label_sha256": "5ce410f1e9f10252ddac16a220bc296d612bc3866767bce01d4450d190fd0ac6",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nN/4B4/4Ar3/2B1KA3",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nP/4B4/4Ar3/2B1KA3"
+  },
+  {
+    "frame": "IMG00968",
+    "original_label_sha256": "97a8e7832cb2fa48df666d214b9435b984f560f7484c40f30e73c3b11a2555b2",
+    "board_label_sha256": "fe7a865323175d8d4219c07e5f137ad56c852668bcad8c959f26d1e8bcf83e32",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nN/3AB4/5r3/2B1KA3",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nP/3AB4/5r3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r2nP/3AB4/5r3/2B1KA3"
+  },
+  {
+    "frame": "IMG00969",
+    "original_label_sha256": "eb4ba060807b1b9661ad0195862c4fcb275e90065ae9db2680e58a79d9d4e002",
+    "board_label_sha256": "8e0eaef1fd94c85c4ee025894f8f1e2723f0e5f54bd6a703a8011a7f18c3706f",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3N/3ABn3/5r3/2B1KA3",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/5r3/2B1KA3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/5r3/2B1KA3"
+  },
+  {
+    "frame": "IMG00970",
+    "original_label_sha256": "cd4b268e7a82abd36ecbd6f8f32b231e30477caf3cbd859defd3bbf60c0c4cda",
+    "board_label_sha256": "075a7711506e50066f43f9e827988ba3109b2ed5b6c7ebb12964daecfd4ac68e",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3N/3ABn3/4Ar3/2B1K4",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/4Ar3/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/4Ar3/2B1K4"
+  },
+  {
+    "frame": "IMG00971",
+    "original_label_sha256": "f5ddc00cd0fa99ee467016a80fc6f4d97676f5de3a439a87e8e122d5109e62a7",
+    "board_label_sha256": "5e000b77610e30519526300def05ad271ed6b9b2bf64a54c784686b07462fd64",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3N/3ABn3/4A1r2/2B1K4",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/4A1r2/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABn3/4A1r2/2B1K4"
+  },
+  {
+    "frame": "IMG00972",
+    "original_label_sha256": "b585c4674079f4ca89bd72633cf7818bfb282206a36a2f23de564b2b2abf439c",
+    "board_label_sha256": "377a0f34c324e90028d2a5dab1495eba00e4e44ce601ecc105b7d14f1529ef1d",
+    "historical_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3N/3ABA3/6r2/2B1K4",
+    "original_label_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABA3/6r2/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2R2/4ak3/9/9/8p/2R1C4/P3r3P/3ABA3/6r2/2B1K4"
+  },
+  {
+    "frame": "IMG00973",
+    "original_label_sha256": "a52e6d7a428381c19233e89730e651fd66d5e78efbc344bc02e204694f18ff57",
+    "board_label_sha256": "a8540f073f76586af97d6dd59a5c5e3bd6e75f94c2cab9d75ac54cad8b5a6065",
+    "historical_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3N/3ABA3/9/2B1K4",
+    "original_label_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3P/3ABA3/9/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3P/3ABA3/9/2B1K4"
+  },
+  {
+    "frame": "IMG00974",
+    "original_label_sha256": "2d118cfc073fcb30116879eb8cf9bdd92e8dda6365233d9875239bac56953cc7",
+    "board_label_sha256": "05959f510d5d0928bf9168f7d94a97b4ce1ef5f2977ceb8ed2c1abd3f82be763",
+    "historical_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3N/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3P/4BA3/4A4/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2r2/4ak3/9/9/8p/2R1C4/P3r3P/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00975",
+    "original_label_sha256": "e6072df0f902d2d95204e4b0f7b99b1953d27c85b7876a36b95d41960081db8b",
+    "board_label_sha256": "32c2626ea498a927211df4d6cb94cf799efb8a9fe6c2cd7f61fba55905c58a65",
+    "historical_fen": "3a2r2/4ak3/9/9/8p/2R1C4/r7N/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/4ak3/9/9/8p/2R1C4/r7P/4BA3/4A4/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2r2/4ak3/9/9/8p/2R1C4/r7P/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00976",
+    "original_label_sha256": "91917285d4762903b3d6d07c8de9868ec78e6117c69e4d91ba471939b69a368b",
+    "board_label_sha256": "9411fc6bb6d5436165aad05d69b22d55ab33c58e5cdf5582f3476632534db4b1",
+    "historical_fen": "3a2r2/4ak3/9/9/8p/2RC5/r7N/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/4ak3/9/9/8p/2RC5/r7P/4BA3/4A4/2B1K4",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a2r2/4ak3/9/9/8p/2RC5/r7P/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00977",
+    "original_label_sha256": "46485eb8613b416e175e4ca67fc9aba2a8df3fb3ccbf9d8752a5f3b51fc55ddd",
+    "board_label_sha256": "636e8e4d8d9ce0305aa91962fda444b53e2f9f5bb48c7dc775bad585b2c11dda",
+    "historical_fen": "3a2r2/4ak3/9/9/8p/2RC5/8r/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/4ak3/9/9/8p/2RC5/8r/4BA3/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a2r2/4ak3/9/9/8p/2RC5/8r/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00978",
+    "original_label_sha256": "4483e52081c7aae30e48973323e067e8e794ce294738e24c4e59ac2a8cb39da9",
+    "board_label_sha256": "be877c4b17edfc25978f9a6643e58731777f220b08134b8e0b1922a7ca6b1f15",
+    "historical_fen": "3a2r2/3Cak3/9/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/3Cak3/9/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a2r2/3Cak3/9/9/8p/2R6/8r/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00979",
+    "original_label_sha256": "550af89f78943b36cc8b78973e29ef7eed12c5e744e3587c8c3d7df30a2741ac",
+    "board_label_sha256": "160c6427b26268b496b03db945ab7ca7932273ce8d8daae7d3c3f4ca8a84ad91",
+    "historical_fen": "3a2r2/3C1k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/3C1k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a2r2/3C1k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00980",
+    "original_label_sha256": "c6efd9c7a0feb271ae08f4737d59d51a5fa30e0d26d5af0353fc801e9034da06",
+    "board_label_sha256": "a9466267d4d5f1e8a8316a30ea1f2268c4d241607837086bb1baa6ae7b43bbbf",
+    "historical_fen": "3a2r2/C4k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "original_label_fen": "3a2r2/C4k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a2r2/C4k3/5a3/9/8p/2R6/8r/4BA3/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00981",
+    "original_label_sha256": "4a48bb1c9274628e56a83ea805c5176cd7cfcb2e8cddd7d6b3caf4fa07804689",
+    "board_label_sha256": "9af5ef96673e257b25dea3c9212beb60f710e511ed6bcfe9af8f850959e16f41",
+    "historical_fen": "3a5/C4k3/5a3/9/8p/2R6/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "3a5/C4k3/5a3/9/8p/2R6/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a5/C4k3/5a3/9/8p/2R6/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00982",
+    "original_label_sha256": "6f8dd1c5cfa0279c5d1fc9a597e1752a242cbd0e1fb25c2bf96e264ad4b7f7fe",
+    "board_label_sha256": "df30a5826d9f714063619ffb953b107ac332d5806bdc525562c638e5a2f46213",
+    "historical_fen": "3a5/C1R2k3/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "3a5/C1R2k3/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a5/C1R2k3/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00983",
+    "original_label_sha256": "ee70c8a3620b77944755b2ade47b8f347a8d3e3c055a946fb295657e992b3ceb",
+    "board_label_sha256": "4b3676b69831581e31dea2491fc9b1dc051077a663e9d5d9fe0544253341e2f2",
+    "historical_fen": "3a1k3/C1R6/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "3a1k3/C1R6/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a1k3/C1R6/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00984",
+    "original_label_sha256": "087a1e629e1a5dfbaf27f2097c3ed7b9f4532c36f1545ba0e1f3675732cd4164",
+    "board_label_sha256": "b5f7e331bc1980bf0ca8d437501d232d9bb112d7706f6c0c0abd0c33ad0a81f5",
+    "historical_fen": "2Ra1k3/C8/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "2Ra1k3/C8/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C8/5a3/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00985",
+    "original_label_sha256": "d62fc14f73d84655b2f2233d137fa0c0aa529e395dd327d2100fa8a4497c1943",
+    "board_label_sha256": "dab149bf43479d4c280b56c67706cf68fdc74925988d5b0ce70105e6f97b80d4",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00986",
+    "original_label_sha256": "d0a093bc7f6aeb4cb4d5ca871ebb976ff6d1c3aead22d62d378bfefaaf8b915f",
+    "board_label_sha256": "5937db533c8194053d4b835a993a6aa6e1b60123cadc7a0617f4bbd6add22f19",
+    "historical_fen": "C1Ra1k3/4a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "C1Ra1k3/4a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "C1Ra1k3/4a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00987",
+    "original_label_sha256": "36c203ba58d93d566373f20251c9743d6dd6a8c3d36a30ff30b7be7ec5d49f74",
+    "board_label_sha256": "2e6ec2dbaf71d0524f7befd8c4d1bbbe2b428793dcc5c68a8c7827ef2c64a990",
+    "historical_fen": "C1Ra5/4ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "C1Ra5/4ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "C1Ra5/4ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00988",
+    "original_label_sha256": "37178d68c1f5c5e5bbb06f4041fa538a47c539ab64d2d18233e4d6d5558a8dfc",
+    "board_label_sha256": "cb9336971b7ef0ce5ebb2576f8f6e5d7f4c1578cf1bb3b2959b919aa9cc7dbf9",
+    "historical_fen": "2Ra5/C3ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "2Ra5/C3ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra5/C3ak3/9/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00989",
+    "original_label_sha256": "cbde5da852ffd5bb87005c4ea3dbd910ea48d2b8a48f28807240995443554060",
+    "board_label_sha256": "2854f4d2d8aed734ece239162f3f8a0deff9defb30b9f8ed8b2e6a90e0c6aded",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2B1K4"
+  },
+  {
+    "frame": "IMG00990",
+    "original_label_sha256": "6d87b6bfd21b31844d7e4c9ced18c09182b8b9064dba97f36eea78fd039a0675",
+    "board_label_sha256": "b737761cb449fc41e14d54d76140d660b569425876b8d09101b1a3ecd3764f48",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2BK5",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2BK5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/8r/4BAr2/4A4/2BK5"
+  },
+  {
+    "frame": "IMG00991",
+    "original_label_sha256": "bb2882e8b2a06bdd273c7a097d1925e1b3f8acacb262438cdcb1114148109f88",
+    "board_label_sha256": "03fa07daf42a53cd6c6e2543dc6a0b23c423d1ba5547fc8c78741fb0c2061a71",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/4A4/2BK4r",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/4A4/2BK4r",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/4A4/2BK4r"
+  },
+  {
+    "frame": "IMG00992",
+    "original_label_sha256": "51eb7e0cd7b95582ae5fe82f74944d253cc64ec9f2a5682f7c26c89b53a4fa48",
+    "board_label_sha256": "0c60098fba32e303f8c4f39534d78a1bea4e49bfd1e1e71a0314ba5488613266",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/3KA4/2B5r",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/3KA4/2B5r",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/9/4BAr2/3KA4/2B5r"
+  },
+  {
+    "frame": "IMG00993",
+    "original_label_sha256": "eb3f014f4392a090d232638113ad3174c8ae75133eb54b5f8b4a8342a3569075",
+    "board_label_sha256": "4a6f9ebe260a19257d6e6023b493e40360252d98f56472be65fde973300aa2ff",
+    "historical_fen": "2Ra1k3/C3a4/9/9/8p/9/6r2/4BB3/3KA4/2B5r",
+    "original_label_fen": "2Ra1k3/C3a4/9/9/8p/9/6r2/4BA3/3KA4/2B5r",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Ra1k3/C3a4/9/9/8p/9/6r2/4BA3/3KA4/2B5r"
+  },
+  {
+    "frame": "IMG00994",
+    "original_label_sha256": "6db4787da080c4c3a7580bb4d19d22c0232d54f70206fb8fd914e387d95a4dcc",
+    "board_label_sha256": "c2d3576b0a8efc9d23602e32aaf4dd2fcb5671138637a43041add1e99e7665ae",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/6r2/C3BA3/3KA4/2B5r",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/6r2/C3BA3/3KA4/2B5r",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/6r2/C3BA3/3KA4/2B5r"
+  },
+  {
+    "frame": "IMG00995",
+    "original_label_sha256": "5254bf9e2c8f03a0127d6fdb1fdeebf1f3ca9a095e4022ef87ca698ea97398c3",
+    "board_label_sha256": "0145db37dac3b4c9e9fdcbfb00557b96ca0e53e007905e579378fb1feaf08270",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/C3BA3/3KA4/2B5r",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/C3BA3/3KA4/2B5r",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/C3BA3/3KA4/2B5r"
+  },
+  {
+    "frame": "IMG00996",
+    "original_label_sha256": "b9e2073771a4f579810b97ef8bf70df0ad04cd7cf9ee407572d8b598541e6365",
+    "board_label_sha256": "1fd908f449955ce80517b60484db404fa75278b4df11c7657c8e04d6eefdf20d",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA4/2B5r",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA4/2B5r",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA4/2B5r"
+  },
+  {
+    "frame": "IMG00997",
+    "original_label_sha256": "be80f1c586216a56d89a6d64b8a5a9a0031256f5ec62a6b31a60eabcf09573d8",
+    "board_label_sha256": "21d4f25a23520c6c3645f9aca6bf7bc7b9fb9166044eef6d3e9d66156c96a85b",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA3r/2B6",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA3r/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/3r5/3CBA3/3KA3r/2B6"
+  },
+  {
+    "frame": "IMG00998",
+    "original_label_sha256": "9e70bd2c6eb534cd9d91575efa06d1041cc5addc4521fa45c5adf416c82f1afe",
+    "board_label_sha256": "5fdceb767032703963b782980e3a43f962aa3cdc5a22bd5310d996a86d51e192",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2BK5",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2BK5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2BK5"
+  },
+  {
+    "frame": "IMG00999",
+    "original_label_sha256": "b775f5f32a6df8a99dd3108d87ec09fca09939c65d2a444bc34e0eb9eea29dc2",
+    "board_label_sha256": "fff3d669d4caf3171a1ca6018335f7fdc6771804136978824fb8bd0edf543a64",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2BK5",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2BK5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2BK5"
+  },
+  {
+    "frame": "IMG01000",
+    "original_label_sha256": "fad5a6ae87dda4e97912f0cc0498a0ca8f5da73b0cca62ac2d9746fbe267460f",
+    "board_label_sha256": "47317ccb3b600dd70278f4ea3f8e106b8c80901b6c65cb8cbfa8ff73bd0700e3",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2B1K4",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/7r1/3CBA3/4A3r/2B1K4"
+  },
+  {
+    "frame": "IMG01001",
+    "original_label_sha256": "aaf987543662a2585496d9393ca27dd6e07c8fb20d371ff0295ac683b232fa0d",
+    "board_label_sha256": "8eacee3c2c0a2cb26412e91e7a5c46ae298403c4332ea58c027e4938781a1887",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2B1K2r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2B1K2r1",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/4A3r/2B1K2r1"
+  },
+  {
+    "frame": "IMG01002",
+    "original_label_sha256": "2d3098754778cbfe112361878306a57ee0cb60699ec471d51ea52d1e5cc65e9b",
+    "board_label_sha256": "ac74943af2557295b3507c5366f7673a2610ef54a5e121b6077b0e74b171fcf5",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBB3/8r/2B1KA1r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/8r/2B1KA1r1",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/8r/2B1KA1r1"
+  },
+  {
+    "frame": "IMG01003",
+    "original_label_sha256": "37661360951eb78d1d2f29d8eae0fa881bc3cfb3942c96bdd5378353c537020f",
+    "board_label_sha256": "aef849023e7a06609d01a489939f72369fea5e4105d7ab13215dca8bbe46addb",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBB3/3r5/2B1KA1r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/3r5/2B1KA1r1",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CBA3/3r5/2B1KA1r1"
+  },
+  {
+    "frame": "IMG01004",
+    "original_label_sha256": "b5d9e3f308d619c91c641d684821f24c8aec03b7a5bd2c27f121fb15ae05440b",
+    "board_label_sha256": "2f7059a45c52c3e9792a904ff350caf224e554d59b43cb86321472c2ab7f4db3",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CB4/3rA4/2B1KA1r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CB4/3rA4/2B1KA1r1",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3CB4/3rA4/2B1KA1r1"
+  },
+  {
+    "frame": "IMG01005",
+    "original_label_sha256": "edbe1e72408933e418ba33df8d4d2965f185c43b4aa90f6d900828a8563276dc",
+    "board_label_sha256": "fd461a6c5b50ec7993bdf3f4fc06ff91b43aad5ccf39fa6c77f4a095eb055f48",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3rB4/4A4/2B1KA1r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3rB4/4A4/2B1KA1r1",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3rB4/4A4/2B1KA1r1"
+  },
+  {
+    "frame": "IMG01006",
+    "original_label_sha256": "8ca1343c37900d7539bed61dbb3c86262d2308a9013d93a1ab9c358f6c7747ab",
+    "board_label_sha256": "afad87d6d480833f4bdc42161338011113bec4da56a21c3c99a7a2de4c99d969",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1KA1r1",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1KA1r1",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1KA1r1"
+  },
+  {
+    "frame": "IMG01007",
+    "original_label_sha256": "ddaafe7c41ed094ee841c5d20c7009acbee276579edb2fd4c4e01e4dc24024ba",
+    "board_label_sha256": "3f357f840dc95aef1bd4b6870f88cd1724a7e09f5482a50cb4be40fb6d10fb00",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1Kr3",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1Kr3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/9/2B1Kr3"
+  },
+  {
+    "frame": "IMG01008",
+    "original_label_sha256": "ccb0c224a0fd18c1a9fa906d1b23354dac2a0963c72292972825d40f28e888cd",
+    "board_label_sha256": "31b33701d44bdadc972d1784ca776983a1b25d29e4bc8953b1c134f7a2afb2ba",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2B2r3",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2B2r3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2B2r3"
+  },
+  {
+    "frame": "IMG01009",
+    "original_label_sha256": "c2e245014e863deae66250d3563892a94cb8856fc2fc1b8cee46fe46e22faaa3",
+    "board_label_sha256": "da144626f4345929db9dd045fa2fd02eaeb2f27ba268f5111761fb51bead9b1a",
+    "historical_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2Br5",
+    "original_label_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2Br5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "2Ra1k3/4a4/9/9/8p/9/9/3AB4/4K4/2Br5"
+  },
+  {
+    "frame": "IMG01010",
+    "original_label_sha256": "9c87cd3bf3ee9d109ecb166a515015e017f9e6ccbb08390cabc245ca5f8566c8",
+    "board_label_sha256": "d0968c4faf4674f7850120e1a1014e9d6944f43a58e97dfaa57ffa683f7715b1",
+    "historical_fen": "3a1k3/4a4/9/9/8p/2R6/9/3AB4/4K4/2Br5",
+    "original_label_fen": "3a1k3/4a4/9/9/8p/2R6/9/3AB4/4K4/2Br5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a1k3/4a4/9/9/8p/2R6/9/3AB4/4K4/2Br5"
+  },
+  {
+    "frame": "IMG01011",
+    "original_label_sha256": "aa8d61e5d20c81931aa97c0f95f7f5e00412a72aa5a9d40c9646911c32486811",
+    "board_label_sha256": "639c6505fc04dc2fe6ba122c384a78c8e58d2ea464529f70d2e41217de268db2",
+    "historical_fen": "3a1k3/4a4/9/9/8p/2R6/9/3rB4/4K4/2B6",
+    "original_label_fen": "3a1k3/4a4/9/9/8p/2R6/9/3rB4/4K4/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a1k3/4a4/9/9/8p/2R6/9/3rB4/4K4/2B6"
+  },
+  {
+    "frame": "IMG01012",
+    "original_label_sha256": "d93adb6f1cc2ce7cd45912e77b66c055c9ea9236c6d49f837ecee7a6217d8cfa",
+    "board_label_sha256": "4c1ac3c1574be1fef0d92b82f500676d618a11015f3d5c2cf4f1971b59af6575",
+    "historical_fen": "3a1k3/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6",
+    "original_label_fen": "3a1k3/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3a1k3/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6"
+  },
+  {
+    "frame": "IMG01013",
+    "original_label_sha256": "54392112eaae9c4496f147f96bd1748b8a8e6c140eac10c4a6c46abef45ba31e",
+    "board_label_sha256": "c1153ff23d559aabbf073446141d0b6af158ca6bdee847508aa522fe1a4ed7bd",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/4K4/2B6"
+  },
+  {
+    "frame": "IMG01014",
+    "original_label_sha256": "4fcebfd0a2a4cab88082213166e25542b4610fe41fba3ad9e7203978426b796c",
+    "board_label_sha256": "cc2a1c8a96920babe870be51d616ee5ea057197510bdff6e57309c5bd60b2127",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/5K3/2B6",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/5K3/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/9/3rB4/5K3/2B6"
+  },
+  {
+    "frame": "IMG01015",
+    "original_label_sha256": "659490bbddc66b3ada54f7035aefcff3890e163f28a87971afc61353b8fb6b21",
+    "board_label_sha256": "fc828dbd09a4b20c8c0c901eb79b2a88058583c68c4dbc419cef9e82333ac851",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6"
+  },
+  {
+    "frame": "IMG01016",
+    "original_label_sha256": "5897609d31f06493fbd52b3038c237debb248e4465dd047c7b97c5de2f0c5bb5",
+    "board_label_sha256": "abfe5143fec0cbd15cff81c38f31270bc9d8aa54dd5b9e29f680aabdebe0ecbc",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/5K3/2B6"
+  },
+  {
+    "frame": "IMG01017",
+    "original_label_sha256": "257de24d84506c3bc62bd03482f80148e28d5868c6b71a95cb92cca8208a418a",
+    "board_label_sha256": "3cf8d13c455f38871f44c551665a34be01b21540431fc941cfd781ab88a1a5c3",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/9/2B2C3",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/9/2B2K3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/3r5/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01018",
+    "original_label_sha256": "8554d939b2b435530e2807d458abff411f3b6aee9589bfc7a44692d8f0dc4c17",
+    "board_label_sha256": "7ced92807aba6c6a7d1ff341f72eb3fecc3de01e841e56b145b172dbe00fee7e",
+    "historical_fen": "3ak4/4a4/9/9/8p/5R3/8r/4B4/9/2B2C3",
+    "original_label_fen": "3ak4/4a4/9/9/8p/5R3/8r/4B4/9/2B2K3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3ak4/4a4/9/9/8p/5R3/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01019",
+    "original_label_sha256": "9b922fbc00194f03eada185f0f500502b4d4e85bc37a8441a17c6dd7c14a2db3",
+    "board_label_sha256": "c9544714afee254a7f864731877039a954b75fb2d36c5b2a951ee278d2b25667",
+    "historical_fen": "3ak4/4a4/9/5R3/8p/9/8r/4B4/9/2B2K3",
+    "original_label_fen": "3ak4/4a4/9/5R3/8p/9/8r/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/5R3/8p/9/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01020",
+    "original_label_sha256": "98e8c5f220108b7140a6ee6a3c9514f57ff336125d90c1db4f9256dd645ac382",
+    "board_label_sha256": "e6331b47ff07a13791d4ed77607e05ded3e7ddde91b4cc67c9c25c5b30b0f99d",
+    "historical_fen": "3ak4/4a4/9/8R/8p/9/8r/4B4/9/2B2K3",
+    "original_label_fen": "3ak4/4a4/9/8R/8p/9/8r/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/8R/8p/9/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01021",
+    "original_label_sha256": "ac775bbd300071ccb140bec59898a4102880ee0adce36cea22124813d1063729",
+    "board_label_sha256": "93a37a149e0346cf6e229942a36ea41387676b3dd5814bd085a4ee798a911a4f",
+    "historical_fen": "3ak4/4a4/9/8R/9/8p/8r/4B4/9/2B2K3",
+    "original_label_fen": "3ak4/4a4/9/8R/9/8p/8r/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak4/4a4/9/8R/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01022",
+    "original_label_sha256": "20c785003d4af30eb29a588d0aeea2ad23abe958696b9a20d029d12581abd92b",
+    "board_label_sha256": "9b8d079b426600fae5ccba28a2b6f69676c07e9140aa93056b842a6f8d128bca",
+    "historical_fen": "3ak3R/4a4/9/9/9/8p/8r/4B4/9/2B2K3",
+    "original_label_fen": "3ak3R/4a4/9/9/9/8p/8r/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3ak3R/4a4/9/9/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01023",
+    "original_label_sha256": "9e0192296ddc2799fb2637ca99ee2357d8f4bca638d79d90d20f834864fe9c5f",
+    "board_label_sha256": "19c00b046491ec4c31fd2788ce3aba3138ff3d0a6e4444da4f17e5f22e523eeb",
+    "historical_fen": "3aka2R/9/9/9/9/8p/8r/4B4/9/2B2K3",
+    "original_label_fen": "3aka2R/9/9/9/9/8p/8r/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3aka2R/9/9/9/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01024",
+    "original_label_sha256": "d6e70647558a9ee5633b63cdc4fc429eee780807347e9a67ff5fd802d33ccabe",
+    "board_label_sha256": "0bee64cad5f7fcca801369aa6630eb9184d6f1331c14302abb127247d4433a11",
+    "historical_fen": "3akR3/9/9/9/9/8p/8r/4B4/9/2B2C3",
+    "original_label_fen": "3akR3/9/9/9/9/8p/8r/4B4/9/2B2K3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3akR3/9/9/9/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01025",
+    "original_label_sha256": "21fa3623d4d9806c1ddf94e4f2228941b8b90c4c631be2a58f2faa6100e5bf9d",
+    "board_label_sha256": "52b012eeadb6f2e4680073eb844552b18e872d308e22c668b2b466c72196fce6",
+    "historical_fen": "3a1R3/4k4/9/9/9/8p/8r/4B4/9/2B2C3",
+    "original_label_fen": "3a1R3/4k4/9/9/9/8p/8r/4B4/9/2B2K3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3a1R3/4k4/9/9/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01026",
+    "original_label_sha256": "15bf1e039ab208fd61db1384e31c1daf4396157fb8626dec2699f352684bc627",
+    "board_label_sha256": "bfc197036a709690b235023427b68ae2ff684ea4d78d79c9464dfaa556f0faaf",
+    "historical_fen": "3R5/4k4/9/9/9/8p/8r/4B4/9/2B2C3",
+    "original_label_fen": "3R5/4k4/9/9/9/8p/8r/4B4/9/2B2K3",
+    "changed": true,
+    "changed_cells": 1,
+    "retained_missing_fen": "3R5/4k4/9/9/9/8p/8r/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01027",
+    "original_label_sha256": "4c669e17f716544597c19715abf623f9e2d52b685ea700360bfe41d4f3406c3b",
+    "board_label_sha256": "fcc155acb83366e96a456f7f9dc25956b9c03757d5b5d58dd9e6da8b8c6001fa",
+    "historical_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B2K3",
+    "original_label_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B2K3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B2K3"
+  },
+  {
+    "frame": "IMG01028",
+    "original_label_sha256": "90cbf69eaac51d3ba85a8e77be3399f93048a1cbeafb2c8c204787891533dff6",
+    "board_label_sha256": "8983698a7920e3c881e07f8dc1ee577820515feafe549204e8b60cb75ce5b3d6",
+    "historical_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B1K4",
+    "original_label_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3R5/4k4/9/9/9/8p/5r3/4B4/9/2B1K4"
+  },
+  {
+    "frame": "IMG01029",
+    "original_label_sha256": "539e4cc7cdcaff9e359cc07814a4e81fb72ed0b7360fe79670de27a126d08681",
+    "board_label_sha256": "6410feb9ac5da53c1bdc11fa2df64dce04d5e043b8350c2cf92da6b332ea0e4b",
+    "historical_fen": "3R5/4k4/9/9/9/9/5r2p/4B4/9/2B1K4",
+    "original_label_fen": "3R5/4k4/9/9/9/9/5r2p/4B4/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "3R5/4k4/9/9/9/9/5r2p/4B4/9/2B1K4"
+  },
+  {
+    "frame": "IMG01030",
+    "original_label_sha256": "170de8c8ce1c22b1dab4713968bdba43d473aff1ad31b4ab0a8bbc08e79126a6",
+    "board_label_sha256": "a00b33a7194ffe9b1fb5378b1410093a902a657a6950434de6fc8e781645fa55",
+    "historical_fen": "8R/4k4/9/9/9/9/5r2p/4B4/9/2B1K4",
+    "original_label_fen": "8R/4k4/9/9/9/9/5r2p/4B4/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "8R/4k4/9/9/9/9/5r2p/4B4/9/2B1K4"
+  },
+  {
+    "frame": "IMG01031",
+    "original_label_sha256": "6985cd912bd2bb9d2bb41eafa8a1e7a3ead861c1c78a9e63307e05349d7bdf7b",
+    "board_label_sha256": "2f9ae108156fc0cf01d58ab41975bfc58f2b9272bbcb5ef58000b73320386a92",
+    "historical_fen": "8R/4k4/9/9/9/9/5r1p1/4B4/9/2B1K4",
+    "original_label_fen": "8R/4k4/9/9/9/9/5r1p1/4B4/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "8R/4k4/9/9/9/9/5r1p1/4B4/9/2B1K4"
+  },
+  {
+    "frame": "IMG01032",
+    "original_label_sha256": "4531e3bc2d9974c8e2695339bf23af9c82e5c91ab521e40103f29d66c2ef5813",
+    "board_label_sha256": "2ad3c3909dffe390faef0b8c001d4c408d49acdbbbc955ff41beb80b1dd0b115",
+    "historical_fen": "9/4k4/9/9/9/9/5r1p1/4B4/8R/2B1K4",
+    "original_label_fen": "9/4k4/9/9/9/9/5r1p1/4B4/8R/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/9/9/5r1p1/4B4/8R/2B1K4"
+  },
+  {
+    "frame": "IMG01033",
+    "original_label_sha256": "0b87e72ac61341ae37bcfb5780c1870c1a0b38978edc7a6d564f6a9a3bab233c",
+    "board_label_sha256": "6d324a4d426e7031385fddf578e55bf080e97a05843f8c12b6397a3c24f10300",
+    "historical_fen": "9/4k4/9/9/9/9/5r3/4B2p1/8R/2B1K4",
+    "original_label_fen": "9/4k4/9/9/9/9/5r3/4B2p1/8R/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/9/9/5r3/4B2p1/8R/2B1K4"
+  },
+  {
+    "frame": "IMG01034",
+    "original_label_sha256": "efd0ff36393a02050dfc1ce65b89d46b5d530fc2fc2770b62e7757b0864bfd25",
+    "board_label_sha256": "a24221d9ea3184db4ddb78fb21edf0020da1a5acd0aafc596af087df68c7473a",
+    "historical_fen": "9/4k4/9/9/9/9/5r3/4B2p1/6R2/2B1K4",
+    "original_label_fen": "9/4k4/9/9/9/9/5r3/4B2p1/6R2/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/9/9/5r3/4B2p1/6R2/2B1K4"
+  },
+  {
+    "frame": "IMG01035",
+    "original_label_sha256": "4405de5d6a094790e25888ddb9abffdd3fac6544a25e480724e5d5be93880eb2",
+    "board_label_sha256": "65ed46b48987be4c9c70e97eafc43213df9a2919f253d630587c5102487539ec",
+    "historical_fen": "9/4k4/9/9/9/9/9/4Br1p1/6R2/2B1K4",
+    "original_label_fen": "9/4k4/9/9/9/9/9/4Br1p1/6R2/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/9/9/9/4Br1p1/6R2/2B1K4"
+  },
+  {
+    "frame": "IMG01036",
+    "original_label_sha256": "3ad43c95d4ec8d6ba2fd4b9fdc0837ef2376003c270a994511667daaa4b02fe2",
+    "board_label_sha256": "218c726c5d421607e70bc2de4709b6580e05890e31e460a63321e3cd754ce932",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4Br1p1/9/2B1K4",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4Br1p1/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4Br1p1/9/2B1K4"
+  },
+  {
+    "frame": "IMG01037",
+    "original_label_sha256": "bdb75c1d883f61ecdddd74b03fe937d993d01fcee68d5a3159cc9d2580cba096",
+    "board_label_sha256": "34348c11c0064c0c985b7cf502fcbb282c4285b34b416bc8ef8454879381fe55",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2B1K4",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2B1K4",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2B1K4"
+  },
+  {
+    "frame": "IMG01038",
+    "original_label_sha256": "b0a87052ebf30d2b3a373d71e94f58212acba0e521cd4f9c48dc5a3c5af494ef",
+    "board_label_sha256": "d1a88ec989d7e8252e1bdb50e1f1e1c8de4619f124543f1f0b034f87d2ac0501",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2BK5",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2BK5",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4Brp2/9/2BK5"
+  },
+  {
+    "frame": "IMG01039",
+    "original_label_sha256": "9f242bd5381fd37543c6f3f9e80797b61591a149504d78b12453d7520a8a6a52",
+    "board_label_sha256": "0c0fa3032645b33be782c07d831ba03c9c11e646f31282e064a9b44588cc96d7",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4B1p2/9/2BK1r3",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4B1p2/9/2BK1r3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4B1p2/9/2BK1r3"
+  },
+  {
+    "frame": "IMG01040",
+    "original_label_sha256": "7322fadefab9472dd2a94c87b4576a454b6edace461599149539a0b656d2a59b",
+    "board_label_sha256": "38b4fb926e1f9c10ca9a40468529c8f0f5841c81ed63e455801a56bef4f069ee",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4B1p2/3K5/2B2r3",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4B1p2/3K5/2B2r3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4B1p2/3K5/2B2r3"
+  },
+  {
+    "frame": "IMG01041",
+    "original_label_sha256": "1d75b1078b3efefe16c40b659a1e5bfcdd91aaea5a83e9e075a11900628e1c6b",
+    "board_label_sha256": "a1a7e8600eb7188d41c61e4db621028b56018fee2c5ed844ceb53619c185778b",
+    "historical_fen": "9/4k4/9/9/6R2/9/9/4Bp3/3K5/2B2r3",
+    "original_label_fen": "9/4k4/9/9/6R2/9/9/4Bp3/3K5/2B2r3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/9/9/4Bp3/3K5/2B2r3"
+  },
+  {
+    "frame": "IMG01042",
+    "original_label_sha256": "c667906b813afcaaac61274f994eb16e17c99c886b11c595c7247f010969a6a3",
+    "board_label_sha256": "6b5af3ea05c4b37cb2cacfc89384ac50c1cbb9dea34eaff10997e2afd672cecc",
+    "historical_fen": "9/4k4/9/9/6R2/2B6/9/5p3/3K5/2B2r3",
+    "original_label_fen": "9/4k4/9/9/6R2/2B6/9/5p3/3K5/2B2r3",
+    "changed": false,
+    "changed_cells": 0,
+    "retained_missing_fen": "9/4k4/9/9/6R2/2B6/9/5p3/3K5/2B2r3"
+  }
+]

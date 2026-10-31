@@ -1,0 +1,10 @@
+{
+  "kind": "analysis_only_not_buildable_release",
+  "hardware_run_id": "4b7d86bb5f2a4e638b43359196ea52b3",
+  "hardware_sources": "frozen c70retry; packaged soc_top.v uses CPU70 candidate clocks",
+  "software_sources": "current development tree; static analysis, not new-board deployment proof",
+  "tests_run_this_task": false,
+  "new_pnr_or_board_actions": false,
+  "skills_revision": 73,
+  "entry": "docs/Accelerator_Architecture_Call_Optimization_20261018.md"
+}

@@ -1,0 +1,19 @@
+artifacts/xiangqi_sd.elf  :
+section              size       addr
+.text               36516   16777216
+.rodata              6088   16813744
+.data                  32   16819832
+.bss                42772   16819864
+.riscv.attributes      87          0
+.debug_info          2829          0
+.debug_abbrev         864          0
+.debug_loclists      2365          0
+.debug_aranges         88          0
+.debug_rnglists       205          0
+.debug_line          2636          0
+.debug_str            762          0
+.debug_line_str       150          0
+.debug_frame           32          0
+Total               95426
+
+

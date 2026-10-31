@@ -1,0 +1,15 @@
+{
+  "0": {
+    "mode": "window",
+    "input_ddr_bytes": 409600,
+    "weight_ddr_bytes": 3456,
+    "output_ddr_bytes": 0,
+    "window_count": 25600,
+    "tap_count": 921600,
+    "stall_cycles": 0,
+    "cycles": 1342255,
+    "bitstream_sha256": "0fb855047b6e50aac2d342a13b8ad8dcf9bd07d1ebe2298b24f0e06997d17f03",
+    "test_image_sha256": "b0934764f44ac6b16012188035d1bcab3873f24b77f77bf07395b62668b821fc",
+    "marker": "CONV_CASE_PASS id=3"
+  }
+}

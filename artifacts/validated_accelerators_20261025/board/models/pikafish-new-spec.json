@@ -1,0 +1,15 @@
+[
+  {
+    "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 /usr/bin/pikafish-nnue-latency-clint",
+    "timeout": 240,
+    "markers": [
+      "NNUE_LATENCY_CORRECTNESS_PASS",
+      "NNUE_DEDICATED_CACHE",
+      "NNUE_BATCH_BREAKDOWN"
+    ],
+    "allowed_exit": [
+      0,
+      2
+    ]
+  }
+]

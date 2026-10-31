@@ -1,0 +1,3 @@
+This source export failed its generated RTL/source manifest check.
+It is not a verified candidate and must not be packaged or programmed.
+The fresh capture / paired Emit / record retry uses cpu-source-alu-v2.

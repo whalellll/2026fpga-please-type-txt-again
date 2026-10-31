@@ -1,0 +1,75 @@
+
+/ # ps; free; dmesg | tail -n 35; /usr/bin/pikafish-batch-check; printf "\n__CVB
+_END_0__:%s\n" "$?"
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-eve]
+    6 root     [kworker/0:0H-ev]
+    7 root     [kworker/u2:0-ev]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [kdevtmpfs]
+   14 root     [netns]
+   15 root     [inet_frag_wq]
+   16 root     [oom_reaper]
+   17 root     [writeback]
+   18 root     [kcompactd0]
+   19 root     [kblockd]
+   20 root     [kswapd0]
+   21 root     [kworker/0:1-mm_]
+   22 root     [kworker/0:1H]
+   24 root     [khvcd]
+   25 root     [mld]
+   26 root     [ipv6_addrconf]
+   27 root     [kworker/u2:2-ev]
+   44 root     /sbin/syslogd -n
+   48 root     /sbin/klogd -n
+   74 root     /bin/sh --
+  144 root     ps
+              total        used        free      shared  buff/cache   available
+Mem:         307788       12560      260608          36       34620      257716
+Swap:             0           0           0
+[    1.304982] NET: Registered PF_INET protocol family
+[    1.318508] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.389299] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+[    1.400997] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    1.413174] TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    1.426472] TCP: Hash tables configured (established 4096 bind 4096)
+[    1.438278] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.448185] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.464506] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.532977] Unpacking initramfs...
+[    1.760354] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    2.276060] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    2.284382] io scheduler mq-deadline registered
+[    2.289266] io scheduler kyber registered
+[    8.500844] 1fe001e0.serial: ttyLXU0 at MMIO 0x0 (irq = 0, base_baud = 0) is a liteuart
+[    8.511557] printk: console [liteuart0] enabled
+[    8.521334] printk: bootconsole [liteuart0] disabled
+[    9.801659] pango-mac 1fe10000.mac-accel: dense MAC scheduler ready: /dev/pango-mac0, 8 private contexts of 1048576 bytes
+[    9.852951] pango-audio 1fe00600.audio-capture: I2S capture ready: /dev/pango-audio0, 16000 Hz mono s16le, polling
+[    9.923835] i2c /dev entries driver
+[   10.024828] NET: Registered PF_INET6 protocol family
+[   10.228538] Segment Routing with IPv6
+[   10.236833] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[   10.279712] NET: Registered PF_PACKET protocol family
+[   19.048117] Freeing initrd memory: 32676K
+[   19.082210] Freeing unused kernel image (initmem) memory: 212K
+[   19.089640] Kernel memory protection not selected by kernel config.
+[   19.097201] Run /init as init process
+[   19.100974]   with arguments:
+[   19.104095]     /init
+[   19.105666]   with environment:
+[   19.109445]     HOME=/
+[   19.111955]     TERM=linux
+[   27.548302] random: dd: uninitialized urandom read (512 bytes read)
+[   30.491822] Linux userspace initialized; root shell next
+PIKAFISH_BATCH_CAPABILITY_PASS id=50464e31 features=00007de7
+
+__CVB_END_0__:0

@@ -1,0 +1,10 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; tail -16 gui-verify.log; printf \"XQ_STATUS\\n\" > /run/voice-display.in; sleep 2; tail -6 gui-verify.log",
+    "exit": 0
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; printf \"XQ_NEWGAME\\nXQ_MOVE h2e2\\n\" > /run/voice-display.in; n=0; until grep -q \"INJECT MOVE_PASS\\|INJECT MOVE_FAIL\" gui-verify.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 90 || break; done; tail -32 gui-verify.log; grep -q \"INJECT MOVE_PASS\" gui-verify.log",
+    "exit": 0
+  }
+]

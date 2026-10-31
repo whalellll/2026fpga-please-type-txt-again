@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "status": "GUI_LIGHT_SOFTWARE_CANDIDATE_NOT_BOARD_VERIFIED",
+  "source_parent": "9d15fef9de571b3ab4d9e47ec04a2f9b88540abd",
+  "source_files": {
+    "linux/pikafish/xiangqi_fb_gui_1080.c": "8eb92278cee2be4475c7ad6ed7959377fc4ac7ae3e7a91c7a39a7295d861c430",
+    "linux/pikafish/xiangqi_gui_theme.h": "3549bee1db43f422889d785846c8f72269d3471088799b1cd0c2c43e1633c7c7",
+    "linux/pikafish/build_voice_display_gui.sh": "41039922651235b422b7fc8d86559e1d549f95037176ab6a2996755b41c76788",
+    "linux/pikafish/relink_gui_display.sh": "cd6880ad9274951e26701930b230adc7207db975717a4f045f8a02e8eb865107",
+    "scripts/compile_gui1080_rv32.sh": "73fc13d5cef3ce9497676fceaa230fa8942e6aedf86c23a552c064a911f7e371",
+    "scripts/validate_gui1080.py": "97cc21a8bf8f9e9bc81bf39aa19dd1762de8460e0525c38b2eb3f444e7a3fadd"
+  },
+  "gui_elf_sha256": "583c94b4b60e508933b18d0d267e9054a13d5ac7e84f7559e1f3b7ad5998e448",
+  "gui_elf_bytes": 2116688,
+  "theme": "light",
+  "default_theme": "dark",
+  "font_and_layout": "UNCHANGED",
+  "previous_dark_raster": "PIXEL_IDENTICAL_NORMAL_AND_VOICE",
+  "checks": [
+    "light and dark 48 dirty/full rounds",
+    "word-store reference match in both themes",
+    "90 mouse hit squares",
+    "24 voice tokens",
+    "light RV32 objects and full static link"
+  ],
+  "hardware_changes": false,
+  "board": "NOT_RUN",
+  "remote_pushed": false,
+  "hardware_1080p_native_sta": "STILL_PENDING",
+  "performance": "Not measured on board"
+}

@@ -1,0 +1,592 @@
+{
+    "schema":  1,
+    "kind":  "reviewed-sta-scope-baseline",
+    "source_release":  "V6.1",
+    "source_run_id":  "6e934e9f84094159bff9a8870e260e8e",
+    "source_xml_sha256":  "77662d2b7d6d55f954e553f2298671721fbbe0650987274b17ee330ad91c6507",
+    "scope_note":  "Preserve and disclose existing external I/O timing gaps; this policy does not constitute board interface acceptance. Any new gap requires explicit review.",
+    "clocks":  {
+                   "free_clk":  {
+                                    "type":  "Declared",
+                                    "period_ns":  "37.0370",
+                                    "source":  "",
+                                    "target":  "{ free_clk }"
+                                },
+                   "ref_clk":  {
+                                   "type":  "Declared",
+                                   "period_ns":  "8.0000",
+                                   "source":  "",
+                                   "target":  "{ ref_clk_p }"
+                               },
+                   "rst_clk":  {
+                                   "type":  "Generated",
+                                   "period_ns":  "8.0000",
+                                   "source":  "ref_clk",
+                                   "target":  "{ I_ips_ddr_top/u_ddrphy_top/rst_clk_gpll/u_gpll/gpll_inst/CLKOUT0 }"
+                               },
+                   "ddrphy_sysclk":  {
+                                         "type":  "Generated",
+                                         "period_ns":  "8.0000",
+                                         "source":  "ref_clk",
+                                         "target":  "{ I_ips_ddr_top/u_ddrphy_top/ddrphy_gpll/u_gpll/gpll_inst/CLKOUT0 }"
+                                     },
+                   "phy_dq_clk_0":  {
+                                        "type":  "Generated",
+                                        "period_ns":  "1.0000",
+                                        "source":  "ref_clk",
+                                        "target":  "{ I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_bank[0].ddrphy_ppll/u_ppll/ppll_inst/CLKOUTPHY }"
+                                    },
+                   "phy_dq_sysclk_0":  {
+                                           "type":  "Generated",
+                                           "period_ns":  "8.0000",
+                                           "source":  "phy_dq_clk_0",
+                                           "target":  "{ I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_bank[0].u_ddrphy_ioclkdiv/ddrphy_ioclk_div_inst/CLKOUT }"
+                                       },
+                   "phy_dq_clk_1":  {
+                                        "type":  "Generated",
+                                        "period_ns":  "1.0000",
+                                        "source":  "ref_clk",
+                                        "target":  "{ I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_bank[1].ddrphy_ppll/u_ppll/ppll_inst/CLKOUTPHY }"
+                                    },
+                   "phy_dq_sysclk_1":  {
+                                           "type":  "Generated",
+                                           "period_ns":  "8.0000",
+                                           "source":  "phy_dq_clk_1",
+                                           "target":  "{ I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_bank[1].u_ddrphy_ioclkdiv/ddrphy_ioclk_div_inst/CLKOUT }"
+                                       },
+                   "camera2_pclk":  {
+                                        "type":  "Declared",
+                                        "period_ns":  "10.0000",
+                                        "source":  "",
+                                        "target":  "{ cmos2_pclk }"
+                                    },
+                   "rgmii_rxc":  {
+                                     "type":  "Declared",
+                                     "period_ns":  "8.0000",
+                                     "source":  "",
+                                     "target":  "{ rgmii_rxc }"
+                                 },
+                   "rgmii_txc":  {
+                                     "type":  "Declared",
+                                     "period_ns":  "8.0000",
+                                     "source":  "",
+                                     "target":  "{ rgmii_txc }"
+                                 },
+                   "pix_clk":  {
+                                   "type":  "Declared",
+                                   "period_ns":  "13.4680",
+                                   "source":  "",
+                                   "target":  "{ u_video_pll/u_gpll/gpll_inst/CLKOUT0 }"
+                               },
+                   "sys_clk":  {
+                                   "type":  "Declared",
+                                   "period_ns":  "20.2020",
+                                   "source":  "",
+                                   "target":  "{ u_video_pll/u_gpll/gpll_inst/CLKOUT1 }"
+                               },
+                   "sd_native_clk":  {
+                                         "type":  "Generated",
+                                         "period_ns":  "40.4040",
+                                         "source":  "sys_clk",
+                                         "target":  "{ sd_clk }"
+                                     },
+                   "camera1_sccb_clk":  {
+                                            "type":  "Generated",
+                                            "period_ns":  "99999.9000",
+                                            "source":  "sys_clk",
+                                            "target":  "{ u_dual_ov5640/camera1_register_init_inst/sccb_clock/opit_0_inv/Q }"
+                                        },
+                   "camera2_sccb_clk":  {
+                                            "type":  "Generated",
+                                            "period_ns":  "99999.9000",
+                                            "source":  "sys_clk",
+                                            "target":  "{ u_dual_ov5640/camera2_register_init_inst/sccb_clock/opit_0_inv/Q }"
+                                        },
+                   "i2c_cfg_clk":  {
+                                       "type":  "Declared",
+                                       "period_ns":  "141.4300",
+                                       "source":  "",
+                                       "target":  "{ u_video_pll/u_gpll/gpll_inst/CLKOUT2 }"
+                                   },
+                   "cpu_clk":  {
+                                   "type":  "Declared",
+                                   "period_ns":  "16.8350",
+                                   "source":  "",
+                                   "target":  "{ g_dedicated_cpu.u_cpu_pll/u_gpll/gpll_inst/CLKOUT3 }"
+                               }
+               },
+    "check_timing_summary":  {
+                                 "no_clock":  0,
+                                 "virtual_clock":  1,
+                                 "unexpandable_clocks":  0,
+                                 "no_input_delay":  61,
+                                 "no_output_delay":  128,
+                                 "partial_input_delay":  0,
+                                 "partial_output_delay":  0,
+                                 "io_min_max_delay_consistency":  0,
+                                 "input_delay_assigned_to_clock":  0,
+                                 "loops":  0,
+                                 "latch_loops":  0,
+                                 "latchs":  0
+                             },
+    "unconstrained_port_messages":  [
+                                        "Timing-4086: Port \u0027ch9350_uart_rx\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos1_sda\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[0]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[1]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[2]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[3]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[4]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[5]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[6]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_data[7]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_href\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_sda\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027cmos2_vsync\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027hd_sda\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[0]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[10]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[11]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[12]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[13]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[14]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[15]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[16]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[17]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[18]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[19]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[1]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[20]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[21]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[22]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[23]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[24]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[25]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[26]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[27]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[28]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[29]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[2]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[30]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[31]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[3]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[4]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[5]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[6]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[7]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[8]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027mem_dq[9]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027microphone_sd\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rgmii_rx_ctl\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rgmii_rxd[0]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rgmii_rxd[1]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rgmii_rxd[2]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rgmii_rxd[3]\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027rst_board\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_cmd\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_data0\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_data1\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_data2\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_data3\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027sd_detect_n\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027spi_dq1\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4086: Port \u0027uart_rxd\u0027 is not constrained, it is treated as combinational input.",
+                                        "Timing-4087: Port \u0027audio_bclk\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027audio_ws\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[4]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[5]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[6]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027b_out[7]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027ch9350_uart_tx\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos1_reset\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos1_scl\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos1_sda\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos2_reset\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos2_scl\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027cmos2_sda\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027de_out\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[4]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[5]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[6]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027g_out[7]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027hd_scl\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027hd_sda\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027hdmi_init_done\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027hs_out\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[10]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[11]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[12]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[13]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[14]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[4]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[5]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[6]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[7]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[8]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_a[9]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ba[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ba[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ba[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_cas_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ck\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ck_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_cke\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_cs_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dm[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dm[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dm[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dm[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[10]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[11]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[12]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[13]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[14]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[15]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[16]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[17]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[18]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[19]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[20]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[21]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[22]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[23]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[24]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[25]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[26]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[27]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[28]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[29]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[30]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[31]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[4]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[5]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[6]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[7]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[8]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dq[9]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs_n[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs_n[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs_n[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_dqs_n[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_odt\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_ras_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_rst_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027mem_we_n\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027phy_rstn\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027pixclk_out\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[4]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[5]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[6]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027r_out[7]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027rgmii_tx_ctl\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027rgmii_txd[0]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027rgmii_txd[1]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027rgmii_txd[2]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027rgmii_txd[3]\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027sd_cmd\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027sd_data0\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027sd_data1\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027sd_data2\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027sd_data3\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027spi_cs\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027spi_dq0\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027spk_din\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027uart_txd\u0027 is not constrained, it is treated as combinational output.",
+                                        "Timing-4087: Port \u0027vs_out\u0027 is not constrained, it is treated as combinational output."
+                                    ],
+    "exception_directives":  [
+                                 "set_multicycle_path 2 -from [get_clocks ddrphy_sysclk] -to [get_clocks phy_dq_sysclk_0]",
+                                 "set_multicycle_path 2 -from [get_clocks ddrphy_sysclk] -to [get_clocks phy_dq_sysclk_1]",
+                                 "set_clock_uncertainty {0.4} -from [get_clocks {ddrphy_sysclk}] -to [get_clocks {phy_dq_sysclk_0}] -setup -hold",
+                                 "set_clock_uncertainty {0.4} -from [get_clocks {phy_dq_sysclk_0}] -to [get_clocks {ddrphy_sysclk}] -setup -hold",
+                                 "set_clock_uncertainty {0.4} -from [get_clocks {ddrphy_sysclk}] -to [get_clocks {phy_dq_sysclk_1}] -setup -hold",
+                                 "set_clock_uncertainty {0.4} -from [get_clocks {phy_dq_sysclk_1}] -to [get_clocks {ddrphy_sysclk}] -setup -hold",
+                                 "set_clock_groups -name free_clk -asynchronous -group [get_clocks {free_clk}]",
+                                 "set_clock_groups -name ref_clk -asynchronous -group [get_clocks {ref_clk}]",
+                                 "set_clock_groups -name rst_clk -asynchronous -group [get_clocks {rst_clk}]",
+                                 "set_clock_groups -name phy_dq_clk_0 -asynchronous -group [get_clocks {phy_dq_clk_0}]",
+                                 "set_clock_groups -name phy_dq_clk_1 -asynchronous -group [get_clocks {phy_dq_clk_1}]",
+                                 "set_clock_groups -name camera2_pclk -asynchronous -group [get_clocks {camera2_pclk}]",
+                                 "set_clock_groups -name {sys_to_camera1_sccb} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {camera1_sccb_clk}]",
+                                 "set_clock_groups -name {sys_to_camera2_sccb} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {camera2_sccb_clk}]",
+                                 "set_clock_groups -name {sys_to_hdmi} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {pix_clk}]",
+                                 "set_clock_groups -name {hdmi_to_i2c} -asynchronous -group [get_clocks {pix_clk}] -group [get_clocks {i2c_cfg_clk}]",
+                                 "set_clock_groups -name {sys_to_ddr} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {ddrphy_sysclk}]",
+                                 "set_clock_groups -name {fb_to_ddr} -asynchronous -group [get_clocks {pix_clk}] -group [get_clocks {ddrphy_sysclk}]",
+                                 "set_clock_groups -name {sys_to_rgmii} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {rgmii_rxc}]",
+                                 "set_clock_groups -name {sys_to_i2c} -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {i2c_cfg_clk}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/wr_gray_rd1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/rd_gray_wr1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/wr_gray_rd1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/rd_gray_wr1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/wr_gray_rd1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/rd_gray_wr1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/wr_gray_rd1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/rd_gray_wr1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/wr_gray_rd1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray\\[4:0\\]$}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/rd_gray_wr1\\[4:0\\]$}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_ar_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_aw_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_w_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {sys_clk}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_r_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}]",
+                                 "set_false_path -hold -from [get_cells -hierarchical -regexp {.*u_axi_cdc/u_b_fifo/storage(_[0-9_]+)?$}] -to [get_clocks {cpu_clk}]",
+                                 "set_false_path -hold -from [get_clocks {cpu_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/cpu_ready_sys\\[1:0\\]$}]",
+                                 "set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_axi_cdc/sys_ready_cpu\\[1:0\\]$}]",
+                                 "set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/timer_c1$}]",
+                                 "set_false_path -hold -from [get_clocks {sys_clk}] -to [get_cells -hierarchical -regexp {.*u_irq_sync/software_c1$}]"
+                             ],
+    "summary_clock_pairs":  {
+                                "setup":  [
+                                              [
+                                                  "camera1_sccb_clk",
+                                                  "camera1_sccb_clk"
+                                              ],
+                                              [
+                                                  "camera2_pclk",
+                                                  "camera2_pclk"
+                                              ],
+                                              [
+                                                  "camera2_sccb_clk",
+                                                  "camera2_sccb_clk"
+                                              ],
+                                              [
+                                                  "cpu_clk",
+                                                  "cpu_clk"
+                                              ],
+                                              [
+                                                  "cpu_clk",
+                                                  "sys_clk"
+                                              ],
+                                              [
+                                                  "ddrphy_sysclk",
+                                                  "ddrphy_sysclk"
+                                              ],
+                                              [
+                                                  "ddrphy_sysclk",
+                                                  "phy_dq_sysclk_0"
+                                              ],
+                                              [
+                                                  "ddrphy_sysclk",
+                                                  "phy_dq_sysclk_1"
+                                              ],
+                                              [
+                                                  "i2c_cfg_clk",
+                                                  "i2c_cfg_clk"
+                                              ],
+                                              [
+                                                  "phy_dq_sysclk_0",
+                                                  "ddrphy_sysclk"
+                                              ],
+                                              [
+                                                  "phy_dq_sysclk_1",
+                                                  "ddrphy_sysclk"
+                                              ],
+                                              [
+                                                  "pix_clk",
+                                                  "pix_clk"
+                                              ],
+                                              [
+                                                  "rgmii_rxc",
+                                                  "rgmii_rxc"
+                                              ],
+                                              [
+                                                  "rst_clk",
+                                                  "rst_clk"
+                                              ],
+                                              [
+                                                  "sys_clk",
+                                                  "cpu_clk"
+                                              ],
+                                              [
+                                                  "sys_clk",
+                                                  "sys_clk"
+                                              ]
+                                          ],
+                                "hold":  [
+                                             [
+                                                 "camera1_sccb_clk",
+                                                 "camera1_sccb_clk"
+                                             ],
+                                             [
+                                                 "camera2_pclk",
+                                                 "camera2_pclk"
+                                             ],
+                                             [
+                                                 "camera2_sccb_clk",
+                                                 "camera2_sccb_clk"
+                                             ],
+                                             [
+                                                 "cpu_clk",
+                                                 "cpu_clk"
+                                             ],
+                                             [
+                                                 "ddrphy_sysclk",
+                                                 "ddrphy_sysclk"
+                                             ],
+                                             [
+                                                 "ddrphy_sysclk",
+                                                 "phy_dq_sysclk_0"
+                                             ],
+                                             [
+                                                 "ddrphy_sysclk",
+                                                 "phy_dq_sysclk_1"
+                                             ],
+                                             [
+                                                 "i2c_cfg_clk",
+                                                 "i2c_cfg_clk"
+                                             ],
+                                             [
+                                                 "phy_dq_sysclk_0",
+                                                 "ddrphy_sysclk"
+                                             ],
+                                             [
+                                                 "phy_dq_sysclk_1",
+                                                 "ddrphy_sysclk"
+                                             ],
+                                             [
+                                                 "pix_clk",
+                                                 "pix_clk"
+                                             ],
+                                             [
+                                                 "rgmii_rxc",
+                                                 "rgmii_rxc"
+                                             ],
+                                             [
+                                                 "rst_clk",
+                                                 "rst_clk"
+                                             ],
+                                             [
+                                                 "sys_clk",
+                                                 "sys_clk"
+                                             ]
+                                         ],
+                                "recovery":  [
+                                                 [
+                                                     "camera2_pclk",
+                                                     "camera2_pclk"
+                                                 ],
+                                                 [
+                                                     "cpu_clk",
+                                                     "cpu_clk"
+                                                 ],
+                                                 [
+                                                     "ddrphy_sysclk",
+                                                     "ddrphy_sysclk"
+                                                 ],
+                                                 [
+                                                     "pix_clk",
+                                                     "pix_clk"
+                                                 ],
+                                                 [
+                                                     "rgmii_rxc",
+                                                     "rgmii_rxc"
+                                                 ],
+                                                 [
+                                                     "rst_clk",
+                                                     "rst_clk"
+                                                 ],
+                                                 [
+                                                     "sys_clk",
+                                                     "sys_clk"
+                                                 ]
+                                             ],
+                                "removal":  [
+                                                [
+                                                    "camera2_pclk",
+                                                    "camera2_pclk"
+                                                ],
+                                                [
+                                                    "cpu_clk",
+                                                    "cpu_clk"
+                                                ],
+                                                [
+                                                    "ddrphy_sysclk",
+                                                    "ddrphy_sysclk"
+                                                ],
+                                                [
+                                                    "pix_clk",
+                                                    "pix_clk"
+                                                ],
+                                                [
+                                                    "rgmii_rxc",
+                                                    "rgmii_rxc"
+                                                ],
+                                                [
+                                                    "rst_clk",
+                                                    "rst_clk"
+                                                ],
+                                                [
+                                                    "sys_clk",
+                                                    "sys_clk"
+                                                ]
+                                            ],
+                                "mpw":  [
+                                            [
+                                                "camera1_sccb_clk"
+                                            ],
+                                            [
+                                                "camera2_pclk"
+                                            ],
+                                            [
+                                                "camera2_sccb_clk"
+                                            ],
+                                            [
+                                                "cpu_clk"
+                                            ],
+                                            [
+                                                "ddrphy_sysclk"
+                                            ],
+                                            [
+                                                "i2c_cfg_clk"
+                                            ],
+                                            [
+                                                "phy_dq_clk_0"
+                                            ],
+                                            [
+                                                "phy_dq_clk_1"
+                                            ],
+                                            [
+                                                "phy_dq_sysclk_0"
+                                            ],
+                                            [
+                                                "phy_dq_sysclk_1"
+                                            ],
+                                            [
+                                                "pix_clk"
+                                            ],
+                                            [
+                                                "rgmii_rxc"
+                                            ],
+                                            [
+                                                "rst_clk"
+                                            ],
+                                            [
+                                                "sys_clk"
+                                            ]
+                                        ]
+                            }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:06:57.520144+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 300 /usr/bin/picture-new-bench board /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3",
+      "exit": 0,
+      "host_response_seconds": 89.79148009999335,
+      "required_markers": [
+        "PICTURE_TIMING model=board",
+        "output_crc=d830c1cd",
+        "no_fallback=1"
+      ]
+    }
+  ],
+  "spec_sha256": "066eb990c0f89817229bb52867ae1ae76e3c45c2d486e43d21218fefb5ae33c4",
+  "uart_sha256": "92a1acab553da855da236b4b3e13eaa5bd668213913f9b61fae9d3688a37d50c",
+  "completed_utc": "2026-10-25T05:08:27.754919+00:00"
+}

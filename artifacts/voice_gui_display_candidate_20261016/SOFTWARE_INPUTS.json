@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "Software candidate, same existing audio bitstream; not a complete boot image",
+  "files": {
+    "start_voice_display.sh": "bf3429868b58869b6071a0981df81c29b451cff3499463158dd6ce8f38184cd9",
+    "bin/xiangqi-pikafish-gui-display": "03b4e1f78a858cc9cb9fafa113438089ec479951975062d298afa7fc6772e8a4",
+    "bin/xqvoice": "b1b322981160392134f469de4141a3ad734d65174ada026273b721ec4d379db8",
+    "bin/xqvoice-send": "58399df031a1b4731ac595b56b4ea04873a9b6141fc94d3f9da72007a7a70033",
+    "models/tts-candidate.xqt": "845b9225938c5aa84b9cd55b395358da5d9bab5b45a053dd8739d9ba4504a284"
+  },
+  "source_sha256": {
+    "README.md": "122e64eafeaefde7ba5ef3402c79f3335a1fdbaeb0996fcb48820332e7526bcf",
+    "linux/pikafish/xiangqi_pikafish_gui.c": "e28070707ba94e8f3e0dddef5778a246fbce8520baae70a4f031cf62145e601a",
+    "linux/pikafish/xiangqi_fb_gui_linux.c": "938cf44ad7d2d335071bcc93e1645ba3e8a30c347d98fd098e27a4eae3143485",
+    "linux/pikafish/xqvoice_display_font.h": "43048b101f2093a154e76651f23fe7d9ef29a3de929353aa06ef53926ac6f423",
+    "linux/voice/xqvoice_daemon.c": "2ba89fff914ac1d12ef6ef74b6f6086f659d3b63f6d528495a4393a0a4feb630",
+    "linux/voice/xqvoice_client.c": "d74db652b1eb04c8521e9c041ce2a06998c1492df11bc7cbbad4e91ce8bfee55",
+    "linux/voice/xqvoice_gui_ipc.c": "f8552586b61697d1f42973f0b39fec295e11e6231713343f926b478997fca3e3",
+    "linux/voice/xqvoice_protocol.c": "52f5fce57098d0fe63eee1c320d9163e592399af16e08ab2ac149b55cd9ea328",
+    "linux/voice/xqvoice_protocol.h": "d3a7debf4873831c272c58023ae9e59de7a9317587aeb6d88dbd86f2a8995584",
+    "linux/voice/xqvoice_display.h": "19b3975a20f5492f3d5619f28887226bf2d4e10bb5a6073957a3fe0edc1aa499",
+    "linux/voice/xqvoice_send.c": "447ed075509e63bfa4d30c9117cbaa5f8b579363aaf9492995da7bf8e0f2e830",
+    "linux/voice/start_voice_display.sh": "bf3429868b58869b6071a0981df81c29b451cff3499463158dd6ce8f38184cd9",
+    "linux/pikafish/build_voice_display_gui.sh": "b7174bf021808d29003d7700cd556641aef2a6d63b5655b1edecc49cbb536671",
+    "scripts/build_xqvoice_rv32.ps1": "5395bad03f2ba7a3cff2c1933b393327d004de6edf13161772e41fc373814416",
+    "scripts/generate_voice_display_font.py": "f7d8df8f340c72f328008b3b0c8fab392a27af6ba6798a86aff478c9ef75eb2d"
+  }
+}

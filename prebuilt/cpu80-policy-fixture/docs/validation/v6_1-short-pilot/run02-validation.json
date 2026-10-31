@@ -1,0 +1,38 @@
+{
+  "status": "PILOT_PASS_NOT_A_SCORE",
+  "kind": "pilot",
+  "seed_mode": "validation",
+  "iterations": 10,
+  "iteration_policy": "fixed_iterations",
+  "build_manifest_fixed_iterations": 10,
+  "ticks": 1660157,
+  "cpu_hz": 59400000,
+  "sys_hz": 49500000,
+  "timebase_hz": 49500000,
+  "sim_clock_quantization": {
+    "cpu_half_fs": 8417508,
+    "sys_half_fs": 10101010,
+    "cpu_waveform_hz": 59400002.94624015,
+    "sys_waveform_hz": 49500000.495000005
+  },
+  "timer_seconds": 0.03353852525252525,
+  "iterations_per_second": 298.16457118212315,
+  "coremark_per_mhz": 5.019605575456619,
+  "crc": {
+    "seedcrc": "18f2",
+    "[0]crclist": "e3c1",
+    "[0]crcmatrix": "0747",
+    "[0]crcstate": "8d84",
+    "[0]crcfinal": "c64e"
+  },
+  "simulator_total_cycles": 1851356,
+  "real_clint_checked_cycles": 1745735,
+  "observed_cpu_cycles_timer_release_to_prompt": 2094882,
+  "timer_stimulus_scale_during_command": 1,
+  "boot_only_acceleration": true,
+  "cpu_rtl_sha256": "b73b680b108df9ee5c3819a4c4399ef4424ab1e112e4cc329ac52e58235c0c70",
+  "firmware_binary_sha256": "212defe1c704999c13b9812ba0ac3dabc3ca55f96ccfe96acd3f4ef269c303e8",
+  "rom_sha256": "ca893d7a41e35fe87c9ff6ab51291a7b4875d126fb9f5ef01d7b8bb8a4c62fd5",
+  "log_sha256": "cd6d5ab9a4bc684b70cf80467e784a13c1f7d52967855ee6c2011d5bb42d28d7",
+  "scope": "Production-source bootloader and UART console in RTL simulation; no real-board frequency or peripheral acceptance"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "command": "XQVOICE_PROFILE=1 /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-profile /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+    "timeout": 40,
+    "markers": [
+      "XQVOICE_PROFILE_V1 rc=0",
+      "VOICE_STREAM_TIMING source=wav-replay"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

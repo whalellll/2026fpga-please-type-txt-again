@@ -1,0 +1,13 @@
+{
+  "kind": "board_evidence_sidecar_not_board_release",
+  "status": "PARTIAL_FAIL_NOT_BOARD_RELEASE",
+  "entry": "docs/CPU_70MHz_Board_Test_20261018.md",
+  "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+  "scope": "Contains successful and failed checks plus RAM boot fixes; no production promotion. Full frozen source package remains separate.",
+  "original_candidate_zip_sha256": "557dde19d6cb18d2bab90d6fbc3c5626631b772a23fac6451734a60cf90a0da0",
+  "skills_revision": 75,
+  "unused_recipes": [
+    "build/cpu70-board-20261018/final-audio-restore.json"
+  ],
+  "board_state": "GUI and voice restored; driver backend, StageB mode1 kernel resident; single GUI client running"
+}

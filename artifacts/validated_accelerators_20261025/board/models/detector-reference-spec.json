@@ -1,0 +1,14 @@
+[
+  {
+    "command": "/usr/bin/timeout 1200 /usr/bin/picture-new-bench-hwc-reference detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 1",
+    "timeout": 1220,
+    "markers": [
+      "PICTURE_TIMING model=detector",
+      "output_crc=97265de4",
+      "no_fallback=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

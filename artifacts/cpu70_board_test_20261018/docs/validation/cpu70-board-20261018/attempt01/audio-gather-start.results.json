@@ -1,0 +1,14 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; grep -E \"MAC_RUNTIME|STAGEB_ACCEL_READY|FALLBACK|FUSED|MISMATCH|GATHER\" gui-verify.log; devmem 0x1fe10100 32; devmem 0x1fe10104 32",
+    "exit": 0
+  },
+  {
+    "command": "p=$(cat /tmp/voice-gui-display/voice.pid); kill \"$p\"; n=0; while kill -0 \"$p\" 2>/dev/null; do sleep 1; n=$((n+1)); test \"$n\" -lt 15 || break; done; ! kill -0 \"$p\" 2>/dev/null; xqaudio-capture /tmp/c70-idle.wav 2",
+    "exit": 0
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; PIKAFISH_MAC_BACKEND=mmio-shadow PIKAFISH_STAGEB_ACCEL=verify XQ_GUI_INPUT=/run/voice-display.in ./xiangqi-gui-display-v3 </dev/null >gui-gather-verify.log 2>&1 & echo $! >gui-v3.pid; n=0; until grep -q \"XQ LINUX PIKAFISH READY\" gui-gather-verify.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 80 || break; done; tail -8 gui-gather-verify.log; grep -q \"XQ LINUX PIKAFISH READY\" gui-gather-verify.log",
+    "exit": 0
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:21:59.467021+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 120 /usr/bin/picture-new-bench-exact-reference classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 1",
+      "exit": 0,
+      "host_response_seconds": 2.0990337999974145,
+      "required_markers": [
+        "PICTURE_TIMING model=classifier",
+        "output_crc=805678c7",
+        "no_fallback=1"
+      ]
+    },
+    {
+      "command": "/usr/bin/timeout 300 /usr/bin/picture-new-bench-exact-reference board /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 1",
+      "exit": 0,
+      "host_response_seconds": 32.92274280000129,
+      "required_markers": [
+        "PICTURE_TIMING model=board",
+        "output_crc=d830c1cd",
+        "no_fallback=1"
+      ]
+    },
+    {
+      "command": "/usr/bin/timeout 900 /usr/bin/picture-new-bench-exact-reference detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 1",
+      "exit": 0,
+      "host_response_seconds": 305.3362899999993,
+      "required_markers": [
+        "PICTURE_TIMING model=detector",
+        "output_crc=97265de4",
+        "no_fallback=1"
+      ]
+    }
+  ],
+  "spec_sha256": "8222023a11015aab1c54fd36c833fbf04ed1cf6869801739aed471f06a1fbadf",
+  "uart_sha256": "d5e0a55ae06eb5f7ac88d4ef11d075352e19d0e47961ae14157b1e5e8613a4e9",
+  "completed_utc": "2026-10-25T05:27:41.143904+00:00"
+}

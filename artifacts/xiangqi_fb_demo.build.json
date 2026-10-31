@@ -1,0 +1,41 @@
+{
+    "compiler":  "riscv32-unknown-elf-gcc",
+    "compiler_target":  "riscv32-unknown-elf",
+    "compiler_version":  "16.2.0",
+    "compiler_sha256":  "e1ca0bb0ca138a597885e61b174f40744b3e8e08b4317c6ecb5f708623a746a6",
+    "march":  "rv32ima_zicsr_zifencei",
+    "abi":  "ilp32",
+    "optimization":  "-Os",
+    "elf":  "xiangqi_fb_demo.elf",
+    "elf_sha256":  "1cf826d838b9a0311a4265e4cda0695d4fa18ee99e87d2df1306a756c5f0c83a",
+    "elf_metadata":  {
+                         "ElfMembers":  1,
+                         "ElfClass":  "ELF32",
+                         "Flags":  "0x0 (soft-float ABI, no RVC)",
+                         "Architectures":  [
+                                               "rv32i2p1_m2p0_a2p1_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0"
+                                           ]
+                     },
+    "code_validation":  {
+                            "CodeStart":  "0x01000000",
+                            "CodeEndExclusive":  "0x01000b38",
+                            "BytesChecked":  2872,
+                            "Result":  "RV32IMA mnemonic/width whitelist; no vlenb; rodata excluded by linker symbols",
+                            "ExplicitIllegalInstructionFixture":  false
+                        },
+    "binary":  "xiangqi_fb_demo.bin",
+    "binary_sha256":  "d50b4e779ebe4568ea3a7b74065017cad7a3172736a326d032ec3ac29ae69d93",
+    "libgcc":  {
+                   "selected_by":  "gcc -march=rv32ima -mabi=ilp32 -print-libgcc-file-name",
+                   "toolchain_relative_path":  "lib/gcc/riscv32-unknown-elf/16.2.0/libgcc.a",
+                   "sha256":  "30776973a2d9db8cedbe93ecb5c5602ac87c490ca31b212096fabd465bcfc72e",
+                   "metadata":  {
+                                    "ElfMembers":  168,
+                                    "ElfClass":  "ELF32",
+                                    "Flags":  "0x0 (soft-float ABI, no RVC)",
+                                    "Architectures":  [
+                                                          "rv32i2p1_m2p0_a2p1_zmmul1p0_zaamo1p0_zalrsc1p0"
+                                                      ]
+                                }
+               }
+}

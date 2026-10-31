@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "INTEGRATED_ADS_ONLY",
+  "run_id": "d8e3b863e8b54212ae85cb905c2fa5cb",
+  "input_snapshot_sha256": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+  "netlist_sha256": "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31",
+  "source_rtl_sha256": "664dd6c781f51f187852df7ed1209bb8175cd3d08b1984d1d12a867bdb41ae55",
+  "source_json_sha256": "4190d7c20059275c6ae5fef401cc6a12bc1e817f770d791daa46b68adb39252b",
+  "emit_config_sha256": "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+  "checker_sha256": "04f5ec7133abd2a1de93082cc1ac66586e8d5e9a06168ea92e938017b8e81e6e",
+  "input_hashes": {
+    "pds/build_snapshot.json": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+    "pds/synthesize/soc_top_syn.vm": "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31",
+    "rtl/cpu/CoreTop.sv": "664dd6c781f51f187852df7ed1209bb8175cd3d08b1984d1d12a867bdb41ae55",
+    "rtl/cpu/source.json": "4190d7c20059275c6ae5fef401cc6a12bc1e817f770d791daa46b68adb39252b",
+    "rtl/cpu/emit-config.json": "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+    "scripts/audit_icache_pad_ads.py": "04f5ec7133abd2a1de93082cc1ac66586e8d5e9a06168ea92e938017b8e81e6e"
+  },
+  "hierarchy": "soc_top/u_cpu/u_cpu_wrapper/u_cpu/core/frontend/cache",
+  "post_pnr_physical_retention_proven": false,
+  "routed_hold_margin_proven": false,
+  "connectivity": {
+    "primitive": "GTP_LUT6D",
+    "pairs": 64,
+    "bits": 128,
+    "init": "CCCCCCCC_AAAAAAAA",
+    "preservation_attribute": "PAP_DONT_TOUCH",
+    "upstream_ff_bits": 128,
+    "unique_driver_and_two_way_loads": true,
+    "bypass": false,
+    "ways": [
+      {
+        "instance": "wayMem_0_ext",
+        "module": "wayMem_128x256",
+        "mapping": "4_GTP_DRM36K_E1",
+        "write_bits_checked": 256,
+        "padded_low_bits": 128,
+        "module_sha256": "acf64787f12b882256db4283d91860eb4752c40f3d35ced75045c990afaf2ec4"
+      },
+      {
+        "instance": "wayMem_1_ext",
+        "module": "wayMem_128x256_unq4",
+        "mapping": "4_GTP_DRM36K_E1",
+        "write_bits_checked": 256,
+        "padded_low_bits": 128,
+        "module_sha256": "dbda9aef8d4280fda138bd8fe2f20c3150cf06642d756f4f3666645085fc3aa3"
+      }
+    ],
+    "pad_module_sha256": "2842cd5dd3974268696654aa0dc04b337795b3531fe7f08fe0b39000d3206bb8",
+    "icache_module_sha256": "179fa8aa9eccdbfb857edf609ae10579e96b11756dac1edc23a96f357f2a26c6"
+  },
+  "inputs_unchanged": true
+}

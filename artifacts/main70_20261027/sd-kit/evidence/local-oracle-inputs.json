@@ -1,0 +1,16 @@
+{
+  "path": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/kit-04/oracle-source",
+  "files_sha256": {
+    "sd-root/fw_jump.bin": "efab46464c40775d42df2dce3058b1fa9fcb22894d850ab68a76f746dc730951",
+    "sd-root/Image": "a1803c220f5d0ecb3b357736da5398fde3ca2bea2c679f510e11433be04fffc6",
+    "sd-root/Image.mmode": "42ef17d70e382194b9ded6f9f41722e77656ea4273bd0e813002210ba13f244f",
+    "sd-root/mmode.dtb": "3f26d3164420796729589e8cc4f652a76d44caaf7a810b72ae17dfcbc715f3c7",
+    "sd-root/pikafish.atk": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c",
+    "sd-root/pikafish.pff": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260",
+    "sd-root/rootfs.cpio": "d148636443758b784d9ed19ff90c1a47d09965440d6276b39728f10424e7c4da",
+    "sd-root/soc.dtb": "3f26d3164420796729589e8cc4f652a76d44caaf7a810b72ae17dfcbc715f3c7",
+    "evidence/test-fat32.img": "49451cf25eb15818ac0371d5f25ef0a3cfc44a2da1e9087dc9e73cf28380772b",
+    "support/host-test": "237ae3c45cbdf8122c35d25cfdc67f7ec7563c38886c8861d2a6b3e56fb26ba8",
+    "support/rv32-test": "a3ebe2a5a9cc85923ac483f2fed72417628455d3f25da9c84eef66f017dc02ec"
+  }
+}

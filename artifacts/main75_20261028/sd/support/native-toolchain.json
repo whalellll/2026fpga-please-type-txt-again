@@ -1,0 +1,9 @@
+{
+  "target": "riscv32-unknown-elf",
+  "version": "16.2.0",
+  "compiler_sha256": "e1ca0bb0ca138a597885e61b174f40744b3e8e08b4317c6ecb5f708623a746a6",
+  "libgcc_sha256": "30776973a2d9db8cedbe93ecb5c5602ac87c490ca31b212096fabd465bcfc72e",
+  "elf_sha256": "f94c8153caa59a9b8290010b1f5ee385f1ff2c1f8cef39ac5ad10bf0f0a30b6a",
+  "image_sha256": "3bafa6961754b26b3f95d9a915e8d487f9b72ccdf96c606a2d2422107b296c54",
+  "scope": "Production loader GCC16; musl9 separate C logic oracle, not a substituted production compiler"
+}

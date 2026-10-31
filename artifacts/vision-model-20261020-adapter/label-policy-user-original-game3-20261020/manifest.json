@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "label_policy": "user-original-game3-20261020",
+  "authority": "explicit user ruling 2026-10-20",
+  "source_corrections_sha256": "c99ceb46800aa7021066027c601b439a322b06aa18ee00878b00aff6f1fce368",
+  "source_fen_sha256": "de06092f04fa2020b7b4002e045610b026973ee32f3302b23cb49a2e5eaceb09",
+  "withdrawn_game3_corrections": 77,
+  "retained_nonwithdrawn_corrections": 4,
+  "retained_game3_missing_piece_corrections": 1,
+  "applied_test_game_corrections": 0,
+  "supplemental_score_applies_retained_missing_piece": true,
+  "fen_records": 1042,
+  "regenerated_game3_records": 135,
+  "changed_game3_fens": 77,
+  "changed_game3_cells": 78,
+  "original_training_files_modified": false,
+  "independent_test": false,
+  "files": {
+    "dataset_corrections.json": "642a122fc8a477f260c92af054729e5ca474dca1ab4aa6cecd31eea35a447750",
+    "retained_corrections.json": "877c59faac1d1e98fdfdc9baef5dbf49083ae6c63139da8797874aae3c727acd",
+    "fen_gt.json": "cdfdc244bcc748409d52699b8305d803bd23345e881b036eb8fa406c53f91733",
+    "fen_gt_retained_missing.json": "5098718c409f0babc46c76197cd7457b0d82e99d8df86f365341457a962c103d",
+    "game3_truth_audit.json": "d155f961f152ae8d8cda839514aa7898af9da8f171760dde64ef45b1a303e462"
+  }
+}

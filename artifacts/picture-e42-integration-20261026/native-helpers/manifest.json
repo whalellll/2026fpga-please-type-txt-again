@@ -1,0 +1,14 @@
+{
+  "native_snapshot_sha256": "138fc9f2903d340a9ebd03c027cb7426c6672e1e0d59c681a7a676ceb61f19cd",
+  "source_snapshot": "aa134da06b404ee572976c438387c2f8aa3a2c96",
+  "scope": "Exact original build/helper inputs retained as read-only archive; current local software helpers stay in place. Not a new PDS run or native database replay.",
+  "files": {
+    "scripts/build_image_hwc_physical.ps1": "c7267b7384106ef8d82abc87bccd76695365f670961ab095c7544a8ae6c0263d",
+    "scripts/build_linux_mac_kernel.ps1": "0e64e975be69e68636d893bfd4fb7c7bdab6b32b67dac53c9d5df7054b183dd8",
+    "scripts/build_pathopt_voice.py": "03c8949172a0746442fd948b1549d31b49a1ba08949b46dd9d4ab0e797584287",
+    "scripts/build_picture_new_interface.py": "2f739a0f1f266e18dbfd3e09d87b9c9bd00f651c38310673fc8b6df10f79a4d9",
+    "scripts/build_picture_timing_bench.py": "5bfe17ea07e5087ece3dde05a2fc57905d496d64f6afbbd9fd3aff1be1e28656",
+    "scripts/build_vision_exact_physical.ps1": "5e01593737c0df979818bf513a6cadd1b6df5eac00adc34612d61006a2738b41",
+    "scripts/vision32_cache_contract.py": "d8f9a89089b36d4d59c1f9dcebfbd1a2fe3e1e14924a831dec212c13dc58c7a8"
+  }
+}

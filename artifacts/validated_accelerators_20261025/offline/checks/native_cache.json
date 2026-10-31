@@ -1,0 +1,52 @@
+{
+  "status": "VISION32_NATIVE_CACHE_PORTS_CAPACITY_DECODERS_AND_MUTATIONS_PASS_NOT_STA",
+  "native_vm_sha256": "1bc067c15c89ae87bd1aa1b2b0daecc0f2b8129cb43d1fae379292406232c6dd",
+  "positive": {
+    "weight_logical_bytes": 9216,
+    "weight_physical_capacity_bytes": 9216,
+    "weight_mapping": "split_1024_128",
+    "weight_ram64x1_cells": 1152,
+    "input_ping_pong_bytes": 1024,
+    "activation_table_bytes": 256,
+    "weight_decoder_roots_proven": 36,
+    "decoder_free_variables": 10,
+    "native_read_boundary": {
+      "export": "N438",
+      "producer": "i2s_audio_duplex",
+      "response_boundary": "shared-ddr-response-and-adapter-state",
+      "truth": "mem_rsp_valid && state==R_WAIT(9) && !mem_rsp_error && !stop_pending",
+      "folded_guards": [
+        "mem_rsp_error",
+        "stop_pending"
+      ],
+      "cofactors": 131072,
+      "hierarchy_bound": true,
+      "proof_method": "complete hierarchical ROBDD equality",
+      "bdd_nodes": 203,
+      "hierarchy_hops": 79,
+      "cut_variables": [
+        "adapter_state1",
+        "adapter_state3",
+        "ddr_rd_active",
+        "ddr_rd_owner",
+        "ddr_wr_active",
+        "ddr_wr_owner",
+        "mem_rsp_error",
+        "owner1",
+        "shared_bvalid",
+        "shared_rvalid",
+        "state[0]",
+        "state[1]",
+        "state[2]",
+        "state[3]",
+        "state[4]",
+        "state[5]",
+        "stop_pending"
+      ]
+    },
+    "sequential_equivalence": false,
+    "sta": false
+  },
+  "rejected_mutations": 11,
+  "checker_sha256": "d8f9a89089b36d4d59c1f9dcebfbd1a2fe3e1e14924a831dec212c13dc58c7a8"
+}

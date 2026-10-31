@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export PATH=/mingw64/bin:/usr/bin:$PATH
+task_verilator_help="$(verilator --help 2>/dev/null || true)"
+task_group_args=()
+if [[ "$task_verilator_help" == *"--output-groups"* ]]; then
+    task_group_args=(--output-groups 0)
+fi
+cd '/d/LJL/WORK/GitHub/performance_soc'
+verilator --binary --timing "${task_group_args[@]}" -CFLAGS '-Os' -Wno-fatal -Wno-TIMESCALEMOD -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC --top-module 'tb_cpu_integration' --Mdir '/d/LJL/WORK/GitHub/performance_soc/artifacts/selftest/production_coremark_pilot_f5b3bcc4bca848cf80497bb7ef9e2af4/verilator_model' -j 2 '/d/LJL/WORK/GitHub/performance_soc/rtl/cpu/CoreTop.sv' '/d/LJL/WORK/GitHub/performance_soc/rtl/clint.v' '/d/LJL/WORK/GitHub/performance_soc/rtl/cpu_top.v' '/d/LJL/WORK/GitHub/performance_soc/rtl/soc/axi_1x2.v' '/d/LJL/WORK/GitHub/performance_soc/rtl/soc/axi_boot_periph.v' '/d/LJL/WORK/GitHub/performance_soc/rtl/soc/axi_cpu_sys_cdc.v' '/d/LJL/WORK/GitHub/performance_soc/rtl/soc/uart_tx_fifo.v' '/d/LJL/WORK/GitHub/performance_soc/sim/tb_cpu_integration.sv'

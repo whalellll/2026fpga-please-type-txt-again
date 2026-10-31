@@ -1,0 +1,1636 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-10-19",
+ "source_evidence": "v1_release/validation_evidence/复核与重测结果.md (37帧人工复核, 2026-10-18, 复核者: Codex AI 直接视觉复核, 黑方字形旋正后逐颗复查)",
+ "applies_to": "dataset/out/LabelMe circle 标注, 供 T1 test 评估与 FEN 真值生成使用; 原始文件只读, 修正仅在评估侧叠加",
+ "corrections": [
+  {
+   "frame": "IMG00882",
+   "game": 2,
+   "type": "missing_piece_added",
+   "original": "原始 JSON 仅 25 个圆, 该图实际 26 颗棋子, 漏标 1 颗",
+   "corrected": {
+    "action": "add_circle",
+    "label": "black_ma",
+    "grid": [
+     2,
+     2
+    ],
+    "center_px": [
+     991,
+     242
+    ],
+    "radius_px": 25,
+    "note": "圆轮廓为人工像素测量近似, 尺寸约有数像素误差"
+   },
+   "basis": "逐颗视觉复核确认图中存在黑马棋子; 既有冻结 YOLO 导出已包含该子(历史 1015 分母无须增加)"
+  },
+  {
+   "frame": "IMG00887",
+   "game": 2,
+   "type": "class_fixed",
+   "original": {
+    "shape_index": 9,
+    "label": "black_ju",
+    "grid": [
+     6,
+     0
+    ]
+   },
+   "corrected": {
+    "shape_index": 9,
+    "label": "red_ju",
+    "grid": [
+     6,
+     0
+    ]
+   },
+   "basis": "可见红色車字, 黑方字形旋正后确认为红方"
+  },
+  {
+   "frame": "IMG00888",
+   "game": 2,
+   "type": "class_fixed",
+   "original": {
+    "shape_index": 13,
+    "label": "black_ju",
+    "grid": [
+     6,
+     0
+    ]
+   },
+   "corrected": {
+    "shape_index": 13,
+    "label": "red_ju",
+    "grid": [
+     6,
+     0
+    ]
+   },
+   "basis": "可见红色車字, 黑方字形旋正后确认为红方"
+  },
+  {
+   "frame": "IMG01017",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_shuai"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_pao"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01018",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_shuai"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_pao"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01024",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_shuai"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_pao"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01025",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_shuai"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_pao"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01026",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_shuai"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     0
+    ],
+    "label": "red_pao"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00993",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_shi"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_xiang"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01002",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_shi"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_xiang"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG01003",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_shi"
+   },
+   "corrected": {
+    "grid": [
+     5,
+     2
+    ],
+    "label": "red_xiang"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00908",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00909",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00910",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00911",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00912",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00913",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00914",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00915",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00916",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00917",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00918",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00919",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00920",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00921",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00922",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00923",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00924",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00925",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00926",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00927",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00928",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00929",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00930",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00931",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00932",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00933",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00934",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00935",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00936",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00937",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00938",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00939",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00940",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00941",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00942",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00943",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00944",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00945",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00946",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00947",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00948",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00949",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00950",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00951",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00952",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00953",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00954",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00955",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00956",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00957",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00958",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00959",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00960",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00961",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00962",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00963",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00964",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00965",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00966",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00967",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00968",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00969",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00970",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00971",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00972",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00973",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00974",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00975",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00976",
+   "game": 3,
+   "type": "class_fixed",
+   "original": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_bing"
+   },
+   "corrected": {
+    "grid": [
+     8,
+     3
+    ],
+    "label": "red_ma"
+   },
+   "basis": "T1 评估争议格裁块目检（report/t1_correction_findings.md，对照表 disputes_sheet.png）"
+  },
+  {
+   "frame": "IMG00920",
+   "game": 3,
+   "type": "missing_piece_added",
+   "original": "该格无圆标注",
+   "corrected": {
+    "grid": [
+     0,
+     3
+    ],
+    "label": "red_bing",
+    "center_source": "board 透视映射格点（半径按同帧棋子中位数，评估时合成）"
+   },
+   "basis": "裁块目检可见红兵字形（disputes_sheet.png #14）；模型检出非假阳性"
+  }
+ ],
+ "non_corrections_note": "IMG00889 曾被怀疑, 复核结论为棋子类别正确, 系旧参考几何在红车处偏约 35 像素, 已用图中空交叉点重新校准参考网格, 不属于标注修正",
+ "counts": {
+  "original_circles_37_frames": 1014,
+  "corrected_circles_37_frames": 1015,
+  "game3_class_fixed": 77,
+  "game3_missing_added": 1
+ },
+ "t1_review_note": "第 3 局 4 类目检确认标注错误（2026-10-19，T1 评估期间）：(8,3)红兵->红馬 69 帧、(5,2)红仕->红相 3 帧、(5,0)红帥->红炮 5 帧、(0,3)漏标红兵 1 帧；详见 report/t1_correction_findings.md"
+}

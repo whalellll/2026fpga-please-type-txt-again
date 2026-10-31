@@ -1,0 +1,14 @@
+[
+  {
+    "command": "/usr/bin/timeout 300 /usr/bin/picture-new-bench-hwc-reference board /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3",
+    "timeout": 315,
+    "markers": [
+      "PICTURE_TIMING model=board",
+      "output_crc=d830c1cd",
+      "no_fallback=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+# Adjust only matched read-data registers. No timing exceptions.
+# Move bit 0 toward the observed input IO region; retain the baseline slot for bit 63.
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[0]/opit_0_inv_srl} CLMA_333_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[63]/opit_0_inv_srl} CLMA_315_672 FFAPP3

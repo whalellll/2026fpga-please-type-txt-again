@@ -1,0 +1,54 @@
+{
+    "schema":  1,
+    "status":  "PASS",
+    "run_id":  "d8e3b863e8b54212ae85cb905c2fa5cb",
+    "input_snapshot_sha256":  "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+    "pds":  "2022.2-SP6.4",
+    "parse_argv":  "-parsetcl soc.tcl soc_pre_synth.pds -model 3",
+    "synth_argv":  "-project soc_pre_synth.pds -run synthesize",
+    "post_parse_argv":  "-parsetcl soc_post_synth.tcl soc.pds -model 3",
+    "post_route_argv":  "-project soc.pds -run gen_bit_stream",
+    "resources":  {
+                      "LUT":  {
+                                  "used":  43519,
+                                  "capacity":  66600
+                              },
+                      "FF":  {
+                                 "used":  33129,
+                                 "capacity":  133200
+                             },
+                      "LUTRAM":  {
+                                     "used":  4436,
+                                     "capacity":  19900
+                                 },
+                      "DRM":  {
+                                  "used":  120.5,
+                                  "capacity":  155
+                              }
+                  },
+    "synth_hashes":  {
+                         "pds/synthesize/soc_top.snr":  "4349c87bde118ff50d4b3f7b1fd8797622761965723bc886d57df59236449526",
+                         "pds/synthesize/soc_top_syn.vm":  "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31",
+                         "pds/synthesize/soc_top_syn.adf":  "e8aa8dde42116072fe78271128fbffbd3d00040ef3fc7c88f96cfd41a7ec291e",
+                         "pds/input-snapshots/d8e3b863e8b54212ae85cb905c2fa5cb/synth.constraint_check.ccr":  "0b9c1b36d7c29fa1ac5a4f260e9898a8aa2c27ce526345ad5c5dc29ae4d0e2e4"
+                     },
+    "cdc_summary":  {
+                        "total_constraints":  1171,
+                        "errors":  0,
+                        "critical_warnings":  39,
+                        "warnings":  0,
+                        "mapped_directions":  10,
+                        "payload_ram_cells":  76,
+                        "payload_do_outputs":  149,
+                        "first_stage_crossings":  4,
+                        "vector_match_each":  1,
+                        "mapped_ff_each":  5
+                    },
+    "cpu_ads_sha256":  "e318815a72ffee603df9082dbc308d5eeab6695f1f1f943ee4e98a74096c63a4",
+    "icache_ads_sha256":  "721c977a8e689794477ebed88957de9d94caa01acfff6f6bcb40d59af49cd4ec",
+    "cdc_ads_sha256":  "205cc156c3faee83a0fd63b89bd7349ca3aba7379aa6c8b918ce4b710d227c69",
+    "synth_history_sha256":  "81ec024c62a1e99204e153da75131d6295892b7c2624022e150237c0458df206",
+    "synth_project_sha256":  "416a73d9f55485f2830a6183a1363b58c2f1adba15a866094c4508b7d73ca885",
+    "prepared_shift_ads_sha256":  "1d4590881b9a4d4f86927d254a5a10d765712e4ba6ed7f5a6d93520906bd4397",
+    "cpu_clock_ads_sha256":  "9e5d68cf9b38cc01ac72a69997c54bbb8678385db2b9ad1f8020a758add833f0"
+}

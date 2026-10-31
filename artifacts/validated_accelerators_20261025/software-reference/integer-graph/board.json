@@ -1,0 +1,208 @@
+{
+  "status": "INTEGER_HWC_SD_BOARD_ORIGINAL_CRC_AND_TIMING_PASS_TEMPORARY_NOT_FORMAL",
+  "implementation_commit": "e2875fc8e9a86b530529180e9fc7ecf321201a71",
+  "bitstream_sha256": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+  "sd_manifest_sha256": "cf2570720532247d252225fd570274b7ff1d6c03350d5eb02c462560da11f84a",
+  "integer_samples": 3,
+  "reference_samples": 1,
+  "graph_mean_us": 83644635.33333333,
+  "output_export_mean_us": 3025435,
+  "equal_output_boundary_mean_us": 86670070.33333333,
+  "reference_us": 227977742,
+  "equal_output_boundary_samples_us": [
+    86699512,
+    86663453,
+    86647246
+  ],
+  "equal_output_boundary_min_us": 86647246,
+  "equal_output_boundary_max_us": 86699512,
+  "equal_output_boundary_sample_stddev_us": 26753.981280051263,
+  "cold_first_setup_graph_and_export_us": 93911195,
+  "graph_only_speedup": 2.7255512692653023,
+  "equal_output_boundary_speedup": 2.6304091034332497,
+  "time_reduction_percent": 61.98309994081206,
+  "new_rows": [
+    {
+      "repeat": "0",
+      "graph_us": "83668052",
+      "output_export_us": "3031460",
+      "model_load_us": "5523624",
+      "input_read_us": "1607407",
+      "device_open_us": "80652",
+      "jobs": "166",
+      "cycles": "834135033",
+      "hardware_us": "16851212",
+      "output_crc": "97265de4",
+      "float_ops": "0",
+      "layout": "HWC",
+      "no_fallback": "1"
+    },
+    {
+      "repeat": "1",
+      "graph_us": "83640248",
+      "output_export_us": "3023205",
+      "model_load_us": "5523624",
+      "input_read_us": "1607407",
+      "device_open_us": "80652",
+      "jobs": "166",
+      "cycles": "834218942",
+      "hardware_us": "16852907",
+      "output_crc": "97265de4",
+      "float_ops": "0",
+      "layout": "HWC",
+      "no_fallback": "1"
+    },
+    {
+      "repeat": "2",
+      "graph_us": "83625606",
+      "output_export_us": "3021640",
+      "model_load_us": "5523624",
+      "input_read_us": "1607407",
+      "device_open_us": "80652",
+      "jobs": "166",
+      "cycles": "834192325",
+      "hardware_us": "16852370",
+      "output_crc": "97265de4",
+      "float_ops": "0",
+      "layout": "HWC",
+      "no_fallback": "1"
+    }
+  ],
+  "integer_stage_rows": [
+    {
+      "pack_us": "14309687",
+      "output_pack_us": "14708613",
+      "parameter_copy_us": "1068254",
+      "ioctl_us": "29504792",
+      "nonconv_us": "23423806",
+      "allocate_us": "129253",
+      "converted_input_values": "2252800",
+      "copied_input_bytes": "16630720",
+      "output_bytes": "12784800",
+      "parameter_upload_bytes": "5571200",
+      "parameter_saved_bytes": "8923840"
+    },
+    {
+      "pack_us": "14287078",
+      "output_pack_us": "14663116",
+      "parameter_copy_us": "1056820",
+      "ioctl_us": "29538036",
+      "nonconv_us": "23412607",
+      "allocate_us": "133298",
+      "converted_input_values": "2252800",
+      "copied_input_bytes": "16630720",
+      "output_bytes": "12784800",
+      "parameter_upload_bytes": "11142400",
+      "parameter_saved_bytes": "17847680"
+    },
+    {
+      "pack_us": "14276045",
+      "output_pack_us": "14667656",
+      "parameter_copy_us": "1060108",
+      "ioctl_us": "29530092",
+      "nonconv_us": "23399594",
+      "allocate_us": "132817",
+      "converted_input_values": "2252800",
+      "copied_input_bytes": "16630720",
+      "output_bytes": "12784800",
+      "parameter_upload_bytes": "16713600",
+      "parameter_saved_bytes": "26771520"
+    }
+  ],
+  "reference_rows": [
+    {
+      "model": "detector",
+      "batch": "1",
+      "backend": "vision32",
+      "repeat": "0",
+      "infer_us": "227977742",
+      "model_load_us": "5418024",
+      "input_open_us": "1653671",
+      "jobs": "166",
+      "cycles": "833927234",
+      "hardware_us": "16847014",
+      "output_crc": "97265de4",
+      "no_fallback": "1"
+    }
+  ],
+  "exclusive_graph_stages_us": {
+    "整数转换及HWC窗口打包": 14290936.666666666,
+    "HWC输出打包": 14679795,
+    "已排列参数复制至shadow": 1061727.3333333333,
+    "整数非卷积算子": 23412002.333333332,
+    "张量分配": 131789.33333333334,
+    "硬件作业（含内部装载/写回）": 16852163.636363637,
+    "ioctl中硬件计数之外": 12672143.030303031,
+    "其余图调度及释放": 544078.0
+  },
+  "model_load_us": 5523624,
+  "input_read_us": 1607407,
+  "device_open_us": 80652,
+  "parameter_copy_per_graph": [
+    {
+      "upload": 5571200,
+      "saved": 8923840
+    },
+    {
+      "upload": 5571200,
+      "saved": 8923840
+    },
+    {
+      "upload": 5571200,
+      "saved": 8923840
+    }
+  ],
+  "float_graph_ops": 0,
+  "input_layout": "HWC4",
+  "all_graph_tensors_layout": "HWC",
+  "tensor_bits": {
+    "8": 69,
+    "16": 16
+  },
+  "accumulator_bits": 32,
+  "weights_existing_int8_authorized": true,
+  "fp32_checkpoint_reconverted": false,
+  "output_crc": "97265de4",
+  "jobs": 166,
+  "source_scope": "Fixed synthetic tensor; exact output of current prequantized model. Not FP32/mAP/real-image accuracy acceptance.",
+  "timing_scope": "New graph+explicit F32 output export compared to original F32 graph; file decompression/CRC/printing/process exit excluded, input/model/device setup separate.",
+  "clock": {
+    "guest_interval_seconds": 10.449999999999989,
+    "host_command_seconds": 10.693035600008443,
+    "ratio": 0.9772715990949976,
+    "status": "COARSE_WALL_CLOCK_CONSISTENCY_PASS"
+  },
+  "program_receipt_path": "build/integer-board-program-02/result.json",
+  "program_receipt_sha256": "ace7bf9ae6eb48f9d96e06882e0f70655ca215e25aa67a85d2472776cff48b4b",
+  "boot_receipt_sha256": "cbec7bc85fbe83a7bab5a3d60aa9a4bf60f69f28824574e958a9ab1427f848ca",
+  "kernel_internal_copy_split_measured": false,
+  "flash_written": false,
+  "formal_delivery": false,
+  "evidence_sha256": {
+    "clock-spec.json": "ae377d21a7ad7af7b6f0051d558c4aa59c4edfc951e9986cb752ed296e32b643",
+    "clock.host.log": "4d33c3b94caeca587323779fba7e3b34c6ecd4aae1d7eff735b864c075039bb1",
+    "clock.result.json": "6d18913ce54d4480fdfc1c609429483ef574b02043d231d8658d13e63bf69df6",
+    "clock.uart": "bdee97858b8e88a26c631d4ae1b91abc04b6ec7b56d5906893b2a87d36e80be3",
+    "integer-spec.json": "c0dfb0b8d331a6864da1c47060961c293164d466a47b990dd6bd232d1cea38d8",
+    "integer.host.log": "f38b514d8e39661ac5660cd47c8d99a17c8e169ffddb9ff6648abba8badcaa64",
+    "integer.result.json": "f5dd78925416560109586843f8cacdce41ee663cbd6612283bef13dce3246ea0",
+    "integer.uart": "a19e7f842c5c788e750b8990c3f02b283973bf049b9752eda4aa047bb14ee837",
+    "offline-recheck.json": "3b047a06cba08cf098334c12e2b27d674caf601002ee7917e4fe14623478bca9",
+    "post-spec.json": "1bc34c93572b2fb360fe40f8ebdf0812bfa6c723fbc653d38b5fa7b10733a40a",
+    "post.host.log": "a05fa757576829aea893c0b7676177c2b5a8f65e0941b3f2468c2b38779a5aaa",
+    "post.result.json": "4d9468f4850e62849911853a6de57a5fcad16c6ec089b9b474e8ff38e7c4c27b",
+    "post.uart": "1a230c61cc7d70daedbd0e7bbb721d7d4ee68a367888edced4d03eff7a6044c5",
+    "reference-spec.json": "5530229b309f3b6faf50d3d369abfefbd6991e974b0ac21900d4906cb368f980",
+    "reference.host.log": "4ea6c5709018d291bf81638a71b807ecb611a617310a92c3615f432805c6ee02",
+    "reference.result.json": "fc6fea0fb12f2f94655380b150d8eaa8b52a2d343f187ac4dfabec4488393620",
+    "reference.uart": "4b74da0ef428d446c0a58b08ca494ebb828fa98282bd96905b4bd0268a0d215e",
+    "run.json": "7e548a4d48e436965b160169c2220a224d455478911c206bac357f861c32b132",
+    "sanity-spec.json": "03337b0f615a51b9b05450e22ea165f167fabf6aa2cc8269587aee4b45784aaf",
+    "sanity.host.log": "fc267331781d404806976d14d7a1879d84032f8933f88b9fc3c270fad9d41e59",
+    "sanity.result.json": "82f8f2cded323ed58f86ecb72d2a5744b0f775c04f0e72af43d92559d06f2547",
+    "sanity.uart": "af381da66bcaceced79bf5aac04d5f79fa25b2d342e319e6d0b390d75e66ef0b"
+  },
+  "offline_receipt_sha256": "554b0feec5d1b211262f88342e88e76f89338fabde4677400093a067fb7c2292",
+  "sd_deployment_receipt_sha256": "814f3d76f83fd51ab4ea70eb280a57aa5df2b78724f699c1688e8ccfbd1d872d",
+  "raw_summary_sha256": "b0c366e576f11328d9ed7cf82a5fca3737ea3d9c983d2cd33856015e2b1d82c8"
+}

@@ -1,0 +1,80 @@
+--- a/src/nnue/nnue_feature_transformer.h
++++ b/src/nnue/nnue_feature_transformer.h
+@@ -35,6 +35,9 @@
+ #include "nnue_accumulator.h"
+ #include "nnue_architecture.h"
+ #include "nnue_common.h"
++#if defined(PIKAFISH_STAGEB_ACCEL)
++    #include "../pikafish_stageb_accel.h"
++#endif
+ #include "simd.h"
+ 
+ namespace Stockfish::Eval::NNUE {
+@@ -273,6 +276,11 @@
+           / 2;
+ 
+         const auto& accumulation = accumulatorState.accumulation;
++#if defined(PIKAFISH_STAGEB_ACCEL)
++        if (StageBAccel::forward_accumulators(bucket, accumulation[perspectives[0]].data(),
++                                              accumulation[perspectives[1]].data(), output))
++            return psqt;
++#endif
+ 
+         for (IndexType p = 0; p < 2; ++p)
+             transform_perspective(accumulation[perspectives[p]], output, p, nnzInfo);
+--- a/src/nnue/nnue_architecture.h
++++ b/src/nnue/nnue_architecture.h
+@@ -118,6 +118,11 @@
+     i32 propagate(const TransformedFeatureType* transformedFeatures,
+                   const NNZInfo<L1>&            nnzInfo,
+                   IndexType                     bucket) const {
++#if defined(PIKAFISH_STAGEB_ACCEL)
++        i32 pipelineScore;
++        if (StageBAccel::consume_pipeline(bucket, transformedFeatures, pipelineScore))
++            return pipelineScore;
++#endif
+         struct alignas(CacheLineSize) Buffer {
+             alignas(CacheLineSize) typename decltype(fc_0)::OutputBuffer fc_0_out;
+ #if defined(PIKAFISH_STAGEB_ACCEL)
+@@ -179,6 +184,9 @@
+           static_cast<i64>(HiddenOneVal) * static_cast<i64>(1U << WeightScaleBits) * 2;
+ 
+         i32 outputValue = static_cast<i32>((static_cast<i64>(fwdOut) * multiplier) / denominator);
++#if defined(PIKAFISH_STAGEB_ACCEL)
++        StageBAccel::verify_pipeline(bucket, transformedFeatures, outputValue);
++#endif
+         return outputValue;
+     }
+ 
+--- a/src/nnue/nnue_accumulator.cpp
++++ b/src/nnue/nnue_accumulator.cpp
+@@ -231,9 +231,9 @@
+     }
+ };
+ 
+-bool apply_stage_a(const i16* base, i16* out, const StageATerms& terms) {
++bool apply_stage_a(const i16* base, i16* out, const StageATerms& terms, int view = -1) {
+     return StageAAccel::apply(base, out, terms.rows.data(), terms.coefficients.data(),
+-                              terms.count);
++                              terms.count, view);
+ }
+ 
+ #endif
+@@ -488,7 +488,7 @@
+         && terms.append(psqAdded, featureTransformer.weights.data(), +1)
+         && terms.append(thrRemoved, featureTransformer.threatWeights.data(), -1)
+         && terms.append(thrAdded, featureTransformer.threatWeights.data(), +1))
+-        stageAHandled = apply_stage_a(fromAcc.data(), toAcc.data(), terms);
++        stageAHandled = apply_stage_a(fromAcc.data(), toAcc.data(), terms, static_cast<int>(perspective));
+ #endif
+     if (!stageAHandled)
+     {
+@@ -792,7 +792,7 @@
+     StageATerms threatTerms;
+     if (threatTerms.append(active, featureTransformer.threatWeights.data(), +1))
+         threatHandled = apply_stage_a(entry.accumulation.data(),
+-                                      accumulator.accumulation[perspective].data(), threatTerms);
++                                      accumulator.accumulation[perspective].data(), threatTerms, static_cast<int>(perspective));
+     if (!threatHandled)
+     {
+         Tile acc;

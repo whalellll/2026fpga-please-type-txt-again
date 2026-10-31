@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "Synthetic audit faults; not additional hardware evidence",
+  "netlist_sha256": "92e5d8291f31feafef12827c01073c4231b42b545e9f9367f9d6a785e69a4a82",
+  "runner_sha256": "23424ef85efb4136850ead3cdd06c5d02df86ae1993ea07ef1c26b6bb543ca63",
+  "audit_script_sha256": "c2f92e579e1b9a245d6482ac1edbbb673c5367ee34a39865e57dbdaaf57d060c",
+  "cases": [
+    {
+      "case": "original",
+      "expected": "PASS",
+      "status": "PASS",
+      "exit_code": 0,
+      "mutated_netlist_sha256": "92e5d8291f31feafef12827c01073c4231b42b545e9f9367f9d6a785e69a4a82",
+      "diagnostic": "ADS_CONTROLS_PASS frontend=85760 returns=10240 pma=2144 hints=17152"
+    },
+    {
+      "case": "branch0_constant_zero",
+      "expected": "REJECT",
+      "status": "PASS",
+      "exit_code": 1,
+      "mutated_netlist_sha256": "3f68e905b664123ee51d482256438bf24b121f7d2476e12eb24c609213913093",
+      "diagnostic": "Frontend mismatch ('branch0', (99, 19, 19, 19), 0, 1, (0, 0, 0))"
+    },
+    {
+      "case": "refresh_guard_bypassed",
+      "expected": "REJECT",
+      "status": "PASS",
+      "exit_code": 1,
+      "mutated_netlist_sha256": "1518ba45f910bcd39b65a6d7fa71f486d1f0fa4c979a9b801a8e89f8b17ec10e",
+      "diagnostic": "RsMem hint mismatch (0, '0x0', 1, 1)"
+    },
+    {
+      "case": "pma_lut_stuck_zero",
+      "expected": "REJECT",
+      "status": "PASS",
+      "exit_code": 1,
+      "mutated_netlist_sha256": "d847f05cce92f3d498cc47fe86f31bb3f028782dda17b9130f9dd37296cf3cf9",
+      "diagnostic": "PMA output LUT is constant or not a mapped LUT: N7"
+    },
+    {
+      "case": "pma_atomic_decision_zero",
+      "expected": "REJECT",
+      "status": "PASS",
+      "exit_code": 1,
+      "mutated_netlist_sha256": "a65ead2ab16cc642a9f029a4dbb5cf5584dfcc20f90c00cb821ab4fe51027a10",
+      "diagnostic": "Supervisor PMA atomic consumer mismatch at 0x2000000"
+    },
+    {
+      "case": "pma_load_decision_zero",
+      "expected": "REJECT",
+      "status": "PASS",
+      "exit_code": 1,
+      "mutated_netlist_sha256": "3e9c36ca4e9ed6aff8f5a769c6395a4a4a920e4f6150b3c424fd025d33583e13",
+      "diagnostic": "Supervisor PMA load consumer mismatch at 0x0"
+    }
+  ],
+  "generic_lut_cases": [
+    "fixed_lut6d_cofactor_values_0_and_1",
+    "reject_active_loop",
+    "reject_active_state"
+  ],
+  "reproduce": "python scripts/test_cpu_ads.py <actual-integrated-ADS.vm> --output <result.json>"
+}

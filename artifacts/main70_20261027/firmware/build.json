@@ -1,0 +1,81 @@
+{
+  "status": "CPU70_SD_OPENSBI_99_140_BUILD_PASS_NOT_BOARD",
+  "cpu_hz": 70000000,
+  "sys_hz": 49500000,
+  "ratio": [
+    99,
+    140
+  ],
+  "inputs_sha256": {
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-20261027-02/source/config/clocks.json": "5241d28c41a8e06fada577a73a49644b3bcdcffedac4dd5d4db8e949c4722815",
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/linux/sources/opensbi-1.3.1.tar.gz": "ee5be2c582f9a837e9db88368220758e014dd694b566bb6c8efe1e50cfad0004",
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-20261027-02/source/linux/opensbi/0001-pg2l-clock-config-timer-bridge.patch": "4cf24555249f4f4e4b8a3a5e6c43e7bbdf4c2e62036579bea41bc565eb52e6a4",
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-20261027-02/source/linux/opensbi/pg2l_timer_bridge.h": "50f6bf5e550e09a5d603ded6061dd576f8a98dd3cfeef64ea01830e18cc26eb9",
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/linux/opensbi/build_sd_firmware.py": "2a81df20e72efdbbe41b37aab903cfe2b62ebfe4866efb3039a7a392430f5c4d",
+    "/mnt/g/fpga/performance_soc_picture_main_20261026/linux/opensbi/build_clock_candidate.py": "bb8cc610b32a784b77ac6ed3b5ca605926d3436478967ff9f7cd1c41d88e348e"
+  },
+  "commands": [
+    {
+      "name": "extract",
+      "command": [
+        "tar",
+        "-xzf",
+        "/mnt/g/fpga/performance_soc_picture_main_20261026/linux/sources/opensbi-1.3.1.tar.gz",
+        "-C",
+        "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/opensbi"
+      ],
+      "cwd": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/opensbi",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "patch",
+      "command": [
+        "patch",
+        "--batch",
+        "--fuzz=0",
+        "-p1",
+        "-i",
+        "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-20261027-02/source/linux/opensbi/0001-pg2l-clock-config-timer-bridge.patch"
+      ],
+      "cwd": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/opensbi/opensbi-1.3.1",
+      "exit": 0,
+      "log_sha256": "71c8d75678ac8ec79b15c2ad5f5a0173c78054e7a0a866fe5d526ca3015f75ff"
+    },
+    {
+      "name": "compiler",
+      "command": [
+        "riscv64-linux-gnu-gcc",
+        "-v"
+      ],
+      "cwd": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/opensbi",
+      "exit": 0,
+      "log_sha256": "7c54be8a2f162b382057953d9550d2c30f1482b526efcae3e4d2bf36ffabf6a6"
+    },
+    {
+      "name": "make",
+      "command": [
+        "make",
+        "-j2",
+        "PLATFORM=generic",
+        "FW_TEXT_START=0x18000000",
+        "FW_JUMP_ADDR=0x00400000",
+        "FW_JUMP_FDT_ADDR=0x1a000000",
+        "CROSS_COMPILE=riscv64-linux-gnu-",
+        "PLATFORM_RISCV_XLEN=32",
+        "PLATFORM_RISCV_ISA=rv32ima_zicsr_zifencei",
+        "PLATFORM_RISCV_ABI=ilp32"
+      ],
+      "cwd": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/opensbi/opensbi-1.3.1",
+      "exit": 0,
+      "log_sha256": "84a19f013252ccc33f160bb3ea895069db1ce722e0bcabb6658215cd6dee4563"
+    }
+  ],
+  "owner_pid": 315,
+  "outputs_sha256": {
+    "fw_jump.bin": "efab46464c40775d42df2dce3058b1fa9fcb22894d850ab68a76f746dc730951",
+    "fw_jump.elf": "b72c8cf5aee35fde760d6776da5b322a8a62f4cc796c057c5e94c21762391011",
+    "clock_ratio.h": "a882577159fcbcc2d6fc6183e9ed40d1e0264f883fe787a20999c0a42c957348"
+  },
+  "completed_utc": "2026-10-27T07:06:12.153887+00:00"
+}

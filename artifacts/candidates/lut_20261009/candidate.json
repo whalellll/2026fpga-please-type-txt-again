@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-09",
+  "branch": "feature/nnue-gather-10ms",
+  "scope": "Development candidate with partial board acceptance; full-model/voice gates remain open.",
+  "device": "PG2L100H-6-FBG676",
+  "hardware_clock_hz": 49500000,
+  "resource": {
+    "LUT": 34206,
+    "FF": 28934,
+    "APM": 191,
+    "DRM": 150,
+    "distributed_ram": 1083,
+    "delta_vs_oct6": {
+      "LUT": -102,
+      "FF": 2,
+      "APM": -4,
+      "DRM": 0
+    }
+  },
+  "slacks": {
+    "slow_setup_ns": 0.862,
+    "slow_hold_ns": 0.137,
+    "fast_setup_ns": 3.081,
+    "fast_hold_ns": 0.1
+  },
+  "binding_count": 331,
+  "clock_count": 17,
+  "bitstream_sha256": "2e5087a4336399002f51258cb8525be6dfc025fcef401e0df2de912bac071ead",
+  "files_sha256": {
+    "soc_v2_top.sbit": "2e5087a4336399002f51258cb8525be6dfc025fcef401e0df2de912bac071ead",
+    "soc_v2_top.rtr": "a74850499fc1dd0b5ed7636f45742b095e286d5a45fe9f2f44ba83680cd176b7",
+    "soc_v2_top.dmr": "ddbca1a4ef186f60564c06355a1f6381ee794614d23bd7eae3a52949b04f05af",
+    "accepted_ddr_actual.pcf": "ed1217fa3b3e79b01fa7124b0941202e11e75aa8faa098a3887c8b98b74b9860",
+    "placement_extra.pcf": "d372c64b80eefe3ae52bbda64aa730e32e2fbbb5f9b6ad786bebd48f08da962d",
+    "cpu_v2_soc.fdc": "4ca08f0e6de38afbd121b2a4d372f55917d7978e9066adca2ce3c2ac3a834432",
+    "stage2_sources.sha256": "43184b66d6e77d97ff035602cebd3b1e78ac7717e81a614efe7d21afe47454a9",
+    "source_inputs.json": "a4a406f4bf6290b60c6cbc1ede54a18abca5a5a1348d8e2b5eea29e931657d43"
+  },
+  "evidence": [
+    "docs/YOLOv5n_LUT_Board_20261009.md",
+    "docs/YOLOv5n_LUT_Board_20261009.json",
+    "docs/Pikafish_Bottleneck_20261009.md",
+    "docs/Pikafish_Bottleneck_20261009.json"
+  ],
+  "production_promoted": false,
+  "full_graph_30fps_pass": false,
+  "nnue_10ms_pass": false,
+  "voice_compatibility_pass": false,
+  "external_full_pikafish_search": "SKIPPED"
+}

@@ -1,0 +1,725 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+                              C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o (__lshrdi3)
+D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+                              C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o (__divdi3)
+D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+                              D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o) (__clz_tab)
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc9Q0eWa.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc9Q0eWa.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc9Q0eWa.o
+ .riscv.attributes
+                0x00000000       0x55 C:\Users\DOGAND~1\AppData\Local\Temp\cc9Q0eWa.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.process_go
+                0x00000000      0x368 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.xq_uart_service_main
+                0x00000000      0x4b4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .rodata.start_fen.1
+                0x00000000       0x3e C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.xq_fb_gui_set_red_win_rate
+                0x00000000       0x18 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.xq_fb_gui_set_voice_feedback.str1.4
+                0x00000000        0xe C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.xq_fb_gui_set_voice_feedback
+                0x00000000       0xc4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .rodata.xq_pikafish_parse_wdl.str1.4
+                0x00000000        0x6 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .text.xq_pikafish_parse_wdl
+                0x00000000      0x148 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .text          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .data          0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .bss           0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .text.mac_kernel_write
+                0x00000000        0xc C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .comment       0x00000000       0x13 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .text          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .data          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .bss           0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .comment       0x00000000       0x13 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .text          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .comment       0x00000000       0x13 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .eh_frame      0x00000000       0x28 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .text          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+ .data          0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+ .bss           0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+ .comment       0x00000000       0x13 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+ .note.GNU-stack
+                0x00000000        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+DDR              0x01000000         0x00100000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\cc9Q0eWa.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+LOAD C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+LOAD D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a
+                0x01000000                        . = ORIGIN (DDR)
+
+.text           0x01000000     0x8ea4
+ *(.text.start)
+ .text.start    0x01000000       0x3c C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+                0x01000000                _start
+ *(.text .text.*)
+ .text.memory_fence
+                0x0100003c        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_putc
+                0x01000044       0x20 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_puts
+                0x01000064       0x38 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_put_hex
+                0x0100009c       0x78 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.read_le32
+                0x01000114       0x2c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.perspective_bucket
+                0x01000140       0x54 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.feature_offset
+                0x01000194       0xd4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.feature_row
+                0x01000268       0x34 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.model_valid
+                0x0100029c       0xd4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.initialize_scoring
+                0x01000370       0x88 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.score_accumulators
+                0x010003f8      0x154 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.build_sparse_delta
+                0x0100054c      0x118 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.append_batch_delta
+                0x01000664       0xa0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.search_clock
+                0x01000704        0xc C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.parse_uint_argument
+                0x01000710       0x80 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_put_uint.part.0
+                0x01000790       0x70 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_put_uint
+                0x01000800       0x1c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.print_info
+                0x0100081c      0x274 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.uart_put_int
+                0x01000a90       0x1c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.print_search_result
+                0x01000aac      0x2a0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.process_black_reply.part.0
+                0x01000d4c      0x218 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.apply_feature_delta.constprop.0
+                0x01000f64       0x34 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.text_starts_with.constprop.0
+                0x01000f98       0x30 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.text_equal.constprop.0
+                0x01000fc8       0x30 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.request_pikafish_reply.isra.0
+                0x01000ff8      0x144 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.score_sparse_child
+                0x0100113c      0x1cc C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.parse_int_argument
+                0x01001308       0xc0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.memset   0x010013c8       0x6c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                0x010013c8                memset
+ .text.configure_mac
+                0x01001434      0x13c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.parse_fen
+                0x01001570      0x19c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.process_go_hdmi
+                0x0100170c      0x238 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.refresh_perspective.constprop.0
+                0x01001944      0x154 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.update_perspective.constprop.0
+                0x01001a98      0x1b0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.memcpy   0x01001c48       0x84 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                0x01001c48                memcpy
+ .text.initialize_sparse_hardware
+                0x01001ccc       0xb4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.prepare_accumulators
+                0x01001d80      0x154 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.evaluate
+                0x01001ed4       0x74 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.search_evaluate
+                0x01001f48       0x30 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.restart_game
+                0x01001f78      0x1ac C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.prepare_sparse_parent.constprop.0
+                0x01002124       0xc4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.evaluate_sparse_move
+                0x010021e8      0x15c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.apply_move_delta_cpu
+                0x01002344      0x154 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.evaluate_sparse_hardware_batch
+                0x01002498      0x620 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.run_delta_batch
+                0x01002ab8      0x290 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.evaluate_batch.part.0
+                0x01002d48      0x428 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.evaluate_batch
+                0x01003170       0x30 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .text.startup.main
+                0x010031a0     0x124c C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                0x010031a0                main
+ .text.fill_rect.constprop.0
+                0x010043ec       0x88 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.diagonal.constprop.0
+                0x01004474       0xec C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_char.constprop.0
+                0x01004560      0x220 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_text.constprop.0
+                0x01004780       0x58 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_uint.constprop.0
+                0x010047d8       0x98 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_hanzi.constprop.0
+                0x01004870       0xec C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_hanzi_text.constprop.1
+                0x0100495c       0x60 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_hanzi_text.constprop.0
+                0x010049bc       0x64 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_panel_turn.constprop.0
+                0x01004a20       0x7c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_panel_score.constprop.0
+                0x01004a9c      0x214 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_panel_nodes.constprop.0
+                0x01004cb0       0x6c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_panel_time_value.constprop.0
+                0x01004d1c       0xd4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_voice_feedback.constprop.0
+                0x01004df0       0x7c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.put_pixel.constprop.0
+                0x01004e6c       0x50 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_disc.constprop.0
+                0x01004ebc       0xb4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_ring.constprop.0
+                0x01004f70       0xc8 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_panel_status.constprop.0
+                0x01005038      0x10c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.video_fb_present
+                0x01005144       0x4c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_position.constprop.0
+                0x01005190      0x240 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.draw_board.constprop.0
+                0x010053d0      0x1c8 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .text.xq_fb_gui_init
+                0x01005598       0x64 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+                0x01005598                xq_fb_gui_init
+ .text.xq_fb_gui_show
+                0x010055fc      0x5d8 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+                0x010055fc                xq_fb_gui_show
+ .text.xq_fb_gui_status
+                0x01005bd4        0xc C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+                0x01005bd4                xq_fb_gui_status
+ .text.xq_mouse_input_init
+                0x01005be0       0x18 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+                0x01005be0                xq_mouse_input_init
+ .text.xq_mouse_screen_to_square
+                0x01005bf8       0x6c C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+                0x01005bf8                xq_mouse_screen_to_square
+ .text.xq_mouse_input_update
+                0x01005c64      0x190 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+                0x01005c64                xq_mouse_input_update
+ .text.xq_pikafish_board_to_fen
+                0x01005df4      0x158 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+                0x01005df4                xq_pikafish_board_to_fen
+ .text.xq_pikafish_parse_move
+                0x01005f4c       0x94 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+                0x01005f4c                xq_pikafish_parse_move
+ .text.xq_pikafish_apply_move
+                0x01005fe0       0xa4 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+                0x01005fe0                xq_pikafish_apply_move
+ .text.same_side
+                0x01006084       0x28 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.find_king
+                0x010060ac       0x38 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.count_between
+                0x010060e4       0x88 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.in_board
+                0x0100616c       0x10 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.insert_candidate
+                0x0100617c       0xac C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.in_palace
+                0x01006228       0x2c C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.can_move_piece
+                0x01006254      0x27c C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.attacker_at
+                0x010064d0       0xac C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.square_attacked
+                0x0100657c      0x28c C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.add_target
+                0x01006808       0xa4 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.xq_search_legal_moves.part.0
+                0x010068ac      0x688 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.xq_search_is_legal
+                0x01006f34      0x104 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+                0x01006f34                xq_search_is_legal
+ .text.xq_search_legal_moves
+                0x01007038       0x24 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+                0x01007038                xq_search_legal_moves
+ .text.negamax  0x0100705c      0x5a0 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .text.xq_search_move_to_iccs
+                0x010075fc       0x50 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+                0x010075fc                xq_search_move_to_iccs
+ .text.xq_search_go
+                0x0100764c      0x580 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+                0x0100764c                xq_search_go
+ .text.buffers_fit
+                0x01007bcc       0x64 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .text.xiangqi_nnue_mac_prepare
+                0x01007c30      0x350 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+                0x01007c30                xiangqi_nnue_mac_prepare
+ .text.xiangqi_nnue_mac_accum
+                0x01007f80      0x18c C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+                0x01007f80                xiangqi_nnue_mac_accum
+ .text.xiangqi_nnue_mac_prepare_batch_delta
+                0x0100810c      0x488 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+                0x0100810c                xiangqi_nnue_mac_prepare_batch_delta
+ .text.xiangqi_nnue_mac_batch_delta
+                0x01008594      0x1a8 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+                0x01008594                xiangqi_nnue_mac_batch_delta
+ .text.mac_kernel_read
+                0x0100873c        0xc C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x0100873c                mac_kernel_read
+ .text.mac_kernel_validate_job
+                0x01008748       0x98 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x01008748                mac_kernel_validate_job
+ .text.mac_kernel_buffer_sizes
+                0x010087e0       0xbc C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x010087e0                mac_kernel_buffer_sizes
+ .text.mac_kernel_clear
+                0x0100889c       0x14 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x0100889c                mac_kernel_clear
+ .text.mac_kernel_submit
+                0x010088b0      0x114 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x010088b0                mac_kernel_submit
+ .text.mac_kernel_poll
+                0x010089c4       0x20 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x010089c4                mac_kernel_poll
+ .text.mac_kernel_wait
+                0x010089e4       0x60 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x010089e4                mac_kernel_wait
+ .text.mac_kernel_cycles
+                0x01008a44        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x01008a44                mac_kernel_cycles
+ .text.mac_kernel_error_code
+                0x01008a4c       0x10 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+                0x01008a4c                mac_kernel_error_code
+ .text.__lshrdi3
+                0x01008a5c       0x3c D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+                0x01008a5c                __lshrdi3
+ .text.__divdi3
+                0x01008a98      0x40c D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+                0x01008a98                __divdi3
+
+.rodata         0x01008eb0     0x17c8
+ *(.rodata.model)
+ *(.rodata .rodata.*)
+ .rodata.uart_put_hex.str1.4
+                0x01008eb0      0xa19 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                  0x3 (size before relaxing)
+ *fill*         0x010098c9        0x3 
+ .rodata.feature_offset
+                0x010098cc       0x18 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .rodata.print_info.str1.4
+                0x010098e4        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                0x1a4 (size before relaxing)
+ .rodata.print_search_result.str1.4
+                0x010098e4        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                 0xc2 (size before relaxing)
+ .rodata.process_black_reply.part.0.str1.4
+                0x010098e4        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                 0x30 (size before relaxing)
+ .rodata.request_pikafish_reply.isra.0.str1.4
+                0x010098e4        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                 0x5b (size before relaxing)
+ .rodata.parse_fen
+                0x010098e4       0x48 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .rodata.process_go.str1.4
+                0x0100992c        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                  0xc (size before relaxing)
+ .rodata.restart_game.str1.4
+                0x0100992c        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                 0x23 (size before relaxing)
+ .rodata.xq_uart_service_main.str1.4
+                0x0100992c        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                0x1d4 (size before relaxing)
+ .rodata.main.str1.4
+                0x0100992c        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+                                0x4f9 (size before relaxing)
+ .rodata.main   0x0100992c       0x18 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .rodata.digits.0
+                0x01009944       0x11 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ *fill*         0x01009955        0x3 
+ .rodata.start_fen
+                0x01009958       0x3e C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ *fill*         0x01009996        0x2 
+ .rodata.king_bucket
+                0x01009998       0x5a C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ *fill*         0x010099f2        0x2 
+ .rodata.zero_feature_row
+                0x010099f4       0x80 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .rodata.draw_panel_score.constprop.0.str1.4
+                0x01009a74        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+                                  0x3 (size before relaxing)
+ .rodata.xq_fb_gui_show.str1.4
+                0x01009a74        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+                                 0x1d (size before relaxing)
+ .rodata.CSWTCH.90
+                0x01009a74        0xf C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009a83        0x1 
+ .rodata.CSWTCH.89
+                0x01009a84       0x3c C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.red_labels.0
+                0x01009ac0        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.black_labels.1
+                0x01009ac8        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.han_jie.2
+                0x01009ad0        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009ad2        0x2 
+ .rodata.chu_he.3
+                0x01009ad4        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009ad6        0x2 
+ .rodata.state_restarted
+                0x01009ad8        0x5 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009add        0x3 
+ .rodata.state_best_move
+                0x01009ae0        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_no_move
+                0x01009ae4        0x3 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009ae7        0x1 
+ .rodata.state_evaluated
+                0x01009ae8        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_black_move
+                0x01009aec        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_red_wins
+                0x01009af0        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_search_error
+                0x01009af4        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_black_think
+                0x01009af8        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_eval_error
+                0x01009afc        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_mouse_move
+                0x01009b00        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_select_own
+                0x01009b04        0x6 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b0a        0x2 
+ .rodata.state_illegal
+                0x01009b0c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_cancelled
+                0x01009b10        0x3 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b13        0x1 
+ .rodata.state_reselected
+                0x01009b14        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_selected
+                0x01009b18        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.state_ready
+                0x01009b1c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_restart
+                0x01009b20        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_status
+                0x01009b24        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b26        0x2 
+ .rodata.text_milliseconds
+                0x01009b28        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b2a        0x2 
+ .rodata.text_microseconds
+                0x01009b2c        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b2e        0x2 
+ .rodata.text_inference_time
+                0x01009b30        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_nodes
+                0x01009b34        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b36        0x2 
+ .rodata.text_red_win_rate
+                0x01009b38        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_score
+                0x01009b3c        0x2 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x01009b3e        0x2 
+ .rodata.text_black_turn
+                0x01009b40        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_red_turn
+                0x01009b44        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.text_chinese_chess
+                0x01009b48        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.font5x7
+                0x01009b4c       0xfc C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.xq_font16x16
+                0x01009c48      0x8c0 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .rodata.red_pieces.0
+                0x0100a508        0x9 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ *fill*         0x0100a511        0x3 
+ .rodata.suffix.1
+                0x0100a514        0x9 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ *fill*         0x0100a51d        0x3 
+ .rodata.can_move_piece
+                0x0100a520       0x1c C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .rodata.xq_search_legal_moves.part.0
+                0x0100a53c       0x1c C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .rodata.horse.0
+                0x0100a558       0x10 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .rodata.diagonal.1
+                0x0100a568        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .rodata.orthogonal.2
+                0x0100a570        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .rodata.__clz_tab
+                0x0100a578      0x100 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+                0x0100a578                __clz_tab
+ *(.srodata .srodata.*)
+
+.rela.dyn       0x0100a678        0x0
+ .rela.text.start
+                0x0100a678        0x0 C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+
+.data           0x0100a678       0x20
+                0x0100a678                        __data_start = .
+ *(.data .data.*)
+ .data.voice_feedback
+                0x0100a678       0x12 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *fill*         0x0100a68a        0x2 
+ .data.red_win_rate_permille
+                0x0100a68c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .data.clip_y1  0x0100a690        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .data.clip_x1  0x0100a694        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ *(.sdata .sdata.*)
+                0x0100a698                        __data_end = .
+                0x0100ae78                        PROVIDE (__global_pointer$ = (__data_start + 0x800))
+
+.bss            0x0100a698     0xa714
+                0x0100a698                        __bss_start = .
+ *(.sbss .sbss.*)
+ *(.bss .bss.*)
+ .bss.crc32_table
+                0x0100a698      0x400 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.pikafish_request_ticks
+                0x0100aa98        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.pikafish_model_resident
+                0x0100aa9c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.pikafish_pending
+                0x0100aaa0        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.pikafish_host_mode
+                0x0100aaa4        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.command_length
+                0x0100aaa8        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.accumulator_cache
+                0x0100aaac       0x84 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_last_error
+                0x0100ab30        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_errors
+                0x0100ab34        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_fallbacks
+                0x0100ab38        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_cycles
+                0x0100ab3c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_positions
+                0x0100ab40        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_jobs
+                0x0100ab44        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_hw_available
+                0x0100ab48        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.mac       0x0100ab4c       0x54 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.command_line
+                0x0100aba0       0xa0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.batch_delta_packed
+                0x0100ac40      0x300 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.batch_delta_matrix
+                0x0100af40      0x300 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.batch_feature_offsets
+                0x0100b240       0xc0 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.batch_accum_black
+                0x0100b300     0x2000 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.batch_accum_red
+                0x0100d300     0x2000 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_parent_bucket
+                0x0100f300        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.score_bias_numerator
+                0x0100f308        0x8 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.scaled_output_weights
+                0x0100f310      0x400 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_base_black
+                0x0100f710      0x200 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.sparse_base_red
+                0x0100f910      0x200 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.accum_black
+                0x0100fb10      0x200 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.accum_red
+                0x0100fd10      0x200 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .bss.display_started
+                0x0100ff10        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.current_front
+                0x0100ff14        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.displayed_scene
+                0x0100ff18       0x84 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.voice_feedback_generation
+                0x0100ff9c        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.show_red_win_rate
+                0x0100ffa0        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.clip_y0   0x0100ffa4        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.clip_x0   0x0100ffa8        0x4 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .bss.bias_stage.0
+                0x0100ffac      0x600 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .bss.weight_stage.1
+                0x010105ac     0x2000 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .bss.input_stage.2
+                0x010125ac      0x400 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .bss.weight_stage.3
+                0x010129ac     0x2000 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .bss.input_stage.4
+                0x010149ac      0x400 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ *(COMMON)
+                0x01014dac                        . = ALIGN (0x4)
+                0x01014dac                        __bss_end = .
+                0x01014dac                        __image_end = .
+                0x010fc000                        __stack_bottom = ((ORIGIN (DDR) + LENGTH (DDR)) - 0x4000)
+                0x01100000                        __stack_top = (ORIGIN (DDR) + LENGTH (DDR))
+                0x00000001                        ASSERT ((__image_end <= __stack_bottom), Xiangqi HDMI service image overlaps its stack)
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+ *(.eh_frame*)
+OUTPUT(artifacts/xiangqi_sd.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x57
+ .riscv.attributes
+                0x00000000       0x55 C:\Users\DOGAND~1\AppData\Local\Temp\ccE6PLw7.o
+ .riscv.attributes
+                0x00000055       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\cczetEkO.o
+ .riscv.attributes
+                0x000000ac       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\cc3ZshmL.o
+ .riscv.attributes
+                0x00000103       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\ccJ93Q8M.o
+ .riscv.attributes
+                0x0000015a       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\ccEqLjeP.o
+ .riscv.attributes
+                0x000001b1       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\ccpKKJsc.o
+ .riscv.attributes
+                0x00000208       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\ccgJxnWJ.o
+ .riscv.attributes
+                0x0000025f       0x57 C:\Users\DOGAND~1\AppData\Local\Temp\cczYTiEo.o
+ .riscv.attributes
+                0x000002b6       0x42 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .riscv.attributes
+                0x000002f8       0x42 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .riscv.attributes
+                0x0000033a       0x42 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+.debug_info     0x00000000      0xb0d
+ .debug_info    0x00000000      0x1b1 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_info    0x000001b1      0x878 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .debug_info    0x00000a29       0xe4 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+.debug_abbrev   0x00000000      0x360
+ .debug_abbrev  0x00000000      0x114 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x00000114      0x1d6 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .debug_abbrev  0x000002ea       0x76 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+.debug_loclists
+                0x00000000      0x93d
+ .debug_loclists
+                0x00000000       0xaa D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_loclists
+                0x000000aa      0x893 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+
+.debug_aranges  0x00000000       0x58
+ .debug_aranges
+                0x00000000       0x20 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x00000020       0x20 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x00000040       0x18 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+.debug_rnglists
+                0x00000000       0xcd
+ .debug_rnglists
+                0x00000000       0x1f D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_rnglists
+                0x0000001f       0xae D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+
+.debug_line     0x00000000      0xa4c
+ .debug_line    0x00000000       0xd6 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+ .debug_line    0x000000d6      0x92d D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+ .debug_line    0x00000a03       0x49 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+
+.debug_str      0x00000000      0x2fa
+ .debug_str     0x00000000      0x2fa D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+                                0x1eb (size before relaxing)
+ .debug_str     0x000002fa        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+                                0x260 (size before relaxing)
+ .debug_str     0x000002fa        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+                                0x1ae (size before relaxing)
+
+.debug_line_str
+                0x00000000       0x96
+ .debug_line_str
+                0x00000000       0x96 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)
+                                 0xa0 (size before relaxing)
+ .debug_line_str
+                0x00000096        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_divdi3.o)
+                                 0xa0 (size before relaxing)
+ .debug_line_str
+                0x00000096        0x0 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_clz.o)
+                                 0xa0 (size before relaxing)
+
+.debug_frame    0x00000000       0x20
+ .debug_frame   0x00000000       0x20 D:/cpu-tools/v35-gcc16-build/native/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a(_lshrdi3.o)

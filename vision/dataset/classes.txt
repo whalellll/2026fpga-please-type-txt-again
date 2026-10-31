@@ -1,0 +1,14 @@
+0 red_shuai
+1 red_shi
+2 red_xiang
+3 red_ma
+4 red_ju
+5 red_pao
+6 red_bing
+7 black_jiang
+8 black_shi
+9 black_xiang
+10 black_ma
+11 black_ju
+12 black_pao
+13 black_zu

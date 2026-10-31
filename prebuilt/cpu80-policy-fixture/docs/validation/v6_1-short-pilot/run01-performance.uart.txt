@@ -1,0 +1,39 @@
+SIM_CLOCK_QUANTIZATION cpu_half_fs=8417508 sys_half_fs=10101010
+
+SoC V6.1 bootloader - CPU V3.1 / RV32IMA
+Candidate: board validation pending.
+Console ready. Linux boot is untested on this CPU. Type help.
+soc> info
+SYS_ID=0x53563300 DDR=ready SYS_HZ=49500000 CPU_HZ=59400000 TIMEBASE_HZ=49500000 CAPS=0x0000001f ETH_ID=0x00000000 SPI_ID=0x00000000 FLASH_JEDEC=0x0020ba18 SD_ID=0x00000000 SD=absent AUDIO_ID=0x00000000 MAC_ID=0x00000000 MAC_VER=0x00000000
+soc> coremark
+CoreMark v1.0: CPU V3.1 RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=59400000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=performance
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 1658460
+Total time (secs): 0.033504
+Iterations/Sec   : 298.469665
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 10
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xfcaf
+Errors detected
+PORT_TICKS64 : 1658460
+COREMARK_FAIL
+COREMARK_DONE
+CoreMark command failed validation.
+soc> 
+CPU_PRODUCTION_COREMARK_DONE mode=performance pilot=1 cycles=1848585 real_timer_cycles=1742964 cpu_hz=59400000 timer_stimulus_scale=1 observed_cpu_cycles_timer_release_to_prompt=2091557
+- D:/LJL/WORK/GitHub/performance_soc/sim\tb_cpu_integration.sv:685: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 37ms; walltime 40.653 s; speed 918.652 us/s
+- Verilator: cpu 38.312 s on 1 threads; allocated 5 MB

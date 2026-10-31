@@ -1,0 +1,11 @@
+{
+  "status": "VISION32_EXACT_S16_LUT65536_RTL_PASS_NOT_BOARD",
+  "cases": 156,
+  "soc": false,
+  "exit_code": 0,
+  "inputs_sha256": {
+    "rtl/mac_accel/vision32_pe.v": "7c4ce887a31985d31af669f0860e81de50eea6673b71bd0df92ddeb684906574",
+    "rtl/mac_accel/vision32_layer.v": "e542ee3ebd33128ba66cda684cebfe9f284159d2b8b988c18f205ef5ddbcc026",
+    "build/serial-exact-01/tb_exact.sv": "15d3f345f3f5975e7e0a4f58e3750fc346dbc65f98a7b865e0b62961adf9b597"
+  }
+}

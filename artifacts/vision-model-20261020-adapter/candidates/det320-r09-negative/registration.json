@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "candidate": "det320-r09-negative",
+  "selected_for_work": false,
+  "deployable": false,
+  "reason": "Strict usable 99/135=73.3%, below accepted working combination",
+  "model_sha256": "5cb0673537bfbd56e9d663dbf5c6ce8f2ebdca91656fbd85122d562df4c00c6a",
+  "first_round_strict_usable": "75/135=55.6%",
+  "second_round_strict_usable": "99/135=73.3%",
+  "production_ready": false
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version":  1,
+    "evidence_kind":  "volatile_cram_program",
+    "status":  "PASS",
+    "started_utc":  "2026-10-25T10:02:23.7769586Z",
+    "completed_utc":  "2026-10-25T10:02:55.8046895Z",
+    "operation":  "CRAM",
+    "device":  "PG2L100H",
+    "device_id":  "0x00602899",
+    "device_count":  1,
+    "device_index":  0,
+    "bitstream_sha256":  "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+    "assigned_bitstream_path":  "G:/fpga/performance_soc_image_hwc_20261025/build/native-physical-01/pds/generate_bitstream/soc_top.sbit",
+    "provenance":  "Observed scan, file assignment, and successful volatile CRAM programming; no configuration readback.",
+    "program_log_sha256":  "4656add319e6ae04c93882fd0a9ab84e9637fb97301714077f946ebf946213c5",
+    "preflight_log_sha256":  "cd66bfc9e3bd7a7f4b9aa5d8927b792cf1fde6cee84c7e55cc8153d7959fbdd9"
+}

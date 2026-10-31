@@ -1,0 +1,61 @@
+{
+  "status": "PORTABLE_NATIVE_MUL_CHECKERS_SOURCE_COPIED_NOT_RUN",
+  "origin": "G:\\fpga\\performance_soc_voice_hw\\build\\cpu85-20261022-mulcsa",
+  "files": {
+    "inspect_mul_signed_mapping.py": {
+      "origin_sha256": "33cc2f1e0e2652ff818cdccb10f27fa9be1394479483fdf43246bf8a9e647813",
+      "sha256": "a22e47084b6244866eb67a6bfa923390d737d9be25651ef94335ae4c00fe1bf8"
+    },
+    "native_sat_bits.py": {
+      "origin_sha256": "e5d112ed79dda13eca43035ee5f5dd6927d2e6a13a131b347baaabdfe932e164",
+      "sha256": "e5d112ed79dda13eca43035ee5f5dd6927d2e6a13a131b347baaabdfe932e164"
+    },
+    "native_data_boundary_graph_v2.py": {
+      "origin_sha256": "2ae4790cc225db82b3be86ee85f9ca334af11a5be6bbc4ae467b66ca7a189e25",
+      "sha256": "2ae4790cc225db82b3be86ee85f9ca334af11a5be6bbc4ae467b66ca7a189e25"
+    },
+    "native_boolean_graph_v3.py": {
+      "origin_sha256": "61524ea85ac4597de836d054c0307ffd4417d85dba61a289c1bde8cc83eb6516",
+      "sha256": "61524ea85ac4597de836d054c0307ffd4417d85dba61a289c1bde8cc83eb6516"
+    },
+    "native_hier_cone_vector_v2.py": {
+      "origin_sha256": "75715d86fcc55b96d94a4fd86726bbe8dd3c85230316e44cc5c6d6966d4420f8",
+      "sha256": "75715d86fcc55b96d94a4fd86726bbe8dd3c85230316e44cc5c6d6966d4420f8"
+    },
+    "native_hier_cone.py": {
+      "origin_sha256": "acbeb32ffa35b141a36a4f1b46b9aa80791ffa949704dba49eda12dc1d08d903",
+      "sha256": "acbeb32ffa35b141a36a4f1b46b9aa80791ffa949704dba49eda12dc1d08d903"
+    },
+    "solver-identity.json": {
+      "origin_sha256": "c71bfb529995fbab9fc195f6ae53075537493d5f09f7fd2fc8be4cbf6bd818d6",
+      "sha256": "c71bfb529995fbab9fc195f6ae53075537493d5f09f7fd2fc8be4cbf6bd818d6"
+    },
+    "run_mul_vendor_waveform.py": {
+      "origin_sha256": "582bf9eabf5cf4ff3f3818c477d47a40ee6dd19bf272fa075b4d6ea832714192",
+      "sha256": "a754913facb5d18ebb8d13e770f4167e62ea1738ca779939cdbb268a3fc47bf4"
+    },
+    "solver_files": {
+      "tools/python/z3/z3.py": "07d21278b9b6074955de700b710f1f85f2a968d71b90b07c1dbdde409d087334",
+      "tools/python/z3/z3consts.py": "819b533fed25b2ea0e6df4146ddbf43c6ee79b3f10fbf490c6783c779bf9ab34",
+      "tools/python/z3/z3core.py": "b2f195c88fed094f17992b083cf3e524497c2cb245eb498b70251874463fc498",
+      "tools/python/z3/z3num.py": "b099dee2352be581ef96fbedc183ac324f03002ee7cf71fbebf6aa1355cd4341",
+      "tools/python/z3/z3poly.py": "fd06029418e5899b300fe3b3a300d110c8e174e633cba8b751314f22a583394e",
+      "tools/python/z3/z3printer.py": "0962d30b9543e04f0bdd4636d91983973a604d6ab2b76a028300db37dfa0154e",
+      "tools/python/z3/z3rcf.py": "504e0339b1bb06075c19ca52e51457716671218a2f2191d0c9754e0b75bede87",
+      "tools/python/z3/z3regex.py": "4f64903cce356c6fb541041d9c50ce70c8d12a0824592611d87bd603290f83e4",
+      "tools/python/z3/z3types.py": "ba728354b4a9ee40bcfbd899f405d904bc4bb023e41807044c06c318548c3080",
+      "tools/python/z3/z3util.py": "bd1b436749b0d7700100a6a49fd09f09975c025f156925fc8805ac99e6db50f8",
+      "tools/python/z3/__init__.py": "54e1833c2df2ca01c33b487180f75580eab8364dc1800a259263b64310069bf3",
+      "tools/python/z3/lib/libz3.dll": "f70e5c7c2c5cf5bbaf68f015e0bb1d75e93a6dc4c5821df9638f2c5ff9496857",
+      "tools/python/z3/lib/msvcp140.dll": "7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca",
+      "tools/python/z3/lib/msvcp140_1.dll": "206c931bf90fdad8816de3b5e2ef80b2bcaa9406c89ecc05fe6fddffe251e982",
+      "tools/python/z3/lib/msvcp140_2.dll": "d50d7883f20d1dc6191768d3746f52dd9cac89c346ffaed5be1f110c2f34a838",
+      "tools/python/z3/lib/msvcp140_atomic_wait.dll": "3d0cbfaa1bf3eecf5a3f4491d2960ee803cb994f30292c6adc4a07c498f60e2b",
+      "tools/python/z3/lib/msvcp140_codecvt_ids.dll": "8a65c7596ef2e6938731f5a1058e7e40145b6d97967cc649231a076b9a608d78",
+      "tools/python/z3/lib/vcomp140.dll": "95d4ce4a6802d1e18b5e0e1722cc30ea72ca7e033f83828f05c0b7b993fe7cbf",
+      "tools/python/z3/lib/vcruntime140.dll": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+      "tools/python/z3/lib/vcruntime140_1.dll": "a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e",
+      "tools/python/z3/lib/vcruntime140_threads.dll": "40f39e8cee5f5a531b4010e18b807e8fe265b908dc58f959ecb7ebc6ea6cb11a"
+    }
+  }
+}

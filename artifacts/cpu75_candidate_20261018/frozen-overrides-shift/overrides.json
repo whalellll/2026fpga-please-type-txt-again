@@ -1,0 +1,23 @@
+{
+  "status": "FROZEN_INPUT_REPRODUCIBILITY_OVERRIDES_NOT_TIMING_ACCEPTANCE",
+  "run_id": "c11dbcc96d3548e19fffab98fcd22959",
+  "scope": "Apply these exact bytes to an isolated copy of the SoC source, then verify every input against input-snapshot.json. CPU source archive is supplied separately. Do not apply to production in place.",
+  "files_sha256": {
+    "config/clocks.json": "b94356b3116f4bb3235b11149d282f12fd844733aa7e07f184cd9398d279e83e",
+    "config/timing_scope_baseline.json": "f791255f377187a00449226d7cc41a11872a9f941ec64d7ba578f20b6963b735",
+    "linux/boot/soc.dtb": "7712aa8adcc0db562e8da81771333fa35bcf3520cf14e40705145c69e48ed3f7",
+    "linux/soc.dts": "44258c8d23ad9a8e62c75f8a1bb49f67c23ce60bb1b4b3aa874f124378115e60",
+    "pds/soc.fdc": "eabd12191dd88740ee33d73c092845d7ef19bfd4b5be8cb0d470ecb0fc1505ef",
+    "rtl/cpu/CoreTop.sv": "e35cf8891d5cb323c1fc1518afc28862460bcbc62200e0693746e4ec3944b979",
+    "rtl/cpu/emit-config.json": "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+    "rtl/cpu/source.json": "80d4940fa6cf0c7b693f0821520ee4f1b422d072fafc35f7f62b8995073ed57e",
+    "rtl/soc/soc_top.v": "b442e22296d2882cd2e709a2775cbb7ab2f95b36ca97b74e87bea7f7d40e12b9",
+    "rtl/video/pll_video.v": "9b670e45ad5022d7f33753ba2238829a6d49f0fb88393ccffedc4932fd7f495b",
+    "scripts/coremark_fixed_bootloader.ps1": "4fb7f16a9255fdbe72d71f9810bb7cbb903a2e438cb57b070ca8018e24f3664a",
+    "scripts/measure_coremark.ps1": "6da73fa750e191a9dd8dc16e79bcc2a83905cb1ee7311cb9badc378db41f484b",
+    "scripts/run_coremark_production_sim.ps1": "b57307efb130c98b4e63a632accf787353cc3869b6f796e9fb839f440485c9d8",
+    "sim/tb_cpu_integration.sv": "a56c5750a049836e22f531e19653043966f131d917b06bb934da903acad7cb45",
+    "sw/bootloader/soc.h": "7a0dcdf83e6ddcc827e04e08245c961e8498e25e648cfe53070139b2c3acc692"
+  },
+  "input_snapshot_sha256": "4f57a32f174376ad6dd380d8c2e0abbdba986926e2c9316e2bdca4922eedd2e5"
+}

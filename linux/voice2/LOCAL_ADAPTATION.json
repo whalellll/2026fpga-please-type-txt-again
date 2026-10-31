@@ -1,0 +1,30 @@
+{
+  "import_commit": "a901132a7493a6402c145d9208be92d751faf118",
+  "purpose": "Enable CLI live streaming, exact paced WAV A/B and explicit endpoint timing; model/FFT integer rules unchanged.",
+  "files": {
+    "upstream/xqvoice_runtime.c": {
+      "imported_sha256": "fd0821bfe9c90c528de31ad2d3e7943d37ac65a40bc0df414d27e05dde507b40",
+      "adapted_sha256": "ff6c6baa59ea659e737e8c4727f134cf23de2405f2f8e36f35627201f0011879"
+    },
+    "upstream/xqvoice_frontend.c": {
+      "imported_sha256": "3c73019e5b52016d6cb9e6c7d1e1f88075473146067d8a1c47ac236952bf9fa3",
+      "adapted_sha256": "daff7cbcf2f71b458e3e2ac928abe1bc4e70b4d7b8d48c04a9e5a5422858eadb"
+    },
+    "upstream/xqvoice_frontend.h": {
+      "imported_sha256": "1a8e1406d0f396722d29e31de991a32a33bcc36bc63f1b98b6c35a97fa3eb7c9",
+      "adapted_sha256": "d6ebf31be9e7fbf27d6c84df2f16ddc9ec471c13834b40e14992406afc8aa96c"
+    },
+    "upstream/xqvoice_capture.c": {
+      "imported_sha256": "b7f061ea115725ca00bc130748500ac6459b005d7dc03cb8adccea30d51aa853",
+      "adapted_sha256": "b7b4084e51d64c6e0d1be3e470d011d2607f8f67fb661632ee9af490a65ae5b3"
+    },
+    "upstream/xqvoice_capture.h": {
+      "imported_sha256": "029abb2d2745c8f7650501802a9e703b7223b91b72e06d6c4c59b0cb477dd99e",
+      "adapted_sha256": "6dc80128f4b80a81170b98bbdf1a09faa804e05e435fea107041818030abfa37"
+    },
+    "upstream/xqvoice_stream.inc": {
+      "imported_sha256": "fe27b924fba4ba90f14fb045767ae57cd06dae49ad21c7cec3a3584d82d22721",
+      "adapted_sha256": "077b852f16c790be8f361400335ef7061e5712c4f5dd437a2ffb412347117939"
+    }
+  }
+}

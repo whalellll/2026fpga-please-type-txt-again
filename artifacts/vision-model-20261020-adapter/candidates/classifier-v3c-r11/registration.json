@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "candidate": "classifier-v3c-r11",
+  "acceptance_status": "E组合正式FP32数字门通过；待量化/时延/整体验收",
+  "selected_for_work": false,
+  "default_classifier": "v3c",
+  "best_epoch": 20,
+  "model_sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca",
+  "training_reported_deploy_recall": 0.9904777694522676,
+  "training_gate_passed": true,
+  "formal_game2_results": "r12 truth_v2 official FP32; combination-specific",
+  "quantized_payload_available": false,
+  "production_ready": false,
+  "fp32_profiles": {
+    "det416-r09": {
+      "root": "build/picture-r11-20261022/adapter-inputs/profiles/det416-r09/software",
+      "detector_input": 416,
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "00ee378484d492f4f715ca584dbc12b3fddaa7b4859ac0b93a25a155fcf8069e"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      }
+    },
+    "det416mix-r11": {
+      "root": "build/picture-r11-20261022/adapter-inputs/profiles/det416mix-r11/software",
+      "detector_input": 416,
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "8230164ddc9e3d1561be6ae638b2f8d05d2f0c6e66088217a2e4aa7bef28ccaf"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      }
+    },
+    "frozen640": {
+      "root": "build/picture-r11-20261022/adapter-inputs/profiles/frozen640/software",
+      "detector_input": 640,
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      }
+    }
+  },
+  "selected_by_combination": "E-v1-640-v3c-r12",
+  "superseded_by": "candidate_r14_e_v3dqat"
+}

@@ -1,0 +1,78 @@
+diff --git a/src/main.cpp b/src/main.cpp
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -27,7 +27,14 @@
+ 
+ using namespace Stockfish;
+ 
+-#ifdef PIKAFISH_EMBEDDED_GUI
++#if defined(PIKAFISH_STAGEB_POSITION_ACCEPTANCE)
++extern "C" int pikafish_stageb_position_acceptance_main(int argc, char** argv);
++
++int main(int argc, char* argv[]) {
++    return pikafish_stageb_position_acceptance_main(argc, argv);
++}
++
++#elif defined(PIKAFISH_EMBEDDED_GUI)
+ extern "C" int xiangqi_pikafish_gui_main(void);
+ 
+ int main() { return xiangqi_pikafish_gui_main(); }
+diff --git a/src/nnue/network.h b/src/nnue/network.h
+--- a/src/nnue/network.h
++++ b/src/nnue/network.h
+@@ -19,6 +19,7 @@
+ #ifndef NETWORK_H_INCLUDED
+ #define NETWORK_H_INCLUDED
+ 
++#include <array>
+ #include <functional>
+ #include <iostream>
+ #include <memory>
+@@ -45,6 +46,18 @@ struct AccumulatorCaches;
+ 
+ using NetworkOutput = std::tuple<Value, Value>;
+ 
++#if defined(PIKAFISH_STAGEB_POSITION_ACCEPTANCE)
++struct StageBPositionTrace {
++    std::array<TransformedFeatureType, FeatureTransformer::BufferSize> transformedFeatures{};
++    std::array<i32, L2> fc0{};
++    i32                 psqtRaw       = 0;
++    i32                 positionalRaw = 0;
++    Value               psqt          = VALUE_ZERO;
++    Value               positional    = VALUE_ZERO;
++    int                 bucket        = -1;
++};
++#endif
++
+ // The network must be a trivial type, i.e. the memory must be in-line.
+ // This is required to allow sharing the network via shared memory, as
+ // there is no way to run destructors.
+@@ -71,6 +84,28 @@ class Network {
+                            AccumulatorCaches& cache) const;
+ 
+ 
++#if defined(PIKAFISH_STAGEB_POSITION_ACCEPTANCE)
++    StageBPositionTrace stageb_position_trace(const Position&    pos,
++                                              AccumulatorStack&  accumulatorStack,
++                                              AccumulatorCaches& cache) const {
++        StageBPositionTrace trace{};
++        NNZInfo<L1>         nnzInfo;
++        trace.bucket = PSQFeatureSet::make_layer_stack_bucket(pos);
++        trace.psqtRaw = featureTransformer.transform(
++          pos, accumulatorStack, cache, trace.transformedFeatures.data(), trace.bucket, nnzInfo);
++        typename decltype(network[0].fc_0)::OutputBuffer fc0{};
++        network[trace.bucket].fc_0.propagate(trace.transformedFeatures.data(), fc0, nnzInfo);
++        for (usize lane = 0; lane < trace.fc0.size(); ++lane)
++            trace.fc0[lane] = fc0[lane];
++        trace.positionalRaw =
++          network[trace.bucket].propagate(trace.transformedFeatures.data(), nnzInfo);
++        trace.psqt       = static_cast<Value>(trace.psqtRaw / OutputScale);
++        trace.positional = static_cast<Value>(trace.positionalRaw / OutputScale);
++        return trace;
++    }
++#endif
++
++
+     void verify(const std::function<void(std::string_view)>& f,
+                 const EvalFile&                              evalFile,
+                 std::filesystem::path                        evalfilePath) const;

@@ -1,0 +1,6018 @@
+{
+  "schema_version": 1,
+  "model": "yolov5n",
+  "class_count": 14,
+  "input_shape": [
+    1,
+    3,
+    320,
+    320
+  ],
+  "reference_layout": "NCHW",
+  "reference_dtype": "float32",
+  "device_layout": "NHWC4",
+  "device_element_bytes": 1,
+  "device_channel_tail": "zero",
+  "preprocess": {
+    "source_channels": "BGR",
+    "model_channels": "RGB",
+    "letterbox_shape": [
+      320,
+      320
+    ],
+    "letterbox_auto": false,
+    "letterbox_scale_fill": false,
+    "letterbox_scale_up": false,
+    "letterbox_stride": 32,
+    "letterbox_color": [
+      114,
+      114,
+      114
+    ],
+    "reference_scaling": "uint8_div_255_to_float32"
+  },
+  "device_conv_output_order": [
+    "output_y",
+    "output_x",
+    "output_channel"
+  ],
+  "window_order": [
+    "output_y",
+    "output_x",
+    "channel_tile",
+    "kernel_y",
+    "kernel_x"
+  ],
+  "detect_raw_order": [
+    "batch",
+    "anchor",
+    "grid_y",
+    "grid_x",
+    "prediction"
+  ],
+  "detect_decoded_order": [
+    "batch",
+    "candidate",
+    "prediction"
+  ],
+  "trained_weights": false,
+  "weight_sha256": null,
+  "class_names_sha256": "91a3423cc1fb289fc1c5830e4c3face046ae4abecd755501bc6efbd78c961f76",
+  "config_sha256": "c388fddf6310168e464ee4d63d751777329328720304ad48563109bcb0b20746",
+  "code_sha256": "e9bd89358c39f528927b74241a6ba141419fa74d1aed08725d916e4969bfbe93",
+  "torch_version": "2.5.1+cu124",
+  "yolov5_version": "7.0.14",
+  "detect_raw_shapes": [
+    [
+      1,
+      3,
+      40,
+      40,
+      19
+    ],
+    [
+      1,
+      3,
+      20,
+      20,
+      19
+    ],
+    [
+      1,
+      3,
+      10,
+      10,
+      19
+    ]
+  ],
+  "detect_decoded_shape": [
+    1,
+    6300,
+    19
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "name": "model.0.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "input_shapes": [
+        [
+          1,
+          3,
+          320,
+          320
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        3,
+        6,
+        6
+      ],
+      "kernel": [
+        6,
+        6
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "groups": 1
+    },
+    {
+      "index": 1,
+      "name": "model.0.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          160,
+          160
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 2,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          160,
+          160
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 3,
+      "name": "model.1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          160,
+          160
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 4,
+      "name": "model.1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 5,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 6,
+      "name": "model.2.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 7,
+      "name": "model.2.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 8,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 9,
+      "name": "model.2.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        16,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 10,
+      "name": "model.2.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 11,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 12,
+      "name": "model.2.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 13,
+      "name": "model.2.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 14,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 15,
+      "name": "model.2.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 16,
+      "name": "model.2.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 17,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 18,
+      "name": "model.2.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 19,
+      "name": "model.2.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 20,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 21,
+      "name": "model.3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 22,
+      "name": "model.3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 23,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 24,
+      "name": "model.4.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 25,
+      "name": "model.4.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 26,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 27,
+      "name": "model.4.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 28,
+      "name": "model.4.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 29,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 30,
+      "name": "model.4.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 31,
+      "name": "model.4.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 32,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 33,
+      "name": "model.4.m.1.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 34,
+      "name": "model.4.m.1.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 35,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 36,
+      "name": "model.4.m.1.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 37,
+      "name": "model.4.m.1.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 38,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 39,
+      "name": "model.4.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 40,
+      "name": "model.4.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 41,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 42,
+      "name": "model.4.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 43,
+      "name": "model.4.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 44,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 45,
+      "name": "model.5.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 46,
+      "name": "model.5.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 47,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 48,
+      "name": "model.6.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 49,
+      "name": "model.6.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 50,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 51,
+      "name": "model.6.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 52,
+      "name": "model.6.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 53,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 54,
+      "name": "model.6.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 55,
+      "name": "model.6.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 56,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 57,
+      "name": "model.6.m.1.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 58,
+      "name": "model.6.m.1.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 59,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 60,
+      "name": "model.6.m.1.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 61,
+      "name": "model.6.m.1.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 62,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 63,
+      "name": "model.6.m.2.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 64,
+      "name": "model.6.m.2.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 65,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 66,
+      "name": "model.6.m.2.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 67,
+      "name": "model.6.m.2.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 68,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 69,
+      "name": "model.6.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 70,
+      "name": "model.6.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 71,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 72,
+      "name": "model.6.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 73,
+      "name": "model.6.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 74,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 75,
+      "name": "model.7.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 76,
+      "name": "model.7.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 77,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 78,
+      "name": "model.8.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 79,
+      "name": "model.8.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 80,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 81,
+      "name": "model.8.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 82,
+      "name": "model.8.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 83,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 84,
+      "name": "model.8.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 85,
+      "name": "model.8.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 86,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 87,
+      "name": "model.8.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 88,
+      "name": "model.8.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 89,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 90,
+      "name": "model.8.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 91,
+      "name": "model.8.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 92,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 93,
+      "name": "model.9.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 94,
+      "name": "model.9.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 95,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 96,
+      "name": "model.9.m",
+      "operator": "MaxPool2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 97,
+      "name": "model.9.m",
+      "operator": "MaxPool2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 98,
+      "name": "model.9.m",
+      "operator": "MaxPool2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 99,
+      "name": "model.9.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        512,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          512,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 100,
+      "name": "model.9.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 101,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 102,
+      "name": "model.10.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 103,
+      "name": "model.10.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 104,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 105,
+      "name": "model.11",
+      "operator": "Upsample",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 106,
+      "name": "model.12",
+      "operator": "Concat",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ],
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 107,
+      "name": "model.13.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 108,
+      "name": "model.13.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 109,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 110,
+      "name": "model.13.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 111,
+      "name": "model.13.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 112,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 113,
+      "name": "model.13.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 114,
+      "name": "model.13.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 115,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 116,
+      "name": "model.13.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 117,
+      "name": "model.13.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 118,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 119,
+      "name": "model.13.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 120,
+      "name": "model.13.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 121,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 122,
+      "name": "model.14.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 123,
+      "name": "model.14.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 124,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 125,
+      "name": "model.15",
+      "operator": "Upsample",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 126,
+      "name": "model.16",
+      "operator": "Concat",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ],
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 127,
+      "name": "model.17.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 128,
+      "name": "model.17.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 129,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 130,
+      "name": "model.17.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 131,
+      "name": "model.17.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 132,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 133,
+      "name": "model.17.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 134,
+      "name": "model.17.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 135,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 136,
+      "name": "model.17.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 137,
+      "name": "model.17.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 138,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 139,
+      "name": "model.17.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 140,
+      "name": "model.17.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 141,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 142,
+      "name": "model.18.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 143,
+      "name": "model.18.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 144,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 145,
+      "name": "model.19",
+      "operator": "Concat",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ],
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 146,
+      "name": "model.20.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 147,
+      "name": "model.20.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 148,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 149,
+      "name": "model.20.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 150,
+      "name": "model.20.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 151,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 152,
+      "name": "model.20.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 153,
+      "name": "model.20.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 154,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 155,
+      "name": "model.20.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 156,
+      "name": "model.20.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 157,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 158,
+      "name": "model.20.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 159,
+      "name": "model.20.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 160,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 161,
+      "name": "model.21.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 162,
+      "name": "model.21.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 163,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 164,
+      "name": "model.22",
+      "operator": "Concat",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ],
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 165,
+      "name": "model.23.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 166,
+      "name": "model.23.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 167,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 168,
+      "name": "model.23.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 169,
+      "name": "model.23.m.0.cv1.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 170,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 171,
+      "name": "model.23.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 172,
+      "name": "model.23.m.0.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 173,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 174,
+      "name": "model.23.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 175,
+      "name": "model.23.cv2.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 176,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 177,
+      "name": "model.23.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 178,
+      "name": "model.23.cv3.bn",
+      "operator": "BatchNorm2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 179,
+      "name": "model.0.act",
+      "operator": "SiLU",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32"
+    },
+    {
+      "index": 180,
+      "name": "model.24.m.0",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 181,
+      "name": "model.24.m.1",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 182,
+      "name": "model.24.m.2",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    }
+  ],
+  "manifest_sha256": "e035aede4071f54693fbfbdaf32b37f176da84ef4a2028f79bc41940cb0226ba"
+}

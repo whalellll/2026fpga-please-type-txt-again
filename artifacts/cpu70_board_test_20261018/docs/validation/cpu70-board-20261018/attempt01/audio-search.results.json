@@ -1,0 +1,10 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; xqaudio-capture /tmp/c70-search.wav 6 >audio-search.log 2>&1 & ap=$!; printf \"XQ_NEWGAME\\nXQ_MOVE h2e2\\n\" > /run/voice-display.in; n=0; until grep -q \"INJECT MOVE_PASS\\|INJECT MOVE_FAIL\" gui-gather-verify.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 90 || break; done; wait \"$ap\"; ar=$?; cat audio-search.log; tail -24 gui-gather-verify.log; test \"$ar\" -eq 0 && grep -q \"INJECT MOVE_PASS\" gui-gather-verify.log",
+    "exit": 0
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; printf \"XQ_NEWGAME\\n\" > /run/voice-display.in; sleep 3; tail -5 gui-gather-verify.log; date +%s; sleep 2; date +%s",
+    "exit": 0
+  }
+]

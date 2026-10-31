@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:05:21.887253+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 120 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 3",
+      "exit": 0,
+      "host_response_seconds": 3.9657241000022623,
+      "required_markers": [
+        "PICTURE_TIMING model=classifier",
+        "output_crc=805678c7",
+        "no_fallback=1"
+      ]
+    }
+  ],
+  "spec_sha256": "2cdee58910edf953ea8c19a1ef033cdca852693b53fee9ec2e6e8e0f0e6fb5aa",
+  "uart_sha256": "501a5d053e7c333ae8f6679fd00d1b28c48b93049c5ebab56833e0d356238d3f",
+  "completed_utc": "2026-10-25T05:05:26.331125+00:00"
+}

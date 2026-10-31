@@ -1,0 +1,13 @@
+{
+  "source_commit": "7f0ba644579b8f90056294d49efdd502c6ca5813",
+  "files_sha256": {
+    "artifacts/soc_top.sbit": "a3f288b30991b111c3a840c03aae18694c748529ea57278c228b7d277c408b33",
+    "linux/boot/soc.dtb": "e3d552fde72b861b4c43ad92728e5f098c1026478e2042fb69b9bc8017e57a03",
+    "linux/boot/fw_jump.bin": "5419099f34b3296f2750876def9f23935c5d66b974a063bcde72687d1101947e",
+    "linux/boot/Image": "6ca0bdd3f3490c1b38606a80dd4912c5c2ffce08bc165abf00f13806f5f0c1e0",
+    "linux/boot/rootfs.cpio": "0470b510ad45b6b9dd394aea8f174825238158ff76dbd31a37d18ac22329a763",
+    "linux/boot/pikafish.pff": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260",
+    "linux/boot/pikafish.atk": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+  },
+  "scope": "Real historical namespaced SD test inputs; not current CPU70 runtime"
+}

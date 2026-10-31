@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "corrections": [
+    {
+      "frame": "IMG00882",
+      "game": 2,
+      "type": "missing_piece_added",
+      "original": "原始 JSON 仅 25 个圆, 该图实际 26 颗棋子, 漏标 1 颗",
+      "corrected": {
+        "action": "add_circle",
+        "label": "black_ma",
+        "grid": [
+          2,
+          2
+        ],
+        "center_px": [
+          991,
+          242
+        ],
+        "radius_px": 25,
+        "note": "圆轮廓为人工像素测量近似, 尺寸约有数像素误差"
+      },
+      "basis": "逐颗视觉复核确认图中存在黑马棋子; 既有冻结 YOLO 导出已包含该子(历史 1015 分母无须增加)"
+    },
+    {
+      "frame": "IMG00887",
+      "game": 2,
+      "type": "class_fixed",
+      "original": {
+        "shape_index": 9,
+        "label": "black_ju",
+        "grid": [
+          6,
+          0
+        ]
+      },
+      "corrected": {
+        "shape_index": 9,
+        "label": "red_ju",
+        "grid": [
+          6,
+          0
+        ]
+      },
+      "basis": "可见红色車字, 黑方字形旋正后确认为红方"
+    },
+    {
+      "frame": "IMG00888",
+      "game": 2,
+      "type": "class_fixed",
+      "original": {
+        "shape_index": 13,
+        "label": "black_ju",
+        "grid": [
+          6,
+          0
+        ]
+      },
+      "corrected": {
+        "shape_index": 13,
+        "label": "red_ju",
+        "grid": [
+          6,
+          0
+        ]
+      },
+      "basis": "可见红色車字, 黑方字形旋正后确认为红方"
+    },
+    {
+      "frame": "IMG00920",
+      "game": 3,
+      "type": "missing_piece_added",
+      "original": "该格无圆标注",
+      "corrected": {
+        "grid": [
+          0,
+          3
+        ],
+        "label": "red_bing",
+        "center_source": "board 透视映射格点（半径按同帧棋子中位数，评估时合成）"
+      },
+      "basis": "裁块目检可见红兵字形（disputes_sheet.png #14）；模型检出非假阳性"
+    }
+  ]
+}

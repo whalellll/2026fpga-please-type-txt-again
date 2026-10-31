@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "kind": "main75-prepackage-release",
+  "run_id": "9302a6212eac40b08fae353321f31d1c",
+  "bitstream_sha256": "d2ab7f6dfdbfdb7def8fba6f872ba3ce302ee1b914bee093477060ff97939675",
+  "gui_sha256": "f50801c5636560a159a91b87b4664f1d9cc5b45bb42e32a71c071bfddd77d23d",
+  "coremark_policy": {
+    "per_mhz_absolute_decrease_limit": 0.05,
+    "total_score_gate": false,
+    "all_valid_samples": true
+  },
+  "control_bitstream_sha256": "24226a3a2cf41e96554e4f4ea677f133964cbf942993cb1f751c60c5928a8a02",
+  "native_result": {
+    "path": "docs/validation/main75-release-20261028/native-result.json",
+    "sha256": "aba9daf666518744f40a0d7b1d14fdaf563f3d8ee70af513f814059b2be6d8e1"
+  },
+  "coremark_batches": [
+    {
+      "role": "control",
+      "batch": "a",
+      "result": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-a/coremark/result.json",
+        "sha256": "d1fa6d6104438783cdd55dc390617e072fe7e069333e1c5c91bba12e2f28146e"
+      },
+      "uart": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-a/coremark/uart.log",
+        "sha256": "c04ad6fb3b1083b70e079c7c8e37e05b4b9cc49e042b5fdfb5ca204cc7de0996"
+      },
+      "program": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-a/program.json",
+        "sha256": "5166d6745c72e12daf806f8cac671fe57c8f7de07266f5b491f0ad21985a5dde"
+      },
+      "program_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-a/program.log",
+        "sha256": "b2b8ae2fb72b6d7b6ddb1cfde32118fe62ae4730a3613a7b2fb87c1df6098a50"
+      },
+      "preflight_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-a/program.preflight.log",
+        "sha256": "c82b53abd82811f95682b31f8558d88cdf099391e6cc03b44789a927dcb4f1d3"
+      }
+    },
+    {
+      "role": "candidate",
+      "batch": "a",
+      "result": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-a/coremark/result.json",
+        "sha256": "1541cb7e70866d5cb1a0407aa28a8b4bf211639203540bf3af60f0e7da54c2a3"
+      },
+      "uart": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-a/coremark/uart.log",
+        "sha256": "b238c8bcaa86ce536fd6f71f5ef0349b61b2c4ecf25f7ac7823ed3f11e92e364"
+      },
+      "program": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-a/program.json",
+        "sha256": "afbfcbaba1ac300e186325640545e27c14cc9ffbbfc94c3d77eb4d3dc52b1e7a"
+      },
+      "program_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-a/program.log",
+        "sha256": "0767501c1229c195654068b352fbfae3d5e472f3aca6d7c547feba3ccac323d6"
+      },
+      "preflight_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-a/program.preflight.log",
+        "sha256": "ab59edf51e088c18fddde1b35bb9325d7aaef21bfdaeb27921005754a44a90d2"
+      }
+    },
+    {
+      "role": "control",
+      "batch": "b",
+      "result": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-b/coremark/result.json",
+        "sha256": "2f5e4b609edde2815b0202427d1c347909aeaa423b11d58cf4ce7d8aa2488f3e"
+      },
+      "uart": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-b/coremark/uart.log",
+        "sha256": "8846bc37cc55a59cf8cd6f99898d4029a9734d9616d74057be2f24297556610c"
+      },
+      "program": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-b/program.json",
+        "sha256": "c8a49aff581d753bffbd9db7446d200a585579a41aeead1058d1b9edcf70ebb0"
+      },
+      "program_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-b/program.log",
+        "sha256": "78f75173dc8f3e2cbe29fa1279221f42a10cc5f072601918dca22a61d4c582b8"
+      },
+      "preflight_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/control-b/program.preflight.log",
+        "sha256": "e09959aa8b81d06e025030f1ffc72f8eb7a22babc72ecf02702092282eddd90d"
+      }
+    },
+    {
+      "role": "candidate",
+      "batch": "b",
+      "result": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-b/coremark/result.json",
+        "sha256": "ae4193bed460649a57aa958ef34e9eccf1dcc906568ef106c146877cb1d9f597"
+      },
+      "uart": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-b/coremark/uart.log",
+        "sha256": "a80d277fbe6d9ae20269a0c195b93c840a017117c16ce4bde4f5c58f81fa7d09"
+      },
+      "program": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-b/program.json",
+        "sha256": "816163bc664a5362c28468899956491b2dfda02eae0a6ab5629523f85fd5c8c8"
+      },
+      "program_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-b/program.log",
+        "sha256": "71933c8bd0e6d4befb0d50a0e07a8055475eb07f6c68450f024b1857cf001021"
+      },
+      "preflight_log": {
+        "path": "docs/validation/main75-release-20261028/board/coremark-abab-02/candidate-b/program.preflight.log",
+        "sha256": "536ba95aa4b7b673398e772c39751555e4163551806559d472d5b0dc1718cee1"
+      }
+    }
+  ],
+  "board_acceptance": {
+    "path": "docs/validation/main75-release-20261028/board/board-acceptance.json",
+    "sha256": "a9fdb7c1bb70f75f4d080cd44e42ae9baef31ed6bc2ec80dd4b9b03019e10afe"
+  },
+  "initial_boot_uart": {
+    "path": "docs/validation/main75-release-20261028/board/boot.uart",
+    "sha256": "d3fb6b62454e643a51d24e7a1433dfa04f01c8293142ddb3a3573b9c24b6f122"
+  },
+  "gui_build": {
+    "path": "docs/validation/main75-release-20261028/mouse/gui-build.json",
+    "sha256": "c8411f47883a1f68b514e245d905eb52ac6234ef430966771bd71f1fb3f7da8b"
+  },
+  "gui_runtime": {
+    "path": "docs/validation/main75-release-20261028/mouse/runtime.json",
+    "sha256": "64ccad7aaee481089695892da78598cace1d3a75650dbb5722f577d8e4bc2d76"
+  },
+  "mainloop": {
+    "path": "docs/validation/main75-release-20261028/mouse/mainloop.json",
+    "sha256": "4bb7da947ebb78e7cf225423aac58ae2786d4c144bd8ffdfe61b81fdc8e08657"
+  },
+  "mouse_real_board": {
+    "result": {
+      "path": "docs/validation/main75-release-20261028/mouse-real-board/run.result.json",
+      "sha256": "6c28bacf1e5b04facb1d81c40b04e736174e77926393798ec84aafecb93c38f9"
+    },
+    "uart": {
+      "path": "docs/validation/main75-release-20261028/mouse-real-board/run.uart",
+      "sha256": "5c7bc4ac1cf355c752d7c26e1cd4b5f9b92fb3c7128811551f785c4e66edc38b"
+    }
+  },
+  "regression": {
+    "path": "docs/validation/main75-release-20261028/regression/result.json",
+    "sha256": "318e4b2e77442fdff69e992045e4abd2d2efc610be059b6223d5d9d6c09191d2"
+  },
+  "regression_log": {
+    "path": "docs/validation/main75-release-20261028/regression/regression.log",
+    "sha256": "008964bfa50077b55ddee0c7b80d686a5a71f5909a3b5ea5b2bb279fbe7f5c39"
+  },
+  "regression_inputs": {
+    "path": "docs/validation/main75-release-20261028/regression/inputs.json",
+    "sha256": "3db271d965d2c933bd128fcd7c58f7aced83754be7407cf74f0018827f9b284c"
+  },
+  "sd_kit_manifest": {
+    "path": "artifacts/main75_20261028/sd/manifest.json",
+    "sha256": "2c8ef51a6f0ee64d0d57bb50c781e7597182df880e1e76378bbe0c1b6b483980"
+  },
+  "clock_test": {
+    "path": "docs/validation/main75-release-20261028/clock-test/result.json",
+    "sha256": "ee0c194697f8325d986fbc07f1d442aefdbb13c9b678e763813ae008216f42ec"
+  },
+  "limitations": [
+    "187 baseline external I/O constraint gaps",
+    "PN07 worker binary reused with prior authorization",
+    "NNUE10ms and image30fps goals unmet",
+    "voice_3 r05 research accuracy not promoted",
+    "real microphone/endpoint timing and physical mouse/HDMI acceptance remain separate"
+  ],
+  "asr_accuracy_accepted": false,
+  "physical_mouse_transport_accepted": false,
+  "formal_delivery_complete": false,
+  "hardware_implementation_commit": "7cabd17a564f5b6d7e25a0fa68cdae8305b4ea64"
+}

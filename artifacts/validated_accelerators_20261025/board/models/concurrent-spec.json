@@ -1,0 +1,14 @@
+[
+  {
+    "command": "/usr/bin/timeout 45 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream >/tmp/transfer-voice.log 2>&1 & vp=$!; /usr/bin/timeout 45 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 1 >/tmp/transfer-picture.log 2>&1 & ip=$!; wait \"$vp\"; vr=$?; wait \"$ip\"; ir=$?; cat /tmp/transfer-voice.log /tmp/transfer-picture.log; test \"$vr\" = 0 && test \"$ir\" = 0 && echo TRANSFER_CONCURRENT_PASS",
+    "timeout": 60,
+    "markers": [
+      "TRANSFER_CONCURRENT_PASS",
+      "output_crc=805678c7",
+      "backend=mac"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+
+/ # /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /o
+pt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream; printf "\n__CVB_
+END_0__:%s\n" "$?"
+VOICE2_SMALL_ACCEL_ACTIVE device=/dev/pango-voice0 lanes=4 strict=1 quant_available=1
+backend=mac frames=25 text=卒五进五 mac_jobs=12 mac_cycles=319204 prep_us=1140619 cnn_us=136978 decode_us=66544 total_us=1344141 resident_jobs=12
+VOICE_STREAM_TIMING source=wav-replay streamed=1 paced=1 feature_frames=49 max_backlog_frames=1 feature_crc=6611d8b0 feature_tail_us=12081 endpoint_to_result_us=225045 last_voice_to_result_us=225045
+
+__CVB_END_0__:0
+/ # /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /o
+pt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream; printf "\n__CVB_
+END_1__:%s\n" "$?"
+VOICE2_SMALL_ACCEL_ACTIVE device=/dev/pango-voice0 lanes=4 strict=1 quant_available=1
+backend=mac frames=25 text=卒五进五 mac_jobs=12 mac_cycles=319204 prep_us=1136236 cnn_us=139651 decode_us=66824 total_us=1342711 resident_jobs=12
+VOICE_STREAM_TIMING source=wav-replay streamed=1 paced=1 feature_frames=49 max_backlog_frames=1 feature_crc=6611d8b0 feature_tail_us=6041 endpoint_to_result_us=223831 last_voice_to_result_us=223831
+
+__CVB_END_1__:0
+/ # /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /o
+pt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream; printf "\n__CVB_
+END_2__:%s\n" "$?"
+VOICE2_SMALL_ACCEL_ACTIVE device=/dev/pango-voice0 lanes=4 strict=1 quant_available=1
+backend=mac frames=25 text=卒五进五 mac_jobs=12 mac_cycles=319204 prep_us=1136282 cnn_us=138925 decode_us=67707 total_us=1342914 resident_jobs=12
+VOICE_STREAM_TIMING source=wav-replay streamed=1 paced=1 feature_frames=49 max_backlog_frames=1 feature_crc=6611d8b0 feature_tail_us=11753 endpoint_to_result_us=227650 last_voice_to_result_us=227650
+
+__CVB_END_2__:0

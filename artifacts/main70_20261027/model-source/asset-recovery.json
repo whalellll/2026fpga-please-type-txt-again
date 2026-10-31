@@ -1,0 +1,12 @@
+{
+  "source": "E:/PN04FS.BIN",
+  "source_sha256": "091378a84aca273e93e7c999a061778e8cf914e75e18269bdaefbecd84e8fb68",
+  "embedded_tar_sha256": "53e90a4c74487c22e4c987a44eb05da177552d75bc3863fd3f962b1d5e4a9d1f",
+  "files_sha256": {
+    "native_manifest.json": "8747228e77ee094e29026013e07489a2d2f2060b9fbe2e45641d320ebf5ae31b",
+    "refinement_rng.bin": "646265b1052977ad5fc3aca0f7da40716a5f1a3ad08d845478c7e95109be8e63",
+    "board.xqm": "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe",
+    "detector.xqm": "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d",
+    "classifier.xqm": "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f"
+  }
+}

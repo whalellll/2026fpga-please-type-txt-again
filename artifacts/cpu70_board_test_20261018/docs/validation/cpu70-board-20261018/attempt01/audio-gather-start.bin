@@ -1,0 +1,35 @@
+
+/tmp/voice-gui-display # cd /tmp/voice-gui-display; grep -E "MAC_RUNTIME|STAGEB_
+ACCEL_READY|FALLBACK|FUSED|MISMATCH|GATHER" gui-verify.log; devmem 0x1fe10100 32
+; devmem 0x1fe10104 32; printf "\n__BOARD_END_0:%s\n" "$?"
+PIKAFISH_MAC_RUNTIME_READY id=4d41434b version=00020100 timeout_us=100000 ddr=private backend=driver
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=verify resident=loaded copied_bytes=593920
+0x50464741
+0x00020000
+
+__BOARD_END_0:0
+p=$(/tmp/voice-gui-display # p=$(cat /tmp/voice-gui-display/voice.pid); kill "$p"; n
+=0; while kill -0 "$p" 2>/dev/null; do sleep 1; n=$((n+1)); test "$n" -lt 15 || 
+break; done; ! kill -0 "$p" 2>/dev/null; xqaudio-capture /tmp/c70-idle.wav 2; pr
+intf "\n__BOARD_END_1:%s\n" "$?"
+PCM_TRANSPORT_PASS samples=32000 elapsed_ms=2000 fifo_samples=512 mic_count=32004 overflows=0 peak=322 mean_abs=94 nonzero=31967 clipped=0
+Acoustic quality and speech recognition require separate acceptance.
+
+__BOARD_END_1:0
+/tmp/voice-gui-display # cd /tmp/voice-gui-display; PIKAFISH_MAC_BACKEND=mmio-sh
+adow PIKAFISH_STAGEB_ACCEL=verify XQ_GUI_INPUT=/run/voice-display.in ./xiangqi-g
+ui-display-v3 </dev/null >gui-gather-verify.log 2>&1 & echo $! >gui-v3.pid; n=0;
+ until grep -q "XQ LINUX PIKAFISH READY" gui-gather-verify.log; do sleep 1; n=$(
+(n+1)); test "$n" -lt 80 || break; done; tail -8 gui-gather-verify.log; grep -q 
+"XQ LINUX PIKAFISH READY" gui-gather-verify.log; printf "\n__BOARD_END_2:%s\n" "
+$?"
+XQ LINUX ENGINE INIT stage=verify-start elapsed_ms=10724 delta_ms=1
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=10732 delta_ms=7
+XQ LINUX ENGINE DIRECT CORE READY
+XQ LINUX PIKAFISH PFF1 READY
+XQ LINUX ENGINE DIRECT OK
+XQ LINUX PIKAFISH READY; mouse=move, restart button=reset, Esc=exit
+
+__BOARD_END_2:0

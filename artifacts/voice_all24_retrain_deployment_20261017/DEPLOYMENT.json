@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "deployment": {
+    "schema": 1,
+    "status": "ALL24_156_RAM_MODEL_PROCESS_READY",
+    "model_sha256": "40b7b1d129750788da6fd27b5df5b08dcdfa649a9b7d4189f11055a4ed0cd469",
+    "model_bytes": 6020,
+    "architecture": [
+      40,
+      64,
+      32,
+      25
+    ],
+    "training_recordings": 156,
+    "target": "/tmp/voice-gui-display/all24-156-20261016-40b7b1d1.xqt",
+    "previous": {
+      "pid": 2829,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/all24-20261016-f31b38e2.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "active": {
+      "pid": 2878,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/all24-156-20261016-40b7b1d1.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "gui_pid_before_after": 94,
+    "runtime_source_unchanged": true,
+    "gui_restarted": false,
+    "chess_actions_from_voice": false,
+    "sd_flash_rtl_kernel_changes": false,
+    "persistent": false,
+    "recognition_accuracy_accepted": false,
+    "live_speech_labelled_test": "NOT_RUN",
+    "board_model_sha256_verified": true,
+    "display_only_ready_verified": true,
+    "old_model_sha_preserved": true,
+    "date": "2026-10-17",
+    "host_regression": "XQVOICE_HOST_REGRESSION_PASS",
+    "gui_status_before": "side=red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "gui_status_after": "side=red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "framebuffer_before": [
+      "00000003",
+      "00000000"
+    ],
+    "framebuffer_after": [
+      "00000013",
+      "00000000"
+    ],
+    "thresholds": {
+      "start": 200,
+      "stop": 160,
+      "token": 500
+    },
+    "training_evidence_sha256": "c62cdce3db6c8a092eeb2245f6b29d3445727b4b93dc1c898a201131da079775",
+    "source_model_inputs_sha256": "65b2b2fa7b6102f1737339664beebb794fbf042b05cead53a8317c384d4d6bcb",
+    "deployment_helper_sha256": "1b62949b2fc85600628027a69e95fd6b92aa865931792c84a906f1ce328c1151",
+    "raw_uart_sha256": "12f22d6e1959bab14eb6eeb30a342caf7906e4c3d855b41b7e5c2985722685ad",
+    "full_soc_regression_rerun": false,
+    "process_readiness_only": true,
+    "limits": [
+      "RAM model and process update; reset requires reload",
+      "No labelled live speech accuracy or board timing acceptance",
+      "GUI voice remains display-only; margin is not a probability",
+      "Old weights and argv preserved for rollback"
+    ]
+  },
+  "models": {
+    "all24-156-candidate.xqt": {
+      "sha256": "40b7b1d129750788da6fd27b5df5b08dcdfa649a9b7d4189f11055a4ed0cd469",
+      "bytes": 6020
+    },
+    "rollback-all24-71.xqt": {
+      "sha256": "f31b38e2cf3a46eeb2bf6d59e2179a0038fd46907353843020f587a4a313ae90",
+      "bytes": 6020
+    }
+  }
+}

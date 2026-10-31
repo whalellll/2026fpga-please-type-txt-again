@@ -1,0 +1,14 @@
+[
+  {
+    "command": "/usr/bin/timeout 120 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 3",
+    "timeout": 135,
+    "markers": [
+      "PICTURE_TIMING model=classifier",
+      "output_crc=805678c7",
+      "no_fallback=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

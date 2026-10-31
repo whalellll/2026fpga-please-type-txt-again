@@ -1,0 +1,20 @@
+{
+  "status": "NATIVE_TIMING_PASS_CANDIDATE_NOT_BOARD_RELEASE",
+  "run_id": "d8e3b863e8b54212ae85cb905c2fa5cb",
+  "cpu_hz": 75000000,
+  "sys_mac_hz": 49500000,
+  "files_sha256": {
+    "soc_top.sbit": "2eb59589182005d2cfd059c8be12bc9b6a83ab10ac1990e4f6b91095d6e34274",
+    "soc_top.bin": "d0f0aadaac62fd372521676691ea1912bcc9dee2673f110ebefce130cdfb1e36",
+    "build_evidence.json": "48ed2e7c89bb93db3cf87fcb2ea492a8d7b865315a581106afa5806ce9fe231b",
+    "build_snapshot.json": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+    "timing_summary.txt": "6dcf3f74ea879bff21a6df1b78c5417c12b08f36cce11a9edf3da385d02c9c98",
+    "synth_resource_report.txt": "4349c87bde118ff50d4b3f7b1fd8797622761965723bc886d57df59236449526",
+    "cpu_ads_controls.json": "e318815a72ffee603df9082dbc308d5eeab6695f1f1f943ee4e98a74096c63a4",
+    "icache_pad_ads.json": "721c977a8e689794477ebed88957de9d94caa01acfff6f6bcb40d59af49cd4ec",
+    "preflight_gate.json": "6d857c01d1bea6b732da4d66368351069ff91138f32a1fd90fccee46aa455908",
+    "cpu_sys_cdc_ads_pre.json": "205cc156c3faee83a0fd63b89bd7349ca3aba7379aa6c8b918ce4b710d227c69",
+    "cpu_sys_cdc_ads.json": "205cc156c3faee83a0fd63b89bd7349ca3aba7379aa6c8b918ce4b710d227c69"
+  },
+  "scope": "Selected native outputs retained in Git. Formal timing reports in docs/validation/cpu75-20261018/turnover-final-sta-passed. Matching complete input base and overlay required. No board programming or CoreMark/Pikafish performance acceptance."
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; unset PIKAFISH_MAC_BACKEND; PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=verify XQ_GUI_INPUT=/run/voice-display.in ./xiangqi-gui-display-v3 </dev/null >gui-c80-accepted-verify.log 2>&1 & echo $! >gui-v3.pid; n=0; until grep -q \"XQ LINUX PIKAFISH READY\" gui-c80-accepted-verify.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 80 || break; done; grep -E \"MAC_RUNTIME|GATHER|KERNEL_RESIDENT|STAGEB_ACCEL_READY|PIKAFISH READY\" gui-c80-accepted-verify.log; grep -q \"XQ LINUX PIKAFISH READY\" gui-c80-accepted-verify.log",
+    "timeout": 110
+  },
+  {
+    "command": "xqaudio-capture /tmp/c80-accepted-idle.wav 2",
+    "timeout": 20
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; xqaudio-capture /tmp/c80-accepted-search.wav 6 >audio-final-search.log 2>&1 & ap=$!; printf \"XQ_NEWGAME\\nXQ_MOVE h2e2\\n\" > /run/voice-display.in; n=0; until grep -q \"INJECT MOVE_PASS\\|INJECT MOVE_FAIL\" gui-c80-accepted-verify.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 90 || break; done; wait \"$ap\"; ar=$?; cat audio-final-search.log; tail -25 gui-c80-accepted-verify.log; test \"$ar\" -eq 0 && grep -q \"INJECT MOVE_PASS\" gui-c80-accepted-verify.log",
+    "timeout": 110
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; printf \"XQ_NEWGAME\\n\" > /run/voice-display.in; sleep 3; tail -4 gui-c80-accepted-verify.log; p=$(cat gui-v3.pid); kill \"$p\"; n=0; while kill -0 \"$p\" 2>/dev/null; do sleep 1; n=$((n+1)); test \"$n\" -lt 15 || break; done; ! kill -0 \"$p\" 2>/dev/null",
+    "timeout": 30
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; unset PIKAFISH_MAC_BACKEND; PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 XQ_GUI_INPUT=/run/voice-display.in ./xiangqi-gui-display-v3 </dev/null >gui-c80-accepted-normal.log 2>&1 & echo $! >gui-v3.pid; n=0; until grep -q \"XQ LINUX PIKAFISH READY\" gui-c80-accepted-normal.log; do sleep 1; n=$((n+1)); test \"$n\" -lt 80 || break; done; grep -E \"MAC_RUNTIME|KERNEL_RESIDENT|STAGEB_ACCEL_READY|PIKAFISH READY\" gui-c80-accepted-normal.log; grep -q \"XQ LINUX PIKAFISH READY\" gui-c80-accepted-normal.log",
+    "timeout": 100
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; ./xqvoice-display /dev/pango-audio0 /opt/xqvoice/sd77-candidate.xqt 200 160 500 </dev/null >voice-c80-accepted.log 2>&1 & echo $! >voice.pid; sleep 2; cat voice-c80-accepted.log; printf \"XQ_STATUS\\n\" >/run/voice-display.in; sleep 1; tail -4 gui-c80-accepted-normal.log; kill -0 $(cat gui-v3.pid) && kill -0 $(cat voice.pid)",
+    "timeout": 20
+  },
+  {
+    "command": "echo CPU80_MODELS_RESTORED; uptime",
+    "timeout": 20
+  }
+]

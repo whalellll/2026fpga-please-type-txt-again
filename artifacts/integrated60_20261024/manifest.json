@@ -1,0 +1,123 @@
+{
+  "status": "INTEGRATED60_SBIT_GENERATED_STA_REVIEW_PASS_ORIGINAL_FLOW_FAILED_NOT_BOARD",
+  "completed_utc": "2026-10-23T21:24:14.724980+00:00",
+  "run_id": "866e820244ee4303a0295d68fe190076",
+  "native_root": "G:/i60pnr3",
+  "hardware_implementation_commit": "a9f69eaa4fcf5662308aa0c7abc3b02e3ddf2a88",
+  "physical_source_commit": "2a760f0635ab845b2697aac106a1eb6cb71da957",
+  "cpu_hz": 60000000,
+  "sys_hz": 49500000,
+  "display": "1080p30",
+  "voice_model": "voice_2 balanced24 included",
+  "picture_models": [
+    "board192",
+    "detector640",
+    "classifier32"
+  ],
+  "picture_weights": "DEFERRED_BY_USER_INTERFACE_ONLY",
+  "bitstream": {
+    "path": "soc_top.sbit",
+    "bytes": 3791112,
+    "sha256": "6c0b016b43bcae481d1187594a0546f3f7a21c4d848b6313d5c2851088b0796b"
+  },
+  "physical_status": "FAILED",
+  "strict_original_flow_pass": false,
+  "independent_review_pass": true,
+  "sta_pass": true,
+  "sta_focus": {
+    "cpu_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.816,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66980,
+      "abnormal": ""
+    },
+    "cpu_clk_hold": {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.0,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66980,
+      "abnormal": ""
+    },
+    "sys_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 3.074,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 65291,
+      "abnormal": ""
+    },
+    "sys_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.141,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 65291,
+      "abnormal": ""
+    }
+  },
+  "violations": [],
+  "evidence_root": "docs/validation/integrated60-physical-20261024",
+  "evidence_sha256": {
+    "build_snapshot.json": "f3a414547cc95db10dd1753d9282f5c07404f50cf531318b0f5ae6dc6651cf5e",
+    "cpu-sys-cdc-post-route.json": "bb7d01147464d11e2c16840c6b157a0fe9a747096d1ae37f429ab63e81542ba9",
+    "cpu-sys-cdc-pre-route.json": "bb7d01147464d11e2c16840c6b157a0fe9a747096d1ae37f429ab63e81542ba9",
+    "cpu_ads_controls.json": "da958b71fdff43e787ad1a0ff6c8d99243a804638ee9bc7af620c527ae631c02",
+    "gui1080_placement.json": "d827cfddcd9d0dd10d71f755ecb02af5595b9dcb07617a11c982c37160954c8a",
+    "independent-reviewed-scope.json": "7c8df39c75442fe5b42e8ccd91d010e562f228b1a65aca751b07f8365de1c49c",
+    "original-controller-exit.json": "22329392b0be79c52a79ff6f5ebc10f543df891b4fecd5d40343a4053f015557",
+    "original-controller.log": "e27f8864f83934f353e43bfd9209bc75e292a4774ef7ff47bab29aa7a4603589",
+    "physical-launch.json": "c6f1014fa9333de6d37df2c14388d2c13369c1d46514a2642b43583ccaaac196",
+    "physical-summary.json": "204e275f73a2e97b2abde9fe2160d3d272b74b79cd3f9e4838627385f648053b",
+    "pixel-scope-mutation-tests.json": "0224a77c1ad53b15b058663ca74de55e0a5d95e04715e4712b022d1daa9ef547",
+    "pnr-history.json": "73f66aeba2eb7e4e56c301480d9e71afed17810c4a88c84d82970b7676965c70",
+    "preflight_gate.json": "c376dcef5ac34723b0c5c79ac2e9c22df3b19d960509ed4742abfe6537c9f8c9",
+    "rtr.db.gz": "77c02c200bad663549b164332c87504639e1307d82b0cf764717b727d465c6a2",
+    "soc_top.rtr.gz": "9335a3dffda6b95bfa86ca419340a453e29f5795ddea8ce04bb7d4119a28f57f",
+    "soc_top.snr.gz": "e1b3b69730361003b2981f97b9f1acc6fe398b38974cc4e126aede9b79072732"
+  },
+  "compressed_reports": {
+    "soc_top.rtr.gz": {
+      "source": "G:/i60pnr3/pds/report_timing/soc_top.rtr",
+      "uncompressed_sha256": "5f82fdf3ee9581e4a003be3975457b8b3adf22828c97f8d3a1fdd0948b4756a8"
+    },
+    "rtr.db.gz": {
+      "source": "G:/i60pnr3/pds/report_timing/rtr.db",
+      "uncompressed_sha256": "f12fc57af6d55a69be1404bd6080ab0451d762b632d1141eb8ffec664485ff95"
+    },
+    "soc_top.snr.gz": {
+      "source": "G:/i60pnr3/pds/synthesize/soc_top.snr",
+      "uncompressed_sha256": "31ded9fee195775ae85b748fcd88e481285b5968406de0158404d3eb1688c42a"
+    }
+  },
+  "runtime_inputs_manifest_sha256": "de211a168dc4c7ea1d2fcdfa077369f36c5e1519cbcb3b76d229866d3dc04801",
+  "collector_sha256": "493ab8b9cbcccfed547abc6bf333f404ed4b80726a4251447f53b7505e4f01d8",
+  "board": false,
+  "sd": false,
+  "flash": false,
+  "pushed": false,
+  "formal_delivery": false,
+  "scope": "Candidate bitstream and matched runtime inputs; not a complete bootable SD kit or board acceptance"
+}

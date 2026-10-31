@@ -1,0 +1,5081 @@
+{
+  "status": "IMAGE_HWC_NATIVE_32_PE_RETAINED_FOUR_APM_SAVED_PASS_NOT_STA_OR_BOARD",
+  "native_root": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-synth-01",
+  "baseline": {
+    "path": "G:/fpga/performance_soc_vision_epilogue_20261024/build/native-synth-01/pds/synthesize/soc_top.snr",
+    "sha256": "79477972dc50fd4c1f6249b7ad0e0d1c39e1c76c2ff7c9a7c8c5a05707094257",
+    "total": {
+      "lut": 46775.0,
+      "ff": 30372.0,
+      "lutram": 4114.0,
+      "drm36k": 133.5,
+      "apm": 105.0
+    },
+    "hierarchy": [
+      {
+        "name": "soc_top",
+        "lut": 46775.0,
+        "ff": 30372.0,
+        "lutram": 4114.0,
+        "apm": 105.0,
+        "drm36k": 133.5
+      },
+      {
+        "name": "+ I_ips_ddr_top",
+        "lut": 4857.0,
+        "ff": 5155.0,
+        "lutram": 43.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrc_rstn_sync",
+        "lut": 1.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_top",
+        "lut": 3599.0,
+        "ff": 3212.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_calib_top",
+        "lut": 383.0,
+        "ff": 377.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_calib_mux",
+        "lut": 34.0,
+        "ff": 23.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_eyecal",
+        "lut": 35.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_init",
+        "lut": 116.0,
+        "ff": 100.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_main_ctrl",
+        "lut": 12.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_rdcal",
+        "lut": 100.0,
+        "ff": 70.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wrcal",
+        "lut": 51.0,
+        "ff": 100.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wrlvl",
+        "lut": 33.0,
+        "ff": 38.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_cpd_ctrl",
+        "lut": 42.0,
+        "ff": 51.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dfi",
+        "lut": 531.0,
+        "ff": 336.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dll_update_ctrl",
+        "lut": 26.0,
+        "ff": 32.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gpll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_info",
+        "lut": 56.0,
+        "ff": 60.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_reset_ctrl",
+        "lut": 67.0,
+        "ff": 82.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_pll_lock_debounce",
+        "lut": 34.0,
+        "ff": 22.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_rst_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_slice_top",
+        "lut": 2462.0,
+        "ff": 2219.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_control_path_adj",
+        "lut": 49.0,
+        "ff": 20.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_slice_rddata_align",
+        "lut": 132.0,
+        "ff": 260.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_bank[0].ddrphy_ppll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_bank[1].ddrphy_ppll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[0].ddrphy_data_slice",
+        "lut": 625.0,
+        "ff": 501.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 142.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 97.0,
+        "ff": 34.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 45.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 71.0,
+        "ff": 82.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 48.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 105.0,
+        "ff": 111.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 172.0,
+        "ff": 124.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 68.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[1].ddrphy_data_slice",
+        "lut": 546.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 72.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 26.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 46.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 70.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 48.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 101.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 168.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[2].ddrphy_data_slice",
+        "lut": 551.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 72.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 27.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 45.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 69.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 47.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 96.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 180.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[3].ddrphy_data_slice",
+        "lut": 547.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 70.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 27.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 43.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 68.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 50.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 97.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 175.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_training_ctrl",
+        "lut": 3.0,
+        "ff": 7.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ rst_clk_gpll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_cpd_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_rst_seq_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_freeze_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_update_n_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_ddrphy_cpd_lock",
+        "lut": 4.0,
+        "ff": 8.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_ddrphy_rst_clk_phase_adj",
+        "lut": 24.0,
+        "ff": 32.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips_ddrc_top",
+        "lut": 1257.0,
+        "ff": 1941.0,
+        "lutram": 43.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_apb_cross_v1_2",
+        "lut": 1.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_calib_delay",
+        "lut": 0.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_cfg_apb",
+        "lut": 0.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_top",
+        "lut": 134.0,
+        "ff": 149.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_bm",
+        "lut": 97.0,
+        "ff": 77.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_rowaddr",
+        "lut": 15.0,
+        "ff": 8.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_sm",
+        "lut": 37.0,
+        "ff": 72.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_top",
+        "lut": 587.0,
+        "ff": 627.0,
+        "lutram": 40.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_back_ctrl",
+        "lut": 381.0,
+        "ff": 411.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[0].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[1].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[2].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[3].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[4].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[5].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[6].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[7].timing_pre_pass",
+        "lut": 15.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[0].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[1].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[2].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[3].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[4].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[5].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[6].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[7].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[0].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[1].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[2].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[3].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[4].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[5].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[6].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[7].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[0].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[1].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[2].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[3].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[4].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[5].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[6].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[7].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_timing_rd_pass",
+        "lut": 6.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tfaw_timing",
+        "lut": 17.0,
+        "ff": 18.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[0].mcdq_tfaw",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[1].mcdq_tfaw",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[2].mcdq_tfaw",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_act_pass",
+        "lut": 22.0,
+        "ff": 9.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_prea_pass",
+        "lut": 11.0,
+        "ff": 13.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_ref_pass",
+        "lut": 15.0,
+        "ff": 9.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_wr_pass",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_buf",
+        "lut": 166.0,
+        "ff": 153.0,
+        "lutram": 40.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ A_ips2l_distributed_fifo",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 20.0,
+        "ff": 0.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 32.0,
+        "ff": 15.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ B_ips2l_distributed_fifo",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 20.0,
+        "ff": 0.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 32.0,
+        "ff": 15.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_out",
+        "lut": 40.0,
+        "ff": 63.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dfi",
+        "lut": 46.0,
+        "ff": 85.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_rdatapath",
+        "lut": 28.0,
+        "ff": 21.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_prefetch_fifo",
+        "lut": 27.0,
+        "ff": 21.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_fifo",
+        "lut": 24.0,
+        "ff": 16.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 24.0,
+        "ff": 16.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 22.0,
+        "ff": 16.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_ui_axi",
+        "lut": 153.0,
+        "ff": 329.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_reg_fifo2",
+        "lut": 9.0,
+        "ff": 65.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_user_cmd_fifo",
+        "lut": 13.0,
+        "ff": 104.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_wdatapath",
+        "lut": 308.0,
+        "ff": 685.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips_distributed_fifo",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 1.0,
+        "ff": 0.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 15.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mc3q_wdp_dcp",
+        "lut": 0.0,
+        "ff": 13.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_wdp_align",
+        "lut": 291.0,
+        "ff": 654.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ g_dedicated_cpu.u_cpu_pll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_audio_i2s",
+        "lut": 240.0,
+        "ff": 236.0,
+        "lutram": 8.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_audio_regs",
+        "lut": 7.0,
+        "ff": 19.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_buffer_control",
+        "lut": 112.0,
+        "ff": 89.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_frame_writer",
+        "lut": 462.0,
+        "ff": 775.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_camera_line_buffer",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ U_ipm2l_sdpram_camera_line_buffer",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_camera_regs",
+        "lut": 13.0,
+        "ff": 233.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_sd_hud",
+        "lut": 100.0,
+        "ff": 297.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_ch9350",
+        "lut": 756.0,
+        "ff": 566.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_key_fifo",
+        "lut": 22.0,
+        "ff": 22.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_cmos2_capture",
+        "lut": 3.0,
+        "ff": 40.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_console_text",
+        "lut": 240.0,
+        "ff": 108.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_cpu",
+        "lut": 20638.0,
+        "ff": 12184.0,
+        "lutram": 1465.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ u_cpu_wrapper",
+        "lut": 20638.0,
+        "ff": 12184.0,
+        "lutram": 1465.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ u_axi_cdc",
+        "lut": 157.0,
+        "ff": 204.0,
+        "lutram": 76.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ar_fifo",
+        "lut": 34.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_aw_fifo",
+        "lut": 33.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_b_fifo",
+        "lut": 15.0,
+        "ff": 40.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_r_fifo",
+        "lut": 33.0,
+        "ff": 40.0,
+        "lutram": 18.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_w_fifo",
+        "lut": 35.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_clint",
+        "lut": 248.0,
+        "ff": 130.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_cpu",
+        "lut": 20158.0,
+        "ff": 11782.0,
+        "lutram": 1389.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ core",
+        "lut": 20158.0,
+        "ff": 11782.0,
+        "lutram": 1389.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ backend",
+        "lut": 11144.0,
+        "ff": 4024.0,
+        "lutram": 810.0,
+        "apm": 4.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_commit",
+        "lut": 315.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_csr_trap",
+        "lut": 845.0,
+        "ff": 523.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ctrl",
+        "lut": 4.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_decoder0",
+        "lut": 148.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_decoder1",
+        "lut": 143.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dispatch",
+        "lut": 348.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_alu0",
+        "lut": 365.0,
+        "ff": 249.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uAlu",
+        "lut": 192.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_alu1",
+        "lut": 361.0,
+        "ff": 249.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uAlu",
+        "lut": 196.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_mdu",
+        "lut": 506.0,
+        "ff": 332.0,
+        "lutram": 0.0,
+        "apm": 4.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uDiv",
+        "lut": 288.0,
+        "ff": 239.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uMul",
+        "lut": 84.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 4.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rat",
+        "lut": 522.0,
+        "ff": 186.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_recovery",
+        "lut": 78.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rename",
+        "lut": 465.0,
+        "ff": 691.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rob",
+        "lut": 2909.0,
+        "ff": 479.0,
+        "lutram": 732.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ brPayloadAlu0_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ brPayloadAlu1_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ dynamicExcpBank_0_ext",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ dynamicExcpBank_1_ext",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ memPayloadFwd_ext",
+        "lut": 72.0,
+        "ff": 0.0,
+        "lutram": 72.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ registerFile",
+        "lut": 1366.0,
+        "ff": 222.0,
+        "lutram": 448.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ archBanks_0_ext",
+        "lut": 128.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ archBanks_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ resultBanks_0_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_1_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_2_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_3_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ result2Mdu_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staEven_ext",
+        "lut": 37.0,
+        "ff": 0.0,
+        "lutram": 37.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staOdd_ext",
+        "lut": 37.0,
+        "ff": 0.0,
+        "lutram": 37.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staticExcpBank_0_ext",
+        "lut": 3.0,
+        "ff": 0.0,
+        "lutram": 3.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staticExcpBank_1_ext",
+        "lut": 3.0,
+        "ff": 0.0,
+        "lutram": 3.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ storeData_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_alu0",
+        "lut": 1206.0,
+        "ff": 373.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ descriptor_ext",
+        "lut": 40.0,
+        "ff": 0.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_alu1",
+        "lut": 1229.0,
+        "ff": 373.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ descriptor_ext",
+        "lut": 40.0,
+        "ff": 0.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_mdu",
+        "lut": 493.0,
+        "ff": 212.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_mem",
+        "lut": 1202.0,
+        "ff": 280.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ frontend",
+        "lut": 3760.0,
+        "ff": 2946.0,
+        "lutram": 491.0,
+        "apm": 0.0,
+        "drm36k": 22.0
+      },
+      {
+        "name": "+ buffer",
+        "lut": 481.0,
+        "ff": 17.0,
+        "lutram": 144.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_0_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_1_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_2_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_3_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ cache",
+        "lut": 756.0,
+        "ff": 470.0,
+        "lutram": 84.0,
+        "apm": 0.0,
+        "drm36k": 8.0
+      },
+      {
+        "name": "+ refillWriteLow_refillWritePad",
+        "lut": 64.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 54.0,
+        "ff": 0.0,
+        "lutram": 42.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 55.0,
+        "ff": 0.0,
+        "lutram": 42.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ wayMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ wayMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ fallback",
+        "lut": 535.0,
+        "ff": 192.0,
+        "lutram": 184.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ entryMem_0_ext",
+        "lut": 92.0,
+        "ff": 0.0,
+        "lutram": 92.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ entryMem_1_ext",
+        "lut": 92.0,
+        "ff": 0.0,
+        "lutram": 92.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ftb",
+        "lut": 100.0,
+        "ff": 256.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 6.0
+      },
+      {
+        "name": "+ wayMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.0
+      },
+      {
+        "name": "+ wayMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.0
+      },
+      {
+        "name": "+ ftqMeta_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ ftqPc_ext",
+        "lut": 15.0,
+        "ff": 26.0,
+        "lutram": 15.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ftqTarget_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ras",
+        "lut": 74.0,
+        "ff": 176.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tage",
+        "lut": 710.0,
+        "ff": 1034.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 7.0
+      },
+      {
+        "name": "+ baseDataMem_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ baseInitMem_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ histCp_ext",
+        "lut": 64.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_2_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_3_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ memory",
+        "lut": 5129.0,
+        "ff": 4629.0,
+        "lutram": 88.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ atomic",
+        "lut": 208.0,
+        "ff": 206.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ coherentRead",
+        "lut": 4.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ pageRequestQ",
+        "lut": 0.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_axi_line_bridge",
+        "lut": 367.0,
+        "ff": 840.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dc_load_req_fifo",
+        "lut": 7.0,
+        "ff": 94.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dcache",
+        "lut": 2395.0,
+        "ff": 1324.0,
+        "lutram": 88.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ dataMem_0_ext",
+        "lut": 16.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 16.0
+      },
+      {
+        "name": "+ dataMem_1_ext",
+        "lut": 16.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 16.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 57.0,
+        "ff": 0.0,
+        "lutram": 44.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 57.0,
+        "ff": 0.0,
+        "lutram": 44.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_lsu",
+        "lut": 1418.0,
+        "ff": 1465.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ loadOrder",
+        "lut": 142.0,
+        "ff": 102.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_pma",
+        "lut": 199.0,
+        "ff": 231.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ attributes",
+        "lut": 6.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tlb",
+        "lut": 118.0,
+        "ff": 227.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_store_buffer",
+        "lut": 186.0,
+        "ff": 291.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_irq_sync",
+        "lut": 0.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_arbiter",
+        "lut": 211.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_bridge",
+        "lut": 550.0,
+        "ff": 1237.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dual_ov5640",
+        "lut": 461.0,
+        "ff": 174.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ camera1_register_init_inst",
+        "lut": 190.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ register_table_inst",
+        "lut": 124.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ sccb_write_inst",
+        "lut": 26.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ camera2_register_init_inst",
+        "lut": 204.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ register_table_inst",
+        "lut": 124.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ sccb_write_inst",
+        "lut": 26.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ power_on_delay_inst",
+        "lut": 66.0,
+        "ff": 58.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_eth",
+        "lut": 1138.0,
+        "ff": 211.0,
+        "lutram": 768.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fb_dma",
+        "lut": 348.0,
+        "ff": 325.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 8.0
+      },
+      {
+        "name": "+ u_fb_regs",
+        "lut": 4.0,
+        "ff": 141.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_flash",
+        "lut": 19.0,
+        "ff": 29.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_hdmi_tx",
+        "lut": 129.0,
+        "ff": 127.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_iic_dri",
+        "lut": 55.0,
+        "ff": 62.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ms7210_ctl",
+        "lut": 73.0,
+        "ff": 63.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_hid_gui",
+        "lut": 180.0,
+        "ff": 105.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_hid_gui_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_local",
+        "lut": 372.0,
+        "ff": 260.0,
+        "lutram": 8.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ u_rx",
+        "lut": 60.0,
+        "ff": 48.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_tx",
+        "lut": 38.0,
+        "ff": 41.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_mac_accel",
+        "lut": 10395.0,
+        "ff": 5021.0,
+        "lutram": 1421.0,
+        "apm": 85.0,
+        "drm36k": 19.0
+      },
+      {
+        "name": "+ g_batch.u_batch",
+        "lut": 947.0,
+        "ff": 889.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ g_nnue.u_nnue",
+        "lut": 2898.0,
+        "ff": 1791.0,
+        "lutram": 64.0,
+        "apm": 37.0,
+        "drm36k": 14.0
+      },
+      {
+        "name": "+ g_dedicated.u_chain",
+        "lut": 2478.0,
+        "ff": 1415.0,
+        "lutram": 64.0,
+        "apm": 35.0,
+        "drm36k": 13.0
+      },
+      {
+        "name": "+ u_transform",
+        "lut": 168.0,
+        "ff": 193.0,
+        "lutram": 0.0,
+        "apm": 2.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ g_pff1.u_gather",
+        "lut": 573.0,
+        "ff": 299.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ g_vision32.u_vision32",
+        "lut": 5679.0,
+        "ff": 1993.0,
+        "lutram": 1357.0,
+        "apm": 48.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_pe",
+        "lut": 2.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 32.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_axi",
+        "lut": 56.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_native_read_arbiter",
+        "lut": 9.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_native_write_arbiter",
+        "lut": 134.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rgmii",
+        "lut": 16.0,
+        "ff": 17.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_sd",
+        "lut": 1510.0,
+        "ff": 836.0,
+        "lutram": 256.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_buffer0",
+        "lut": 147.0,
+        "ff": 0.0,
+        "lutram": 128.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_buffer1",
+        "lut": 147.0,
+        "ff": 0.0,
+        "lutram": 128.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_video",
+        "lut": 121.0,
+        "ff": 149.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.5
+      },
+      {
+        "name": "+ u_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_header",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_logo",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ u_video_pll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_voice_accel",
+        "lut": 2439.0,
+        "ff": 1576.0,
+        "lutram": 137.0,
+        "apm": 16.0,
+        "drm36k": 6.0
+      },
+      {
+        "name": "+ g_cnn.u_cnn",
+        "lut": 945.0,
+        "ff": 477.0,
+        "lutram": 19.0,
+        "apm": 11.0,
+        "drm36k": 4.5
+      },
+      {
+        "name": "+ u_features",
+        "lut": 946.0,
+        "ff": 711.0,
+        "lutram": 0.0,
+        "apm": 5.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_xbar",
+        "lut": 22.0,
+        "ff": 4.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      }
+    ]
+  },
+  "candidate": {
+    "path": "G:/fpga/performance_soc_image_hwc_20261025/build/native-synth-01/pds/synthesize/soc_top.snr",
+    "sha256": "7b1ec66abb0d3459b76e217004822e0f746e22c9c80240b10437abb4b9b43e2f",
+    "total": {
+      "lut": 46823.0,
+      "ff": 30401.0,
+      "lutram": 4114.0,
+      "drm36k": 133.5,
+      "apm": 101.0
+    },
+    "hierarchy": [
+      {
+        "name": "soc_top",
+        "lut": 46823.0,
+        "ff": 30401.0,
+        "lutram": 4114.0,
+        "apm": 101.0,
+        "drm36k": 133.5
+      },
+      {
+        "name": "+ I_ips_ddr_top",
+        "lut": 4849.0,
+        "ff": 5156.0,
+        "lutram": 43.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrc_rstn_sync",
+        "lut": 1.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_top",
+        "lut": 3589.0,
+        "ff": 3213.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_calib_top",
+        "lut": 383.0,
+        "ff": 377.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_calib_mux",
+        "lut": 34.0,
+        "ff": 23.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_eyecal",
+        "lut": 35.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_init",
+        "lut": 116.0,
+        "ff": 100.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_main_ctrl",
+        "lut": 12.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_rdcal",
+        "lut": 100.0,
+        "ff": 70.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wrcal",
+        "lut": 51.0,
+        "ff": 100.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wrlvl",
+        "lut": 33.0,
+        "ff": 38.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_cpd_ctrl",
+        "lut": 42.0,
+        "ff": 51.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dfi",
+        "lut": 531.0,
+        "ff": 336.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dll_update_ctrl",
+        "lut": 26.0,
+        "ff": 32.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gpll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_info",
+        "lut": 57.0,
+        "ff": 60.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_reset_ctrl",
+        "lut": 67.0,
+        "ff": 82.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_pll_lock_debounce",
+        "lut": 34.0,
+        "ff": 22.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_rst_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_slice_top",
+        "lut": 2450.0,
+        "ff": 2219.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_control_path_adj",
+        "lut": 49.0,
+        "ff": 20.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_slice_rddata_align",
+        "lut": 132.0,
+        "ff": 260.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_bank[0].ddrphy_ppll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_bank[1].ddrphy_ppll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[0].ddrphy_data_slice",
+        "lut": 621.0,
+        "ff": 501.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 140.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 96.0,
+        "ff": 34.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 44.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 71.0,
+        "ff": 82.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 49.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 105.0,
+        "ff": 111.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 169.0,
+        "ff": 124.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 68.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[1].ddrphy_data_slice",
+        "lut": 540.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 68.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 26.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 42.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 70.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 46.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 101.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 168.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[2].ddrphy_data_slice",
+        "lut": 548.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 69.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 27.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 42.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 69.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 48.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 95.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 180.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ i_dqs_group[3].ddrphy_data_slice",
+        "lut": 548.0,
+        "ff": 479.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_dqs_gate_cal",
+        "lut": 70.0,
+        "ff": 56.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_gate_coarse_cal",
+        "lut": 27.0,
+        "ff": 26.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_gatecal",
+        "lut": 43.0,
+        "ff": 30.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrcal",
+        "lut": 69.0,
+        "ff": 78.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_data_slice_wrlvl",
+        "lut": 47.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqs_rddata_align",
+        "lut": 97.0,
+        "ff": 108.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_dqsi_rdel_cal",
+        "lut": 178.0,
+        "ff": 121.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_wdata_path_adj",
+        "lut": 85.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ddrphy_training_ctrl",
+        "lut": 4.0,
+        "ff": 8.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ rst_clk_gpll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_cpd_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddrphy_rst_seq_rstn_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_freeze_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dll_update_n_sync",
+        "lut": 0.0,
+        "ff": 2.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_ddrphy_cpd_lock",
+        "lut": 4.0,
+        "ff": 8.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_ddrphy_rst_clk_phase_adj",
+        "lut": 24.0,
+        "ff": 32.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips_ddrc_top",
+        "lut": 1259.0,
+        "ff": 1941.0,
+        "lutram": 43.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_apb_cross_v1_2",
+        "lut": 1.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_calib_delay",
+        "lut": 0.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_cfg_apb",
+        "lut": 0.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_top",
+        "lut": 135.0,
+        "ff": 149.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_bm",
+        "lut": 98.0,
+        "ff": 77.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_rowaddr",
+        "lut": 15.0,
+        "ff": 8.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcd_sm",
+        "lut": 37.0,
+        "ff": 72.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_top",
+        "lut": 587.0,
+        "ff": 627.0,
+        "lutram": 40.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_back_ctrl",
+        "lut": 381.0,
+        "ff": 411.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[0].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[1].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[2].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[3].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[4].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[5].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[6].timing_pre_pass",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ PRE_PASS_LOOP[7].timing_pre_pass",
+        "lut": 15.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[0].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[1].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[2].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[3].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[4].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[5].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[6].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRC_LOOP[7].trc_timing",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[0].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[1].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[2].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[3].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[4].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[5].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[6].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TRDA2ACT_LOOP[7].trda2act_timing",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[0].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[1].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[2].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[3].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[4].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[5].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[6].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TWRA2ACT_LOOP[7].twra2act_timing",
+        "lut": 6.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_timing_rd_pass",
+        "lut": 6.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tfaw_timing",
+        "lut": 17.0,
+        "ff": 18.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[0].mcdq_tfaw",
+        "lut": 4.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[1].mcdq_tfaw",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ TFAW_LOOP[2].mcdq_tfaw",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_act_pass",
+        "lut": 22.0,
+        "ff": 9.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_prea_pass",
+        "lut": 11.0,
+        "ff": 13.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_ref_pass",
+        "lut": 15.0,
+        "ff": 9.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ timing_wr_pass",
+        "lut": 5.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_buf",
+        "lut": 166.0,
+        "ff": 153.0,
+        "lutram": 40.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ A_ips2l_distributed_fifo",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 20.0,
+        "ff": 0.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 32.0,
+        "ff": 15.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ B_ips2l_distributed_fifo",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 53.0,
+        "ff": 15.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 20.0,
+        "ff": 0.0,
+        "lutram": 20.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 32.0,
+        "ff": 15.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dcp_out",
+        "lut": 40.0,
+        "ff": 63.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_dfi",
+        "lut": 46.0,
+        "ff": 85.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_rdatapath",
+        "lut": 29.0,
+        "ff": 21.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_prefetch_fifo",
+        "lut": 28.0,
+        "ff": 21.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_fifo",
+        "lut": 25.0,
+        "ff": 16.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 25.0,
+        "ff": 16.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 23.0,
+        "ff": 16.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_ui_axi",
+        "lut": 153.0,
+        "ff": 329.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_reg_fifo2",
+        "lut": 9.0,
+        "ff": 65.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_user_cmd_fifo",
+        "lut": 13.0,
+        "ff": 104.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_wdatapath",
+        "lut": 308.0,
+        "ff": 685.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips_distributed_fifo",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_distributed_fifo_v1_0",
+        "lut": 16.0,
+        "ff": 14.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ips2l_distributed_sdpram_distributed_fifo_v1_0",
+        "lut": 1.0,
+        "ff": 0.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ips2l_distributed_fifo_ctr",
+        "lut": 15.0,
+        "ff": 14.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mc3q_wdp_dcp",
+        "lut": 0.0,
+        "ff": 13.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ mcdq_wdp_align",
+        "lut": 291.0,
+        "ff": 654.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ g_dedicated_cpu.u_cpu_pll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_audio_i2s",
+        "lut": 238.0,
+        "ff": 236.0,
+        "lutram": 8.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_audio_regs",
+        "lut": 6.0,
+        "ff": 19.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_buffer_control",
+        "lut": 112.0,
+        "ff": 89.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_frame_writer",
+        "lut": 459.0,
+        "ff": 775.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_camera_line_buffer",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ U_ipm2l_sdpram_camera_line_buffer",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_camera_regs",
+        "lut": 13.0,
+        "ff": 233.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_camera_sd_hud",
+        "lut": 100.0,
+        "ff": 297.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_ch9350",
+        "lut": 756.0,
+        "ff": 566.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_key_fifo",
+        "lut": 22.0,
+        "ff": 22.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_cmos2_capture",
+        "lut": 3.0,
+        "ff": 40.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_console_text",
+        "lut": 240.0,
+        "ff": 108.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_cpu",
+        "lut": 20604.0,
+        "ff": 12184.0,
+        "lutram": 1465.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ u_cpu_wrapper",
+        "lut": 20604.0,
+        "ff": 12184.0,
+        "lutram": 1465.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ u_axi_cdc",
+        "lut": 155.0,
+        "ff": 204.0,
+        "lutram": 76.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ar_fifo",
+        "lut": 34.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_aw_fifo",
+        "lut": 33.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_b_fifo",
+        "lut": 16.0,
+        "ff": 40.0,
+        "lutram": 1.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_r_fifo",
+        "lut": 33.0,
+        "ff": 40.0,
+        "lutram": 18.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_w_fifo",
+        "lut": 34.0,
+        "ff": 40.0,
+        "lutram": 19.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_clint",
+        "lut": 249.0,
+        "ff": 130.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_cpu",
+        "lut": 20125.0,
+        "ff": 11782.0,
+        "lutram": 1389.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ core",
+        "lut": 20125.0,
+        "ff": 11782.0,
+        "lutram": 1389.0,
+        "apm": 4.0,
+        "drm36k": 58.0
+      },
+      {
+        "name": "+ backend",
+        "lut": 11139.0,
+        "ff": 4024.0,
+        "lutram": 810.0,
+        "apm": 4.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ u_commit",
+        "lut": 314.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_csr_trap",
+        "lut": 843.0,
+        "ff": 523.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ctrl",
+        "lut": 4.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_decoder0",
+        "lut": 143.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_decoder1",
+        "lut": 148.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dispatch",
+        "lut": 348.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_alu0",
+        "lut": 365.0,
+        "ff": 249.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uAlu",
+        "lut": 192.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_alu1",
+        "lut": 365.0,
+        "ff": 249.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uAlu",
+        "lut": 196.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fu_mdu",
+        "lut": 506.0,
+        "ff": 332.0,
+        "lutram": 0.0,
+        "apm": 4.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uDiv",
+        "lut": 288.0,
+        "ff": 239.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ uMul",
+        "lut": 84.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 4.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rat",
+        "lut": 516.0,
+        "ff": 186.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_recovery",
+        "lut": 78.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rename",
+        "lut": 465.0,
+        "ff": 691.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rob",
+        "lut": 2914.0,
+        "ff": 479.0,
+        "lutram": 732.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ brPayloadAlu0_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ brPayloadAlu1_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ dynamicExcpBank_0_ext",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ dynamicExcpBank_1_ext",
+        "lut": 2.0,
+        "ff": 0.0,
+        "lutram": 2.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ memPayloadFwd_ext",
+        "lut": 72.0,
+        "ff": 0.0,
+        "lutram": 72.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ registerFile",
+        "lut": 1371.0,
+        "ff": 222.0,
+        "lutram": 448.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ archBanks_0_ext",
+        "lut": 128.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ archBanks_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ resultBanks_0_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_1_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_2_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ resultBanks_3_ext",
+        "lut": 112.0,
+        "ff": 0.0,
+        "lutram": 112.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ result2Mdu_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staEven_ext",
+        "lut": 37.0,
+        "ff": 0.0,
+        "lutram": 37.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staOdd_ext",
+        "lut": 37.0,
+        "ff": 0.0,
+        "lutram": 37.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staticExcpBank_0_ext",
+        "lut": 3.0,
+        "ff": 0.0,
+        "lutram": 3.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ staticExcpBank_1_ext",
+        "lut": 3.0,
+        "ff": 0.0,
+        "lutram": 3.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ storeData_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_alu0",
+        "lut": 1207.0,
+        "ff": 373.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ descriptor_ext",
+        "lut": 40.0,
+        "ff": 0.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_alu1",
+        "lut": 1219.0,
+        "ff": 373.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ descriptor_ext",
+        "lut": 40.0,
+        "ff": 0.0,
+        "lutram": 39.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_mdu",
+        "lut": 494.0,
+        "ff": 212.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rs_mem",
+        "lut": 1205.0,
+        "ff": 280.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ frontend",
+        "lut": 3762.0,
+        "ff": 2946.0,
+        "lutram": 491.0,
+        "apm": 0.0,
+        "drm36k": 22.0
+      },
+      {
+        "name": "+ buffer",
+        "lut": 480.0,
+        "ff": 17.0,
+        "lutram": 144.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_0_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_1_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_2_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ bank_3_ext",
+        "lut": 36.0,
+        "ff": 0.0,
+        "lutram": 36.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ cache",
+        "lut": 756.0,
+        "ff": 470.0,
+        "lutram": 84.0,
+        "apm": 0.0,
+        "drm36k": 8.0
+      },
+      {
+        "name": "+ refillWriteLow_refillWritePad",
+        "lut": 64.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 55.0,
+        "ff": 0.0,
+        "lutram": 42.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 54.0,
+        "ff": 0.0,
+        "lutram": 42.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ wayMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ wayMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ fallback",
+        "lut": 542.0,
+        "ff": 192.0,
+        "lutram": 184.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ entryMem_0_ext",
+        "lut": 92.0,
+        "ff": 0.0,
+        "lutram": 92.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ entryMem_1_ext",
+        "lut": 92.0,
+        "ff": 0.0,
+        "lutram": 92.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ftb",
+        "lut": 100.0,
+        "ff": 256.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 6.0
+      },
+      {
+        "name": "+ wayMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.0
+      },
+      {
+        "name": "+ wayMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.0
+      },
+      {
+        "name": "+ ftqMeta_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ ftqPc_ext",
+        "lut": 15.0,
+        "ff": 26.0,
+        "lutram": 15.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ftqTarget_ext",
+        "lut": 32.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ ras",
+        "lut": 74.0,
+        "ff": 176.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tage",
+        "lut": 710.0,
+        "ff": 1034.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 7.0
+      },
+      {
+        "name": "+ baseDataMem_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ baseInitMem_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ histCp_ext",
+        "lut": 64.0,
+        "ff": 0.0,
+        "lutram": 32.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_2_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ tagMem_3_ext",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ memory",
+        "lut": 5099.0,
+        "ff": 4629.0,
+        "lutram": 88.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ atomic",
+        "lut": 207.0,
+        "ff": 206.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ coherentRead",
+        "lut": 4.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ pageRequestQ",
+        "lut": 0.0,
+        "ff": 33.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_axi_line_bridge",
+        "lut": 369.0,
+        "ff": 840.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dc_load_req_fifo",
+        "lut": 7.0,
+        "ff": 94.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dcache",
+        "lut": 2396.0,
+        "ff": 1324.0,
+        "lutram": 88.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ dataMem_0_ext",
+        "lut": 16.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 16.0
+      },
+      {
+        "name": "+ dataMem_1_ext",
+        "lut": 16.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 16.0
+      },
+      {
+        "name": "+ tagMem_0_ext",
+        "lut": 57.0,
+        "ff": 0.0,
+        "lutram": 44.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tagMem_1_ext",
+        "lut": 57.0,
+        "ff": 0.0,
+        "lutram": 44.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_lsu",
+        "lut": 1390.0,
+        "ff": 1465.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ loadOrder",
+        "lut": 142.0,
+        "ff": 102.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_pma",
+        "lut": 197.0,
+        "ff": 231.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ attributes",
+        "lut": 6.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ tlb",
+        "lut": 117.0,
+        "ff": 227.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_store_buffer",
+        "lut": 185.0,
+        "ff": 291.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_irq_sync",
+        "lut": 0.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_arbiter",
+        "lut": 211.0,
+        "ff": 6.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_bridge",
+        "lut": 550.0,
+        "ff": 1237.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_dual_ov5640",
+        "lut": 460.0,
+        "ff": 174.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ camera1_register_init_inst",
+        "lut": 190.0,
+        "ff": 52.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ register_table_inst",
+        "lut": 124.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ sccb_write_inst",
+        "lut": 26.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ camera2_register_init_inst",
+        "lut": 203.0,
+        "ff": 64.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ register_table_inst",
+        "lut": 124.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ sccb_write_inst",
+        "lut": 26.0,
+        "ff": 12.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ power_on_delay_inst",
+        "lut": 66.0,
+        "ff": 58.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_eth",
+        "lut": 1144.0,
+        "ff": 211.0,
+        "lutram": 768.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_fb_dma",
+        "lut": 351.0,
+        "ff": 325.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 8.0
+      },
+      {
+        "name": "+ u_fb_regs",
+        "lut": 5.0,
+        "ff": 141.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_flash",
+        "lut": 17.0,
+        "ff": 29.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_hdmi_tx",
+        "lut": 129.0,
+        "ff": 127.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_iic_dri",
+        "lut": 55.0,
+        "ff": 62.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ms7210_ctl",
+        "lut": 73.0,
+        "ff": 63.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_hid_gui",
+        "lut": 180.0,
+        "ff": 105.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_hid_gui_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_local",
+        "lut": 373.0,
+        "ff": 260.0,
+        "lutram": 8.0,
+        "apm": 0.0,
+        "drm36k": 32.0
+      },
+      {
+        "name": "+ u_rx",
+        "lut": 60.0,
+        "ff": 48.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_tx",
+        "lut": 38.0,
+        "ff": 41.0,
+        "lutram": 4.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_mac_accel",
+        "lut": 10473.0,
+        "ff": 5049.0,
+        "lutram": 1421.0,
+        "apm": 81.0,
+        "drm36k": 19.0
+      },
+      {
+        "name": "+ g_batch.u_batch",
+        "lut": 952.0,
+        "ff": 889.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 4.0
+      },
+      {
+        "name": "+ g_nnue.u_nnue",
+        "lut": 2891.0,
+        "ff": 1791.0,
+        "lutram": 64.0,
+        "apm": 37.0,
+        "drm36k": 14.0
+      },
+      {
+        "name": "+ g_dedicated.u_chain",
+        "lut": 2478.0,
+        "ff": 1415.0,
+        "lutram": 64.0,
+        "apm": 35.0,
+        "drm36k": 13.0
+      },
+      {
+        "name": "+ u_transform",
+        "lut": 168.0,
+        "ff": 193.0,
+        "lutram": 0.0,
+        "apm": 2.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ g_pff1.u_gather",
+        "lut": 571.0,
+        "ff": 299.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ g_vision32.u_vision32",
+        "lut": 5762.0,
+        "ff": 2021.0,
+        "lutram": 1357.0,
+        "apm": 44.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_pe",
+        "lut": 2.0,
+        "ff": 1.0,
+        "lutram": 0.0,
+        "apm": 32.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_ddr_axi",
+        "lut": 58.0,
+        "ff": 44.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_native_read_arbiter",
+        "lut": 9.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_native_write_arbiter",
+        "lut": 134.0,
+        "ff": 5.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_rgmii",
+        "lut": 16.0,
+        "ff": 17.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_sd",
+        "lut": 1507.0,
+        "ff": 836.0,
+        "lutram": 256.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_buffer0",
+        "lut": 145.0,
+        "ff": 0.0,
+        "lutram": 128.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_buffer1",
+        "lut": 145.0,
+        "ff": 0.0,
+        "lutram": 128.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_video",
+        "lut": 121.0,
+        "ff": 149.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 3.5
+      },
+      {
+        "name": "+ u_font",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.5
+      },
+      {
+        "name": "+ u_header",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_logo",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 2.0
+      },
+      {
+        "name": "+ u_video_pll",
+        "lut": 0.0,
+        "ff": 0.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      },
+      {
+        "name": "+ u_voice_accel",
+        "lut": 2458.0,
+        "ff": 1576.0,
+        "lutram": 137.0,
+        "apm": 16.0,
+        "drm36k": 6.0
+      },
+      {
+        "name": "+ g_cnn.u_cnn",
+        "lut": 963.0,
+        "ff": 477.0,
+        "lutram": 19.0,
+        "apm": 11.0,
+        "drm36k": 4.5
+      },
+      {
+        "name": "+ u_features",
+        "lut": 945.0,
+        "ff": 711.0,
+        "lutram": 0.0,
+        "apm": 5.0,
+        "drm36k": 1.0
+      },
+      {
+        "name": "+ u_xbar",
+        "lut": 22.0,
+        "ff": 4.0,
+        "lutram": 0.0,
+        "apm": 0.0,
+        "drm36k": 0.0
+      }
+    ]
+  },
+  "delta": {
+    "lut": 48.0,
+    "ff": 29.0,
+    "lutram": 0.0,
+    "drm36k": 0.0,
+    "apm": -4.0
+  },
+  "vision": {
+    "lut": 5762.0,
+    "ff": 2021.0,
+    "lutram": 1357.0,
+    "apm": 44.0,
+    "drm": 0.0,
+    "pe_apm": 32,
+    "cache_mapping_proof": {
+      "weight_logical_bytes": 9216,
+      "weight_physical_capacity_bytes": 9216,
+      "weight_mapping": "split_1024_128",
+      "weight_ram64x1_cells": 1152,
+      "input_ping_pong_bytes": 1024,
+      "activation_table_bytes": 256,
+      "weight_decoder_roots_proven": 36,
+      "decoder_free_variables": 10,
+      "native_read_boundary": {
+        "export": "N438",
+        "producer": "i2s_audio_duplex",
+        "response_boundary": "shared-ddr-response-and-adapter-state",
+        "truth": "mem_rsp_valid && state==R_WAIT(9) && !mem_rsp_error && !stop_pending",
+        "folded_guards": [
+          "mem_rsp_error",
+          "stop_pending"
+        ],
+        "cofactors": 131072,
+        "hierarchy_bound": true,
+        "proof_method": "complete hierarchical ROBDD equality",
+        "bdd_nodes": 203,
+        "hierarchy_hops": 79,
+        "cut_variables": [
+          "adapter_state1",
+          "adapter_state3",
+          "ddr_rd_active",
+          "ddr_rd_owner",
+          "ddr_wr_active",
+          "ddr_wr_owner",
+          "mem_rsp_error",
+          "owner1",
+          "shared_bvalid",
+          "shared_rvalid",
+          "state[0]",
+          "state[1]",
+          "state[2]",
+          "state[3]",
+          "state[4]",
+          "state[5]",
+          "stop_pending"
+        ]
+      },
+      "sequential_equivalence": false,
+      "sta": false
+    }
+  },
+  "retained": {
+    "apm": 53.0,
+    "drm": 24.0,
+    "subtrees": {
+      "g_nnue.u_nnue": {
+        "lut": 2891.0,
+        "ff": 1791.0,
+        "apm": 37.0,
+        "drm": 14.0
+      },
+      "u_voice_accel": {
+        "lut": 2458.0,
+        "ff": 1576.0,
+        "apm": 16.0,
+        "drm": 6.0
+      },
+      "g_dedicated.u_chain": {
+        "lut": 2478.0,
+        "ff": 1415.0,
+        "apm": 35.0,
+        "drm": 13.0
+      },
+      "g_batch.u_batch": {
+        "lut": 952.0,
+        "ff": 889.0,
+        "apm": 0.0,
+        "drm": 4.0
+      }
+    },
+    "voice_quant": true
+  },
+  "native_receipt_sha256": "4fff283508ec93c806d4edbd2deb56b25d3cef6d9726fea4f211369e8d4cf2ef",
+  "audit_only_updates": {
+    "scripts/vision32_cache_contract.py": {
+      "frozen": "8d409940745ac59b6fd0c2876c4f0f379086ac718cc8a101ae3ef69d079d0bef",
+      "current": "d8f9a89089b36d4d59c1f9dcebfbd1a2fe3e1e14924a831dec212c13dc58c7a8"
+    }
+  },
+  "legacy_s8_extra_cycles_per_output": 31,
+  "active_image_modes": [
+    2,
+    4,
+    5
+  ],
+  "board_tested": false,
+  "final_sta_pass": false
+}

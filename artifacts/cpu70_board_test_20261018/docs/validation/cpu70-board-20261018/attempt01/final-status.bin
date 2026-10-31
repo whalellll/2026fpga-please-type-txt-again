@@ -1,0 +1,17 @@
+
+/ # cd /tmp/voice-gui-display; grep -E "MAC_RUNTIME|KERNEL_RESIDENT|STAGEB_ACCEL
+_READY|PIKAFISH READY" gui-v3.log; head -3 voice.log; printf "XQ_STATUS\n" >/run
+/voice-display.in; sleep 1; tail -3 gui-v3.log; kill -0 $(cat gui-v3.pid) && kil
+l -0 $(cat voice.pid); printf "\n__BOARD_END_0:%s\n" "$?"
+PIKAFISH_MAC_RUNTIME_READY id=4d41434b version=00020100 timeout_us=100000 ddr=private backend=driver
+PIKAFISH_STAGEB_KERNEL_RESIDENT bytes=593920 backend=driver
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=1 resident=loaded copied_bytes=593920
+XQ LINUX PIKAFISH READY; mouse=move, restart button=reset, Esc=exit
+XQVOICE_READY backend=cpu model=/opt/xqvoice/sd77-candidate.xqt audio=/dev/pango-audio0 sample_rate=16000 mode=display-only single-token start=200 stop=160 token_threshold=500
+XQVOICE_DISPLAY sequence=1 state=LISTENING score=0 sent=1 text=
+XQVOICE_DISPLAY sequence=2 state=CAPTURING score=0 sent=1 text=
+XQ LINUX VOICE DISPLAY sequence=2 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=3 state=LOW_CONFIDENCE score=3 text=马 executed=0
+XQ LINUX INJECT STATUS side=red engine=ready nodes=0 score=0 red_win_permille=4294967295 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1
+
+__BOARD_END_0:0

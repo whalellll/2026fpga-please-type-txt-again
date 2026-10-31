@@ -1,0 +1,805 @@
+{
+  "schema": 1,
+  "extra_records": [
+    {
+      "name": "usr/bin/pango-mac-conv-compute-test",
+      "bytes": 343616,
+      "sha256": "89ad420a46838a9c38597da969e15ad74ee839fd708f44c1f277eef929e59307"
+    },
+    {
+      "name": "usr/bin/pango-mac-conv-window-test",
+      "bytes": 252356,
+      "sha256": "76cc594cc86c2c51d85c3ebe76d6bdc2cb39e20c1c5a7a4c17407673549f48d2"
+    }
+  ],
+  "source": "G:\\fpga\\c80unpack_f79443a2_20261020_r2\\SOC",
+  "source_delivery_sha256": "f7cc64df2316ae03453c29ff491084f923cd3a680af210736cd1e1e4cd41df8a",
+  "accepted_run_id": "f79443a2e020498c853ce868cde9b187",
+  "cpu_implementation_commit": "fefd93052c4974c5a45fcebb7a34cc3d44f9a8d9",
+  "soc_implementation_commit": "5b49ff08842e467f456620b59af5b8d279f2d39d",
+  "bitstream_sha256": "b075be18325630d89de8b168baf5caec471395991ec69b61e3e77bca0d7ad88e",
+  "cpu_hz": 80000000,
+  "sys_hz": 49500000,
+  "sbi_ratio": [
+    99,
+    160
+  ],
+  "boot_command": "sdboot",
+  "bootrom_entry": 0,
+  "board_tested": false,
+  "physical_media_written": false,
+  "flash_written": false,
+  "remote_pushed": false,
+  "limitations": [
+    "New SD loader and SD path require board acceptance.",
+    "No power-on SD auto-boot: accepted ROM requires sdboot.",
+    "Original CPU80 acceptance does not certify this new SD package."
+  ],
+  "software_source_manifest_sha256": "6665404f0f26836aa884c1302c7e268f6f518aa43eaeb87b74486f19d9ec32fe",
+  "candidate_run_id": "44aa982f752c4b7d91accea60292735f",
+  "candidate_bitstream_sha256": "30d8f0d5ccdefcf9225780965df3efd399b9b9f27eb390d849754fcd57d526f1",
+  "candidate_soc_implementation_commit": "3433872213649fde70106dda3f18bfd9fd7fcfce",
+  "binding_scope": "Same repaired44aa982f hardware and six unchanged SD files. New kernel and corresponding loader CRC only; all hardware and new software board acceptance remain separate.",
+  "status": "AUDIO_SERVICE_SD_18_OFFLINE_TESTS_PASS_BOARD_PENDING",
+  "created_utc": "2026-10-22T14:16:54.390585+00:00",
+  "payloads": [
+    {
+      "name": "fw_jump.bin",
+      "address": 402653184,
+      "bytes": 266448,
+      "crc32": "832fdcbe",
+      "sha256": "305e88afc9eac31a85f7b00a71148972e739653c9c80afb69758a91541a6ef37"
+    },
+    {
+      "name": "Image",
+      "address": 4194304,
+      "bytes": 7480856,
+      "crc32": "3d9edf93",
+      "sha256": "3ed55853869ff00401b112d28c61687d1b22161e0518afe6d26351d03859d770"
+    },
+    {
+      "name": "rootfs.cpio",
+      "address": 50331648,
+      "bytes": 12146576,
+      "crc32": "d4a2af01",
+      "sha256": "1a58a1cbb6e9acee4ee0e28a4504a5fcb539bc17e284e05733516b4f55919d33"
+    },
+    {
+      "name": "soc.dtb",
+      "address": 436207616,
+      "bytes": 2523,
+      "crc32": "fd0acb92",
+      "sha256": "085375d21d8448198375012a1d246749a2478c1e95dbf75fa0ef6e9e6a691dd5"
+    },
+    {
+      "name": "pikafish.pff",
+      "address": 268435456,
+      "bytes": 68122688,
+      "crc32": "80322636",
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    {
+      "name": "pikafish.atk",
+      "address": 352321536,
+      "bytes": 34603072,
+      "crc32": "cba1dd72",
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    }
+  ],
+  "sd_root_files": {
+    "fw_jump.bin": {
+      "bytes": 266448,
+      "sha256": "305e88afc9eac31a85f7b00a71148972e739653c9c80afb69758a91541a6ef37"
+    },
+    "Image": {
+      "bytes": 7480856,
+      "sha256": "3ed55853869ff00401b112d28c61687d1b22161e0518afe6d26351d03859d770"
+    },
+    "Image.mmode": {
+      "bytes": 14232,
+      "sha256": "f08e039eab5f4970b5ee8e4f92f0aa6bc2ec41b489935efbbdc8572184ebca79"
+    },
+    "mmode.dtb": {
+      "bytes": 2523,
+      "sha256": "085375d21d8448198375012a1d246749a2478c1e95dbf75fa0ef6e9e6a691dd5"
+    },
+    "pikafish.atk": {
+      "bytes": 34603072,
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    },
+    "pikafish.pff": {
+      "bytes": 68122688,
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    "rootfs.cpio": {
+      "bytes": 12146576,
+      "sha256": "1a58a1cbb6e9acee4ee0e28a4504a5fcb539bc17e284e05733516b4f55919d33"
+    },
+    "soc.dtb": {
+      "bytes": 2523,
+      "sha256": "085375d21d8448198375012a1d246749a2478c1e95dbf75fa0ef6e9e6a691dd5"
+    }
+  },
+  "tests": [
+    "test-pass.log",
+    "rv32-test-pass.log",
+    "test-clock.log",
+    "rv32-test-clock.log",
+    "test-init.log",
+    "rv32-test-init.log",
+    "test-io.log",
+    "rv32-test-io.log",
+    "test-abort.log",
+    "rv32-test-abort.log",
+    "test-corrupt-kernel.log",
+    "rv32-test-corrupt-kernel.log",
+    "test-missing-model.log",
+    "rv32-test-missing-model.log",
+    "test-bad-firmware-size.log",
+    "rv32-test-bad-firmware-size.log",
+    "test-bad-fat-signature.log",
+    "rv32-test-bad-fat-signature.log"
+  ],
+  "commands": [
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/start.S",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/start.o"
+      ],
+      "exit": 0,
+      "log": "build-start.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.o"
+      ],
+      "exit": 0,
+      "log": "build-loader.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/runtime.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/runtime.o"
+      ],
+      "exit": 0,
+      "log": "build-runtime.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/sd_native.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/sd_native.o"
+      ],
+      "exit": 0,
+      "log": "build-sd_native.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/fat_ro.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/fat_ro.o"
+      ],
+      "exit": 0,
+      "log": "build-fat_ro.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-mcmodel=medany",
+        "-mno-relax",
+        "-msmall-data-limit=0",
+        "-mstrict-align",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-common",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-Os",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/crc32_fast.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/crc32_fast.o"
+      ],
+      "exit": 0,
+      "log": "build-crc32_fast.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-mabi=ilp32",
+        "-nostdlib",
+        "-static",
+        "-Wl,--gc-sections,--no-relax,--build-id=none",
+        "-T",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/link.ld",
+        "-Wl,-Map,/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.map",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/start.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/runtime.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/sd_native.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/fat_ro.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/crc32_fast.o",
+        "-lgcc",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.elf"
+      ],
+      "exit": 0,
+      "log": "link.log",
+      "log_sha256": "88a01ab99995569b5501fc7e36b689a4f1cbebefed3f053eba6dbaaf40bde279"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-objcopy",
+        "-O",
+        "binary",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.elf",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root/Image.mmode"
+      ],
+      "exit": 0,
+      "log": "objcopy.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "gcc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-missing-braces",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "-Dmain=sd80_main",
+        "-c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-loader.o"
+      ],
+      "exit": 0,
+      "log": "host-compile.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "gcc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-missing-braces",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host_test.c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-loader.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/fat_ro.c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/crc32_fast.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test"
+      ],
+      "exit": 0,
+      "log": "host-link.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-objcopy",
+        "--redefine-sym",
+        "main=sd80_main",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/loader.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-loader-test.o"
+      ],
+      "exit": 0,
+      "log": "rv32-object.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/opt/toolchain/bin/riscv32-linux-musl-gcc",
+        "-march=rv32ima",
+        "-Wa,-march=rv32ima_zicsr_zifencei",
+        "-mabi=ilp32",
+        "-static",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader",
+        "-I",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host_test.c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-loader-test.o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/fat_ro.c",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/bootloader/crc32_fast.c",
+        "-o",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test"
+      ],
+      "exit": 0,
+      "log": "rv32-link.log",
+      "log_sha256": "b280c454d6f559e56eb3f5ed39f3ba084b8d1744a3ff7fe016b21ff86dea1aca"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "pass",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-pass.log",
+      "log_sha256": "4267a64b34628e65873afb37cb1dc2fa42eec6c4951b18e632de2fd6931b6c9b"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "pass",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-pass.log",
+      "log_sha256": "4267a64b34628e65873afb37cb1dc2fa42eec6c4951b18e632de2fd6931b6c9b"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "clock",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-clock.log",
+      "log_sha256": "48c689e1d5fe33e3c198f7e136721c41b2a1d252208168b4d72a7e51a3eaac75"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "clock",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-clock.log",
+      "log_sha256": "48c689e1d5fe33e3c198f7e136721c41b2a1d252208168b4d72a7e51a3eaac75"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "init",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-init.log",
+      "log_sha256": "bf99ee950dede94fe9e087a18999e9461fbf06e7113e74e40645245d8cb192be"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "init",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-init.log",
+      "log_sha256": "bf99ee950dede94fe9e087a18999e9461fbf06e7113e74e40645245d8cb192be"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "io",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-io.log",
+      "log_sha256": "57a3f0e12f5800e7f93a50010409d5f6e57461606ca907ed8b68ca604c596ca1"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "io",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-io.log",
+      "log_sha256": "57a3f0e12f5800e7f93a50010409d5f6e57461606ca907ed8b68ca604c596ca1"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "abort",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-abort.log",
+      "log_sha256": "c68dac9aab4546555334396964f1c80167ef4025305d8e97ce0271a98f5d0287"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "abort",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-abort.log",
+      "log_sha256": "c68dac9aab4546555334396964f1c80167ef4025305d8e97ce0271a98f5d0287"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-corrupt-kernel.log",
+      "log_sha256": "c5e1520414c55245b0739455cc590e46d65b2db58aaa52606cc0148eb586d599"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-corrupt-kernel.log",
+      "log_sha256": "c5e1520414c55245b0739455cc590e46d65b2db58aaa52606cc0148eb586d599"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-missing-model.log",
+      "log_sha256": "837951d46f8b94d98c0739d91472a2f1058932b42b201141fac9689377cdce20"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-missing-model.log",
+      "log_sha256": "837951d46f8b94d98c0739d91472a2f1058932b42b201141fac9689377cdce20"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-bad-firmware-size.log",
+      "log_sha256": "fc439dc7621e6b977a3a81d5f4d94054f95a4e399ae39ffa951fe0e8f44efc38"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-bad-firmware-size.log",
+      "log_sha256": "fc439dc7621e6b977a3a81d5f4d94054f95a4e399ae39ffa951fe0e8f44efc38"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/host-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "test-bad-fat-signature.log",
+      "log_sha256": "e1a035edea82bc3c39886eb311b5c3717b6f33644fb4eb4e67c07d1143d76aec"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "-d",
+        "pikafish-verify",
+        "--",
+        "qemu-riscv32",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/support/rv32-test",
+        "reject",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/evidence/test-fat32.img",
+        "/mnt/g/fpga/performance_soc_cpu80_audio_service_20261022/artifacts/cpu80_audio_service_20261022/sd-kit/sd-root"
+      ],
+      "exit": 0,
+      "log": "rv32-test-bad-fat-signature.log",
+      "log_sha256": "e1a035edea82bc3c39886eb311b5c3717b6f33644fb4eb4e67c07d1143d76aec"
+    }
+  ],
+  "kernel_build_receipt_sha256": "82305b450f040195c94f7bf365f509dc6ed97da2bb4f547090a63381fd91da03",
+  "base_manifest_sha256": "3160df8faadde467bbdea67767301f4f1646abbce34a0d93c420ef09f097f9d8",
+  "support_sources_sha256": {
+    "host_test.c": "cf5d2be21944c97ece4b74fd5495831f02cb8e60657b72a9a86b88a3a5f2fc21",
+    "link.ld": "4969a968ad17c1efd9fcfe63c0d585eec7057799b3942832fe95a0202a826719",
+    "loader.c": "7d0c66f36178c0ae25306119c2b89bc5453e58ec1ced9e1c88ca5692b79cf3e5",
+    "payloads.h": "5d3b7c19826785893d28d97050f93b255dd809788b5ea5bf0c569751ea364b81",
+    "start.S": "d19a373a827957148dd117bc114103f46eca7cee186d31f31a862ba862c317c7",
+    "bootloader/crc32_fast.c": "7d8c262eaf77633a14a31886f4b8b2c7fe02b3b3bed095a4f2b10a90b67e9435",
+    "bootloader/crc32_fast.h": "a55f4959214d02dde02e841c8d296c6dcf432ebe34bdc38da05757c08a785f9e",
+    "bootloader/fat_ro.c": "14496f3b1e9f3057dae9f98c86a09414184c2b66c227a20000b34e06886f9441",
+    "bootloader/fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c",
+    "bootloader/runtime.c": "2e12bcf521c435b4eb9758e4c8550727bbd84f021b33d8205538949339640a1d",
+    "bootloader/sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "bootloader/sd_native.c": "60173da5ae55399afa3ddd8f3cde99ef6a26f703d13bd08b71a81e45650f7746",
+    "bootloader/soc.h": "13b01b67a0d41410fffc174e260bcb41ff27b71ac0b3a38704598cc4d076dd1b",
+    "cpu80_sd/host_test.c": "cf5d2be21944c97ece4b74fd5495831f02cb8e60657b72a9a86b88a3a5f2fc21",
+    "cpu80_sd/loader.c": "7d0c66f36178c0ae25306119c2b89bc5453e58ec1ced9e1c88ca5692b79cf3e5"
+  }
+}

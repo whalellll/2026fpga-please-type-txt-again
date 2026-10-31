@@ -1,0 +1,165 @@
+Compiling architecture definition.
+Executing : add_design ../ip/ddr3_test/ddr3_test.idf
+W: Flow-4058: The device information PG2L100H-6FBG676 of IP 'G:/fpga/build/main75-joint-20261027-01/source/ip/ddr3_test/ddr3_test.idf' is not the same as the current project.
+Executing : add_design ../ip/ddr3_test/ddr3_test.idf successfully.
+Executing : add_design ../ip/camera_line_buffer/camera_line_buffer.idf
+W: Flow-4058: The device information PG2L100H-6FBG676 of IP 'G:/fpga/build/main75-joint-20261027-01/source/ip/camera_line_buffer/camera_line_buffer.idf' is not the same as the current project.
+Executing : add_design ../ip/camera_line_buffer/camera_line_buffer.idf successfully.
+Executing : add_design ../ip/ref_clock/ref_clock.v
+Executing : add_design ../ip/ref_clock/ref_clock.v successfully.
+Executing : add_design ../rtl/cpu/CoreTop.sv
+Executing : add_design ../rtl/cpu/CoreTop.sv successfully.
+Executing : add_design ../rtl/clint.v
+Executing : add_design ../rtl/clint.v successfully.
+Executing : add_design ../rtl/cpu_top.v
+Executing : add_design ../rtl/cpu_top.v successfully.
+Executing : add_design ../rtl/soc/uart_tx_fifo.v
+Executing : add_design ../rtl/soc/uart_tx_fifo.v successfully.
+Executing : add_design ../rtl/soc/axi_1x2.v
+Executing : add_design ../rtl/soc/axi_1x2.v successfully.
+Executing : add_design ../rtl/soc/axi_2x1_arbiter.v
+Executing : add_design ../rtl/soc/axi_2x1_arbiter.v successfully.
+Executing : add_design ../rtl/soc/axi_boot_periph.v
+Executing : add_design ../rtl/soc/axi_boot_periph.v successfully.
+Executing : add_design ../rtl/soc/ch9350_hid_core.v
+Executing : add_design ../rtl/soc/ch9350_hid_core.v successfully.
+Executing : add_design ../rtl/soc/axi_ddr_cdc.v
+Executing : add_design ../rtl/soc/axi_ddr_cdc.v successfully.
+Executing : add_design ../rtl/soc/axi_cpu_sys_cdc.v
+Executing : add_design ../rtl/soc/axi_cpu_sys_cdc.v successfully.
+Executing : add_design ../rtl/soc/ddr_native_read_arbiter.v
+Executing : add_design ../rtl/soc/ddr_native_read_arbiter.v successfully.
+Executing : add_design ../rtl/soc/ddr_native_write_arbiter.v
+Executing : add_design ../rtl/soc/ddr_native_write_arbiter.v successfully.
+Executing : add_design ../rtl/soc/spi_flash_mmio.v
+Executing : add_design ../rtl/soc/spi_flash_mmio.v successfully.
+Executing : add_design ../rtl/soc/sd_native_mmio.v
+Executing : add_design ../rtl/soc/sd_native_mmio.v successfully.
+Executing : add_design ../rtl/audio/audio_mmio.v
+Executing : add_design ../rtl/audio/audio_mmio.v successfully.
+Executing : add_design ../rtl/audio/i2s_audio_duplex.v
+Executing : add_design ../rtl/audio/i2s_audio_duplex.v successfully.
+Executing : add_design ../rtl/audio/voice_feature_core.v
+Executing : add_design ../rtl/audio/voice_feature_core.v successfully.
+Executing : add_design ../rtl/audio/voice_classifier_core.v
+Executing : add_design ../rtl/audio/voice_classifier_core.v successfully.
+Executing : add_design ../rtl/audio/voice_cnn_tile_core.v
+Executing : add_design ../rtl/audio/voice_cnn_tile_core.v successfully.
+Executing : add_design ../rtl/audio/voice_accel_mmio.v
+Executing : add_design ../rtl/audio/voice_accel_mmio.v successfully.
+Executing : add_design ../rtl/camera/ov5640_power_on_delay.v
+Executing : add_design ../rtl/camera/ov5640_power_on_delay.v successfully.
+Executing : add_design ../rtl/camera/ov5640_sccb_write.v
+Executing : add_design ../rtl/camera/ov5640_sccb_write.v successfully.
+Executing : add_design ../rtl/camera/ov5640_register_table.v
+Executing : add_design ../rtl/camera/ov5640_register_table.v successfully.
+Executing : add_design ../rtl/camera/ov5640_register_init.v
+Executing : add_design ../rtl/camera/ov5640_register_init.v successfully.
+Executing : add_design ../rtl/camera/dual_ov5640_sensor.v
+Executing : add_design ../rtl/camera/dual_ov5640_sensor.v successfully.
+Executing : add_design ../rtl/camera/ov5640_cmos2_capture.v
+Executing : add_design ../rtl/camera/ov5640_cmos2_capture.v successfully.
+Executing : add_design ../rtl/camera/camera_mmio.v
+Executing : add_design ../rtl/camera/camera_mmio.v successfully.
+Executing : add_design ../rtl/camera/camera_sd_hud.v
+Executing : add_design ../rtl/camera/camera_sd_hud.v successfully.
+Executing : add_design ../rtl/camera/camera_buffer_control.v
+Executing : add_design ../rtl/camera/camera_buffer_control.v successfully.
+Executing : add_design ../rtl/camera/camera_frame_writer.v
+Executing : add_design ../rtl/camera/camera_frame_writer.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_accel_dma_kernel.v
+Executing : add_design ../rtl/mac_accel/mac_accel_dma_kernel.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_accel_axi_master32.v
+Executing : add_design ../rtl/mac_accel/mac_accel_axi_master32.v successfully.
+Executing : add_design ../rtl/mac_accel/xiangqi_sparse_eval.v
+Executing : add_design ../rtl/mac_accel/xiangqi_sparse_eval.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_accel_ddr_kernel_top.v
+Executing : add_design ../rtl/mac_accel/mac_accel_ddr_kernel_top.v successfully.
+Executing : add_design ../rtl/mac_accel/MacAccelCore.v
+Executing : add_design ../rtl/mac_accel/MacAccelCore.v successfully.
+Executing : add_design ../rtl/mac_accel/pff1_stagea_gather.v
+Executing : add_design ../rtl/mac_accel/pff1_stagea_gather.v successfully.
+Executing : add_design ../rtl/mac_accel/nnue_stream_transform.v
+Executing : add_design ../rtl/mac_accel/nnue_stream_transform.v successfully.
+Executing : add_design ../rtl/mac_accel/nnue_mlp_chain.v
+Executing : add_design ../rtl/mac_accel/nnue_mlp_chain.v successfully.
+Executing : add_design ../rtl/mac_accel/pikafish_mlp_dedicated.v
+Executing : add_design ../rtl/mac_accel/pikafish_mlp_dedicated.v successfully.
+Executing : add_design ../rtl/mac_accel/vision32_pe.v
+Executing : add_design ../rtl/mac_accel/vision32_pe.v successfully.
+Executing : add_design ../rtl/mac_accel/vision32_layer.v
+Executing : add_design ../rtl/mac_accel/vision32_layer.v successfully.
+Executing : add_design ../rtl/mac_accel/nnue_pipeline_frontend.v
+Executing : add_design ../rtl/mac_accel/nnue_pipeline_frontend.v successfully.
+Executing : add_design ../rtl/mac_accel/pikafish_eval_batch.v
+Executing : add_design ../rtl/mac_accel/pikafish_eval_batch.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_mmio_frontend.v
+Executing : add_design ../rtl/mac_accel/mac_conv_mmio_frontend.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_compute_core.v
+Executing : add_design ../rtl/mac_accel/mac_conv_compute_core.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_input_dma.v
+Executing : add_design ../rtl/mac_accel/mac_conv_input_dma.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_weight_dma.v
+Executing : add_design ../rtl/mac_accel/mac_conv_weight_dma.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_window.v
+Executing : add_design ../rtl/mac_accel/mac_conv_window.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_read_arbiter2.v
+Executing : add_design ../rtl/mac_accel/mac_conv_read_arbiter2.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_rw_arbiter2.v
+Executing : add_design ../rtl/mac_accel/mac_conv_rw_arbiter2.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_compact_packer.v
+Executing : add_design ../rtl/mac_accel/mac_conv_compact_packer.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_compact_writer.v
+Executing : add_design ../rtl/mac_accel/mac_conv_compact_writer.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_conv_descriptor_guard.v
+Executing : add_design ../rtl/mac_accel/mac_conv_descriptor_guard.v successfully.
+Executing : add_design ../rtl/mac_accel/mac_weight_double_buffer.v
+Executing : add_design ../rtl/mac_accel/mac_weight_double_buffer.v successfully.
+Executing : add_design ../rtl/eth/eth_mac_mmio.v
+Executing : add_design ../rtl/eth/eth_mac_mmio.v successfully.
+Executing : add_design ../rtl/eth/rgmii_interface.v
+Executing : add_design ../rtl/eth/rgmii_interface.v successfully.
+Executing : add_design ../rtl/video/font_rom.v
+Executing : add_design ../rtl/video/font_rom.v successfully.
+Executing : add_design ../rtl/video/header_bitmap_rom.v
+Executing : add_design ../rtl/video/header_bitmap_rom.v successfully.
+Executing : add_design ../rtl/video/header_logo_rom.v
+Executing : add_design ../rtl/video/header_logo_rom.v successfully.
+Executing : add_design ../rtl/video/uart_console_text.v
+Executing : add_design ../rtl/video/uart_console_text.v successfully.
+Executing : add_design ../rtl/video/video_linux_console.v
+Executing : add_design ../rtl/video/video_linux_console.v successfully.
+Executing : add_design ../rtl/video/hid_gui_overlay.v
+Executing : add_design ../rtl/video/hid_gui_overlay.v successfully.
+Executing : add_design ../rtl/video/video_fb_mmio.v
+Executing : add_design ../rtl/video/video_fb_mmio.v successfully.
+Executing : add_design ../rtl/video/video_fb_dma.v
+Executing : add_design ../rtl/video/video_fb_dma.v successfully.
+Executing : add_design ../rtl/video/iic_dri.v
+Executing : add_design ../rtl/video/iic_dri.v successfully.
+Executing : add_design ../rtl/video/ms7200_ctl.v
+Executing : add_design ../rtl/video/ms7200_ctl.v successfully.
+Executing : add_design ../rtl/video/ms7210_ctl.v
+Executing : add_design ../rtl/video/ms7210_ctl.v successfully.
+Executing : add_design ../rtl/video/ms72xx_tx_only.v
+Executing : add_design ../rtl/video/ms72xx_tx_only.v successfully.
+Executing : add_design ../rtl/video/pll_video.v
+Executing : add_design ../rtl/video/pll_video.v successfully.
+Executing : add_design ../rtl/video/pll_cpu.v
+Executing : add_design ../rtl/video/pll_cpu.v successfully.
+Executing : add_design ../rtl/soc/soc_top.v
+Executing : add_design ../rtl/soc/soc_top.v successfully.
+Executing : add_constraint soc.fdc
+Executing : add_constraint soc.fdc successfully.
+Executing : add_constraint ddr3_test.rcf
+Executing : add_constraint ddr3_test.rcf successfully.
+Executing : set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676
+Executing : set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676 successfully.
+
+
+Executing : compile -top_module soc_top -system_verilog
+Executing : compile -top_module soc_top -system_verilog successfully.
+
+
+Executing : synthesize -ads -selected_syn_tool_opt 2
+Executing : synthesize -ads -selected_syn_tool_opt 2 successfully.

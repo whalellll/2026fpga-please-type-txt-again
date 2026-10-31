@@ -1,0 +1,23 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:08:41.667351+00:00",
+  "commands": [
+    {
+      "command": "XQVOICE_PROFILE=1 /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-profile /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+      "exit": 0,
+      "host_response_seconds": 1.6673124000008102,
+      "required_markers": [
+        "XQVOICE_PROFILE_V1 rc=0",
+        "VOICE_STREAM_TIMING source=wav-replay"
+      ]
+    }
+  ],
+  "spec_sha256": "733e0ff902580cb6739f83a5342f9463bf722f9c7ad5841eccc5ab50e6dc5249",
+  "uart_sha256": "47c0b0dcd5d86c30bfcdf48711ebd3ca4ef85ada2a49e0134b0e0e91b2f636e8",
+  "completed_utc": "2026-10-25T05:08:43.845632+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "library_id": "fpga-soc-engineering-skills",
+  "version": "1.0.0",
+  "revision": 195,
+  "reviewed_on": "2026-10-28",
+  "review_note": "CPU75 native and full SoC regression unchanged/pass; exact-clock 60/70/75 host/RV32 and boot negatives pass. Real production pointer path board transaction passed including ASR drain, official Pikafish512 nodes, speech DONE/result/cleanup/status0/underflows0, restart/home and GUI restoration. Physical mouse/HDMI, final SD and ZIP acceptance remain separate; record speech-success distinction.",
+  "skills": [
+    "accelerator-model-compatibility",
+    "accelerator-performance",
+    "fpga-soc-board-debug",
+    "fpga-timing-optimization",
+    "soc-hardware-software-codesign"
+  ],
+  "files": {
+    "accelerator-model-compatibility/agents/openai.yaml": "2c4abcc193d17221e64170faa75fc0dcdc1a235480613c88f4567727aa2422b6",
+    "accelerator-model-compatibility/references/lessons.md": "c70dc49696ea5f8403da57fa03b33f9819633eca84f4f76aba2767c7424c63b4",
+    "accelerator-model-compatibility/SKILL.md": "94bc865dec0501707c628bc4daf61a9a5ea4f16a4961b4d5018cccf9b2547ace",
+    "accelerator-performance/agents/openai.yaml": "25daafd0df617c19414b44a3e413b5c10ac4da586eaea42e78eff4083cb47120",
+    "accelerator-performance/references/lessons.md": "bd4b804895f50fae56e14796114b26b3336812f765f6c05bea928349ee14039a",
+    "accelerator-performance/SKILL.md": "16718a7d5d6cfdc2119ff436a238023c7759f9dfe8bc9ed5f4e4a316c1cfa106",
+    "fpga-soc-board-debug/agents/openai.yaml": "2c37417f825a4f399825f1ce0ba61a3d8906229ee93309fafc60ff5a4730b6b4",
+    "fpga-soc-board-debug/references/lessons.md": "e46e4cb2511d487261b66d1f4fe73389cb7efeeb7f01bb49a7173161465d3a8b",
+    "fpga-soc-board-debug/SKILL.md": "eb13154a8b145823b89f86cd6927e23af823749591269f52d8b30dddaaf3e251",
+    "fpga-timing-optimization/agents/openai.yaml": "fb666783222baa53e6d64dd569f55f567a60313d0596d89cd462edd47f31603a",
+    "fpga-timing-optimization/references/frequency-workflow.md": "1b361f94e44a1e4547eee9a971510a944fa6852498283a7d0705be2098cbf135",
+    "fpga-timing-optimization/references/lessons.md": "807918e2ee6bb5618dc2afc81d3361c9a5f864d08c09e23730c07618f33a8222",
+    "fpga-timing-optimization/references/tool-maintenance.md": "e28808e75e52af260239128b3e028630193ca43fcf5f2bfdd1ec1cab20cd3275",
+    "fpga-timing-optimization/SKILL.md": "5f82e21973de200da5ba6a7b435350476d483286a55c87f7a0d4907521ca8e9a",
+    "manage.py": "94194851851868acbed75bc6423d7a26bd0f64b7d83d47ef6c2a2a60757a6b92",
+    "README.md": "1adfde5e811a35d0b0f15974b04c11b78cddb9daa7692918c2beb85c238592c0",
+    "soc-hardware-software-codesign/agents/openai.yaml": "d7f15a0b9b6a79ddf0d357eabd597c9e36260ced32ddb4cbbc1c52fa1aa56fa2",
+    "soc-hardware-software-codesign/references/lessons.md": "56e1538d392896cbbabf646971da3363bb13539b28fa400ad22274834b5b32f4",
+    "soc-hardware-software-codesign/SKILL.md": "4b0996ecddd78afcae142fc9360a53ecf6fe06dc98c779ec0cc4c9b479313d32"
+  }
+}

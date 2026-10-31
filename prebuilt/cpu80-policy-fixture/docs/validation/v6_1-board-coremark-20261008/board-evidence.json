@@ -1,0 +1,71 @@
+{
+    "schema_version":  1,
+    "status":  "BOARD_COREMARK_3_PLUS_1_PASS",
+    "recorded_date":  "2026-10-08",
+    "capture_start_utc":  "2026-10-08T09:01:58.7964026Z",
+    "evidence_kind":  "live_board_uart_capture",
+    "release_commit":  "3886dea334f99981e37b07305f0c218acdcf2a26",
+    "release_tag":  "v6.1",
+    "release_tag_object":  "48e236c3abc364c343e7e64865f924a93f2aa355",
+    "board_connection":  "COM5 Silicon Labs CP210x / 115200 8N1 / DTR=false RTS=false",
+    "commands":  [
+                     "info",
+                     "coremark",
+                     "coremark",
+                     "coremark",
+                     "coremark validate"
+                 ],
+    "cpu_hz":  59400000,
+    "sys_hz":  49500000,
+    "timebase_hz":  49500000,
+    "measurement_formula":  "iterations * timebase_hz * 1000000 / (ticks * cpu_hz)",
+    "performance_summary":  {
+                                "count":  3,
+                                "statistic":  "arithmetic mean of all three performance runs; validation excluded",
+                                "mean_coremark":  301.16680611873926,
+                                "mean_coremark_per_mhz":  5.0701482511572262,
+                                "minimum_coremark_per_mhz":  5.0672892561207465,
+                                "median_coremark_per_mhz":  5.071521342739886,
+                                "maximum_coremark_per_mhz":  5.0716341546110471
+                            },
+    "user_reported_performance":  {
+                                      "source":  "user-provided-uart.txt; user pasted two runs before this separate 3+1 capture",
+                                      "ticks":  [
+                                                    657194017,
+                                                    657322275
+                                                ],
+                                      "iterations_each":  4000,
+                                      "mean_coremark_per_mhz":  5.0715740616574561,
+                                      "included_in_primary_mean":  false
+                                  },
+    "identity":  {
+                     "operator_confirmed_v6_1_release_file":  true,
+                     "confirmation_source":  "User reply on 2026-10-08 confirmed the board used this V6.1 release file",
+                     "supplied_bitstream":  {
+                                                "name":  "soc_top.sbit",
+                                                "bytes":  3791112,
+                                                "sha256":  "a5defe7bcf91921b38a17d1eec7cea40a69fe8ef3f42536605c2577ab0a3d934"
+                                            },
+                     "supplied_firmware":  {
+                                               "name":  "bootloader.bin",
+                                               "bytes":  91892,
+                                               "sha256":  "f6617eac7af1296cb8fa5c26acfc23398b5a879f801492869cb077512bc86159"
+                                           },
+                     "programmed_by_this_capture":  false,
+                     "fpga_image_readback_verified":  false,
+                     "scope":  "Operator-confirmed release plus UART identity; hashes identify local release files, not FPGA readback"
+                 },
+    "limits":  [
+                   "CoreMark and console only; peripheral IDs are not functional acceptance",
+                   "CPU frequency is configured/MMIO-reported; no independent frequency-meter measurement",
+                   "No board maximum-frequency sweep",
+                   "Linux and other peripherals not tested in this capture",
+                   "Historical RTL Pilot and independent source CPU simulation scores remain separate"
+               ],
+    "files_sha256":  {
+                         "board-info.log.txt":  "72755dff0609ef5f75bd1a23055f3ccbf19321b6ee7cc383c38e35b9a179493d",
+                         "uart.log.txt":  "82c4aca9ec52788dd60471a1f64166f6f3a25e282cb6d48da5e8782db6b565cd",
+                         "result.json":  "0d2acde5443346f1a799d7d97c064bafc928e604be6b9d560a6b8f00c329e578",
+                         "user-provided-uart.txt":  "38c858a7ac44c38f58a788b27f2119c667276a4d76ef56b2020285630d6e8eca"
+                     }
+}

@@ -1,0 +1,1580 @@
+{
+  "status": "ROUTED_FULL_STA_PASS_NOT_BOARD",
+  "run_id": "c8282c991f494ddc8144e35245872c02",
+  "native_root": "G:/fpga/performance_soc_image_hwc_20261025/build/native-physical-01",
+  "reports_sha256": {
+    "G:/fpga/performance_soc_image_hwc_20261025/build/native-physical-01/pds/report_timing/rtr.db": "ad3f6d6c35a03baebacb024a3049410c0f4e34db6c9ba24e82da1426bfce87d9",
+    "G:/fpga/performance_soc_image_hwc_20261025/build/native-physical-01/pds/report_timing/soc_top.rtr": "234512c2369383633f9b5807b4aeef50f85866eace357ac79ae531d23bfe2b34",
+    "G:/fpga/performance_soc_image_hwc_20261025/build/native-physical-01/pds/input-snapshots/c8282c991f494ddc8144e35245872c02/physical-result.json": "5b36db92368470d77295119ec4f93923daabe8a5c379c175572b214ecc8e4563"
+  },
+  "summary_row_count": 116,
+  "summary": [
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 0.96,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 196,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 1.116,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 420,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.43,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 1.841,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 19436,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 1.92,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2702,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "phy_dq_sysclk_1",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 2.876,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 260,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 2.937,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 12418,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 3.942,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "phy_dq_sysclk_0",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 4.106,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 1,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 4.924,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 403,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 5.577,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2250,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 5.743,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 369,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 10.623,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 509,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "i2c_cfg_clk",
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 137.325,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 497,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "camera2_sccb_clk",
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 99995.784,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 198,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "camera1_sccb_clk",
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 99996.279,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 199,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.149,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.164,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 19436,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "camera2_sccb_clk",
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 0.282,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 198,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 0.285,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 369,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 0.286,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2702,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "camera1_sccb_clk",
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 0.286,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 199,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "i2c_cfg_clk",
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 0.287,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 497,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 0.292,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 403,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.306,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 0.347,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2250,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 0.476,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 196,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 0.539,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 420,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "phy_dq_sysclk_1",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.68,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 260,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "phy_dq_sysclk_0",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.717,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 1,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 2.419,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4104,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 4.501,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 6.384,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 5,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 7.154,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 112,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 9.57,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 441,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 11.845,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 102,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "recovery",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 15.219,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 707,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 0.409,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 5,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.415,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4104,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 0.424,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 112,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.433,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 707,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 0.49,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 0.72,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 441,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "removal",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.125,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 102,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_clk_1"
+      ],
+      "wns_ns": 0.035,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 84,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_clk_0"
+      ],
+      "wns_ns": 0.035,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 35,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 1.85,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 35,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 2.4,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 84,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 3.04,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4614,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "rgmii_rxc"
+      ],
+      "wns_ns": 3.584,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 410,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "rst_clk"
+      ],
+      "wns_ns": 3.8,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 95,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "camera2_pclk"
+      ],
+      "wns_ns": 4.04,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 115,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "pix_clk"
+      ],
+      "wns_ns": 5.774,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 688,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "cpu_clk"
+      ],
+      "wns_ns": 7.365,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 11781,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "sys_clk"
+      ],
+      "wns_ns": 9.141,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 9764,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 69.755,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 49999.75,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 46,
+      "abnormal": ""
+    },
+    {
+      "corner": "slow",
+      "kind": "mpw",
+      "clocks": [
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 49999.75,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 47,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 3.424,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 196,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 3.509,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 420,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 4.102,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 19436,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 4.26,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2702,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "phy_dq_sysclk_1",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 4.446,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 260,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "phy_dq_sysclk_0",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 5.307,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 1,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 6.097,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 403,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 7.056,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 7.356,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 369,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 7.895,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 12418,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 8.535,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2250,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 9.522,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 12.488,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 509,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "i2c_cfg_clk",
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 138.935,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 497,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "camera2_sccb_clk",
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 99997.496,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 198,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "setup",
+      "clocks": [
+        "camera1_sccb_clk",
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 99997.808,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 199,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.108,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.115,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 19436,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 0.149,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 196,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "ddrphy_sysclk",
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 0.172,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 420,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "i2c_cfg_clk",
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 0.195,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 497,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 0.197,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 403,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "phy_dq_sysclk_1",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.201,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 260,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 0.203,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2702,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 0.203,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 369,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.216,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "phy_dq_sysclk_0",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.242,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 1,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "camera2_sccb_clk",
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 0.248,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 198,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 0.25,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 2250,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "camera1_sccb_clk",
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 0.251,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 199,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 4.386,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4104,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 5.804,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 7.038,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 5,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 8.296,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 112,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 11.022,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 441,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 13.547,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 102,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "recovery",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 17.17,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 707,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "camera2_pclk",
+        "camera2_pclk"
+      ],
+      "wns_ns": 0.292,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 112,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "ddrphy_sysclk",
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 0.295,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4104,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.3,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 707,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "rst_clk",
+        "rst_clk"
+      ],
+      "wns_ns": 0.343,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "rgmii_rxc",
+        "rgmii_rxc"
+      ],
+      "wns_ns": 0.351,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 5,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "pix_clk",
+        "pix_clk"
+      ],
+      "wns_ns": 0.513,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 441,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "removal",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.796,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 102,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_clk_1"
+      ],
+      "wns_ns": 0.035,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 84,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_clk_0"
+      ],
+      "wns_ns": 0.035,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 35,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_sysclk_0"
+      ],
+      "wns_ns": 1.85,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 35,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "phy_dq_sysclk_1"
+      ],
+      "wns_ns": 2.4,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 84,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "ddrphy_sysclk"
+      ],
+      "wns_ns": 3.43,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 4614,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "rgmii_rxc"
+      ],
+      "wns_ns": 3.584,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 410,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "rst_clk"
+      ],
+      "wns_ns": 3.8,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 95,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "camera2_pclk"
+      ],
+      "wns_ns": 4.43,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 115,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "pix_clk"
+      ],
+      "wns_ns": 6.164,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 688,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "cpu_clk"
+      ],
+      "wns_ns": 7.67,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 11781,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "sys_clk"
+      ],
+      "wns_ns": 9.446,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 9764,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "i2c_cfg_clk"
+      ],
+      "wns_ns": 70.145,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 94,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "camera1_sccb_clk"
+      ],
+      "wns_ns": 49999.75,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 46,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "mpw",
+      "clocks": [
+        "camera2_sccb_clk"
+      ],
+      "wns_ns": 49999.75,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 47,
+      "abnormal": ""
+    }
+  ],
+  "violations": [],
+  "focus": {
+    "cpu_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.43,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    "cpu_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.108,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 67445,
+      "abnormal": ""
+    },
+    "sys_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 3.942,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    },
+    "sys_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.216,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 64166,
+      "abnormal": ""
+    }
+  },
+  "physical_receipt": {
+    "schema": 1,
+    "status": "ROUTED_FULL_STA_PASS_NOT_BOARD",
+    "owner_pid": 78696,
+    "started_utc": "2026-10-24T19:15:39.1813484Z",
+    "source_root": "G:\\fpga\\performance_soc_image_hwc_20261025",
+    "source_commit": "85ed00197a199e06ecccb0bd0bc9c5184ea24c98",
+    "native_root": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-physical-01",
+    "gate_sha256": "025f55db8bc5b251d3db7dd955ae71ab71f8ee9ae7c42aceffc47d3bc423a571",
+    "pnr_complete": true,
+    "board": false,
+    "cpu_hz": 60000000,
+    "sys_hz": 49500000,
+    "updated_utc": "2026-10-24T19:46:24.8740261Z",
+    "run_id": "c8282c991f494ddc8144e35245872c02",
+    "snapshot_sha256": "138fc9f2903d340a9ebd03c027cb7426c6672e1e0d59c681a7a676ceb61f19cd",
+    "reports": {
+      "synthesize/soc_top.snr": "d46a7d670f78fbe99796e4735c4237763d70a050505ef67a52a4b1b9c68b7cd3",
+      "synthesize/soc_top_syn.vm": "56c02dbf0db25839ca4e2b3f599da1ec099a81556dd88ecfd53d56a20261276f",
+      "synthesize/soc_top_syn.adf": "52a49c611519a73de55dde14e08f7941735af37c16495b9b48cc37d42d14727d",
+      "place_route/soc_top.prr": "acfc4a9d0aef2b512e2ebefd8d88d46eb6130c6759102325b299d9a0e6338eaa",
+      "place_route/soc_top_pnr.adf": "3cdcd77fc8add1c8510d7bd57dda57a086388f0e99476a28009495e63a9c7e13",
+      "place_route/soc_top_pnr.netlist": "7bf6ceefc1ee8f1418d8f1458f0b390e3694d5493c9e1b07f5e4bd052cfc9001",
+      "report_timing/soc_top.rtr": "234512c2369383633f9b5807b4aeef50f85866eace357ac79ae531d23bfe2b34",
+      "report_timing/rtr.db": "ad3f6d6c35a03baebacb024a3049410c0f4e34db6c9ba24e82da1426bfce87d9",
+      "generate_bitstream/soc_top.sbit": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+      "impl.tcl": "c58fbe86ec21087a747558070acc09d6e3e2cd7b9d3d1ea5a8bba65c1801d3b0",
+      "flow.log": "f853eebcbb844a9d5d6c101289247e4f2b8492a038c4476fa25c9ff8e1ea2fdd"
+    }
+  },
+  "parser_sha256": "a5c371464b899d82d1753334f5a24a7fbaebb5c94fc12cd3f0f51da9a2dcd806",
+  "scope": "Routed STA evidence only; not board or driver acceptance"
+}

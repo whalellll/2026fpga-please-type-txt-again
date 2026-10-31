@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "scope": "Software intake only; no board or hardware acceptance",
+  "sources": [
+    {
+      "target": "linux/voice_ctc/xqvoice_session.c",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/source/linux/voice_ctc/xqvoice_session.c",
+      "imported_sha256": "a4d8d72546eddeb28795c7880c5103a7e6aeecc38690c361965b28966cf3ea32"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_session.h",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/source/linux/voice_ctc/xqvoice_session.h",
+      "imported_sha256": "68b2148526b0d5f0b637c8c45f825a92261dc9aefe931b915e051c3bd338f5de"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_gui_flow.c",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/source/linux/voice_ctc/xqvoice_gui_flow.c",
+      "imported_sha256": "1a4edc29e540e0acfa2c4f992822f1cbd8cc4790c0daff675cfe55d30be9d8db"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_gui_flow.h",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/source/linux/voice_ctc/xqvoice_gui_flow.h",
+      "imported_sha256": "a53fc8780d187ffafe60984cd19769953494e308c8fbe15420fab96c23189b93"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_ui_font.h",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/source/linux/voice_ctc/xqvoice_ui_font.h",
+      "imported_sha256": "e07572b62699e943a28cd215cc662911b37f381249a1f3600fb56f0fc70b1628"
+    },
+    {
+      "target": "linux/voice_ctc/pango_audio_uapi.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/pango_audio_uapi.h",
+      "imported_sha256": "748351565360dd3062aa4cc782e8a77853ecd5233ba45b71546de4ebb7ca527d"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_capture.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_capture.c",
+      "imported_sha256": "b7b4084e51d64c6e0d1be3e470d011d2607f8f67fb661632ee9af490a65ae5b3"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_capture.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_capture.h",
+      "imported_sha256": "6dc80128f4b80a81170b98bbdf1a09faa804e05e435fea107041818030abfa37"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_decode.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_decode.c",
+      "imported_sha256": "69ef3f43a5f8eee983e017cdaf716baba1a7620e28477f9e3be38363913e7448"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_decode.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_decode.h",
+      "imported_sha256": "39c05e4299bb1a0c5f6030e5890a4e897b56962c7e1bf464c56221192c04d20d"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_frontend.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_frontend.c",
+      "imported_sha256": "daff7cbcf2f71b458e3e2ac928abe1bc4e70b4d7b8d48c04a9e5a5422858eadb"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_frontend.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_frontend.h",
+      "imported_sha256": "d6ebf31be9e7fbf27d6c84df2f16ddc9ec471c13834b40e14992406afc8aa96c"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_mac.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_mac.h",
+      "imported_sha256": "fe94b532484bce5818a610ba41d333b4c3e45ca0fafedffc03ef698110630da0"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_profile.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_profile.c",
+      "imported_sha256": "70336cf76ea52c8d34d8fdbd2827c8e2212fd98044a469999c8f2788fb2ee628"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_profile.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_profile.h",
+      "imported_sha256": "400271ddf2da8f82257f40a507e8d0505b98f4a12de6c5ba6d03252b3ab60719"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_runtime.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_runtime.c",
+      "imported_sha256": "ff6c6baa59ea659e737e8c4727f134cf23de2405f2f8e36f35627201f0011879"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_stream.inc",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_stream.inc",
+      "imported_sha256": "077b852f16c790be8f361400335ef7061e5712c4f5dd437a2ffb412347117939"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_tables.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_tables.h",
+      "imported_sha256": "47abcdc4ae341f79c2f734f8cd7ef3835c12dfeb0d1e5bae95fc290b8378c056"
+    },
+    {
+      "target": "linux/voice_ctc/xqvoice_worker.inc",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/upstream/xqvoice_worker.inc",
+      "imported_sha256": "e5ffbec1e9a49d535940779fbafd268dc080aed928c0aad6b6be8c5d2cd67a09"
+    },
+    {
+      "target": "linux/voice_ctc/balanced24.bin",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/balanced24.bin",
+      "imported_sha256": "3e43041fd3e531ce130b56c0a460a1c7375420eea0e07afdf533012ae41da973"
+    },
+    {
+      "target": "linux/voice_ctc/voice_small_backend.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/voice2/voice_small_backend.c",
+      "imported_sha256": "370b6523aaf43cf8013373b9403bf92820b3b292fe757b2c6cd69d2d1ffbbeb4"
+    },
+    {
+      "target": "linux/voice_ctc/tests/test_feedback.c",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/tests/test_feedback.c",
+      "imported_sha256": "30d57c4f6f3fb280f34bc06a2631d1f4d201424af5dcacb6cdbf51f288d5e4a0"
+    },
+    {
+      "target": "linux/voice_ctc/tests/test_gui_priority.c",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/tests/test_gui_priority.c",
+      "imported_sha256": "ff3ab7240d9e54a62e631f03c8724622016c555fea65df4b3ec4c8e99bead80d"
+    },
+    {
+      "target": "linux/voice_ctc/tests/fake_worker.c",
+      "source_ref": "a901132a7493a6402c145d9208be92d751faf118",
+      "source_path": "voice/voice_2/test_support/fake_worker.c",
+      "imported_sha256": "b1cea483dac72f251192d9280f2ba4d9c564e2bddde2ede5cfc9ff7eb91c07d6"
+    },
+    {
+      "target": "linux/voice_ctc/tests/voice2_device_mock.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "sim/voice2_device_mock.c",
+      "imported_sha256": "e0c8895ebf63bf47ebf0d8f3f07ed53d9f50b9776921b4b3959e676e4237940b"
+    },
+    {
+      "target": "linux/voice_ctc/tests/test_voice2_stream_frontend.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "sim/test_voice2_stream_frontend.c",
+      "imported_sha256": "aba09ce9aca10dc73d3c14a6cfcfa2ca70739e332b9637fe018f92c383f9dd7d"
+    }
+  ]
+}

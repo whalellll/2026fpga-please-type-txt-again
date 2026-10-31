@@ -1,0 +1,12 @@
+{
+  "run_id": "f79443a2e020498c853ce868cde9b187",
+  "cpu_implementation_commit": "fefd93052c4974c5a45fcebb7a34cc3d44f9a8d9",
+  "bitstream_sha256": "b075be18325630d89de8b168baf5caec471395991ec69b61e3e77bca0d7ad88e",
+  "copied_utc": "2026-10-20T08:05:12.699188+00:00",
+  "source": "PDS2022.2-SP6.4 original final report_timing; XML is byte-identical native rtr.db, renamed for opening.",
+  "files_sha256": {
+    "CPU80_f79443a2_final.rtr": "935de6530bf6cb94e6c71510836e07d3878e99522b487c4c6393712f69d076cb",
+    "CPU80_f79443a2_final.xml": "45d82cf8e9a9ee9a5f7238ee2e4c8aba79b161cedf37c1244469a2b4fe4ede6e",
+    "CPU80_f79443a2_timing_summary.txt": "d325807f442d76d3f2a04311053112ef54a4c5c08eae8eabb4d0bb0edd81a9ff"
+  }
+}

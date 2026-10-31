@@ -1,0 +1,38 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:28:20.722141+00:00",
+  "commands": [
+    {
+      "command": "sha256sum /usr/bin/xqvoice-small-cnn /usr/bin/xqvoice-small-cnn-p3-reference /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /opt/pikafish/cpu75-nnue.vectors /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32",
+      "exit": 0,
+      "host_response_seconds": 65.27310999999463,
+      "required_markers": [
+        "babb29ce11184f9c2bd5005263dbbd4e862c009afacf20d22411447843149add  /usr/bin/xqvoice-small-cnn",
+        "d50faa9f14c1ea92119a3c9ed103523bd8b50fdea9f6df9de74849ba51f2719a  /usr/bin/xqvoice-small-cnn-p3-reference",
+        "3e43041fd3e531ce130b56c0a460a1c7375420eea0e07afdf533012ae41da973  /opt/voice2/balanced24.bin",
+        "512c1128ac8ff77ddfdf05a747592041952f25164e10e7a20497e7fba62c5bb5  /opt/integrated60/assets/voice-1000.wav",
+        "f74b6cd2c98af3170253fab0d3644f0076be3de6a5b56646cd052a7f85e94d89  /opt/pikafish/cpu75-nnue.vectors",
+        "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f  /opt/integrated60/assets/classifier.xqm",
+        "7c96fd83548798437c244a1453b31bec2c84a6f70959f9694851a0fc625b1d67  /opt/integrated60/assets/classifier.f32",
+        "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe  /opt/integrated60/assets/board.xqm",
+        "212791e9082ff874cd199e1d761e35d743363e94eb1ac72db683c735ecc91fc6  /opt/integrated60/assets/board.f32",
+        "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d  /opt/integrated60/assets/detector.xqm",
+        "1ec89de2b34b50bfdf2caef4f5bf687900b65428a5f3a5a3d0a512fc23108f91  /opt/integrated60/assets/detector.f32"
+      ]
+    },
+    {
+      "command": "for p in /proc/pango_mac_stage_profile /proc/pango_voice_stage_profile; do if test -e \"$p\"; then echo PROFILE_PRESENT:$p; else echo PROFILE_ABSENT:$p; fi; done; if command -v coremark; then :; else echo COREMARK_BINARY_ABSENT; fi",
+      "exit": 0,
+      "host_response_seconds": 0.06795770000462653,
+      "required_markers": []
+    }
+  ],
+  "spec_sha256": "32ac1c7bfa01fc66ad6726324fd651b6e0ec931cb09f0c27a72428558db68ff7",
+  "uart_sha256": "61196aa48a78d67d9b3a2509d036f76bd40835a29cbea891ca5981ba83fbfba2",
+  "completed_utc": "2026-10-25T05:29:27.627637+00:00"
+}

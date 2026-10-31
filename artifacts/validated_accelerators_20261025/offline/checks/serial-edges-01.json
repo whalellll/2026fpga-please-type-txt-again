@@ -1,0 +1,12 @@
+{
+  "status": "VISION32_NUMPY_DIFFERENTIAL_DMA_PASS_NOT_BOARD",
+  "cases": 2,
+  "soc": false,
+  "source_sha256": {
+    "rtl/mac_accel/vision32_pe.v": "7c4ce887a31985d31af669f0860e81de50eea6673b71bd0df92ddeb684906574",
+    "rtl/mac_accel/vision32_layer.v": "e542ee3ebd33128ba66cda684cebfe9f284159d2b8b988c18f205ef5ddbcc026",
+    "sim/tb_vision32_layer.sv": "ff7e9d6b8f2b15d50701504a9215d59641135686d6fa2f3739bddcca2d045046"
+  },
+  "vector_sha256": "9be885b9110a79c14d35c49d4aec00b1e7620b670547fe7163417a57c9a1a90a",
+  "log_sha256": "dc7d59492b84c83a5bac1204ac47f1070a7161a00c8374596ddce7243678b4a8"
+}

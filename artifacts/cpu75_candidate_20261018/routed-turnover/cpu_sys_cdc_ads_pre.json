@@ -1,0 +1,626 @@
+{
+  "adf_sha256": "e8aa8dde42116072fe78271128fbffbd3d00040ef3fc7c88f96cfd41a7ec291e",
+  "ccr_sha256": "0b9c1b36d7c29fa1ac5a4f260e9898a8aa2c27ce526345ad5c5dc29ae4d0e2e4",
+  "constraints": {
+    "cdc_directives": 48,
+    "critical_warnings": 39,
+    "errors": 0,
+    "first_stage_directives": 8,
+    "gray_directives": 30,
+    "mapped_endpoint_tags": 300,
+    "mapped_first_stage_tags": 8,
+    "mapped_payload_output_tags": 298,
+    "mapped_second_stage_tags": 4,
+    "payload_directives": 10,
+    "total_constraints": 1171,
+    "warnings": 0
+  },
+  "fdc_sha256": "eabd12191dd88740ee33d73c092845d7ef19bfd4b5be8cb0d470ecb0fc1505ef",
+  "fifos": [
+    {
+      "direction": "wr",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "ar",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "rd",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "ar",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "wr",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "aw",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "rd",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "aw",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "wr",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "w",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "rd",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "w",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "wr",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "r",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "rd",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "r",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "wr",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray_rd1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/wr_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "b",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    },
+    {
+      "direction": "rd",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_delay": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        },
+        "max_skew": {
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray_wr1[4:0]",
+          "capture_vector_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/rd_gray[4:0]",
+          "launch_vector_objects": 1
+        }
+      },
+      "fifo": "b",
+      "mapped_launch_ff": 5,
+      "mapped_stage1_ff": 5,
+      "mapped_stage2_ff": 5,
+      "pap_preserve": true
+    }
+  ],
+  "first_stage_crossings": [
+    {
+      "capture_clock": "sys_clk",
+      "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/cpu_ready_sys[1:0]",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/cpu_ready_sys[1:0]",
+          "source_clock": "cpu_clk"
+        },
+        "max_delay": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/cpu_ready_sys[1:0]",
+          "source_clock": "cpu_clk"
+        }
+      },
+      "mapped_first_stage_ff": 1,
+      "mapped_second_stage_ff": 1,
+      "mapped_second_stage_tags": 2,
+      "name": "cpu_ready_sys0",
+      "second_stage_source_clock_filtered": true,
+      "source_clock": "cpu_clk"
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/sys_ready_cpu[1:0]",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/sys_ready_cpu[1:0]",
+          "source_clock": "sys_clk"
+        },
+        "max_delay": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/sys_ready_cpu[1:0]",
+          "source_clock": "sys_clk"
+        }
+      },
+      "mapped_first_stage_ff": 1,
+      "mapped_second_stage_ff": 1,
+      "mapped_second_stage_tags": 2,
+      "name": "sys_ready_cpu0",
+      "second_stage_source_clock_filtered": true,
+      "source_clock": "sys_clk"
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/timer_c1",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/timer_c1",
+          "source_clock": "sys_clk"
+        },
+        "max_delay": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/timer_c1",
+          "source_clock": "sys_clk"
+        }
+      },
+      "mapped_first_stage_ff": 1,
+      "mapped_second_stage_ff": 1,
+      "mapped_second_stage_tags": 0,
+      "name": "timer_c1",
+      "second_stage_source_clock_filtered": true,
+      "source_clock": "sys_clk"
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/software_c1",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/software_c1",
+          "source_clock": "sys_clk"
+        },
+        "max_delay": {
+          "capture_ff_objects": 1,
+          "capture_object": "u_cpu/u_cpu_wrapper/u_irq_sync/software_c1",
+          "source_clock": "sys_clk"
+        }
+      },
+      "mapped_first_stage_ff": 1,
+      "mapped_second_stage_ff": 1,
+      "mapped_second_stage_tags": 0,
+      "name": "software_c1",
+      "second_stage_source_clock_filtered": true,
+      "source_clock": "sys_clk"
+    }
+  ],
+  "payloads": [
+    {
+      "capture_clock": "sys_clk",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/storage"
+        },
+        "max_delay": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_ar_fifo/storage"
+        }
+      },
+      "fifo": "ar",
+      "launch_clock": "cpu_clk",
+      "mapped_do_outputs": 38,
+      "mapped_ram_cells": 19,
+      "mapped_ram_instances": [
+        "storage_0",
+        "storage_1",
+        "storage_10",
+        "storage_11",
+        "storage_12",
+        "storage_13",
+        "storage_14",
+        "storage_15",
+        "storage_16",
+        "storage_17",
+        "storage_18",
+        "storage_2",
+        "storage_3",
+        "storage_4",
+        "storage_5",
+        "storage_6",
+        "storage_7",
+        "storage_8",
+        "storage_9"
+      ],
+      "mapped_ram_x1dp": 0,
+      "mapped_ram_x2dp": 19
+    },
+    {
+      "capture_clock": "sys_clk",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/storage"
+        },
+        "max_delay": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_aw_fifo/storage"
+        }
+      },
+      "fifo": "aw",
+      "launch_clock": "cpu_clk",
+      "mapped_do_outputs": 37,
+      "mapped_ram_cells": 19,
+      "mapped_ram_instances": [
+        "storage_0",
+        "storage_1_0",
+        "storage_1_1_0",
+        "storage_1_1_1_0",
+        "storage_1_1_1_1_0",
+        "storage_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1"
+      ],
+      "mapped_ram_x1dp": 1,
+      "mapped_ram_x2dp": 18
+    },
+    {
+      "capture_clock": "sys_clk",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/storage"
+        },
+        "max_delay": {
+          "capture_clock": "sys_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_w_fifo/storage"
+        }
+      },
+      "fifo": "w",
+      "launch_clock": "cpu_clk",
+      "mapped_do_outputs": 37,
+      "mapped_ram_cells": 19,
+      "mapped_ram_instances": [
+        "storage_0",
+        "storage_1_0",
+        "storage_1_1_0",
+        "storage_1_1_1_0",
+        "storage_1_1_1_1_0",
+        "storage_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_0",
+        "storage_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1"
+      ],
+      "mapped_ram_x1dp": 1,
+      "mapped_ram_x2dp": 18
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_clock": "cpu_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/storage"
+        },
+        "max_delay": {
+          "capture_clock": "cpu_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_r_fifo/storage"
+        }
+      },
+      "fifo": "r",
+      "launch_clock": "sys_clk",
+      "mapped_do_outputs": 36,
+      "mapped_ram_cells": 18,
+      "mapped_ram_instances": [
+        "storage_0",
+        "storage_1",
+        "storage_10",
+        "storage_11",
+        "storage_12",
+        "storage_13",
+        "storage_14",
+        "storage_15",
+        "storage_16",
+        "storage_17",
+        "storage_2",
+        "storage_3",
+        "storage_4",
+        "storage_5",
+        "storage_6",
+        "storage_7",
+        "storage_8",
+        "storage_9"
+      ],
+      "mapped_ram_x1dp": 0,
+      "mapped_ram_x2dp": 18
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "fdc_matches": {
+        "hold_cut": {
+          "capture_clock": "cpu_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/storage"
+        },
+        "max_delay": {
+          "capture_clock": "cpu_clk",
+          "launch_array_objects": 1,
+          "launch_object": "u_cpu/u_cpu_wrapper/u_axi_cdc/u_b_fifo/storage"
+        }
+      },
+      "fifo": "b",
+      "launch_clock": "sys_clk",
+      "mapped_do_outputs": 1,
+      "mapped_ram_cells": 1,
+      "mapped_ram_instances": [
+        "storage"
+      ],
+      "mapped_ram_x1dp": 1,
+      "mapped_ram_x2dp": 0
+    }
+  ],
+  "run_id": "d8e3b863e8b54212ae85cb905c2fa5cb",
+  "schema": 1,
+  "single_bit_synchronizers": [
+    {
+      "capture_clock": "cpu_clk",
+      "first_stage_source": "sys_resetn",
+      "name": "sys_ready_cpu",
+      "pap_preserve": true,
+      "stages": 2
+    },
+    {
+      "capture_clock": "sys_clk",
+      "first_stage_source": "cpu_resetn",
+      "name": "cpu_ready_sys",
+      "pap_preserve": true,
+      "stages": 2
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "first_stage_source": "timer_irq_sys",
+      "name": "timer_irq",
+      "pap_preserve": true,
+      "stages": 2
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "first_stage_source": "software_irq_sys",
+      "name": "software_irq",
+      "pap_preserve": true,
+      "stages": 2
+    },
+    {
+      "capture_clock": "cpu_clk",
+      "first_stage_source": "1'b0",
+      "name": "external_irq",
+      "pap_preserve": true,
+      "stages": 2
+    }
+  ],
+  "snapshot_sha256": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+  "status": "PASS",
+  "vm_sha256": "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "CANDIDATE_NOT_BOARD_ACCEPTED",
+  "kernel_archive": {
+    "path": "G:/fpga/linux/sources/linux-5.14.tar.xz",
+    "sha256": "7e068b5e0d26a62b10e5320b25dce57588cbbc6f781c090442138c9c9c3271b2"
+  },
+  "source_sha256": {
+    "linux/audio/kernel/pango_audio.c": "ac3e1436fa946df63409b08cf995ac5faf2ba740eae964d96b046b6ce2503e8a",
+    "linux/audio/pango_audio_uapi.h": "748351565360dd3062aa4cc782e8a77853ecd5233ba45b71546de4ebb7ca527d",
+    "linux/audio/xqaudio_capture.c": "bd44dfcd938cacce2d32f8f62a299358894af5450f2dfd1318dc461fe51d8a4e",
+    "linux/boot/Image": "6ca0bdd3f3490c1b38606a80dd4912c5c2ffce08bc165abf00f13806f5f0c1e0",
+    "linux/boot/rootfs.cpio": "0470b510ad45b6b9dd394aea8f174825238158ff76dbd31a37d18ac22329a763",
+    "linux/mac_accel/kernel/pango_mac.c": "fcfad74eb20bbe46020a1dedbd3ee03d4dea2027a9c7a0520115bf32b7925c14",
+    "linux/mac_accel/kernel/pango_mac_copy_chunks.h": "313cda6582c37135bb81cd457435b26af2c9788e96c773e4152436d97dd28044",
+    "linux/mac_accel/pango_mac_uapi.h": "7c7e20547c8e4fbc5783aa93899e6b7fffeb039c473516f92fdcd6d6b5deca93",
+    "linux/soc.dts": "459866ed94455fdd4c7b8aa32358fbd03f6ade546111fc5a07166c03b269cb59",
+    "linux/voice/S96xqvoice": "9f748f1c31d5b9f918ba750eb62369b732812b9f8ee199139bc97a1977374c91",
+    "linux/voice/export_token_accept_bundle.py": "09d39843cd272eb11540bfef3dd103118f598de87d44eb99d5ef495a8dc150bb",
+    "linux/voice/train_tdnn_ctc.py": "79f414a880d3dcd2db543658f45c0f33522c084cacd5f49cfcca1cd5d88512fe",
+    "linux/voice/train_token_classifier.py": "685488a2cc881b8562079e0f5ad29be5385b0e6e76789ab1480fa24ff88084b0",
+    "linux/voice/xqvoice_assembler.c": "f4fbbf299b5dcafb062c5d093e842d049f2e6d7bfc1ad88830cddb845bc762a9",
+    "linux/voice/xqvoice_assembler.h": "3cb4a4312ea4062f109286a9489611362a7438a0863deba61768d90833080000",
+    "linux/voice/xqvoice_client.c": "0bf3d5a764468e38c2de17874090b42161fb65d10add0a08733a4bde4fc7fee5",
+    "linux/voice/xqvoice_client.h": "fdd5cf5ba59907eee08a3b1dc92bf2ec8a683f6f3ef0543980ba92729ec5bdd5",
+    "linux/voice/xqvoice_daemon.c": "23dc7b1dfbbcf21a4faad93167d29fddda4c4705ebebd0cdb2e132e0ff09c72b",
+    "linux/voice/xqvoice_features.c": "d4726c8cbdc1dd637fc9713315deef0f44c8c843bf092539d80a291f21a43414",
+    "linux/voice/xqvoice_features.h": "52d0a76a7172326d10e0b2a6a0b1b3ce206f637f6479fd8ad60959671d1c678a",
+    "linux/voice/xqvoice_gui_ipc.c": "14bf5ab611374ee05a0f490d3b77d1fe7dae1dd304c3fb780e204d61424c00e5",
+    "linux/voice/xqvoice_gui_ipc.h": "1f619bc57db0e8901c6afa815a7e2bae17c53025f18e38a5e25e80f794d861cb",
+    "linux/voice/xqvoice_model.c": "fc09276034cb20192bc0016c94b0e0da6c1134d0ddd169b03420557c80837af6",
+    "linux/voice/xqvoice_model.h": "d5b31e4f52d9a80a75bfee9600ba6b121a0c7d5bce9cad46a4e41f4e0c8bba10",
+    "linux/voice/xqvoice_notation.c": "492b96872c9046f524377b1934688c2d12a493e2d63178bb04e2cc8aa7b78d3d",
+    "linux/voice/xqvoice_notation.h": "d6ca096619d2f465d33127c74588644ab93289b229fc4a13b1ed9289d28e9265",
+    "linux/voice/xqvoice_protocol.c": "7bf970ff6728c69aa7e8e9a690872fcb39b75bcf4e04b0322895f28dbb82fc43",
+    "linux/voice/xqvoice_protocol.h": "5758607903683b409d5dde0cbff9a7a27662ca2f952d4ea54a704075a9fca9bc",
+    "linux/voice/xqvoice_send.c": "a2d13a4de7d3f786c7ca1eaa29bab1d8d3a9b7e765b429def09fd5a8b60cf840",
+    "scripts/build_linux_mac_kernel.ps1": "9c4b29a13ad537ef4965a59ad3aa1c4b9f9c50263e52be6bf81092c634bc3f8d",
+    "scripts/build_xqvoice_rv32.ps1": "5395bad03f2ba7a3cff2c1933b393327d004de6edf13161772e41fc373814416"
+  },
+  "tools": {
+    "firmware": "native riscv32-unknown-elf GCC 16.2.0; firmware build receipts bind binary hashes",
+    "kernel": "WSL riscv64-linux-gnu GCC; RV32IMA configuration",
+    "userspace": "WSL /opt/toolchain/bin/riscv32-linux-musl GCC 9.4.0; static RV32IMA"
+  },
+  "scope": "Input fingerprints and payload contracts; not Linux boot, real-audio or ASR acceptance"
+}

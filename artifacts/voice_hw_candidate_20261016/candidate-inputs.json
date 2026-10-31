@@ -1,0 +1,22 @@
+{
+  "scope": "CANDIDATE; no board or real-speech pass",
+  "rootfs_base_sha256": "0470b510ad45b6b9dd394aea8f174825238158ff76dbd31a37d18ac22329a763",
+  "original_cpio_prefix_unchanged": true,
+  "added_cpio_entries": [
+    "opt/xqvoice",
+    "usr/bin/xqvoice",
+    "usr/bin/xqvoice-send",
+    "usr/bin/xqaudio-capture",
+    "opt/xqvoice/tts-candidate.xqt"
+  ],
+  "voice_model": {
+    "format": "XQT1",
+    "inputs": 40,
+    "hidden1": 128,
+    "hidden2": 128,
+    "classes": 25,
+    "provenance": "single-speaker synthetic TTS; not production accuracy",
+    "sha256": "845b9225938c5aa84b9cd55b395358da5d9bab5b45a053dd8739d9ba4504a284"
+  },
+  "initrd_end": "0x0380e000"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "candidate": "classifier-v2-band-r08",
+  "acceptance_status": "待新隔离局独立验收",
+  "selected": false,
+  "production_ready": false,
+  "full_integer_pipeline": false,
+  "p0_1_resolved": false,
+  "independent_test": false,
+  "source_manifest_sha256": "97d68759b347c6b406304f9fffd01c16df60e48e6a04b62adc6512b5d7a69615",
+  "original_v1_classifier_sha256": "25b6bd7e4bc667aaed23fe869dba83da72735125d9a4f840d7c925098b855315",
+  "checkpoint_sha256": "d184f7970f16311515110c008ca768b33e62ac43ffcf09f125085acc9905d3be",
+  "local_checkpoint": "build/picture-r08-20261021/delivery/P0-1_现场失败分析与v2候选/training/v2_run_band/best.pt",
+  "local_quantized_candidate": "build/picture-r08-20261021/delivery/P0-1_现场失败分析与v2候选/quantization_v2/candidate_v2",
+  "restore": "Run receive_r08.py against the original ZIP; build/ payloads are not Git model delivery.",
+  "runtime_role": "explicit rollback",
+  "superseded_by_classifier": "v3c under E combination; frozen weights unchanged"
+}

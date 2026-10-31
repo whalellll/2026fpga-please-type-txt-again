@@ -1,0 +1,12 @@
+{
+  "source_filename": "NotoSansSC-VF.ttf",
+  "source_family": "Noto Sans SC",
+  "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+  "copyright": "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+  "weight": 500,
+  "subset_family": "Xiangqi UI Sans",
+  "fonttools_version": "4.60.1",
+  "subset_sha256": "a6ee2d27eb955050299a7dba4c362f2b1a1504ea6ca0b28e1f60f87f3146603e",
+  "license": "SIL Open Font License 1.1",
+  "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
+}

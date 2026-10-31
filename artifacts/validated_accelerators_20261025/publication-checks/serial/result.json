@@ -1,0 +1,9 @@
+{
+  "status": "SERIAL_LEGACY_SIGNED33_UNSIGNED31_PRODUCT_ABORT_RESET_PASS_NOT_BOARD",
+  "cases": 2125,
+  "inputs_sha256": {
+    "rtl\\mac_accel\\vision32_pe.v": "7c4ce887a31985d31af669f0860e81de50eea6673b71bd0df92ddeb684906574",
+    "rtl\\mac_accel\\vision32_layer.v": "e542ee3ebd33128ba66cda684cebfe9f284159d2b8b988c18f205ef5ddbcc026",
+    "build\\publication-serial-01\\tb.sv": "f7ab0fd0a29514a0c5ff0d4546be451effcc580752472e85994d98b5f32a564c"
+  }
+}

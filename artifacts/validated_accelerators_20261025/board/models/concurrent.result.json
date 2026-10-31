@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:09:47.735797+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 45 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream >/tmp/transfer-voice.log 2>&1 & vp=$!; /usr/bin/timeout 45 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 1 >/tmp/transfer-picture.log 2>&1 & ip=$!; wait \"$vp\"; vr=$?; wait \"$ip\"; ir=$?; cat /tmp/transfer-voice.log /tmp/transfer-picture.log; test \"$vr\" = 0 && test \"$ir\" = 0 && echo TRANSFER_CONCURRENT_PASS",
+      "exit": 0,
+      "host_response_seconds": 3.465057599998545,
+      "required_markers": [
+        "TRANSFER_CONCURRENT_PASS",
+        "output_crc=805678c7",
+        "backend=mac"
+      ]
+    }
+  ],
+  "spec_sha256": "c9bd794e19a1b860c869fa7ecd9b84438446d4340fd7b4dfdb8b1442f37f08d9",
+  "uart_sha256": "ae9d6bb61b7bb275988b511a59426d8dcd69fe8a7188e1b9c8276c53827bf2f2",
+  "completed_utc": "2026-10-25T05:09:52.474075+00:00"
+}

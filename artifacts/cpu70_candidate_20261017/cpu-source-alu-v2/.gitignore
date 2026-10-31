@@ -1,0 +1,6 @@
+/handoff-packages/
+/cpu/work/
+/cpu/null/
+/cpu/toolchain.local.json
+/cpu/generated/core/scripts/meminit/
+/cpu/generated/sim/scripts/meminit/

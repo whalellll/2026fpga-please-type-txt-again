@@ -1,0 +1,17 @@
+{
+  "status": "ACTIVE_VISION_RAW_AND_EXACT_CYCLES_BYTES_ERRORS_UNCHANGED_NOT_BOARD",
+  "checks": [
+    {
+      "current": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\serial-exact-01",
+      "baseline": "G:\\fpga\\performance_soc_vision_epilogue_20261024\\build\\exact-rtl-02",
+      "cases": 156,
+      "cycle_bytes_error_equal": true
+    },
+    {
+      "current": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\serial-raw-current-01",
+      "baseline": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\serial-raw-reference-01",
+      "cases": 29,
+      "cycle_bytes_error_equal": true
+    }
+  ]
+}

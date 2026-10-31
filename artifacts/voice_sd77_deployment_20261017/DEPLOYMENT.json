@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "models": {
+    "sd77-candidate.xqt": {
+      "sha256": "10186411d091dc85efefc921f29300e49a1e5de7b308f6e8d49602ea349ee41a",
+      "bytes": 6020
+    },
+    "rollback-all24-156.xqt": {
+      "sha256": "40b7b1d129750788da6fd27b5df5b08dcdfa649a9b7d4189f11055a4ed0cd469",
+      "bytes": 6020
+    }
+  },
+  "deployment": {
+    "schema": 1,
+    "status": "SD77_RAM_MODEL_PROCESS_READY",
+    "model_sha256": "10186411d091dc85efefc921f29300e49a1e5de7b308f6e8d49602ea349ee41a",
+    "model_bytes": 6020,
+    "architecture": [
+      40,
+      64,
+      32,
+      25
+    ],
+    "training_recordings": 77,
+    "positive_classes": 22,
+    "missing_tokens": [
+      "chonglai",
+      "tuichu"
+    ],
+    "older_recordings_included": false,
+    "target": "/tmp/voice-gui-display/sd77-20261017-10186411.xqt",
+    "previous": {
+      "pid": 2878,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/all24-156-20261016-40b7b1d1.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "active": {
+      "pid": 2931,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/sd77-20261017-10186411.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "gui_pid_before_after": 94,
+    "runtime_source_unchanged": true,
+    "gui_restarted": false,
+    "chess_actions_from_voice": false,
+    "sd_flash_rtl_kernel_changes": false,
+    "persistent": false,
+    "recognition_accuracy_accepted": false,
+    "live_speech_labelled_test": "NOT_RUN",
+    "board_model_sha256_verified": true,
+    "display_only_ready_verified": true,
+    "old_model_sha_preserved": true,
+    "gui_status_before": "side=red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "gui_status_after": "side=red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "framebuffer_before": [
+      "00000003",
+      "00000000"
+    ],
+    "framebuffer_after": [
+      "00000013",
+      "00000000"
+    ]
+  }
+}

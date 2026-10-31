@@ -1,0 +1,17 @@
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin"
+export PAGER='/bin/more'
+export EDITOR='/bin/vi'
+
+# Source Buildroot profile fragments first so the reported point really is
+# the point at which normal shell setup has completed.
+for i in /etc/profile.d/*.sh ; do
+    if [ -r "$i" ]; then
+        . "$i"
+    fi
+done
+unset i
+
+# Keep the requested compact root prompt and avoid ANSI colour escapes in the
+# hardware text mirror.
+export PS1='/ # '
+

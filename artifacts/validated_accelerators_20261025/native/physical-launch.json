@@ -1,0 +1,30 @@
+{
+    "schema":  1,
+    "status":  "ROUTED_FULL_STA_PASS_NOT_BOARD",
+    "owner_pid":  78696,
+    "started_utc":  "2026-10-24T19:15:39.1813484Z",
+    "source_root":  "G:\\fpga\\performance_soc_image_hwc_20261025",
+    "source_commit":  "85ed00197a199e06ecccb0bd0bc9c5184ea24c98",
+    "native_root":  "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-physical-01",
+    "gate_sha256":  "025f55db8bc5b251d3db7dd955ae71ab71f8ee9ae7c42aceffc47d3bc423a571",
+    "pnr_complete":  true,
+    "board":  false,
+    "cpu_hz":  60000000,
+    "sys_hz":  49500000,
+    "updated_utc":  "2026-10-24T19:46:24.8740261Z",
+    "run_id":  "c8282c991f494ddc8144e35245872c02",
+    "snapshot_sha256":  "138fc9f2903d340a9ebd03c027cb7426c6672e1e0d59c681a7a676ceb61f19cd",
+    "reports":  {
+                    "synthesize/soc_top.snr":  "d46a7d670f78fbe99796e4735c4237763d70a050505ef67a52a4b1b9c68b7cd3",
+                    "synthesize/soc_top_syn.vm":  "56c02dbf0db25839ca4e2b3f599da1ec099a81556dd88ecfd53d56a20261276f",
+                    "synthesize/soc_top_syn.adf":  "52a49c611519a73de55dde14e08f7941735af37c16495b9b48cc37d42d14727d",
+                    "place_route/soc_top.prr":  "acfc4a9d0aef2b512e2ebefd8d88d46eb6130c6759102325b299d9a0e6338eaa",
+                    "place_route/soc_top_pnr.adf":  "3cdcd77fc8add1c8510d7bd57dda57a086388f0e99476a28009495e63a9c7e13",
+                    "place_route/soc_top_pnr.netlist":  "7bf6ceefc1ee8f1418d8f1458f0b390e3694d5493c9e1b07f5e4bd052cfc9001",
+                    "report_timing/soc_top.rtr":  "234512c2369383633f9b5807b4aeef50f85866eace357ac79ae531d23bfe2b34",
+                    "report_timing/rtr.db":  "ad3f6d6c35a03baebacb024a3049410c0f4e34db6c9ba24e82da1426bfce87d9",
+                    "generate_bitstream/soc_top.sbit":  "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+                    "impl.tcl":  "c58fbe86ec21087a747558070acc09d6e3e2cd7b9d3d1ea5a8bba65c1801d3b0",
+                    "flow.log":  "f853eebcbb844a9d5d6c101289247e4f2b8492a038c4476fa25c9ff8e1ea2fdd"
+                }
+}

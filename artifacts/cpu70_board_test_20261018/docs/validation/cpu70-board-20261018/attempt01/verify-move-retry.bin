@@ -1,0 +1,67 @@
+
+/tmp/voice-gui-display # cd /tmp/voice-gui-display; tail -16 gui-verify.log; pri
+ntf "XQ_STATUS\n" > /run/voice-display.in; sleep 2; tail -6 gui-verify.log; prin
+tf "\n__BOARD_END_0:%s\n" "$?"
+XQ LINUX ENGINE INIT stage=options-ready elapsed_ms=14410 delta_ms=9
+XQ LINUX ENGINE INIT stage=verify-start elapsed_ms=14416 delta_ms=5
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=14432 delta_ms=15
+XQ LINUX ENGINE DIRECT CORE READY
+XQ LINUX PIKAFISH PFF1 READY
+XQ LINUX ENGINE DIRECT OK
+XQ LINUX PIKAFISH READY; mouse=move, restart button=reset, Esc=exit
+XQ LINUX VOICE DISPLAY sequence=20 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=21 state=LOW_CONFIDENCE score=7 text=二 executed=0
+XQ LINUX VOICE DISPLAY sequence=22 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=23 state=LOW_CONFIDENCE score=15 text=八 executed=0
+XQ LINUX VOICE DISPLAY sequence=24 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=25 state=LOW_CONFIDENCE score=3 text=炮 executed=0
+XQ LINUX VOICE DISPLAY sequence=26 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=24 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=25 state=LOW_CONFIDENCE score=3 text=炮 executed=0
+XQ LINUX VOICE DISPLAY sequence=26 state=CAPTURING score=0 text= executed=0
+XQ LINUX INJECT STATUS side=red engine=ready nodes=0 score=0 red_win_permille=4294967295 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1
+XQ LINUX VOICE DISPLAY sequence=27 state=LOW_CONFIDENCE score=23 text=将 executed=0
+XQ LINUX VOICE DISPLAY sequence=28 state=CAPTURING score=0 text= executed=0
+
+__BOARD_END_0:0
+cd //tmp/voice-gui-display # cd /tmp/voice-gui-display; printf "XQ_NEWGAME\nXQ_MOVE 
+h2e2\n" > /run/voice-display.in; n=0; until grep -q "INJECT MOVE_PASS\|INJECT MO
+VE_FAIL" gui-verify.log; do sleep 1; n=$((n+1)); test "$n" -lt 90 || break; done
+; tail -32 gui-verify.log; grep -q "INJECT MOVE_PASS" gui-verify.log; printf "\n
+__BOARD_END_1:%s\n" "$?"
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=14432 delta_ms=15
+XQ LINUX ENGINE DIRECT CORE READY
+XQ LINUX PIKAFISH PFF1 READY
+XQ LINUX ENGINE DIRECT OK
+XQ LINUX PIKAFISH READY; mouse=move, restart button=reset, Esc=exit
+XQ LINUX VOICE DISPLAY sequence=20 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=21 state=LOW_CONFIDENCE score=7 text=二 executed=0
+XQ LINUX VOICE DISPLAY sequence=22 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=23 state=LOW_CONFIDENCE score=15 text=八 executed=0
+XQ LINUX VOICE DISPLAY sequence=24 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=25 state=LOW_CONFIDENCE score=3 text=炮 executed=0
+XQ LINUX VOICE DISPLAY sequence=26 state=CAPTURING score=0 text= executed=0
+XQ LINUX INJECT STATUS side=red engine=ready nodes=0 score=0 red_win_permille=4294967295 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1
+XQ LINUX VOICE DISPLAY sequence=27 state=LOW_CONFIDENCE score=23 text=将 executed=0
+XQ LINUX VOICE DISPLAY sequence=28 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=29 state=LOW_CONFIDENCE score=19 text=炮 executed=0
+XQ LINUX VOICE DISPLAY sequence=30 state=CAPTURING score=0 text= executed=0
+PIKAFISH_STAGEB_CHECKPOINT_PASS checks=1 evaluations=0 jobs=0 pfsb_crc32=7261d3e8
+XQ LINUX ENGINE NEW GAME READY reset=position-snapshot tt=retained histories=retained checkpoint=pass elapsed_us=4620249
+XQ LINUX INJECT NEW_GAME_PASS
+XQ LINUX VOICE DISPLAY sequence=31 state=LOW_CONFIDENCE score=7 text=二 executed=0
+XQ LINUX INJECT MOVE_START red=h2e2
+XQ LINUX SEARCH START movetime_ms=1000 moves=0 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C2C4/9/RNBAKABNR b - - 0 1
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+PIKAFISH_STAGEA_ACCEL_ACTIVE terms=32 tiles=4 last_cycles=8070
+PIKAFISH_STAGEB_ACCEL_ACTIVE bucket=11 jobs=4 mode=verify total_jobs=4 cycles=29568
+XQ LINUX PIKAFISH DIRECT BESTMOVE=a6a5 NODES=1 RED_WIN_PERMILLE=29 ELAPSED_MS=1760
+XQ LINUX INJECT MOVE_PASS red=h2e2 black=a6a5 nodes=1 search_ms=1760 total_ms=2105
+XQ LINUX VOICE DISPLAY sequence=32 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=33 state=LOW_CONFIDENCE score=15 text=二 executed=0
+XQ LINUX VOICE DISPLAY sequence=34 state=CAPTURING score=0 text= executed=0
+
+__BOARD_END_1:0

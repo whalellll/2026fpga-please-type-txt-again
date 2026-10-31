@@ -1,0 +1,3 @@
+[
+  {"command":"echo CPU80_PRECHECK_CURRENT_SYSTEM; devmem 0x1fe00314 32; devmem 0x1fe00318 32; uname -a; cat /sys/class/misc/pango-mac0/device/uevent 2>/dev/null; ps | grep -E 'xiangqi|voice' | grep -v grep", "timeout":30}
+]

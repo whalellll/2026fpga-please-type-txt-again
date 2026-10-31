@@ -1,0 +1,68 @@
+{
+  "status": "EXACT_BOARD_TRIAL_SD_INPUTS_NOT_FORMAL_DELIVERY",
+  "manifest_sha256": "96ef2ee5e9d6a1fc770f718a9e3f03b945d12bd9fdc55d1341f1c86094d6dda6",
+  "files": {
+    "fw_jump.bin": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/fw_jump.bin",
+      "sha256": "e709883480124396dddb68ab353c86afbac17e4da99393cfafd765ec379b5f2b",
+      "bytes": 266448
+    },
+    "Image": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/Image",
+      "sha256": "6f5202732f9dd1d76901b3adbceccfbc567e6ef96ecc960fda10532274ac67ef",
+      "bytes": 7497368
+    },
+    "Image.mmode": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/Image.mmode",
+      "sha256": "fc06a95e31ce79efd70c8ed31b9a042e650930b06fee1e50a6d63c92d5e14c8f",
+      "bytes": 14040
+    },
+    "mmode.dtb": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/mmode.dtb",
+      "sha256": "61c2c3f2d0c1b42b08be702213a556f6e7aa661963f4cac867621bbad1bf575a",
+      "bytes": 2695
+    },
+    "pikafish.atk": {
+      "source": "linux/boot/pikafish.atk",
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c",
+      "bytes": 34603072
+    },
+    "pikafish.pff": {
+      "source": "linux/boot/pikafish.pff",
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260",
+      "bytes": 68122688
+    },
+    "rootfs.cpio": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/rootfs.cpio",
+      "sha256": "f6c9d09fe0281d3b62ce7d3d577a3cb205df1dc01360a9fff254fbebec894531",
+      "bytes": 27254272
+    },
+    "soc.dtb": {
+      "source": "artifacts/integrated60_linefix_trial_20261024/sd-inputs/payloads/soc.dtb",
+      "sha256": "61c2c3f2d0c1b42b08be702213a556f6e7aa661963f4cac867621bbad1bf575a",
+      "bytes": 2695
+    }
+  },
+  "loader_evidence_sha256": {
+    "test-pass.log": "9ee6b873d1fe123563bd1f5fb97e5c0078431182ac2332d382720441784f5ece",
+    "rv32-test-pass.log": "9ee6b873d1fe123563bd1f5fb97e5c0078431182ac2332d382720441784f5ece",
+    "test-clock.log": "1652cbf63714c849b10082400e9132599140e863a32c018c01782627932b924d",
+    "rv32-test-clock.log": "1652cbf63714c849b10082400e9132599140e863a32c018c01782627932b924d",
+    "test-init.log": "8f2e2a85b71b90fa2ce527e7250354019bb3e041c7910d797bcd9eca24cdf2f8",
+    "rv32-test-init.log": "8f2e2a85b71b90fa2ce527e7250354019bb3e041c7910d797bcd9eca24cdf2f8",
+    "test-io.log": "456681bee2b1b2528790713ea1b26a4a743f9eb3eb5c81aa2329d1354c222217",
+    "rv32-test-io.log": "456681bee2b1b2528790713ea1b26a4a743f9eb3eb5c81aa2329d1354c222217",
+    "test-abort.log": "721184c14e6950721d234dc717589170e47de8d0bbbb7270710434cc45bdff2a",
+    "rv32-test-abort.log": "721184c14e6950721d234dc717589170e47de8d0bbbb7270710434cc45bdff2a",
+    "test-corrupt-kernel.log": "473855a194c2eaa42b1a6bbe51a77675b27b4fa09c6340587c423585fca10bb4",
+    "rv32-test-corrupt-kernel.log": "473855a194c2eaa42b1a6bbe51a77675b27b4fa09c6340587c423585fca10bb4",
+    "test-missing-model.log": "fe2d2474cece0814c8a91e80155a4c8c1a5649d125458429d8ab0748bc1be813",
+    "rv32-test-missing-model.log": "fe2d2474cece0814c8a91e80155a4c8c1a5649d125458429d8ab0748bc1be813",
+    "test-bad-firmware-size.log": "25b5725886ba990901865f5b43758b15b342cebd6a4c67927ce7d644b751ea92",
+    "rv32-test-bad-firmware-size.log": "25b5725886ba990901865f5b43758b15b342cebd6a4c67927ce7d644b751ea92",
+    "test-bad-fat-signature.log": "7399bced7c48ba5adfdfeff97e4610f0631be244016e0713152d610798767841",
+    "rv32-test-bad-fat-signature.log": "7399bced7c48ba5adfdfeff97e4610f0631be244016e0713152d610798767841"
+  },
+  "trial_hardware_manifest_sha256": "861ab792acbae75e64a4cd6d1ec840b2a53f2f16bc52cf2ac8cac98877b46eb2",
+  "scope": "Original software SD manifest/write receipt unchanged. Board result stores separate compatible-payload binding to timing-failed native4. Official Pikafish weights reuse tracked linux/boot files. No new media write or formal package."
+}

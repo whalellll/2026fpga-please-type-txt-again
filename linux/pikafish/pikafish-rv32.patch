@@ -1,0 +1,133 @@
+diff --git a/src/Makefile b/src/Makefile
+index 9f3ac94..653cc9b 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -146,7 +146,7 @@ ifeq ($(ARCH), $(filter $(ARCH), \
+                  x86-64-bmi2 x86-64-avx2 x86-64-sse41-popcnt x86-64-modern x86-64-ssse3 x86-64-sse3-popcnt \
+                  x86-64 x86-32-sse41-popcnt x86-32-sse2 x86-32 ppc-64 ppc-64-altivec ppc-64-vsx ppc-32 e2k \
+                  armv7 armv7-neon armv8 armv8-dotprod arm64-universal apple-silicon general-64 general-32 riscv64 \
+-                 riscv64-rva23 riscv64-universal loongarch64 loongarch64-lsx loongarch64-lasx wasm32 wasm32-relaxed-simd))
++                 riscv32 riscv64-rva23 riscv64-universal loongarch64 loongarch64-lsx loongarch64-lasx wasm32 wasm32-relaxed-simd))
+    SUPPORTED_ARCH=true
+ else
+    SUPPORTED_ARCH=false
+@@ -443,6 +443,11 @@ ifeq ($(findstring e2k,$(ARCH)),e2k)
+ 	popcnt = yes
+ endif
+ 
++ifeq ($(ARCH),riscv32)
++	arch = riscv32
++	bits = 32
++endif
++
+ ifeq ($(findstring riscv64,$(ARCH)),riscv64)
+ 	arch = riscv64
+ endif
+@@ -494,7 +499,7 @@ ifeq ($(COMP),gcc)
+ 	CXX=g++
+ 	CXXFLAGS += -pedantic -Wextra -Wshadow -Wmissing-declarations
+ 
+-	ifeq ($(arch),$(filter $(arch),armv7 armv8 riscv64))
++	ifeq ($(arch),$(filter $(arch),armv7 armv8 riscv32 riscv64))
+ 		ifeq ($(OS),Android)
+ 			CXXFLAGS += -m$(bits)
+ 			LDFLAGS += -m$(bits)
+@@ -506,7 +511,7 @@ ifeq ($(COMP),gcc)
+ 		LDFLAGS += -m$(bits)
+ 	endif
+ 
+-	ifeq ($(arch),$(filter $(arch),armv7))
++	ifeq ($(arch),$(filter $(arch),armv7 riscv32))
+ 		LDFLAGS += -latomic
+ 	endif
+ 
+@@ -740,6 +745,9 @@ endif
+ ### 3.4 Bits
+ ifeq ($(bits),64)
+ 	CXXFLAGS += -DIS_64BIT
++else ifeq ($(arch),riscv32)
++	CXXFLAGS += -march=rv32ima -mabi=ilp32 -DPIKAFISH_PORTABLE_U128 -DPIKAFISH_STAGEA_ACCEL
++	LDFLAGS += -march=rv32ima -mabi=ilp32 -static
+ endif
+ 
+ ### 3.5 prefetch and popcount
+@@ -1029,6 +1037,7 @@ help:
+ 	echo "apple-silicon           > Apple silicon ARM64" && \
+ 	echo "general-64              > unspecified 64-bit" && \
+ 	echo "general-32              > unspecified 32-bit" && \
++	echo "riscv32                 > RISC-V 32-bit RV32IMA (portable bitboards)" && \
+ 	echo "riscv64                 > RISC-V 64-bit" && \
+ 	echo "riscv64-rva23           > RISC-V 64-bit RVA23 profile" && \
+ 	echo "riscv64-universal       > RISC-V 64-bit with automatic runtime selection of the best architecture" && \
+@@ -1257,7 +1266,7 @@ config-sanity: net
+ 	(test "$(arch)" = "any" || test "$(arch)" = "x86_64" || test "$(arch)" = "i386" || \
+ 	 test "$(arch)" = "ppc64" || test "$(arch)" = "ppc" || test "$(arch)" = "e2k" || \
+ 	 test "$(arch)" = "armv7" || test "$(arch)" = "armv8" || test "$(arch)" = "arm64" || \
+-	 test "$(arch)" = "riscv64" || test "$(arch)" = "loongarch64" || \
++	 test "$(arch)" = "riscv32" || test "$(arch)" = "riscv64" || test "$(arch)" = "loongarch64" || \
+ 	 test "$(arch)" = "wasm32") && \
+ 	(test "$(bits)" = "32" || test "$(bits)" = "64") && \
+ 	(test "$(prefetch)" = "yes" || test "$(prefetch)" = "no") && \
+diff --git a/src/bitboard.h b/src/bitboard.h
+index 2b092fc..a0b4193 100644
+--- a/src/bitboard.h
++++ b/src/bitboard.h
+@@ -165,7 +165,7 @@ inline int popcount(Bitboard b) {
+ 
+ #else  // Assumed gcc or compatible compiler
+ 
+-    return __builtin_popcountll(b >> 64) + __builtin_popcountll(b);
++    return __builtin_popcountll(u64(b >> 64)) + __builtin_popcountll(u64(b));
+ 
+ #endif
+ }
+@@ -191,8 +191,8 @@ inline Square lsb(Bitboard b) {
+ #else  // Assumed gcc or compatible compiler
+ 
+     if (u64(b))
+-        return Square(__builtin_ctzll(b));
+-    return Square(__builtin_ctzll(b >> 64) + 64);
++        return Square(__builtin_ctzll(u64(b)));
++    return Square(__builtin_ctzll(u64(b >> 64)) + 64);
+ 
+ #endif
+ }
+diff --git a/src/misc.h b/src/misc.h
+index 9ae46a8..fb0b5f8 100644
+--- a/src/misc.h
++++ b/src/misc.h
+@@ -37,6 +37,10 @@
+ #include <type_traits>
+ #include <vector>
+ 
++#if defined(PIKAFISH_PORTABLE_U128)
++    #include "portable_u128.h"
++#endif
++
+ #if !defined(NO_PREFETCH) && (defined(_MSC_VER) || defined(__INTEL_COMPILER))
+     #include <immintrin.h>
+ #endif
+@@ -63,7 +67,10 @@ using i8  = std::int8_t;
+ using usize = std::size_t;
+ using isize = std::ptrdiff_t;
+ 
+-#if defined(__GNUC__) && defined(IS_64BIT)
++#if defined(PIKAFISH_PORTABLE_U128)
++using u128 = PortableUInt128;
++using i128 = PortableUInt128;
++#elif defined(__GNUC__) && defined(IS_64BIT)
+ __extension__ using u128 = unsigned __int128;
+ __extension__ using i128 = signed __int128;
+ #elif defined(_MSC_VER)
+diff --git a/src/position.cpp b/src/position.cpp
+--- a/src/position.cpp
++++ b/src/position.cpp
+@@ -990,7 +990,7 @@ bool Position::see_ge(Move m, int threshold) const {
+     Bitboard attackers = attackers_to(to, occupied);
+ 
+     // Flying general
+-    bool kingAttacks = attackers & pieces(KING);
++    bool kingAttacks = bool(attackers & pieces(KING));
+     if (kingAttacks)
+         attackers |= attacks_bb<ROOK>(to, occupied) & pieces(KING);
+ 

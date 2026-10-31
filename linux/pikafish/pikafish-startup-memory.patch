@@ -1,0 +1,95 @@
+diff --git a/src/engine.cpp b/src/engine.cpp
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -125,8 +125,10 @@ Engine::Engine(std::optional<std::filesystem::path> path,
+           return std::nullopt;
+       }));
+ 
++#if !defined(PIKAFISH_EMBEDDED_GUI)
+     threads.clear();
+     threads.ensure_network_replicated();
++#endif
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     std::puts("XQ LINUX ENGINE DETAIL stage=resize-start");
+     std::fflush(stdout);
+diff --git a/src/nnue/nnue_accumulator.h b/src/nnue/nnue_accumulator.h
+--- a/src/nnue/nnue_accumulator.h
++++ b/src/nnue/nnue_accumulator.h
+@@ -78,7 +78,11 @@ struct AccumulatorCaches {
+ 
+     template<typename Network>
+     AccumulatorCaches(const Network& network) {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        (void) network;
++#else
+         clear(network);
++#endif
+     }
+ 
+     struct alignas(CacheLineSize) Entry {
+diff --git a/src/search.cpp b/src/search.cpp
+--- a/src/search.cpp
++++ b/src/search.cpp
+@@ -166,7 +166,9 @@ Search::Worker::Worker(SharedState&                    sharedState,
+     tt(sharedState.tt),
+     network(sharedState.network),
+     refreshTable(network[token]) {
++#if !defined(PIKAFISH_EMBEDDED_GUI)
+     clear();
++#endif
+ }
+ 
+ void Search::Worker::ensure_network_replicated() {
+diff --git a/src/thread.cpp b/src/thread.cpp
+--- a/src/thread.cpp
++++ b/src/thread.cpp
+@@ -267,12 +267,12 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+         }
+ 
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+-        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-second-clear-start");
++        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-start");
+         std::fflush(stdout);
+ #endif
+         clear();
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+-        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-second-clear-ready");
++        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-ready");
+         std::fflush(stdout);
+ #endif
+ 
+diff --git a/src/tt.cpp b/src/tt.cpp
+--- a/src/tt.cpp
++++ b/src/tt.cpp
+@@ -203,13 +203,13 @@ void TranspositionTable::resize(usize mbSize, ThreadPool& threads) {
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     std::printf("XQ LINUX ENGINE DETAIL stage=tt-alloc-ready bytes=%zu\n", ttBytes);
+     std::fflush(stdout);
+-    std::puts("XQ LINUX ENGINE DETAIL stage=tt-clear-start");
++    // Linux anonymous mappings are already zero-filled. Preserve explicit
++    // clears for later new-game requests, but do not rewrite a fresh table.
++    generation8 = 0;
++    std::puts("XQ LINUX ENGINE DETAIL stage=tt-fresh-zero-skip");
+     std::fflush(stdout);
+-#endif
+-    clear(threads);
+-#if defined(PIKAFISH_EMBEDDED_GUI)
+-    std::puts("XQ LINUX ENGINE DETAIL stage=tt-clear-ready");
+-    std::fflush(stdout);
++#else
++    clear(threads);
+ #endif
+ }
+ 
+diff --git a/src/nnue/features/full_threats.cpp b/src/nnue/features/full_threats.cpp
+--- a/src/nnue/features/full_threats.cpp
++++ b/src/nnue/features/full_threats.cpp
+@@ -36,7 +36,7 @@ namespace Stockfish::Eval::NNUE::Features {
+ 
+ // Lookup array for indexing threats
+ auto ThreatOffsets = []() {
+-    MultiArray<u16, PIECE_NB, SQUARE_NB, SQUARE_NB, PIECE_NB> ThreatOffsets{};
++    MultiArray<u16, PIECE_NB, SQUARE_NB, SQUARE_NB, PIECE_NB> ThreatOffsets;
+     // clang-format off
+     constexpr bool ValidPairs[PIECE_NB][PIECE_NB] = {
+       //    R   A   C   P   N   B   K   _   r   a   c   p   n   b   k

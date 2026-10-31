@@ -1,0 +1,47 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:08:35.416105+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+      "exit": 0,
+      "host_response_seconds": 1.549625699997705,
+      "required_markers": [
+        "backend=mac",
+        "VOICE_STREAM_TIMING source=wav-replay",
+        "paced=1",
+        "streamed=1"
+      ]
+    },
+    {
+      "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+      "exit": 0,
+      "host_response_seconds": 1.5474876999942353,
+      "required_markers": [
+        "backend=mac",
+        "VOICE_STREAM_TIMING source=wav-replay",
+        "paced=1",
+        "streamed=1"
+      ]
+    },
+    {
+      "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+      "exit": 0,
+      "host_response_seconds": 1.5544898999942234,
+      "required_markers": [
+        "backend=mac",
+        "VOICE_STREAM_TIMING source=wav-replay",
+        "paced=1",
+        "streamed=1"
+      ]
+    }
+  ],
+  "spec_sha256": "d7291a7fdd6ef2119f4df4832ebcccddd16c64208c91ad82af6385fc9826fcd2",
+  "uart_sha256": "66e407078ddc27c0f22c8f6d2169d805e5e4bb1228dcaa55174de99037024988",
+  "completed_utc": "2026-10-25T05:08:41.260781+00:00"
+}

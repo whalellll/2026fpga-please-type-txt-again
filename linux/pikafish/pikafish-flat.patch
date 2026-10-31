@@ -1,0 +1,65 @@
+diff --git a/src/nnue/network.h b/src/nnue/network.h
+--- a/src/nnue/network.h
++++ b/src/nnue/network.h
+@@ -85,6 +85,7 @@ class Network {
+ 
+     bool                       save(std::ostream&, const std::string&) const;
+     std::optional<std::string> load(std::istream&);
++    std::optional<std::string> load_flat(const std::filesystem::path&);
+ 
+     bool read_header(std::istream&, u32*, std::string*) const;
+     bool write_header(std::ostream&, u32, const std::string&) const;
+diff --git a/src/nnue/network.cpp b/src/nnue/network.cpp
+--- a/src/nnue/network.cpp
++++ b/src/nnue/network.cpp
+@@ -19,3 +19,13 @@
+ #include "network.h"
++#include "../pikafish_stagea_accel.h"
+-
++#include <array>
++#include <cerrno>
++#include <chrono>
++#include <cstring>
++#include <limits>
++#include <fcntl.h>
++#include <sys/mman.h>
++#include <sys/stat.h>
++#include <unistd.h>
++
+ #include <algorithm>
+@@ -200,9 +209,33 @@ NnueEvalTrace Network::trace_evaluate(const Position&    pos,
+ }
+ 
+ 
++#include "pikafish_flat_nnue.inc"
++
+ void Network::load_external(const fs::path& dir, const fs::path& evalfilePath, EvalFile& evalFile) {
+-    std::stringstream stream(read_compressed_nnue(dir / evalfilePath));
+-    auto              description = load(stream);
++    const bool isMemory = evalfilePath.string().rfind("pff1-mem:", 0) == 0;
++    const bool isView = evalfilePath.string().rfind("pff1-view:", 0) == 0;
++    const fs::path path = (isMemory || isView) ? evalfilePath : dir / evalfilePath;
++    std::ifstream  probe;
++    char           magic[4]{};
++    if (!isMemory && !isView)
++    {
++        probe.open(path, std::ios_base::binary);
++        probe.read(magic, sizeof(magic));
++    }
++    const bool isFlat = isMemory || isView
++                     || (probe.gcount() == static_cast<std::streamsize>(sizeof(magic))
++                         && std::memcmp(magic, "PFF1", sizeof(magic)) == 0);
++
++    std::optional<std::string> description;
++    if (isFlat)
++        description = load_flat(path);
++    else
++    {
++        std::stringstream stream(read_compressed_nnue(path));
++        description = load(stream);
++    }
++    if (isFlat && !description.has_value())
++        sync_cout << "info string PIKAFISH_PFF1_FAILED path=" << path.string() << sync_endl;
+ 
+     if (description.has_value())
+     {

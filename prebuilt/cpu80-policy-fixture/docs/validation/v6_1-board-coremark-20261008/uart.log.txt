@@ -1,0 +1,101 @@
+
+soc> coremark
+CoreMark v1.0: CPU V3.1 RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=59400000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=performance
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 657264972
+Total time (secs): 13.278080
+Iterations/Sec   : 301.248368
+Iterations       : 4000
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x65c5
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 301.248368 / riscv32-unknown-elf-gcc 16.2.0 -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32 / boot BRAM (static)
+PORT_TICKS64 : 657264972
+COREMARK_PASS
+COREMARK_DONE
+soc> coremark
+CoreMark v1.0: CPU V3.1 RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=59400000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=performance
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 657250352
+Total time (secs): 13.277785
+Iterations/Sec   : 301.255069
+Iterations       : 4000
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x65c5
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 301.255069 / riscv32-unknown-elf-gcc 16.2.0 -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32 / boot BRAM (static)
+PORT_TICKS64 : 657250352
+COREMARK_PASS
+COREMARK_DONE
+soc> coremark
+CoreMark v1.0: CPU V3.1 RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=59400000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=performance
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 657813905
+Total time (secs): 13.289170
+Iterations/Sec   : 300.996982
+Iterations       : 4000
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x65c5
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 300.996982 / riscv32-unknown-elf-gcc 16.2.0 -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32 / boot BRAM (static)
+PORT_TICKS64 : 657813905
+COREMARK_PASS
+COREMARK_DONE
+soc> coremark validate
+CoreMark v1.0: CPU V3.1 RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=59400000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=validation
+2K validation run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 656848044
+Total time (secs): 13.269657
+Iterations/Sec   : 301.439582
+Iterations       : 4000
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0x18f2
+[0]crclist       : 0xe3c1
+[0]crcmatrix     : 0x0747
+[0]crcstate      : 0x8d84
+[0]crcfinal      : 0x5249
+Correct operation validated. See readme.txt for run and reporting rules.
+PORT_TICKS64 : 656848044
+COREMARK_PASS
+COREMARK_DONE
+soc> 

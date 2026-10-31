@@ -1,0 +1,25 @@
+{
+  "status": "CANDIDATE_NOT_BOARD_ACCEPTED",
+  "files": {
+    "boot/va.dtb": "b7c1d8ce6a9b691f3b48dd2652aa82d0d078dc15ac3250a7a7982f3577cdbf63",
+    "boot/vafs.bin": "7053be9d6a18ae300adc336a88777a38422040b67347cda84bd203c60ba9100c",
+    "boot/vaimage.bin": "1e5580a8b63f83723a8d1c4f2017df6d2010b776a7e1c01a17bcdc67a4eeb360",
+    "boot/voice.soc.dts": "406b0dd2c0ac59138766a20e09f1187cf9c523d2ecdb40c0585ecee84ab1ad63",
+    "boot-files.json": "5963c32d6105dcc70d388b86ece35dd23ea6d5fc8d5c04d90e9b02b214b3fa66",
+    "candidate-inputs.json": "1fb25faef3802f67c389ed695d1758b91a38cb396146b4d39048957b82039a10",
+    "cpu-audit-faults.json": "e7c639635d5cc83393f65c9cf4a55ee1f7fa14a81b77d19dc5892e7e6ecc5187",
+    "cpu-audit-reviewed.json": "aa05618b903d355e78b18539f20954f64959818821ae6a7b9d6192fa41f9d4fd",
+    "kernel.config": "40c1781afba5cfa32d0d30ab045ad1ec7083f28bf8f5b40247c1228b10a531af",
+    "loader/build.sh": "3340f09ace83bab98721cf69d91fd4e505bc20c3d09b2da7b0d8b6fc33c03832",
+    "loader/link.ld": "bf0f646a93de321920ee8d606c772a73faa0da828885bde67444a302ef3e1db5",
+    "loader/loader-bridge-nonblock.bin": "ba898f2fbe1c843ee5bea3fbbb4db28ac33ebfe071546d4624b58508195f11e8",
+    "loader/loader.c": "265780cd2f3295fb1ee45e1f9ef9277844b16bd50aa28144c0a1c12d4c0ee6f8",
+    "loader/loader.elf": "f5c0c1640eb2d802009d0126d6da3d3843e467a5023553dee381f00485ce6f5d",
+    "loader/loader.map": "d9308d9a2b865e0c2908f61681fe1d30b5c0a03e1402ebe413a76d11b6ebab11",
+    "loader/start.S": "d19a373a827957148dd117bc114103f46eca7cee186d31f31a862ba862c317c7",
+    "software_inputs.json": "6323dbe3b2931cd4a79c3e042219ba49c60863f66db257a8c7f461c820991fea",
+    "userspace/xqaudio-capture": "2c47c4fc722bc760aa46a6da85d586739a91897405ea31f215044b18d9de3165",
+    "userspace/xqvoice": "d135119d0b1813b0b78874373d2356b1b35e6eebd810f5b3e126be30a8157c85",
+    "userspace/xqvoice-send": "c677df8955024bac2bcf7e42a8adbb1932bf1c639997837770014be650a6eb05"
+  }
+}

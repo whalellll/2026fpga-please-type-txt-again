@@ -1,0 +1,8 @@
+
+/ # /usr/bin/timeout 1200 /usr/bin/picture-new-bench-hwc-reference detector /opt
+/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision
+32 1; printf "\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=detector batch=1 backend=vision32 repeat=0 infer_us=228497819 model_load_us=5296241 input_open_us=1532867 jobs=166 cycles=833208812 hardware_us=16832501 output_crc=97265de4 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=27 producer_elements=7219200 consumer_elements=9369600 scope=avoided_scalar_transposes_not_copy_bytes
+
+__CVB_END_0__:0

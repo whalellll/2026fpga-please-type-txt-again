@@ -1,0 +1,17 @@
+{
+  "scope": "5 focused software contract checks; not full Windows release regression",
+  "tests": [
+    {
+      "name": "test_clock_boot_word_crc.py",
+      "exit": 0,
+      "source_sha256": "615c3d5a24d131d9ba1a98cdb4301292a878ba07ffd7a6edf35f0aa3112c6e4b",
+      "output": "..\r\n----------------------------------------------------------------------\r\nRan 2 tests in 0.001s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "test_clock_boot_gather_dts.py",
+      "exit": 0,
+      "source_sha256": "3d5af7161bdd691e7250e8e03a7e49ece2ec1bdc71226846a158dd92f8650044",
+      "output": "...\r\n----------------------------------------------------------------------\r\nRan 3 tests in 0.001s\r\n\r\nOK\r\n"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+/dts-v1/;
+
+/ {
+	#address-cells = <0x01>;
+	#size-cells = <0x01>;
+	compatible = "pango,cpu-v2-soc";
+	model = "PG2L100H SoC Linux HID+XQ";
+
+	aliases {
+		serial0 = "/soc/serial@1fe001e0";
+	};
+
+	chosen {
+		stdout-path = "serial0:115200n8";
+		bootargs = "console=liteuart0 earlycon root=/dev/ram0 loglevel=8";
+		linux,initrd-start = <0x3000000>;
+		linux,initrd-end = <0x380e000>;
+	};
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x00 0x1c000000>;
+	};
+
+	reserved-memory {
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		ranges;
+
+		clint-mmio@2000000 {
+			reg = <0x2000000 0x10000>;
+			no-map;
+		};
+
+		opensbi-low@1000000 {
+			reg = <0x1000000 0x100000>;
+			no-map;
+		};
+
+		opensbi-high@18000000 {
+			reg = <0x18000000 0x100000>;
+			no-map;
+		};
+
+		pikafish-pff1@10000000 {
+			reg = <0x10000000 0x5000000>;
+			no-map;
+			phandle = <0x03>;
+		};
+
+		pikafish-attacks@15000000 {
+			reg = <0x15000000 0x2200000>;
+			no-map;
+		};
+
+		mac-accel@1b000000 {
+			reg = <0x1b000000 0x100000>;
+			no-map;
+			phandle = <0x02>;
+		};
+
+		accel-guard@1b100000 {
+			reg = <0x1b100000 0x100000>;
+			no-map;
+		};
+
+		framebuffer@1b200000 {
+			reg = <0x1b200000 0x400000>;
+			no-map;
+			phandle = <0x04>;
+		};
+	};
+
+	cpus {
+		#address-cells = <0x01>;
+		#size-cells = <0x00>;
+		timebase-frequency = <0x4c4b400>;
+
+		cpu@0 {
+			device_type = "cpu";
+			reg = <0x00>;
+			status = "okay";
+			compatible = "riscv";
+			clock-frequency = <0x4c4b400>;
+			mmu-type = "riscv,sv32";
+			riscv,isa = "rv32ima";
+			riscv,isa-base = "rv32i";
+			riscv,isa-extensions = "i\0m\0a\0zicsr\0zifencei";
+
+			interrupt-controller {
+				#address-cells = <0x00>;
+				#interrupt-cells = <0x01>;
+				interrupt-controller;
+				compatible = "riscv,cpu-intc";
+				phandle = <0x01>;
+			};
+		};
+	};
+
+	soc {
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		compatible = "simple-bus";
+		ranges;
+
+		timer@2000000 {
+			compatible = "sifive,clint0";
+			reg = <0x2000000 0x10000>;
+			interrupts-extended = <0x01 0x03 0x01 0x07>;
+		};
+
+		serial@1fe001e0 {
+			compatible = "litex,liteuart";
+			reg = <0x1fe001e0 0x18>;
+			status = "okay";
+		};
+
+		audio-capture@1fe00600 {
+			compatible = "pango,audio-capture-v2";
+			reg = <0x1fe00600 0x100>;
+			status = "okay";
+		};
+
+		mac-accel@1fe10000 {
+			compatible = "pango,mac-accel-v2";
+			reg = <0x1fe10000 0x200>;
+			memory-region = <0x02 0x03>;
+			pango,cpu-alias = <0x9b000000>;
+			status = "okay";
+		};
+
+		framebuffer-dma@1fe11000 {
+			compatible = "pango,ddr-framebuffer-dma-v1";
+			reg = <0x1fe11000 0x100>;
+			memory-region = <0x04>;
+			width = <0x500>;
+			height = <0x2d0>;
+			stride = <0xa00>;
+			format = "r5g6b5";
+			status = "okay";
+		};
+	};
+};

@@ -1,0 +1,34 @@
+# Release manifests checksum bytes. Preserve them on Windows/Linux checkouts.
+# Accept CRLF terminators while still checking ordinary whitespace errors.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve the byte-identical upstream CoreMark sources and documents.
+sw/coremark/core_main.c -whitespace
+sw/coremark/core_list_join.c -whitespace
+sw/coremark/core_matrix.c -whitespace
+sw/coremark/core_state.c -whitespace
+sw/coremark/core_util.c -whitespace
+sw/coremark/coremark.h -whitespace
+sw/coremark/LICENSE.md -whitespace
+sw/coremark/README.upstream.md -whitespace
+
+# Generated RTL and raw tool evidence retain their exact recorded bytes.
+rtl/cpu/CoreTop.sv -whitespace
+docs/validation/**/*.txt -whitespace
+docs/validation/**/*.snr -whitespace
+docs/validation/**/*.fdc -whitespace
+docs/validation/**/*.vm -whitespace
+docs/validation/**/*.v -whitespace
+docs/validation/**/*.pds -whitespace
+docs/validation/**/*.patch -whitespace
+docs/validation/**/*.dmr -whitespace
+docs/validation/**/*.netlist -whitespace
+
+# Preserve accepted native artifacts, evidence and regression fixtures byte-for-byte.
+artifacts/** -text -whitespace
+docs/validation/** -text -whitespace
+review-extras/README_Before_CPU80_SD_20261022.md -whitespace
+prebuilt/cpu80-policy-fixture/** -text
+
+# Preserve original Picture UART receipts.
+docs/validation/picture-*/**/*.log -whitespace

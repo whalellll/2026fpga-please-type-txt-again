@@ -1,0 +1,124 @@
+{
+    "schema_version":  2,
+    "status":  "PASS",
+    "evidence_kind":  "board_uart_capture",
+    "board_acceptance":  true,
+    "acceptance_scope":  "CoreMark UART only; routed STA and peripheral acceptance are separate",
+    "transport":  "COM5 / 115200 baud / 90 seconds per command",
+    "captured_utc":  "2026-10-08T09:01:58.7964026Z",
+    "frequency":  {
+                      "candidate_hz":  59400000,
+                      "maximum_verified":  false,
+                      "source":  "operator-supplied candidate; UART CPU_HZ must match"
+                  },
+    "provenance":  "File hashes identify supplied build outputs; this tool does not program or read back the FPGA.",
+    "required_flags":  "-O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32",
+    "required_compiler":  "riscv32-unknown-elf-gcc 16.2.0",
+    "required_runs":  "three performance runs and one validation-seed run, each \u003e=10 seconds",
+    "bitstream":  {
+                      "name":  "soc_top.sbit",
+                      "bytes":  3791112,
+                      "sha256":  "a5defe7bcf91921b38a17d1eec7cea40a69fe8ef3f42536605c2577ab0a3d934"
+                  },
+    "firmware":  {
+                     "name":  "bootloader.bin",
+                     "bytes":  91892,
+                     "sha256":  "f6617eac7af1296cb8fa5c26acfc23398b5a879f801492869cb077512bc86159"
+                 },
+    "runs":  [
+                 {
+                     "run":  1,
+                     "mode":  "performance",
+                     "cpu_hz":  59400000,
+                     "sys_hz":  49500000,
+                     "timebase_hz":  49500000,
+                     "ticks":  657264972,
+                     "iterations":  4000,
+                     "duration_seconds":  13.278080242424243,
+                     "iterations_per_second":  301.24836775874917,
+                     "coremark_per_mhz":  5.071521342739886,
+                     "compiler":  "riscv32-unknown-elf-gcc 16.2.0",
+                     "compiler_report":  "-O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32",
+                     "crc":  {
+                                 "seedcrc":  "e9f5",
+                                 "[0]crclist":  "e714",
+                                 "[0]crcmatrix":  "1fd7",
+                                 "[0]crcstate":  "8e3a",
+                                 "[0]crcfinal":  "65c5"
+                             },
+                     "validated":  true
+                 },
+                 {
+                     "run":  2,
+                     "mode":  "performance",
+                     "cpu_hz":  59400000,
+                     "sys_hz":  49500000,
+                     "timebase_hz":  49500000,
+                     "ticks":  657250352,
+                     "iterations":  4000,
+                     "duration_seconds":  13.27778488888889,
+                     "iterations_per_second":  301.25506878389621,
+                     "coremark_per_mhz":  5.0716341546110471,
+                     "compiler":  "riscv32-unknown-elf-gcc 16.2.0",
+                     "compiler_report":  "-O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32",
+                     "crc":  {
+                                 "seedcrc":  "e9f5",
+                                 "[0]crclist":  "e714",
+                                 "[0]crcmatrix":  "1fd7",
+                                 "[0]crcstate":  "8e3a",
+                                 "[0]crcfinal":  "65c5"
+                             },
+                     "validated":  true
+                 },
+                 {
+                     "run":  3,
+                     "mode":  "performance",
+                     "cpu_hz":  59400000,
+                     "sys_hz":  49500000,
+                     "timebase_hz":  49500000,
+                     "ticks":  657813905,
+                     "iterations":  4000,
+                     "duration_seconds":  13.289169797979799,
+                     "iterations_per_second":  300.99698181357235,
+                     "coremark_per_mhz":  5.0672892561207465,
+                     "compiler":  "riscv32-unknown-elf-gcc 16.2.0",
+                     "compiler_report":  "-O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32",
+                     "crc":  {
+                                 "seedcrc":  "e9f5",
+                                 "[0]crclist":  "e714",
+                                 "[0]crcmatrix":  "1fd7",
+                                 "[0]crcstate":  "8e3a",
+                                 "[0]crcfinal":  "65c5"
+                             },
+                     "validated":  true
+                 },
+                 {
+                     "run":  4,
+                     "mode":  "validation",
+                     "cpu_hz":  59400000,
+                     "sys_hz":  49500000,
+                     "timebase_hz":  49500000,
+                     "ticks":  656848044,
+                     "iterations":  4000,
+                     "duration_seconds":  13.269657454545454,
+                     "iterations_per_second":  301.43958227269985,
+                     "coremark_per_mhz":  5.0747404423013451,
+                     "compiler":  "riscv32-unknown-elf-gcc 16.2.0",
+                     "compiler_report":  "-O2 -march=rv32ima_zicsr_zifencei -mabi=ilp32",
+                     "crc":  {
+                                 "seedcrc":  "18f2",
+                                 "[0]crclist":  "e3c1",
+                                 "[0]crcmatrix":  "0747",
+                                 "[0]crcstate":  "8d84",
+                                 "[0]crcfinal":  "5249"
+                             },
+                     "validated":  true
+                 }
+             ],
+    "summary":  {
+                    "minimum_coremark_per_mhz":  5.0672892561207465,
+                    "median_coremark_per_mhz":  5.071521342739886,
+                    "maximum_coremark_per_mhz":  5.0716341546110471
+                },
+    "log_sha256":  "82c4aca9ec52788dd60471a1f64166f6f3a25e282cb6d48da5e8782db6b565cd"
+}

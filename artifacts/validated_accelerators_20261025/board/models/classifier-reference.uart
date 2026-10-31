@@ -1,0 +1,13 @@
+
+/ # /usr/bin/timeout 120 /usr/bin/picture-new-bench-hwc-reference classifier /op
+t/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 v
+ision32 3; printf "\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=0 infer_us=970730 model_load_us=568602 input_open_us=92422 jobs=8 cycles=2482994 hardware_us=50161 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=1 infer_us=963554 model_load_us=568602 input_open_us=92422 jobs=8 cycles=2505281 hardware_us=50611 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=2 infer_us=963319 model_load_us=568602 input_open_us=92422 jobs=8 cycles=2512676 hardware_us=50761 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+
+__CVB_END_0__:0
+/ # 

@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/whalellll/performance_soc",
+  "commit": "a901132a7493a6402c145d9208be92d751faf118",
+  "files_sha256": {
+    "upstream/xqvoice_runtime.c": "fd0821bfe9c90c528de31ad2d3e7943d37ac65a40bc0df414d27e05dde507b40",
+    "upstream/xqvoice_frontend.c": "3c73019e5b52016d6cb9e6c7d1e1f88075473146067d8a1c47ac236952bf9fa3",
+    "upstream/xqvoice_frontend.h": "1a8e1406d0f396722d29e31de991a32a33bcc36bc63f1b98b6c35a97fa3eb7c9",
+    "upstream/xqvoice_decode.c": "69ef3f43a5f8eee983e017cdaf716baba1a7620e28477f9e3be38363913e7448",
+    "upstream/xqvoice_decode.h": "39c05e4299bb1a0c5f6030e5890a4e897b56962c7e1bf464c56221192c04d20d",
+    "upstream/xqvoice_capture.c": "b7f061ea115725ca00bc130748500ac6459b005d7dc03cb8adccea30d51aa853",
+    "upstream/xqvoice_capture.h": "029abb2d2745c8f7650501802a9e703b7223b91b72e06d6c4c59b0cb477dd99e",
+    "upstream/xqvoice_stream.inc": "fe27b924fba4ba90f14fb045767ae57cd06dae49ad21c7cec3a3584d82d22721",
+    "upstream/xqvoice_worker.inc": "e5ffbec1e9a49d535940779fbafd268dc080aed928c0aad6b6be8c5d2cd67a09",
+    "upstream/xqvoice_mac.h": "fe94b532484bce5818a610ba41d333b4c3e45ca0fafedffc03ef698110630da0",
+    "upstream/xqvoice_profile.c": "70336cf76ea52c8d34d8fdbd2827c8e2212fd98044a469999c8f2788fb2ee628",
+    "upstream/xqvoice_profile.h": "400271ddf2da8f82257f40a507e8d0505b98f4a12de6c5ba6d03252b3ab60719",
+    "upstream/pango_audio_uapi.h": "748351565360dd3062aa4cc782e8a77853ecd5233ba45b71546de4ebb7ca527d",
+    "upstream/xqvoice_tables.h": "47abcdc4ae341f79c2f734f8cd7ef3835c12dfeb0d1e5bae95fc290b8378c056",
+    "balanced24.bin": "3e43041fd3e531ce130b56c0a460a1c7375420eea0e07afdf533012ae41da973"
+  },
+  "scope": "Pinned source/model input only; no imported AGENTS or remote workflow instructions"
+}

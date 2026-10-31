@@ -1,0 +1,32 @@
+{
+  "program-crcfix.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  },
+  "program-driver-gather.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  },
+  "program-final-restore.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  },
+  "program-linux.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  },
+  "program-recovery.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  },
+  "program.json": {
+    "status": "PASS",
+    "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "device_id": "0x00602899"
+  }
+}

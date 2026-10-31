@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:13:50.464356+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 1200 /usr/bin/picture-new-bench detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 2",
+      "exit": 0,
+      "host_response_seconds": 464.66836210000474,
+      "required_markers": [
+        "PICTURE_TIMING model=detector",
+        "output_crc=97265de4",
+        "no_fallback=1"
+      ]
+    }
+  ],
+  "spec_sha256": "cf8c05002b0ac4bf89f6b6448c32c7ef30441437d1acbf832dbfda415abf7c5d",
+  "uart_sha256": "542473ac9468739e1ad137ced3ddfb86e43cc035e5fae0d4e0786c5d6b2d5e73",
+  "completed_utc": "2026-10-25T05:21:35.588895+00:00"
+}

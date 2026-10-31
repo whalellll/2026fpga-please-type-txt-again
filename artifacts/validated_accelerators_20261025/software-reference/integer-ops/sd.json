@@ -1,0 +1,66 @@
+{
+  "status": "INTEGER_OPS_SD8_AND_18_LOADER_OFFLINE_TESTS_PASS_NOT_WRITTEN_TO_MEDIA",
+  "manifest_sha256": "70fa41537629303ea725753cfd7e5650603012714d268e53c09a07e45d9d9a22",
+  "implementation_commit": "da0f914e08fbcdb7678a0b76cfdbe84fd349e6f7",
+  "runtime_sha256": "68d0e4db797a56f9b6986b8bb38f67ea9aedf1000f378fe27da2c4aa3e2ee87e",
+  "sd_files": {
+    "fw_jump.bin": {
+      "bytes": 266448,
+      "sha256": "e709883480124396dddb68ab353c86afbac17e4da99393cfafd765ec379b5f2b"
+    },
+    "Image": {
+      "bytes": 7497368,
+      "sha256": "a18cad08b47f24d700dc3e907a0d839da490bc61a80b0fde39648ed22163fd2e"
+    },
+    "Image.mmode": {
+      "bytes": 14040,
+      "sha256": "3a8c570d96b0384380f6af74f97499c51387d8eea4c36edf654187b2e717f00b"
+    },
+    "mmode.dtb": {
+      "bytes": 2695,
+      "sha256": "7c981ea99b32b49368cd2bb2c09dc730e424449b0f9fd718ef8f07a077423854"
+    },
+    "pikafish.atk": {
+      "bytes": 34603072,
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    },
+    "pikafish.pff": {
+      "bytes": 68122688,
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    "rootfs.cpio": {
+      "bytes": 30172672,
+      "sha256": "d1a60927efbf5f2427668d84c88658ab366a0fa9d1876281fbcdc69d32c738f3"
+    },
+    "soc.dtb": {
+      "bytes": 2695,
+      "sha256": "66ce030832909a7d9c8b5c3982c3731d2b297aade6631fc1f6829fa7dffe2cf6"
+    }
+  },
+  "rootfs_bytes": 30172672,
+  "test_logs_sha256": {
+    "test-pass.log": "3f0f54bed51d477501d1dd2129d02c1db0f4f0e85a8a1b46a1a3271ea70e4eba",
+    "rv32-test-pass.log": "3f0f54bed51d477501d1dd2129d02c1db0f4f0e85a8a1b46a1a3271ea70e4eba",
+    "test-clock.log": "1652cbf63714c849b10082400e9132599140e863a32c018c01782627932b924d",
+    "rv32-test-clock.log": "1652cbf63714c849b10082400e9132599140e863a32c018c01782627932b924d",
+    "test-init.log": "8f2e2a85b71b90fa2ce527e7250354019bb3e041c7910d797bcd9eca24cdf2f8",
+    "rv32-test-init.log": "8f2e2a85b71b90fa2ce527e7250354019bb3e041c7910d797bcd9eca24cdf2f8",
+    "test-io.log": "456681bee2b1b2528790713ea1b26a4a743f9eb3eb5c81aa2329d1354c222217",
+    "rv32-test-io.log": "456681bee2b1b2528790713ea1b26a4a743f9eb3eb5c81aa2329d1354c222217",
+    "test-abort.log": "721184c14e6950721d234dc717589170e47de8d0bbbb7270710434cc45bdff2a",
+    "rv32-test-abort.log": "721184c14e6950721d234dc717589170e47de8d0bbbb7270710434cc45bdff2a",
+    "test-corrupt-kernel.log": "473855a194c2eaa42b1a6bbe51a77675b27b4fa09c6340587c423585fca10bb4",
+    "rv32-test-corrupt-kernel.log": "473855a194c2eaa42b1a6bbe51a77675b27b4fa09c6340587c423585fca10bb4",
+    "test-missing-model.log": "fe2d2474cece0814c8a91e80155a4c8c1a5649d125458429d8ab0748bc1be813",
+    "rv32-test-missing-model.log": "fe2d2474cece0814c8a91e80155a4c8c1a5649d125458429d8ab0748bc1be813",
+    "test-bad-firmware-size.log": "25b5725886ba990901865f5b43758b15b342cebd6a4c67927ce7d644b751ea92",
+    "rv32-test-bad-firmware-size.log": "25b5725886ba990901865f5b43758b15b342cebd6a4c67927ce7d644b751ea92",
+    "test-bad-fat-signature.log": "7399bced7c48ba5adfdfeff97e4610f0631be244016e0713152d610798767841",
+    "rv32-test-bad-fat-signature.log": "7399bced7c48ba5adfdfeff97e4610f0631be244016e0713152d610798767841"
+  },
+  "physical_media_written": false,
+  "sd_booted_with_new_runtime": false,
+  "ram_runtime_test_separate": true,
+  "flash_written": false,
+  "formal_delivery": false
+}

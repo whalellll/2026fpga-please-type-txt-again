@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_INPUT_REPRODUCIBILITY_OVERRIDES_NOT_TIMING_ACCEPTANCE",
+  "run_id": "8e836ae9fc25414baa0f0971db26c829",
+  "scope": "Apply these exact bytes to an isolated copy of the SoC source, then verify every input against input-snapshot.json. CPU source archive is supplied separately. Do not apply to production in place.",
+  "files_sha256": {
+    "config/clocks.json": "b94356b3116f4bb3235b11149d282f12fd844733aa7e07f184cd9398d279e83e",
+    "config/timing_scope_baseline.json": "f791255f377187a00449226d7cc41a11872a9f941ec64d7ba578f20b6963b735",
+    "linux/boot/soc.dtb": "7712aa8adcc0db562e8da81771333fa35bcf3520cf14e40705145c69e48ed3f7",
+    "linux/soc.dts": "44258c8d23ad9a8e62c75f8a1bb49f67c23ce60bb1b4b3aa874f124378115e60",
+    "pds/soc.fdc": "eabd12191dd88740ee33d73c092845d7ef19bfd4b5be8cb0d470ecb0fc1505ef",
+    "rtl/cpu/CoreTop.sv": "ab08b71277516f16df3e60643eb3e10ade5ee205c56cc549c5b589649e87e29f",
+    "rtl/cpu/emit-config.json": "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+    "rtl/cpu/source.json": "df3051c02d7aaffad045178e434032cc0c0a77f13718791f3edf5b2c6675505d",
+    "rtl/mac_accel/MacAccelCore.v": "d95e067493db67a3130ce376921bb82e8b28cbf5d2897413b68da0c3a3b86f15",
+    "rtl/soc/soc_top.v": "b442e22296d2882cd2e709a2775cbb7ab2f95b36ca97b74e87bea7f7d40e12b9",
+    "rtl/video/pll_video.v": "9b670e45ad5022d7f33753ba2238829a6d49f0fb88393ccffedc4932fd7f495b",
+    "sw/bootloader/soc.h": "7a0dcdf83e6ddcc827e04e08245c961e8498e25e648cfe53070139b2c3acc692"
+  },
+  "input_snapshot_sha256": "0e66f96c28e9af95dbcd615d2757da1a80fc3037ea01af8f3708a546574ae0bc"
+}

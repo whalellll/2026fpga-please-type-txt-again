@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "library_id": "fpga-soc-engineering-skills",
+  "version": "1.0.0",
+  "revision": 74,
+  "reviewed_on": "2026-10-18",
+  "manifest_sha256": "93c141fb277b34a4b1d261b4f1ec4c1380da2285a5743c6ca63bd0a18eabbea6",
+  "packaged_at_utc": "2026-10-18T05:24:08.298661+00:00",
+  "source_files": {
+    "README.md": "563a97f9ddb93f62bd6539b618d81511f138eaad7950bb83d503ba2d5810e328",
+    "AGENTS.md": "d36b707a96283e3f754d12f5f6416e2e6ff77cdd39afccfa2904a85ba3f8d078",
+    "scripts/create_delivery.ps1": "62da718dd9c3dc1ed76f6dd76186b4e6802b3853f84829005d5a4fe0d89a07ae",
+    "scripts/verify_delivery.ps1": "392fd9ed89dfae07663b1af0a75bcf4aaafcd980ee2a0ec68e7b8071dc4eebe5",
+    "scripts/invoke_project_skills.ps1": "edd74ec4cdd9cd0499c7fbcc9669b04ac2676ca1100caa78d4bfa34e405319b0",
+    "scripts/test_project_skills.py": "bf8ea5fbdc268c989c51e3a51b2b6906d46e96149f869942a552010d4cde60b8"
+  }
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "command": "ps; free; cat /proc/uptime; /usr/bin/pikafish-batch-check",
+    "timeout": 90,
+    "markers": [
+      "PIKAFISH_BATCH_CAPABILITY_PASS id=50464e31 features=00007de7"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  },
+  {
+    "command": "sha256sum /usr/bin/picture-new-bench-hwc-reference /usr/bin/picture-new-bench-exact-reference /usr/bin/pikafish-nnue-latency-clint-transfer-reference /usr/bin/xqvoice-small-cnn-profile",
+    "timeout": 150,
+    "markers": [
+      "a22516bfa96f84e73e5f7cdbf73fc955a9d0092e952a88cab6ba51f8d56999aa  /usr/bin/picture-new-bench-hwc-reference",
+      "68a97eebb19a429a70da32cabdc57b2a96020146548e4589fd8766f724f78903  /usr/bin/picture-new-bench-exact-reference",
+      "d357fd5b1da6fd888fd2205febb9e5ee6205f0fafd364e821b3d090b5105009f  /usr/bin/pikafish-nnue-latency-clint-transfer-reference",
+      "3be091aef57400f1b2dc5e50433313744e8228bf36e1e7c66eae1d5975985590  /usr/bin/xqvoice-small-cnn-profile"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

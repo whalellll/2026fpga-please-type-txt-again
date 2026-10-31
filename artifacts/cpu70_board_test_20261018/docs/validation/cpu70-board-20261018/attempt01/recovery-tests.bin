@@ -1,0 +1,11 @@
+
+/ # cd /tmp/voice-gui-display; p=$(cat gui-v3.pid); kill "$p"; n=0; while kill -
+0 "$p" 2>/dev/null; do sleep 1; n=$((n+1)); test "$n" -lt 15 || break; done; ! k
+ill -0 "$p" 2>/dev/null; printf "\n__BOARD_END_0:%s\n" "$?"
+
+__BOARD_END_0:0
+/tmp/voice-gui-display # pango-mac-pool-test; printf "\n__BOARD_END_1:%s\n" "$?"
+pool-test: live contexts are not isolated
+
+__BOARD_END_1:1
+/tmp/voice-gui-display # 

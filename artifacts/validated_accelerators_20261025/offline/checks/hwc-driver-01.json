@@ -1,0 +1,10 @@
+{
+  "status": "ACTUAL_VISION32_DRIVER_OWNERSHIP_CONFIG_FAILURE_AND_DRAIN_PASS_NOT_KERNEL_OR_BOARD",
+  "inputs_sha256": {
+    "linux/mac_accel/kernel/pango_mac.c": "66e16a40123a80701704a945f3b81bb7cae5d32fb479bdf6b91a331c40256de6",
+    "linux/mac_accel/pango_mac_uapi.h": "1e72ff5a55665ada20e1444e048d1e66c692568566559283f14303893149e75e"
+  },
+  "harness_sha256": "589b7cec295db12368fc782b652f18e255233dac1c3d582998ea023670b65cb8",
+  "log_sha256": "4246e80ab4e44bd0ee650809a96470f2e694898909f092ebddd789d2d604c11c",
+  "scope": "Actual driver functions executed with MMIO/copy/mutex/time observers: private ownership, physical cfg translation, concurrent-engine rejection, failed-output suppression, timeout/AXI drain quarantine/recovery. Real kernel and board remain separate."
+}

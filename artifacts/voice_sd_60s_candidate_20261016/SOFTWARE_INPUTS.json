@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "date": "2026-10-16",
+  "status": "BOARD_SD_AUDIO_COMMIT_READBACK_BOOT_PROTECTION_PASS",
+  "max_recording_seconds": 60,
+  "max_wav_bytes": 1920044,
+  "single_token_max_samples_unchanged": 32240,
+  "tools": {
+    "xqvoice-sd": {
+      "path": "/tmp/voice-sd/xqvoice-sd-f3bdb8d0",
+      "sha256": "f3bdb8d03fdabf330bf626ebd26a91e69d0a59c0e9a697559f302123e22ab5c8",
+      "bytes": 91304
+    },
+    "xqaudio-capture": {
+      "path": "/tmp/voice-sd/xqaudio-capture-3356cb60",
+      "sha256": "3356cb600ba05b5cb7416466eeb974935b56159ba62f7d921d92f37a2ad8e3f2",
+      "bytes": 62624
+    }
+  },
+  "samples": 960000,
+  "fifo_overflows": 0,
+  "sd_receipt": {
+    "status": "SD_WAV_JSON_READBACK_COMMIT_PASS",
+    "cid": "f40101c3803919885333324703534453",
+    "wav": "VOICE/REC00005.WAV",
+    "json": "VOICE/REC00005.JSON",
+    "wav_bytes": 1920044,
+    "wav_crc32": "d5f76e8b",
+    "metadata_crc32": "ca2a2a07",
+    "elapsed_ms": 33921
+  },
+  "control_capture_save_wall_seconds": 171.1153301999875,
+  "boot_files_before_after_identical": true,
+  "boot_files": [
+    {
+      "name": "Image",
+      "present": true,
+      "bytes": 7480792,
+      "crc32": "aec00080"
+    },
+    {
+      "name": "rootfs.cpio",
+      "present": true,
+      "bytes": 10152448,
+      "crc32": "9ac21811"
+    },
+    {
+      "name": "fw_jump.bin",
+      "present": true,
+      "bytes": 264680,
+      "crc32": "4bd705f0"
+    },
+    {
+      "name": "soc.dtb",
+      "present": true,
+      "bytes": 2323,
+      "crc32": "9db36a7b"
+    },
+    {
+      "name": "vaimage.bin",
+      "present": true,
+      "bytes": 7480856,
+      "crc32": "33cbdbd7"
+    },
+    {
+      "name": "vafs.bin",
+      "present": true,
+      "bytes": 8445952,
+      "crc32": "c845a459"
+    },
+    {
+      "name": "va.dtb",
+      "present": true,
+      "bytes": 2443,
+      "crc32": "bf63c3d0"
+    }
+  ],
+  "asr_original_argv_restored": true,
+  "recognizer_after": [
+    {
+      "pid": 2739,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/all24-20261016-f31b38e2.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "linux/audio/xqaudio_capture.c": "fe2dbce4f00a9fa492c3cddc2bae2b858b307b593a6a19401a27f440ad282ff1",
+    "linux/audio/pango_audio_uapi.h": "748351565360dd3062aa4cc782e8a77853ecd5233ba45b71546de4ebb7ca527d",
+    "linux/audio/sd/build.sh": "4ecfd1a39882723bf272e9dd27792c0392da8e514339818449c50b33c97e875e",
+    "linux/audio/sd/xqvoice_sd.c": "43d1f1bd291a5d32a62f31b818a96c9c732768a396c9f3fb6a73de30c4ac05d7",
+    "linux/audio/sd/voice_sd_backend.c": "e508d7d40fe0ad3492d76f5662f06594104a284d3063c42552e4d24b56ab712a",
+    "linux/audio/sd/voice_sd_backend.h": "f7169faeeb85893fac9525e4a024118e9a1b81107849a8e392333c6a6b414e40",
+    "linux/audio/sd/sd_linux_port.h": "f70ffe0d1e5a881ce195db77dbbdef3ed96598607270b64784d99c0aafa6fe2f",
+    "linux/audio/sd/fat_voice.c": "bfb1d20f1a85d7c40f297df52e1efe9ce1bec40f24300a519d220db255893f2e",
+    "linux/voice/record_dataset_pc.py": "e85d1eccd74acacd411493affa6d08677d73fa51a30d413c7d8e521aca405189",
+    "linux/voice/record_batch_pc.py": "9ed978484e10fb5a00fceb166f7b349790be1e237d505b8499ac0d8e3cc7e88e",
+    "linux/voice/launch_recorder_pc.py": "1a3d5c4fe80699f1b4da7d496e234d8e8c3e3ab7aad0d4da58943b3a0bf82a9b",
+    "linux/voice/recorder_config.json": "56d5b7bd2b56dd919f4d5276fcbd50bf538124fb07d5716db69fc61765b9bba8",
+    "linux/voice/sd_card_config.json": "0f907a8eb9ab6f7ea3ae7058d2a69663cd547a241f449e362dbb9b0642439da9",
+    "sw/bootloader/sd_native.c": "60173da5ae55399afa3ddd8f3cde99ef6a26f703d13bd08b71a81e45650f7746",
+    "sw/bootloader/sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "sw/bootloader/soc.h": "cec2aec13c7199ae602ed7d0a126e2d5e826f8a3eab981e4c58bb700092edf61",
+    "sw/bootloader/fat_ro.c": "14496f3b1e9f3057dae9f98c86a09414184c2b66c227a20000b34e06886f9441",
+    "sw/bootloader/fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c",
+    "sw/bootloader/fat_camera.h": "041b184e3c68dda802b05d416da1b006bc172b2f8df65393d9db0b2ccad4d86b",
+    "sw/bootloader/crc32_fast.c": "7d8c262eaf77633a14a31886f4b8b2c7fe02b3b3bed095a4f2b10a90b67e9435",
+    "sw/bootloader/crc32_fast.h": "a55f4959214d02dde02e841c8d296c6dcf432ebe34bdc38da05757c08a785f9e",
+    "sim/test_audio_capture.c": "01006fc1953d517e142782654293da8c1c2cb340e03f032745c103d3f79a2aa3",
+    "sim/test_voice_sd_image.py": "0c165ef05b3a83bd51be57d0b56deb49b2e11ac6709f210b75beb1ecea37b271",
+    "sim/test_voice_recording_limits.py": "560b5fce20c44700150f6ada74944e0c9ad67a8a1ae1f6ce2c825fdd51dfa3f6"
+  },
+  "regression": [
+    "60s WAV write/readback",
+    "61s no-write rejection",
+    "wrong identity/format no-write",
+    "boot protection, append, dirty FAT rejection",
+    "PC import/UART boundary, unchanged single-token limit"
+  ],
+  "ram_only": true,
+  "rtl_kernel_model_pikafish_changed": false,
+  "full_soc_regression_rerun": false,
+  "speech_accuracy_claimed": false,
+  "audio_downloaded_to_pc": false,
+  "limits": [
+    "One card and one60s unlabelled board capture; not speech accuracy acceptance",
+    "RAM tools need redeployment after reset; no arbitrary power loss guarantee",
+    "SD save and control take additional time beyond60s recording"
+  ],
+  "raw_check_sha256": "c42056de8f6156fe756ee179686675e5ab1c5dd76382ae1b8461e0ada748c176"
+}

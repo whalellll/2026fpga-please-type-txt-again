@@ -1,0 +1,196 @@
+{
+  "native_root": "G:/iopt60p3",
+  "run_id": "06a580c5937e413fbf7e3d843e465594",
+  "source_commit": "8aae985849f8f44e3c898dbcf31234a8df680f95",
+  "bitstream_path": "G:/iopt60p3/pds/generate_bitstream/soc_top.sbit",
+  "bitstream_sha256": "6565ad378524f3e2a34f6cdba6fcc46b2f928eb3677c0fe80971e05e8ec2ebdd",
+  "launch_sha256": "c19d074b1e1c00e78c900a18ed1a34e5fbcd7bf82221ab354711ab539f2ba443",
+  "snapshot_sha256": "1dec80df9830c5e2ebada009cc9879bf85b97f0c89b9a0c523ca20e42ab14424",
+  "build_evidence_sha256": "215dd5f771fb678010c20b00e47c21dbf087f6f6ac9d48afa15507794137d618",
+  "correctness_gate_sha256": "30010970980e35d18aa72e5f9df55b8eafab2e14fe50ba0aa5fcb2fe95f679cb",
+  "cpu_hz": 60000000,
+  "sys_hz": 49500000,
+  "display": "1080p30",
+  "final_sta_pass": true,
+  "flash_written": false,
+  "sd_written": false,
+  "model_tests_passed": false,
+  "formal_delivery": false,
+  "board_controller_sha256": "afb9b9b71c9a0b3f581e81d8db0bc800baf75bf448cbced2959f29d879c8ce46",
+  "programmer_sha256": "e77967f5b72c43b1a213b660439672f5a3daf8caf502bd231e5e0e7f7a1cd6da",
+  "status": "INTEGRATED_OPT60_FULL_NATIVE_STA_PASS_NOT_BOARD",
+  "created_utc": "2026-10-24T09:53:17.603774+00:00",
+  "bitstream": {
+    "path": "soc_top.sbit",
+    "bytes": 3791112,
+    "sha256": "6565ad378524f3e2a34f6cdba6fcc46b2f928eb3677c0fe80971e05e8ec2ebdd"
+  },
+  "resources": {
+    "whole_chip": {
+      "lut": 46365.0,
+      "ff": 30223.0,
+      "lutram": 4114.0,
+      "drm36k": 133.5,
+      "apm": 105.0
+    },
+    "vision": {
+      "lut": 5251.0,
+      "ff": 1843.0,
+      "lutram": 1357.0,
+      "apm": 48.0,
+      "drm": 0.0,
+      "pe_apm": 32,
+      "cache_mapping_proof": {
+        "weight_logical_bytes": 9216,
+        "weight_physical_capacity_bytes": 9216,
+        "weight_mapping": "split_1024_128",
+        "weight_ram64x1_cells": 1152,
+        "input_ping_pong_bytes": 1024,
+        "activation_table_bytes": 256,
+        "weight_decoder_roots_proven": 36,
+        "decoder_free_variables": 13,
+        "native_read_boundary": {
+          "export": "N428",
+          "exports": [
+            "N428",
+            "N430"
+          ],
+          "producer": "i2s_audio_duplex",
+          "export_producers": {
+            "N428": "i2s_audio_duplex",
+            "N430": "i2s_audio_duplex"
+          },
+          "response_boundary": "kernel-response",
+          "truth": "all bank WEs equal actual response/state/guards/kind/parity/row range",
+          "proof_method": "complete hierarchical ROBDD equality",
+          "bdd_nodes": 300,
+          "cofactors": 262144,
+          "cut_variables": [
+            "load_index[0]",
+            "load_index[10]",
+            "load_index[11]",
+            "load_index[7]",
+            "load_index[8]",
+            "load_index[9]",
+            "mem_rsp_error",
+            "owner1",
+            "read_kind[0]",
+            "read_kind[1]",
+            "read_kind[2]",
+            "response_valid",
+            "state[0]",
+            "state[1]",
+            "state[2]",
+            "state[3]",
+            "state[4]",
+            "stop_pending"
+          ],
+          "hierarchy_bound": true,
+          "hierarchy_hops": 684
+        },
+        "sequential_equivalence": false,
+        "sta": false
+      }
+    },
+    "retained": {
+      "apm": 53.0,
+      "drm": 24.0,
+      "subtrees": {
+        "g_nnue.u_nnue": {
+          "lut": 2912.0,
+          "ff": 1791.0,
+          "apm": 37.0,
+          "drm": 14.0
+        },
+        "u_voice_accel": {
+          "lut": 2436.0,
+          "ff": 1576.0,
+          "apm": 16.0,
+          "drm": 6.0
+        },
+        "g_dedicated.u_chain": {
+          "lut": 2478.0,
+          "ff": 1415.0,
+          "apm": 35.0,
+          "drm": 13.0
+        },
+        "g_batch.u_batch": {
+          "lut": 940.0,
+          "ff": 889.0,
+          "apm": 0.0,
+          "drm": 4.0
+        }
+      },
+      "voice_quant": true
+    }
+  },
+  "sta_focus": {
+    "cpu_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.54,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66900,
+      "abnormal": ""
+    },
+    "cpu_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.103,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66900,
+      "abnormal": ""
+    },
+    "sys_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 4.827,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 63481,
+      "abnormal": ""
+    },
+    "sys_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 0.161,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 63481,
+      "abnormal": ""
+    }
+  },
+  "evidence_root": "docs/validation/integrated-opt60-resource-p3-physical-20261024",
+  "evidence_sha256": {
+    "build_evidence.json": "215dd5f771fb678010c20b00e47c21dbf087f6f6ac9d48afa15507794137d618",
+    "build_snapshot.json": "1dec80df9830c5e2ebada009cc9879bf85b97f0c89b9a0c523ca20e42ab14424",
+    "physical-launch.json": "c19d074b1e1c00e78c900a18ed1a34e5fbcd7bf82221ab354711ab539f2ba443",
+    "physical-summary.json": "25ac7fbe457d5f413ea0567d780f161760d4c9fcefed15a2374c2a0f64432876",
+    "pnr-history.json": "d19b773c9bca34ec07ec6fa22ea37ed918925e0377d371b7aae48d63679aa47b",
+    "rtr.db.gz": "ba748f41bdb7395e5c61718241b21a9511d27ba7713a3e5c020e3387963167c9",
+    "soc_top.rtr.gz": "099154c7704da90fe0abecb3ea76c79d025c8c0266c590ac4b699b415415eb87",
+    "soc_top.snr.gz": "4f66ce71fe22eaeb1f71aed60547f8faf040d5621bc04d42afd5c56c12180125"
+  },
+  "board": false,
+  "sd": false,
+  "flash": false,
+  "pushed": false
+}

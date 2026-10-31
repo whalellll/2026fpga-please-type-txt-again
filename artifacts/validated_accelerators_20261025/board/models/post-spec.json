@@ -1,0 +1,12 @@
+[
+  {
+    "command": "ps; free; dmesg | tail -n 35; /usr/bin/pikafish-batch-check",
+    "timeout": 30,
+    "markers": [
+      "PIKAFISH_BATCH_CAPABILITY_PASS"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

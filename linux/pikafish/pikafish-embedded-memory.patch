@@ -1,0 +1,226 @@
+diff --git a/src/engine.cpp b/src/engine.cpp
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -20,6 +20,7 @@
+ 
+ #include <algorithm>
+ #include <cassert>
++#include <cstdio>
+ #include <filesystem>
+ #include <deque>
+ #include <iostream>
+@@ -64,6 +65,11 @@ Engine::Engine(std::optional<std::filesystem::path> path,
+     network(numaContext,
+             initialNetwork ? get_network(*initialNetwork) : get_default_network()) {
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::puts("XQ LINUX ENGINE DETAIL stage=constructor-body-start");
++    std::fflush(stdout);
++#endif
++
+     const std::string initialEvalFile = initialNetwork ? initialNetwork->string()
+                                                        : std::string(EvalFileDefaultName);
+ 
+@@ -119,8 +125,16 @@ Engine::Engine(std::optional<std::filesystem::path> path,
+       }));
+ 
+     threads.clear();
+     threads.ensure_network_replicated();
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::puts("XQ LINUX ENGINE DETAIL stage=resize-start");
++    std::fflush(stdout);
++#endif
+     resize_threads();
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::puts("XQ LINUX ENGINE DETAIL stage=resize-ready");
++    std::fflush(stdout);
++#endif
+ }
+ 
+ std::variant<u64, PositionSetError> Engine::perft(const std::string& fen, Depth depth) {
+diff --git a/src/thread.cpp b/src/thread.cpp
+--- a/src/thread.cpp
++++ b/src/thread.cpp
+@@ -23,6 +23,7 @@
+ #include <cassert>
+ #include <cmath>
+ #include <cstdlib>
++#include <cstdio>
+ #include <deque>
+ #include <iostream>
+ #include <map>
+@@ -207,6 +208,10 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+         }
+ 
+         sharedState.sharedHistories.clear();
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        std::puts("XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-start bytes=41230336");
++        std::fflush(stdout);
++#endif
+         for (auto pair : counts)
+         {
+             NumaIndex numaIndex = pair.first;
+@@ -220,6 +225,10 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+             else
+                 f();
+         }
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        std::puts("XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-ready bytes=41230336");
++        std::fflush(stdout);
++#endif
+ 
+         auto threadsPerNode = counts;
+         counts.clear();
+@@ -230,6 +239,10 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+             const usize     threadId      = threads.size();
+             const NumaIndex numaId        = doBindThreads ? boundThreadToNumaNode[threadId] : 0;
+             auto            create_thread = [&]() {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++                std::printf("XQ LINUX ENGINE DETAIL stage=thread-create-start thread=%zu\n", threadId);
++                std::fflush(stdout);
++#endif
+                 auto manager = threadId == 0
+                                ? std::unique_ptr<Search::ISearchManager>(
+                                    std::make_unique<Search::SearchManager>(updateContext))
+@@ -246,6 +259,10 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+                 threads.emplace_back(std::make_unique<Thread>(sharedState, std::move(manager),
+                                                               threadId, counts[numaId]++,
+                                                               threadsPerNode[numaId], binder));
++#if defined(PIKAFISH_EMBEDDED_GUI)
++                std::printf("XQ LINUX ENGINE DETAIL stage=thread-create-ready thread=%zu\n", threadId);
++                std::fflush(stdout);
++#endif
+             };
+ 
+             // Ensure the worker thread inherits the intended NUMA affinity at creation.
+@@ -256,7 +273,15 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+                 create_thread();
+         }
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-second-clear-start");
++        std::fflush(stdout);
++#endif
+         clear();
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-second-clear-ready");
++        std::fflush(stdout);
++#endif
+ 
+         main_thread()->wait_for_search_finished();
+     }
+diff --git a/src/search.cpp b/src/search.cpp
+--- a/src/search.cpp
++++ b/src/search.cpp
+@@ -24,6 +24,7 @@
+ #include <cassert>
+ #include <cmath>
+ #include <cstdint>
++#include <cstdio>
+ #include <cstdlib>
+ #include <initializer_list>
+ #include <string>
+@@ -648,10 +649,29 @@ void Search::Worker::clear() {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    auto report = [this](const char* stage) {
++        std::printf("XQ LINUX ENGINE DETAIL stage=%s thread=%zu\n", stage, threadIdx);
++        std::fflush(stdout);
++    };
++    report("worker-clear-start");
++#endif
+     mainHistory.fill(-5);
+     captureHistory.fill(-607);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("worker-local-history-ready");
++    report("shared-correction-clear-start");
++#endif
+ 
+     // Each thread clears its part of the dynamically-sized shared histories.
+     // The constant-size continuation history is initialized by thread 0 of each NUMA node.
+     sharedHistory.correctionHistory.clear_range(-6, numaThreadIdx, numaTotal);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("shared-correction-clear-ready");
++    report("shared-pawn-clear-start");
++#endif
+     sharedHistory.pawnHistory.clear_range(-1247, numaThreadIdx, numaTotal);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("shared-pawn-clear-ready");
++    report("shared-continuation-clear-start");
++#endif
+ 
+     if (numaThreadIdx == 0)
+         for (bool inCheck : {false, true})
+@@ -659,17 +696,33 @@ void Search::Worker::clear() {
+                 for (auto& to : continuationHistory[inCheck][c])
+                     for (auto& h : to)
+                         h.fill(-436);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("shared-continuation-clear-ready");
++#endif
+ 
+     ttMoveHistory = 0;
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("local-correction-clear-start");
++#endif
+     for (auto& to : continuationCorrectionHistory)
+         for (auto& h : to)
+             h.fill(7);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("local-correction-clear-ready");
++#endif
+ 
+     for (usize i = 1; i < reductions.size(); ++i)
+         reductions[i] = int(1740 / 100.0 * std::log(i));
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("nnue-cache-clear-start");
++#endif
+     refreshTable.clear(network[numaAccessToken]);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    report("nnue-cache-clear-ready");
++    report("worker-clear-ready");
++#endif
+ }
+ 
+ 
+diff --git a/src/tt.cpp b/src/tt.cpp
+--- a/src/tt.cpp
++++ b/src/tt.cpp
+@@ -22,6 +22,7 @@
+ #include <algorithm>
+ #include <cassert>
+ #include <cstdlib>
++#include <cstdio>
+ #include <cstring>
+ #include <iostream>
+ #include <numeric>
+@@ -177,6 +178,10 @@ struct Cluster {
+ // Transposition table consists of clusters and each cluster consists
+ // of ClusterSize number of TTEntry.
+ void TranspositionTable::resize(usize mbSize, ThreadPool& threads) {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::printf("XQ LINUX ENGINE DETAIL stage=tt-alloc-start mib=%zu\n", mbSize);
++    std::fflush(stdout);
++#endif
+     aligned_large_pages_free(table);
+ 
+     clusterCount  = mbSize * 1024 * 1024 / sizeof(Cluster);
+@@ -195,7 +200,17 @@ void TranspositionTable::resize(usize mbSize, ThreadPool& threads) {
+         exit(EXIT_FAILURE);
+     }
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::printf("XQ LINUX ENGINE DETAIL stage=tt-alloc-ready bytes=%zu\n", ttBytes);
++    std::fflush(stdout);
++    std::puts("XQ LINUX ENGINE DETAIL stage=tt-clear-start");
++    std::fflush(stdout);
++#endif
+     clear(threads);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::puts("XQ LINUX ENGINE DETAIL stage=tt-clear-ready");
++    std::fflush(stdout);
++#endif
+ }
+ 
+ 

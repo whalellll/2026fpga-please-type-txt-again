@@ -1,0 +1,51 @@
+{
+  "selection_manifest": {
+    "deploy_held": {
+      "n": 688,
+      "source": "game1/3 every-5th frames (never trained)"
+    },
+    "synth_conditions": {
+      "n": 11202,
+      "conditions": [
+        "native",
+        "rot180",
+        "rot270",
+        "rot90",
+        "shift_left",
+        "shift_right",
+        "wash_black",
+        "wash_black_hard",
+        "wash_mild",
+        "wash_squash",
+        "wash_squash_hard"
+      ]
+    },
+    "old_native": {
+      "n": 1052,
+      "source": "reviewed37 crops"
+    },
+    "game2_contact": "NONE"
+  },
+  "selection_root": "build/picture-merge-20261023/r16/选模基建/selection_set",
+  "resources": {
+    "build_selection_set.py": {
+      "path": "build/picture-merge-20261023/r16/选模基建/build_selection_set.py",
+      "sha256": "dbf6f8ca8ade1dfcd05172c76f1c980e49bace5106c241882a553273e7ecd8c7"
+    },
+    "fast_int_eval.py": {
+      "path": "build/picture-merge-20261023/r16/选模基建/fast_int_eval.py",
+      "sha256": "06fad235f3d1d18606d5051e7e247d56b1d4d81012970474cd5da040314e80e1"
+    },
+    "int_eval.py": {
+      "path": "build/picture-merge-20261023/r16/选模基建/int_eval.py",
+      "sha256": "91400ac9d8f1e67dfe282dd137f90bd1605ed7f9d40e5ff6ca7027a48abb5ecf"
+    },
+    "rescan_int.json": {
+      "path": "build/picture-merge-20261023/r16/选模基建/rescan_int.json",
+      "sha256": "f6daea8987187ad7e2e508f12c07e014f60a862ea0174cb77206f2661a20e83a"
+    }
+  },
+  "policy": "games1/3 and old/synthetic only; verified originals read-only; no automatic training; no game2",
+  "classification": "archived reusable infrastructure; training line closed after r23",
+  "closeout_registry": "evaluation/training_closeout_r19_r23.json"
+}

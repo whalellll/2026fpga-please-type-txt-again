@@ -1,0 +1,9 @@
+/include/ "soc.dts"
+
+/* Software-only driver candidate. The normal/background DTS is preserved.
+ * Bind both the dense scratch and immutable PFF1 model to the shared owner.
+ */
+&{/soc/mac-accel@1fe10000} {
+    reg = <0x1fe10000 0x00000200>;
+    memory-region = <&mac_accel_mem &{/reserved-memory/pikafish-pff1@10000000}>;
+};

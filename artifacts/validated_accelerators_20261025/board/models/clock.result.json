@@ -1,0 +1,20 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:04:47.646964+00:00",
+  "commands": [
+    {
+      "command": "cat /proc/uptime; sleep 10; cat /proc/uptime",
+      "exit": 0,
+      "host_response_seconds": 10.663263599999482,
+      "required_markers": []
+    }
+  ],
+  "spec_sha256": "a82102817701e3b90b60dd9e1938a00301c887a2e4c067510744bf8e15839abe",
+  "uart_sha256": "5f7eaf8bdc20eb8620412164c2f3bf7987fa5b9e42188737965e79e1b3a42a8b",
+  "completed_utc": "2026-10-25T05:04:58.558053+00:00"
+}

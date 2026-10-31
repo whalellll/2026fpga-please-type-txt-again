@@ -1,0 +1,45 @@
+Compiling architecture definition.
+Executing : add_constraint soc.fdc
+Executing : add_constraint soc.fdc successfully.
+Executing : add_constraint ddr3_test.rcf
+Executing : add_constraint ddr3_test.rcf successfully.
+Executing : set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676
+Executing : set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676 successfully.
+
+
+Executing : dev_map -input_db_file synthesize/soc_top_syn.adf
+Executing : dev_map -input_db_file synthesize/soc_top_syn.adf successfully.
+Executing : close file30327a0
+Executing : close file30327a0 successfully.
+Executing : close file30314e0
+Executing : close file30314e0 successfully.
+GUI1080_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+GUI1080_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+GUI1080_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+Executing : close file3033d20
+Executing : close file3033d20 successfully.
+Executing : close file3032720
+Executing : close file3032720 successfully.
+CPU75_CSR_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+CPU75_CSR_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+CPU75_CSR_STRICT_PLACEMENT_REAPPLIED_AFTER_MAP
+
+
+Executing : pnr -plc_decongestion 4 -gplace_seed 3 -optimize_multi_corner_timing -fix_hold_violation -mode performance -fix_hold_violation_threshold 200 -fix_hold_violation_iterations 12
+Executing : pnr -plc_decongestion 4 -gplace_seed 3 -optimize_multi_corner_timing -fix_hold_violation -mode performance -fix_hold_violation_threshold 200 -fix_hold_violation_iterations 12 successfully.
+
+
+Executing : report_timing -report_max_skew
+Executing : report_timing -report_max_skew successfully.
+
+
+Executing : report_power
+Executing : report_power successfully.
+
+
+Executing : gen_netlist
+Executing : gen_netlist successfully.
+
+
+Executing : gen_bit_stream -force_to_run -create_bit_file TRUE -create_bin_file
+Executing : gen_bit_stream -force_to_run -create_bit_file TRUE -create_bin_file successfully.

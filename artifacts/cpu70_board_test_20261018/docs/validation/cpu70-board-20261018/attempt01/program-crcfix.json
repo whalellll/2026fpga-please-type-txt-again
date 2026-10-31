@@ -1,0 +1,23 @@
+{
+    "schema_version":  1,
+    "evidence_kind":  "volatile_cram_program",
+    "status":  "PASS",
+    "started_utc":  "2026-10-18T05:39:13.2620776Z",
+    "completed_utc":  "2026-10-18T05:39:50.1598324Z",
+    "operation":  "CRAM",
+    "device":  "PG2L100H",
+    "device_id":  "0x00602899",
+    "device_count":  1,
+    "device_index":  0,
+    "bitstream_sha256":  "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+    "assigned_bitstream_path":  "G:/fpga/b70r1/artifacts/soc_top.sbit",
+    "provenance":  "Observed scan, file assignment, and successful volatile CRAM programming; no configuration readback.",
+    "program_log_sha256":  "498b813be313cbe1782db75d0f1e4e32e2bc31cf66d355134da952bfe85c511e",
+    "preflight_log_sha256":  "d321090e3b9848ddbb23a9fa484afc785ea1f5194771253b423d5ea804c3c266",
+    "firmware_binary_sha256":  "72649f52dc1e096c29386796be00b8205ec4e45239f5bffd2f3bc9b1786024af",
+    "cpu_rtl_sha256":  "80d88b8edab534e04d1e3f1488e72832c8d12194d711db7b060a11c75bee5464",
+    "cpu_source_manifest_sha256":  "1d9369dfb493cc0c88b293f862ed2a29372246734ef2ab786afa0c7fb713f09a",
+    "pds_snapshot_sha256":  "a8ebe787519577a7d4018cc1df44c6314a4d22bbbddffee7efae8c5eb6c274db",
+    "pds_build_evidence_sha256":  "8b07a2fffaa9e39bf39fea401e81340f766448e60cbc48132d43f86b2dadf8d9",
+    "pds_snapshot_run_id":  "4b7d86bb5f2a4e638b43359196ea52b3"
+}

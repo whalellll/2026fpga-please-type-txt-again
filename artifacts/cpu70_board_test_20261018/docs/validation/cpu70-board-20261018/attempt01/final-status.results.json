@@ -1,0 +1,6 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; grep -E \"MAC_RUNTIME|KERNEL_RESIDENT|STAGEB_ACCEL_READY|PIKAFISH READY\" gui-v3.log; head -3 voice.log; printf \"XQ_STATUS\\n\" >/run/voice-display.in; sleep 1; tail -3 gui-v3.log; kill -0 $(cat gui-v3.pid) && kill -0 $(cat voice.pid)",
+    "exit": 0
+  }
+]

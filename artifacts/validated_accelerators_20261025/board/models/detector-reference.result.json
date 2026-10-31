@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:09:52.662016+00:00",
+  "commands": [
+    {
+      "command": "/usr/bin/timeout 1200 /usr/bin/picture-new-bench-hwc-reference detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 1",
+      "exit": 0,
+      "host_response_seconds": 237.13340740000422,
+      "required_markers": [
+        "PICTURE_TIMING model=detector",
+        "output_crc=97265de4",
+        "no_fallback=1"
+      ]
+    }
+  ],
+  "spec_sha256": "9f3a7d29a9aed9c2d05e7ca6708dedf33bb164abed8166854ca254f463c697dd",
+  "uart_sha256": "030128524968227f99dacb4704672a247b8336cea54e14a15ac178ef2d2dd3ce",
+  "completed_utc": "2026-10-25T05:13:50.289722+00:00"
+}

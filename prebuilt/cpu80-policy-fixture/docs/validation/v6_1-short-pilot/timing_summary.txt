@@ -1,0 +1,187 @@
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 4.102       0.000              0            369
+ rst_clk                rst_clk                      4.610       0.000              0            412
+ ddrphy_sysclk          ddrphy_sysclk                1.580       0.000              0          19483
+ phy_dq_sysclk_0        ddrphy_sysclk                3.651       0.000              0              1
+ phy_dq_sysclk_1        ddrphy_sysclk                1.318       0.000              0            260
+ ddrphy_sysclk          phy_dq_sysclk_0              1.261       0.000              0            196
+ ddrphy_sysclk          phy_dq_sysclk_1              0.450       0.000              0            420
+ rgmii_rxc              rgmii_rxc                    1.873       0.000              0           2687
+ pix_clk                pix_clk                      2.508       0.000              0           2384
+ sys_clk                sys_clk                      4.001       0.000              0          70625
+ cpu_clk                sys_clk                      2.743       0.000              0           8473
+ i2c_cfg_clk            i2c_cfg_clk                137.138       0.000              0            500
+ cpu_clk                cpu_clk                      1.665       0.000              0          71965
+ sys_clk                cpu_clk                      8.401       0.000              0            509
+ camera1_sccb_clk       camera1_sccb_clk         99995.280       0.000              0            197
+ camera2_sccb_clk       camera2_sccb_clk         99991.305       0.000              0            201
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 0.158       0.000              0            369
+ rst_clk                rst_clk                      0.254       0.000              0            412
+ ddrphy_sysclk          ddrphy_sysclk                0.137       0.000              0          19483
+ phy_dq_sysclk_0        ddrphy_sysclk                0.994       0.000              0              1
+ phy_dq_sysclk_1        ddrphy_sysclk                0.601       0.000              0            260
+ ddrphy_sysclk          phy_dq_sysclk_0              0.444       0.000              0            196
+ ddrphy_sysclk          phy_dq_sysclk_1              0.467       0.000              0            420
+ rgmii_rxc              rgmii_rxc                    0.143       0.000              0           2687
+ pix_clk                pix_clk                      0.362       0.000              0           2384
+ sys_clk                sys_clk                      0.070       0.000              0          70625
+ i2c_cfg_clk            i2c_cfg_clk                  0.201       0.000              0            500
+ cpu_clk                cpu_clk                      0.062       0.000              0          71965
+ camera1_sccb_clk       camera1_sccb_clk             0.298       0.000              0            197
+ camera2_sccb_clk       camera2_sccb_clk             0.253       0.000              0            201
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 5.663       0.000              0            112
+ rst_clk                rst_clk                      5.257       0.000              0             97
+ ddrphy_sysclk          ddrphy_sysclk                3.046       0.000              0           4106
+ rgmii_rxc              rgmii_rxc                    5.734       0.000              0              5
+ pix_clk                pix_clk                      9.793       0.000              0            442
+ sys_clk                sys_clk                     11.988       0.000              0           7579
+ cpu_clk                cpu_clk                     11.938       0.000              0            102
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 0.354       0.000              0            112
+ rst_clk                rst_clk                      0.405       0.000              0             97
+ ddrphy_sysclk          ddrphy_sysclk                0.291       0.000              0           4106
+ rgmii_rxc              rgmii_rxc                    0.542       0.000              0              5
+ pix_clk                pix_clk                      0.633       0.000              0            442
+ sys_clk                sys_clk                      0.416       0.000              0           7579
+ cpu_clk                cpu_clk                      0.593       0.000              0            102
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk                                        4.040       0.000              0            115
+ rst_clk                                             3.800       0.000              0             98
+ ddrphy_sysclk                                       3.040       0.000              0           4615
+ phy_dq_clk_0                                        0.035       0.000              0             35
+ phy_dq_sysclk_0                                     1.850       0.000              0             35
+ phy_dq_clk_1                                        0.035       0.000              0             84
+ phy_dq_sysclk_1                                     2.400       0.000              0             84
+ rgmii_rxc                                           3.584       0.000              0            408
+ pix_clk                                             5.774       0.000              0            705
+ sys_clk                                             9.141       0.000              0          14637
+ i2c_cfg_clk                                        69.755       0.000              0             94
+ cpu_clk                                             7.457       0.000              0          11163
+ camera1_sccb_clk                                49999.750       0.000              0             46
+ camera2_sccb_clk                                49999.750       0.000              0             46
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 6.217       0.000              0            369
+ rst_clk                rst_clk                      5.981       0.000              0            412
+ ddrphy_sysclk          ddrphy_sysclk                3.911       0.000              0          19483
+ phy_dq_sysclk_0        ddrphy_sysclk                5.033       0.000              0              1
+ phy_dq_sysclk_1        ddrphy_sysclk                3.366       0.000              0            260
+ ddrphy_sysclk          phy_dq_sysclk_0              3.555       0.000              0            196
+ ddrphy_sysclk          phy_dq_sysclk_1              2.960       0.000              0            420
+ rgmii_rxc              rgmii_rxc                    4.222       0.000              0           2687
+ pix_clk                pix_clk                      6.268       0.000              0           2384
+ sys_clk                sys_clk                      9.196       0.000              0          70625
+ cpu_clk                sys_clk                      7.820       0.000              0           8473
+ i2c_cfg_clk            i2c_cfg_clk                138.655       0.000              0            500
+ cpu_clk                cpu_clk                      7.515       0.000              0          71965
+ sys_clk                cpu_clk                     11.088       0.000              0            509
+ camera1_sccb_clk       camera1_sccb_clk         99997.010       0.000              0            197
+ camera2_sccb_clk       camera2_sccb_clk         99994.468       0.000              0            201
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 0.120       0.000              0            369
+ rst_clk                rst_clk                      0.166       0.000              0            412
+ ddrphy_sysclk          ddrphy_sysclk                0.101       0.000              0          19483
+ phy_dq_sysclk_0        ddrphy_sysclk                0.454       0.000              0              1
+ phy_dq_sysclk_1        ddrphy_sysclk                0.150       0.000              0            260
+ ddrphy_sysclk          phy_dq_sysclk_0              0.113       0.000              0            196
+ ddrphy_sysclk          phy_dq_sysclk_1              0.110       0.000              0            420
+ rgmii_rxc              rgmii_rxc                    0.102       0.000              0           2687
+ pix_clk                pix_clk                      0.231       0.000              0           2384
+ sys_clk                sys_clk                      0.049       0.000              0          70625
+ i2c_cfg_clk            i2c_cfg_clk                  0.149       0.000              0            500
+ cpu_clk                cpu_clk                      0.047       0.000              0          71965
+ camera1_sccb_clk       camera1_sccb_clk             0.252       0.000              0            197
+ camera2_sccb_clk       camera2_sccb_clk             0.234       0.000              0            201
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 7.173       0.000              0            112
+ rst_clk                rst_clk                      6.320       0.000              0             97
+ ddrphy_sysclk          ddrphy_sysclk                4.802       0.000              0           4106
+ rgmii_rxc              rgmii_rxc                    6.601       0.000              0              5
+ pix_clk                pix_clk                     11.182       0.000              0            442
+ sys_clk                sys_clk                     14.902       0.000              0           7579
+ cpu_clk                cpu_clk                     13.706       0.000              0            102
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk           camera2_pclk                 0.250       0.000              0            112
+ rst_clk                rst_clk                      0.283       0.000              0             97
+ ddrphy_sysclk          ddrphy_sysclk                0.196       0.000              0           4106
+ rgmii_rxc              rgmii_rxc                    0.422       0.000              0              5
+ pix_clk                pix_clk                      0.444       0.000              0            442
+ sys_clk                sys_clk                      0.283       0.000              0           7579
+ cpu_clk                cpu_clk                      0.412       0.000              0            102
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ camera2_pclk                                        4.430       0.000              0            115
+ rst_clk                                             3.800       0.000              0             98
+ ddrphy_sysclk                                       3.430       0.000              0           4615
+ phy_dq_clk_0                                        0.035       0.000              0             35
+ phy_dq_sysclk_0                                     1.850       0.000              0             35
+ phy_dq_clk_1                                        0.035       0.000              0             84
+ phy_dq_sysclk_1                                     2.400       0.000              0             84
+ rgmii_rxc                                           3.584       0.000              0            408
+ pix_clk                                             6.164       0.000              0            705
+ sys_clk                                             9.446       0.000              0          14637
+ i2c_cfg_clk                                        70.145       0.000              0             94
+ cpu_clk                                             7.762       0.000              0          11163
+ camera1_sccb_clk                                49999.750       0.000              0             46
+ camera2_sccb_clk                                49999.750       0.000              0             46
+====================================================================================================

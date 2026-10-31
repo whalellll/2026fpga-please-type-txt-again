@@ -1,0 +1,32 @@
+{
+    "cpu":  "CPU V3.5",
+    "cpu_version":  "3.5.0",
+    "isa":  "rv32ima_zicsr_zifencei",
+    "abi":  "ilp32",
+    "software_march":  "rv32ima_zicsr_zifencei",
+    "compressed_instructions":  false,
+    "source_repository":  "src",
+    "source_path":  "cpu/generated/core/CoreTop.sv",
+    "source_config_path":  "cpu/generated/core/emit-config.json",
+    "destination_config_path":  "rtl/cpu/emit-config.json",
+    "config_sha256":  "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+    "meminit_source_path":  "cpu/scripts/meminit",
+    "destination_path":  "rtl/cpu/CoreTop.sv",
+    "module":  "CoreTop",
+    "source_kind":  "git_repository",
+    "supervisor_candidate":  true,
+    "source_reference_commit":  "86c999249b0689c9c4ccb5be1e17dfcd644a153d",
+    "source_worktree_dirty":  false,
+    "generator_source_sha256":  "0b2f2307caff512e54fc9c33e2a2e7909fdee65c13866872baa092ac4b997ac9",
+    "sha256":  "a945fedca274212b876e27be8b83f2d81cbcd6ae779681935a1d9b87e8147902",
+    "meminit":  {
+                    "zero_1024.hex":  "209a151d73facd213f692299a3069420c8733e4800d4c544c381e793af852352",
+                    "zero_2048.hex":  "dc82a761090a981c8e464b6ef410321445c2959a2ba4854ac3917e0248aa2896",
+                    "zero_4096.hex":  "fbdadfc49edbe2da54bd8d9106e70852b42e99c28e89bc32ab199e6432ee9040"
+                },
+    "integration_wrapper":  "rtl/cpu_top.v",
+    "reset_vector":  "0x1c000000",
+    "axi_data_bits":  32,
+    "axi_id_bits":  4,
+    "linux_boot":  "S/U Sv32 candidate; Linux boot not yet tested"
+}

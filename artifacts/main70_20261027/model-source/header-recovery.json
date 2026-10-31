@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_ORIGINAL_HEADER_SHA256_MATCH",
+  "expected_sha256": "45f7f3165f3bc1a1845c58f6f4acb0a2939048e58f4a2d9721c09576252d25cc",
+  "actual_sha256": "45f7f3165f3bc1a1845c58f6f4acb0a2939048e58f4a2d9721c09576252d25cc",
+  "anchors_source": "SD PN04 native_manifest.json",
+  "margins_source": "Original PN07 ELF .sdata addresses 0x491c8/0x491d0/0x491d8/0x491e0, main ROI four muldf3 preceding floor/fmax and ceil/fmin",
+  "original_worker_sha256": "1953b37d6511e21fe5eb0675dbee7285a1e06b42b3b43e60cd8edda0c6220de3",
+  "margins": [
+    0.11460627626715061,
+    0.18207211479781843,
+    0.1125836740278108,
+    0.18824453626329274
+  ],
+  "accepted_only_after_full_sha256_match": true
+}

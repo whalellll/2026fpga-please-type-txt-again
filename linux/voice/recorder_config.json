@@ -1,0 +1,7 @@
+{
+  "port": "COM17",
+  "speaker": "speaker01",
+  "split": "train",
+  "target_per_token": 3,
+  "output_root": "G:/fpga/数据集/voice_real"
+}

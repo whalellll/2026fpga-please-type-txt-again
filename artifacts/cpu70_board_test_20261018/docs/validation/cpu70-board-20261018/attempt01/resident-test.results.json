@@ -1,0 +1,15 @@
+[
+  {
+    "command": "p=$(cat /tmp/voice-gui-display/gui-v3.pid); kill \"$p\"; n=0; while kill -0 \"$p\" 2>/dev/null; do sleep 1; n=$((n+1)); test \"$n\" -lt 15 || break; done; ! kill -0 \"$p\" 2>/dev/null",
+    "exit": 0
+  },
+  {
+    "upload": "build\\cpu70-board-20261018\\pango-mac-resident-test.gz",
+    "remote": "/tmp/c70-resident.gz",
+    "sha256": "202506b7be32c20d6775a0648ca9678e1c35c4e3317aafae6d4f14bd498a4258"
+  },
+  {
+    "command": "gzip -dc /tmp/c70-resident.gz > /tmp/c70-resident; chmod 700 /tmp/c70-resident; sha256sum /tmp/c70-resident; /tmp/c70-resident",
+    "exit": 0
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "status": "VERIFIED_LOCAL_WORKING_R14_ASSETS",
+  "package": "G:/fpga/权重包",
+  "identity_readme_sha256": "097283890c7f55de6a91feca3fa6806a0b09c9c40c9cd8676292e072751c2b28",
+  "package_manifest_sha256": "ee8d0276c21487e1054a70566c2c2be0f6594bd7e929832c0b6d14e56d197902",
+  "native_contract": "linux/picture_new/r14-models.sha256",
+  "weights": {
+    "fp32_masters/board.pt": {
+      "bytes": 1769756,
+      "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825",
+      "root_duplicate_equal": true
+    },
+    "fp32_masters/classifier.pt": {
+      "bytes": 534002,
+      "sha256": "d1476f80cb8c12c0e473784c7cac276dfca8eaaf054a902cde5464f44c105479",
+      "root_duplicate_equal": true
+    },
+    "fp32_masters/detector.pt": {
+      "bytes": 3924456,
+      "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d",
+      "root_duplicate_equal": true
+    },
+    "native_int8/board.xqm": {
+      "bytes": 1024784,
+      "sha256": "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe",
+      "root_duplicate_equal": true
+    },
+    "native_int8/classifier.xqm": {
+      "bytes": 592568,
+      "sha256": "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f",
+      "root_duplicate_equal": true
+    },
+    "native_int8/detector.xqm": {
+      "bytes": 5578752,
+      "sha256": "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d",
+      "root_duplicate_equal": true
+    }
+  },
+  "git_contains_weight_binaries": false,
+  "immutable_inputs": true,
+  "native_weights_match_existing_contract": true,
+  "fp32_sources_available": true,
+  "not_requantized": true
+}

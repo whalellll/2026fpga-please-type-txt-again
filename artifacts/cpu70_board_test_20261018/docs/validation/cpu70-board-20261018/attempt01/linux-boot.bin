@@ -1,0 +1,45 @@
+
+soc> info
+SYS_ID=0x53563300 DDR=ready SYS_HZ=49500000 CPU_HZ=70875000 TIMEBASE_HZ=49500000 CAPS=0x0000001f ETH_ID=0x45544831 SPI_ID=0x53504931 FLASH_JEDEC=0x000b4018 SD_ID=0x53444e32 SD=present AUDIO_ID=0x41554431 MAC_ID=0x4d41434b MAC_VER=0x00020100
+soc> sdinfo
+MicroSD detect: stable=present raw=present
+Card: SDHC/SDXC OCR=0xc0ff8000 RCA=0x0000e624 sectors=62333952 capacity_MiB=30436 bus_width=4 clock_Hz=24750000
+Filesystem: FAT32 partition_lba=32 cluster_bytes=32768
+  Image.mmode: 2444544 bytes
+  mmode.dtb: 1102 bytes
+  mboot.bin: 14164 bytes
+  fw_jump.bin: 264680 bytes
+  Image: 7480792 bytes
+  pikafish.pff: 68122688 bytes
+  pikafish.atk: 34603072 bytes
+  xiangqi.bin: 42648 bytes
+soc> loadx 0x1a100000
+Start XMODEM-CRC transfer now...
+Creceived 91136 bytes
+soc> loadx 0x01000000
+Start XMODEM-CRC transfer now...
+Creceived 284672 bytes
+soc> boot 0x01000000
+PIKAFISH_SD_LOADER_BEGIN
+Waiting for DDR training...
+DDR startup delay complete
+Loading brfw.bin bytes=266448
+.. SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0x8072b5c4
+Loading vaimage.bin bytes=7480856
+......... SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0x33cbdbd7
+Loading vafs.bin bytes=8445952
+.......... SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0xc845a459
+Loading va.dtb bytes=2443
+... SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0xbf63c3d0
+Loading pikafish.pff bytes=68122688
+.................................................................. SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0x80322636
+Loading pikafish.atk bytes=34603072
+................................... SD_READ_DONE
+ SD_ALIAS_DONE CRC32=0xcba1dd72
+Console ready. Type help.
+soc> 

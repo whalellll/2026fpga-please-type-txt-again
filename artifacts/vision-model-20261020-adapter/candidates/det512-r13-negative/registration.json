@@ -1,0 +1,12 @@
+{
+  "selected_for_work": false,
+  "negative_result": true,
+  "reported_G_v3c": 52,
+  "reported_H_v2band": 62,
+  "frames": 84,
+  "threshold": 72,
+  "new_camera_domain_suitable": false,
+  "route": "closed; retain training delivery and code for provenance only",
+  "source": "r13 training-side aggregate; engineering game2 inference zero",
+  "production_ready": false
+}

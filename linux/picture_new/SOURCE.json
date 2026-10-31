@@ -1,0 +1,692 @@
+{
+  "repository": "whalellll/performance_soc",
+  "branch": "Picture_new",
+  "commit": "80622e3f982332b25a83d9cc63f1ac5ed3f75bbd",
+  "files": {
+    "artifacts/board_detect_v2_round1/manifest.json": {
+      "path": "linux/picture_new/upstream/artifacts/board_detect_v2_round1/manifest.json",
+      "sha256": "3b614beff3512dc2244813dbbcbb5f210383153c2473b84b0205eb7f604d8af3"
+    },
+    "artifacts/vision-model-20261020-adapter/adapter_manifest.json": {
+      "path": "linux/picture_new/upstream/adapter/adapter_manifest.json",
+      "sha256": "b750183208ddbe5358548461944644e66c985ace05951e393f5a182d178b8181"
+    },
+    "artifacts/vision-model-20261020-adapter/analyze_classifier_duplicates.py": {
+      "path": "linux/picture_new/upstream/adapter/analyze_classifier_duplicates.py",
+      "sha256": "1cf4aaf7658043782a3dc0ec64412f8d59988fd254eab7c4bf5c6142362252a4"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_device_golden.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_device_golden.py",
+      "sha256": "7de142115fd172098eb9e02bc9f95d44112336cc01ef3cbdf776680db9e923f9"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_live_native.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_live_native.py",
+      "sha256": "037347947ada4d5ca7801df770da1e5e189b44ba4b746aa5ea2558584ffdaf25"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_native_replay.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_native_replay.py",
+      "sha256": "261ce54f76dd567ff9cd6b08b49ec56a1b96b6edb4684cbc40e3f44a719fc49a"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_native_sd_boot.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_native_sd_boot.py",
+      "sha256": "e4717425d252e81bfce9bb007d9e51dcda5b17f8f3882071857e3563f7217e74"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_piece_fit_probe.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_piece_fit_probe.py",
+      "sha256": "6e56be237f9b7992d0c3956cb2f20cc1fb5858b69ebcd41fd5a890df01b8e071"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_regression.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_regression.py",
+      "sha256": "8182b26c701975e287b1c313d43c20a8624ce1dd5d32772f7981c99f9b5c59c1"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_sd_namespace.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_sd_namespace.py",
+      "sha256": "2e6a991d3e603559613feb593c309cf30afd152f4b7588ac9f4e6b106bc94dec"
+    },
+    "artifacts/vision-model-20261020-adapter/archive_user_game3_evaluation.py": {
+      "path": "linux/picture_new/upstream/adapter/archive_user_game3_evaluation.py",
+      "sha256": "694721b38f2738912eaa323e5b0d17d584f63b8c3b35f10990f1f09f34c539fd"
+    },
+    "artifacts/vision-model-20261020-adapter/assemble.py": {
+      "path": "linux/picture_new/upstream/adapter/assemble.py",
+      "sha256": "130ede55aabd46f6ab8eb9384ddb93d76ba06ce1529ba0284499f23f7910e91c"
+    },
+    "artifacts/vision-model-20261020-adapter/board_transfer.ps1": {
+      "path": "linux/picture_new/upstream/adapter/board_transfer.ps1",
+      "sha256": "c968c87cb112a070c4b549bb9c708b476b36dd88983ccf56d84783d656d052cf"
+    },
+    "artifacts/vision-model-20261020-adapter/boot_native_sd.ps1": {
+      "path": "linux/picture_new/upstream/adapter/boot_native_sd.ps1",
+      "sha256": "73cae542e79aba74c438cc82f41e54744dd42b7a54f939c13055e348faf2d2ef"
+    },
+    "artifacts/vision-model-20261020-adapter/boot_sd_namespace.ps1": {
+      "path": "linux/picture_new/upstream/adapter/boot_sd_namespace.ps1",
+      "sha256": "251f797103acd499c8f9d740216d110da83b5942fb50e4f0576e8a140483b3ef"
+    },
+    "artifacts/vision-model-20261020-adapter/bootstrap_ram_helper.ps1": {
+      "path": "linux/picture_new/upstream/adapter/bootstrap_ram_helper.ps1",
+      "sha256": "798b81106a4d40c857a89d6224363d3f0dacf74e1480a85759be8006a241e041"
+    },
+    "artifacts/vision-model-20261020-adapter/build_camera_exec.sh": {
+      "path": "linux/picture_new/upstream/adapter/build_camera_exec.sh",
+      "sha256": "f4636a97346ef2574bdccceea053d7aadc199f212d8b3475211770c804d64938"
+    },
+    "artifacts/vision-model-20261020-adapter/build_golden_probe.sh": {
+      "path": "linux/picture_new/upstream/adapter/build_golden_probe.sh",
+      "sha256": "cdbcd41b11502a5bf7d25da379a4c767f82b4895b8045c09321667692cc653fe"
+    },
+    "artifacts/vision-model-20261020-adapter/build_native.sh": {
+      "path": "linux/picture_new/upstream/adapter/build_native.sh",
+      "sha256": "0d569d651ab95e231b2b711421d1e261f611ac46ed690521baf2a6d9b2a6562d"
+    },
+    "artifacts/vision-model-20261020-adapter/build_piece_fit_probe.sh": {
+      "path": "linux/picture_new/upstream/adapter/build_piece_fit_probe.sh",
+      "sha256": "176d5933ae49e87cfff6c0868e72f58b87b872ca065bca8bf102875a6926f179"
+    },
+    "artifacts/vision-model-20261020-adapter/build_sd_namespace_tools.ps1": {
+      "path": "linux/picture_new/upstream/adapter/build_sd_namespace_tools.ps1",
+      "sha256": "164599f9e832bc31c1635aa196d90bc3696322cab86a7a02b66faade11f5ce2e"
+    },
+    "artifacts/vision-model-20261020-adapter/capture_uart_bounded.ps1": {
+      "path": "linux/picture_new/upstream/adapter/capture_uart_bounded.ps1",
+      "sha256": "09295ec8a5bb893c35f036bc8e27a622281c928a1714dabc49c94cf9bb693776"
+    },
+    "artifacts/vision-model-20261020-adapter/check_interfaces.py": {
+      "path": "linux/picture_new/upstream/adapter/check_interfaces.py",
+      "sha256": "2d686ebe1705a25e7618f905e8ea768fd0821a4eb983fc067454d1dc6851f4d9"
+    },
+    "artifacts/vision-model-20261020-adapter/check_native_graph.py": {
+      "path": "linux/picture_new/upstream/adapter/check_native_graph.py",
+      "sha256": "eafd7c709fe94cda1104c85f7af233beab6646d8d69dcc7bcae50f1d074f7320"
+    },
+    "artifacts/vision-model-20261020-adapter/check_native_layers.py": {
+      "path": "linux/picture_new/upstream/adapter/check_native_layers.py",
+      "sha256": "ac5405f411e9be83dfdb45c3f2dad58d6a2859d8ffcbe1f2ccdf49cfeb823e98"
+    },
+    "artifacts/vision-model-20261020-adapter/check_native_pipeline.py": {
+      "path": "linux/picture_new/upstream/adapter/check_native_pipeline.py",
+      "sha256": "a4992464157cf45ad97433fbce621c03c03ef2ad44a2e9d404b2039478af4bf2"
+    },
+    "artifacts/vision-model-20261020-adapter/check_native_rootfs.py": {
+      "path": "linux/picture_new/upstream/adapter/check_native_rootfs.py",
+      "sha256": "3d1257eca0a25c61628295879198e287f9e2a4972aacac1cff2fa143db2e84e9"
+    },
+    "artifacts/vision-model-20261020-adapter/check_sha256.py": {
+      "path": "linux/picture_new/upstream/adapter/check_sha256.py",
+      "sha256": "0e8d2b1be6ee191def62ebadae1f513a1b510f37e54955b1a74b0c3a2f969219"
+    },
+    "artifacts/vision-model-20261020-adapter/compare_golden_checks.py": {
+      "path": "linux/picture_new/upstream/adapter/compare_golden_checks.py",
+      "sha256": "cddc24b28d5f8d32f3262d69dad4dde9ab0c60a6a79f7e7deb2ddd655365a502"
+    },
+    "artifacts/vision-model-20261020-adapter/complete_sd_namespace_health.py": {
+      "path": "linux/picture_new/upstream/adapter/complete_sd_namespace_health.py",
+      "sha256": "462f2db009edefe6e868c10fb64cc95eb6ecf27c272b06c7e1846bdaf3f067bf"
+    },
+    "artifacts/vision-model-20261020-adapter/dataset_corrections.json": {
+      "path": "linux/picture_new/upstream/adapter/dataset_corrections.json",
+      "sha256": "c99ceb46800aa7021066027c601b439a322b06aa18ee00878b00aff6f1fce368"
+    },
+    "artifacts/vision-model-20261020-adapter/diagnose_first_layer.py": {
+      "path": "linux/picture_new/upstream/adapter/diagnose_first_layer.py",
+      "sha256": "70834d3a3a27d238a87d000cbffca1fc1c51aaa198671a70249d01d6f3123d31"
+    },
+    "artifacts/vision-model-20261020-adapter/diagnose_live_int32.py": {
+      "path": "linux/picture_new/upstream/adapter/diagnose_live_int32.py",
+      "sha256": "7dd6c3cec99385d12a8e713fc04f9e547f0621884060e74d0879cc05c00fffb0"
+    },
+    "artifacts/vision-model-20261020-adapter/evaluate_combined.py": {
+      "path": "linux/picture_new/upstream/adapter/evaluate_combined.py",
+      "sha256": "f788a65f5b04907882975f7d7f8da11a41fe1f6e56fda58c69b2cd5fab65719b"
+    },
+    "artifacts/vision-model-20261020-adapter/export_golden_inputs.py": {
+      "path": "linux/picture_new/upstream/adapter/export_golden_inputs.py",
+      "sha256": "e097a24a171072cef8beae83ecdf6412d3ff9be889e4e2900f3dc3f72442b687"
+    },
+    "artifacts/vision-model-20261020-adapter/export_native_graph.py": {
+      "path": "linux/picture_new/upstream/adapter/export_native_graph.py",
+      "sha256": "b95df5406fe6ea26be8ccf4ec7d9d5a1200f96557efe1de26f5f428159227ff6"
+    },
+    "artifacts/vision-model-20261020-adapter/export_native_parameters.py": {
+      "path": "linux/picture_new/upstream/adapter/export_native_parameters.py",
+      "sha256": "dbdbf95958ad1fc105955693005df64215ac9b5a90a46e2e3f390247e9dae1a3"
+    },
+    "artifacts/vision-model-20261020-adapter/export_refinement_rng.py": {
+      "path": "linux/picture_new/upstream/adapter/export_refinement_rng.py",
+      "sha256": "f53cb2bbadff779934d44f0f06efd798742eb99532e1403adf43bcbe0d0445e0"
+    },
+    "artifacts/vision-model-20261020-adapter/fen_gt.json": {
+      "path": "linux/picture_new/upstream/adapter/fen_gt.json",
+      "sha256": "de06092f04fa2020b7b4002e045610b026973ee32f3302b23cb49a2e5eaceb09"
+    },
+    "artifacts/vision-model-20261020-adapter/finalize_native_deployment.py": {
+      "path": "linux/picture_new/upstream/adapter/finalize_native_deployment.py",
+      "sha256": "6baf50cd2020a2f5b360ab57da351f4b391f564390baadb41c134c076e63f9e4"
+    },
+    "artifacts/vision-model-20261020-adapter/finalize_p20.py": {
+      "path": "linux/picture_new/upstream/adapter/finalize_p20.py",
+      "sha256": "004f53ba2ab31456bff6cf0e3be967c9b0123018ab7ace4495d0b0afe2e4996e"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry/board_perspective.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry/board_perspective.py",
+      "sha256": "065b03211fa19d9a915cebfd4a79ab683825863dae95f89249cc6e0351f6a3d3"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry/geometry_contract.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry/geometry_contract.py",
+      "sha256": "0948e16c1590edac1b8f32375f643aee562f276088f6d2e297026b3167847bb9"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry/piece_fit.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry/piece_fit.py",
+      "sha256": "6beb99ab979f56438e65d62bd202a16e0e563bf95e1391cc37d68266bfb848e6"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry/roi.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry/roi.py",
+      "sha256": "653d84be26307cf60c6b68fbf72b2689812060546a8632b87f6cf29fc51c2209"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/board_perspective.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/board_perspective.py",
+      "sha256": "065b03211fa19d9a915cebfd4a79ab683825863dae95f89249cc6e0351f6a3d3"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/c_ref/geometry_ref.c": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/c_ref/geometry_ref.c",
+      "sha256": "7dd2450bfc84031bc8078eaf6286eec1508cdcc9ff6498b0c9a38ef61024fe94"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/c_ref/geometry_ref.h": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/c_ref/geometry_ref.h",
+      "sha256": "2f79d10bbaf4dd9b4f3da6c464e7032c9e0aa2e0ac6b29dea3f6459b94083c0c"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/c_ref/test_harness.c": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/c_ref/test_harness.c",
+      "sha256": "905a534d2f45bd84bc978c30c307c860a33a0b4c03f50029f050707717c2bcd6"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/geometry_contract.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/geometry_contract.py",
+      "sha256": "0948e16c1590edac1b8f32375f643aee562f276088f6d2e297026b3167847bb9"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/piece_fit.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/piece_fit.py",
+      "sha256": "6beb99ab979f56438e65d62bd202a16e0e563bf95e1391cc37d68266bfb848e6"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/roi.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/roi.py",
+      "sha256": "653d84be26307cf60c6b68fbf72b2689812060546a8632b87f6cf29fc51c2209"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/test_geometry.py": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/test_geometry.py",
+      "sha256": "efcd8c04ab0d6e9be0d78110415937ae2b018a40ff80d515fbb5728e505d7bc5"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/test_vectors/vectors.json": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/test_vectors/vectors.json",
+      "sha256": "0345f3ee21145b3c40923c290b016c0946ee02c6a20dc1fe527d6eb2f405ba0f"
+    },
+    "artifacts/vision-model-20261020-adapter/geometry_fallback/test_vectors/vectors.tsv": {
+      "path": "linux/picture_new/upstream/adapter/geometry_fallback/test_vectors/vectors.tsv",
+      "sha256": "0f2c09cffbc14913f3bd02ff6a4f67c1facabd9556f4d22f38cae4af2d7f2d4c"
+    },
+    "artifacts/vision-model-20261020-adapter/inspect_native_graph.py": {
+      "path": "linux/picture_new/upstream/adapter/inspect_native_graph.py",
+      "sha256": "3c9686a6d8ad58095cfb38274a3ac0f403f6ed1627ad4d1bef9fa3e3ef0f14e0"
+    },
+    "artifacts/vision-model-20261020-adapter/install_native_sd_copy.ps1": {
+      "path": "linux/picture_new/upstream/adapter/install_native_sd_copy.ps1",
+      "sha256": "d878e8d83a1d0ff02cd75b87add214d6cb20c3bcc3219414da7d0bdf0c1e20a1"
+    },
+    "artifacts/vision-model-20261020-adapter/make_native_rootfs.ps1": {
+      "path": "linux/picture_new/upstream/adapter/make_native_rootfs.ps1",
+      "sha256": "62cd7448127c9ea04050378b3bf0023d13cd275b13240e75cfe1b06207a75690"
+    },
+    "artifacts/vision-model-20261020-adapter/make_ram_patch.py": {
+      "path": "linux/picture_new/upstream/adapter/make_ram_patch.py",
+      "sha256": "0a2db1aef7531cad9877d2327b3d16bcb8ead071b94ec39cef8d7efc94085b6c"
+    },
+    "artifacts/vision-model-20261020-adapter/package_native_ram.py": {
+      "path": "linux/picture_new/upstream/adapter/package_native_ram.py",
+      "sha256": "fcc8f00f4676e824e94fce5f006c9b7b74122d7904b1c16b56b744910fdf70b4"
+    },
+    "artifacts/vision-model-20261020-adapter/package_native_sd_copy.py": {
+      "path": "linux/picture_new/upstream/adapter/package_native_sd_copy.py",
+      "sha256": "88be1560da4b355bebe68ed221dd4527b858e15d24e0db9fd4562463552c423d"
+    },
+    "artifacts/vision-model-20261020-adapter/package_sd_namespace.py": {
+      "path": "linux/picture_new/upstream/adapter/package_sd_namespace.py",
+      "sha256": "b5ecf80fecd441fb46eda3a994d97b6f47abec266a99a75aff037293be9e0416"
+    },
+    "artifacts/vision-model-20261020-adapter/package_training_handoff.py": {
+      "path": "linux/picture_new/upstream/adapter/package_training_handoff.py",
+      "sha256": "ec9a74b4804dbf23de6b26d9ff719d1d2686501bb2330db7a7dab7aa4cfa93b5"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_board_replay.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_board_replay.py",
+      "sha256": "83c37cbd1f7e0706cb4d453527d4885b4a4305ddff85ac17d8e681bf0462d1fc"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_compact_replay.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_compact_replay.py",
+      "sha256": "1abad8c10edad9fdaa365d68d1b713d0918a0faa518a7d5df2e731682868a25a"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_native_candidate.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_native_candidate.py",
+      "sha256": "2bac3ce4a46198c5e0ace0b9c442869b68863183d7880101d70e777bd4e5d426"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_native_sd_copy.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_native_sd_copy.py",
+      "sha256": "d0fb4d83df1c5e7f2f9800e0ece2b9f8ff2d50c911b6c6a5fe6f38b778661828"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_native_sd_namespace.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_native_sd_namespace.py",
+      "sha256": "72b8988636ecf1eb9f2de31882bf8a3e8e54978fcff0632898b4a51061ab3b5b"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_piece_fit_resume.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_piece_fit_resume.py",
+      "sha256": "fe4f22b9a4e21a79b6103d4c0756aaa9449915bd1cab4ca6c436379d32669653"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_regression.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_regression.py",
+      "sha256": "9032383689560f28cea38cfffb9df9a51a6ce7e1d86c0e0b32f6815d09241df5"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_runtime_requirements.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_runtime_requirements.py",
+      "sha256": "a3130c8dabdfcd92ab35741d19bcb0ed988d28504b11fe0b0fb4914199159306"
+    },
+    "artifacts/vision-model-20261020-adapter/prepare_sd_namespace_install.py": {
+      "path": "linux/picture_new/upstream/adapter/prepare_sd_namespace_install.py",
+      "sha256": "e6a4cdaf7321db14535598499db7c5a3089e035b02a78878403430020add11f7"
+    },
+    "artifacts/vision-model-20261020-adapter/preview_rgb565.py": {
+      "path": "linux/picture_new/upstream/adapter/preview_rgb565.py",
+      "sha256": "ce5b47a9d068cf7cc683f8ee95270feb30c4028b0dfe3ef00c60aecf72afd079"
+    },
+    "artifacts/vision-model-20261020-adapter/probe_cpu_mm.py": {
+      "path": "linux/picture_new/upstream/adapter/probe_cpu_mm.py",
+      "sha256": "01ebe5663e0eb0caaab0657e0d3d70781ceeb71ed5958a12ff61dc4ca91c4ca2"
+    },
+    "artifacts/vision-model-20261020-adapter/probe_uart_native.ps1": {
+      "path": "linux/picture_new/upstream/adapter/probe_uart_native.ps1",
+      "sha256": "7df7be02417a3571a4e992fa7aa0dcb1b2c3176f202a8cc1121c41cccf51f5da"
+    },
+    "artifacts/vision-model-20261020-adapter/profile_dense_plan.py": {
+      "path": "linux/picture_new/upstream/adapter/profile_dense_plan.py",
+      "sha256": "19cc4b3fdcee60930419936fac0d0e602ef27a1bc4bfdb7ebaa00a49f1fce55d"
+    },
+    "artifacts/vision-model-20261020-adapter/recognize_peer.py": {
+      "path": "linux/picture_new/upstream/adapter/recognize_peer.py",
+      "sha256": "27785eddf9ee016a53267ed3a868ce2b3e485ecd1abe2043f9f15a505124a2c2"
+    },
+    "artifacts/vision-model-20261020-adapter/requirements-pc-reference.txt": {
+      "path": "linux/picture_new/upstream/adapter/requirements-pc-reference.txt",
+      "sha256": "c7200a5c510532cd598ab971cb060dd534a80ab3a36a44cf2416e984c577409f"
+    },
+    "artifacts/vision-model-20261020-adapter/rescore_retained_missing.py": {
+      "path": "linux/picture_new/upstream/adapter/rescore_retained_missing.py",
+      "sha256": "41f5011a1318c4a06b5355edfe67d0f0a006681ac85a195f0ba9e477016dbbdd"
+    },
+    "artifacts/vision-model-20261020-adapter/run_c_oracles.py": {
+      "path": "linux/picture_new/upstream/adapter/run_c_oracles.py",
+      "sha256": "9f16a9b76389e4ec3f173f9b1e6470466c0271c601178ab72214b254b13363ba"
+    },
+    "artifacts/vision-model-20261020-adapter/run_device_replay.sh": {
+      "path": "linux/picture_new/upstream/adapter/run_device_replay.sh",
+      "sha256": "ca4df12dfc2d6600553a029798fd21300a9396ff9c58bb9d95a32b6fec464d3a"
+    },
+    "artifacts/vision-model-20261020-adapter/run_live_references.py": {
+      "path": "linux/picture_new/upstream/adapter/run_live_references.py",
+      "sha256": "57d3907e6d7d97639dbc9c361a98121add20f68a2d1263efc8a621119c1c5adf"
+    },
+    "artifacts/vision-model-20261020-adapter/run_reference_checks.py": {
+      "path": "linux/picture_new/upstream/adapter/run_reference_checks.py",
+      "sha256": "cb44b69bcf372b564232e73142c597bccbab754ab13ea383314bdb9b451b6175"
+    },
+    "artifacts/vision-model-20261020-adapter/run_regression.ps1": {
+      "path": "linux/picture_new/upstream/adapter/run_regression.ps1",
+      "sha256": "0f3ada33d69c48b93b6a98d74aca949e34f7b21af68ee6998bd3b0c3381d94d1"
+    },
+    "artifacts/vision-model-20261020-adapter/run_user_game3_evaluation.py": {
+      "path": "linux/picture_new/upstream/adapter/run_user_game3_evaluation.py",
+      "sha256": "05765bf12debdcca12c98682422bd15b101e04b93b04bf50ac9299efb19e8aae"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/test_boot_menu.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/test_boot_menu.c",
+      "sha256": "cfc312d735df81166be18bb29c022752ec533aff9846fca27b196f51274082e1"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/test_resident_matrix.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/test_resident_matrix.c",
+      "sha256": "1ff10a3fb974571bfee204303f8d3d20d0b38c3d2eb186c3c36aa8491f7c899c"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/test_sd_namespace_install.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/test_sd_namespace_install.c",
+      "sha256": "89e4c029bf65b5d07e2259d08cf4b3cb305d51a4cfbb9a00160b9b470ca4fe70"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xiangqi-model-launcher": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xiangqi-model-launcher",
+      "sha256": "6e8725e9aa1bd131277593e7ffe97368692b64803405df1796b7ab443ed885a7"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq-picture-native.conf": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq-picture-native.conf",
+      "sha256": "e4ae4b1b883b9cb4fb0876fbe1e9876bc623584740482244d53588a012c5d42b"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_menu.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_menu.c",
+      "sha256": "03230077b8b6e796832bfbe26ed26d9fae5c2dc27bb6aeb42fca9604ed805fba"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_menu.h": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_menu.h",
+      "sha256": "48d146f8061ccb46999e59cef148663f897cd113a519313d547445571f049110"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_menu.ld": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_menu.ld",
+      "sha256": "79201e83c121cb3bbfd3e71d0a73cd1878ba198c820d222433b0ff9feaf73d69"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_menu_contract.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_menu_contract.c",
+      "sha256": "659a5a763afd3eac8d9eaaa90b84f8c9370fd1734cab4aea2ec512bf4e836ee6"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_menu_start.S": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_menu_start.S",
+      "sha256": "85acb67372c8a6cb4974f92515568a11d2658035aac528fa4936ddd571f9b3a5"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_boot_strings.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_boot_strings.c",
+      "sha256": "b9e535e5e48c2bed72de5bbb9d5283871db0334631c435293437d22ee455fc05"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_camera_exec.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_camera_exec.c",
+      "sha256": "802c48ac7df299f5ec9474a9db38f82eca678136719ebab675b5b3370ed5f12f"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_camera_quality.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_camera_quality.c",
+      "sha256": "63acbc9acd8646f65095096b0a60912cc1612b2ff2fe89c6d6a0812f46450bee"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_frame_thumbnail.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_frame_thumbnail.c",
+      "sha256": "54bf0f27a6592008be1da9fff438940e85f6d9ded8f7cc0177beedc5cab6fe6d"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_golden_probe.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_golden_probe.c",
+      "sha256": "071006d8aa44492ae6cf7d388d6317c803321549dcc09e22be2c00d949157c4c"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_int8_layer.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_int8_layer.c",
+      "sha256": "7e11b8b6a397ce2f7c42339b4af3f37025e801c75f9160589ac2b1f87be45fe1"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_int8_layer.h": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_int8_layer.h",
+      "sha256": "bbf33c6867d544265a90c4c33012e94fdc305075dc6a8806d14127092cf11e89"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_native_graph.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_native_graph.c",
+      "sha256": "cd24812cd4211d506a9b742860b64bb07279846fb61d1009fbe2928f489156db"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_native_graph.h": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_native_graph.h",
+      "sha256": "f5c9c031a2e7aaa1d3bf292576891c0ab169b1f19c5fe86f7331a08e7e830fe2"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_native_post.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_native_post.c",
+      "sha256": "ebb620589adc0c478a94cd0f905b1af9d3200ca64596fe15e18c66e3f2ebc4cf"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_native_post.h": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_native_post.h",
+      "sha256": "b1e3e61839991c152ff92c5ef492286c7633f42b76131e49fb3bbc0136f89890"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_native_worker.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_native_worker.c",
+      "sha256": "b7e75ca7bfbf937bc7d29224bdfc2e312d24e02ba60f150acca0e6b7caa5d30c"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_piece_fit_probe.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_piece_fit_probe.c",
+      "sha256": "e38eb779146a38c81350ac9b8fbde032dfcef268e7018f52151c536d789eed7a"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_resident_matrix.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_resident_matrix.c",
+      "sha256": "57c200ade80af3f8054f3070a84475cd6d8d9252dec189c7581302bd947d6640"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_result_witness.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_result_witness.c",
+      "sha256": "2958c6062762328d3f250edfef7fb4e376ab696dc45522565f72c1722d5383ff"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_sd_namespace_fat.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_sd_namespace_fat.c",
+      "sha256": "6513343f0f2d0880b845a09a7ff229ea21c2fc8edd9422b82fd7cf8e2dfe8d91"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_sd_namespace_install.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_sd_namespace_install.c",
+      "sha256": "7e9b5329cb092e505212170cb5154a90c1c8a56a1cd315418c0e70dec0a2f395"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_sha256.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_sha256.c",
+      "sha256": "38dd9d0d0e2dfd29c81a023a5d1afa148132a43a5316636cc1f5034fd7ecd014"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_sha256.h": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_sha256.h",
+      "sha256": "cda5de1816751b69938263cddb502e006140527431516d1504f75de0ab2efcf5"
+    },
+    "artifacts/vision-model-20261020-adapter/runtime/xq_transfer.c": {
+      "path": "linux/picture_new/upstream/adapter/runtime/xq_transfer.c",
+      "sha256": "6b332d9789fa031a8abfe10421666a8d680847f223ad5311471973d6d4f43da3"
+    },
+    "artifacts/vision-model-20261020-adapter/sd_namespace.py": {
+      "path": "linux/picture_new/upstream/adapter/sd_namespace.py",
+      "sha256": "60fdd778ff501b1c2e8ba312f0e59c128f4d1946ae0c6302dfabb78fae774ff2"
+    },
+    "artifacts/vision-model-20261020-adapter/serial_install_sd_namespace.ps1": {
+      "path": "linux/picture_new/upstream/adapter/serial_install_sd_namespace.ps1",
+      "sha256": "f2468c3d64751a968722b54d6e926f3e043fcd987358d2bffa23974229c529d7"
+    },
+    "artifacts/vision-model-20261020-adapter/snapshot_native.py": {
+      "path": "linux/picture_new/upstream/adapter/snapshot_native.py",
+      "sha256": "cf55e4ec978480215f4cecd55926a35c7ce49c94b10b938632e410cd700d7242"
+    },
+    "artifacts/vision-model-20261020-adapter/test_sd_namespace.py": {
+      "path": "linux/picture_new/upstream/adapter/test_sd_namespace.py",
+      "sha256": "b0e003dfc303a37ddab9523c368bc92c73c2fce33a34e9fcedd93bf4fd8afa99"
+    },
+    "artifacts/vision-model-20261020-adapter/user_game3_truth.py": {
+      "path": "linux/picture_new/upstream/adapter/user_game3_truth.py",
+      "sha256": "215ebfdffc7a54809cbd0adb8d83a44661cec84c8893a88ed8f32c683c09b831"
+    },
+    "artifacts/vision-model-20261020-adapter/verify_dataset.py": {
+      "path": "linux/picture_new/upstream/adapter/verify_dataset.py",
+      "sha256": "e607e0dfbac239e2feb2ed09b17b48cb18d3b6488f45978ae3377816d9f00b53"
+    },
+    "artifacts/vision-model-20261020/manifest.json": {
+      "path": "linux/picture_new/upstream/artifacts/vision-model-20261020/manifest.json",
+      "sha256": "1935184a3a25d17e116a65d97cbdd15e025af245008b69a6f2db10cd80c60619"
+    },
+    "linux/vision/build.sh": {
+      "path": "linux/picture_new/upstream/linux/vision/build.sh",
+      "sha256": "09fc23c652937ced7db3489594cf3c9e18949808ed01b39720a954f0c4363985"
+    },
+    "linux/vision/build_gui.sh": {
+      "path": "linux/picture_new/upstream/linux/vision/build_gui.sh",
+      "sha256": "e6307c170295dd679eb78f2a4b6541e0c2c4e259c9bd446f19a3f5067a23ca68"
+    },
+    "linux/vision/build_roi_candidate.sh": {
+      "path": "linux/picture_new/upstream/linux/vision/build_roi_candidate.sh",
+      "sha256": "bdca74f37225ae9df1f5c58b398fef3e840b24b919e2e05e87e3c0f6bc92ce55"
+    },
+    "linux/vision/picture_glyphs.txt": {
+      "path": "linux/picture_new/upstream/linux/vision/picture_glyphs.txt",
+      "sha256": "66d67273e33cf080789a06eef0155946e03c6aac2400032f70775ddf5a365294"
+    },
+    "linux/vision/test_boot_preinit.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_boot_preinit.c",
+      "sha256": "7f52104b23c8f4cbed2f3618aed3a1089c5229b430d80b075406efa85c2a2608"
+    },
+    "linux/vision/test_camera.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_camera.c",
+      "sha256": "ccb943eedd5cf4ae7e00685d8362fd112ca3290235bc8ea8683666b968c2aed1"
+    },
+    "linux/vision/test_camera_retry.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_camera_retry.c",
+      "sha256": "99ab62ba8d52053eee051beaa0ddf5e188eb6fb38874f2ffeec9f0188610810b"
+    },
+    "linux/vision/test_geometry.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_geometry.c",
+      "sha256": "3c25d5dcfd8df5190b3c5b5f1f9981ca7115761be4f9867d3f48bcefd0ec6908"
+    },
+    "linux/vision/test_grid.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_grid.c",
+      "sha256": "039b588718390941c479f446ae2727ec18f83ba2d7ab2fdc64eb6a669f64e5e7"
+    },
+    "linux/vision/test_host.sh": {
+      "path": "linux/picture_new/upstream/linux/vision/test_host.sh",
+      "sha256": "350972740f3e26a0e068c77d333c3c67aed0d183cac8068e32d6b560c64fa986"
+    },
+    "linux/vision/test_mac_board.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_mac_board.c",
+      "sha256": "1e3864295a6b431a4013390e000821c7231f3196bae3295df77201540463db9b"
+    },
+    "linux/vision/test_mac_tiles.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_mac_tiles.c",
+      "sha256": "5888981444b2f293dd51ce33d2a3c68b65481a9accc4e28c5115b5d448ccdf63"
+    },
+    "linux/vision/test_picture.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_picture.c",
+      "sha256": "e47bb610234cf75e14d8649a450d1514bad8cff245fb327c26b37a1a2d7d23c8"
+    },
+    "linux/vision/test_picture_gui.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_picture_gui.c",
+      "sha256": "a5197aab45d8db3950477a950641ccb3d45bc7d2efe13ec0d5a74d6ba6334487"
+    },
+    "linux/vision/test_picture_hid.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_picture_hid.c",
+      "sha256": "43e9b27be4556ac2ed76921c4926fbf4c4705e9829950bb2f511fa7365f3b387"
+    },
+    "linux/vision/test_picture_png.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_picture_png.c",
+      "sha256": "2b030daa4a248b1fbfa7fbfc1c714ec54d2fc56b345bc69968541f6c9e4e172b"
+    },
+    "linux/vision/test_picture_renderer.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_picture_renderer.c",
+      "sha256": "517dc1d4ba020dec0239dee017c82c105cf31c0e13f7a056360b2a6930d7e4bf"
+    },
+    "linux/vision/test_roi.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_roi.c",
+      "sha256": "702e99667de308db45945e40db457cb521c162d038bafb54faebe2d14287ce74"
+    },
+    "linux/vision/test_roi_pipeline.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_roi_pipeline.c",
+      "sha256": "7a02d31eac4919606da155dfb71b3e9d07f631b6f8c4164c64c41cf2edc4daab"
+    },
+    "linux/vision/test_speech.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_speech.c",
+      "sha256": "b0cc1283fd6bc7b268396d6fd43a597f81d5ededbb768b909cbd7dff89c6d217"
+    },
+    "linux/vision/test_speech_linux.c": {
+      "path": "linux/picture_new/upstream/linux/vision/test_speech_linux.c",
+      "sha256": "9f09eb8da95370bafb488260cbbf47607a97300c156b7df35157e9af1a919b99"
+    },
+    "linux/vision/xq_camera.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera.c",
+      "sha256": "fcc21bb76001e353c04ab4b5a7002b9a74064071a95c52676d52d3f910b801c8"
+    },
+    "linux/vision/xq_camera.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera.h",
+      "sha256": "99e65bf3079ed2d9ba479d802b669c682b3495396cd473f2929ccd940e1e0b25"
+    },
+    "linux/vision/xq_camera_capture.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera_capture.c",
+      "sha256": "0605e53188bfaa8bcb308fe6949b19d22af2bb032256fe1bb4e6f28ff6fbb53a"
+    },
+    "linux/vision/xq_camera_linux.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera_linux.c",
+      "sha256": "82bf46e4a14bd5aea6d5ce70f2b2c39b25ebbec5140eb7ec0b1a590db5d2a278"
+    },
+    "linux/vision/xq_camera_retry.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera_retry.c",
+      "sha256": "6efcf09598929c2722683989115b45ca27b13a0d1beae681c572dab9645ae08c"
+    },
+    "linux/vision/xq_camera_retry.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_camera_retry.h",
+      "sha256": "a4ef2e5f7867e2b64bed8a5ddfce490b8c0c4b625613b037eb1a8b04585e71c1"
+    },
+    "linux/vision/xq_geometry.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_geometry.c",
+      "sha256": "36cd13ca034dfc245ce3761802a2751abb375265c02f130a773d43f1560b8358"
+    },
+    "linux/vision/xq_geometry.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_geometry.h",
+      "sha256": "f95aeae7b4b4890512cb1c15642f0e07f489fec3034a8f5e5f7d7ca1793c455d"
+    },
+    "linux/vision/xq_grid.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_grid.c",
+      "sha256": "c464afff028b738a70ca65dcb97f718f49260beac9ef9a3f9b74281e527b37b6"
+    },
+    "linux/vision/xq_grid.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_grid.h",
+      "sha256": "4d8029febcfdae46796c3d6f941fb21194bcaf4d893f08cdc5db5987fe340aff"
+    },
+    "linux/vision/xq_mac.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_mac.c",
+      "sha256": "b7226a7e5d2952fa30166902c4a562deb24a8a201060484682191c88dcb17b5c"
+    },
+    "linux/vision/xq_mac.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_mac.h",
+      "sha256": "96bf059598ffdee11191a92602b851c64f2419b5483429edb76bb93d84329e9b"
+    },
+    "linux/vision/xq_mac_linux.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_mac_linux.c",
+      "sha256": "ee9db2a735ada96fa60841db97d11c20db8ed60cb4a614ba3bece7d4ec2b9071"
+    },
+    "linux/vision/xq_picture.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture.c",
+      "sha256": "c78680240437083bab0837e9e0a67c16fc71665322069907d45a679601983284"
+    },
+    "linux/vision/xq_picture.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture.h",
+      "sha256": "470505bf5834ea3b856e499a3031b355b4374b239525aa7a523ffce9b634a8d7"
+    },
+    "linux/vision/xq_picture_display.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture_display.h",
+      "sha256": "6b310f6d73f9745950a6f633c6177905d8499b38560d53dbeee8e76e20860621"
+    },
+    "linux/vision/xq_picture_font.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture_font.h",
+      "sha256": "ed17d67646f6910ae28596e7c31a1cc26bacb692aa424271d056cde4f0764c6a"
+    },
+    "linux/vision/xq_picture_gui.inc": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture_gui.inc",
+      "sha256": "c655ecb4ccbda7a8c9eff9fb088ef7b25cc4d53e20223a66c2ac5b1b395cb189"
+    },
+    "linux/vision/xq_picture_model.inc": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_picture_model.inc",
+      "sha256": "b49a77e02ca71f43bc3ba427a2268364f235a287afe27756f392d0214961e474"
+    },
+    "linux/vision/xq_roi.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_roi.c",
+      "sha256": "cdde062108c8b5118fee0b58b64a7c33caf881521aab143d08154d28d57ed88b"
+    },
+    "linux/vision/xq_roi.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_roi.h",
+      "sha256": "3744d24fccc0ac6ca5ec36869e1efde96b1873f4c0b8bf6a8eeae139a79a3894"
+    },
+    "linux/vision/xq_roi_pipeline.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_roi_pipeline.c",
+      "sha256": "de3557616631cacf4c45684425b4bf7c3211a58d6f12a3142bf18c37815bfa65"
+    },
+    "linux/vision/xq_roi_pipeline.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_roi_pipeline.h",
+      "sha256": "e5b7d61c560a3bcc723524c0e2d9435a1cc06803a7db08f50d41d17c64d4dc81"
+    },
+    "linux/vision/xq_speech.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_speech.c",
+      "sha256": "4f74521fe6adcad4debc64f2ecccc6c8eec5772d00ec2fa142e73a4c42c003fb"
+    },
+    "linux/vision/xq_speech.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_speech.h",
+      "sha256": "f8011999389e076fd23c5c9d3b75d067f4d7f3798f909e1c189539649f3b1396"
+    },
+    "linux/vision/xq_speech_linux.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_speech_linux.c",
+      "sha256": "514535e8d59d5df9ae39f108ba9121c64039f52ed633dc1d9dd40e8f840bcdb9"
+    },
+    "linux/vision/xq_vision.c": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_vision.c",
+      "sha256": "913f0cd2651c15fd09765e2590a8e0eb8333218459dc7a916757b8d3382116a2"
+    },
+    "linux/vision/xq_vision.h": {
+      "path": "linux/picture_new/upstream/linux/vision/xq_vision.h",
+      "sha256": "379d7b110f0fc0442f02188b35a05bd4625cac1b01a6d2dc28b76bff9398c9bc"
+    }
+  },
+  "weights_in_git": false
+}

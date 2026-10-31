@@ -1,0 +1,331 @@
+{
+  "schema": "xinyi-battle-font-r17/1",
+  "glyph_count": 76,
+  "glyphs": [
+    {
+      "codepoint": 19987,
+      "size": 24
+    },
+    {
+      "codepoint": 20132,
+      "size": 24
+    },
+    {
+      "codepoint": 20272,
+      "size": 24
+    },
+    {
+      "codepoint": 20493,
+      "size": 24
+    },
+    {
+      "codepoint": 20877,
+      "size": 24
+    },
+    {
+      "codepoint": 21161,
+      "size": 24
+    },
+    {
+      "codepoint": 21367,
+      "size": 24
+    },
+    {
+      "codepoint": 21464,
+      "size": 24
+    },
+    {
+      "codepoint": 21521,
+      "size": 24
+    },
+    {
+      "codepoint": 22260,
+      "size": 24
+    },
+    {
+      "codepoint": 22810,
+      "size": 24
+    },
+    {
+      "codepoint": 23383,
+      "size": 24
+    },
+    {
+      "codepoint": 23618,
+      "size": 24
+    },
+    {
+      "codepoint": 24449,
+      "size": 24
+    },
+    {
+      "codepoint": 24452,
+      "size": 24
+    },
+    {
+      "codepoint": 24863,
+      "size": 24
+    },
+    {
+      "codepoint": 25152,
+      "size": 24
+    },
+    {
+      "codepoint": 25805,
+      "size": 24
+    },
+    {
+      "codepoint": 26435,
+      "size": 24
+    },
+    {
+      "codepoint": 26723,
+      "size": 24
+    },
+    {
+      "codepoint": 27493,
+      "size": 24
+    },
+    {
+      "codepoint": 29305,
+      "size": 24
+    },
+    {
+      "codepoint": 30001,
+      "size": 24
+    },
+    {
+      "codepoint": 30693,
+      "size": 24
+    },
+    {
+      "codepoint": 31215,
+      "size": 24
+    },
+    {
+      "codepoint": 31227,
+      "size": 24
+    },
+    {
+      "codepoint": 31383,
+      "size": 24
+    },
+    {
+      "codepoint": 32988,
+      "size": 24
+    },
+    {
+      "codepoint": 33539,
+      "size": 24
+    },
+    {
+      "codepoint": 33853,
+      "size": 24
+    },
+    {
+      "codepoint": 35282,
+      "size": 24
+    },
+    {
+      "codepoint": 35780,
+      "size": 24
+    },
+    {
+      "codepoint": 35889,
+      "size": 24
+    },
+    {
+      "codepoint": 36229,
+      "size": 24
+    },
+    {
+      "codepoint": 36741,
+      "size": 24
+    },
+    {
+      "codepoint": 38062,
+      "size": 24
+    },
+    {
+      "codepoint": 40736,
+      "size": 24
+    },
+    {
+      "codepoint": 40784,
+      "size": 24
+    },
+    {
+      "codepoint": 19987,
+      "size": 32
+    },
+    {
+      "codepoint": 20132,
+      "size": 32
+    },
+    {
+      "codepoint": 20272,
+      "size": 32
+    },
+    {
+      "codepoint": 20493,
+      "size": 32
+    },
+    {
+      "codepoint": 20877,
+      "size": 32
+    },
+    {
+      "codepoint": 21161,
+      "size": 32
+    },
+    {
+      "codepoint": 21367,
+      "size": 32
+    },
+    {
+      "codepoint": 21464,
+      "size": 32
+    },
+    {
+      "codepoint": 21521,
+      "size": 32
+    },
+    {
+      "codepoint": 22260,
+      "size": 32
+    },
+    {
+      "codepoint": 22810,
+      "size": 32
+    },
+    {
+      "codepoint": 23383,
+      "size": 32
+    },
+    {
+      "codepoint": 23618,
+      "size": 32
+    },
+    {
+      "codepoint": 24449,
+      "size": 32
+    },
+    {
+      "codepoint": 24452,
+      "size": 32
+    },
+    {
+      "codepoint": 24863,
+      "size": 32
+    },
+    {
+      "codepoint": 25152,
+      "size": 32
+    },
+    {
+      "codepoint": 25805,
+      "size": 32
+    },
+    {
+      "codepoint": 26435,
+      "size": 32
+    },
+    {
+      "codepoint": 26723,
+      "size": 32
+    },
+    {
+      "codepoint": 27493,
+      "size": 32
+    },
+    {
+      "codepoint": 29305,
+      "size": 32
+    },
+    {
+      "codepoint": 30001,
+      "size": 32
+    },
+    {
+      "codepoint": 30693,
+      "size": 32
+    },
+    {
+      "codepoint": 31215,
+      "size": 32
+    },
+    {
+      "codepoint": 31227,
+      "size": 32
+    },
+    {
+      "codepoint": 31383,
+      "size": 32
+    },
+    {
+      "codepoint": 32988,
+      "size": 32
+    },
+    {
+      "codepoint": 33539,
+      "size": 32
+    },
+    {
+      "codepoint": 33853,
+      "size": 32
+    },
+    {
+      "codepoint": 35282,
+      "size": 32
+    },
+    {
+      "codepoint": 35780,
+      "size": 32
+    },
+    {
+      "codepoint": 35889,
+      "size": 32
+    },
+    {
+      "codepoint": 36229,
+      "size": 32
+    },
+    {
+      "codepoint": 36741,
+      "size": 32
+    },
+    {
+      "codepoint": 38062,
+      "size": 32
+    },
+    {
+      "codepoint": 40736,
+      "size": 32
+    },
+    {
+      "codepoint": 40784,
+      "size": 32
+    }
+  ],
+  "alpha_bytes": 30400,
+  "base_header_sha256": "2cacf26154ed2c70811c242d16966ee56005544436e555e8532d7c0b5d3789ec",
+  "base_preserved": true,
+  "source_font_sha256": "d68bafcb48a2707749396aa12bbbd833cb70401f3a9a689fd2902c7e0d295964",
+  "seed_header_sha256": "2c23c6d7c20579aed3a7f19b2c254e55e7234a6a8fb6baf57508cee58eb1c42b",
+  "seed_glyphs_preserved": 50,
+  "header_sha256": "f665ee826c0d24acdb45ce1d9e6bd46d72120be5a760b7d322e6c1c8ac6a6a58",
+  "source_sha256": {
+    "linux/xinyi/xinyi_ui_copy_r20.h": "60bb7b9b1ecb8362088f93621228e59302f55778fd3aeea0a350561a454e2b38",
+    "linux/xinyi/xinyi_battle_r17.h": "6dbc7696a9a21e8ec5d190c7ac0c18a4e35cdf50e5f1aa17d8878426e0ee0a84",
+    "linux/xinyi/xinyi_battle_metrics_r17.h": "e298d1852611904bb412ce33cd81d238c4bf0837f8695c82fd439203a0212146",
+    "linux/xinyi/xinyi_battle_speedups_r17.h": "901ac0052a1132c36f4e713c6ca957149acf364610b5ecd3d9374b60be8be42b",
+    "linux/xinyi/xinyi_home_metrics_r19.h": "4b88847d945cc498b37f88e65d75ae68a3ea855b442d7e8eefeb9ea31dec6441",
+    "linux/xinyi/xinyi_home_r13.h": "271769cee5554db71d591e84593fca6cf857855ef142de56d40975011e2689d4",
+    "linux/xinyi/xinyi_product.c": "06077db994bdc29519e332fdb61733b9d4d08129284138ddfbe7908d8eb13605",
+    "linux/xinyi_board/runtime.c": "b1f3cbc260011feb34bc7ac5ae3b6a239c83a124321a9dfa7b80596e7f825d6a",
+    "linux/xinyi_board/voice_bridge.c": "c9c1474a4035542747df50b72cc765c6738984aa1cf8cbb338e121e8fff04399"
+  },
+  "pillow": "12.0.0",
+  "freetype": "2.14.1",
+  "fonttools": "4.60.1"
+}

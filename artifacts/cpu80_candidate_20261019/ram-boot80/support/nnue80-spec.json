@@ -1,0 +1,31 @@
+[
+  {
+    "command": "ps; ls -l /proc/[0-9]*/fd/* 2>/dev/null | grep pango-mac || true",
+    "timeout": 20
+  },
+  {
+    "command": "sha256sum /usr/bin/pikafish-nnue-latency-clint /usr/bin/pikafish-driver-soak /usr/bin/pikafish-stageb-word-accept /opt/pikafish/stageb-mac.bin /opt/pikafish/stageb-golden.bin /opt/pikafish/cpu75-nnue.vectors /opt/xqvoice/sd77-candidate.xqt",
+    "timeout": 180
+  },
+  {
+    "command": "pikafish-stageb-word-accept /opt/pikafish/stageb-mac.bin /opt/pikafish/stageb-golden.bin",
+    "timeout": 180
+  },
+  {
+    "command": "unset PIKAFISH_MAC_BACKEND; PIKAFISH_MAC_REQUIRE_DRIVER=1 pikafish-driver-soak soak /opt/pikafish/stageb-mac.bin",
+    "timeout": 180
+  },
+  {
+    "command": "unset PIKAFISH_MAC_BACKEND; NNUE_SAMPLES=40 NNUE_REQUIRE_HW=1 NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 pikafish-nnue-latency-clint",
+    "timeout": 300,
+    "required": false
+  },
+  {
+    "command": "echo CPU80_NNUE_POSTCHECK; uptime",
+    "timeout": 20
+  },
+  {
+    "command": "echo CPU80_TIMER_SLEEP_BEGIN; sleep 2; echo CPU80_TIMER_SLEEP_END",
+    "timeout": 15
+  }
+]

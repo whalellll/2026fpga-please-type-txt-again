@@ -1,0 +1,332 @@
+[
+  {
+    "name": "clock",
+    "rows": [
+      {
+        "command": "cat /proc/uptime; sleep 10; cat /proc/uptime",
+        "timeout": 20,
+        "markers": [],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "environment",
+    "rows": [
+      {
+        "command": "ps; free; cat /proc/uptime; /usr/bin/pikafish-batch-check",
+        "timeout": 90,
+        "markers": [
+          "PIKAFISH_BATCH_CAPABILITY_PASS id=50464e31 features=00007de7"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      },
+      {
+        "command": "sha256sum /usr/bin/picture-new-bench-hwc-reference /usr/bin/picture-new-bench-exact-reference /usr/bin/pikafish-nnue-latency-clint-transfer-reference /usr/bin/xqvoice-small-cnn-profile",
+        "timeout": 150,
+        "markers": [
+          "a22516bfa96f84e73e5f7cdbf73fc955a9d0092e952a88cab6ba51f8d56999aa  /usr/bin/picture-new-bench-hwc-reference",
+          "68a97eebb19a429a70da32cabdc57b2a96020146548e4589fd8766f724f78903  /usr/bin/picture-new-bench-exact-reference",
+          "d357fd5b1da6fd888fd2205febb9e5ee6205f0fafd364e821b3d090b5105009f  /usr/bin/pikafish-nnue-latency-clint-transfer-reference",
+          "3be091aef57400f1b2dc5e50433313744e8228bf36e1e7c66eae1d5975985590  /usr/bin/xqvoice-small-cnn-profile"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "classifier-reference",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 120 /usr/bin/picture-new-bench-hwc-reference classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 3",
+        "timeout": 135,
+        "markers": [
+          "PICTURE_TIMING model=classifier",
+          "output_crc=805678c7",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "classifier-new",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 120 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 3",
+        "timeout": 135,
+        "markers": [
+          "PICTURE_TIMING model=classifier",
+          "output_crc=805678c7",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "board-reference",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 300 /usr/bin/picture-new-bench-hwc-reference board /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3",
+        "timeout": 315,
+        "markers": [
+          "PICTURE_TIMING model=board",
+          "output_crc=d830c1cd",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "board-new",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 300 /usr/bin/picture-new-bench board /opt/integrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3",
+        "timeout": 315,
+        "markers": [
+          "PICTURE_TIMING model=board",
+          "output_crc=d830c1cd",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "voice-reference",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-p3-reference /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      },
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-p3-reference /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      },
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-p3-reference /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "voice-new",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      },
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      },
+      {
+        "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "backend=mac",
+          "VOICE_STREAM_TIMING source=wav-replay",
+          "paced=1",
+          "streamed=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "voice-profile",
+    "rows": [
+      {
+        "command": "XQVOICE_PROFILE=1 /usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn-profile /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+        "timeout": 40,
+        "markers": [
+          "XQVOICE_PROFILE_V1 rc=0",
+          "VOICE_STREAM_TIMING source=wav-replay"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pikafish-reference",
+    "rows": [
+      {
+        "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 /usr/bin/pikafish-nnue-latency-clint-transfer-reference",
+        "timeout": 240,
+        "markers": [
+          "NNUE_LATENCY_CORRECTNESS_PASS",
+          "NNUE_DEDICATED_CACHE",
+          "NNUE_BATCH_BREAKDOWN"
+        ],
+        "allowed_exit": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pikafish-new",
+    "rows": [
+      {
+        "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 /usr/bin/pikafish-nnue-latency-clint",
+        "timeout": 240,
+        "markers": [
+          "NNUE_LATENCY_CORRECTNESS_PASS",
+          "NNUE_DEDICATED_CACHE",
+          "NNUE_BATCH_BREAKDOWN"
+        ],
+        "allowed_exit": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "search",
+    "rows": [
+      {
+        "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 PIKAFISH_PHASE4_NODES=128 /usr/bin/timeout 240 /usr/bin/pikafish-pipeline-search",
+        "timeout": 250,
+        "markers": [
+          "PIKAFISH_PIPELINE_SEARCH_PASS mode=1 cases=3 nodes=128"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "concurrent",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 45 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream >/tmp/transfer-voice.log 2>&1 & vp=$!; /usr/bin/timeout 45 /usr/bin/picture-new-bench classifier /opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 1 >/tmp/transfer-picture.log 2>&1 & ip=$!; wait \"$vp\"; vr=$?; wait \"$ip\"; ir=$?; cat /tmp/transfer-voice.log /tmp/transfer-picture.log; test \"$vr\" = 0 && test \"$ir\" = 0 && echo TRANSFER_CONCURRENT_PASS",
+        "timeout": 60,
+        "markers": [
+          "TRANSFER_CONCURRENT_PASS",
+          "output_crc=805678c7",
+          "backend=mac"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "detector-reference",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 1200 /usr/bin/picture-new-bench-hwc-reference detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 1",
+        "timeout": 1220,
+        "markers": [
+          "PICTURE_TIMING model=detector",
+          "output_crc=97265de4",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "detector-new",
+    "rows": [
+      {
+        "command": "/usr/bin/timeout 1200 /usr/bin/picture-new-bench detector /opt/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 2",
+        "timeout": 1220,
+        "markers": [
+          "PICTURE_TIMING model=detector",
+          "output_crc=97265de4",
+          "no_fallback=1"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "post",
+    "rows": [
+      {
+        "command": "ps; free; dmesg | tail -n 35; /usr/bin/pikafish-batch-check",
+        "timeout": 30,
+        "markers": [
+          "PIKAFISH_BATCH_CAPABILITY_PASS"
+        ],
+        "allowed_exit": [
+          0
+        ]
+      }
+    ]
+  }
+]

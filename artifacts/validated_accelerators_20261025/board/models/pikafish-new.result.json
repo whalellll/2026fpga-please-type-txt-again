@@ -1,0 +1,24 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:09:05.436146+00:00",
+  "commands": [
+    {
+      "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 /usr/bin/pikafish-nnue-latency-clint",
+      "exit": 2,
+      "host_response_seconds": 20.53575070000079,
+      "required_markers": [
+        "NNUE_LATENCY_CORRECTNESS_PASS",
+        "NNUE_DEDICATED_CACHE",
+        "NNUE_BATCH_BREAKDOWN"
+      ]
+    }
+  ],
+  "spec_sha256": "32ee06d57c0f2927ac42c629b260a3bc5de8945883df9c4b40b0285edccbb99c",
+  "uart_sha256": "c4bbae0064dd53a02dc76c6bf8dbe401f47e40fb0be3e5f2af411dae48cd1d0f",
+  "completed_utc": "2026-10-25T05:09:26.644282+00:00"
+}

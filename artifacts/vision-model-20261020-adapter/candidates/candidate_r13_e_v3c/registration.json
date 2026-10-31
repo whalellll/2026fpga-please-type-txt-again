@@ -1,0 +1,15 @@
+{
+  "selected_for_work": false,
+  "quantized_payload_available": true,
+  "model_sha256": {
+    "board": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825",
+    "detector": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d",
+    "classifier": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+  },
+  "local_quantized_candidate": "build/picture-merge-20261023/r13/E组合量化_candidate_r13_e_v3c/candidate_r13_e_v3c",
+  "reported_game2_INT_correct": 64,
+  "frames": 84,
+  "dev37_loss_pp": 5.41,
+  "quantized_gate": false,
+  "production_ready": false
+}

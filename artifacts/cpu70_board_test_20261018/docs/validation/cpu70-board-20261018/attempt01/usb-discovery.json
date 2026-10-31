@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Status":  "OK",
+        "Class":  "Ports",
+        "FriendlyName":  "Silicon Labs CP210x USB to UART Bridge (COM17)",
+        "InstanceId":  "USB\\VID_10C4\u0026PID_EA60\\0001"
+    },
+    {
+        "Status":  "OK",
+        "Class":  "USB",
+        "FriendlyName":  "USB Serial Converter B",
+        "InstanceId":  "USB\\VID_0403\u0026PID_6010\u0026MI_01\\8\u00262BBCCB4\u00260\u00260001"
+    },
+    {
+        "Status":  "OK",
+        "Class":  "USB",
+        "FriendlyName":  "USB Serial Converter A",
+        "InstanceId":  "USB\\VID_0403\u0026PID_6010\u0026MI_00\\8\u00262BBCCB4\u00260\u00260000"
+    },
+    {
+        "Status":  "OK",
+        "Class":  "USB",
+        "FriendlyName":  "USB Composite Device",
+        "InstanceId":  "USB\\VID_0403\u0026PID_6010\\8\u00263676596C\u00260\u00263"
+    },
+    {
+        "Status":  "OK",
+        "Class":  "Ports",
+        "FriendlyName":  "USB Serial Port (COM33)",
+        "InstanceId":  "FTDIBUS\\VID_0403+PID_6010+8\u00263676596C\u00260\u00263\u00261\\0000"
+    }
+]

@@ -1,0 +1,210 @@
+
+/ # uname -a; cat /proc/cpuinfo; ls -l /dev/pango-mac0 /dev/pango-audio0; ps; dm
+esg | tail -18; printf "\n__BOARD_END_0:%s\n" "$?"
+Linux buildroot 5.14.0 #1 SMP Fri Oct 16 01:12:30 CST 2026 riscv32 GNU/Linux
+processor	: 0
+hart		: 0
+isa		: rv32ima
+mmu		: sv32
+
+crw-------    1 root     root       10, 126 Jan  1 00:00 [1;35m/dev/pango-audio0[m
+crw-------    1 root     root       10, 127 Jan  1 00:00 [1;35m/dev/pango-mac0[m
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-eve]
+    6 root     [kworker/0:0H-ev]
+    7 root     [kworker/u2:0-ev]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [kdevtmpfs]
+   14 root     [netns]
+   15 root     [inet_frag_wq]
+   16 root     [oom_reaper]
+   17 root     [writeback]
+   18 root     [kcompactd0]
+   19 root     [kblockd]
+   20 root     [kswapd0]
+   21 root     [kworker/0:1-eve]
+   22 root     [kworker/0:1H]
+   23 root     [kworker/u2:1]
+   24 root     [khvcd]
+   25 root     [mld]
+   26 root     [ipv6_addrconf]
+   27 root     [kworker/u2:2-ev]
+   44 root     /sbin/syslogd -n
+   48 root     /sbin/klogd -n
+   94 root     ./xiangqi-gui-display-v3
+  100 root     ./xqvoice-display /dev/pango-audio0 /opt/xqvoice/sd77-candidate.
+  110 root     /bin/sh --
+  114 root     ps
+[    9.204954] Freeing initrd memory: 8336K
+[    9.210864] pango-mac 1fe10000.mac-accel: dense MAC scheduler ready: /dev/pango-mac0, 8 private contexts of 1048576 bytes
+[    9.231337] pango-audio 1fe00600.audio-capture: I2S capture ready: /dev/pango-audio0, 16000 Hz mono s16le, polling
+[    9.258786] i2c /dev entries driver
+[    9.329415] NET: Registered PF_INET6 protocol family
+[    9.365292] Segment Routing with IPv6
+[    9.370975] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    9.402022] NET: Registered PF_PACKET protocol family
+[    9.436760] Freeing unused kernel image (initmem) memory: 212K
+[    9.442434] Kernel memory protection not selected by kernel config.
+[    9.448918] Run /init as init process
+[    9.452333]   with arguments:
+[    9.455278]     /init
+[    9.457543]   with environment:
+[    9.460669]     HOME=/
+[    9.463014]     TERM=linux
+[   14.724254] random: dd: uninitialized urandom read (512 bytes read)
+[  135.950423] Linux userspace initialized; root shell next
+
+__BOARD_END_0:0
+/ # cat /tmp/voice-gui-display/gui-v3.log; cat /tmp/voice-gui-display/voice.log;
+ ls /usr/bin/*mac* /usr/bin/*nnue* /usr/bin/*stage* 2>/dev/null; true; printf "\
+n__BOARD_END_1:%s\n" "$?"
+XQ LINUX HARDWARE READY; drawing initial framebuffer
+XQ LINUX ENGINE DIRECT START
+XQ LINUX GUI READY; full Pikafish and official NNUE loading
+XQ LINUX INPUT READY; engine loading asynchronously; software=XQ_MOVE/XQ_NEWGAME/XQ_STATUS
+XQ LINUX INPUT FIFO READY path=/run/voice-display.in commands=XQ_MOVE,XQ_NEWGAME,XQ_STATUS
+XQ LINUX VOICE MODE display-only; chess actions disabled
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=9938
+XQ LINUX ENGINE INIT stage=attacks-map-start elapsed_ms=0 delta_ms=0
+XQ LINUX ENGINE INIT stage=attacks-map-ready elapsed_ms=13 delta_ms=13
+XQ LINUX ENGINE INIT stage=attacks-ready elapsed_ms=293 delta_ms=279
+XQ LINUX ENGINE INIT stage=position-ready elapsed_ms=297 delta_ms=3
+XQ LINUX ENGINE INIT stage=constructor-start elapsed_ms=298 delta_ms=0
+info string PIKAFISH_PFF1_VIEW_MMAP physical=268435456 bytes=68122688 cacheable=1
+info string PIKAFISH_PFF1_STAGE stage=source-ready elapsed_ms=24
+info string PIKAFISH_PFF1_STAGE stage=header-ready elapsed_ms=26
+info string PIKAFISH_PFF1_STAGE stage=layout-ready elapsed_ms=31
+info string PIKAFISH_PFF1_LOAD bytes=68122688
+info string PIKAFISH_PFF1_FEATURE_CRC_SKIPPED bytes=67548352 reason=sd-crc16-host-verified
+info string PIKAFISH_PFF1_STAGE stage=feature-crc-skipped elapsed_ms=33
+info string PIKAFISH_PFF1_VIEW_READY direct_bytes=67548352 mlp_direct_bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=view-bind-ready elapsed_ms=35
+info string PIKAFISH_PFF1_SECTION_READY name=MLPS bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-crc-ready elapsed_ms=447
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=0 bytes=35204
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=1 bytes=70408
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=2 bytes=105612
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=3 bytes=140816
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=4 bytes=176020
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=5 bytes=211224
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=6 bytes=246428
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=7 bytes=281632
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=8 bytes=316836
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=9 bytes=352040
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=10 bytes=387244
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=11 bytes=422448
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=12 bytes=457652
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=13 bytes=492856
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=14 bytes=528060
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=15 bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-ready elapsed_ms=862
+PIKAFISH_MAC_RUNTIME_READY id=4d41434b version=00020100 backend=mmio-shadow gather=1 owner=single-process
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=1 resident=loaded copied_bytes=593920
+info string PIKAFISH_PFF1_STAGE stage=stageb-prepare elapsed_ms=2868
+info string PIKAFISH_PFF1_READY bytes=68122688
+info string PIKAFISH_PFF1_STAGE stage=ready elapsed_ms=2870
+XQ LINUX ENGINE DETAIL stage=constructor-body-start
+XQ LINUX ENGINE DETAIL stage=resize-start
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-start bytes=41230336
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-ready bytes=41230336
+XQ LINUX ENGINE DETAIL stage=thread-create-start thread=0
+XQ LINUX ENGINE DETAIL stage=thread-create-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-start
+XQ LINUX ENGINE DETAIL stage=worker-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=worker-local-history-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=worker-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-ready
+XQ LINUX ENGINE DETAIL stage=tt-alloc-start mib=8
+XQ LINUX ENGINE DETAIL stage=tt-alloc-ready bytes=8388608
+XQ LINUX ENGINE DETAIL stage=tt-fresh-zero-skip
+XQ LINUX ENGINE DETAIL stage=resize-ready
+XQ LINUX ENGINE INIT stage=constructor-ready elapsed_ms=4177 delta_ms=3879
+XQ LINUX ENGINE INIT stage=options-ready elapsed_ms=4180 delta_ms=2
+XQ LINUX ENGINE INIT stage=verify-start elapsed_ms=4181 delta_ms=0
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=4185 delta_ms=4
+XQ LINUX ENGINE DIRECT CORE READY
+XQ LINUX PIKAFISH PFF1 READY
+XQ LINUX ENGINE DIRECT OK
+XQ LINUX PIKAFISH READY; mouse=move, restart button=reset, Esc=exit
+XQ LINUX VOICE DISPLAY sequence=1 state=LISTENING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=2 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=3 state=LOW_CONFIDENCE score=23 text=象 executed=0
+XQ LINUX VOICE DISPLAY sequence=4 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=5 state=LOW_CONFIDENCE score=0 text=帅 executed=0
+XQ LINUX VOICE DISPLAY sequence=6 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=7 state=LOW_CONFIDENCE score=19 text=象 executed=0
+XQ LINUX VOICE DISPLAY sequence=8 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=9 state=LOW_CONFIDENCE score=3 text=四 executed=0
+XQ LINUX VOICE DISPLAY sequence=10 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=11 state=LOW_CONFIDENCE score=0 text=二 executed=0
+XQ LINUX VOICE DISPLAY sequence=12 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=13 state=LOW_CONFIDENCE score=3 text=二 executed=0
+XQ LINUX VOICE DISPLAY sequence=14 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=15 state=LOW_CONFIDENCE score=7 text=八 executed=0
+XQ LINUX VOICE DISPLAY sequence=16 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=17 state=LOW_CONFIDENCE score=23 text=将 executed=0
+XQ LINUX VOICE DISPLAY sequence=18 state=CAPTURING score=0 text= executed=0
+XQ LINUX VOICE DISPLAY sequence=19 state=LOW_CONFIDENCE score=0 text=炮 executed=0
+XQVOICE_READY backend=cpu model=/opt/xqvoice/sd77-candidate.xqt audio=/dev/pango-audio0 sample_rate=16000 mode=display-only single-token start=200 stop=160 token_threshold=500
+XQVOICE_DISPLAY sequence=1 state=LISTENING score=0 sent=1 text=
+XQVOICE_DISPLAY sequence=2 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=9 confidence=23 slot=0
+XQVOICE_DISPLAY sequence=3 state=LOW_CONFIDENCE score=23 sent=1 text=象
+XQVOICE_REJECT reason=low-token-confidence token=9 confidence=23
+XQVOICE_DISPLAY sequence=4 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=6 confidence=0 slot=0
+XQVOICE_DISPLAY sequence=5 state=LOW_CONFIDENCE score=0 sent=1 text=帅
+XQVOICE_REJECT reason=low-token-confidence token=6 confidence=0
+XQVOICE_DISPLAY sequence=6 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=9 confidence=19 slot=0
+XQVOICE_DISPLAY sequence=7 state=LOW_CONFIDENCE score=19 sent=1 text=象
+XQVOICE_REJECT reason=low-token-confidence token=9 confidence=19
+XQVOICE_DISPLAY sequence=8 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=13 confidence=3 slot=0
+XQVOICE_DISPLAY sequence=9 state=LOW_CONFIDENCE score=3 sent=1 text=四
+XQVOICE_REJECT reason=low-token-confidence token=13 confidence=3
+XQVOICE_DISPLAY sequence=10 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=11 confidence=0 slot=0
+XQVOICE_DISPLAY sequence=11 state=LOW_CONFIDENCE score=0 sent=1 text=二
+XQVOICE_REJECT reason=low-token-confidence token=11 confidence=0
+XQVOICE_DISPLAY sequence=12 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=11 confidence=3 slot=0
+XQVOICE_DISPLAY sequence=13 state=LOW_CONFIDENCE score=3 sent=1 text=二
+XQVOICE_REJECT reason=low-token-confidence token=11 confidence=3
+XQVOICE_DISPLAY sequence=14 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=17 confidence=7 slot=0
+XQVOICE_DISPLAY sequence=15 state=LOW_CONFIDENCE score=7 sent=1 text=八
+XQVOICE_REJECT reason=low-token-confidence token=17 confidence=7
+XQVOICE_DISPLAY sequence=16 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=7 confidence=23 slot=0
+XQVOICE_DISPLAY sequence=17 state=LOW_CONFIDENCE score=23 sent=1 text=将
+XQVOICE_REJECT reason=low-token-confidence token=7 confidence=23
+XQVOICE_DISPLAY sequence=18 state=CAPTURING score=0 sent=1 text=
+XQVOICE_TOKEN token=3 confidence=0 slot=0
+XQVOICE_DISPLAY sequence=19 state=LOW_CONFIDENCE score=0 sent=1 text=炮
+XQVOICE_REJECT reason=low-token-confidence token=3 confidence=0
+[1;32m/usr/bin/pikafish-stageb-board-accept[m
+[1;32m/usr/bin/pikafish-stageb-load[m
+[1;32m/usr/bin/pikafish-stageb-position-accept[m
+
+__BOARD_END_1:0

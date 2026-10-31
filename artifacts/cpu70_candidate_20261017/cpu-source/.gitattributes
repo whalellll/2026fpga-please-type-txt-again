@@ -1,0 +1,39 @@
+# Preserve snapshot bytes and hashes across Windows/Linux checkouts.
+/README.md text eol=lf
+/AGENTS.md text eol=lf
+/CHANGELOG.md text eol=lf
+/VERSION text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+cpu/** -text
+cpu/**/*.sh text eol=lf
+cpu/**/*.py text eol=lf
+cpu/evidence/**/*.snr -diff
+
+# Preserve the byte-identical upstream CoreMark sources and documents.
+cpu/coremark_test_soc/sw/coremark/core_main.c -whitespace
+cpu/coremark_test_soc/sw/coremark/core_list_join.c -whitespace
+cpu/coremark_test_soc/sw/coremark/core_matrix.c -whitespace
+cpu/coremark_test_soc/sw/coremark/core_state.c -whitespace
+cpu/coremark_test_soc/sw/coremark/core_util.c -whitespace
+cpu/coremark_test_soc/sw/coremark/coremark.h -whitespace
+cpu/coremark_test_soc/sw/coremark/LICENSE.md -whitespace
+cpu/coremark_test_soc/sw/coremark/README.upstream.md -whitespace
+cpu/coremark_test_soc/sw/coremark/README.md -whitespace
+
+# Keep compiler/test/tool output byte-identical to its recorded hashes.
+cpu/coremark_test_soc/sim/coremark_ima/macros.txt -whitespace
+cpu/coremark_test_soc/sim/coremark_ima/manifest.json -whitespace
+cpu/coremark_test_soc/sim/coremark_validation/macros.txt -whitespace
+cpu/coremark_test_soc/sim/coremark_validation/manifest.json -whitespace
+cpu/handoff/toolchain/**/*.txt -whitespace
+cpu/handoff/validation/**/*.log -whitespace
+cpu/handoff/validation/**/*.xml -whitespace
+cpu/handoff/validation/**/*.snr -whitespace
+cpu/handoff/validation/v3_1/** -whitespace
+# Preserve raw compiler, simulator and diagnostic evidence byte-for-byte.
+cpu/handoff/validation/v3_5/** -whitespace
+
+# This native PDS probe archive preserves its original CRLF input and output bytes.
+cpu/handoff/validation/icache-write-pad/* -whitespace
+cpu/handoff/validation/icache-write-pad/**/* -whitespace

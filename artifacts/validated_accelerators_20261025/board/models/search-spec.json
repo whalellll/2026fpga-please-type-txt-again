@@ -1,0 +1,12 @@
+[
+  {
+    "command": "NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PIPELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 PIKAFISH_PHASE4_NODES=128 /usr/bin/timeout 240 /usr/bin/pikafish-pipeline-search",
+    "timeout": 250,
+    "markers": [
+      "PIKAFISH_PIPELINE_SEARCH_PASS mode=1 cases=3 nodes=128"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

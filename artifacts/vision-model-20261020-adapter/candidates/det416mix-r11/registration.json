@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate": "det416mix-r11",
+  "acceptance_status": "r12正式新相机域未达标",
+  "selected_for_work": false,
+  "model_sha256": "8230164ddc9e3d1561be6ae638b2f8d05d2f0c6e66088217a2e4aa7bef28ccaf",
+  "input_side": 416,
+  "quantized_payload_available": false,
+  "production_ready": false,
+  "quality_latency_decision": "E selected; 512 training-side experiment parallel, no latency waiver",
+  "new_camera_domain_suitable": false
+}

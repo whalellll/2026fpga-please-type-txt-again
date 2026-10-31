@@ -1,0 +1,19 @@
+
+/ # /usr/bin/timeout 120 /usr/bin/picture-new-bench-exact-reference classifier /
+opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1
+ vision32 1; printf "\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=0 infer_us=1235604 model_load_us=580513 input_open_us=91023 jobs=8 cycles=2504029 hardware_us=50586 output_crc=805678c7 no_fallback=1
+
+__CVB_END_0__:0
+/usr/ # /usr/bin/timeout 300 /usr/bin/picture-new-bench-exact-reference board /opt/i
+ntegrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 1; pr
+intf "\n__CVB_END_1__:%s\n" "$?"
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=0 infer_us=31489444 model_load_us=991770 input_open_us=215419 jobs=45 cycles=27501968 hardware_us=555595 output_crc=d830c1cd no_fallback=1
+
+__CVB_END_1__:0
+/ # /usr/bin/timeout 900 /usr/bin/picture-new-bench-exact-reference detector /op
+t/integrated60/assets/detector.xqm /opt/integrated60/assets/detector.f32 1 visio
+n32 1; printf "\n__CVB_END_2__:%s\n" "$?"
+PICTURE_TIMING model=detector batch=1 backend=vision32 repeat=0 infer_us=296602424 model_load_us=5388239 input_open_us=1517118 jobs=166 cycles=833316539 hardware_us=16834677 output_crc=97265de4 no_fallback=1
+
+__CVB_END_2__:0

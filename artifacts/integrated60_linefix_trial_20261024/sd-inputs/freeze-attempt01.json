@@ -1,0 +1,6 @@
+{
+  "status": "PARTIAL_INPUT_FREEZE_ENCODING_ERROR_PRESERVED_NOT_MEDIA_WRITE",
+  "reason": "Loader fault-test log contains binary bytes; text UTF8 decode rejected before input-map publication. Preserve exact copied files; resume only after identity hashes match, inspect ASCII markers as bytes.",
+  "board_io": false,
+  "remote_push": false
+}

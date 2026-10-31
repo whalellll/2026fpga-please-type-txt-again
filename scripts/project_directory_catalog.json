@@ -1,0 +1,1164 @@
+{
+  "schema": 1,
+  "project_directories": {
+    "rtl": [
+      "权威 RTL：CPU、SoC、MAC、音视频和接口",
+      "源码；保持 CPU 生成物与 source.json 配对"
+    ],
+    "config": [
+      "时钟、功能和构建配置",
+      "源码；配置声明不代表实际时序通过"
+    ],
+    "ip": [
+      "DDR、PLL 等厂商 IP 及封装",
+      "源码/IP 输入；生成数据库另行识别"
+    ],
+    "pds": [
+      "PDS GUI、Tcl、FDC/RCF 与本地实现目录",
+      "保留项目/约束；冻结候选的数据库不自动清理"
+    ],
+    "sw": [
+      "引导、自检、基准及板端软件",
+      "源码；历史 H128 不替代官方 Pikafish"
+    ],
+    "linux": [
+      "Linux/OpenSBI、设备树、rootfs 和运行载荷; explicit Picture_new software overlay: linux/picture_new/whole_layer_fast/; retain frozen P3 base source; search_check_cpu/ and whole_layer_inline/ are uninstalled local candidates, excluded from current board assessment",
+      "启动与模型输入；不按文件日期删除"
+    ],
+    "vision": [
+      "图像识别相关本地输入与开发资料",
+      "单独核对纳入交付范围；保护数据和模型"
+    ],
+    "sim": [
+      "仿真平台与功能/周期检查源码",
+      "保留源码；编译产物可在任务结束后归档"
+    ],
+    "scripts": [
+      "构建、审计、交付、板测和维护入口; microarchitecture analysis/editor: scripts/microarch_timing_tool.py; guide: docs/Microarchitecture_Timing_Tool.md；闲置PCH缓存迁H/校验/恢复：scripts/archive_idle_frequency_caches.py; CPU60 board ABAB: scripts/measure_integrated_opt60_coremark_ab.py; selected image overlay: scripts/build_picture_whole_fast.py; SD binding: scripts/bind_integrated_opt60_sd.py; collect_opt60_board_assessment.py binds current-board results without declaring release",
+      "源码；变更需与流程及技能清单一致。Picture_new离线保存帧诊断：diagnose_picture_saved_frames.py；固定点积缓存验证：check_picture_grid_dot_cache.py；融合几何分段：diagnose_picture_geometry.py --fused；精确最小值r14：check_picture_geometry_min_bits.py；原生首页r13检查/GUI源码包：check_xinyi_home_r13.py、prepare_xinyi_home_r13.py，背景生成器linux/xinyi/gen_home_background.py。私有输入/结果只写既有E盘build junction。 r15完整SD/xqboot：prepare_picture_pn15.py、prepare_picture_pn15_install.py、prepare_xinyi_console_entry.py、build_xinyi_console_entry.ps1、check_xinyi_console_entry.py、serial_activate_xinyi_console_entry.ps1；首页像素生成gen_home_art.py、prepare_xinyi_page_templates.py。当前板测入口board-ui-sd-r15-20261029.md；旧包与输入保留。 r16断板后GUI候选：prepare_xinyi_pair_cache.py；最新入口software-speed-offline-r16.md，1秒目标未板测，当前不访问板卡。"
+    ],
+    "docs": [
+      "操作指南、目录索引、交接和验证证据",
+      "持续维护；历史报告保留适用范围"
+    ],
+    "skills": [
+      "五项可移植技能及 manifest",
+      "完整纳入交付并校验 SKILLS_DELIVERY.json"
+    ],
+    "artifacts": [
+      "位流、启动文件和审计产物；CPU80整合SD候选artifacts/cpu80_sd_20261021_v2/；构建scripts/build_cpu80_sd_boot.py，打包scripts/package_cpu80_sd_boot.py",
+      "正式文件按交付白名单；SD候选离线通过/实板待验，首轮cpu80_sd_20261021超时证据保留；未完成候选不自动清理"
+    ],
+    "prebuilt": [
+      "可复现构建所需的预构建依赖",
+      "交付输入；不得当作普通缓存删除"
+    ],
+    "build": [
+      "CPU80卷积SD-ROM修复控制build/cpu80-conv-sdboot-fix-20261022；板测build/cpu80-conv-board-20261022；闲置回归迁H:/fpga_archives/20261022_cpu80_space_recovery；69份闲置构建262个PCH缓存已迁H:/fpga_archives/20261022_cpu70-85_idle_caches，恢复见docs/Frequency_Build_Cache_Archive_20261022.md；R3完成后25851个闲置打包文件已迁H:/fpga_archives/cpu80_r3_completed_20261023，恢复见restore-plan.json/files-manifest.json; vision-driver-opt-20261027-01: CPU60 image-driver three-mode/profile kernel and SD8 diagnostic candidate; board unavailable, preserve source/image/evidence; main75-joint-20261027-01: isolated CPU75 vision2/voice3 merge, correctness, native CSR placement trial and pending real-board acceptance; preserve old failed runs; CPU75 board-20261027-01: SD8/CoreMark ABAB/fixed image-WAV/Pikafish concurrency and recovered GUI complete; report CPU75_Board_Performance_20261028; preserve failures and backups; performance targets and ASR accuracy not promoted; main75-delivery-20261028-01: CPU75 formal delivery preparation and voice-mode mouse selection/moves; host/RV32 pass, board and sealed package pending",
+      "不整体删除；只清理已完成任务的明确暂存项"
+    ],
+    "log": [
+      "本地运行日志",
+      "结论及原始证据归档后逐项审查"
+    ]
+  },
+  "workspace_groups": [
+    {
+      "patterns": [
+        "m75d"
+      ],
+      "role": "CPU75 joint delivery and mouse chess worktree",
+      "policy": "Regular release/main75-20261028 worktree. Preserve while merge, mouse board verification and formal package/media acceptance remain incomplete. Owner G:/fpga/build/main75-delivery-20261028-01/status.json; no ordinary directory move or cleanup."
+    },
+    {
+      "patterns": [
+        "m7v"
+      ],
+      "role": "Preserved first CPU70 independent extraction",
+      "policy": "ZIP4e0a3c36 content verified after ENOSPC recovery, full regression failed missing historical clock fixture. Preserve failed ZIP/extraction/logs; do not patch it as a successful original package. NTFS compression is not H archival."
+    },
+    {
+      "patterns": [
+        "m7w"
+      ],
+      "role": "Fresh CPU70 package-closure independent extraction",
+      "policy": "Second ZIP91f4a06f includes historical clock sources and passed content checks; independent policy replay failed because five fixture ELFs were filtered. Preserve failed package/extraction/logs; not accepted."
+    },
+    {
+      "patterns": [
+        "m7x"
+      ],
+      "role": "Fresh CPU70 complete-fixture package extraction",
+      "policy": "Third ZIP617aeec5 included complete pinned policy fixture and historical clock sources; content PASS, independent UART test failed missing canonical PDS ROM alias. Preserve failed ZIP/extraction/logs."
+    },
+    {
+      "patterns": [
+        "m7z"
+      ],
+      "role": "CPU70 complete PDS alias package extraction",
+      "policy": "Fourth inventory includes full Get-FpgaStagedAssets map, canonical SHA equality, complete pinned policy fixture and historical clock sources. Full independent regression/exact GUI rebuild/sealed dry-run and final SD/media remain required; E reader unavailable. Separate CPU75 frozen6539/native0dba under G:/fpga/build/main75-20261027-01; never mix its inputs/results with accepted70."
+    },
+    {
+      "patterns": [
+        "cpu70_delivery_20261027"
+      ],
+      "role": "CPU remote-main merge preparation worktree",
+      "policy": "Merge9087b747 is published CPU main, preserves remote2171ef3 and paired05c7ef96. Full generated-source check PASS and remote e8ae RTL hash reread. No source identity relabeling."
+    },
+    {
+      "patterns": [
+        "m80c"
+      ],
+      "role": "Accepted CPU80 regular control copy for same-round ABAB",
+      "policy": "Original c80audio_unpack remains untouched; CRAM assignment and all control samples hash-bound. Keep until CPU70 formal delivery and rollback review."
+    },
+    {
+      "patterns": [
+        "m70r"
+      ],
+      "role": "CPU70 complete regression worktree",
+      "policy": "Independent native test outputs; scripts/run_main70_regression.py and main70-delivery/regression-01 identify owner. Recheck live processes; preserve while active/incomplete."
+    },
+    {
+      "patterns": [
+        "m70d"
+      ],
+      "role": "CPU70 accepted implementation and formal delivery source",
+      "policy": "Hardware c50bb158/run6d01c260 and GUI8f4de1c7; complete/native/board/physical gates PASS. Published main7702f67e, packaging-only historical-clock-fixture closure maintenance follows failed first ZIP. Final ZIP/media still pending. Native585 files preserved; no worktree movement or active cleanup."
+    },
+    {
+      "patterns": [
+        "accres-reg01"
+      ],
+      "role": "Accumulator residency regression source tree; docs/Accumulator_Resident_20261026.md",
+      "policy": "Existing independent regression tree. Preserve source, tests and ownership; not the current merged-main CPU70 native run. Do not automatically clean or treat historical CPU70 results as acceptance of the current candidate."
+    },
+    {
+      "patterns": [
+        "mreg0[12]",
+        "ftrt01"
+      ],
+      "role": "整合主线功能回归隔离源码与短路径ext4测试输入",
+      "policy": "2026-10-26功能测试；mreg01保留PLL CLI首次失败，mreg02完整回归，ftrt01保存产品流程测试ext4。只有工具接口修复，板卡不访问；新测试目录和镜像均在G盘，保留来源/日志/恢复关系，不自动清理。"
+    },
+    {
+      "patterns": [
+        "权重包",
+        "native_int8",
+        "fp32_masters"
+      ],
+      "role": "working-r14三模型INT8/FP32只读权重输入",
+      "policy": "用户2026-10-26放入；六权重与README清单校验通过，原生三包匹配r14契约。根目录两类文件夹与权重包内同字节，保留原件，不自动清理或覆盖。"
+    },
+    {
+      "patterns": [
+        "performance_soc_picture_main_20261026"
+      ],
+      "role": "Merged main with Picture_new and selected local software optimizations",
+      "policy": "Merged main36d28d7e; CPU70 native c50bb158/run6d01c260, final all-corner STA and513/42/47 hashes PASS. Bit24226a3a. Real-board CoreMark ABAB all12+4 PASS; parent60 fixed-model means improved; six-CRC direct SD Linux boot PASS. Fixed GUI7154be11 in RAM diagnostic with physical feedback pending; final kit03 offline18 PASS. No main push/formal ZIP yet. Preserve failures, native/source/model/user data and all uncompleted candidates;187 I/O timing gaps disclosed."
+    },
+    {
+      "patterns": [
+        "performance_soc_voice_3"
+      ],
+      "role": "voice_3远程r05独立工作目录",
+      "policy": "2cc38efb跟踪origin/voice_3；发布完整性通过，未合并main；r05未板测、模型未晋升。"
+    },
+    {
+      "patterns": [
+        "performance_soc_hw_publish_20261025"
+      ],
+      "role": "已验证硬件独立分支推送与软件优化交接",
+      "policy": "用户2026-10-25明确授权推送已验证硬件；仅vision32_layer.v及原生e42位流/STA/板测证据、测试和文档；软件优化代码留本地，CoreMark A/B待，main与正式交付不变。"
+    },
+    {
+      "patterns": [
+        "performance_soc_integer_ops_20261025"
+      ],
+      "role": "整数图算子与搬运减量候选",
+      "policy": "承接7f1e24a阶段表；无额外池化图/行缓冲，最后消费Add输入复用，输入边界填充与对齐输出批量收窄；沿用INT8权重/整数模型、RTL/e42/kernel02；离线与板测状态分别按回执；不清理或推送未验候选。"
+    },
+    {
+      "patterns": [
+        "performance_soc_integer_hwc_20261025"
+      ],
+      "role": "临时detector640全图整数/HWC与SD测速候选",
+      "policy": "用户允许复用现有INT8权重；69 INT8/16 INT16张量、INT32累加，85节点HWC。三输入完整输出比较和RV32构建通过，SD18/实卡/板测按各自回执。无新增RTL/FPGA资源，沿用e42/kernel02；不推送或正式交付，不清理候选。"
+    },
+    {
+      "patterns": [
+        "performance_soc_transfer_reuse_20261025"
+      ],
+      "role": "Pikafish与图像参数/输出重复复制复用候选",
+      "policy": "软件/驱动候选；detector参数复制−8923840B（61.6%），不是整图总流量。Pikafish两份评分用恒等输入可少8192B回拷。RTL不变、复用c828 STA/e42位流；kernel02及SD02实体八文件回读、CRAM加载、SD启动和版本核对通过。原三图/WAV/官方NNUE/搜索/并发已实测，NNUE10ms仍MISS、CoreMark待；detector640用户态独占阶段已细分，ioctl内部仍聚合，未写Flash/推送/交付，保留全部失败。"
+    },
+    {
+      "patterns": [
+        "performance_soc_image_hwc_20261025"
+      ],
+      "role": "图像HWC连续布局与兼容量化串行资源候选",
+      "policy": "20组离线门禁、原三图CRC及完整SoC通过；综合APM105→101、LUT+48/FF+29；布线后LUT+83/FF+29，存储不增。全角STA通过，用户暂不切卡，仅离线，未板测/推送/正式交付。保留全部冻结和失败。"
+    },
+    {
+      "patterns": [
+        "performance_soc_stage_profile_20261025"
+      ],
+      "role": "象棋/语音/原三图固定输入全阶段剖析候选",
+      "policy": "诊断内核、host/RV32及原整数向量、SD18检查通过；八文件仅离线准备。用户暂不方便换卡，输入/搬运实际用时占比未测；不写实体卡、不编程、不推送。"
+    },
+    {
+      "patterns": [
+        "performance_soc_vision_epilogue_20261024"
+      ],
+      "role": "CPU60 exact image epilogue hardware candidate",
+      "policy": "Exact S16/LUT65536; frozen hardware9d1047b retains CPU hold STA failures. User-authorized SD03/CRAM combined diagnostic passes; software watchdog tile bound8f4a0db. Board report and original failures preserved; no Flash/main push/formal delivery."
+    },
+    {
+      "patterns": [
+        "performance_soc_pikafish_buffer_20261024"
+      ],
+      "role": "CPU60 integrated software execution-path optimization trial",
+      "policy": "P3 hardware unchanged. Voice compact windows/CTC, lazy image integer tensors, per-fd Pikafish workspace. Offline checks/SD8 pass; board performance pending. No physical SD write, push or formal package. docs/Integrated_Path_Optimization_20261024.md"
+    },
+    {
+      "patterns": [
+        "performance_soc_pikafish_batch60_20261024"
+      ],
+      "role": "Independent Pikafish batch evaluation at CPU60",
+      "policy": "Parent792008d; eight dependent StageA jobs plus MLP,16KiB local SRAM and batched rollback snapshots. P2 G:/pfb60p2 run15fbc4bd/tool829d915 PASS full routed STA; CPU60/SYS49.5 setup+0.644/+2.590ns,hold+0.101/+0.118ns. SYN45152LUT/33202FF/138DRM/64APM. Candidate bitstream/result bound in docs/validation/pikafish-batch60-20261024/candidate-result.json. P1 pre-PnR checker failure preserved. Baseline187 I/O gaps and auxiliary200ps hold margins disclosed. No board speedup,push,formal delivery or cleanup. Reconcile VISION32 ABI identities before integration. Offline SD: build/batch60-sd-03/sd-root has eight matched CPU60 batch boot files plus SHA256SUMS;18loader and8capability fault tests passed. GUI batch default1. User explicitly forbids physical SD writes; media/board untouched. Attempts01/02 retained as failed host fixtures; final hashes in docs/validation/pikafish-batch60-sd-20261024."
+    },
+    {
+      "patterns": [
+        "i60pnr*"
+      ],
+      "role": "Frozen native CPU60 integrated synthesis/PnR and all-corner evidence",
+      "policy": "Incomplete candidate: preserve inputs/native evidence; no board/production/delivery pass inferred"
+    },
+    {
+      "patterns": [
+        "performance_soc_integrated60_20261024"
+      ],
+      "role": "CPU60 voice2/Picture_new/dedicated Pikafish integration candidate",
+      "policy": "Incomplete candidate: preserve inputs/native evidence; no board/production/delivery pass inferred"
+    },
+    {
+      "patterns": [
+        "performance_soc_voice2_accel_20261024"
+      ],
+      "role": "voice_2 balanced24小型语音CNN加速器隔离候选，CPU75/SYS49.5/1080p30",
+      "policy": "模型/ABI/离线逐层与RTL回放验证；资源/内核构建、时序和板测分别记录，未完成不清理、不推送、不交付"
+    },
+    {
+      "patterns": [
+        "performance_soc_pikafish_dedicated_20261024"
+      ],
+      "role": "Pikafish fixed MLP and resident single-bucket resource prototype",
+      "policy": "Dedicated CPU75/SYS49.5 trial COMPLETE, no delivery/push/Flash. Native pfpnr4 CPU setup -0.181ns failed. Corrected SD04 written/readback and direct boot PASS; current board-trial-dedicated-02 NNUE6.93/6.17x, fixed-node search2.48x exact parity, CPU search postcheck bug retained; GUI request26.82s deadline open. Voice/conv/gather/CoreMark/60s mixed audio zero overflow/HDMI PASS. Preserve SD03 failure and all native/test inputs."
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_halfmac_gui1080_20261023",
+        "c80h1080*"
+      ],
+      "role": "Exact80MHz half dense-output MAC /1080p isolated candidate",
+      "policy": "Parent009aba2; CPU05 unchanged; output chains8, ABI/cache/conv unchanged. Work cpu80-halfmac-gui1080-20261023; current native G:\\fpga\\c80h1080p3. Attempt01 full regression passed; its85-only PMA-selector failure and02 CPU/SYS hold/invalid-priority failures are preserved. Current change: One retained identity LUT on conv write bits120/121; replace invalid MDU31 priority with measured ALU1 issueUsesFast and add measured N1294[0]. CPU/clock/cache/cycles unchanged.. Final116 timing rows/20skew checked: CPU WNS=-0.234ns; other failing rows=0; status=BLOCKED_CONTINUE_OPTIMIZATION_NO_BOARD; board NOT accepted. Reports/DB/failed bitstream retained, no push/delivery. G active/H archive, no F."
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu85_halfmac_gui1080_20261023",
+        "c85h1080*"
+      ],
+      "role": "独立85MHz半规模dense MAC与1080p候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：源冻结f9c3b19/CPU05不变；16到8物理输出链、逻辑ABI与容量不变。原生run d31a0c1e898f4c86b87887c6114fe5e6；全回归/核心/DMA/PLL通过，当前综合/PnR以日志为准，STA/官方NNUE端到端/板测待验，不推送、不打交付包；G活动/H归档，不使用F。"
+    },
+    {
+      "patterns": [
+        "performance_soc_pikafish_split_20261023"
+      ],
+      "role": "Pikafish??????????????/??????????",
+      "policy": "??????????????RV32/QEMU?????/??PnR???????????????????????"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_gui1080_accept_20261023",
+        "c80f1080r*",
+        "c80f1080p*",
+        "c80f1080cycle*"
+      ],
+      "role": "80MHz已验收主线与浅色1080p60 GUI的新验收候选，保留ROM和采音修复",
+      "policy": "完整回归/资源/最终STA后上板；本轮先不依赖SD返卡，待验不推送不打交付ZIP；保留旧失败和回退入口；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80audio_stage_20261022*",
+        "c80audio_unpack_20261022*"
+      ],
+      "role": "用户批准CPU80卷积/ROM/采音修复的完整分发与独立解包",
+      "policy": "用户批准并已先推送main；独立解包、完整回归及包哈希绑定实卡启动继续完成，保留原始失败证据；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80romlayout_trial1"
+      ],
+      "role": "ROM文本布局诊断；用户批准现有版本后停止推进",
+      "policy": "仅软件链接试验，无PnR/上板；原始padding检查失败与NOP填充修订保留，不进入本次提交或交付；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_audio_service_20261022"
+      ],
+      "role": "80MHz实板满载采音失败后的隔离Linux调度修复候选；不修改当前位流",
+      "policy": "open清零分块主机前后测试；新内核/SD及并发待验，原失败证据保留，不推送不清理"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_gui1080_20261022",
+        "c80g1080r*",
+        "c80g1080p*"
+      ],
+      "role": "ROM修复与1080p浅色GUI组合工作树；用户当前暂不验收1080p",
+      "policy": "仅本地未提交合并；attempt01缺历史依赖失败，未SYN/PnR/板测；保留候选，不混入当前720p交付"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_sdboot_20261022",
+        "c80sdbr1",
+        "c80sdbp1",
+        "c80sdb_stage_20261022",
+        "c80sdb_unpack_*"
+      ],
+      "role": "CPU80卷积正式SD启动ROM修复；原fold实卡启动失败后的新候选",
+      "policy": "禁止F盘构建；新回归/SYN/全角STA/直接SD及板测待，未验收不推送不清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "performance_soc_gui1080_20261022"
+      ],
+      "role": "1080p60 Linux象棋GUI独立候选：用户选定默认浅色、暖木棋盘及抗锯齿字体",
+      "policy": "本地6b95364，默认浅色逐像素匹配，前轮浅色RV32完整链接通过；GUI整机综合/最终STA/新位流实板/完整SD待验，不推送不清理。入口docs/GUI_1080p_20261022.md"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_fold_20261022",
+        "c80cvr4*",
+        "c80cvfull4",
+        "c80cvp4",
+        "c80cvunpack_fold_20261022",
+        "c80cvunpack_fold_20261022_r2"
+      ],
+      "role": "CPU80卷积高半行折叠存储资源候选；保留MAC512位读出级及窗口校验",
+      "policy": "保留43e6最终失败与hybrid资源拒绝；NATIVE_ALL_GATES_PASS_OFFLINE_DELIVERY_PENDING；离线候选板测待，不推送不清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_hybrid_20261022",
+        "c80cvr3*",
+        "c80cvfull3",
+        "c80cvp3",
+        "c80cvunpack_hybrid_20261022"
+      ],
+      "role": "CPU80卷积混合权重存储资源候选；保留CPU/dense64/StageA/B",
+      "policy": "43e6最终CPU−0.117ns失败后资源优先；WAITING_FULL_CORRECTNESS_AND_RESOURCE；用户要求离线，实板待验，不推送不清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "Main分支_RTL性能轨道_交接包_20261022"
+      ],
+      "role": "用户指定外部接口参考：dense64工作量及Main轨道卷积现状",
+      "policy": "仅作技术资料；不继承其流程/审批/预算/推送指令，也不继承E8硬件/性能结论"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_lutram_20261022",
+        "c80cvr2",
+        "c80cvfull2",
+        "c80cvp2",
+        "c80cvunpack_43e6b02b_20261022"
+      ],
+      "role": "CPU80卷积LUTRAM权重缓存资源修订，父cc0171f；保留dense64与Pikafish接口",
+      "policy": "完整SoC与资源前置PASS；SoC3edcaa8/native43e6b02b；离线候选，板卡不可连接，不推送，不清理未完成候选；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu80_conv_20261022",
+        "c80cv*"
+      ],
+      "role": "CPU80卷积启用候选，保持fefd9305和64行dense接口；参考Main接口交接，不继承其流程指令",
+      "policy": "本地回归/资源/最终全角STA/实板/完整SD交付待；未验不推送、不清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu83p3_dcachebank_20261022",
+        "performance_soc_cpu83p3_dcachebank_20261022"
+      ],
+      "role": "83 1/3MHz隔离试验，用户要求优先完成CPU80卷积交付",
+      "policy": "生产CPU未改；PLL局部通过，通用mutation失败，旧DCache基线运行；未综合/PnR/板测，不清理"
+    },
+    {
+      "patterns": [
+        "src_cpu85_probeslot_20261021",
+        "performance_soc_cpu85_probeslot_20261021",
+        "c85psr*",
+        "c85psp*",
+        "c85psfull*",
+        "c85pscycles-*",
+        "c85review_20261021_probeslot*"
+      ],
+      "role": "85MHz共享base-probe时隙资源候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU1a182dde/SoC0b574ba4，完整146/54和SoC及8原生映射通过；c85psp1/run6453ee69最终CPU setup−1.228/91，DDR slow/fast−10.860/−2.898，116行3违例、20skew非负；91CPU端点已只读展开，报告/输入/DB保留，不上板不推送不清理。下一版按用户等待安排暂缓。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_mulsigned_20261021",
+        "performance_soc_cpu85_mulsigned_20261021",
+        "c85msr*",
+        "c85msp*",
+        "c85msfull*",
+        "c85review_20261021_mulsigned*",
+        "c85mscycles-*"
+      ],
+      "role": "85MHz带符号部分积资源与时序候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：MULSIGNED1f620b08/43a25b1e：完整144/53、SoC、七native及厂商DSP波形和资源-181LUT/-32FF通过；7b9759cf最终85MHz setup-0.981ns/TNS-29.393ns/128失败，全部只读展开。保留原报告/DB/冻结源；无板测、交付或推送。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_readbuf_20261021",
+        "performance_soc_cpu85_readbuf_20261021"
+      ],
+      "role": "CPU85资源优先AXI读拼装缓冲共享实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：READBUF2 04ae8ec3/8408c927：完整142/52、SoC、六native映射和-87LUT/-96FF通过，但3ecdf90a最终85MHz setup-1.243ns/TNS-49.929ns/172失败。全部端点只读展开，128起于乘法器。保留全部原报告/DB/冻结输入；未板测、交付或推送。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_ftbpack_20261021",
+        "performance_soc_cpu85_ftbpack_20261021"
+      ],
+      "role": "CPU85 FTB无损存储压缩已失败实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：cbfadb11/bffccb43；完整140项51套件/整机/同ROM及资源五映射通过，ac0229ef最终setup-1.476ns/133端点失败，已全部只读展开；原始输入/DB/报告保留，未上板或推送"
+    },
+    {
+      "patterns": [
+        "src_cpu85_aluinput_20261021",
+        "performance_soc_cpu85_aluinput_20261021"
+      ],
+      "role": "CPU85 ALU现有issue边界操作数准备实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：重新基于96edc87/4ae96f8，不叠加被PDS合并的8332c4b；先跑冻结Alu/FuAlu参考及完整控制/时序模型，之后只在现有issue沿锁存PC/源操作数选择，不增加流水级；所有门禁通过前不上板或推送"
+    },
+    {
+      "patterns": [
+        "src_cpu85_aluadder_20261021",
+        "performance_soc_cpu85_aluadder_20261021"
+      ],
+      "role": "CPU85实际ALU PCADD控制至入站数据长路径的并行加法实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU8332c4b/RTL9ed09ae1；134012向量修改前后通过，c85ar1综合41209 LUT/29273 FF及全部前置通过；PDS仍将PCADD合并入32个carry输出，映射门禁拒绝，未启动PnR。完整CPU在核对owner后主动中断，非功能失败；保留所有证据与数据库"
+    },
+    {
+      "patterns": [
+        "src_cpu85_rename_20261020",
+        "performance_soc_cpu85_rename_20261020"
+      ],
+      "role": "CPU85剩余ROB/RAT分配关键路径驱动的Rename接收条件实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU96edc87/SoC4ae96f8；127项CPU/完整SoC/同ROM周期通过，c85rp1最终setup−0.537ns/16端点、hold−0.012ns/1端点失败；ROB/RAT分配已无失败端点，保留原生DB、全部setup/hold路径及工具准备，不上板或推送"
+    },
+    {
+      "patterns": [
+        "src_cpu85_divmag_20261020",
+        "performance_soc_cpu85_divmag_20261020"
+      ],
+      "role": "CPU85原生失败路径驱动的除数绝对值通路隔离实验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPUcfe097d9/SoC0032126c；125项CPU及完整SoC回归通过，c85dp1最终setup−0.318ns/44端点失败，Div无失败端点；保留原生DB/报告和参考/周期证明，不上板或推送"
+    },
+    {
+      "patterns": [
+        "performance_soc_cpu85_20261020",
+        "src_cpu85_20261020",
+        "c85*"
+      ],
+      "role": "CPU85冻结候选、综合/回归/原生实现及独立审查目录",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：首轮1ba67bfd/5d23f273在c85p1最终setup−1.076ns/166端点失败；保留原生DB与完整报告，新Div实验另建目录；只有完整正确性/全角STA/实板CoreMark及模型性能均通过才交付和推送，不覆盖已验收80MHz"
+    },
+    {
+      "patterns": [
+        "deliveries"
+      ],
+      "role": "已验收版本的独立交付包、原生时序报告及包哈希核验凭据",
+      "policy": "包与原生报告关联冻结实现；保留每次交付，不以目录存在代替验证通过，不自动清理"
+    },
+    {
+      "patterns": [
+        "c80delivery_f79443a2_20261020",
+        "c80unpack_f79443a2_20261020*",
+        "performance_soc_cpu80_release_20261020",
+        "src_cpu80_main_20261020"
+      ],
+      "role": "CPU80已验收版本交付、解包验证及保留历史的主分支合并",
+      "policy": "冻结455输入及CPU配对生成物保持原哈希；完整解包验证后推送CPU/SoC main；保留来源与核验回执，不覆盖原用户工作树；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80review_f79443a2_20261020"
+      ],
+      "role": "CPU80 fefd9305 / native f79443a2独立板测审查目录",
+      "policy": "当前run最终全角STA、完整回归绑定、455冻结输入、项目审计及80MHz串口可观察板测/同会话CoreMark和模型性能通过，HDMI待现场确认；副本异常已保留原件并修复回读，原因未定；附加PC工具位于review-extras；未完整验收不得交付或推送；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full20",
+        "c80full21",
+        "c80p14",
+        "c80p15"
+      ],
+      "role": "CPU75衍生CSR对照及instret主候选隔离验证",
+      "policy": "full20/47bd控制对照完整入口相机主机启动超时失败，原样单夹具后通过不追认；full21/fefd完整CPU121及SoC入口通过；p14详细布线中断无最终STA，p15同455输入最终116行全角STA零违例且串口可观察板测与性能通过；保留来源/原生DB，HDMI确认和正式交付待完成，未推送；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu80_csrcount_20261020",
+        "c80r18"
+      ],
+      "role": "CPU75原生ROB至instret关键路径独立实验",
+      "policy": "直接942e2dd；仅SupervisorCsr退休计数器按字节并行进位/末级CSR字选择，先原版边界测试，完整回归及物理/板测独立验收；未推送；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r17base",
+        "c80r17b"
+      ],
+      "role": "CPU75基线及提交/CSR改版的80MHz配对综合",
+      "policy": "从c80r16冻结源只替换CPU及配对固件来源清单；保持非CPU硬件/时钟/约束，综合不代表PnR或板测通过；保留owner与原生数据库；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r17"
+      ],
+      "role": "CPU75衍生CSR候选来源绑定拒绝的综合暂存",
+      "policy": "暂存早于本地实现冻结，source.json记录942e2dd及dirty=true；核对owner后中断，仅留失败证据，不复用验收；修正版为c80r17b；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu80_csrhead_20261020"
+      ],
+      "role": "CPU80提交/CSR控制独立对照源码（未选择PnR）",
+      "policy": "直接从已验收942e2dd建立，未叠加后续CPU80改动；本地perf/cpu80-csrhead-20261020，定向/完整回归/综合/全角STA/板测分别验收，未推送"
+    },
+    {
+      "patterns": [
+        "performance_soc_voice_hw"
+      ],
+      "role": "当前 SoC 开发工程",
+      "policy": "含未提交 CPU80 硬件修改；保留"
+    },
+    {
+      "patterns": [
+        "c80p13"
+      ],
+      "role": "CPU80分支消费者最终原生失败证据",
+      "policy": "run17a89e446cbb419984400cced70e4948；CPU setup -1.06ns；全部正式行见breq-final-native；未编程/推送，保留DB/冻结输入/恢复脚本；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu80_breq_*"
+      ],
+      "role": "CPU80分支等值消费者Chisel实验",
+      "policy": "本地2dea11ba/父bbda543c，FuAlu仅消费者等值比较；原16384周期基线、改版7项及配对生成/归档过；完整139/综合/STA/板测独立验收，未推送"
+    },
+    {
+      "patterns": [
+        "c80r16"
+      ],
+      "role": "CPU80分支消费者候选综合/资源门禁通过",
+      "policy": "CPU2dea11ba/run231072169b57457fa30e82cf62c647b2，42087 LUT/29312 FF，比r14少136 LUT；BEQ/BNE支持132/130→51/52，独立比较链更深，物理STA待验；保留原生DB与v2层级谓词拒绝，无PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full19"
+      ],
+      "role": "CPU80分支消费者完整Windows入口通过",
+      "policy": "FULL_ENTRY_PASS，SOC_ALL_TESTS_PASS且455输入/ELF/BIN/ROM及固件来源清单一致；独立于139项CPU、最终STA及板测，不提前推送；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu80_eqfast_*"
+      ],
+      "role": "CPU80并行等值比较Chisel本地候选",
+      "policy": "a09a364f/父bbda543c，定向6项通过；实际分支结构未改善，完整138项有证据主动中断；保留源码、配对、DB、失败/停止证据，未推送"
+    },
+    {
+      "patterns": [
+        "c80r15"
+      ],
+      "role": "CPU80通用ALU等值改写无预期结构收益",
+      "policy": "a09a364f/runf63d95656a884bb2a92b0937f1b412d6综合原生门禁过，42183 LUT/29312 FF；分支局部深17/18→20/21；完整138项主动中断，禁止追认完整通过，无PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "performance_soc_handoff_publish_*"
+      ],
+      "role": "交接/流程独立发布 worktree",
+      "policy": "仅维护文档与流程；不得夹带未验收硬件"
+    },
+    {
+      "patterns": [
+        "src_cpu80_ibwrite_*"
+      ],
+      "role": "CPU80 指令缓冲RF写标志候选",
+      "policy": "本地64afa2cb配对源码/RTL冻结；定向11项通过，完整133项/原生STA/板测仍须独立验收；未推送"
+    },
+    {
+      "patterns": [
+        "src_cpu80_carryin_*"
+      ],
+      "role": "CPU80 ALU carry-in表示试验保留",
+      "policy": "本地554fe4ed；定向6项和SoC46检查通过，c80r12原生审计通过但ALU carry数量/深度34→34，无预期结构收益，完整135项主动中断；未进入PnR/板测/推送"
+    },
+    {
+      "patterns": [
+        "src_cpu80_prefix_*"
+      ],
+      "role": "CPU80 ALU分组前缀进位候选",
+      "policy": "本地7f37edbe；4位局部进位、8组Brent-Kung组合前缀，仅Alu变化；完整旧ALU参考对照及6项/3套件定向通过；先实际映射，再完整正确性/全角STA/板测"
+    },
+    {
+      "patterns": [
+        "src_cpu80_rsunion_*"
+      ],
+      "role": "CPU80发射仲裁等价化简辅助候选",
+      "policy": "本地bbda543c，从7f37edbe继续，仅RsAlu组合仲裁变化；完整原RS基线3项、修改后7项/2套件及配对生成/归档通过，先实际映射再完整138项/STA/板测；首版非法刺激失败保留"
+    },
+    {
+      "patterns": [
+        "c80r11"
+      ],
+      "role": "CPU80 IB候选原生审计拒绝快照",
+      "policy": "453输入；综合42077 LUT/29313 FF；共享组合项迁移使旧父模块审计失败，只读诊断不追认旧run；无PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r11a"
+      ],
+      "role": "CPU80 原生审计适配中主动中断的综合候选",
+      "policy": "455输入，硬件与r11完全相同；核对作业归属后因BTB实例前缀审计尚未完成而中断；无PnR，不覆盖旧快照；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r11b"
+      ],
+      "role": "CPU80 原生共享锥及IB元数据综合门禁通过",
+      "policy": "455输入；硬件与r11相同，全部原生前置门禁通过；后续补齐旧CPU配置的来源能力识别，改用r11c；无PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r11c"
+      ],
+      "role": "CPU80 IB候选综合门禁通过但固件来源清单过期",
+      "policy": "455输入；全部综合门禁通过，full15功能全过但重建后bootloader.build.json的CPU来源更新，输入绑定失败；不启动PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full15"
+      ],
+      "role": "CPU80 IB候选完整功能过但冻结来源绑定失败",
+      "policy": "SOC_ALL_TESTS_PASS；唯一变更为固件清单内CPU来源哈希，ELF/BIN/ROM相同；保留失败，不追认为完整入口通过"
+    },
+    {
+      "patterns": [
+        "c80r11d"
+      ],
+      "role": "CPU80 IB候选更新固件来源清单后重新冻结",
+      "policy": "先重建固件且证明ELF/BIN/ROM相同、清单仅CPU来源变化，再冻结455输入；完整回归/最终STA/板测仍独立验收；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full16"
+      ],
+      "role": "CPU80 IB候选新固件清单完整Windows隔离回归",
+      "policy": "硬件输入须与r11d455项逐项相同；只读旧75参考夹具仅用于策略测试；不代表时序或板测通过"
+    },
+    {
+      "patterns": [
+        "c80p11"
+      ],
+      "role": "CPU80 IB/BTB候选最终CPU setup失败证据",
+      "policy": "455输入；完整正确性及门禁过，最终CPU setup -0.937ns/65端点，所有hold正；正式与65端点展开均保留，未上板；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p12"
+      ],
+      "role": "CPU80分组前缀最终STA失败证据",
+      "policy": "run617c87767c964c9799c494cf0ce42afc；CPU setup -0.291ns/32，DDR跨时钟setup -0.807及hold -0.081/-0.250，RGMII setup -0.011；正式及32端点诊断保留，禁止编程/推广；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r12"
+      ],
+      "role": "CPU80 ALU carry-in无结构收益证据",
+      "policy": "run80774734f8be466f9ebd33241299ef45综合/原生审计通过，42041 LUT/29313 FF；局部carry数量/深度未减，保留输入和数据库，不进入PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r13"
+      ],
+      "role": "CPU80 ALU分组前缀综合通过候选",
+      "policy": "CPU7f37edbe/run39765195489c493485651c240a29808f；455输入综合审计通过，42106 LUT/29312 FF，模块内进位深34→7/11；完整正确性与最终STA/板测另验；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r14"
+      ],
+      "role": "CPU80发射仲裁辅助候选综合通过",
+      "policy": "CPUbbda543c/run5bf4d98a4b8c40e59e130a522f91887c；42223 LUT/29312 FF，局部授权解析深10/11→10/10，FF/RAM保持；完整138项/Windows/STA/板测独立验收，不自动启动PnR；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full17"
+      ],
+      "role": "CPU80分组前缀完整Windows回归通过",
+      "policy": "从c80r13冻结455输入隔离复制，FULL_ENTRY_PASS且输入/固件逐字节一致；不能替代CPU135项/最终STA/板测"
+    },
+    {
+      "patterns": [
+        "c80full18"
+      ],
+      "role": "CPU80发射仲裁备用候选Windows完整通过",
+      "policy": "从c80r14冻结455输入隔离复制，FULL_ENTRY_PASS及全部输入/固件字节一致性通过；独立于主候选c80full17，不能替代138项CPU/STA/板测；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "src_cpu80_headstore_*"
+      ],
+      "role": "CPU80 第九候选：槽1队头store控制解耦",
+      "policy": "本地ebf11de配对，仅Commit改变；完整回归/STA/板测分别验收，不提前推送"
+    },
+    {
+      "patterns": [
+        "src_cpu80_head_*"
+      ],
+      "role": "CPU80 第八候选：ROB队头、rename及hold实现",
+      "policy": "完整129/50通过；最终CPU setup差0.054ns/3端点；保留来源及失败证据"
+    },
+    {
+      "patterns": [
+        "src_cpu80_commit_*"
+      ],
+      "role": "CPU80 第七候选提交控制 Chisel 来源",
+      "policy": "第6次完整PnR失败；保留来源和原生证据；未推送"
+    },
+    {
+      "patterns": [
+        "src_cpu80_shadow_*"
+      ],
+      "role": "CPU80 第六轮 Chisel 实现来源",
+      "policy": "对应最终STA失败证据；与冻结 RTL/来源提交配对保留"
+    },
+    {
+      "patterns": [
+        "c80r10b"
+      ],
+      "role": "CPU80 资源优化综合门禁通过候选",
+      "policy": "全机少817 LUT/3040 FF；硬件与r10a相同，AXI事务SAT门禁通过；先完整正确性后时序；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p10"
+      ],
+      "role": "CPU80 MAC结果复用后最终STA失败证据",
+      "policy": "完整回归与资源收益通过；CPU setup -0.572ns/155端点、hold -0.028/-0.014ns；正式与展开报告保留，未上板；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80full13"
+      ],
+      "role": "CPU80 资源候选完整Windows入口主机路径失败证据",
+      "policy": "452冻结硬件输入保持r10b；59项板测策略通过后，交付策略夹具旧D盘Python路径失败；保留"
+    },
+    {
+      "patterns": [
+        "c80full14"
+      ],
+      "role": "CPU80 资源候选完整Windows入口通过",
+      "policy": "冻结硬件与r10b一致；完整SOC_ALL_TESTS_PASS且ELF/BIN/ROM逐字节一致；不代表时序或板测通过"
+    },
+    {
+      "patterns": [
+        "c80full12"
+      ],
+      "role": "CPU80 资源候选完整Windows入口失败证据",
+      "policy": "452硬件输入与r10b一致；策略夹具缺少最终产物而失败，保留日志；不代表最终STA或实板通过"
+    },
+    {
+      "patterns": [
+        "c80r10a"
+      ],
+      "role": "CPU80 资源优化第二次冻结失败证据",
+      "policy": "PMA审计通过，SD wr中间名被优化而拒绝；保留冻结输入，不就地修改追认；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r10"
+      ],
+      "role": "CPU80 资源优化首次综合/审计拒绝证据",
+      "policy": "映射少817 LUT/3040 FF，原PMA检查固定I0而拒绝；保留冻结输入和失败日志，不追认旧run；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p9",
+        "c80r9"
+      ],
+      "role": "CPU80 第九候选失败证据/配对综合",
+      "policy": "452输入冻结，完整130项回归及综合/SD门禁通过；最终CPU setup -0.754ns/104端点、slow hold -0.010ns；不自动清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p8",
+        "c80r8a"
+      ],
+      "role": "CPU80 第7次完整PnR失败与配对综合",
+      "policy": "451输入冻结；CPU setup -0.054ns/3端点，SD固定端口名审计拒绝；不修改旧输入；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80r8"
+      ],
+      "role": "CPU80 第八候选首次综合及审计失败证据",
+      "policy": "原审计未支持GTP_LUT6CARRY；冻结输入不改写，修复审计后在r8a重建；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p7",
+        "c80r7"
+      ],
+      "role": "CPU80 第6次完整PnR失败及对应综合候选",
+      "policy": "450输入冻结；保留63个CPU setup、CPU hold和RGMII setup失败证据；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c80p6",
+        "c80r6"
+      ],
+      "role": "当前 CPU80 原生失败候选与对应综合候选",
+      "policy": "450 输入冻结；保留原生数据库、报告和恢复入口；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c75tp",
+        "c75review_d8e3b863_boardverified*"
+      ],
+      "role": "CPU75 已接受候选及实板审查树",
+      "policy": "回退/对照基线；保留"
+    },
+    {
+      "patterns": [
+        "c80p*",
+        "c80r*",
+        "c80reg*",
+        "c80full*"
+      ],
+      "role": "CPU80 历次 PnR、综合及回归目录",
+      "policy": "本轮硬件未交付；不自动清理；2026-10-24 部分旧副本已去重归档 H，原位置保留报告和 ARCHIVED_TO_H.json；按该恢复指针还原后再使用完整旧树。"
+    },
+    {
+      "patterns": [
+        "c75*",
+        "c70*",
+        "b70*",
+        "board_test_candidates"
+      ],
+      "role": "CPU70/75 候选、资源实验与板测目录",
+      "policy": "历史证据/回退关系待逐项核对；不因名称旧而删除"
+    },
+    {
+      "patterns": [
+        "src_cpu*",
+        "src_v*",
+        "src",
+        "cpu",
+        "参考cpu"
+      ],
+      "role": "CPU 源码、历史实现及 worktree",
+      "policy": "先查 git worktree、分支、未提交修改及模型绑定"
+    },
+    {
+      "patterns": [
+        "performance_soc*"
+      ],
+      "role": "SoC 主仓库、专题分支或历史集成树",
+      "policy": "独立仓库/工作树；不可按普通目录移动删除"
+    },
+    {
+      "patterns": [
+        "PDS_2022.2-SP6.4",
+        "PDS",
+        "pds_mcp_portable_*",
+        ".pds-mcp",
+        "bin"
+      ],
+      "role": "PDS 安装、下载/调试工具及运行环境",
+      "policy": "工具依赖；不纳入产物清理"
+    },
+    {
+      "patterns": [
+        "数据集",
+        "models",
+        "sd_backup_*",
+        "assets"
+      ],
+      "role": "训练数据、模型、SD 备份和资源",
+      "policy": "用户数据/运行输入；保留"
+    },
+    {
+      "patterns": [
+        "skills"
+      ],
+      "role": "项目技能维护源",
+      "policy": "review/verify 后同步各交付树"
+    },
+    {
+      "patterns": [
+        "archive",
+        "artifacts",
+        "soc_freq_evidence"
+      ],
+      "role": "归档、交付包及频率验证证据",
+      "policy": "按哈希及索引保留；归档不等于可删除"
+    },
+    {
+      "patterns": [
+        "_tmp",
+        "build",
+        "log",
+        ".cache"
+      ],
+      "role": "工作区级临时编译、构建及日志",
+      "policy": "结束任务后仅清理明确可再生项；其余先归档"
+    },
+    {
+      "patterns": [
+        "rtl",
+        "sw",
+        "ip",
+        "linux",
+        "scripts",
+        "sim",
+        "docs",
+        "driver",
+        "soc",
+        "coremark"
+      ],
+      "role": "根目录历史平台源码、驱动、文档或基准",
+      "policy": "非当前主工程；保留独立用途和历史引用"
+    },
+    {
+      "patterns": [
+        "mac_accel*",
+        "fp4_native_prototype"
+      ],
+      "role": "加速器仓库、同步树或原型",
+      "policy": "确认仓库与实际模型调用关系后再整理"
+    },
+    {
+      "patterns": [
+        "xiangqi_gui",
+        "xiangqi_oss",
+        "voice_verify*"
+      ],
+      "role": "GUI、Pikafish 依赖及语音验证树",
+      "policy": "软件/模型链路输入；保留"
+    },
+    {
+      "patterns": [
+        "workspace",
+        "题目",
+        ".git",
+        ".cursor",
+        ".vscode"
+      ],
+      "role": "工作空间元数据、编辑器配置或项目资料",
+      "policy": "保持原位；未知用途不自动清理"
+    },
+    {
+      "patterns": [
+        "src_cpu85_cachedhint_20261021",
+        "performance_soc_cpu85_cachedhint_20261021",
+        "c85chr*",
+        "c85chp*",
+        "c85chfull*",
+        "c85chcycles*",
+        "c85review_20261021_cachedhint*"
+      ],
+      "role": "85MHz共享base-probe时隙资源候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU4c809c3资源-68LUT/-30FF但局部输入锥38→42且原生旧hint名字检查失败，拒绝PnR；原始失败及只读v3诊断保持，不清理。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_cachedkey_20261021",
+        "performance_soc_cpu85_cachedkey_20261021",
+        "c85ckr*",
+        "c85ckp*",
+        "c85ckfull*",
+        "c85ckcycles*",
+        "c85review_20261021_cachedkey*",
+        "c85ckcycles-*",
+        "c85ckfull1",
+        "c85ckp1"
+      ],
+      "role": "85MHz共享base-probe时隙资源候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU9a8cab19/SoCc0dcab5b，147/55及完整SoC/8实际映射PASS；a5198a46最终CPU setup−0.427ns/33端点失败，hold+.113/+.081、SYS+3.304，其余summary和20skew无负。全33只读展开和原明文.rtr/XML已保存。资源优先；不板测、不推送、不清理。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_mdureg_20261021",
+        "performance_soc_cpu85_mdureg_20261021",
+        "c85mg*"
+      ],
+      "role": "85MHz MDU注册操作数边界隔离试验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPUcb87dd83：4/2目标测试通过；同ROM短仿真估算CoreMark/MHz下降0.8583249538超过0.05，已拒绝，未综合/未PnR/未上板/未推送。保留源码和失败证据。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_mduwb_20261022",
+        "performance_soc_cpu85_mduwb_20261022",
+        "c85mw*"
+      ],
+      "role": "85MHz MDU写回保留及ROB存储数据注册边界候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU2b0387fe：5/3及同ROM预算/70位实际数据证明PASS，资源+277LUT，readbuf全局资源门禁拒绝；完整150/57中149过1败(DualIssue旧独立Dispatch输入合同)，不得写完整通过。无SoC/PnR/STA/板测。当前不推进，保留全部证据不清理。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_mduwbarea_20261022",
+        "performance_soc_cpu85_mduwbarea_20261022",
+        "c85mwa*"
+      ],
+      "role": "MDU重复命中数据门控资源试验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPUd220577e/RTL7a57ad28，131配对；5/3及同ROM与2b相同；0dd8资源41199LUT/29170FF(比2b−61/比9a+216)。未完整CPU/STA，继承2b旧测试合同待适配，当前不推进，不推送不清理；失败freeze及partial资料已校验归档。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_storepipe_20261022",
+        "performance_soc_cpu85_storepipe_20261022",
+        "c85sp*",
+        "c85review_20261022_storepipe*"
+      ],
+      "role": "当前85MHz最差DCache到LSU存储数据路径资源优先候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU4a53a362/SoC753c9ea5：149/56与SoC/九原生证明PASS，但1ec67ce1最终CPU setup−.670/28，hold−.028/−.014各1，SYS+3.724；原生rtr/XML与全部max/min只读展开保留。无85板测/交付/推送，不清理；资源优先转向FRONTTARGET。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_fronttarget_20261022",
+        "performance_soc_cpu85_fronttarget_20261022",
+        "c85ft*",
+        "c85review_20261022_fronttarget*"
+      ],
+      "role": "当前85MHz前端目标加法器资源优先试验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU6810d9ac/RTL f61b960e；7/2与同ROM精确通过。9ade实际40873LUT/29170FF，−91LUT；32算术/732FF保留通过，carry−88，图深度不增/最大图负载32→39待STA。未完整CPU/SoC/PnR/板测，不推送不清理。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_sizecode_20261022",
+        "c85sz*"
+      ],
+      "role": "ROB内存元数据零级hold路径独立可逆编码试验",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPUfc135572/RTL2ec32385；全8192记录及优先级/16flush改前改后2/1均过，配对生成133输入；无单独综合/STA/板测，变更组合到FRONTSIZE后继续验证；保留全部测试引擎适配失败及原未完成记录，不推送不清理。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_frontsize_20261022",
+        "performance_soc_cpu85_frontsize_20261022",
+        "c85fs*",
+        "c85review_20261022_frontsize*"
+      ],
+      "role": "当前85MHz前端共享目标与ROB元数据hold编码候选",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：e310/027a完整152/58 CPU/SoC/同ROM/11结构通过；630392e6最终setup−1.070/37，hold+.016/+.010。37端点全展开原报告/ADF不变，失败候选无板测/推送，保留全部源和数据库。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_mulcsa_20261022",
+        "performance_soc_cpu85_mulcsa_20261022",
+        "c85mcsr*",
+        "c85mcscycles-*",
+        "c85mcsfull*",
+        "c85mcsp*",
+        "c85review_20261022_mulcsa*"
+      ],
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：CPU1b791220/RTLa2ecf06b?SoC d4ca969f???CPU152/58?SoC??ROM?11???????eb5310cd/c85mcsp1?4?????????iteration212/7928???????STA/WNS?????????native-routing-timeout???????????",
+      "role": "CPU85 Mul carry-save单因素资源试验，e310后续；先功能/周期/整机资源及实际组合锥，再决定完整流程。"
+    },
+    {
+      "patterns": [
+        "src_cpu85_dcachebank_20261022",
+        "performance_soc_cpu85_dcachebank_20261022"
+      ],
+      "role": "??CPU85 DCache bank??????worktree",
+      "policy": "2026-10-25 当前规则：用户已放弃 CPU85 方向。22 个干净 src_cpu85 checkout 和19个 SoC CPU85 worktree 已通过 Git 移除，全部 branch/commit 保留；58个 c85* 冻结/运行根已归档到 H 并完成逐文件 SHA-256 校验；19个 SoC worktree 的改动、未跟踪和忽略文件也已归档校验。恢复入口见 performance_soc_voice_hw/build/cpu85-cleanup-20261025/README.md。历史验收文本仅作旧记录；专用 Pikafish、图像、语音和整合加速器历史树保留。 历史说明：?????????????????Git checkout?owner???????????????/??/PnR?????????"
+    },
+    {
+      "patterns": [
+        "performance_soc_voice_nnue75_20261023",
+        "performance_soc_voice_nnue75_q32_20261023"
+      ],
+      "role": "CPU75 voice and direct NNUE pipeline candidate",
+      "policy": "Active isolated worktree. Preserve inputs/tests/failures. Not STA or board accepted."
+    },
+    {
+      "patterns": [
+        "v75nnuer*",
+        "v75nnuep*",
+        "v75q32p*"
+      ],
+      "role": "CPU75 voice/direct NNUE native resource and route candidates",
+      "policy": "Active p3 native run9f216be5; preserve failed r1/r2/r3/p1/p2 and all native evidence. No STA/board acceptance yet."
+    },
+    {
+      "patterns": [
+        "performance_soc_vision32_20261024",
+        "v32syn*"
+      ],
+      "role": "32-MAC vision core candidate and isolated native synthesis",
+      "policy": "P4xOC8 implementation; preserve frozen inputs and simulation/native evidence. No board/10s acceptance or delivery inferred."
+    },
+    {
+      "patterns": [
+        "i60syn*"
+      ],
+      "role": "CPU60 integrated accelerator synthesis history",
+      "policy": "Preserve as native accelerator history. Keep source binding and original reports; do not infer PnR, board, or delivery acceptance."
+    },
+    {
+      "patterns": [
+        "iopt60*"
+      ],
+      "role": "CPU60 integrated optimization native history",
+      "policy": "Preserve as accelerator optimization history from the CPU60 integration stage; retain original candidate/run identity and reports."
+    },
+    {
+      "patterns": [
+        "pfb60*"
+      ],
+      "role": "Pikafish CPU60 batch accelerator native history",
+      "policy": "Preserve batch accelerator source/run history and native evidence; not a board-performance or delivery pass."
+    },
+    {
+      "patterns": [
+        "pfdsyn*",
+        "pfpnr*"
+      ],
+      "role": "Dedicated Pikafish accelerator synthesis and PnR history",
+      "policy": "Preserve beginning with the 2026-10-24 dedicated accelerator optimization. Keep Stage A gather, Stage B dense MAC, weight-cache and native reports associated with their source/run identity."
+    },
+    {
+      "patterns": [
+        "v2vsyn*"
+      ],
+      "role": "Vision accelerator native synthesis history",
+      "policy": "Preserve as accelerator history; native synthesis is not final STA, board acceptance, or delivery."
+    },
+    {
+      "patterns": [
+        "performance_soc_integrated_opt60_20261024",
+        "iopt60*"
+      ],
+      "role": "CPU60 integrated batch Pikafish, vision and voice optimization candidate",
+      "policy": "Development only; preserve failed inputs and original models. Native STA and board measurements must bind this candidate."
+    }
+  ]
+}

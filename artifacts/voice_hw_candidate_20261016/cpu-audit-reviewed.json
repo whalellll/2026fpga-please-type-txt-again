@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "profile": "CPU integrated RV32IMA without obsolete DMA carve-out",
+  "scope": "selected post-ADS combinational LUT cones; not whole-design gate simulation, STA or board acceptance",
+  "netlist_sha256": "92e5d8291f31feafef12827c01073c4231b42b545e9f9367f9d6a785e69a4a82",
+  "frontend_cases": 85760,
+  "return_cases": 10240,
+  "pma_address_cases": 2144,
+  "rsmem_hint_cases": 17152,
+  "frontend_extra_state_cofactors": [
+    "trainValid",
+    "trainLength[1]",
+    "pdHistTaken"
+  ],
+  "pma_device_windows": [
+    "02000000..0200ffff",
+    "1fe00000..1fefffff"
+  ],
+  "boot_bram_cached": "1c000000..1c01ffff, including 1c018000..1c01bfff",
+  "uncached_alias": "80000000..bfffffff",
+  "controls": {
+    "branch0": {
+      "type": "GTP_LUT6D",
+      "instance": "N62_vname",
+      "output": "Z5",
+      "init": 18445899634462730920,
+      "ports": {
+        "Z": "N62",
+        "Z5": "branch0",
+        "I0": "N129",
+        "I1": "pdLength[0]",
+        "I2": "pdLength[1]",
+        "I3": "pdLength[2]",
+        "I4": "",
+        "I5": "1'b1"
+      }
+    },
+    "branch1": {
+      "type": "GTP_LUT6",
+      "instance": "N133",
+      "output": "Z",
+      "init": 12297829379618111488,
+      "ports": {
+        "Z": "branch1",
+        "I0": "slotValid_1",
+        "I1": "pdInsts_1[2]",
+        "I2": "pdInsts_1[6]",
+        "I3": "pdInsts_1[14]",
+        "I4": "_N317752",
+        "I5": "_N317759"
+      }
+    },
+    "branch2": {
+      "type": "GTP_LUT6",
+      "instance": "N136",
+      "output": "Z",
+      "init": 187469593094784,
+      "ports": {
+        "Z": "branch2",
+        "I0": "N135",
+        "I1": "pdLength[0]",
+        "I2": "pdLength[1]",
+        "I3": "pdLength[2]",
+        "I4": "pdPc[3]",
+        "I5": "pdPc[4]"
+      }
+    },
+    "branch3": {
+      "type": "GTP_LUT6",
+      "instance": "N139",
+      "output": "Z",
+      "init": 965845508320,
+      "ports": {
+        "Z": "branch3",
+        "I0": "_N320372",
+        "I1": "jalr_3",
+        "I2": "pdLength[2]",
+        "I3": "pdPc[2]",
+        "I4": "pdPc[3]",
+        "I5": "pdPc[4]"
+      }
+    },
+    "found": {
+      "type": "GTP_LUT6D",
+      "instance": "N151_8[0]",
+      "output": "Z5",
+      "init": 71776120492873044,
+      "ports": {
+        "Z": "_N104259",
+        "Z5": "found",
+        "I0": "N143",
+        "I1": "branch0",
+        "I2": "branch1",
+        "I3": "branch2",
+        "I4": "branch3",
+        "I5": "1'b1"
+      }
+    },
+    "selectedJal": {
+      "type": "GTP_LUT6",
+      "instance": "N164_10[25]",
+      "output": "Z",
+      "init": 15372286728807120896,
+      "ports": {
+        "Z": "selectedJal",
+        "I0": "select1",
+        "I1": "pdInsts_1[2]",
+        "I2": "pdInsts_1[3]",
+        "I3": "pdInsts_1[6]",
+        "I4": "_N291400",
+        "I5": "_N111573"
+      }
+    },
+    "selectedCond": {
+      "type": "GTP_LUT6",
+      "instance": "N164_10[26]",
+      "output": "Z",
+      "init": 14614111314532942016,
+      "ports": {
+        "Z": "selectedCond",
+        "I0": "_N320404",
+        "I1": "cond_1",
+        "I2": "select1",
+        "I3": "select2",
+        "I4": "_N291647",
+        "I5": "_N111546"
+      }
+    },
+    "pdRepair": {
+      "type": "GTP_LUT6",
+      "instance": "N274",
+      "output": "Z",
+      "init": 6148820867390373888,
+      "ports": {
+        "Z": "pdRepair",
+        "I0": "N143",
+        "I1": "N258",
+        "I2": "N264",
+        "I3": "finalTaken",
+        "I4": "pdAccept",
+        "I5": "_N330460"
+      }
+    },
+    "selectedJalr": {
+      "type": "GTP_LUT6",
+      "instance": "N164_10[27]",
+      "output": "Z",
+      "init": 6184850214450692096,
+      "ports": {
+        "Z": "selectedJalr",
+        "I0": "select1",
+        "I1": "pdInsts_1[2]",
+        "I2": "pdInsts_1[6]",
+        "I3": "pdInsts_1[14]",
+        "I4": "_N111575",
+        "I5": "_N317752"
+      }
+    }
+  },
+  "pma_contract": {
+    "address_cases": 2144,
+    "consumer_cases": 68608,
+    "consumers": [
+      "Lsu.N23",
+      "Lsu.N972"
+    ],
+    "mapped_outputs": {
+      "N7": {
+        "type": "GTP_LUT6",
+        "instance": "N7_1",
+        "output": "Z",
+        "init": 275909541114416,
+        "ports": {
+          "Z": "N7",
+          "I0": "_N329277",
+          "I1": "u_cpu/u_cpu_wrapper/u_cpu/core/memory/_u_lsu_io_pmaDVaddr[30]",
+          "I2": "io_dPaddr[31]",
+          "I3": "_N281764",
+          "I4": "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/_tlb_io_response_bits_physicalAddress[30]",
+          "I5": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/N247"
+        }
+      }
+    },
+    "consumer_pma_inputs": {
+      "N23": [
+        "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/attributes/N7"
+      ],
+      "N972": [
+        "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/attributes/N7"
+      ]
+    },
+    "output_values": {
+      "N7": [
+        0,
+        1
+      ]
+    },
+    "topology": "PhysicalMemoryAttributes.N7 -> PmaMmu -> CoreMemory -> Lsu.N23/N972",
+    "variant": "supervisor_fused_single_output",
+    "control_combinations": 16
+  },
+  "repair_structural_fanin": [
+    "branch0",
+    "branch1",
+    "branch2",
+    "branch3",
+    "found",
+    "selectedJal",
+    "selectedCond"
+  ],
+  "refresh": [
+    {
+      "type": "GTP_DFF_R",
+      "instance": "s0KeyRefreshA_0_vname",
+      "output": "Q",
+      "init": 0,
+      "ports": {
+        "Q": "s0KeyRefreshA_0",
+        "CLK": "clock",
+        "D": "N825",
+        "R": "reset"
+      }
+    },
+    {
+      "type": "GTP_DFF_R",
+      "instance": "s0KeyRefreshA_1_vname",
+      "output": "Q",
+      "init": 0,
+      "ports": {
+        "Q": "s0KeyRefreshA_1",
+        "CLK": "clock",
+        "D": "N832",
+        "R": "reset"
+      }
+    }
+  ],
+  "hint": [
+    {
+      "type": "GTP_LUT6D",
+      "instance": "N691_2",
+      "output": "Z5",
+      "init": 3746770585305223184,
+      "ports": {
+        "Z": "_N330672",
+        "Z5": "scanKnownCached_0",
+        "I0": "N11",
+        "I1": "s0KeyRefreshA_0",
+        "I2": "s0ValValidA_0",
+        "I3": "validA_0",
+        "I4": "io_dataTranslationActive",
+        "I5": "1'b1"
+      }
+    },
+    {
+      "type": "GTP_LUT6D",
+      "instance": "N721_2",
+      "output": "Z5",
+      "init": 3746770585305223184,
+      "ports": {
+        "Z": "_N330663",
+        "Z5": "scanKnownCached_1",
+        "I0": "N24",
+        "I1": "s0KeyRefreshA_1",
+        "I2": "s0ValValidA_1",
+        "I3": "validA_1",
+        "I4": "io_dataTranslationActive",
+        "I5": "1'b1"
+      }
+    }
+  ],
+  "audit_script_sha256": "c2f92e579e1b9a245d6482ac1edbbb673c5367ee34a39865e57dbdaaf57d060c"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "candidate": "E-v1-640-v3c-r12",
+  "selected_for_work": false,
+  "acceptance_status": "正式FP32数字门通过；量化、时延和整体M0未验收",
+  "model_sha256": {
+    "board": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825",
+    "detector": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d",
+    "classifier": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+  },
+  "local_release": "build/picture-r12-20261022/adapter-inputs-r02/working-r12/software",
+  "detector_input": 640,
+  "candidate_filter": true,
+  "refinement": "B_trials80_bbox",
+  "official_source": "docs/validation/picture-r12-engineering-20261022/official_acceptance_game2.json",
+  "formal_FP32": {
+    "frames": 84,
+    "fen_exact": 73,
+    "strict_usable": 73,
+    "candidate_board": 83,
+    "cell_conflict": 1
+  },
+  "quantized_payload_available": false,
+  "latency_waiver_granted": false,
+  "production_ready": false,
+  "full_integer_pipeline": false,
+  "superseded_by": "candidate_r14_e_v3dqat"
+}

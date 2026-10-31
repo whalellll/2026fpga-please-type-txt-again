@@ -1,0 +1,10 @@
+{
+  "status": "CPU75_CSR_NATIVE_STRICT_EXECUTION_AND_FINAL_SITES_PASS_NOT_STA_OR_BOARD",
+  "cells": 32,
+  "run_id": "9302a6212eac40b08fae353321f31d1c",
+  "snapshot_sha256": "d4ad8399260a5a8b86eea8fba2d3f68cf60dd9668f8c1de6c3a25b0e2b427267",
+  "constraint_sha256": "e9dbbe9adc070115e61b124feab2349642b1ce60a7f17b5995938d9bcaf66121",
+  "contract_sha256": "91d54b0e3c5e384d2a5f0a1e97c1ce202f50b7bb2653eebf01e06951149abfc0",
+  "actual_export_sha256": "c353b55ab25af063f57bd2a42508802a10aa8350338f01c1c252ca72b083eb8b",
+  "pnr_sha256": "2ddf1a4c6abac0e5f8e420a8f5ead83b6c554ec8a40c845ceab8d6c7d04a1d8c"
+}

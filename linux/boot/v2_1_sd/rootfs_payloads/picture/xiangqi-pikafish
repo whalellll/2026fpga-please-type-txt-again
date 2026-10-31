@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+. /etc/xq-picture.conf
+if [ "$XQ_PICTURE_MODE" = stub ] && [ ! -e "$XQ_PICTURE_STUB" ]; then
+    cp /opt/xq-picture/opening.stub "$XQ_PICTURE_STUB"
+fi
+export XQ_PICTURE_MODE XQ_PICTURE_STUB
+export XQ_PICTURE_VOICE XQ_PICTURE_PCM XQ_PICTURE_VOLUME
+exec /usr/bin/xiangqi-pikafish-gui "$@"

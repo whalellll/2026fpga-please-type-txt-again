@@ -1,0 +1,522 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "profile": "CPU integrated RV32IMA without obsolete DMA carve-out",
+  "scope": "selected post-ADS combinational LUT cones; not whole-design gate simulation, STA or board acceptance",
+  "netlist_sha256": "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31",
+  "frontend_cases": 85760,
+  "return_cases": 10240,
+  "pma_address_cases": 2144,
+  "rsmem_hint_cases": 17152,
+  "frontend_extra_state_cofactors": [
+    "trainValid",
+    "trainLength[1]",
+    "pdHistTaken"
+  ],
+  "registered_metadata_proof": {
+    "status": "PASS",
+    "proof": "ROBDD equality of complete native D cones over all source leaves; no input-MUX cut assumption",
+    "instruction_classes_per_lane": 1048576,
+    "results": [
+      {
+        "lane": 0,
+        "flag": "Returns",
+        "ff": "pdReturns_0_vname",
+        "Q": "pdReturns_0",
+        "D": "N467",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 187,
+        "bdd_nodes": 3314,
+        "variable_order_sha256": "c00a60e61ce26de91bba0a5675f2d3af0d270a32dad34d10b35570f753aa0ba0",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 0,
+        "flag": "Calls",
+        "ff": "pdCalls_0_vname",
+        "Q": "pdCalls_0",
+        "D": "N503",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 187,
+        "bdd_nodes": 3423,
+        "variable_order_sha256": "c00a60e61ce26de91bba0a5675f2d3af0d270a32dad34d10b35570f753aa0ba0",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 1,
+        "flag": "Returns",
+        "ff": "pdReturns_1_vname",
+        "Q": "pdReturns_1",
+        "D": "N476",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 167,
+        "bdd_nodes": 3043,
+        "variable_order_sha256": "5accf8f82c918712603ce2ecfe1e6bff440aa190daaa9bc5c1f4d263dbca7a85",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 1,
+        "flag": "Calls",
+        "ff": "pdCalls_1_vname",
+        "Q": "pdCalls_1",
+        "D": "N512",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 167,
+        "bdd_nodes": 3146,
+        "variable_order_sha256": "5accf8f82c918712603ce2ecfe1e6bff440aa190daaa9bc5c1f4d263dbca7a85",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 2,
+        "flag": "Returns",
+        "ff": "pdReturns_2_vname",
+        "Q": "pdReturns_2",
+        "D": "N485",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 147,
+        "bdd_nodes": 3078,
+        "variable_order_sha256": "e16217e582c4467705cae354481bbe1e954b93a0f3e706356560b1d7f45e065f",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 2,
+        "flag": "Calls",
+        "ff": "pdCalls_2_vname",
+        "Q": "pdCalls_2",
+        "D": "N521",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 147,
+        "bdd_nodes": 3175,
+        "variable_order_sha256": "e16217e582c4467705cae354481bbe1e954b93a0f3e706356560b1d7f45e065f",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 3,
+        "flag": "Returns",
+        "ff": "pdReturns_3_vname",
+        "Q": "pdReturns_3",
+        "D": "N494",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 127,
+        "bdd_nodes": 2752,
+        "variable_order_sha256": "854ecb99f8e46b321d016298cf8e12d0cdb28d2e11b1927a682195a057e63c24",
+        "equivalent_for_all_leaf_assignments": true
+      },
+      {
+        "lane": 3,
+        "flag": "Calls",
+        "ff": "pdCalls_3_vname",
+        "Q": "pdCalls_3",
+        "D": "N530",
+        "CLK": "clock",
+        "CE": "fcToPd",
+        "instruction_classes": 1048576,
+        "arbitrary_boolean_leaves": 127,
+        "bdd_nodes": 2843,
+        "variable_order_sha256": "854ecb99f8e46b321d016298cf8e12d0cdb28d2e11b1927a682195a057e63c24",
+        "equivalent_for_all_leaf_assignments": true
+      }
+    ]
+  },
+  "registered_return_selector": "N173",
+  "instruction_fault_targets": [
+    "N877[6]",
+    "N877[7]"
+  ],
+  "pma_device_windows": [
+    "02000000..0200ffff",
+    "1fe00000..1fefffff"
+  ],
+  "boot_bram_cached": "1c000000..1c01ffff, including 1c018000..1c01bfff",
+  "uncached_alias": "80000000..bfffffff",
+  "controls": {
+    "branch0": {
+      "type": "GTP_LUT4",
+      "instance": "N130",
+      "output": "Z",
+      "init": 43688,
+      "ports": {
+        "Z": "branch0",
+        "I0": "N129",
+        "I1": "pdLength[0]",
+        "I2": "pdLength[1]",
+        "I3": "pdLength[2]"
+      }
+    },
+    "branch1": {
+      "type": "GTP_LUT6",
+      "instance": "N133",
+      "output": "Z",
+      "init": 12297829379618111488,
+      "ports": {
+        "Z": "branch1",
+        "I0": "slotValid_1",
+        "I1": "pdInsts_1[2]",
+        "I2": "pdInsts_1[6]",
+        "I3": "pdInsts_1[14]",
+        "I4": "_N330051",
+        "I5": "_N340191"
+      }
+    },
+    "branch2": {
+      "type": "GTP_LUT6",
+      "instance": "N136",
+      "output": "Z",
+      "init": 187469593094784,
+      "ports": {
+        "Z": "branch2",
+        "I0": "N135",
+        "I1": "pdLength[0]",
+        "I2": "pdLength[1]",
+        "I3": "pdLength[2]",
+        "I4": "pdPc[3]",
+        "I5": "pdPc[4]"
+      }
+    },
+    "branch3": {
+      "type": "GTP_LUT6",
+      "instance": "N139",
+      "output": "Z",
+      "init": 965845508320,
+      "ports": {
+        "Z": "branch3",
+        "I0": "jalr_3",
+        "I1": "_N327251",
+        "I2": "pdLength[2]",
+        "I3": "pdPc[2]",
+        "I4": "pdPc[3]",
+        "I5": "pdPc[4]"
+      }
+    },
+    "found": {
+      "type": "GTP_LUT6D",
+      "instance": "N563_8[0]_1",
+      "output": "Z5",
+      "init": 216172783545439316,
+      "ports": {
+        "Z": "_N300134",
+        "Z5": "found",
+        "I0": "N143",
+        "I1": "branch0",
+        "I2": "branch1",
+        "I3": "finalTaken",
+        "I4": "_N299753",
+        "I5": "1'b1"
+      }
+    },
+    "selectedJal": {
+      "type": "GTP_LUT6",
+      "instance": "N566_8[26]",
+      "output": "Z",
+      "init": 15372333642019045376,
+      "ports": {
+        "Z": "selectedJal",
+        "I0": "select1",
+        "I1": "pdInsts_1[2]",
+        "I2": "pdInsts_1[3]",
+        "I3": "pdInsts_1[6]",
+        "I4": "_N111249",
+        "I5": "_N300904"
+      }
+    },
+    "selectedCond": {
+      "type": "GTP_LUT6",
+      "instance": "N566_8[27]",
+      "output": "Z",
+      "init": 13514098003451545736,
+      "ports": {
+        "Z": "selectedCond",
+        "I0": "cond_1",
+        "I1": "select1",
+        "I2": "select2",
+        "I3": "_N330045",
+        "I4": "_N111220",
+        "I5": "_N301158"
+      }
+    },
+    "pdRepair": {
+      "type": "GTP_LUT6",
+      "instance": "N261",
+      "output": "Z",
+      "init": 6148820867390373888,
+      "ports": {
+        "Z": "pdRepair",
+        "I0": "N143",
+        "I1": "N245",
+        "I2": "N251",
+        "I3": "finalTaken",
+        "I4": "pdAccept",
+        "I5": "_N340236"
+      }
+    },
+    "isCall": {
+      "type": "GTP_LUT5",
+      "instance": "N180_5",
+      "output": "Z",
+      "init": 1078214656,
+      "ports": {
+        "Z": "isCall",
+        "I0": "N173",
+        "I1": "found",
+        "I2": "pdCalls_1",
+        "I3": "select1",
+        "I4": "_N111252"
+      }
+    },
+    "N173": {
+      "type": "GTP_LUT5",
+      "instance": "N566_8[28]",
+      "output": "Z",
+      "init": 2897194144,
+      "ports": {
+        "Z": "N173",
+        "I0": "pdReturns_1",
+        "I1": "pdReturns_2",
+        "I2": "select1",
+        "I3": "select2",
+        "I4": "_N111221"
+      }
+    }
+  },
+  "pma_contract": {
+    "address_cases": 2144,
+    "consumer_cases": 68608,
+    "consumers": [
+      "Lsu.N23",
+      "Lsu.N972"
+    ],
+    "mapped_outputs": {
+      "N7": {
+        "type": "GTP_LUT6",
+        "instance": "N7_1",
+        "output": "Z",
+        "init": 277954517292100,
+        "ports": {
+          "Z": "N7",
+          "I0": "u_cpu/u_cpu_wrapper/u_cpu/core/memory/_u_lsu_io_pmaDVaddr[30]",
+          "I1": "io_dPaddr[31]",
+          "I2": "_N339375",
+          "I3": "_N290723",
+          "I4": "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/_tlb_io_response_bits_physicalAddress[30]",
+          "I5": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/N247"
+        }
+      }
+    },
+    "consumer_pma_inputs": {
+      "N23": [
+        "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/attributes/N7"
+      ],
+      "N972": [
+        "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_pma/attributes/N7"
+      ]
+    },
+    "output_values": {
+      "N7": [
+        0,
+        1
+      ]
+    },
+    "topology": "PhysicalMemoryAttributes.N7 -> PmaMmu -> CoreMemory -> Lsu.N23/N972",
+    "variant": "supervisor_fused_single_output",
+    "control_combinations": 16
+  },
+  "repair_structural_fanin": [
+    "branch0",
+    "branch1",
+    "branch2",
+    "branch3",
+    "found",
+    "selectedJal",
+    "selectedCond"
+  ],
+  "refresh": [
+    {
+      "type": "GTP_DFF_R",
+      "instance": "s0KeyRefreshA_0_vname",
+      "output": "Q",
+      "init": 0,
+      "ports": {
+        "Q": "s0KeyRefreshA_0",
+        "CLK": "clock",
+        "D": "N823",
+        "R": "reset"
+      }
+    },
+    {
+      "type": "GTP_DFF_R",
+      "instance": "s0KeyRefreshA_1_vname",
+      "output": "Q",
+      "init": 0,
+      "ports": {
+        "Q": "s0KeyRefreshA_1",
+        "CLK": "clock",
+        "D": "N830",
+        "R": "reset"
+      }
+    }
+  ],
+  "hint": [
+    {
+      "type": "GTP_LUT6D",
+      "instance": "N972_vname",
+      "output": "Z5",
+      "init": 1080880403243339792,
+      "ports": {
+        "Z": "N972",
+        "Z5": "scanKnownCached_0",
+        "I0": "N11",
+        "I1": "s0KeyRefreshA_0",
+        "I2": "s0ValValidA_0",
+        "I3": "s0Wbdat_matches_1",
+        "I4": "io_dataTranslationActive",
+        "I5": "1'b1"
+      }
+    },
+    {
+      "type": "GTP_LUT4",
+      "instance": "N26_4",
+      "output": "Z",
+      "init": 16,
+      "ports": {
+        "Z": "scanKnownCached_1",
+        "I0": "N24",
+        "I1": "s0KeyRefreshA_1",
+        "I2": "s0ValValidA_1",
+        "I3": "io_dataTranslationActive"
+      }
+    }
+  ],
+  "input_snapshot_sha256": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+  "input_snapshot_run_id": "d8e3b863e8b54212ae85cb905c2fa5cb",
+  "cpu_rtl_sha256": "664dd6c781f51f187852df7ed1209bb8175cd3d08b1984d1d12a867bdb41ae55",
+  "cpu_emit_config_sha256": "edaa35a8d7d6caec473709095f7335415e8b73e3c8b72eb0cbd0d4eff7c0e3ca",
+  "production_rom_sha256": "10b6498650a5468f4f3b102a0a31a34089373d12cf2e1a7a2682ba008603d746",
+  "uart_tx_pad_contract": {
+    "schema": 1,
+    "status": "PASS",
+    "scope": "MAPPED_UART_TX_WADDR_PADS",
+    "hierarchy": "soc_top/u_local/u_tx",
+    "pairs": [
+      {
+        "pair": 0,
+        "instance": "\\write_address_pad[0].u_hold_dual_lut",
+        "inputs": [
+          "pad_address_in[0]",
+          "pad_address_in[1]"
+        ],
+        "outputs": [
+          "fifo_write_address[0]",
+          "fifo_write_address[1]"
+        ]
+      },
+      {
+        "pair": 1,
+        "instance": "\\write_address_pad[1].u_hold_dual_lut",
+        "inputs": [
+          "pad_address_in[2]",
+          "pad_address_in[3]"
+        ],
+        "outputs": [
+          "fifo_write_address[2]",
+          "fifo_write_address[3]"
+        ]
+      }
+    ],
+    "primitive": "GTP_LUT6D",
+    "init": "CCCCCCCC_AAAAAAAA",
+    "preservation_attribute": "PAP_DONT_TOUCH",
+    "address_bits": 4,
+    "upstream_ff_bits": 4,
+    "memory_cells": 4,
+    "data_bits": 8,
+    "waddr_pins_checked": 16,
+    "memories": [
+      {
+        "instance": "fifo_0",
+        "primitive": "GTP_RAM32X2DP",
+        "waddr": "{1'b0,fifo_write_address[3],fifo_write_address[2],fifo_write_address[1],fifo_write_address[0]}",
+        "data_bits": [
+          1,
+          0
+        ],
+        "waddr_low_to_high_pointer_bits": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "instance": "fifo_1",
+        "primitive": "GTP_RAM32X2DP",
+        "waddr": "{1'b0,fifo_write_address[3],fifo_write_address[2],fifo_write_address[1],fifo_write_address[0]}",
+        "data_bits": [
+          3,
+          2
+        ],
+        "waddr_low_to_high_pointer_bits": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "instance": "fifo_2",
+        "primitive": "GTP_RAM32X2DP",
+        "waddr": "{1'b0,fifo_write_address[3],fifo_write_address[2],fifo_write_address[1],fifo_write_address[0]}",
+        "data_bits": [
+          5,
+          4
+        ],
+        "waddr_low_to_high_pointer_bits": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "instance": "fifo_3",
+        "primitive": "GTP_RAM32X2DP",
+        "waddr": "{1'b0,fifo_write_address[3],fifo_write_address[2],fifo_write_address[1],fifo_write_address[0]}",
+        "data_bits": [
+          7,
+          6
+        ],
+        "waddr_low_to_high_pointer_bits": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "unique_drivers": true,
+    "bypass": false,
+    "module_sha256": "9f3557593383934286af0390fc5e2b558657aa778bb83e4b14a07071d9f4fbae",
+    "post_pnr_physical_retention_proven": false,
+    "routed_hold_margin_proven": false,
+    "checker_sha256": "0fd91d2ca8ecac94bdd6fcfdd14f7979b265ee8761562fc5eb53a063e04dfd27",
+    "parser_sha256": "04f5ec7133abd2a1de93082cc1ac66586e8d5e9a06168ea92e938017b8e81e6e",
+    "vm_sha256": "00e702826baf9c244e49e063b1a2bbba7c30695fda3390678c480de1ac480f31",
+    "input_snapshot_sha256": "f35743ada2edb58602a99b6aafeabc28ee211cf83e8037c5b71c44df8b35771f",
+    "run_id": "d8e3b863e8b54212ae85cb905c2fa5cb",
+    "uart_rtl_sha256": "79f59f880bd0a1ebfe0c9a1a89b5649ef5b42b4605cfc824438a189d703e4cfb"
+  },
+  "audit_script_sha256": "271c209e79481fa63cbb516e7e3f49a2c22055720b12e4a6b59d66904be7c96b"
+}

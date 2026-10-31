@@ -1,0 +1,12 @@
+
+/ # /usr/bin/timeout 300 /usr/bin/picture-new-bench-hwc-reference board /opt/int
+egrated60/assets/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3; prin
+tf "\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=0 infer_us=29511857 model_load_us=973341 input_open_us=213014 jobs=45 cycles=27448069 hardware_us=554506 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=1 infer_us=29468589 model_load_us=973341 input_open_us=213014 jobs=45 cycles=27577993 hardware_us=557131 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=2 infer_us=29464357 model_load_us=973341 input_open_us=213014 jobs=45 cycles=27516564 hardware_us=555890 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+
+__CVB_END_0__:0

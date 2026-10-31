@@ -1,0 +1,1113 @@
+{
+  "status": "TRANSFER_FIXED_INPUT_BOARD_FUNCTIONAL_AND_TIMING_PASS_TARGETS_SEPARATE_COREMARK_PENDING",
+  "source_commit": "15c0baa81c5021f831458614a19bd3dc974729a6",
+  "bitstream_sha256": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+  "hardware_run": "c8282c991f494ddc8144e35245872c02",
+  "run_receipt_sha256": "9137382e759c187618753d2aa2dfdb84814abb2846e5969d192312d805e4d2d3",
+  "coremark_tested": false,
+  "formal_delivery": false,
+  "comparison_scope": "Reference applications and new applications share new hardware/kernel; no old-kernel A/B.",
+  "picture": {
+    "classifier": {
+      "reference": {
+        "samples": 3,
+        "infer_mean_us": 965867.6666666666,
+        "infer_min_us": 963319,
+        "infer_max_us": 970730,
+        "model_load_us": 568602,
+        "input_read_allocation_and_device_open_us": 92422,
+        "hardware_job_mean_us": 50511,
+        "graph_outside_hardware_job_us": 915356.6666666666,
+        "hardware_job_percent_of_graph": 5.229598395639431,
+        "cold_model_input_graph_us": 1631754,
+        "crc": "805678c7",
+        "raw": [
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "970730",
+            "model_load_us": "568602",
+            "input_open_us": "92422",
+            "jobs": "8",
+            "cycles": "2482994",
+            "hardware_us": "50161",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          },
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "1",
+            "infer_us": "963554",
+            "model_load_us": "568602",
+            "input_open_us": "92422",
+            "jobs": "8",
+            "cycles": "2505281",
+            "hardware_us": "50611",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          },
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "2",
+            "infer_us": "963319",
+            "model_load_us": "568602",
+            "input_open_us": "92422",
+            "jobs": "8",
+            "cycles": "2512676",
+            "hardware_us": "50761",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC."
+      },
+      "new": {
+        "samples": 3,
+        "infer_mean_us": 972860.3333333334,
+        "infer_min_us": 969545,
+        "infer_max_us": 978117,
+        "model_load_us": 579958,
+        "input_read_allocation_and_device_open_us": 92407,
+        "hardware_job_mean_us": 50411.333333333336,
+        "graph_outside_hardware_job_us": 922449.0,
+        "hardware_job_percent_of_graph": 5.1817647000374505,
+        "cold_model_input_graph_us": 1650482,
+        "crc": "805678c7",
+        "raw": [
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "978117",
+            "model_load_us": "579958",
+            "input_open_us": "92407",
+            "jobs": "8",
+            "cycles": "2496368",
+            "hardware_us": "50431",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          },
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "1",
+            "infer_us": "969545",
+            "model_load_us": "579958",
+            "input_open_us": "92407",
+            "jobs": "8",
+            "cycles": "2487895",
+            "hardware_us": "50260",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          },
+          {
+            "model": "classifier",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "2",
+            "infer_us": "970919",
+            "model_load_us": "579958",
+            "input_open_us": "92407",
+            "jobs": "8",
+            "cycles": "2501917",
+            "hardware_us": "50543",
+            "output_crc": "805678c7",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC.",
+        "parameter_copy_per_inference": [
+          {
+            "upload_bytes": 591472,
+            "saved_bytes": 0
+          },
+          {
+            "upload_bytes": 591472,
+            "saved_bytes": 0
+          },
+          {
+            "upload_bytes": 591472,
+            "saved_bytes": 0
+          }
+        ]
+      },
+      "older_layout_control": {
+        "model": "classifier",
+        "batch": "1",
+        "backend": "vision32",
+        "repeat": "0",
+        "infer_us": "1235604",
+        "model_load_us": "580513",
+        "input_open_us": "91023",
+        "jobs": "8",
+        "cycles": "2504029",
+        "hardware_us": "50586",
+        "output_crc": "805678c7",
+        "no_fallback": "1"
+      },
+      "reference_over_new": 0.9928122604786366
+    },
+    "board": {
+      "reference": {
+        "samples": 3,
+        "infer_mean_us": 29481601,
+        "infer_min_us": 29464357,
+        "infer_max_us": 29511857,
+        "model_load_us": 973341,
+        "input_read_allocation_and_device_open_us": 213014,
+        "hardware_job_mean_us": 555842.3333333334,
+        "graph_outside_hardware_job_us": 28925758.666666668,
+        "hardware_job_percent_of_graph": 1.8853872058486014,
+        "cold_model_input_graph_us": 30698212,
+        "crc": "d830c1cd",
+        "raw": [
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "29511857",
+            "model_load_us": "973341",
+            "input_open_us": "213014",
+            "jobs": "45",
+            "cycles": "27448069",
+            "hardware_us": "554506",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          },
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "1",
+            "infer_us": "29468589",
+            "model_load_us": "973341",
+            "input_open_us": "213014",
+            "jobs": "45",
+            "cycles": "27577993",
+            "hardware_us": "557131",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          },
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "2",
+            "infer_us": "29464357",
+            "model_load_us": "973341",
+            "input_open_us": "213014",
+            "jobs": "45",
+            "cycles": "27516564",
+            "hardware_us": "555890",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC."
+      },
+      "new": {
+        "samples": 3,
+        "infer_mean_us": 29407384,
+        "infer_min_us": 29393634,
+        "infer_max_us": 29425381,
+        "model_load_us": 985730,
+        "input_read_allocation_and_device_open_us": 212469,
+        "hardware_job_mean_us": 555315.6666666666,
+        "graph_outside_hardware_job_us": 28852068.333333332,
+        "hardware_job_percent_of_graph": 1.8883545257431489,
+        "cold_model_input_graph_us": 30601336,
+        "crc": "d830c1cd",
+        "raw": [
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "29403137",
+            "model_load_us": "985730",
+            "input_open_us": "212469",
+            "jobs": "45",
+            "cycles": "27518564",
+            "hardware_us": "555930",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          },
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "1",
+            "infer_us": "29425381",
+            "model_load_us": "985730",
+            "input_open_us": "212469",
+            "jobs": "45",
+            "cycles": "27509175",
+            "hardware_us": "555740",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          },
+          {
+            "model": "board",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "2",
+            "infer_us": "29393634",
+            "model_load_us": "985730",
+            "input_open_us": "212469",
+            "jobs": "45",
+            "cycles": "27436755",
+            "hardware_us": "554277",
+            "output_crc": "d830c1cd",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC.",
+        "parameter_copy_per_inference": [
+          {
+            "upload_bytes": 1473904,
+            "saved_bytes": 66160
+          },
+          {
+            "upload_bytes": 1473904,
+            "saved_bytes": 66160
+          },
+          {
+            "upload_bytes": 1473904,
+            "saved_bytes": 66160
+          }
+        ]
+      },
+      "older_layout_control": {
+        "model": "board",
+        "batch": "1",
+        "backend": "vision32",
+        "repeat": "0",
+        "infer_us": "31489444",
+        "model_load_us": "991770",
+        "input_open_us": "215419",
+        "jobs": "45",
+        "cycles": "27501968",
+        "hardware_us": "555595",
+        "output_crc": "d830c1cd",
+        "no_fallback": "1"
+      },
+      "reference_over_new": 1.0025237538980005
+    },
+    "detector": {
+      "reference": {
+        "samples": 1,
+        "infer_mean_us": 228497819,
+        "infer_min_us": 228497819,
+        "infer_max_us": 228497819,
+        "model_load_us": 5296241,
+        "input_read_allocation_and_device_open_us": 1532867,
+        "hardware_job_mean_us": 16832501,
+        "graph_outside_hardware_job_us": 211665318,
+        "hardware_job_percent_of_graph": 7.366591538451402,
+        "cold_model_input_graph_us": 235326927,
+        "crc": "97265de4",
+        "raw": [
+          {
+            "model": "detector",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "228497819",
+            "model_load_us": "5296241",
+            "input_open_us": "1532867",
+            "jobs": "166",
+            "cycles": "833208812",
+            "hardware_us": "16832501",
+            "output_crc": "97265de4",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC."
+      },
+      "new": {
+        "samples": 2,
+        "infer_mean_us": 227299531.5,
+        "infer_min_us": 227244808,
+        "infer_max_us": 227354255,
+        "model_load_us": 5382900,
+        "input_read_allocation_and_device_open_us": 1526219,
+        "hardware_job_mean_us": 16831295.5,
+        "graph_outside_hardware_job_us": 210468236.0,
+        "hardware_job_percent_of_graph": 7.404896696850429,
+        "cold_model_input_graph_us": 234263374,
+        "crc": "97265de4",
+        "raw": [
+          {
+            "model": "detector",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "0",
+            "infer_us": "227354255",
+            "model_load_us": "5382900",
+            "input_open_us": "1526219",
+            "jobs": "166",
+            "cycles": "833193011",
+            "hardware_us": "16832182",
+            "output_crc": "97265de4",
+            "no_fallback": "1"
+          },
+          {
+            "model": "detector",
+            "batch": "1",
+            "backend": "vision32",
+            "repeat": "1",
+            "infer_us": "227244808",
+            "model_load_us": "5382900",
+            "input_open_us": "1526219",
+            "jobs": "166",
+            "cycles": "833105293",
+            "hardware_us": "16830409",
+            "output_crc": "97265de4",
+            "no_fallback": "1"
+          }
+        ],
+        "stage_scope": "Load and input/device setup precede inference; hardware job is nested in graph, not pure MAC.",
+        "parameter_copy_per_inference": [
+          {
+            "upload_bytes": 5571200,
+            "saved_bytes": 8923840
+          },
+          {
+            "upload_bytes": 5571200,
+            "saved_bytes": 8923840
+          }
+        ]
+      },
+      "older_layout_control": {
+        "model": "detector",
+        "batch": "1",
+        "backend": "vision32",
+        "repeat": "0",
+        "infer_us": "296602424",
+        "model_load_us": "5388239",
+        "input_open_us": "1517118",
+        "jobs": "166",
+        "cycles": "833316539",
+        "hardware_us": "16834677",
+        "output_crc": "97265de4",
+        "no_fallback": "1"
+      },
+      "reference_over_new": 1.0052718432461882
+    }
+  },
+  "voice": {
+    "reference": {
+      "samples": 3,
+      "raw": [
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1137064",
+          "cnn_us": "184410",
+          "decode_us": "66553",
+          "total_us": "1388027",
+          "resident_jobs": "12"
+        },
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1136113",
+          "cnn_us": "188040",
+          "decode_us": "63980",
+          "total_us": "1388133",
+          "resident_jobs": "12"
+        },
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1135817",
+          "cnn_us": "185333",
+          "decode_us": "66238",
+          "total_us": "1387388",
+          "resident_jobs": "12"
+        }
+      ],
+      "stream_raw": [
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "6169",
+          "endpoint_to_result_us": "268441",
+          "last_voice_to_result_us": "268441"
+        },
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "5877",
+          "endpoint_to_result_us": "269174",
+          "last_voice_to_result_us": "269174"
+        },
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "5886",
+          "endpoint_to_result_us": "268734",
+          "last_voice_to_result_us": "268734"
+        }
+      ],
+      "cnn_mean_us": 185927.66666666666,
+      "decode_cleanup_mean_us": 65590.33333333333,
+      "total_mean_us": 1387849.3333333333,
+      "feature_tail_mean_us": 5977.333333333333,
+      "endpoint_mean_us": 268783,
+      "hardware_job_mean_us": 6448.565656565656
+    },
+    "new": {
+      "samples": 3,
+      "raw": [
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1140619",
+          "cnn_us": "136978",
+          "decode_us": "66544",
+          "total_us": "1344141",
+          "resident_jobs": "12"
+        },
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1136236",
+          "cnn_us": "139651",
+          "decode_us": "66824",
+          "total_us": "1342711",
+          "resident_jobs": "12"
+        },
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1136282",
+          "cnn_us": "138925",
+          "decode_us": "67707",
+          "total_us": "1342914",
+          "resident_jobs": "12"
+        }
+      ],
+      "stream_raw": [
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "12081",
+          "endpoint_to_result_us": "225045",
+          "last_voice_to_result_us": "225045"
+        },
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "6041",
+          "endpoint_to_result_us": "223831",
+          "last_voice_to_result_us": "223831"
+        },
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "11753",
+          "endpoint_to_result_us": "227650",
+          "last_voice_to_result_us": "227650"
+        }
+      ],
+      "cnn_mean_us": 138518,
+      "decode_cleanup_mean_us": 67025,
+      "total_mean_us": 1343255.3333333333,
+      "feature_tail_mean_us": 9958.333333333334,
+      "endpoint_mean_us": 225508.66666666666,
+      "hardware_job_mean_us": 6448.565656565656
+    },
+    "profile": {
+      "samples": 1,
+      "raw": [
+        {
+          "backend": "mac",
+          "frames": "25",
+          "text": "卒五进五",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "prep_us": "1148004",
+          "cnn_us": "135204",
+          "decode_us": "63976",
+          "total_us": "1347184",
+          "resident_jobs": "12"
+        }
+      ],
+      "stream_raw": [
+        {
+          "source": "wav-replay",
+          "streamed": "1",
+          "paced": "1",
+          "feature_frames": "49",
+          "max_backlog_frames": "1",
+          "feature_crc": "6611d8b0",
+          "feature_tail_us": "12052",
+          "endpoint_to_result_us": "220693",
+          "last_voice_to_result_us": "220693"
+        }
+      ],
+      "cnn_mean_us": 135204,
+      "decode_cleanup_mean_us": 63976,
+      "total_mean_us": 1347184,
+      "feature_tail_mean_us": 12052,
+      "endpoint_mean_us": 220693,
+      "hardware_job_mean_us": 6448.565656565656,
+      "stage_raw": [
+        {
+          "rc": "0",
+          "clock": "cpu-time-csr",
+          "hz": "60000000",
+          "total_us": "1377594",
+          "after_capture_us": "257254",
+          "mac_jobs": "12",
+          "mac_cycles": "319204",
+          "model_read_us": "18810",
+          "input_read_us": "15756",
+          "model_check_us": "34933",
+          "capture_us": "0",
+          "feature_us": "1671536",
+          "window_us": "61658",
+          "fft_us": "451039",
+          "power_us": "47818",
+          "mel_quant_us": "47298",
+          "mac_open_us": "9742",
+          "cnn_us": "135093",
+          "layer0_us": "51723",
+          "layer1_us": "25867",
+          "layer2_us": "20025",
+          "layer3_us": "20173",
+          "layer4_us": "14974",
+          "pack_us": "0",
+          "mac_wait_us": "84506",
+          "requant_us": "0",
+          "trace_us": "17",
+          "decode_us": "58876"
+        }
+      ]
+    }
+  },
+  "pikafish": {
+    "reference": {
+      "phases": {
+        "cold": {
+          "NNUE_LATENCY": {
+            "phase": "cold",
+            "samples": "20",
+            "mean_us": "14657",
+            "min_us": "12187",
+            "p50_us": "14361",
+            "p95_us": "17747",
+            "max_us": "18134"
+          },
+          "NNUE_BATCH_BREAKDOWN": {
+            "phase": "cold",
+            "calls": "20",
+            "updates": "80",
+            "cycles": "1956628",
+            "host_mean_us": "8094",
+            "external_read_words": "398270",
+            "local_read_words": "20480",
+            "export_words": "40960",
+            "scope": "stagea_mlp_exports"
+          },
+          "NNUE_DEDICATED_CACHE": {
+            "phase": "cold",
+            "runs": "20",
+            "hits": "12",
+            "model_read_words": "70408",
+            "restores": "0",
+            "errors": "0"
+          },
+          "NNUE_PIPELINE_BREAKDOWN": {
+            "phase": "cold",
+            "evaluations": "20",
+            "dense_jobs": "120",
+            "cycles": "0",
+            "uploads": "0",
+            "retries": "0",
+            "failures": "0"
+          },
+          "disjoint_us": {
+            "cpu_outside_batch": 6563,
+            "batch_outside_hardware": 6117.608080808081,
+            "hardware_jobs": 1976.391919191919
+          },
+          "disjoint_percent": {
+            "cpu_outside_batch": 44.77723954424507,
+            "batch_outside_hardware": 41.738473635860544,
+            "hardware_jobs": 13.484286819894377
+          }
+        },
+        "warm": {
+          "NNUE_LATENCY": {
+            "phase": "warm",
+            "samples": "20",
+            "mean_us": "13791",
+            "min_us": "11394",
+            "p50_us": "12637",
+            "p95_us": "17898",
+            "max_us": "18281"
+          },
+          "NNUE_BATCH_BREAKDOWN": {
+            "phase": "warm",
+            "calls": "20",
+            "updates": "80",
+            "cycles": "1648405",
+            "host_mean_us": "7688",
+            "external_read_words": "320142",
+            "local_read_words": "20480",
+            "export_words": "40960",
+            "scope": "stagea_mlp_exports"
+          },
+          "NNUE_DEDICATED_CACHE": {
+            "phase": "warm",
+            "runs": "20",
+            "hits": "12",
+            "model_read_words": "70408",
+            "restores": "0",
+            "errors": "0"
+          },
+          "NNUE_PIPELINE_BREAKDOWN": {
+            "phase": "warm",
+            "evaluations": "20",
+            "dense_jobs": "120",
+            "cycles": "0",
+            "uploads": "0",
+            "retries": "0",
+            "failures": "0"
+          },
+          "disjoint_us": {
+            "cpu_outside_batch": 6103,
+            "batch_outside_hardware": 6022.944444444444,
+            "hardware_jobs": 1665.0555555555557
+          },
+          "disjoint_percent": {
+            "cpu_outside_batch": 44.253498658545425,
+            "batch_outside_hardware": 43.673007355843986,
+            "hardware_jobs": 12.073493985610584
+          }
+        }
+      },
+      "model_setup_cumulative_ms": [
+        {
+          "stage": "source-ready",
+          "elapsed_ms": "40"
+        },
+        {
+          "stage": "header-ready",
+          "elapsed_ms": "48"
+        },
+        {
+          "stage": "layout-ready",
+          "elapsed_ms": "54"
+        },
+        {
+          "stage": "feature-crc-skipped",
+          "elapsed_ms": "74"
+        },
+        {
+          "stage": "view-bind-ready",
+          "elapsed_ms": "90"
+        },
+        {
+          "stage": "mlps-crc-ready",
+          "elapsed_ms": "912"
+        },
+        {
+          "stage": "mlps-ready",
+          "elapsed_ms": "1597"
+        },
+        {
+          "stage": "stageb-prepare",
+          "elapsed_ms": "13884"
+        },
+        {
+          "stage": "ready",
+          "elapsed_ms": "13896"
+        }
+      ],
+      "stageb_setup": [
+        {
+          "prepares": "1",
+          "copied_bytes": "593920",
+          "resident_hits": "0",
+          "prepare_us": "12265742",
+          "evaluations": "0",
+          "jobs": "0",
+          "mac_cycles": "0",
+          "host_us": "0",
+          "fallbacks": "0",
+          "mismatches": "0"
+        }
+      ],
+      "target_10ms": "MISS"
+    },
+    "new": {
+      "phases": {
+        "cold": {
+          "NNUE_LATENCY": {
+            "phase": "cold",
+            "samples": "20",
+            "mean_us": "14666",
+            "min_us": "12052",
+            "p50_us": "14767",
+            "p95_us": "17528",
+            "max_us": "18437"
+          },
+          "NNUE_BATCH_BREAKDOWN": {
+            "phase": "cold",
+            "calls": "20",
+            "updates": "80",
+            "cycles": "1883564",
+            "host_mean_us": "8019",
+            "external_read_words": "398270",
+            "local_read_words": "20480",
+            "export_words": "40960",
+            "scope": "stagea_mlp_exports"
+          },
+          "NNUE_DEDICATED_CACHE": {
+            "phase": "cold",
+            "runs": "20",
+            "hits": "12",
+            "model_read_words": "70408",
+            "restores": "0",
+            "errors": "0"
+          },
+          "NNUE_PIPELINE_BREAKDOWN": {
+            "phase": "cold",
+            "evaluations": "20",
+            "dense_jobs": "120",
+            "cycles": "0",
+            "uploads": "0",
+            "retries": "0",
+            "failures": "0"
+          },
+          "disjoint_us": {
+            "cpu_outside_batch": 6647,
+            "batch_outside_hardware": 6116.410101010101,
+            "hardware_jobs": 1902.589898989899
+          },
+          "disjoint_percent": {
+            "cpu_outside_batch": 45.32251465975726,
+            "batch_outside_hardware": 41.70469181106028,
+            "hardware_jobs": 12.972793529182457
+          }
+        },
+        "warm": {
+          "NNUE_LATENCY": {
+            "phase": "warm",
+            "samples": "20",
+            "mean_us": "13983",
+            "min_us": "11523",
+            "p50_us": "13173",
+            "p95_us": "18433",
+            "max_us": "18700"
+          },
+          "NNUE_BATCH_BREAKDOWN": {
+            "phase": "warm",
+            "calls": "20",
+            "updates": "80",
+            "cycles": "1605911",
+            "host_mean_us": "7696",
+            "external_read_words": "320142",
+            "local_read_words": "20480",
+            "export_words": "40960",
+            "scope": "stagea_mlp_exports"
+          },
+          "NNUE_DEDICATED_CACHE": {
+            "phase": "warm",
+            "runs": "20",
+            "hits": "12",
+            "model_read_words": "70408",
+            "restores": "0",
+            "errors": "0"
+          },
+          "NNUE_PIPELINE_BREAKDOWN": {
+            "phase": "warm",
+            "evaluations": "20",
+            "dense_jobs": "120",
+            "cycles": "0",
+            "uploads": "0",
+            "retries": "0",
+            "failures": "0"
+          },
+          "disjoint_us": {
+            "cpu_outside_batch": 6287,
+            "batch_outside_hardware": 6073.867676767677,
+            "hardware_jobs": 1622.1323232323232
+          },
+          "disjoint_percent": {
+            "cpu_outside_batch": 44.96173925480941,
+            "batch_outside_hardware": 43.43751467330098,
+            "hardware_jobs": 11.600746071889603
+          }
+        }
+      },
+      "model_setup_cumulative_ms": [
+        {
+          "stage": "source-ready",
+          "elapsed_ms": "40"
+        },
+        {
+          "stage": "header-ready",
+          "elapsed_ms": "48"
+        },
+        {
+          "stage": "layout-ready",
+          "elapsed_ms": "55"
+        },
+        {
+          "stage": "feature-crc-skipped",
+          "elapsed_ms": "75"
+        },
+        {
+          "stage": "view-bind-ready",
+          "elapsed_ms": "91"
+        },
+        {
+          "stage": "mlps-crc-ready",
+          "elapsed_ms": "915"
+        },
+        {
+          "stage": "mlps-ready",
+          "elapsed_ms": "1601"
+        },
+        {
+          "stage": "stageb-prepare",
+          "elapsed_ms": "13922"
+        },
+        {
+          "stage": "ready",
+          "elapsed_ms": "13934"
+        }
+      ],
+      "stageb_setup": [
+        {
+          "prepares": "1",
+          "copied_bytes": "593920",
+          "resident_hits": "0",
+          "prepare_us": "12298803",
+          "evaluations": "0",
+          "jobs": "0",
+          "mac_cycles": "0",
+          "host_us": "0",
+          "fallbacks": "0",
+          "mismatches": "0"
+        }
+      ],
+      "target_10ms": "MISS"
+    }
+  },
+  "evidence_sha256": {
+    "board-new-spec.json": "066eb990c0f89817229bb52867ae1ae76e3c45c2d486e43d21218fefb5ae33c4",
+    "board-new.host.log": "a33ee11866d7ca6ec39f00170ba2b6a90d29c40df75d7e24a3bad4b639e5cf24",
+    "board-new.result.json": "416e71b4cb80d21dd91e6ac40860db6302a49a73a7099f207405583fd983f17c",
+    "board-new.uart": "92a1acab553da855da236b4b3e13eaa5bd668213913f9b61fae9d3688a37d50c",
+    "board-reference-spec.json": "690820eef4b561edb99d97273dd46545a740285541aa2144719d6de07d128d21",
+    "board-reference.host.log": "9655885cc862bbb6855a85bf8bf97d6f7e43bfcf1695b00883a3f0c95cb811f9",
+    "board-reference.result.json": "b926d0a863f2851ded1d070320bea9833507e09b60907e74c6abdc6733633cf0",
+    "board-reference.uart": "0ed0eab776851896d46a6a1aae8bf8b9799d550d8a95c6debdab066503683607",
+    "classifier-new-spec.json": "2cdee58910edf953ea8c19a1ef033cdca852693b53fee9ec2e6e8e0f0e6fb5aa",
+    "classifier-new.host.log": "9f8c1be0578422d9f8e772c1df71bd5aa718888837156200ea98d5f67e8359dc",
+    "classifier-new.result.json": "7e0eac2a6408d6e972e6fcfbf8e4f6dadf47728ed018328a3229c8f4ff4fcb83",
+    "classifier-new.uart": "501a5d053e7c333ae8f6679fd00d1b28c48b93049c5ebab56833e0d356238d3f",
+    "classifier-reference-spec.json": "d877584c73a4f5567fa01b77de37f0bc0819f4e4a48b77c6f5bd3f49eb17d6ca",
+    "classifier-reference.host.log": "4c4421e6cc3d55571794a38e18b7fff071da2b03192c51a2a5c02200d723cb44",
+    "classifier-reference.result.json": "4f42f4468e81f36465a84f296920cd4a227890cba771408bcba611a9a28b003d",
+    "classifier-reference.uart": "aa0828acf3e7532493b1f1128f663bb96eddcb7414dba0bc4fbfe68e9fab9661",
+    "clock-spec.json": "a82102817701e3b90b60dd9e1938a00301c887a2e4c067510744bf8e15839abe",
+    "clock.host.log": "6d0429dd3d4cdcc2dd7112202e1cccefbcf8f72da05cb469ce21518845b9ebac",
+    "clock.result.json": "c65f82b1687c36ae098fe1287609ad8170eaaeebdd0a4e6d82a2cb943db2f4c8",
+    "clock.uart": "5f7eaf8bdc20eb8620412164c2f3bf7987fa5b9e42188737965e79e1b3a42a8b",
+    "concurrent-spec.json": "c9bd794e19a1b860c869fa7ecd9b84438446d4340fd7b4dfdb8b1442f37f08d9",
+    "concurrent.host.log": "8e7f33ce8edc8a521f8fd34b49f1ce3c5e393236a13397ca03a5a672a1cee476",
+    "concurrent.result.json": "3fe28e2c87d7716139bfa813965598edf78dc4b19099b495f9b3bc50d1f33031",
+    "concurrent.uart": "ae9d6bb61b7bb275988b511a59426d8dcd69fe8a7188e1b9c8276c53827bf2f2",
+    "detector-new-spec.json": "cf8c05002b0ac4bf89f6b6448c32c7ef30441437d1acbf832dbfda415abf7c5d",
+    "detector-new.host.log": "7d784182ede80b54956cdab3aa755e0dac0f4fbb39d4fc3fd9978170a7ab458a",
+    "detector-new.result.json": "37f2254d9793cd2cb1bda5cdfd06a87bb2ad671a9b861e5b83d95702e5e55647",
+    "detector-new.uart": "542473ac9468739e1ad137ced3ddfb86e43cc035e5fae0d4e0786c5d6b2d5e73",
+    "detector-reference-spec.json": "9f3a7d29a9aed9c2d05e7ca6708dedf33bb164abed8166854ca254f463c697dd",
+    "detector-reference.host.log": "d3f73e70be5faf07aca1bc446e92cfff54ed1114980659f5494f04a0c4b0c5ae",
+    "detector-reference.result.json": "7c3d0f36a176b785393d5ae0e27d172f36d9e6291793b0cbdc8210d52c8b13b6",
+    "detector-reference.uart": "030128524968227f99dacb4704672a247b8336cea54e14a15ac178ef2d2dd3ce",
+    "environment-spec.json": "182c0b089bc9c35e3443792806f503815a439d8989de7ce79e499a5bc2f237c4",
+    "environment.host.log": "9a6139ab51342086fa9831714226e26585c3d9057d7d00e66b411ab74cb9a73f",
+    "environment.result.json": "5b2d17a1403b7cb93835ffec3477f5785f98fd4fab0ab549db1cd40094916a15",
+    "environment.uart": "89658709b3544b098c3f22530104292942272856f7551414b8e526224b56d7f6",
+    "inputs-expected.json": "1b32ea4c3414e592d67a09f6310b89d9a183c5d2d9db9b8ac3d978132d8c6fc2",
+    "inputs-spec.json": "32ac1c7bfa01fc66ad6726324fd651b6e0ec931cb09f0c27a72428558db68ff7",
+    "inputs.result.json": "cd4b3f4a1791da952e3bddb05ba5782f4361d43b11765efc35ef5a8825fd7c81",
+    "inputs.uart": "61196aa48a78d67d9b3a2509d036f76bd40835a29cbea891ca5981ba83fbfba2",
+    "layout-controls-spec.json": "8222023a11015aab1c54fd36c833fbf04ed1cf6869801739aed471f06a1fbadf",
+    "layout-controls.result.json": "5a934c32bee8d1a0630e0c958b63612fc7dc9feb1a35f866990311d387953e58",
+    "layout-controls.uart": "d5e0a55ae06eb5f7ac88d4ef11d075352e19d0e47961ae14157b1e5e8613a4e9",
+    "pikafish-new-spec.json": "32ee06d57c0f2927ac42c629b260a3bc5de8945883df9c4b40b0285edccbb99c",
+    "pikafish-new.host.log": "454d53a852fed47860e3525a92b7b1d8887445f06a6fe3113558ee8a92527aef",
+    "pikafish-new.result.json": "47b267471cfa0a76134d633ccfd4275c1c41b0fe7cf8fcee651af2717ec0e63d",
+    "pikafish-new.uart": "c4bbae0064dd53a02dc76c6bf8dbe401f47e40fb0be3e5f2af411dae48cd1d0f",
+    "pikafish-reference-spec.json": "5211b93b8a8e0b6ecec12f4bf88e5c1bfb443764fac6cec383ffc75790f4c058",
+    "pikafish-reference.host.log": "089989a290b1669f5d986fe969331411ae84cef143e39b6e4125ad1c7d6ab8ae",
+    "pikafish-reference.result.json": "bc3f8efb0b4e49a82c1b6a1e8524130e5ddd01e226d843e09b78b55f449b3622",
+    "pikafish-reference.uart": "940a485de28f3d86a3d4fe949288921a783595412674edd185c90c162cb9f93f",
+    "plan.json": "a54266f1246788d52a02bae4f375b99d8d8a796657302487c93a5cbbe616e309",
+    "post-spec.json": "b9ac3fda493b49d252fa508864e226574a0890c9994ff7fcb1dcc5e202373419",
+    "post.host.log": "3def171effb4e40b343b6500ca0cb67bbf54d9f27db7309a30754b251d69a4dc",
+    "post.result.json": "7b259394fb4161f736d1de81ab2b2147499bdc37d06fe07a9c512e9f16518dc1",
+    "post.uart": "d587a379e8fa6fc89af31aa2563d913040b794fcc64f592eb87fc8f31271c897",
+    "run.json": "9137382e759c187618753d2aa2dfdb84814abb2846e5969d192312d805e4d2d3",
+    "search-spec.json": "2395bf52ced6405a20fee6a9936226c99df3a84eb5efc0fee839437f9d3acba3",
+    "search.host.log": "15e3e654c9f167acb700b3a2d50f03baa4ebe9f7cbc5d90594df7941d44e9d5b",
+    "search.result.json": "4fb48916c513ace32c70f2b3025f21ea19607dbd60b0b90f297d5c95ee55cb53",
+    "search.uart": "e61e192bddccbdebb3891a4789f311ac559b25337ca5da0078b013c201fb6f92",
+    "voice-new-spec.json": "d7291a7fdd6ef2119f4df4832ebcccddd16c64208c91ad82af6385fc9826fcd2",
+    "voice-new.host.log": "fe75dcb42d8838d5881f49dd36175a74131f2ce0edde3abad29ad18fc8cababb",
+    "voice-new.result.json": "f21d178d3eacdd657f255485024286e83be57adbcf061109e4c8369a60095181",
+    "voice-new.uart": "66e407078ddc27c0f22c8f6d2169d805e5e4bb1228dcaa55174de99037024988",
+    "voice-profile-spec.json": "733e0ff902580cb6739f83a5342f9463bf722f9c7ad5841eccc5ab50e6dc5249",
+    "voice-profile.host.log": "3ff820e4f4882483784d8008d315eeed1c3978abf5e313dd021f904be621b0e7",
+    "voice-profile.result.json": "4c8bcd5cbe919221aad9da6d89c63ea19967fa11de35d1ccdbd8058e1786ee09",
+    "voice-profile.uart": "47c0b0dcd5d86c30bfcdf48711ebd3ca4ef85ada2a49e0134b0e0e91b2f636e8",
+    "voice-reference-spec.json": "4f965623123406f2fdb2d6bbbea560865cf641e9a1b579b9fd83f8d4ba4d9ed4",
+    "voice-reference.host.log": "bd2b09fd24b50aebf8c2cb689394f84932dcc81f1799ccb0fd215b0c0b1af189",
+    "voice-reference.result.json": "ee7c0f6ee9ce85ab1afd7961a21ca9be0725386c2c9752f397a54a8c4e89b808",
+    "voice-reference.uart": "274b6051714c264ac95cf69658144342e9312dca66f5ae887b5a728ea11a8f0c"
+  },
+  "measurement_tools_sha256": {
+    "scripts/run_transfer_board_tests.py": "1bab3ec963a22e8dc4f705a88ab0b360386031c48c75e6e52d53b79cee80f53c",
+    "scripts/board_console.py": "25b5324064e2a05abacff9c547867265c90c60387237d98408e7c5e4d7e1945c",
+    "scripts/make_transfer_layout_controls.py": "c318b8dd3f884856e3e74d30aba0c8fb44a8ef00615550635f20838150717b53",
+    "scripts/make_transfer_input_check.py": "9467f592d6f0605c2c231857e3da901880cc4daf170a4e3fb43ab3f13086ef65",
+    "scripts/report_transfer_board.py": "7e45d9399969336f4482fc8594f4f572256bf8dab5d0f0dba8fed8fa1a4242db",
+    "scripts/write_transfer_board_report.py": "aef0d2484720b9a9c1e9a2baf81d9af9fd72e9b04fae79711a9fa9d5f5d1a5c4"
+  },
+  "fixed_input_hashes": {
+    "usr/bin/xqvoice-small-cnn": "babb29ce11184f9c2bd5005263dbbd4e862c009afacf20d22411447843149add",
+    "usr/bin/xqvoice-small-cnn-p3-reference": "d50faa9f14c1ea92119a3c9ed103523bd8b50fdea9f6df9de74849ba51f2719a",
+    "opt/voice2/balanced24.bin": "3e43041fd3e531ce130b56c0a460a1c7375420eea0e07afdf533012ae41da973",
+    "opt/integrated60/assets/voice-1000.wav": "512c1128ac8ff77ddfdf05a747592041952f25164e10e7a20497e7fba62c5bb5",
+    "opt/pikafish/cpu75-nnue.vectors": "f74b6cd2c98af3170253fab0d3644f0076be3de6a5b56646cd052a7f85e94d89",
+    "opt/integrated60/assets/classifier.xqm": "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f",
+    "opt/integrated60/assets/classifier.f32": "7c96fd83548798437c244a1453b31bec2c84a6f70959f9694851a0fc625b1d67",
+    "opt/integrated60/assets/board.xqm": "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe",
+    "opt/integrated60/assets/board.f32": "212791e9082ff874cd199e1d761e35d743363e94eb1ac72db683c735ecc91fc6",
+    "opt/integrated60/assets/detector.xqm": "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d",
+    "opt/integrated60/assets/detector.f32": "1ec89de2b34b50bfdf2caef4f5bf687900b65428a5f3a5a3d0a512fc23108f91"
+  },
+  "driver_stage_counters_present": false,
+  "coremark_binary_present": false,
+  "clock": {
+    "status": "COARSE_WALL_CLOCK_CONSISTENCY_PASS",
+    "guest_interval_seconds": 10.42999999999995,
+    "host_command_seconds": 10.663263599999482,
+    "guest_to_host_ratio": 0.9781245584138478,
+    "scope": "Includes shell/UART overhead; NNUE/voice wall timers use readonly 49.5MHz CLINT."
+  },
+  "search": [
+    {
+      "mode": "1",
+      "case": "0",
+      "bestmove": "b2e2",
+      "score": "121",
+      "wdl": "673,327,0",
+      "nodes": "173",
+      "elapsed_ms": "1596",
+      "nps": "108"
+    },
+    {
+      "mode": "1",
+      "case": "1",
+      "bestmove": "h9g7",
+      "score": "-14",
+      "wdl": "18,935,47",
+      "nodes": "132",
+      "elapsed_ms": "1287",
+      "nps": "102"
+    },
+    {
+      "mode": "1",
+      "case": "2",
+      "bestmove": "i0h0",
+      "score": "216",
+      "wdl": "983,17,0",
+      "nodes": "134",
+      "elapsed_ms": "1037",
+      "nps": "129"
+    }
+  ],
+  "search_pass": [
+    {
+      "mode": "1",
+      "cases": "3",
+      "nodes": "128"
+    }
+  ],
+  "concurrent_voice": [
+    {
+      "source": "wav-replay",
+      "streamed": "1",
+      "paced": "1",
+      "feature_frames": "49",
+      "max_backlog_frames": "12",
+      "feature_crc": "6611d8b0",
+      "feature_tail_us": "364498",
+      "endpoint_to_result_us": "817745",
+      "last_voice_to_result_us": "817745"
+    }
+  ],
+  "concurrent_pass": true,
+  "raw_summary_path": "build/transfer-board-models-01/summary.json",
+  "raw_summary_sha256": "bd72d636c56fd1da0b010d6e6b4a83b862274b5ffebaad9c395819c42660e412"
+}

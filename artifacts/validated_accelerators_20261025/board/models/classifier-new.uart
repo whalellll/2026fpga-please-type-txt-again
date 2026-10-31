@@ -1,0 +1,15 @@
+
+/ # /usr/bin/timeout 120 /usr/bin/picture-new-bench classifier /opt/integrated60
+/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 1 vision32 3; pri
+ntf "\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=0 infer_us=978117 model_load_us=579958 input_open_us=92407 jobs=8 cycles=2496368 hardware_us=50431 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=591472 parameter_saved_bytes=0 scope=driver_shadow_to_scratch_logical_bytes
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=1 infer_us=969545 model_load_us=579958 input_open_us=92407 jobs=8 cycles=2487895 hardware_us=50260 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=1182944 parameter_saved_bytes=0 scope=driver_shadow_to_scratch_logical_bytes
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=2 infer_us=970919 model_load_us=579958 input_open_us=92407 jobs=8 cycles=2501917 hardware_us=50543 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=1774416 parameter_saved_bytes=0 scope=driver_shadow_to_scratch_logical_bytes
+
+__CVB_END_0__:0

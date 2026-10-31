@@ -1,0 +1,18 @@
+
+/ # /usr/bin/timeout 45 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /o
+pt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream >/tmp/transfer-vo
+ice.log 2>&1 & vp=$!; /usr/bin/timeout 45 /usr/bin/picture-new-bench classifier 
+/opt/integrated60/assets/classifier.xqm /opt/integrated60/assets/classifier.f32 
+1 vision32 1 >/tmp/transfer-picture.log 2>&1 & ip=$!; wait "$vp"; vr=$?; wait "$
+ip"; ir=$?; cat /tmp/transfer-voice.log /tmp/transfer-picture.log; test "$vr" = 
+0 && test "$ir" = 0 && echo TRANSFER_CONCURRENT_PASS; printf "\n__CVB_END_0__:%s
+\n" "$?"
+VOICE2_SMALL_ACCEL_ACTIVE device=/dev/pango-voice0 lanes=4 strict=1 quant_available=1
+backend=mac frames=25 text=卒五进五 mac_jobs=12 mac_cycles=319204 prep_us=1637622 cnn_us=286413 decode_us=148773 total_us=2072808 resident_jobs=12
+VOICE_STREAM_TIMING source=wav-replay streamed=1 paced=1 feature_frames=49 max_backlog_frames=12 feature_crc=6611d8b0 feature_tail_us=364498 endpoint_to_result_us=817745 last_voice_to_result_us=817745
+PICTURE_TIMING model=classifier batch=1 backend=vision32 repeat=0 infer_us=1304506 model_load_us=1297489 input_open_us=186037 jobs=8 cycles=2520832 hardware_us=50925 output_crc=805678c7 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=6 producer_elements=35840 consumer_elements=35840 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=591472 parameter_saved_bytes=0 scope=driver_shadow_to_scratch_logical_bytes
+TRANSFER_CONCURRENT_PASS
+
+__CVB_END_0__:0

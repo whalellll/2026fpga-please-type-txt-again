@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "linux/voice/record_batch_pc.py": "3464c20bde3f92bad0d68853aaaf73ec4ef839896f821c472cc2ddbd38947dec",
+    "linux/voice/record_dataset_pc.py": "ebe6ede5a929b86c6fb0f90464ed79d88b590d4df60e4229556906d067d9016f",
+    "sim/test_voice_sd_pc_workflow.py": "8624b4c83415adf58a5de451f171b936800ff84e147953733c88715ed886b392",
+    "sim/test_voice_recording_limits.py": "560b5fce20c44700150f6ada74944e0c9ad67a8a1ae1f6ce2c825fdd51dfa3f6"
+  },
+  "binary_sha256": {
+    "xqaudio-capture": "3356cb600ba05b5cb7416466eeb974935b56159ba62f7d921d92f37a2ad8e3f2",
+    "xqvoice-sd": "f3bdb8d03fdabf330bf626ebd26a91e69d0a59c0e9a697559f302123e22ab5c8"
+  },
+  "board_binaries_unchanged": true
+}

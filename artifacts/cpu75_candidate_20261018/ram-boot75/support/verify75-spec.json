@@ -1,0 +1,30 @@
+[
+  {
+    "command": "cd /tmp/voice-gui-display; for f in gui-v3.pid voice.pid; do p=$(cat \"$f\"); kill \"$p\"; n=0; while kill -0 \"$p\" 2>/dev/null; do sleep 1; n=$((n+1)); test \"$n\" -lt 15 || break; done; ! kill -0 \"$p\" 2>/dev/null || exit 1; done",
+    "timeout": 45
+  },
+  {
+    "command": "cat /proc/iomem; ls -l /proc/device-tree/reserved-memory/clint-mmio@2000000; command -v pikafish-stageb-board-accept; ls -l /opt/pikafish/stageb-*.bin",
+    "timeout": 20
+  },
+  {
+    "command": "pango-mac-pool-test",
+    "timeout": 150
+  },
+  {
+    "command": "pango-mac-scheduler-test",
+    "timeout": 150
+  },
+  {
+    "command": "pango-mac-resident-test",
+    "timeout": 150
+  },
+  {
+    "command": "pango-mac-gather-board-test",
+    "timeout": 150
+  },
+  {
+    "command": "echo CPU75_CLINT_FIXED_POSTCHECK; uptime",
+    "timeout": 20
+  }
+]

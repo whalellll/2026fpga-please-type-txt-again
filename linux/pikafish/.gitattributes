@@ -1,0 +1,2 @@
+# Unified patches contain a literal context prefix on otherwise empty lines.
+pikafish-pipeline.patch whitespace=-blank-at-eol

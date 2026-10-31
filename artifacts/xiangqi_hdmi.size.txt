@@ -1,0 +1,18 @@
+artifacts/xiangqi_hdmi.elf  :
+section               size       addr
+.text                36400   16777216
+.rodata             213836   16813616
+.data                    8   17027452
+.bss                 22788   17027464
+.riscv.attributes       33          0
+.debug_info           2625          0
+.debug_abbrev          829          0
+.debug_loc            2477          0
+.debug_aranges          88          0
+.debug_line           2408          0
+.debug_str             793          0
+.debug_frame            32          0
+.debug_ranges          248          0
+Total               282565
+
+

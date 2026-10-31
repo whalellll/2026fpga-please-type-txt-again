@@ -1,0 +1,12 @@
+{
+    "schema":  1,
+    "input_hz":  27000000,
+    "pll_vco_hz":  891000000,
+    "cpu_divisor":  9,
+    "cpu_hz":  75000000,
+    "sys_hz":  49500000,
+    "timebase_hz":  49500000,
+    "integer_hz_rounding":  "nearest_half_up",
+    "cpu_clock_source":  "dedicated675",
+    "cpu_pll_vco_hz":  675000000
+}

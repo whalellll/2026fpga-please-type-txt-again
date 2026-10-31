@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "2026-10-21 host engineering candidate; no hardware deployment",
+  "pc_integer_reference": "r08-exact-int64",
+  "int_mm_is_golden": false,
+  "classifier_candidate_filter": "stable detector_score >= 0.05 before crops",
+  "spatial_candidate_filter_enabled": false,
+  "host_piece_fit_integrated": true,
+  "failures_before_piece_fit": 3,
+  "manual_geometry": "explicit current frozen frame; token/frame/CRC bound",
+  "cached_geometry": "diagnostic only; never automatic fallback",
+  "require_both_generals_option_added": false,
+  "strict_board_guards_changed": false,
+  "selected_model": "frozen v1",
+  "v2_band_status": "待新隔离局独立验收",
+  "production_ready": false,
+  "full_integer_pipeline": false,
+  "p0_1_resolved": false,
+  "p0_4_capture": "approved for user execution after board return",
+  "board_validation": "pending",
+  "deployed_pn01": "unchanged r07 checkpoint, piece_fit disabled",
+  "original_adapter_manifest": "historical R1/R2 copy provenance; not the new host feature policy"
+}

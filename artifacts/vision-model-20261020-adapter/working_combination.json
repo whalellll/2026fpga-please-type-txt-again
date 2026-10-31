@@ -1,0 +1,290 @@
+{
+  "schema_version": 2,
+  "selected": "candidate_r14_e_v3dqat",
+  "default_profile": "working-r14",
+  "registration": "candidates/candidate_r14_e_v3dqat/registration.json",
+  "default_backend": "fp32",
+  "detector_input": 640,
+  "classifier": "v3d-QAT",
+  "candidate_filter": true,
+  "refinement": "B_trials80_bbox",
+  "quantized_main_available": true,
+  "integer_reference_when_available": "exact-int64 after platform probe; never _int_mm",
+  "profiles": {
+    "working-r12": {
+      "detector": "frozen640",
+      "classifier": "v3c",
+      "detector_input": 640,
+      "root": "build/picture-r12-20261022/adapter-inputs-r02/working-r12/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      },
+      "backends": [
+        "fp32",
+        "quantized-mac"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": true,
+      "quantized_candidate": "build/picture-merge-20261023/r13/E组合量化_candidate_r13_e_v3c/candidate_r13_e_v3c",
+      "quantized_graph_sha256": "089e438c89f09d690d06d91608dba5e91ab03be3dd6a47f4f088e32fe985aa47",
+      "quantization_origin": "r13",
+      "quantized_gate": false,
+      "integer_acceptance": "r13 v3c negative; historical rollback only"
+    },
+    "rollback-v2-band": {
+      "detector": "frozen640",
+      "classifier": "v2-band",
+      "detector_input": 640,
+      "root": "build/picture-r12-20261022/adapter-inputs-r02/rollback-v2-band/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "d184f7970f16311515110c008ca768b33e62ac43ffcf09f125085acc9905d3be"
+        }
+      },
+      "backends": [
+        "fp32",
+        "quantized-mac"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": true,
+      "quantized_candidate": "build/picture-r08-20261021/delivery/P0-1_现场失败分析与v2候选/quantization_v2/candidate_v2",
+      "quantized_graph_sha256": "3791c1eaab37b9693e9ae35ba8d8d201e42f89e0c7169893c1de863fa12ad3cb"
+    },
+    "legacy-416mix-v2-band": {
+      "detector": "det416mix-r11",
+      "classifier": "v2-band",
+      "detector_input": 416,
+      "root": "build/picture-r12-20261022/adapter-inputs-r02/legacy-416mix-v2-band/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "8230164ddc9e3d1561be6ae638b2f8d05d2f0c6e66088217a2e4aa7bef28ccaf"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "d184f7970f16311515110c008ca768b33e62ac43ffcf09f125085acc9905d3be"
+        }
+      },
+      "backends": [
+        "fp32"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": false
+    },
+    "working-r09": {
+      "detector": "det416-r09",
+      "classifier": "v2-band",
+      "detector_input": 416,
+      "root": "build/picture-r09-20261021/adapter-inputs/r09_release_416/software",
+      "quantized_candidate": "build/picture-r09-20261021/delivery/P0E-B_detector降档/quantization_r09/candidate_r09_det416",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "00ee378484d492f4f715ca584dbc12b3fddaa7b4859ac0b93a25a155fcf8069e"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "d184f7970f16311515110c008ca768b33e62ac43ffcf09f125085acc9905d3be"
+        }
+      },
+      "backends": [
+        "quantized-mac",
+        "fp32"
+      ],
+      "default_backend": "quantized-mac",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": false
+    },
+    "legacy-det416-r09-v3c": {
+      "detector": "det416-r09",
+      "classifier": "v3c",
+      "detector_input": 416,
+      "root": "build/picture-r11-20261022/adapter-inputs/profiles/det416-r09/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "00ee378484d492f4f715ca584dbc12b3fddaa7b4859ac0b93a25a155fcf8069e"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      },
+      "backends": [
+        "fp32"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": false
+    },
+    "legacy-det416mix-r11-v3c": {
+      "detector": "det416mix-r11",
+      "classifier": "v3c",
+      "detector_input": 416,
+      "root": "build/picture-r11-20261022/adapter-inputs/profiles/det416mix-r11/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "8230164ddc9e3d1561be6ae638b2f8d05d2f0c6e66088217a2e4aa7bef28ccaf"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "b186ae36c099c3adcd6587b644dc53b5c4f39afc6115f67bd133ee6b3ca101ca"
+        }
+      },
+      "backends": [
+        "fp32"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": false
+    },
+    "frozen640-v1": {
+      "detector": "frozen640",
+      "classifier": "v1",
+      "detector_input": 640,
+      "root": "artifacts/vision-model-20261020/golden/software",
+      "quantized_candidate": "artifacts/vision-model-20261020/golden/quantization/candidate_v1",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "25b6bd7e4bc667aaed23fe869dba83da72735125d9a4f840d7c925098b855315"
+        }
+      },
+      "backends": [
+        "quantized-mac",
+        "fp32"
+      ],
+      "default_backend": "quantized-mac",
+      "candidate_filter": false,
+      "refinement": "full",
+      "domain_suitable": true
+    },
+    "rollback-v3d": {
+      "detector": "frozen640",
+      "classifier": "v3d",
+      "detector_input": 640,
+      "root": "build/picture-merge-20261023/profiles/rollback-v3d/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "f4b9cbe57b110dc7fdc3528f9793b9b2b45112cfff3c0371748d604719622d84"
+        }
+      },
+      "backends": [
+        "fp32",
+        "quantized-mac"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": true,
+      "quantized_candidate": "build/picture-merge-20261023/r13/E组合量化_candidate_r13_e_v3c/candidate_r13_e_v3d",
+      "quantized_graph_sha256": "959844fb7217c3940bcf2c14465da042c11fcfd7b960750b75b41c568ecb8f8e",
+      "quantized_gate": false,
+      "integer_acceptance": "closed-historical: r13 rollback is unselected; no ongoing attribution/QAT"
+    },
+    "working-r14": {
+      "detector": "frozen640",
+      "classifier": "v3d-QAT",
+      "detector_input": 640,
+      "root": "build/picture-merge-20261023/profiles/working-r14/software",
+      "models": {
+        "board": {
+          "path": "weights/board.pt",
+          "sha256": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825"
+        },
+        "detector": {
+          "path": "weights/detector.pt",
+          "sha256": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d"
+        },
+        "classifier": {
+          "path": "weights/classifier.pt",
+          "sha256": "d1476f80cb8c12c0e473784c7cac276dfca8eaaf054a902cde5464f44c105479"
+        }
+      },
+      "backends": [
+        "fp32",
+        "quantized-mac"
+      ],
+      "default_backend": "fp32",
+      "candidate_filter": true,
+      "refinement": "B",
+      "domain_suitable": true,
+      "quantized_candidate": "build/picture-merge-20261023/r14/v3dQAT/candidate_r14_e_v3dqat",
+      "quantized_graph_sha256": "40d820c418d6b2ab15607b107254955fb3771a5bdc0169b2fe5be1b48285bccb",
+      "quantized_gate": false,
+      "integer_acceptance": "closed-unmet: r19-r23 attribution/QAT concluded; INT 68/84 below 73/84"
+    }
+  },
+  "production_ready": false,
+  "board_deployed": false,
+  "latency_waiver_granted": true,
+  "quantized_gate": false,
+  "integer_acceptance": "closed-unmet: r19-r23 attribution/QAT concluded; INT 68/84 below 73/84",
+  "demo_latency_cap_s": 10,
+  "engineering_latency_cap_s": 5,
+  "engineering_latency_goal_s": 3,
+  "training_closeout_registry": "evaluation/training_closeout_r19_r23.json"
+}

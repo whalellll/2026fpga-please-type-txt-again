@@ -1,0 +1,60 @@
+
+/ # NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_R
+EQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PI
+PELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 /usr/bin/pikafish-nnue-latency-
+clint; printf "\n__CVB_END_0__:%s\n" "$?"
+NNUE_CLOCK_SOURCE source=clint hz=49500000 address=0200bff8 readonly=1
+NNUE_CLOCK clock=monotonic resolution_ns=21
+info string PIKAFISH_PFF1_VIEW_MMAP physical=268435456 bytes=68122688 cacheable=1
+info string PIKAFISH_PFF1_STAGE stage=source-ready elapsed_ms=40
+info string PIKAFISH_PFF1_STAGE stage=header-ready elapsed_ms=48
+info string PIKAFISH_PFF1_STAGE stage=layout-ready elapsed_ms=55
+info string PIKAFISH_PFF1_LOAD bytes=68122688
+info string PIKAFISH_PFF1_FEATURE_CRC_SKIPPED bytes=67548352 reason=sd-crc16-host-verified
+info string PIKAFISH_PFF1_STAGE stage=feature-crc-skipped elapsed_ms=75
+info string PIKAFISH_PFF1_VIEW_READY direct_bytes=67548352 mlp_direct_bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=view-bind-ready elapsed_ms=91
+info string PIKAFISH_PFF1_SECTION_READY name=MLPS bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-crc-ready elapsed_ms=915
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=0 bytes=35204
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=1 bytes=70408
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=2 bytes=105612
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=3 bytes=140816
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=4 bytes=176020
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=5 bytes=211224
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=6 bytes=246428
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=7 bytes=281632
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=8 bytes=316836
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=9 bytes=352040
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=10 bytes=387244
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=11 bytes=422448
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=12 bytes=457652
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=13 bytes=492856
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=14 bytes=528060
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=15 bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-ready elapsed_ms=1601
+PIKAFISH_MAC_RUNTIME_READY id=50464e31 version=00010000 timeout_us=100000 ddr=private backend=driver
+PIKAFISH_STAGEB_KERNEL_RESIDENT bytes=593920 backend=driver
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=1 resident=loaded copied_bytes=593920
+info string PIKAFISH_PFF1_STAGE stage=stageb-prepare elapsed_ms=13922
+info string PIKAFISH_PFF1_READY bytes=68122688
+info string PIKAFISH_PFF1_STAGE stage=ready elapsed_ms=13934
+NNUE_LATENCY phase=cold samples=20 mean_us=14666 min_us=12052 p50_us=14767 p95_us=17528 max_us=18437
+NNUE_PIPELINE_BREAKDOWN phase=cold evaluations=20 dense_jobs=120 cycles=0 uploads=0 retries=0 failures=0
+NNUE_LATENCY_BACKEND phase=cold stagea_jobs=80 stageb_jobs=20 fused=0
+NNUE_DEDICATED_CACHE phase=cold runs=20 hits=12 model_read_words=70408 restores=0 errors=0
+NNUE_BATCH_BREAKDOWN phase=cold calls=20 updates=80 cycles=1883564 host_mean_us=8019 external_read_words=398270 local_read_words=20480 export_words=40960 scope=stagea_mlp_exports
+NNUE_LATENCY_BREAKDOWN phase=cold gather_jobs=80 gather_terms=1470 gather_cycles=0 gather_ioctl_mean_us=0 fc0_cycles=0 fc0_host_mean_us=0 resident=1
+NNUE_LATENCY phase=warm samples=20 mean_us=13983 min_us=11523 p50_us=13173 p95_us=18433 max_us=18700
+NNUE_PIPELINE_BREAKDOWN phase=warm evaluations=20 dense_jobs=120 cycles=0 uploads=0 retries=0 failures=0
+NNUE_LATENCY_BACKEND phase=warm stagea_jobs=80 stageb_jobs=20 fused=0
+NNUE_DEDICATED_CACHE phase=warm runs=20 hits=12 model_read_words=70408 restores=0 errors=0
+NNUE_BATCH_BREAKDOWN phase=warm calls=20 updates=80 cycles=1605911 host_mean_us=7696 external_read_words=320142 local_read_words=20480 export_words=40960 scope=stagea_mlp_exports
+NNUE_LATENCY_BREAKDOWN phase=warm gather_jobs=80 gather_terms=1166 gather_cycles=0 gather_ioctl_mean_us=0 fc0_cycles=0 fc0_host_mean_us=0 resident=1
+PIKAFISH_NNUE_PIPELINE_STATS evaluations=60 jobs=360 cycles=0 uploads=0 failures=0 retries=0
+PIKAFISH_STAGEB_ACCEL_STATS prepares=1 copied_bytes=593920 resident_hits=0 prepare_us=12298803 evaluations=0 jobs=0 mac_cycles=0 host_us=0 fallbacks=0 mismatches=0
+PIKAFISH_STAGEB_HEALTH checkpoints=0 checkpoint_failures=0
+NNUE_LATENCY_CORRECTNESS_PASS
+NNUE_10MS_TARGET_MISS
+
+__CVB_END_0__:2

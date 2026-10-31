@@ -1,0 +1,22 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:21:36.131796+00:00",
+  "commands": [
+    {
+      "command": "ps; free; dmesg | tail -n 35; /usr/bin/pikafish-batch-check",
+      "exit": 0,
+      "host_response_seconds": 2.0465005000005476,
+      "required_markers": [
+        "PIKAFISH_BATCH_CAPABILITY_PASS"
+      ]
+    }
+  ],
+  "spec_sha256": "b9ac3fda493b49d252fa508864e226574a0890c9994ff7fcb1dcc5e202373419",
+  "uart_sha256": "d587a379e8fa6fc89af31aa2563d913040b794fcc64f592eb87fc8f31271c897",
+  "completed_utc": "2026-10-25T05:21:38.453408+00:00"
+}

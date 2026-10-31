@@ -1,0 +1,31 @@
+{
+  "status": "RAM_BOOT_REPRODUCIBILITY_FILES_ONLY_NOT_BOARD_ACCEPTANCE",
+  "cpu_hz": 75000000,
+  "sys_hz": 49500000,
+  "source": "build/cpu75-20261018/boot75-clint-bench-v2",
+  "scope": "RAM-only loader/overlay. SD payload reads only; no SD/Flash writes. Reuses recorded GCC16.2 CoreMark firmware separately. Linux helper applications built with recorded RV32 musl GCC9.4.",
+  "files_sha256": {
+    "fw_jump.bin": "6a7ee17419ce45f9fbe1ba45c0bf3048b2048242f0ecf184ed51d33de457366c",
+    "gui-overlay.cpio": "b53fd261ee543181a3f5fb3647bd2970757b5d6de87f410b7f001975fb97e51f",
+    "link.ld": "bf0f646a93de321920ee8d606c772a73faa0da828885bde67444a302ef3e1db5",
+    "loader.bin": "05be92ad0f49d819086623717ce913dbdfc7748ad8a680a1c08c367585540524",
+    "loader.c": "5beb6dbf38aa65b3ad9631c516a9937c944d395de7da0f5b831d3160bba26541",
+    "opensbi_timer_bridge.inc": "491a5062b6b513b5228395a04848a4152d236c83c583de1afc52f0a140a02cd5",
+    "overlay-manifest.json": "1b1eeb99bf6a15007d86460de111629f77fe58d1b34ef5cfef499085df5c46cc",
+    "soc.dtb": "794727604877abe2f8d895ed8de8f58613c889b8573a58d9a7446ac7287d6176",
+    "soc.dts": "d6bc6312118c38a855442e465b80db3fd59fe7061620a253a51846feb8e8af07",
+    "start.S": "d19a373a827957148dd117bc114103f46eca7cee186d31f31a862ba862c317c7",
+    "support/board_mapping_boot.py": "0d41af2d3a1175d0c68770992f59d606236592fbc7c2e05ed66a6fcd820299fb",
+    "support/board_slow_commands.py": "19701e38e0221bfcdab7b5a54dbf915db19a3db060bdd83f105dd84202a4026f",
+    "support/build_latency.sh": "1d6c1023e3ea945b7b9414d93e463010315ef69521147e4068ed223e78dcf8a4",
+    "support/build_latency_clint.sh": "f13e4a9b2568535ca4843ae64f63109b22722d4097b8ae1b155732029e4373ca",
+    "support/cpu75-nnue.vectors": "f74b6cd2c98af3170253fab0d3644f0076be3de6a5b56646cd052a7f85e94d89",
+    "support/model75-audio-restore-spec.json": "048b0d2faf66175fb386ed249eae39e3b766f0d2674f410d60aeb1a40a9df14c",
+    "support/nnue75-clint-spec.json": "9a737540aafc3236b9ac93f7bec6d3ea6cf81cb4dedaa044fc27c47d866d7b0b",
+    "support/pikafish-driver-soak": "d1c1d1308bb6dc609dd2817e3c14f4016cfb92583397bdc732d188c8a0fbbf4c",
+    "support/pikafish-nnue-latency-clint": "4198609013006c55ec4e0178b532d318a20121f653bc86675224c0688ec209e5",
+    "support/pikafish-stageb-word-accept": "b8a1a100daf86d07c58ef3fc495580dc2bee215698db16d799fc162d5fc27dd8",
+    "support/prepare_clint_bench_gui.py": "63f56c70ff34f2e9454e6f1a70ce32e76f53ac2c2420a69d177dbef44b1745ca",
+    "support/verify75-spec.json": "621fdb4864eb74107b45d332db9819077d0605bc92daf46cebee67e75a167ef5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "selected_for_work": false,
+  "production_ready": false,
+  "negative_result": true,
+  "reason": "mixed calibration negative; 33/37; do not select",
+  "local_source": "build/picture-merge-20261023/r16/混合校准证伪/candidate_r16_mixcal",
+  "source_manifest_sha256": "0b9ae85da64d56bd53339ec348012f128b7401f7ee970ee36639acf576d95238"
+}

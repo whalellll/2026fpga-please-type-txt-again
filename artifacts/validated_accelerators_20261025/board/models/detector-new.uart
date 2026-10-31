@@ -1,0 +1,12 @@
+
+/ # /usr/bin/timeout 1200 /usr/bin/picture-new-bench detector /opt/integrated60/
+assets/detector.xqm /opt/integrated60/assets/detector.f32 1 vision32 2; printf "
+\n__CVB_END_0__:%s\n" "$?"
+PICTURE_TIMING model=detector batch=1 backend=vision32 repeat=0 infer_us=227354255 model_load_us=5382900 input_open_us=1526219 jobs=166 cycles=833193011 hardware_us=16832182 output_crc=97265de4 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=27 producer_elements=7219200 consumer_elements=9369600 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=5571200 parameter_saved_bytes=8923840 scope=driver_shadow_to_scratch_logical_bytes
+PICTURE_TIMING model=detector batch=1 backend=vision32 repeat=1 infer_us=227244808 model_load_us=5382900 input_open_us=1526219 jobs=166 cycles=833105293 hardware_us=16830409 output_crc=97265de4 no_fallback=1
+PICTURE_LAYOUT hwc_nodes=27 producer_elements=7219200 consumer_elements=9369600 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=11142400 parameter_saved_bytes=17847680 scope=driver_shadow_to_scratch_logical_bytes
+
+__CVB_END_0__:0

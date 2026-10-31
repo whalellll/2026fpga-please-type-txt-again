@@ -1,0 +1,85 @@
+^C
+/ #
+/ # pid=$(cat /run/xiangqi-pikafish.pid 2>/dev/null); /etc/init.d/S95pikafish st
+
+op; n=0; while [ -n "$pid" ] && kill -0 "$pid" 2>/dev/null; do sleep 1; n=$((n+1
+
+)); [ "$n" -lt 180 ] || exit 1; done; printf 'MAC_CONV_CMD_%s\n' '5cb00bbf666d43
+
+28841d1e38f136f0a5'
+Stopping full Pikafish GUI: pid=64
+PIKAFISH_STAGEB_ACCEL_STATS prepares=0 copied_bytes=0 resident_hits=0 prepare_us=0 evaluations=0 jobs=0 mac_cycles=0 host_us=0 fallbacks=0 mismatches=0
+PIKAFISH_STAGEB_HEALTH checkpoints=0 checkpoint_failures=0
+XQ LINUX PIKAFISH STOPPED
+MAC_CONV_CMD_5cb00bbf666d4328841d1e38f136f0a5
+/ # echo MAC_CONV_SHELL_ALIVE_preflight; printf 'MAC_CONV_CMD_%s\n' 'abc19c36ff0
+
+94af099fdc863c3b5713a'
+MAC_CONV_SHELL_ALIVE_preflight
+MAC_CONV_CMD_abc19c36ff094af099fdc863c3b5713a
+/ # ^C
+/ #
+/ # echo MAC_CONV_IDLE_ALIVE_20; printf 'MAC_CONV_CMD_%s\n' '648125cbab76422cb13
+
+aa3430c1578e8'
+MAC_CONV_IDLE_ALIVE_20
+MAC_CONV_CMD_648125cbab76422cb13aa3430c1578e8
+/ # echo MAC_CONV_IDLE_ALIVE_40; printf 'MAC_CONV_CMD_%s\n' 'a1fa65be41e24308a89
+
+0df605e2bf770'
+MAC_CONV_IDLE_ALIVE_40
+MAC_CONV_CMD_a1fa65be41e24308a890df605e2bf770
+/ # echo MAC_CONV_IDLE_ALIVE_60; printf 'MAC_CONV_CMD_%s\n' '1ce03da904c94ccea3c
+
+e16cad2c99ad9'
+MAC_CONV_IDLE_ALIVE_60
+MAC_CONV_CMD_1ce03da904c94ccea3ce16cad2c99ad9
+/ # pango-mac-conv-window-test
+pointwise taps=56 input=224 weight=128 output=0 reuse=56 cycles=269 stalls=0 tap_xor=00e0b070 weight_digest=74513326
+tail_tile taps=441 input=196 weight=1536 output=0 reuse=49 cycles=1650 stalls=0 tap_xor=000000fb weight_digest=5a672328
+six_by_six taps=1296 input=196 weight=3456 output=0 reuse=36 cycles=1562 stalls=0 tap_xor=0044f89c weight_digest=3e5a76c8
+first_layer taps=921600 input=409600 weight=3456 output=0 reuse=25600 cycles=1430719 stalls=0 tap_xor=0008c8c8 weight_digest=281f3d98
+PANGO_MAC_CONV_WINDOW_BOARD_PASS
+/ # echo MAC_CONV_SHELL_ALIVE_window; printf 'MAC_CONV_CMD_%s\n' '9948ed0115974e
+
+69bd13e67332723c98'
+MAC_CONV_SHELL_ALIVE_window
+MAC_CONV_CMD_9948ed0115974e69bd13e67332723c98
+/ # ^C
+/ #
+/ # pango-mac-conv-compute-test
+PANGO_MAC_CONV_COMPUTE_BOARD_PASS bytes=144 cycles=5409 windows=324
+PANGO_MAC_CONV_SHAPE_BOARD_PASS case=pointwise bytes=320 crc32=344efaaf input=80 weight=128 windows=20 cycles=1811
+PANGO_MAC_CONV_SHAPE_BOARD_PASS case=three_by_three bytes=144 crc32=c674620c input=100 weight=896 windows=81 cycles=1899
+/ # echo MAC_CONV_SHELL_ALIVE_compute; printf 'MAC_CONV_CMD_%s\n' 'a542b9d13b904
+
+dec98ba848a8f088795'
+MAC_CONV_SHELL_ALIVE_compute
+MAC_CONV_CMD_a542b9d13b904dec98ba848a8f088795
+/ # ^C
+/ #
+/ # pango-mac-pool-test
+PANGO_MAC_POOL_TEST_PASS contexts=8 bytes=1048576 opens=9 open_us=1004000
+/ # echo MAC_CONV_SHELL_ALIVE_pool; printf 'MAC_CONV_CMD_%s\n' '1aa43a137d7e4023
+
+9db73e72c706f7f5'
+MAC_CONV_SHELL_ALIVE_pool
+MAC_CONV_CMD_1aa43a137d7e40239db73e72c706f7f5
+/ # ^C
+/ #
+/ # pango-mac-scheduler-test 64
+PANGO_MAC_SCHEDULER_TEST_PASS processes=3 threads_per_process=2 jobs=384
+/ # echo MAC_CONV_SHELL_ALIVE_scheduler_64; printf 'MAC_CONV_CMD_%s\n' '7662e07a
+
+bc594ee284f25b2845ca78dc'
+MAC_CONV_SHELL_ALIVE_scheduler_64
+MAC_CONV_CMD_7662e07abc594ee284f25b2845ca78dc
+/ # ^C
+/ #
+/ # /etc/init.d/S95pikafish start; printf 'MAC_CONV_CMD_%s\n' 'ca98b53be9c742799
+
+0f4a5f54f812a5d'
+Starting full Pikafish GUI
+Full Pikafish GUI launched: pid=87
+MAC_CONV_CMD_ca98b53be9c7427990f4a5f54f812a5d
+/ #

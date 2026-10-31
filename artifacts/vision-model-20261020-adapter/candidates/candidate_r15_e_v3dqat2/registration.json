@@ -1,0 +1,8 @@
+{
+  "selected_for_work": false,
+  "production_ready": false,
+  "negative_result": true,
+  "reason": "QAT2 negative; real INT dev37 loss 8.11pp; simulator fidelity mismatch",
+  "local_source": "build/picture-merge-20261023/r15/v3dQAT2/candidate_r15_e_v3dqat2",
+  "source_manifest_sha256": "3a6057449d26178189032f85bf6e6ce95b9034ad054baf3ccb5ad7b5bd4fa904"
+}

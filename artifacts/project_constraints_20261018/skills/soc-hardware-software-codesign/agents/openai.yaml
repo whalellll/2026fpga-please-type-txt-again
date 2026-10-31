@@ -1,0 +1,4 @@
+interface:
+  display_name: "Soc Hardware Software Codesign"
+  short_description: "Help with Soc Hardware Software Codesign tasks"
+  default_prompt: "Use $soc-hardware-software-codesign to inspect the current project, apply its constraints, and produce verifiable changes and evidence."

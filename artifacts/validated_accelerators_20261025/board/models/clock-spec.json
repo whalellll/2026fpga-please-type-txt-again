@@ -1,0 +1,10 @@
+[
+  {
+    "command": "cat /proc/uptime; sleep 10; cat /proc/uptime",
+    "timeout": 20,
+    "markers": [],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

@@ -1,0 +1,2858 @@
+{
+  "schema": 1,
+  "hanzi": "帅将仕士相象马车炮兵卒楚河汉界中国红方行棋评分节点推理用时毫秒微状态准备就绪已选子重新择取消非法走请落估错误思考搜索胜利完成无着最佳黑开始率",
+  "voice": "一二三四五六七八九进退平来出",
+  "ascii": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+  "weight": 500,
+  "ascii_sizes": [
+    16,
+    22,
+    30,
+    48
+  ],
+  "hanzi_sizes": [
+    32,
+    48
+  ],
+  "coverage_bits": 4,
+  "supersample": 4,
+  "alpha_bytes": 199825,
+  "subset_sha256": "a6ee2d27eb955050299a7dba4c362f2b1a1504ea6ca0b28e1f60f87f3146603e",
+  "header_sha256": "9d90c8dc7be0a11f21061b6cb353a5d958cd2a0b7db505404f5902efaa7bc9af",
+  "pillow_version": "12.0.0",
+  "freetype_version": "2.13.3",
+  "glyphs": [
+    {
+      "character": " ",
+      "width": 6,
+      "height": 19,
+      "intermediate_pixels": 0
+    },
+    {
+      "character": "!",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 28
+    },
+    {
+      "character": "\"",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 24
+    },
+    {
+      "character": "#",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "$",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 57
+    },
+    {
+      "character": "%",
+      "width": 18,
+      "height": 19,
+      "intermediate_pixels": 96
+    },
+    {
+      "character": "&",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 75
+    },
+    {
+      "character": "'",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 13
+    },
+    {
+      "character": "(",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": ")",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": "*",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 25
+    },
+    {
+      "character": "+",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 28
+    },
+    {
+      "character": ",",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 15
+    },
+    {
+      "character": "-",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 10
+    },
+    {
+      "character": ".",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 8
+    },
+    {
+      "character": "/",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 36
+    },
+    {
+      "character": "0",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": "1",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 41
+    },
+    {
+      "character": "2",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 47
+    },
+    {
+      "character": "3",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 53
+    },
+    {
+      "character": "4",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 47
+    },
+    {
+      "character": "5",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 55
+    },
+    {
+      "character": "6",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 58
+    },
+    {
+      "character": "7",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 38
+    },
+    {
+      "character": "8",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 58
+    },
+    {
+      "character": "9",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 59
+    },
+    {
+      "character": ":",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 18
+    },
+    {
+      "character": ";",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 27
+    },
+    {
+      "character": "<",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 37
+    },
+    {
+      "character": "=",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 38
+    },
+    {
+      "character": ">",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 33
+    },
+    {
+      "character": "?",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 36
+    },
+    {
+      "character": "@",
+      "width": 18,
+      "height": 19,
+      "intermediate_pixels": 116
+    },
+    {
+      "character": "A",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 55
+    },
+    {
+      "character": "B",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 67
+    },
+    {
+      "character": "C",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 47
+    },
+    {
+      "character": "D",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 62
+    },
+    {
+      "character": "E",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": "F",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 45
+    },
+    {
+      "character": "G",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "H",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "I",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 28
+    },
+    {
+      "character": "J",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 35
+    },
+    {
+      "character": "K",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 59
+    },
+    {
+      "character": "L",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 37
+    },
+    {
+      "character": "M",
+      "width": 16,
+      "height": 19,
+      "intermediate_pixels": 80
+    },
+    {
+      "character": "N",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "O",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "P",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 51
+    },
+    {
+      "character": "Q",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 74
+    },
+    {
+      "character": "R",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 63
+    },
+    {
+      "character": "S",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 53
+    },
+    {
+      "character": "T",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 40
+    },
+    {
+      "character": "U",
+      "width": 14,
+      "height": 19,
+      "intermediate_pixels": 59
+    },
+    {
+      "character": "V",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 50
+    },
+    {
+      "character": "W",
+      "width": 16,
+      "height": 19,
+      "intermediate_pixels": 88
+    },
+    {
+      "character": "X",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "Y",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 48
+    },
+    {
+      "character": "Z",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 55
+    },
+    {
+      "character": "[",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 38
+    },
+    {
+      "character": "\\",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 36
+    },
+    {
+      "character": "]",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 42
+    },
+    {
+      "character": "^",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 29
+    },
+    {
+      "character": "_",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 20
+    },
+    {
+      "character": "`",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 13
+    },
+    {
+      "character": "a",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 48
+    },
+    {
+      "character": "b",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 60
+    },
+    {
+      "character": "c",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": "d",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 62
+    },
+    {
+      "character": "e",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 49
+    },
+    {
+      "character": "f",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 40
+    },
+    {
+      "character": "g",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 69
+    },
+    {
+      "character": "h",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 55
+    },
+    {
+      "character": "i",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 30
+    },
+    {
+      "character": "j",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 41
+    },
+    {
+      "character": "k",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": "l",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 32
+    },
+    {
+      "character": "m",
+      "width": 18,
+      "height": 19,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "n",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 47
+    },
+    {
+      "character": "o",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 48
+    },
+    {
+      "character": "p",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 58
+    },
+    {
+      "character": "q",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 61
+    },
+    {
+      "character": "r",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 28
+    },
+    {
+      "character": "s",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 40
+    },
+    {
+      "character": "t",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": "u",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 49
+    },
+    {
+      "character": "v",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 40
+    },
+    {
+      "character": "w",
+      "width": 16,
+      "height": 19,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "x",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 41
+    },
+    {
+      "character": "y",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 48
+    },
+    {
+      "character": "z",
+      "width": 10,
+      "height": 19,
+      "intermediate_pixels": 42
+    },
+    {
+      "character": "{",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 39
+    },
+    {
+      "character": "|",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 38
+    },
+    {
+      "character": "}",
+      "width": 8,
+      "height": 19,
+      "intermediate_pixels": 42
+    },
+    {
+      "character": "~",
+      "width": 12,
+      "height": 19,
+      "intermediate_pixels": 19
+    },
+    {
+      "character": " ",
+      "width": 8,
+      "height": 27,
+      "intermediate_pixels": 0
+    },
+    {
+      "character": "!",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 41
+    },
+    {
+      "character": "\"",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 39
+    },
+    {
+      "character": "#",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 94
+    },
+    {
+      "character": "$",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "%",
+      "width": 24,
+      "height": 27,
+      "intermediate_pixels": 138
+    },
+    {
+      "character": "&",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 107
+    },
+    {
+      "character": "'",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 18
+    },
+    {
+      "character": "(",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 52
+    },
+    {
+      "character": ")",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 57
+    },
+    {
+      "character": "*",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 33
+    },
+    {
+      "character": "+",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 45
+    },
+    {
+      "character": ",",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 23
+    },
+    {
+      "character": "-",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 15
+    },
+    {
+      "character": ".",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 16
+    },
+    {
+      "character": "/",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 50
+    },
+    {
+      "character": "0",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "1",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 79
+    },
+    {
+      "character": "2",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "3",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 75
+    },
+    {
+      "character": "4",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 80
+    },
+    {
+      "character": "5",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 83
+    },
+    {
+      "character": "6",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 88
+    },
+    {
+      "character": "7",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 57
+    },
+    {
+      "character": "8",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 95
+    },
+    {
+      "character": "9",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": ":",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 29
+    },
+    {
+      "character": ";",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 37
+    },
+    {
+      "character": "<",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 46
+    },
+    {
+      "character": "=",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 50
+    },
+    {
+      "character": ">",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 50
+    },
+    {
+      "character": "?",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "@",
+      "width": 24,
+      "height": 27,
+      "intermediate_pixels": 165
+    },
+    {
+      "character": "A",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 85
+    },
+    {
+      "character": "B",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 112
+    },
+    {
+      "character": "C",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "D",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 106
+    },
+    {
+      "character": "E",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 96
+    },
+    {
+      "character": "F",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "G",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 93
+    },
+    {
+      "character": "H",
+      "width": 20,
+      "height": 27,
+      "intermediate_pixels": 110
+    },
+    {
+      "character": "I",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 53
+    },
+    {
+      "character": "J",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 49
+    },
+    {
+      "character": "K",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 94
+    },
+    {
+      "character": "L",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "M",
+      "width": 22,
+      "height": 27,
+      "intermediate_pixels": 121
+    },
+    {
+      "character": "N",
+      "width": 20,
+      "height": 27,
+      "intermediate_pixels": 122
+    },
+    {
+      "character": "O",
+      "width": 20,
+      "height": 27,
+      "intermediate_pixels": 100
+    },
+    {
+      "character": "P",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "Q",
+      "width": 20,
+      "height": 27,
+      "intermediate_pixels": 121
+    },
+    {
+      "character": "R",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 106
+    },
+    {
+      "character": "S",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 78
+    },
+    {
+      "character": "T",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "U",
+      "width": 20,
+      "height": 27,
+      "intermediate_pixels": 83
+    },
+    {
+      "character": "V",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 79
+    },
+    {
+      "character": "W",
+      "width": 22,
+      "height": 27,
+      "intermediate_pixels": 146
+    },
+    {
+      "character": "X",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 85
+    },
+    {
+      "character": "Y",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "Z",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 87
+    },
+    {
+      "character": "[",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 59
+    },
+    {
+      "character": "\\",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 50
+    },
+    {
+      "character": "]",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 95
+    },
+    {
+      "character": "^",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 47
+    },
+    {
+      "character": "_",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 28
+    },
+    {
+      "character": "`",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 17
+    },
+    {
+      "character": "a",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "b",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 85
+    },
+    {
+      "character": "c",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "d",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 97
+    },
+    {
+      "character": "e",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "f",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 65
+    },
+    {
+      "character": "g",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 108
+    },
+    {
+      "character": "h",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 78
+    },
+    {
+      "character": "i",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 55
+    },
+    {
+      "character": "j",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 70
+    },
+    {
+      "character": "k",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 75
+    },
+    {
+      "character": "l",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 42
+    },
+    {
+      "character": "m",
+      "width": 24,
+      "height": 27,
+      "intermediate_pixels": 114
+    },
+    {
+      "character": "n",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 69
+    },
+    {
+      "character": "o",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "p",
+      "width": 18,
+      "height": 27,
+      "intermediate_pixels": 88
+    },
+    {
+      "character": "q",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 98
+    },
+    {
+      "character": "r",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 43
+    },
+    {
+      "character": "s",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 62
+    },
+    {
+      "character": "t",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 60
+    },
+    {
+      "character": "u",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 84
+    },
+    {
+      "character": "v",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "w",
+      "width": 22,
+      "height": 27,
+      "intermediate_pixels": 109
+    },
+    {
+      "character": "x",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 67
+    },
+    {
+      "character": "y",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 74
+    },
+    {
+      "character": "z",
+      "width": 14,
+      "height": 27,
+      "intermediate_pixels": 68
+    },
+    {
+      "character": "{",
+      "width": 12,
+      "height": 27,
+      "intermediate_pixels": 64
+    },
+    {
+      "character": "|",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": "}",
+      "width": 10,
+      "height": 27,
+      "intermediate_pixels": 57
+    },
+    {
+      "character": "~",
+      "width": 16,
+      "height": 27,
+      "intermediate_pixels": 27
+    },
+    {
+      "character": " ",
+      "width": 10,
+      "height": 36,
+      "intermediate_pixels": 0
+    },
+    {
+      "character": "!",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 61
+    },
+    {
+      "character": "\"",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 53
+    },
+    {
+      "character": "#",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 153
+    },
+    {
+      "character": "$",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 112
+    },
+    {
+      "character": "%",
+      "width": 32,
+      "height": 36,
+      "intermediate_pixels": 203
+    },
+    {
+      "character": "&",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 153
+    },
+    {
+      "character": "'",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 25
+    },
+    {
+      "character": "(",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 78
+    },
+    {
+      "character": ")",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "*",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": "+",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": ",",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 33
+    },
+    {
+      "character": "-",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 22
+    },
+    {
+      "character": ".",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 18
+    },
+    {
+      "character": "/",
+      "width": 16,
+      "height": 36,
+      "intermediate_pixels": 76
+    },
+    {
+      "character": "0",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 113
+    },
+    {
+      "character": "1",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 89
+    },
+    {
+      "character": "2",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 109
+    },
+    {
+      "character": "3",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 111
+    },
+    {
+      "character": "4",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 126
+    },
+    {
+      "character": "5",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 114
+    },
+    {
+      "character": "6",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 117
+    },
+    {
+      "character": "7",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 89
+    },
+    {
+      "character": "8",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 129
+    },
+    {
+      "character": "9",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 118
+    },
+    {
+      "character": ":",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": ";",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 46
+    },
+    {
+      "character": "<",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "=",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 70
+    },
+    {
+      "character": ">",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "?",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "@",
+      "width": 32,
+      "height": 36,
+      "intermediate_pixels": 243
+    },
+    {
+      "character": "A",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 119
+    },
+    {
+      "character": "B",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 153
+    },
+    {
+      "character": "C",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 91
+    },
+    {
+      "character": "D",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 142
+    },
+    {
+      "character": "E",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 138
+    },
+    {
+      "character": "F",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 102
+    },
+    {
+      "character": "G",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 124
+    },
+    {
+      "character": "H",
+      "width": 26,
+      "height": 36,
+      "intermediate_pixels": 173
+    },
+    {
+      "character": "I",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "J",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 71
+    },
+    {
+      "character": "K",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 133
+    },
+    {
+      "character": "L",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 99
+    },
+    {
+      "character": "M",
+      "width": 28,
+      "height": 36,
+      "intermediate_pixels": 172
+    },
+    {
+      "character": "N",
+      "width": 26,
+      "height": 36,
+      "intermediate_pixels": 141
+    },
+    {
+      "character": "O",
+      "width": 26,
+      "height": 36,
+      "intermediate_pixels": 122
+    },
+    {
+      "character": "P",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 108
+    },
+    {
+      "character": "Q",
+      "width": 26,
+      "height": 36,
+      "intermediate_pixels": 147
+    },
+    {
+      "character": "R",
+      "width": 24,
+      "height": 36,
+      "intermediate_pixels": 145
+    },
+    {
+      "character": "S",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 101
+    },
+    {
+      "character": "T",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 99
+    },
+    {
+      "character": "U",
+      "width": 26,
+      "height": 36,
+      "intermediate_pixels": 113
+    },
+    {
+      "character": "V",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 110
+    },
+    {
+      "character": "W",
+      "width": 30,
+      "height": 36,
+      "intermediate_pixels": 204
+    },
+    {
+      "character": "X",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 116
+    },
+    {
+      "character": "Y",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 103
+    },
+    {
+      "character": "Z",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 119
+    },
+    {
+      "character": "[",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 110
+    },
+    {
+      "character": "\\",
+      "width": 16,
+      "height": 36,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "]",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 114
+    },
+    {
+      "character": "^",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 63
+    },
+    {
+      "character": "_",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 36
+    },
+    {
+      "character": "`",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 20
+    },
+    {
+      "character": "a",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 106
+    },
+    {
+      "character": "b",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 137
+    },
+    {
+      "character": "c",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 75
+    },
+    {
+      "character": "d",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 121
+    },
+    {
+      "character": "e",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 101
+    },
+    {
+      "character": "f",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 74
+    },
+    {
+      "character": "g",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 161
+    },
+    {
+      "character": "h",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 134
+    },
+    {
+      "character": "i",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "j",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "k",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 135
+    },
+    {
+      "character": "l",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 81
+    },
+    {
+      "character": "m",
+      "width": 32,
+      "height": 36,
+      "intermediate_pixels": 168
+    },
+    {
+      "character": "n",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 109
+    },
+    {
+      "character": "o",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 90
+    },
+    {
+      "character": "p",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 129
+    },
+    {
+      "character": "q",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 115
+    },
+    {
+      "character": "r",
+      "width": 16,
+      "height": 36,
+      "intermediate_pixels": 73
+    },
+    {
+      "character": "s",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 84
+    },
+    {
+      "character": "t",
+      "width": 16,
+      "height": 36,
+      "intermediate_pixels": 80
+    },
+    {
+      "character": "u",
+      "width": 22,
+      "height": 36,
+      "intermediate_pixels": 100
+    },
+    {
+      "character": "v",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 85
+    },
+    {
+      "character": "w",
+      "width": 28,
+      "height": 36,
+      "intermediate_pixels": 149
+    },
+    {
+      "character": "x",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 91
+    },
+    {
+      "character": "y",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 102
+    },
+    {
+      "character": "z",
+      "width": 18,
+      "height": 36,
+      "intermediate_pixels": 91
+    },
+    {
+      "character": "{",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 82
+    },
+    {
+      "character": "|",
+      "width": 12,
+      "height": 36,
+      "intermediate_pixels": 72
+    },
+    {
+      "character": "}",
+      "width": 14,
+      "height": 36,
+      "intermediate_pixels": 85
+    },
+    {
+      "character": "~",
+      "width": 20,
+      "height": 36,
+      "intermediate_pixels": 37
+    },
+    {
+      "character": " ",
+      "width": 16,
+      "height": 57,
+      "intermediate_pixels": 0
+    },
+    {
+      "character": "!",
+      "width": 20,
+      "height": 57,
+      "intermediate_pixels": 99
+    },
+    {
+      "character": "\"",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 89
+    },
+    {
+      "character": "#",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 225
+    },
+    {
+      "character": "$",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 179
+    },
+    {
+      "character": "%",
+      "width": 50,
+      "height": 57,
+      "intermediate_pixels": 307
+    },
+    {
+      "character": "&",
+      "width": 38,
+      "height": 57,
+      "intermediate_pixels": 227
+    },
+    {
+      "character": "'",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 46
+    },
+    {
+      "character": "(",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 118
+    },
+    {
+      "character": ")",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 115
+    },
+    {
+      "character": "*",
+      "width": 28,
+      "height": 57,
+      "intermediate_pixels": 79
+    },
+    {
+      "character": "+",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 113
+    },
+    {
+      "character": ",",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 56
+    },
+    {
+      "character": "-",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 46
+    },
+    {
+      "character": ".",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 27
+    },
+    {
+      "character": "/",
+      "width": 24,
+      "height": 57,
+      "intermediate_pixels": 116
+    },
+    {
+      "character": "0",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 178
+    },
+    {
+      "character": "1",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 149
+    },
+    {
+      "character": "2",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 180
+    },
+    {
+      "character": "3",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 166
+    },
+    {
+      "character": "4",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 159
+    },
+    {
+      "character": "5",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 187
+    },
+    {
+      "character": "6",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 188
+    },
+    {
+      "character": "7",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 152
+    },
+    {
+      "character": "8",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 193
+    },
+    {
+      "character": "9",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 186
+    },
+    {
+      "character": ":",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 54
+    },
+    {
+      "character": ";",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 80
+    },
+    {
+      "character": "<",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 115
+    },
+    {
+      "character": "=",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 135
+    },
+    {
+      "character": ">",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 114
+    },
+    {
+      "character": "?",
+      "width": 28,
+      "height": 57,
+      "intermediate_pixels": 117
+    },
+    {
+      "character": "@",
+      "width": 52,
+      "height": 57,
+      "intermediate_pixels": 366
+    },
+    {
+      "character": "A",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 196
+    },
+    {
+      "character": "B",
+      "width": 36,
+      "height": 57,
+      "intermediate_pixels": 235
+    },
+    {
+      "character": "C",
+      "width": 36,
+      "height": 57,
+      "intermediate_pixels": 154
+    },
+    {
+      "character": "D",
+      "width": 38,
+      "height": 57,
+      "intermediate_pixels": 201
+    },
+    {
+      "character": "E",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 193
+    },
+    {
+      "character": "F",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 138
+    },
+    {
+      "character": "G",
+      "width": 38,
+      "height": 57,
+      "intermediate_pixels": 192
+    },
+    {
+      "character": "H",
+      "width": 40,
+      "height": 57,
+      "intermediate_pixels": 208
+    },
+    {
+      "character": "I",
+      "width": 20,
+      "height": 57,
+      "intermediate_pixels": 86
+    },
+    {
+      "character": "J",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 113
+    },
+    {
+      "character": "K",
+      "width": 36,
+      "height": 57,
+      "intermediate_pixels": 193
+    },
+    {
+      "character": "L",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 131
+    },
+    {
+      "character": "M",
+      "width": 44,
+      "height": 57,
+      "intermediate_pixels": 274
+    },
+    {
+      "character": "N",
+      "width": 40,
+      "height": 57,
+      "intermediate_pixels": 238
+    },
+    {
+      "character": "O",
+      "width": 40,
+      "height": 57,
+      "intermediate_pixels": 202
+    },
+    {
+      "character": "P",
+      "width": 36,
+      "height": 57,
+      "intermediate_pixels": 164
+    },
+    {
+      "character": "Q",
+      "width": 40,
+      "height": 57,
+      "intermediate_pixels": 243
+    },
+    {
+      "character": "R",
+      "width": 36,
+      "height": 57,
+      "intermediate_pixels": 206
+    },
+    {
+      "character": "S",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 176
+    },
+    {
+      "character": "T",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 180
+    },
+    {
+      "character": "U",
+      "width": 40,
+      "height": 57,
+      "intermediate_pixels": 195
+    },
+    {
+      "character": "V",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 175
+    },
+    {
+      "character": "W",
+      "width": 48,
+      "height": 57,
+      "intermediate_pixels": 322
+    },
+    {
+      "character": "X",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 194
+    },
+    {
+      "character": "Y",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 156
+    },
+    {
+      "character": "Z",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 188
+    },
+    {
+      "character": "[",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 139
+    },
+    {
+      "character": "\\",
+      "width": 24,
+      "height": 57,
+      "intermediate_pixels": 116
+    },
+    {
+      "character": "]",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 139
+    },
+    {
+      "character": "^",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 99
+    },
+    {
+      "character": "_",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 84
+    },
+    {
+      "character": "`",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 34
+    },
+    {
+      "character": "a",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 166
+    },
+    {
+      "character": "b",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 188
+    },
+    {
+      "character": "c",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 120
+    },
+    {
+      "character": "d",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 188
+    },
+    {
+      "character": "e",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 155
+    },
+    {
+      "character": "f",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 127
+    },
+    {
+      "character": "g",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 244
+    },
+    {
+      "character": "h",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 175
+    },
+    {
+      "character": "i",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 92
+    },
+    {
+      "character": "j",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 119
+    },
+    {
+      "character": "k",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 175
+    },
+    {
+      "character": "l",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 93
+    },
+    {
+      "character": "m",
+      "width": 50,
+      "height": 57,
+      "intermediate_pixels": 237
+    },
+    {
+      "character": "n",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 152
+    },
+    {
+      "character": "o",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 149
+    },
+    {
+      "character": "p",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 180
+    },
+    {
+      "character": "q",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 182
+    },
+    {
+      "character": "r",
+      "width": 24,
+      "height": 57,
+      "intermediate_pixels": 99
+    },
+    {
+      "character": "s",
+      "width": 28,
+      "height": 57,
+      "intermediate_pixels": 131
+    },
+    {
+      "character": "t",
+      "width": 24,
+      "height": 57,
+      "intermediate_pixels": 114
+    },
+    {
+      "character": "u",
+      "width": 34,
+      "height": 57,
+      "intermediate_pixels": 145
+    },
+    {
+      "character": "v",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 132
+    },
+    {
+      "character": "w",
+      "width": 44,
+      "height": 57,
+      "intermediate_pixels": 247
+    },
+    {
+      "character": "x",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 151
+    },
+    {
+      "character": "y",
+      "width": 30,
+      "height": 57,
+      "intermediate_pixels": 160
+    },
+    {
+      "character": "z",
+      "width": 28,
+      "height": 57,
+      "intermediate_pixels": 155
+    },
+    {
+      "character": "{",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 140
+    },
+    {
+      "character": "|",
+      "width": 18,
+      "height": 57,
+      "intermediate_pixels": 118
+    },
+    {
+      "character": "}",
+      "width": 22,
+      "height": 57,
+      "intermediate_pixels": 155
+    },
+    {
+      "character": "~",
+      "width": 32,
+      "height": 57,
+      "intermediate_pixels": 60
+    },
+    {
+      "character": "帅",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 291
+    },
+    {
+      "character": "将",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 282
+    },
+    {
+      "character": "仕",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 221
+    },
+    {
+      "character": "士",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 194
+    },
+    {
+      "character": "相",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 328
+    },
+    {
+      "character": "象",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 290
+    },
+    {
+      "character": "马",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 251
+    },
+    {
+      "character": "车",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 229
+    },
+    {
+      "character": "炮",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 313
+    },
+    {
+      "character": "兵",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 267
+    },
+    {
+      "character": "卒",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 245
+    },
+    {
+      "character": "楚",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 325
+    },
+    {
+      "character": "河",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 267
+    },
+    {
+      "character": "汉",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 217
+    },
+    {
+      "character": "界",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 248
+    },
+    {
+      "character": "中",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 171
+    },
+    {
+      "character": "国",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 323
+    },
+    {
+      "character": "红",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 253
+    },
+    {
+      "character": "方",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 224
+    },
+    {
+      "character": "行",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 215
+    },
+    {
+      "character": "棋",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 336
+    },
+    {
+      "character": "评",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 273
+    },
+    {
+      "character": "分",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 206
+    },
+    {
+      "character": "节",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 214
+    },
+    {
+      "character": "点",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 223
+    },
+    {
+      "character": "推",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 304
+    },
+    {
+      "character": "理",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 328
+    },
+    {
+      "character": "用",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 289
+    },
+    {
+      "character": "时",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 251
+    },
+    {
+      "character": "毫",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 364
+    },
+    {
+      "character": "秒",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 272
+    },
+    {
+      "character": "微",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 334
+    },
+    {
+      "character": "状",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 259
+    },
+    {
+      "character": "态",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 279
+    },
+    {
+      "character": "准",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 274
+    },
+    {
+      "character": "备",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 294
+    },
+    {
+      "character": "就",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 363
+    },
+    {
+      "character": "绪",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 322
+    },
+    {
+      "character": "已",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 212
+    },
+    {
+      "character": "选",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 289
+    },
+    {
+      "character": "子",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 183
+    },
+    {
+      "character": "重",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 368
+    },
+    {
+      "character": "新",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 336
+    },
+    {
+      "character": "择",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 312
+    },
+    {
+      "character": "取",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 297
+    },
+    {
+      "character": "消",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 280
+    },
+    {
+      "character": "非",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 261
+    },
+    {
+      "character": "法",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 226
+    },
+    {
+      "character": "走",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 271
+    },
+    {
+      "character": "请",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 318
+    },
+    {
+      "character": "落",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 338
+    },
+    {
+      "character": "估",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 240
+    },
+    {
+      "character": "错",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 328
+    },
+    {
+      "character": "误",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 309
+    },
+    {
+      "character": "思",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 306
+    },
+    {
+      "character": "考",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 248
+    },
+    {
+      "character": "搜",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 320
+    },
+    {
+      "character": "索",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 322
+    },
+    {
+      "character": "胜",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 323
+    },
+    {
+      "character": "利",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 249
+    },
+    {
+      "character": "完",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 290
+    },
+    {
+      "character": "成",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 273
+    },
+    {
+      "character": "无",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 221
+    },
+    {
+      "character": "着",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 340
+    },
+    {
+      "character": "最",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 348
+    },
+    {
+      "character": "佳",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 283
+    },
+    {
+      "character": "黑",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 329
+    },
+    {
+      "character": "开",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 221
+    },
+    {
+      "character": "始",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 291
+    },
+    {
+      "character": "率",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 303
+    },
+    {
+      "character": "象",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 456
+    },
+    {
+      "character": "楚",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 542
+    },
+    {
+      "character": "河",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 354
+    },
+    {
+      "character": "汉",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 322
+    },
+    {
+      "character": "界",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 401
+    },
+    {
+      "character": "中",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 276
+    },
+    {
+      "character": "国",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 513
+    },
+    {
+      "character": "棋",
+      "width": 48,
+      "height": 48,
+      "intermediate_pixels": 475
+    },
+    {
+      "character": "一",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 60
+    },
+    {
+      "character": "二",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 136
+    },
+    {
+      "character": "三",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 154
+    },
+    {
+      "character": "四",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 262
+    },
+    {
+      "character": "五",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 206
+    },
+    {
+      "character": "六",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 161
+    },
+    {
+      "character": "七",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 192
+    },
+    {
+      "character": "八",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 128
+    },
+    {
+      "character": "九",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 176
+    },
+    {
+      "character": "进",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 290
+    },
+    {
+      "character": "退",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 316
+    },
+    {
+      "character": "平",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 193
+    },
+    {
+      "character": "来",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 266
+    },
+    {
+      "character": "出",
+      "width": 32,
+      "height": 32,
+      "intermediate_pixels": 246
+    }
+  ]
+}

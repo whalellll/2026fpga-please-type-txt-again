@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "library_id": "fpga-soc-engineering-skills",
+  "version": "1.0.0",
+  "revision": 75,
+  "reviewed_on": "2026-10-18",
+  "review_note": "CPU70 board CoreMark 3+1 passed at 374.202987 / 5.279760 per MHz. Fixed RAM boot uncached CRC tails and DT gather binding; independent gather, resident and audio passed. 3x2 scheduler and 8-context reuse failed with later UART loss; no full-function/BoardRelease claim. Recorded mode-selection and recovery evidence.",
+  "skills": [
+    "accelerator-model-compatibility",
+    "accelerator-performance",
+    "fpga-soc-board-debug",
+    "fpga-timing-optimization",
+    "soc-hardware-software-codesign"
+  ],
+  "files": {
+    "accelerator-model-compatibility/agents/openai.yaml": "2c4abcc193d17221e64170faa75fc0dcdc1a235480613c88f4567727aa2422b6",
+    "accelerator-model-compatibility/references/lessons.md": "c70dc49696ea5f8403da57fa03b33f9819633eca84f4f76aba2767c7424c63b4",
+    "accelerator-model-compatibility/SKILL.md": "94bc865dec0501707c628bc4daf61a9a5ea4f16a4961b4d5018cccf9b2547ace",
+    "accelerator-performance/agents/openai.yaml": "25daafd0df617c19414b44a3e413b5c10ac4da586eaea42e78eff4083cb47120",
+    "accelerator-performance/references/lessons.md": "4a3b347db5d623e81024bd51a4a3092cc7aad3959e6e0d734bcf7efe5035ae5e",
+    "accelerator-performance/SKILL.md": "43c88bc9a90c8b78d3bac16f23cc8a49376928f6b2974d303bd4964e1506dbab",
+    "fpga-soc-board-debug/agents/openai.yaml": "2c37417f825a4f399825f1ce0ba61a3d8906229ee93309fafc60ff5a4730b6b4",
+    "fpga-soc-board-debug/references/lessons.md": "f293b6998ed11cdbc1ee76096f95d5a71e0cadb28a655c2a87d97e4e450b98de",
+    "fpga-soc-board-debug/SKILL.md": "71f010035e2fdcad69fad3dd082ac6af61b7ffda186bb680dd884c7bca3e1b3f",
+    "fpga-timing-optimization/agents/openai.yaml": "fb666783222baa53e6d64dd569f55f567a60313d0596d89cd462edd47f31603a",
+    "fpga-timing-optimization/references/lessons.md": "fff97858bd91ee5a2c68e5b731853ac0075fb63b05c46472527c0830be8efef3",
+    "fpga-timing-optimization/SKILL.md": "99adcdcc73b58a95e02d72fddd2fe40b170a8ba79f331a3f737d54602b9d1f0c",
+    "manage.py": "94194851851868acbed75bc6423d7a26bd0f64b7d83d47ef6c2a2a60757a6b92",
+    "README.md": "6da9401dff6366952dc4ea7834e9d8373f954ef98843ea808f3de19153098696",
+    "soc-hardware-software-codesign/agents/openai.yaml": "d7f15a0b9b6a79ddf0d357eabd597c9e36260ced32ddb4cbbc1c52fa1aa56fa2",
+    "soc-hardware-software-codesign/references/lessons.md": "32d474c6798bbe46a3e4d63cd8dc495bba339e46f6d1ff4a6d7f640e4f7e82af",
+    "soc-hardware-software-codesign/SKILL.md": "0caa26b53682274f2af68b3816f05f8142ab1d9ebb2274b816b12b59a357b8d6"
+  }
+}

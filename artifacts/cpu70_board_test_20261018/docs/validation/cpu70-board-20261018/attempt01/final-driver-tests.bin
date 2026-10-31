@@ -1,0 +1,28 @@
+
+/ # cd /tmp/voice-gui-display; p=$(cat gui-v3.pid); kill "$p"; n=0; while kill -
+0 "$p" 2>/dev/null; do sleep 1; n=$((n+1)); test "$n" -lt 15 || break; done; ! k
+ill -0 "$p" 2>/dev/null; printf "\n__BOARD_END_0:%s\n" "$?"
+
+__BOARD_END_0:0
+/tmp/voice-gui-display # pango-mac-gather-board-test; printf "\n__BOARD_END_1:%s
+\n" "$?"
+MAC_GATHER_INFO id=4d41434b version=00020100 features=00000067
+MAC_GATHER_CASE_PASS terms=1 lanes=1024 cycles=4235
+MAC_GATHER_CASE_PASS terms=3 lanes=1024 cycles=5870
+MAC_GATHER_CASE_PASS terms=256 lanes=1024 cycles=222332
+MAC_GATHER_BOARD_PASS cases=3 lanes=3072 modulo=pass invalid_descriptor=pass
+
+__BOARD_END_1:0
+/tmp/voice-gui-display # pango-mac-resident-test; printf "\n__BOARD_END_2:%s\n" 
+"$?"
+MAC_RESIDENT_LATENCY backend=legacy samples=100 mean_us=5508 source_weight_bytes=8192
+MAC_RESIDENT_LATENCY backend=resident samples=100 mean_us=1664 source_weight_bytes=0
+MAC_RESIDENT_BOARD_PASS files=2 concurrent_jobs=400 immutable=pass restore=pass
+
+__BOARD_END_2:0
+/tmp/voice-gui-display # pango-mac-scheduler-test; printf "\n__BOARD_END_3:%s\n"
+ "$?"
+scheduler-test: mismatch value=4 loop=0 lane=0 got=0 expected=16
+PANGO_MAC_SCHEDULER_TEST_FAIL
+
+__BOARD_END_3:1

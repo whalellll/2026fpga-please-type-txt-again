@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "pillow": "12.0.0",
+  "procedural": true,
+  "source_size": [
+    240,
+    135
+  ],
+  "output_size": [
+    1920,
+    1080
+  ],
+  "runtime_blur": false,
+  "runs": 7110,
+  "rom_bytes": 28712,
+  "header_sha256": "b440b538437afbaf5ad8396550418f9abf6328898cab09f1cd5154a92b060bf3"
+}

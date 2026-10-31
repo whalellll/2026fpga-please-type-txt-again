@@ -1,0 +1,10 @@
+[
+  {
+    "command": "p=$(cat /tmp/voice-gui-display/gui-v3.pid); kill \"$p\"; n=0; while kill -0 \"$p\" 2>/dev/null; do sleep 1; n=$((n+1)); test \"$n\" -lt 15 || break; done; ! kill -0 \"$p\" 2>/dev/null",
+    "exit": 0
+  },
+  {
+    "command": "cd /tmp/voice-gui-display; unset PIKAFISH_MAC_BACKEND; PIKAFISH_MAC_REQUIRE_DRIVER=1 PIKAFISH_STAGEB_ACCEL=verify XQ_GUI_INPUT=/run/voice-display.in ./xiangqi-gui-display-v3 </dev/null >gui-verify.log 2>&1 & echo $! >gui-v3.pid; sleep 8; tail -15 gui-verify.log; kill -0 $(cat gui-v3.pid)",
+    "exit": 0
+  }
+]

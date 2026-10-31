@@ -1,0 +1,10 @@
+[
+  {
+    "command": "uname -a; cat /proc/cpuinfo; ls -l /dev/pango-mac0 /dev/pango-audio0; ps; dmesg | tail -18",
+    "exit": 0
+  },
+  {
+    "command": "cat /tmp/voice-gui-display/gui-v3.log; cat /tmp/voice-gui-display/voice.log; ls /usr/bin/*mac* /usr/bin/*nnue* /usr/bin/*stage* 2>/dev/null; true",
+    "exit": 0
+  }
+]

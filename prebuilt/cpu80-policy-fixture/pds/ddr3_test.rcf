@@ -1,0 +1,14 @@
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [1]}
+# Candidate data priorities from the compact-bank route's final slow-corner
+# DDR PHY setup paths. Keep the vendor gate priorities above.
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/adj_wrdqs [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [61]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [10]}
+# The 44,437-LUT compact profile leaves exactly one slow-corner setup
+# violation on group 2 write mask bit 7 (-0.396 ns after hold repair).
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdata_mask [7]}
+# Final multi-corner STA of the HID-count candidate found 30.486 ns routing
+# delay on this 66-load CPU FTQ address net (-13.995 ns slow setup). Prioritize
+# the measured net without altering CPU RTL, clock period, or timing exceptions.
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/ftqAlloc [3]}

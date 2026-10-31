@@ -1,0 +1,41 @@
+[
+  {
+    "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+    "timeout": 40,
+    "markers": [
+      "backend=mac",
+      "VOICE_STREAM_TIMING source=wav-replay",
+      "paced=1",
+      "streamed=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  },
+  {
+    "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+    "timeout": 40,
+    "markers": [
+      "backend=mac",
+      "VOICE_STREAM_TIMING source=wav-replay",
+      "paced=1",
+      "streamed=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  },
+  {
+    "command": "/usr/bin/timeout 30 /usr/bin/xqvoice-small-cnn /opt/voice2/balanced24.bin /opt/integrated60/assets/voice-1000.wav /dev/null mac wav-stream",
+    "timeout": 40,
+    "markers": [
+      "backend=mac",
+      "VOICE_STREAM_TIMING source=wav-replay",
+      "paced=1",
+      "streamed=1"
+    ],
+    "allowed_exit": [
+      0
+    ]
+  }
+]

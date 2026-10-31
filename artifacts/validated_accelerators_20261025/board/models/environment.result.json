@@ -1,0 +1,33 @@
+{
+  "status": "BOARD_COMMAND_SPEC_PASS",
+  "mode": "commands",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T05:04:58.733076+00:00",
+  "commands": [
+    {
+      "command": "ps; free; cat /proc/uptime; /usr/bin/pikafish-batch-check",
+      "exit": 0,
+      "host_response_seconds": 1.4160731000010855,
+      "required_markers": [
+        "PIKAFISH_BATCH_CAPABILITY_PASS id=50464e31 features=00007de7"
+      ]
+    },
+    {
+      "command": "sha256sum /usr/bin/picture-new-bench-hwc-reference /usr/bin/picture-new-bench-exact-reference /usr/bin/pikafish-nnue-latency-clint-transfer-reference /usr/bin/xqvoice-small-cnn-profile",
+      "exit": 0,
+      "host_response_seconds": 14.568987699996796,
+      "required_markers": [
+        "a22516bfa96f84e73e5f7cdbf73fc955a9d0092e952a88cab6ba51f8d56999aa  /usr/bin/picture-new-bench-hwc-reference",
+        "68a97eebb19a429a70da32cabdc57b2a96020146548e4589fd8766f724f78903  /usr/bin/picture-new-bench-exact-reference",
+        "d357fd5b1da6fd888fd2205febb9e5ee6205f0fafd364e821b3d090b5105009f  /usr/bin/pikafish-nnue-latency-clint-transfer-reference",
+        "3be091aef57400f1b2dc5e50433313744e8228bf36e1e7c66eae1d5975985590  /usr/bin/xqvoice-small-cnn-profile"
+      ]
+    }
+  ],
+  "spec_sha256": "182c0b089bc9c35e3443792806f503815a439d8989de7ce79e499a5bc2f237c4",
+  "uart_sha256": "89658709b3544b098c3f22530104292942272856f7551414b8e526224b56d7f6",
+  "completed_utc": "2026-10-25T05:05:15.488679+00:00"
+}

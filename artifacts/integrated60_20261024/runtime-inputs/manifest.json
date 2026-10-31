@@ -1,0 +1,73 @@
+{
+  "status": "CPU60_MATCHED_RUNTIME_INPUTS_NOT_BOOTABLE_SD_KIT_NOT_BOARD",
+  "source_commit": "a9f69eaa4fcf5662308aa0c7abc3b02e3ddf2a88",
+  "cpu_hz": 60000000,
+  "sys_hz": 49500000,
+  "display": "1080p30",
+  "timer_ratio": [
+    33,
+    40
+  ],
+  "files": {
+    "Image": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-kernel-02\\Image",
+      "bytes": 7497368,
+      "sha256": "6f5202732f9dd1d76901b3adbceccfbc567e6ef96ecc960fda10532274ac67ef"
+    },
+    "soc.dtb": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-kernel-02\\soc.dtb",
+      "bytes": 2695,
+      "sha256": "46dc402301755d03ec09ac3ebd3aef300586d414b238d7eeb2f641c75939d371"
+    },
+    "kernel.config": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-kernel-02\\kernel.config",
+      "bytes": 63903,
+      "sha256": "624f33a948dc61030e63d77c21cc68f4d4bed6ac0413f7580d8f5074e091d73b"
+    },
+    "fw_jump.bin": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-boot60-01\\fw_jump.bin",
+      "bytes": 266448,
+      "sha256": "e709883480124396dddb68ab353c86afbac17e4da99393cfafd765ec379b5f2b"
+    },
+    "xqvoice-small-cnn": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-voice-rv32-01\\xqvoice-small-cnn",
+      "bytes": 367740,
+      "sha256": "6614bf2015a4e97194ece029e554214d38853f29045b5960fecf971bff8681ae"
+    },
+    "balanced24.bin": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\linux\\voice2\\balanced24.bin",
+      "bytes": 29400,
+      "sha256": "3e43041fd3e531ce130b56c0a460a1c7375420eea0e07afdf533012ae41da973"
+    },
+    "picture-new-infer": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-picture-interface-05\\picture-new-infer-rv32",
+      "bytes": 368660,
+      "sha256": "45d7bcebc7759afbdeb0674f227d8af20bcd71b15c3bfc7366f5228e370aa0db"
+    },
+    "pikafish-rv32": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-pikafish-rv32-01\\pikafish-rv32",
+      "bytes": 1936320,
+      "sha256": "2ba00265d32a6c5bc142551820355a308050d96977c05791588c0c56144f0579"
+    },
+    "pikafish-pipeline-search": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-pikafish-rv32-01\\pikafish-pipeline-search",
+      "bytes": 1903444,
+      "sha256": "3e68d216a28e5b6b18a262ee37b9204c18b0bd795b995f499d26801692ade1a9"
+    },
+    "xiangqi-pikafish-gui-display": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-pikafish-rv32-01\\xiangqi-pikafish-gui-display",
+      "bytes": 2129048,
+      "sha256": "97060ee71d57820f8df49d7c8436bb3b836b59331962cccefbfef9d5fecce38c"
+    },
+    "pikafish-nnue-pipeline-latency": {
+      "source": "G:\\fpga\\performance_soc_integrated60_20261024\\build\\integrated-pikafish-rv32-01\\pikafish-nnue-pipeline-latency",
+      "bytes": 1813156,
+      "sha256": "596bec325852a16e66c6922ea7ce6c2378e0c6541e90d43a7dbc1933808ea7a7"
+    }
+  },
+  "vision_weights": "DEFERRED_BY_USER",
+  "board": false,
+  "sd_written": false,
+  "flash_written": false,
+  "delivery": false
+}

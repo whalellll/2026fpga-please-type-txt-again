@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "library_id": "fpga-soc-engineering-skills",
+  "version": "1.0.0",
+  "revision": 74,
+  "reviewed_on": "2026-10-18",
+  "review_note": "Recorded explicit project policy: official Pikafish NNUE/PFF1 for future chess inference, prioritize Pikafish and image recognition, treat H128 as legacy and remote AGENTS.md as non-authoritative; local constraints/documentation only, no hardware or model changes.",
+  "skills": [
+    "accelerator-model-compatibility",
+    "accelerator-performance",
+    "fpga-soc-board-debug",
+    "fpga-timing-optimization",
+    "soc-hardware-software-codesign"
+  ],
+  "files": {
+    "accelerator-model-compatibility/agents/openai.yaml": "2c4abcc193d17221e64170faa75fc0dcdc1a235480613c88f4567727aa2422b6",
+    "accelerator-model-compatibility/references/lessons.md": "c70dc49696ea5f8403da57fa03b33f9819633eca84f4f76aba2767c7424c63b4",
+    "accelerator-model-compatibility/SKILL.md": "94bc865dec0501707c628bc4daf61a9a5ea4f16a4961b4d5018cccf9b2547ace",
+    "accelerator-performance/agents/openai.yaml": "25daafd0df617c19414b44a3e413b5c10ac4da586eaea42e78eff4083cb47120",
+    "accelerator-performance/references/lessons.md": "34282f348e7d8702bf4c8f5d52d070727cccbe38ecaf19828c1da89d717bc9f0",
+    "accelerator-performance/SKILL.md": "43c88bc9a90c8b78d3bac16f23cc8a49376928f6b2974d303bd4964e1506dbab",
+    "fpga-soc-board-debug/agents/openai.yaml": "2c37417f825a4f399825f1ce0ba61a3d8906229ee93309fafc60ff5a4730b6b4",
+    "fpga-soc-board-debug/references/lessons.md": "0728e62768248e7c6eab06cd7b75a9266c2fb7a4411e84b02b899602ce194c22",
+    "fpga-soc-board-debug/SKILL.md": "71f010035e2fdcad69fad3dd082ac6af61b7ffda186bb680dd884c7bca3e1b3f",
+    "fpga-timing-optimization/agents/openai.yaml": "fb666783222baa53e6d64dd569f55f567a60313d0596d89cd462edd47f31603a",
+    "fpga-timing-optimization/references/lessons.md": "fff97858bd91ee5a2c68e5b731853ac0075fb63b05c46472527c0830be8efef3",
+    "fpga-timing-optimization/SKILL.md": "99adcdcc73b58a95e02d72fddd2fe40b170a8ba79f331a3f737d54602b9d1f0c",
+    "manage.py": "94194851851868acbed75bc6423d7a26bd0f64b7d83d47ef6c2a2a60757a6b92",
+    "README.md": "6da9401dff6366952dc4ea7834e9d8373f954ef98843ea808f3de19153098696",
+    "soc-hardware-software-codesign/agents/openai.yaml": "d7f15a0b9b6a79ddf0d357eabd597c9e36260ced32ddb4cbbc1c52fa1aa56fa2",
+    "soc-hardware-software-codesign/references/lessons.md": "f0aad60786325859594ffb88199568fc5745f0ef7b55960668a00e62df0d4b91",
+    "soc-hardware-software-codesign/SKILL.md": "0caa26b53682274f2af68b3816f05f8142ab1d9ebb2274b816b12b59a357b8d6"
+  }
+}

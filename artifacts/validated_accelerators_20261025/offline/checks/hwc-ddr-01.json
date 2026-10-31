@@ -1,0 +1,119 @@
+{
+  "status": "VISION32_PRODUCTION_DDR_CDC_INTEGER_ORACLE_PASS_NOT_BOARD",
+  "cases": 4,
+  "exact_epilogue": true,
+  "source_sha256": {
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_accel_axi_master32.v": "012e094e01469fade37aa515d4a04d01637abb1960b53174eee85444cce99649",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_accel_ddr_kernel_top.v": "746b41a0349ed09c9983c351db311c7ac79f511c05f041bd8d7d2db4af683c2f",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_accel_dma_kernel.v": "db06b0d037cdb2fc87ab7edc68af0f2814cbffbfe4044fb5bfaef2e9074945e9",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_compact_packer.v": "449010e8310995566fdaa6b706fb90cb4d9731ab2427513d4bccf7c673b0a365",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_compact_writer.v": "df8b97b2acf1c4f433f417b44458cf324e40e8c7a8cbc0d98e5f8232043c7947",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_compute_core.v": "d5319fbde399e3d600f133a6d5a28309516ed8a0319c55fbcf5abbeae7dde32a",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_descriptor_guard.v": "1c556e3a4ed2060dea3661276035c74c788adab0168900df2aa8172158c3748d",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_input_dma.v": "0db7bd6351ddd4891ed2aa7f306178f70244aee80f3565b7949b496a26d04d8e",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_mmio_frontend.v": "81a1ff40eae534818c378343ddae380f3c87b6662038bbe0470983aab013e3dc",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_read_arbiter2.v": "e7c75b5df8ae08140a1ba7d58d9a498cf3717f89d3efaad601deda6e27de88ca",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_rw_arbiter2.v": "ca86ee876c06f1cf5fb5bbecf640a591f88ffb1696d4d93147a095bc923bd141",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_weight_dma.v": "d331ce15b43ee824d2392cd6f3eb3c6be432c39d55b963198b1c8e323db55f76",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_conv_window.v": "6f7d5c9a0662a26641b91c35e3ed6961736a963d45157ba18ada4d0d3ebc82cd",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\mac_weight_double_buffer.v": "6d0d5bcd444c7a3e5e450311fdc03ba9288a7f1dd09c3b3d8101d91bb6e5f62f",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\MacAccelCore.v": "09da021ec33f4b7f17f8836ed6ada24f2b7e79be57de3c5d2cd7d6f0697d0543",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\nnue_mlp_chain.v": "296c470f2c7b534c79d340b5b68a6ce82bd193cad29b9fa0cf3046a3b3c0997c",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\nnue_pipeline_frontend.v": "9ea502b89a267e34ee6a42bf868a8df3bc671e6fdc13bae52e9fe0f87e0b0387",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\nnue_stream_transform.v": "fde29e77ac5e38ed9a01468834dd52d1384556b0761f14b228be3370fb6c96f7",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\pff1_stagea_gather.v": "a2637600a49d83005b63ebfa70b4df132e918d0e59437b8b855d81339e589d2f",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\pff1_stagea_weight_permute.v": "dd362d7515d5d8edd2b8c2a8ead2ba4d87c26991cb5e795a49a42b76a2e8a7d9",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\pikafish_eval_batch.v": "7282ef13a87c23e590c1973cd5d1131510e22ee47d85c7221d3c61af24326e40",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\pikafish_mlp_dedicated.v": "29508a79b8b024ecd136a659b4df9a85c53d189b7e9cbc8650452dcceaea928b",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\vision32_layer.v": "e542ee3ebd33128ba66cda684cebfe9f284159d2b8b988c18f205ef5ddbcc026",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\vision32_pe.v": "7c4ce887a31985d31af669f0860e81de50eea6673b71bd0df92ddeb684906574",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\mac_accel\\xiangqi_sparse_eval.v": "37c8641d282c1a695f5ea16249ff0c0b311f0af2101df6a737b55c6315732cc8",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\rtl\\soc\\axi_ddr_cdc.v": "6e980dc8bd8d3332d30f12b353e8ecafe34283ce92af2a07327a95113e6e17fd",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\sim\\gtp_apm_e2_perf_sim.v": "4fb9c036d1e9ae63765c2634ce08e05aabb5f2479ae0618bb6e35e3032f4dc8a",
+    "G:\\fpga\\performance_soc_image_hwc_20261025\\sim\\tb_vision32_layer.sv": "ff7e9d6b8f2b15d50701504a9215d59641135686d6fa2f3739bddcca2d045046"
+  },
+  "generated_tb_sha256": "5c8c760864bb61b068551858d96990ef48ad3cc7463fd1fac07207374687028a",
+  "log_sha256": "e4447779180c3eba3c86fef12b66972881ab68b68e537a543f198c660fa7bb0f",
+  "vectors": [
+    {
+      "index": 0,
+      "name": "exact_ddr_4",
+      "original": {
+        "name": "exact_ddr_4",
+        "w": 5,
+        "h": 3,
+        "ci": 7,
+        "co": 9,
+        "k": 1,
+        "s": 1,
+        "p": 0,
+        "flags": 4,
+        "cross": true
+      },
+      "output_bytes": 270,
+      "raw_sha256": "7a051702ecaac6544ed2665348a0b9698277bdf6ab11e19d25007d29c266a287",
+      "output_sha256": "6fec362b2873d8b7c349fab21184c9207aa3e7779199195b7c89cf5fd04f35fb",
+      "expected_error": false
+    },
+    {
+      "index": 1,
+      "name": "exact_ddr_5",
+      "original": {
+        "name": "exact_ddr_5",
+        "w": 5,
+        "h": 3,
+        "ci": 7,
+        "co": 9,
+        "k": 1,
+        "s": 1,
+        "p": 0,
+        "flags": 5,
+        "cross": true
+      },
+      "output_bytes": 270,
+      "raw_sha256": "1f4acecc3c25bc412ccd34ef0df5b436a3507e34c6c315b9a2afe900046a7deb",
+      "output_sha256": "a4aac059c39a7eed534a71e9faa5a0b898f0985849d5e0564ce42bf2e477d113",
+      "expected_error": false
+    },
+    {
+      "index": 2,
+      "name": "exact_ddr_edges_4",
+      "original": {
+        "name": "exact_ddr_edges_4",
+        "w": 1,
+        "h": 1,
+        "ci": 1,
+        "co": 256,
+        "k": 1,
+        "s": 1,
+        "p": 0,
+        "flags": 4,
+        "exact_edges": true
+      },
+      "output_bytes": 512,
+      "raw_sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "output_sha256": "75fd8e2798479468cb6c4e921d81193644b84d6ea10575127349fb1169024cb4",
+      "expected_error": false
+    },
+    {
+      "index": 3,
+      "name": "exact_ddr_edges_5",
+      "original": {
+        "name": "exact_ddr_edges_5",
+        "w": 1,
+        "h": 1,
+        "ci": 1,
+        "co": 256,
+        "k": 1,
+        "s": 1,
+        "p": 0,
+        "flags": 5,
+        "exact_edges": true
+      },
+      "output_bytes": 512,
+      "raw_sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "output_sha256": "8e752300f7274681f0b453d26ffb836751d89d594bac6efe7e2b5a5dd9a5ca97",
+      "expected_error": false
+    }
+  ]
+}

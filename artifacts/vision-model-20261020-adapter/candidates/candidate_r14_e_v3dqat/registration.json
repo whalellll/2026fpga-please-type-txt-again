@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "selected_for_work": true,
+  "classifier": "v3d-QAT",
+  "layout": "standard",
+  "model_sha256": {
+    "board": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825",
+    "detector": "02245fba7d0f04823d2de75ec3577ad83b9a12c0702342ff2bae3d112d7d9c2d",
+    "classifier": "d1476f80cb8c12c0e473784c7cac276dfca8eaaf054a902cde5464f44c105479"
+  },
+  "local_release": "build/picture-merge-20261023/profiles/working-r14/software",
+  "local_quantized_candidate": "build/picture-merge-20261023/r14/v3dQAT/candidate_r14_e_v3dqat",
+  "quantized_graph_sha256": "40d820c418d6b2ab15607b107254955fb3771a5bdc0169b2fe5be1b48285bccb",
+  "quantized_payload_available": true,
+  "quantized_gate": false,
+  "integer_acceptance": "closed-unmet: r19-r23 attribution/QAT concluded; INT 68/84 below 73/84",
+  "production_ready": false,
+  "board_deployed": false,
+  "reported_game2_FP32_correct": 75,
+  "reported_game2_INT_correct": 68,
+  "frames": 84,
+  "reported_game2_FP32_candidate_board": 84,
+  "source": "training-side reported aggregates only; no engineering game2 inference",
+  "training_line_status": "closed-after-second-QAT-failure",
+  "game2_decision_window": "closed-unused",
+  "training_closeout_registry": "evaluation/training_closeout_r19_r23.json"
+}

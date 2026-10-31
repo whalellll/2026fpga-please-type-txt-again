@@ -1,0 +1,15 @@
+
+/ # /usr/bin/timeout 300 /usr/bin/picture-new-bench board /opt/integrated60/asse
+ts/board.xqm /opt/integrated60/assets/board.f32 1 vision32 3; printf "\n__CVB_EN
+D_0__:%s\n" "$?"
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=0 infer_us=29403137 model_load_us=985730 input_open_us=212469 jobs=45 cycles=27518564 hardware_us=555930 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=1473904 parameter_saved_bytes=66160 scope=driver_shadow_to_scratch_logical_bytes
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=1 infer_us=29425381 model_load_us=985730 input_open_us=212469 jobs=45 cycles=27509175 hardware_us=555740 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=2947808 parameter_saved_bytes=132320 scope=driver_shadow_to_scratch_logical_bytes
+PICTURE_TIMING model=board batch=1 backend=vision32 repeat=2 infer_us=29393634 model_load_us=985730 input_open_us=212469 jobs=45 cycles=27436755 hardware_us=554277 output_crc=d830c1cd no_fallback=1
+PICTURE_LAYOUT hwc_nodes=3 producer_elements=205056 consumer_elements=205056 scope=avoided_scalar_transposes_not_copy_bytes
+PICTURE_TRANSFER parameter_upload_bytes=4421712 parameter_saved_bytes=198480 scope=driver_shadow_to_scratch_logical_bytes
+
+__CVB_END_0__:0

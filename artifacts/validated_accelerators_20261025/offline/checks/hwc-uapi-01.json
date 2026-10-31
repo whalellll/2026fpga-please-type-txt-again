@@ -1,0 +1,7 @@
+{
+  "status": "VISION_EXACT_UAPI_HOST_RV32_BOUNDS_PASS",
+  "inputs_sha256": {
+    "linux/mac_accel/pango_mac_uapi.h": "1e72ff5a55665ada20e1444e048d1e66c692568566559283f14303893149e75e",
+    "sim/test_vision_exact_uapi.c": "3bf06076f7b9af265bffb46ca356c1f3c3444c552ee6af2d7125f7d18bf21371"
+  }
+}

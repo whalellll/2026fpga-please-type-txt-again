@@ -1,0 +1,7 @@
+
+/ # cat /proc/uptime; sleep 10; cat /proc/uptime; printf "\n__CVB_END_0__:%s\n" 
+"$?"
+881.07 760.92
+891.50 770.92
+
+__CVB_END_0__:0

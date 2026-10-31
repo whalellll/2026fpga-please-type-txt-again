@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "architecture": [
+    40,
+    64,
+    32,
+    25
+  ],
+  "token_ids": [
+    "<blank>",
+    "ju",
+    "ma",
+    "pao",
+    "bing",
+    "zu",
+    "shuai",
+    "jiang",
+    "shi",
+    "xiang",
+    "yi",
+    "er",
+    "san",
+    "si",
+    "wu",
+    "liu",
+    "qi",
+    "ba",
+    "jiu",
+    "jin",
+    "tui",
+    "ping",
+    "chonglai",
+    "quxiao",
+    "tuichu"
+  ],
+  "models": {
+    "all24-candidate.xqt": {
+      "sha256": "40b7b1d129750788da6fd27b5df5b08dcdfa649a9b7d4189f11055a4ed0cd469",
+      "bytes": 6020
+    },
+    "all24-candidate.pt": {
+      "sha256": "b8f439e3cd6d32df73ed53e640acf277c2f2da9bd3a032645bf46cd15203f9f6",
+      "bytes": 25176
+    },
+    "holdout-eval.xqt": {
+      "sha256": "4cd7c643587eedd13c1fb52cf3db26704239799f572db5657733e771f3e0deb7",
+      "bytes": 6020
+    },
+    "holdout-eval.pt": {
+      "sha256": "d34862689b185777f5d9d8b59e924d15229b58bed55b2bd90e356a1a5240fdae",
+      "bytes": 25146
+    }
+  },
+  "source_sha256": {
+    "linux/voice/train_recorded_classifier.py": "a7f36ed1b5654f63f35c0530a8b6de60024a5644d1ec233858124e0363a30502",
+    "linux/voice/train_pilot_classifier.py": "8d68c71d4d637a8b74859a9f41783ae280079dca6ec3af9a24c8f84b11a22d99",
+    "linux/voice/train_token_classifier.py": "685488a2cc881b8562079e0f5ad29be5385b0e6e76789ab1480fa24ff88084b0",
+    "linux/voice/train_tdnn_ctc.py": "79f414a880d3dcd2db543658f45c0f33522c084cacd5f49cfcca1cd5d88512fe",
+    "linux/voice/extract_recorded_vad.py": "bd0a803dc3c260c7208574857203651456274b73807217a1f659bce629bb3849",
+    "linux/voice/xqvoice_model.c": "fc09276034cb20192bc0016c94b0e0da6c1134d0ddd169b03420557c80837af6",
+    "linux/voice/xqvoice_model.h": "d5b31e4f52d9a80a75bfee9600ba6b121a0c7d5bce9cad46a4e41f4e0c8bba10",
+    "linux/voice/xqvoice_features.c": "d4726c8cbdc1dd637fc9713315deef0f44c8c843bf092539d80a291f21a43414",
+    "linux/voice/xqvoice_features.h": "52d0a76a7172326d10e0b2a6a0b1b3ce206f637f6479fd8ad60959671d1c678a",
+    "linux/voice/xqvoice_daemon.c": "2ba89fff914ac1d12ef6ef74b6f6086f659d3b63f6d528495a4393a0a4feb630",
+    "linux/voice/xqvoice_protocol.c": "52f5fce57098d0fe63eee1c320d9163e592399af16e08ab2ac149b55cd9ea328",
+    "linux/voice/xqvoice_protocol.h": "d3a7debf4873831c272c58023ae9e59de7a9317587aeb6d88dbd86f2a8995584",
+    "linux/voice/xqvoice_display.h": "19b3975a20f5492f3d5619f28887226bf2d4e10bb5a6073957a3fe0edc1aa499",
+    "sim/xqvoice_pilot_probe.c": "9fb04d78d573437db1270be415245258b76e7bf28b429c498ac2d7295dfe15e6",
+    "scripts/test_xqvoice_host.ps1": "182373f1bf6c56ae09ac8a3f7a1c607bcc5c90f96c56820cf6c70fa2b12728b0"
+  },
+  "data_fingerprint": "7e874b628c722b1de8b44b981d972a2f50d0d94834b30e7fd750d58f48c16f98",
+  "all_fit_model": "all24-candidate.xqt",
+  "evaluation_model": "holdout-eval.xqt",
+  "board_deployed": false,
+  "scope": "Experimental CPU XQT1; separate held-out and all-fit models; no independent accuracy acceptance"
+}

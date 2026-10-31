@@ -1,0 +1,6 @@
+config PANGO_VOICE_ACCEL
+	tristate "Pango voice accelerator"
+	depends on OF && HAS_IOMEM
+	help
+	  Exclusive /dev/pango-voice0 owner with generation-checked CNN jobs.
+	  Requires the matched integrated60 hardware and userspace ABI.

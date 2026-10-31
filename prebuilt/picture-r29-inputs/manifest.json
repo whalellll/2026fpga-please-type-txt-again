@@ -1,0 +1,40 @@
+{
+  "schema": "picture-r29-build-inputs/1",
+  "platform_version_source": "VERSION",
+  "recognition_revision": "R29",
+  "selected_worker_sha256": "23498d990138416121c2de33c3bf48e23e79aabc62e2743e3b1ad1f4cfe7de0d",
+  "provenance": "Byte-exact engineering inputs from the previously frozen R29 source package; no training, quantization or model selection",
+  "original_frozen_package_sha256": "135adce9eab67215ef3d66d6703352f2fb4421c3b3fb511f27d6064381702795",
+  "inputs": {
+    "board.xqm": {
+      "source": "artifacts/main70_20261027/model-source/native_int8/board.xqm",
+      "bytes": 1024784,
+      "sha256": "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe"
+    },
+    "detector.xqm": {
+      "source": "artifacts/main70_20261027/model-source/native_int8/detector.xqm",
+      "bytes": 5578752,
+      "sha256": "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d"
+    },
+    "classifier.xqm": {
+      "source": "artifacts/main70_20261027/model-source/native_int8/classifier.xqm",
+      "bytes": 592568,
+      "sha256": "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f"
+    },
+    "detector.xqi": {
+      "source": "prebuilt/picture-r29-inputs/detector.xqi",
+      "bytes": 5582128,
+      "sha256": "d72d039041b41310f037344772eb75ce895ec6fe678bbb31ed547a7ad7453942"
+    },
+    "refinement_rng.bin": {
+      "source": "prebuilt/picture-r29-inputs/refinement_rng.bin",
+      "bytes": 87376,
+      "sha256": "646265b1052977ad5fc3aca0f7da40716a5f1a3ad08d845478c7e95109be8e63"
+    },
+    "native_parameters.h": {
+      "source": "prebuilt/picture-r29-inputs/native_parameters.h",
+      "bytes": 812,
+      "sha256": "45f7f3165f3bc1a1845c58f6f4acb0a2939048e58f4a2d9721c09576252d25cc"
+    }
+  }
+}

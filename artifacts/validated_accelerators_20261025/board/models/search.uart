@@ -1,0 +1,104 @@
+
+/ # NNUE_VECTORS=/opt/pikafish/cpu75-nnue.vectors NNUE_SAMPLES=20 PIKAFISH_MAC_R
+EQUIRE_DRIVER=1 PIKAFISH_STAGEA_ACCEL=1 PIKAFISH_STAGEB_ACCEL=1 PIKAFISH_NNUE_PI
+PELINE=1 PIKAFISH_NNUE_BATCH=1 NNUE_REQUIRE_HW=1 PIKAFISH_PHASE4_NODES=128 /usr/
+bin/timeout 240 /usr/bin/pikafish-pipeline-search; printf "\n__CVB_END_0__:%s\n"
+ "$?"
+PIKAFISH_MAC_RUNTIME_READY id=50464e31 version=00010000 timeout_us=100000 ddr=private backend=driver
+PIKAFISH_STAGEB_KERNEL_RESIDENT bytes=593920 backend=driver
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=1 resident=loaded copied_bytes=593920
+XQ LINUX ENGINE INIT stage=attacks-map-start elapsed_ms=0 delta_ms=0
+XQ LINUX ENGINE INIT stage=attacks-map-ready elapsed_ms=35 delta_ms=35
+XQ LINUX ENGINE INIT stage=attacks-ready elapsed_ms=503 delta_ms=468
+XQ LINUX ENGINE INIT stage=position-ready elapsed_ms=515 delta_ms=11
+XQ LINUX ENGINE INIT stage=constructor-start elapsed_ms=525 delta_ms=9
+info string PIKAFISH_PFF1_VIEW_MMAP physical=268435456 bytes=68122688 cacheable=1
+info string PIKAFISH_PFF1_STAGE stage=source-ready elapsed_ms=47
+info string PIKAFISH_PFF1_STAGE stage=header-ready elapsed_ms=55
+info string PIKAFISH_PFF1_STAGE stage=layout-ready elapsed_ms=63
+info string PIKAFISH_PFF1_LOAD bytes=68122688
+info string PIKAFISH_PFF1_FEATURE_CRC_SKIPPED bytes=67548352 reason=sd-crc16-host-verified
+info string PIKAFISH_PFF1_STAGE stage=feature-crc-skipped elapsed_ms=85
+info string PIKAFISH_PFF1_VIEW_READY direct_bytes=67548352 mlp_direct_bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=view-bind-ready elapsed_ms=102
+info string PIKAFISH_PFF1_SECTION_READY name=MLPS bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-crc-ready elapsed_ms=1081
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=0 bytes=35204
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=1 bytes=70408
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=2 bytes=105612
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=3 bytes=140816
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=4 bytes=176020
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=5 bytes=211224
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=6 bytes=246428
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=7 bytes=281632
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=8 bytes=316836
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=9 bytes=352040
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=10 bytes=387244
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=11 bytes=422448
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=12 bytes=457652
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=13 bytes=492856
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=14 bytes=528060
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=15 bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-ready elapsed_ms=1899
+info string PIKAFISH_PFF1_STAGE stage=stageb-prepare elapsed_ms=1908
+info string PIKAFISH_PFF1_READY bytes=68122688
+info string PIKAFISH_PFF1_STAGE stage=ready elapsed_ms=1923
+XQ LINUX ENGINE DETAIL stage=constructor-body-start
+XQ LINUX ENGINE DETAIL stage=resize-start
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-start bytes=41230336
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-ready bytes=41230336
+XQ LINUX ENGINE DETAIL stage=thread-create-start thread=0
+XQ LINUX ENGINE DETAIL stage=thread-create-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-start
+XQ LINUX ENGINE DETAIL stage=worker-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=worker-local-history-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=worker-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-ready
+XQ LINUX ENGINE DETAIL stage=tt-alloc-start mib=8
+XQ LINUX ENGINE DETAIL stage=tt-alloc-ready bytes=8388608
+XQ LINUX ENGINE DETAIL stage=tt-fresh-zero-skip
+XQ LINUX ENGINE DETAIL stage=resize-ready
+XQ LINUX ENGINE INIT stage=constructor-ready elapsed_ms=4206 delta_ms=3680
+XQ LINUX ENGINE INIT stage=options-ready elapsed_ms=4217 delta_ms=10
+XQ LINUX ENGINE INIT stage=verify-start elapsed_ms=4224 delta_ms=6
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=4251 delta_ms=26
+XQ LINUX ENGINE DIRECT CORE READY
+PIKAFISH_STAGEB_CHECKPOINT_PASS checks=1 evaluations=0 jobs=0 pfsb_crc32=7261d3e8
+XQ LINUX ENGINE NEW GAME READY reset=position-snapshot tt=retained histories=retained checkpoint=pass elapsed_us=1965282
+XQ LINUX SEARCH START nodes=128 moves=0 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+PIKAFISH_PIPELINE_SEARCH mode=1 case=0 bestmove=b2e2 ponder= score=121 wdl=673,327,0 nodes=173 elapsed_ms=1596 nps=108
+PIKAFISH_STAGEB_CHECKPOINT_PASS checks=2 evaluations=0 jobs=0 pfsb_crc32=7261d3e8
+XQ LINUX ENGINE NEW GAME READY reset=position-snapshot tt=retained histories=retained checkpoint=pass elapsed_us=1964227
+XQ LINUX SEARCH START nodes=128 moves=0 fen=rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C2C4/9/RNBAKABNR b - - 0 1
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+PIKAFISH_PIPELINE_SEARCH mode=1 case=1 bestmove=h9g7 ponder= score=-14 wdl=18,935,47 nodes=132 elapsed_ms=1287 nps=102
+PIKAFISH_STAGEB_CHECKPOINT_PASS checks=3 evaluations=0 jobs=0 pfsb_crc32=7261d3e8
+XQ LINUX ENGINE NEW GAME READY reset=position-snapshot tt=retained histories=retained checkpoint=pass elapsed_us=1961762
+XQ LINUX SEARCH START nodes=128 moves=0 fen=r1bakabnr/9/1cn4c1/p1p1p1p1p/9/9/P1P1P1P1P/1C2C1N2/9/RNBAKAB1R w - - 2 2
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+PIKAFISH_PIPELINE_SEARCH mode=1 case=2 bestmove=i0h0 ponder= score=216 wdl=983,17,0 nodes=134 elapsed_ms=1037 nps=129
+PIKAFISH_NNUE_PIPELINE_STATS evaluations=167 jobs=1002 cycles=0 uploads=0 failures=0 retries=0
+PIKAFISH_STAGEB_ACCEL_STATS prepares=2 copied_bytes=593920 resident_hits=0 prepare_us=2321908 evaluations=0 jobs=0 mac_cycles=0 host_us=0 fallbacks=0 mismatches=0
+PIKAFISH_STAGEB_HEALTH checkpoints=3 checkpoint_failures=0
+PIKAFISH_NNUE_PIPELINE_STATS evaluations=167 jobs=1002 cycles=0 uploads=0 failures=0 retries=0
+PIKAFISH_STAGEB_ACCEL_STATS prepares=2 copied_bytes=593920 resident_hits=0 prepare_us=2321908 evaluations=0 jobs=0 mac_cycles=0 host_us=0 fallbacks=0 mismatches=0
+PIKAFISH_STAGEB_HEALTH checkpoints=3 checkpoint_failures=0
+PIKAFISH_PIPELINE_SEARCH_PASS mode=1 cases=3 nodes=128
+
+__CVB_END_0__:0

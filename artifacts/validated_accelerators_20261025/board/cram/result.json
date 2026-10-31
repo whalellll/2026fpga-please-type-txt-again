@@ -1,0 +1,20 @@
+{
+  "status": "INTEGER_CRAM_PASS_SD_BOOT_PENDING",
+  "bitstream_path": "G:\\fpga\\performance_soc_image_hwc_20261025\\build\\native-physical-01\\pds\\generate_bitstream\\soc_top.sbit",
+  "bitstream_sha256": "e42f5f1be3bc2a1a2e8f99ce428c3f9ed9762bcc685c722b03342ac746b5470b",
+  "run_id": "c8282c991f494ddc8144e35245872c02",
+  "software_commit": "e2875fc8e9a86b530529180e9fc7ecf321201a71",
+  "manifest_sha256": "cf2570720532247d252225fd570274b7ff1d6c03350d5eb02c462560da11f84a",
+  "sd_write_receipt_sha256": "ec49ce35f189b3137655301c988994096bd9b23f298a3926d63742d8784921e5",
+  "integer_model_sha256": "d72d039041b41310f037344772eb75ce895ec6fe678bbb31ed547a7ad7453942",
+  "integer_executable_sha256": "ce8df0b2aff8fdbc347bad3353eedde5b6a16b4c681a1023301c103d2c17435f",
+  "board_tested": false,
+  "flash_written": false,
+  "formal_delivery": false,
+  "temporary_model": true,
+  "started_utc": "2026-10-25T10:02:23.325083+00:00",
+  "program_receipt_sha256": "454ac5030653da4ceb04534d4092ef87c2ee28ab6cdc83e62ff5087800e6e3df",
+  "completed_utc": "2026-10-25T10:03:00.922489+00:00",
+  "capture_errors": [],
+  "uart_sha256": "bd44f0b227beb914b6247faadde9854287b0d3fecef5b2ff6513b3871c59e775"
+}

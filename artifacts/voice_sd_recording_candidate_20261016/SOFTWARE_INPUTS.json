@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "binary_sha256": "d8faaab40001fecbe07c6553466fdc600d372fac07e597a45fe559538d65b7ec",
+  "source_sha256": {
+    "linux/audio/sd/xqvoice_sd.c": "e0188e087801824cd5fcde9f56834e46c12c2922de97f2df1617532fada2c02c",
+    "linux/audio/sd/voice_sd_backend.c": "e508d7d40fe0ad3492d76f5662f06594104a284d3063c42552e4d24b56ab712a",
+    "linux/audio/sd/voice_sd_backend.h": "f7169faeeb85893fac9525e4a024118e9a1b81107849a8e392333c6a6b414e40",
+    "linux/audio/sd/sd_linux_port.h": "f70ffe0d1e5a881ce195db77dbbdef3ed96598607270b64784d99c0aafa6fe2f",
+    "linux/audio/sd/fat_voice.c": "bfb1d20f1a85d7c40f297df52e1efe9ce1bec40f24300a519d220db255893f2e",
+    "linux/audio/sd/build.sh": "de703e4316cb77d51ec3db77e8ba7f7327f2e0e0a5176153a8c0a191232fed02",
+    "linux/voice/record_dataset_pc.py": "42e515bdf40ebe4d5ec60ef08c59e5f820a7d6b5fe0f2468ccd0eccbce0ea994",
+    "linux/voice/record_batch_pc.py": "99a38dbd10cf2f388fad758fd7c9099b46eab9d0d8af0658030ff4953b9e011c",
+    "linux/voice/launch_recorder_pc.py": "df1454653c757cddda9656793507ba58dca28d80afff142a8cd760fd02ebf38f",
+    "linux/voice/recorder_config.json": "56d5b7bd2b56dd919f4d5276fcbd50bf538124fb07d5716db69fc61765b9bba8",
+    "linux/voice/sd_card_config.json": "2318b86ef403c0aaa187ba54fc4a874ee78242e96600e40be665992588e81231",
+    "sim/test_voice_sd_image.py": "b2ede2f997acb04e40b7a919347bedf907ada814139b4f8cba5ec197e56520a3",
+    "sw/bootloader/sd_native.c": "60173da5ae55399afa3ddd8f3cde99ef6a26f703d13bd08b71a81e45650f7746",
+    "sw/bootloader/sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "sw/bootloader/soc.h": "cec2aec13c7199ae602ed7d0a126e2d5e826f8a3eab981e4c58bb700092edf61",
+    "sw/bootloader/fat_ro.c": "14496f3b1e9f3057dae9f98c86a09414184c2b66c227a20000b34e06886f9441",
+    "sw/bootloader/fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c",
+    "sw/bootloader/fat_camera.h": "041b184e3c68dda802b05d416da1b006bc172b2f8df65393d9db0b2ccad4d86b",
+    "sw/bootloader/crc32_fast.c": "7d8c262eaf77633a14a31886f4b8b2c7fe02b3b3bed095a4f2b10a90b67e9435",
+    "sw/bootloader/crc32_fast.h": "a55f4959214d02dde02e841c8d296c6dcf432ebe34bdc38da05757c08a785f9e"
+  },
+  "card_cid": "f40101c3803919885333324703534453",
+  "scope": "Userspace SD recording candidate, RAM deployed; no full SoC release"
+}

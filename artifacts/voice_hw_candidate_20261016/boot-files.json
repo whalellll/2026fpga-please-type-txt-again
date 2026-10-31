@@ -1,0 +1,32 @@
+{
+  "scope": "candidate; SD not written",
+  "candidate_payloads": [
+    {
+      "filename": "vaimage.bin",
+      "load_address": "0x00400000",
+      "bytes": 7480856,
+      "crc32": "33cbdbd7",
+      "sha256": "1e5580a8b63f83723a8d1c4f2017df6d2010b776a7e1c01a17bcdc67a4eeb360"
+    },
+    {
+      "filename": "vafs.bin",
+      "load_address": "0x03000000",
+      "bytes": 8445952,
+      "crc32": "c845a459",
+      "sha256": "7053be9d6a18ae300adc336a88777a38422040b67347cda84bd203c60ba9100c"
+    },
+    {
+      "filename": "va.dtb",
+      "load_address": "0x1a000000",
+      "bytes": 2443,
+      "crc32": "bf63c3d0",
+      "sha256": "b7c1d8ce6a9b691f3b48dd2652aa82d0d078dc15ac3250a7a7982f3577cdbf63"
+    }
+  ],
+  "reuse_existing_verified_sd": [
+    "brfw.bin",
+    "pikafish.pff",
+    "pikafish.atk"
+  ],
+  "boot_variant": "SD_LOADER_BRIDGE_NONBLOCK_BOOT"
+}

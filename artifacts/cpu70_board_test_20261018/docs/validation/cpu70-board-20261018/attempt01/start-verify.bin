@@ -1,0 +1,22 @@
+
+/ # p=$(cat /tmp/voice-gui-display/gui-v3.pid); kill "$p"; n=0; while kill -0 "$
+p" 2>/dev/null; do sleep 1; n=$((n+1)); test "$n" -lt 15 || break; done; ! kill 
+-0 "$p" 2>/dev/null; printf "\n__BOARD_END_0:%s\n" "$?"
+
+__BOARD_END_0:0
+/ # cd /tmp/voice-gui-display; unset PIKAFISH_MAC_BACKEND; PIKAFISH_MAC_REQUIRE_
+DRIVER=1 PIKAFISH_STAGEB_ACCEL=verify XQ_GUI_INPUT=/run/voice-display.in ./xiang
+qi-gui-display-v3 </dev/null >gui-verify.log 2>&1 & echo $! >gui-v3.pid; sleep 8
+; tail -15 gui-verify.log; kill -0 $(cat gui-v3.pid); printf "\n__BOARD_END_1:%s
+\n" "$?"
+XQ LINUX HARDWARE READY; drawing initial framebuffer
+XQ LINUX ENGINE DIRECT START
+XQ LINUX GUI READY; full Pikafish and official NNUE loading
+XQ LINUX INPUT READY; engine loading asynchronously; software=XQ_MOVE/XQ_NEWGAME/XQ_STATUS
+XQ LINUX INPUT FIFO READY path=/run/voice-display.in commands=XQ_MOVE,XQ_NEWGAME,XQ_STATUS
+XQ LINUX ENGINE INIT stage=attacks-map-start elapsed_ms=0 delta_ms=0
+XQ LINUX VOICE MODE display-only; chess actions disabled
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=20168
+XQ LINUX ENGINE INIT stage=attacks-map-ready elapsed_ms=87 delta_ms=87
+
+__BOARD_END_1:0

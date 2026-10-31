@@ -1,0 +1,85 @@
+{
+  "original_build_receipt_sha256": "2e891899721f467e678fcd6ffe2e097da3172a2e6ee9652cb5bbb12807075da4",
+  "inputs": [
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\scripts\\build_linux_mac_kernel.ps1",
+      "packaged_path": "scripts/build_linux_mac_kernel.ps1",
+      "sha256": "39e27a0b5c7696e4754e626a2dab344ed4e2e4ff72864a3530fb9c7ef52e7fc3"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\scripts\\wsl_build_profile.sh",
+      "packaged_path": "scripts/wsl_build_profile.sh",
+      "sha256": "d258c97eb68643b3b51717d23e2088d73a5ff4f04e9c2dbbcd17ac68528d4dfb"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\scripts\\linux\\workspace_kernel_fs.py",
+      "packaged_path": "scripts/linux/workspace_kernel_fs.py",
+      "sha256": "56661cde50bfc63e52cc35da8ef5ec1cc0fd07e83424adaab6aab7b8cdd1cdc1"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\mac_accel\\kernel\\pango_mac.c",
+      "packaged_path": "linux/mac_accel/kernel/pango_mac.c",
+      "sha256": "e9a58ff41d59bf5c0659caa9697bbece397c1f08e1330f9729387d42ab0f144e"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\mac_accel\\kernel\\pango_mac_copy_chunks.h",
+      "packaged_path": "linux/mac_accel/kernel/pango_mac_copy_chunks.h",
+      "sha256": "313cda6582c37135bb81cd457435b26af2c9788e96c773e4152436d97dd28044"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\mac_accel\\kernel\\pango_mac_io32.h",
+      "packaged_path": "linux/mac_accel/kernel/pango_mac_io32.h",
+      "sha256": "24da1951c60876eace62a7e835a40a4f3e5983036e8304c50c11d7cc67482004"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\mac_accel\\pango_mac_uapi.h",
+      "packaged_path": "linux/mac_accel/pango_mac_uapi.h",
+      "sha256": "c2d29d35b79cb5d271d7ca3df773b2468b10c6c53e76f236bbe3be3533f77696"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\mac_accel\\linux-5.14-integration.patch",
+      "packaged_path": "linux/mac_accel/linux-5.14-integration.patch",
+      "sha256": "3e74c6058ca2f56d75bf79adc78b61014164cae06b746a4c6954129a6aaae516"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\audio\\kernel\\pango_audio.c",
+      "packaged_path": "linux/audio/kernel/pango_audio.c",
+      "sha256": "ac3e1436fa946df63409b08cf995ac5faf2ba740eae964d96b046b6ce2503e8a"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\audio\\kernel\\pango_voice.c",
+      "packaged_path": "linux/audio/kernel/pango_voice.c",
+      "sha256": "a12e9f80ab987652f6b5b0ff2283d88e221eb1d9b5693e5208c4206db5b36424"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\audio\\pango_audio_uapi.h",
+      "packaged_path": "linux/audio/pango_audio_uapi.h",
+      "sha256": "748351565360dd3062aa4cc782e8a77853ecd5233ba45b71546de4ebb7ca527d"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\audio\\pango_voice_uapi.h",
+      "packaged_path": "linux/audio/pango_voice_uapi.h",
+      "sha256": "270cc1c521e0d8748597cbd04bcaf2dcdd7116bf33af6e5d2a012eabc3f4ce20"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\linux\\soc.dts",
+      "packaged_path": "artifacts/main70_20261027/kernel-original-inputs/linux/soc.dts",
+      "sha256": "929697ca73021e02ee24278fc9a3ab40d2bed6d70d783fa2d42c09feac1aa7e2"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_picture_main_20261026\\config\\clocks.json",
+      "packaged_path": "artifacts/main70_20261027/kernel-original-inputs/config/clocks.json",
+      "sha256": "8b8b217ab7d9fa6707efcb3947868779a23f2fd66fd9d05f4a2fc0a3140bc8d9"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_accum_resident_20261026\\build\\resident-kernel-01\\outputs\\Image",
+      "packaged_path": "artifacts/main70_20261027/kernel-original-inputs/external/Image",
+      "sha256": "ef001105380585dd233f55e049274fc75becc35f58160698cf7975b77bf91d02"
+    },
+    {
+      "original_path": "G:\\fpga\\performance_soc_linux\\linux\\sources\\linux-5.14.tar.xz",
+      "packaged_path": "linux/sources/linux-5.14.tar.xz",
+      "sha256": "7e068b5e0d26a62b10e5320b25dce57588cbbc6f781c090442138c9c9c3271b2"
+    }
+  ]
+}

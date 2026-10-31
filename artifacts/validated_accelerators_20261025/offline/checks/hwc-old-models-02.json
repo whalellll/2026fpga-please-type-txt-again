@@ -1,0 +1,861 @@
+{
+  "status": "ORIGINAL_THREE_GRAPHS_SPATIAL_ORACLE_AND_JOB_REDUCTION_PASS_NOT_BOARD",
+  "results": {
+    "classifier": {
+      "model": "classifier",
+      "batch": "1",
+      "backend": "vision32",
+      "repeat": "0",
+      "infer_us": "3521",
+      "model_load_us": "9877",
+      "input_open_us": "3430",
+      "jobs": "8",
+      "cycles": "0",
+      "hardware_us": "0",
+      "output_crc": "805678c7",
+      "no_fallback": "1"
+    },
+    "board": {
+      "model": "board",
+      "batch": "1",
+      "backend": "vision32",
+      "repeat": "0",
+      "infer_us": "44738",
+      "model_load_us": "13035",
+      "input_open_us": "5398",
+      "jobs": "44",
+      "cycles": "0",
+      "hardware_us": "0",
+      "output_crc": "d830c1cd",
+      "no_fallback": "1"
+    },
+    "detector": {
+      "model": "detector",
+      "batch": "1",
+      "backend": "vision32",
+      "repeat": "0",
+      "infer_us": "1321727",
+      "model_load_us": "42218",
+      "input_open_us": "31119",
+      "jobs": "98",
+      "cycles": "0",
+      "hardware_us": "0",
+      "output_crc": "97265de4",
+      "no_fallback": "1"
+    }
+  },
+  "native_root": "/mnt/g/fpga/performance_soc_image_hwc_20261025/build/hwc-old-models-02/source",
+  "inputs_sha256": {
+    "linux/picture_new/upstream/linux/vision/xq_camera.h": "99e65bf3079ed2d9ba479d802b669c682b3495396cd473f2929ccd940e1e0b25",
+    "linux/picture_new/upstream/linux/vision/xq_picture_font.h": "ed17d67646f6910ae28596e7c31a1cc26bacb692aa424271d056cde4f0764c6a",
+    "sw/bootloader/crc32_fast.h": "a55f4959214d02dde02e841c8d296c6dcf432ebe34bdc38da05757c08a785f9e",
+    "sw/bootloader/audio.h": "782d17129436e66b0babafc80a4ce8ba044689c7aa6228d3554f77dc1c9c08c8",
+    "linux/picture_new/upstream/linux/vision/xq_picture.h": "470505bf5834ea3b856e499a3031b355b4374b239525aa7a523ffce9b634a8d7",
+    "sim/picture_new_graph_mock.c": "fb31f8e8982799592d42b983b9f57933ea2ddf511881f6f7d31438ee10f8ca56",
+    "linux/picture_new/vision32_layer.c": "bca3c141bf37c8154c0b90c5e287923a4423b7d531a4301a73dd55a8adeff50a",
+    "linux/picture_new/upstream/linux/vision/xq_camera_retry.h": "a4ef2e5f7867e2b64bed8a5ddfce490b8c0c4b625613b037eb1a8b04585e71c1",
+    "linux/picture_new/upstream/adapter/runtime/xq_sha256.h": "cda5de1816751b69938263cddb502e006140527431516d1504f75de0ab2efcf5",
+    "linux/picture_new/upstream/linux/vision/xq_roi.h": "3744d24fccc0ac6ca5ec36869e1efde96b1873f4c0b8bf6a8eeae139a79a3894",
+    "linux/picture_new/upstream/linux/vision/xq_vision.h": "379d7b110f0fc0442f02188b35a05bd4625cac1b01a6d2dc28b76bff9398c9bc",
+    "sw/bootloader/fat_camera.h": "041b184e3c68dda802b05d416da1b006bc172b2f8df65393d9db0b2ccad4d86b",
+    "linux/picture_new/upstream/linux/vision/xq_geometry.h": "f95aeae7b4b4890512cb1c15642f0e07f489fec3034a8f5e5f7d7ca1793c455d",
+    "sw/bootloader/crc32_fast.c": "7d8c262eaf77633a14a31886f4b8b2c7fe02b3b3bed095a4f2b10a90b67e9435",
+    "linux/picture_new/vision32_backend.c": "f55fa5883f7b9b8bdba10f1e1ba0d1b3c9a6fc81bbdb2e039a4ef46491d2010a",
+    "linux/picture_new/upstream/linux/vision/xq_mac.h": "26180244bd6dab45c44471487c40bf9262ef19b105391bb2649d87062e22e993",
+    "linux/picture_new/upstream/linux/vision/xq_picture_display.h": "6b310f6d73f9745950a6f633c6177905d8499b38560d53dbeee8e76e20860621",
+    "linux/picture_new/picture_new_bench.c": "220db8e5a679867adb42b5a3c1605fe09526e487d7fb1d0f8fce6e1195966a06",
+    "linux/picture_new/upstream/linux/vision/xq_grid.h": "4d8029febcfdae46796c3d6f941fb21194bcaf4d893f08cdc5db5987fe340aff",
+    "linux/mac_accel/pango_mac_uapi.h": "1e72ff5a55665ada20e1444e048d1e66c692568566559283f14303893149e75e",
+    "sim/vision_exact_capture.h": "6c71ed5d525a13de7877dbf768b0f2bb184e916013f9b4f6aa73121c8266e477",
+    "sw/bootloader/audio_sample.h": "5391c24559ae961bd20273d6ea48b2b363224518ed1c8f9db3c3078dd52a3b85",
+    "sw/bootloader/sd_boot_load.h": "f43706de9f09b75f06b6ffc6ecb5750baaf54d70cc82b51ec2cd7edf7044a842",
+    "linux/picture_new/upstream/adapter/runtime/xq_int8_layer.h": "a9791de8e8f7a85dcea929d2e15bc9dfd987023de89009837eedc70b55f93c04",
+    "sw/bootloader/camera.h": "a8fc1537b05705daecb1fadf0cbf51c336dca9f48071929a3e3151a2f7062ac8",
+    "sw/bootloader/release_version.h": "cde6d481babe269522f98997cbb5d4ea47ac216a0a22e58953e98af7f15f457a",
+    "linux/picture_new/upstream/adapter/runtime/xq_int8_layer.c": "bc2818696995628e069efc4c34e6f7d0a10c9bda49ad1edd29db5fdb5cea0a43",
+    "sw/bootloader/png_rgb565.h": "b40c95a9ac8b1eb7cbcd5a855b574ac7d73403dc09b3e2d488b0ccf27b8ee20d",
+    "sw/bootloader/sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "linux/picture_new/upstream/adapter/runtime/xq_boot_menu.h": "48d146f8061ccb46999e59cef148663f897cd113a519313d547445571f049110",
+    "sw/bootloader/soc.h": "ffdfb66ebbf4708de9e9617d6031058e4390b9bf4b4618d842c81c332c36e404",
+    "linux/picture_new/upstream/adapter/runtime/xq_native_graph.h": "81a44f9253643fff7c3b501696c5561f8d761f14c4bf19760ce9f27906ead999",
+    "linux/picture_new/upstream/linux/vision/xq_roi_pipeline.h": "e5b7d61c560a3bcc723524c0e2d9435a1cc06803a7db08f50d41d17c64d4dc81",
+    "sw/bootloader/console_line.h": "f236da96c7dc91f18370d3b19817a853c3fc6a1511bac26650a039779d5b0b5f",
+    "linux/picture_new/upstream/adapter/runtime/xq_native_graph.c": "0df69b8626b4a180496db12ba31c4f8a81622a98752ebadde6b082e9d9249efb",
+    "linux/picture_new/upstream/linux/vision/xq_speech.h": "f8011999389e076fd23c5c9d3b75d067f4d7f3798f909e1c189539649f3b1396",
+    "linux/picture_new/upstream/adapter/runtime/xq_native_post.h": "b1e3e61839991c152ff92c5ef492286c7633f42b76131e49fb3bbc0136f89890",
+    "sw/bootloader/fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c"
+  },
+  "assets_manifest_sha256": "4983ba7cedd925f1d4fc8eb146d4b0f64623bffe59e76334211eaab19c7c1bfa",
+  "old_device": true,
+  "exact_counts": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      11,
+      0
+    ],
+    [
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      13,
+      0
+    ],
+    [
+      0,
+      14,
+      0
+    ],
+    [
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      17,
+      0
+    ],
+    [
+      0,
+      18,
+      0
+    ],
+    [
+      0,
+      19,
+      0
+    ],
+    [
+      0,
+      20,
+      0
+    ],
+    [
+      0,
+      21,
+      0
+    ],
+    [
+      0,
+      22,
+      0
+    ],
+    [
+      0,
+      23,
+      0
+    ],
+    [
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      25,
+      0
+    ],
+    [
+      0,
+      26,
+      0
+    ],
+    [
+      0,
+      27,
+      0
+    ],
+    [
+      0,
+      28,
+      0
+    ],
+    [
+      0,
+      29,
+      0
+    ],
+    [
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      31,
+      0
+    ],
+    [
+      0,
+      32,
+      0
+    ],
+    [
+      0,
+      33,
+      0
+    ],
+    [
+      0,
+      34,
+      0
+    ],
+    [
+      0,
+      35,
+      0
+    ],
+    [
+      0,
+      36,
+      0
+    ],
+    [
+      0,
+      37,
+      0
+    ],
+    [
+      0,
+      38,
+      0
+    ],
+    [
+      0,
+      39,
+      0
+    ],
+    [
+      0,
+      40,
+      0
+    ],
+    [
+      0,
+      41,
+      0
+    ],
+    [
+      0,
+      42,
+      0
+    ],
+    [
+      0,
+      43,
+      0
+    ],
+    [
+      0,
+      44,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      11,
+      0
+    ],
+    [
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      13,
+      0
+    ],
+    [
+      0,
+      14,
+      0
+    ],
+    [
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      17,
+      0
+    ],
+    [
+      0,
+      18,
+      0
+    ],
+    [
+      0,
+      19,
+      0
+    ],
+    [
+      0,
+      20,
+      0
+    ],
+    [
+      0,
+      21,
+      0
+    ],
+    [
+      0,
+      22,
+      0
+    ],
+    [
+      0,
+      23,
+      0
+    ],
+    [
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      25,
+      0
+    ],
+    [
+      0,
+      26,
+      0
+    ],
+    [
+      0,
+      27,
+      0
+    ],
+    [
+      0,
+      28,
+      0
+    ],
+    [
+      0,
+      29,
+      0
+    ],
+    [
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      31,
+      0
+    ],
+    [
+      0,
+      32,
+      0
+    ],
+    [
+      0,
+      33,
+      0
+    ],
+    [
+      0,
+      34,
+      0
+    ],
+    [
+      0,
+      35,
+      0
+    ],
+    [
+      0,
+      36,
+      0
+    ],
+    [
+      0,
+      37,
+      0
+    ],
+    [
+      0,
+      38,
+      0
+    ],
+    [
+      0,
+      39,
+      0
+    ],
+    [
+      0,
+      40,
+      0
+    ],
+    [
+      0,
+      41,
+      0
+    ],
+    [
+      0,
+      42,
+      0
+    ],
+    [
+      0,
+      43,
+      0
+    ],
+    [
+      0,
+      44,
+      0
+    ],
+    [
+      0,
+      45,
+      0
+    ],
+    [
+      0,
+      46,
+      0
+    ],
+    [
+      0,
+      47,
+      0
+    ],
+    [
+      0,
+      48,
+      0
+    ],
+    [
+      0,
+      49,
+      0
+    ],
+    [
+      0,
+      50,
+      0
+    ],
+    [
+      0,
+      51,
+      0
+    ],
+    [
+      0,
+      52,
+      0
+    ],
+    [
+      0,
+      53,
+      0
+    ],
+    [
+      0,
+      54,
+      0
+    ],
+    [
+      0,
+      55,
+      0
+    ],
+    [
+      0,
+      56,
+      0
+    ],
+    [
+      0,
+      57,
+      0
+    ],
+    [
+      0,
+      58,
+      0
+    ],
+    [
+      0,
+      59,
+      0
+    ],
+    [
+      0,
+      60,
+      0
+    ],
+    [
+      0,
+      61,
+      0
+    ],
+    [
+      0,
+      62,
+      0
+    ],
+    [
+      0,
+      63,
+      0
+    ],
+    [
+      0,
+      64,
+      0
+    ],
+    [
+      0,
+      65,
+      0
+    ],
+    [
+      0,
+      66,
+      0
+    ],
+    [
+      0,
+      67,
+      0
+    ],
+    [
+      0,
+      68,
+      0
+    ],
+    [
+      0,
+      69,
+      0
+    ],
+    [
+      0,
+      70,
+      0
+    ],
+    [
+      0,
+      71,
+      0
+    ],
+    [
+      0,
+      72,
+      0
+    ],
+    [
+      0,
+      73,
+      0
+    ],
+    [
+      0,
+      74,
+      0
+    ],
+    [
+      0,
+      75,
+      0
+    ],
+    [
+      0,
+      76,
+      0
+    ],
+    [
+      0,
+      77,
+      0
+    ],
+    [
+      0,
+      78,
+      0
+    ],
+    [
+      0,
+      79,
+      0
+    ],
+    [
+      0,
+      80,
+      0
+    ],
+    [
+      0,
+      81,
+      0
+    ],
+    [
+      0,
+      82,
+      0
+    ],
+    [
+      0,
+      83,
+      0
+    ],
+    [
+      0,
+      84,
+      0
+    ],
+    [
+      0,
+      85,
+      0
+    ],
+    [
+      0,
+      86,
+      0
+    ],
+    [
+      0,
+      87,
+      0
+    ],
+    [
+      0,
+      88,
+      0
+    ],
+    [
+      0,
+      89,
+      0
+    ],
+    [
+      0,
+      90,
+      0
+    ],
+    [
+      0,
+      91,
+      0
+    ],
+    [
+      0,
+      92,
+      0
+    ],
+    [
+      0,
+      93,
+      0
+    ],
+    [
+      0,
+      94,
+      0
+    ],
+    [
+      0,
+      95,
+      0
+    ],
+    [
+      0,
+      96,
+      0
+    ],
+    [
+      0,
+      97,
+      0
+    ],
+    [
+      0,
+      98,
+      0
+    ]
+  ],
+  "hwc_disabled": false,
+  "layout_counts": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "scope": "Host device oracle, original full-size models and fixed input CRCs. Host time and zero mocked cycles are not FPGA latency."
+}

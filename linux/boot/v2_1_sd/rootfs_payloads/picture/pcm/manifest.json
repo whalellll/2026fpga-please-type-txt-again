@@ -1,0 +1,233 @@
+{
+    "contract_version":  1,
+    "format":  "s16le",
+    "sample_rate":  16000,
+    "channels":  1,
+    "voice":  "Microsoft Huihui Desktop",
+    "source":  "Windows System.Speech",
+    "board_validated":  false,
+    "files":  {
+                  "zero.pcm":  {
+                                   "spoken_text":  "零",
+                                   "sha256":  "f807dec9ba88b6bb517ae4bc13b4b9d09789576ba78375300bc94d323f8395d8",
+                                   "bytes":  36960,
+                                   "text":  "零"
+                               },
+                  "one.pcm":  {
+                                  "spoken_text":  "一",
+                                  "sha256":  "3426d686f37badb477b7eb1d286fbc4092a4f209392f7bc08b11a81f5820d29d",
+                                  "bytes":  36160,
+                                  "text":  "一"
+                              },
+                  "two.pcm":  {
+                                  "spoken_text":  "二",
+                                  "sha256":  "201a5047561f790c2e3b2923d7b4df72f452951bbdeb7ef46b186ac5fc43c1de",
+                                  "bytes":  36160,
+                                  "text":  "二"
+                              },
+                  "three.pcm":  {
+                                    "spoken_text":  "三",
+                                    "sha256":  "2dbabf974b40fbff44fd23f6627d464e51d441a6fd69973a0eaf8837b1c82001",
+                                    "bytes":  39040,
+                                    "text":  "三"
+                                },
+                  "four.pcm":  {
+                                   "spoken_text":  "四",
+                                   "sha256":  "b902c24d5e6eb78a0c43f6fc4ba1979cae15c904a1ebf34f5724e5fd9674aa93",
+                                   "bytes":  38080,
+                                   "text":  "四"
+                               },
+                  "five.pcm":  {
+                                   "spoken_text":  "五",
+                                   "sha256":  "9eb417e1bf158392a3f1d781f56cdbf0fcbcf6a7bb5bc78058e8f741ddda48e2",
+                                   "bytes":  38560,
+                                   "text":  "五"
+                               },
+                  "six.pcm":  {
+                                  "spoken_text":  "六",
+                                  "sha256":  "ca00143f4d7af63589a793e46cc67be569322aee506f71b828f326d21908d6e8",
+                                  "bytes":  36320,
+                                  "text":  "六"
+                              },
+                  "seven.pcm":  {
+                                    "spoken_text":  "七",
+                                    "sha256":  "3a72c0f65b83f680d96bc2cbf548bec558cd22b728e66a55c962f96a5b7292e5",
+                                    "bytes":  37920,
+                                    "text":  "七"
+                                },
+                  "eight.pcm":  {
+                                    "spoken_text":  "八",
+                                    "sha256":  "91317bf7fbd8205bc3387dec89ebc1e85432bc5caaa680f5f23ff5899a4a1d28",
+                                    "bytes":  36320,
+                                    "text":  "八"
+                                },
+                  "nine.pcm":  {
+                                   "spoken_text":  "九",
+                                   "sha256":  "537e99119a744a62bd1a9c62528df49c5a592c108d93904dd174c7f39218a16b",
+                                   "bytes":  37440,
+                                   "text":  "九"
+                               },
+                  "ten.pcm":  {
+                                  "spoken_text":  "十",
+                                  "sha256":  "7c119b0932a183f567ddd5beec1de57468cb82edf6ed3e84e35ca319a68f6168",
+                                  "bytes":  39360,
+                                  "text":  "十"
+                              },
+                  "hundred.pcm":  {
+                                      "spoken_text":  "百",
+                                      "sha256":  "d0b64f5d149b1b8c7bcbad3e765ed51319143a70f1d4bccf6975359efc01556f",
+                                      "bytes":  37280,
+                                      "text":  "百"
+                                  },
+                  "thousand.pcm":  {
+                                       "spoken_text":  "千",
+                                       "sha256":  "0707c97d5db8efd15f4dbbb9ae016076bcc1c37300869213709aeb69fb09f7a4",
+                                       "bytes":  38720,
+                                       "text":  "千"
+                                   },
+                  "point.pcm":  {
+                                    "spoken_text":  "点",
+                                    "sha256":  "cf8054999e3582246f9b4f220f825791bee5c451ebb1d15bef2047a5836607cf",
+                                    "bytes":  36960,
+                                    "text":  "点"
+                                },
+                  "red.pcm":  {
+                                  "spoken_text":  "红方",
+                                  "sha256":  "b315816de8f2ba8f9347b59006bb8cc87f7ceff2e263c0ed8bf1c887872ec70c",
+                                  "bytes":  45440,
+                                  "text":  "红方"
+                              },
+                  "black.pcm":  {
+                                    "spoken_text":  "黑方",
+                                    "sha256":  "92b7650fcff3f2d7d946d33826d799764791b6b8d21212372f8bf11731034691",
+                                    "bytes":  44960,
+                                    "text":  "黑方"
+                                },
+                  "king_red.pcm":  {
+                                       "spoken_text":  "帅",
+                                       "sha256":  "51f422a3a5bdc3c415e51a08a6d43d4b836b2a497eb7e0bbbec7a960961c343f",
+                                       "bytes":  38400,
+                                       "text":  "帅"
+                                   },
+                  "king_black.pcm":  {
+                                         "spoken_text":  "将",
+                                         "sha256":  "d3f1a52f376d489d235de8746d77a2853ccc3e9d9ad4fdea061bb2820e029b8d",
+                                         "bytes":  37600,
+                                         "text":  "将"
+                                     },
+                  "advisor.pcm":  {
+                                      "spoken_text":  "士",
+                                      "sha256":  "0c6b81b705da2b1a488527034d2017ba0451740532ccfe5ef730bab44ad98e31",
+                                      "bytes":  38400,
+                                      "text":  "士"
+                                  },
+                  "elephant.pcm":  {
+                                       "spoken_text":  "象",
+                                       "sha256":  "41480e45d27bfeaf5b55f65f34f1a43011e8c79332137fe12fde0453eac678c4",
+                                       "bytes":  38080,
+                                       "text":  "象"
+                                   },
+                  "knight.pcm":  {
+                                     "spoken_text":  "马",
+                                     "sha256":  "f728f31408b8f20c7854ae742e25daea95cf4077dbf0e1e623fb12a3f41ddc7a",
+                                     "bytes":  37440,
+                                     "text":  "马"
+                                 },
+                  "rook.pcm":  {
+                                   "spoken_text":  "居",
+                                   "sha256":  "e2285a806c7b92fcc0c2c742436e0a545b0d132f4b6a30cdfa7ca8548dce65f6",
+                                   "bytes":  36000,
+                                   "text":  "车"
+                               },
+                  "cannon.pcm":  {
+                                     "spoken_text":  "炮",
+                                     "sha256":  "5198efe6f1355960e07d95abcc1dff9c6c860f4cbaf8496201258705de382f5f",
+                                     "bytes":  38720,
+                                     "text":  "炮"
+                                 },
+                  "pawn_red.pcm":  {
+                                       "spoken_text":  "兵",
+                                       "sha256":  "4b02ac7509c64e861d5bc3af7c2e68a45953393f5f772ed583c7e9da49a8a6fa",
+                                       "bytes":  36320,
+                                       "text":  "兵"
+                                   },
+                  "pawn_black.pcm":  {
+                                         "spoken_text":  "卒",
+                                         "sha256":  "1f716803d839b6756623dca1859f5ffb451643be06755e85148a9416b25c0c09",
+                                         "bytes":  36480,
+                                         "text":  "卒"
+                                     },
+                  "forward.pcm":  {
+                                      "spoken_text":  "进",
+                                      "sha256":  "bf65b65b36afefe630af03e3f271816cc893e4ce1bbb60a5698deb00a0ccf8bf",
+                                      "bytes":  36000,
+                                      "text":  "进"
+                                  },
+                  "backward.pcm":  {
+                                       "spoken_text":  "退",
+                                       "sha256":  "8ce5f951f2ed1c2ecd9b53de5fbdf98a59dff2bcd8d9531ff27d6c18fb8d52fe",
+                                       "bytes":  38400,
+                                       "text":  "退"
+                                   },
+                  "horizontal.pcm":  {
+                                         "spoken_text":  "平",
+                                         "sha256":  "2d26b1c91f6edf30d08063e6ef6570e5d22daeed38baed4efa97f43264ad3ba3",
+                                         "bytes":  40480,
+                                         "text":  "平"
+                                     },
+                  "front.pcm":  {
+                                    "spoken_text":  "前",
+                                    "sha256":  "7555a45407e122ae8f0e41659b45c656079ed4750085c6181b6b5eaed1379c1d",
+                                    "bytes":  39360,
+                                    "text":  "前"
+                                },
+                  "rear.pcm":  {
+                                   "spoken_text":  "后",
+                                   "sha256":  "a834791b216fe7469a66a1d4df24b330c4daef329e7ee2283cb2eaf85c4070b2",
+                                   "bytes":  38240,
+                                   "text":  "后"
+                               },
+                  "middle.pcm":  {
+                                     "spoken_text":  "中",
+                                     "sha256":  "be19d5905afb04c2bd979de9b7f8ffedcec76ce9040513a3152e18f5dc59d88e",
+                                     "bytes":  36640,
+                                     "text":  "中"
+                                 },
+                  "welcome.pcm":  {
+                                      "spoken_text":  "进入正常下棋界面",
+                                      "sha256":  "2459ea3d637400cc14056b4d5b29e0b324d1226da57ecf3abbddcecb86d4a76b",
+                                      "bytes":  88640,
+                                      "text":  "进入正常下棋界面"
+                                  },
+                  "newgame.pcm":  {
+                                      "spoken_text":  "重新开始",
+                                      "sha256":  "526177efb53b63e480d2444833dda112d46372b1d16a4904b6c800bded7fcd0c",
+                                      "bytes":  61280,
+                                      "text":  "重新开始"
+                                  },
+                  "winrate.pcm":  {
+                                      "spoken_text":  "胜率",
+                                      "sha256":  "f9fd60eaa37442d1bbab70aac856add695834a1049de919b9ae9acf33356a5b8",
+                                      "bytes":  43200,
+                                      "text":  "胜率"
+                                  },
+                  "percent.pcm":  {
+                                      "spoken_text":  "百分之",
+                                      "sha256":  "398f7c639f2f581a48fad354f2168e377e15c762eefb0adaa500d1db18f69bf1",
+                                      "bytes":  50560,
+                                      "text":  "百分之"
+                                  },
+                  "think.pcm":  {
+                                    "spoken_text":  "思考用时",
+                                    "sha256":  "b1848dd9cf5816b7ac100ef952b7ad1963b49d21a38196dfe5e620128b04f00d",
+                                    "bytes":  60480,
+                                    "text":  "思考用时"
+                                },
+                  "seconds.pcm":  {
+                                      "spoken_text":  "秒",
+                                      "sha256":  "84c1b8a76db5b1703e489ad6f0b483588692bddd98ab8cc9f19b2671249a5f3b",
+                                      "bytes":  37600,
+                                      "text":  "秒"
+                                  }
+              }
+}

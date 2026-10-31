@@ -1,0 +1,164 @@
+/dts-v1/;
+
+/ {
+    #address-cells = <1>;
+    #size-cells = <1>;
+    /* Board compatible string is part of the existing boot-file ABI. */
+    compatible = "pango,cpu-v2-soc";
+    model = "PG2L100H SoC Linux HID+XQ";
+
+    aliases {
+        serial0 = &uart0;
+    };
+
+    chosen {
+        stdout-path = "serial0:115200n8";
+        /* Addresses match the prebuilt RV32IMA rootfs image used by the
+         * bring-up scripts.  Keep the initrd clear of the CLINT at 0x02000000.
+         */
+        /* The V3.5 TIME CSR runs at cpu_clk; use it as the clocksource. */
+        bootargs = "console=liteuart0 earlycon root=/dev/ram0 loglevel=8";
+        linux,initrd-start = <0x03000000>;
+		linux,initrd-end = <0x03f8f000>;
+    };
+
+    memory@0 {
+        device_type = "memory";
+        reg = <0x00000000 0x1c000000>;
+    };
+
+    reserved-memory {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges;
+
+        // This MMIO window is decoded inside the declared low DDR range.
+        // Exclude it from Linux page allocation, including MAC shadow pages.
+        clint-mmio@2000000 {
+            reg = <0x02000000 0x00010000>;
+            no-map;
+        };
+
+        // Used by the flash FW_PAYLOAD recipe in the guide.
+        opensbi-low@1000000 {
+            reg = <0x01000000 0x00100000>;
+            no-map;
+        };
+
+        // Used by the three-file TFTP FW_JUMP recipe in the guide.
+        opensbi-high@18000000 {
+            reg = <0x18000000 0x00100000>;
+            no-map;
+        };
+
+        pikafish_pff1: pikafish-pff1@10000000 {
+            reg = <0x10000000 0x05000000>;
+            no-map;
+        };
+
+        pikafish-attacks@15000000 {
+            reg = <0x15000000 0x02200000>;
+            no-map;
+        };
+
+        mac_accel_mem: mac-accel@1b000000 {
+            reg = <0x1b000000 0x00100000>;
+            no-map;
+        };
+
+        accel-guard@1b100000 {
+            reg = <0x1b100000 0x00100000>;
+            no-map;
+        };
+
+        /* Camera capture, its two original pages and snapshot stay separate
+         * from the larger GUI pages, including while Linux owns DDR. */
+        camera-preview@1b200000 {
+            reg = <0x1b200000 0x00600000>;
+            no-map;
+        };
+
+        video_fb_mem: framebuffer@1b800000 {
+            reg = <0x1b800000 0x00800000>;
+            no-map;
+        };
+    };
+
+    cpus {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        /* TIME CSR counts CPU cycles; OpenSBI bridges deadlines to MTIME. */
+        timebase-frequency = <60000000>;
+
+        cpu0: cpu@0 {
+            device_type = "cpu";
+            reg = <0>;
+            status = "okay";
+            /* V3.5 M/S/U candidate with Sv32; board boot remains to be tested. */
+            compatible = "riscv";
+            clock-frequency = <60000000>;
+            mmu-type = "riscv,sv32";
+            riscv,isa = "rv32ima";
+            riscv,isa-base = "rv32i";
+            riscv,isa-extensions = "i", "m", "a", "zicsr", "zifencei";
+
+            cpu0_intc: interrupt-controller {
+                #address-cells = <0>;
+                #interrupt-cells = <1>;
+                interrupt-controller;
+                compatible = "riscv,cpu-intc";
+            };
+        };
+    };
+
+    soc {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "simple-bus";
+        ranges;
+
+        clint0: timer@2000000 {
+            compatible = "sifive,clint0";
+            reg = <0x02000000 0x00010000>;
+            interrupts-extended = <&cpu0_intc 3>, <&cpu0_intc 7>;
+        };
+
+        uart0: serial@1fe001e0 {
+            compatible = "litex,liteuart";
+            reg = <0x1fe001e0 0x00000018>;
+            status = "okay";
+        };
+
+        audio-capture@1fe00600 {
+            compatible = "pango,audio-capture-v2";
+            reg = <0x1fe00600 0x00000100>;
+            status = "okay";
+        };
+
+        voice-accel@1fe00800 {
+            compatible = "pango,voice-accel-v1";
+            reg = <0x1fe00800 0x00000100>;
+            status = "okay";
+        };
+
+        mac-accel@1fe10000 {
+            compatible = "pango,mac-accel-v2";
+            reg = <0x1fe10000 0x00000200>;
+            memory-region = <&mac_accel_mem &pikafish_pff1>;
+            /* CPU uncached alias of the 0x1b000000 MAC scratch page range. */
+            pango,cpu-alias = <0x9b000000>;
+            status = "okay";
+        };
+
+        framebuffer-dma@1fe11000 {
+            compatible = "pango,ddr-framebuffer-dma-v1";
+            reg = <0x1fe11000 0x00000100>;
+            memory-region = <&video_fb_mem>;
+            width = <1920>;
+            height = <1080>;
+            stride = <3840>;
+            format = "r5g6b5";
+            status = "okay";
+        };
+    };
+};

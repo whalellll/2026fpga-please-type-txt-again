@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "scope": "Whole-SoC ADS resources only, not final routed timing or board performance",
+  "records": [
+    {
+      "name": "original-voice",
+      "cpu_hz": 59400000,
+      "report_sha256": "0210ef01158d8e1aecc83b17dacfd49ddaaa7d9d05ccb33c9e451faf27861379",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4868.0,
+          "registers": 5160.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20591.0,
+          "registers": 12072.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 78.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9382.0,
+          "registers": 11833.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1533.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43128.0,
+      "registers": 35509.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 3.0
+    },
+    {
+      "name": "search2-route",
+      "cpu_hz": 74250000,
+      "report_sha256": "d26d3881a6819b6d6ef82a478e4b2f110ec9d657af329d67b3bca1d12555c4d5",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4854.0,
+          "registers": 5159.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20729.0,
+          "registers": 12072.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 77.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9423.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1576.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43369.0,
+      "registers": 34520.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 3.0
+    },
+    {
+      "name": "search3-recovery-v2",
+      "cpu_hz": 74250000,
+      "report_sha256": "55cf30cff7ca5eea717edbf2de2bfbf86cc0766b9e65a73fbe3c5a8705fa3d3a",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4850.0,
+          "registers": 5159.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20660.0,
+          "registers": 12072.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 78.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9422.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1558.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43287.0,
+      "registers": 34520.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 3.0
+    },
+    {
+      "name": "search4-alu-v2",
+      "cpu_hz": 74250000,
+      "report_sha256": "0887f3001031a822c9c51f35b1f4f70d1d857a01793a14cac9eded2bab2fd3d0",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4839.0,
+          "registers": 5160.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20701.0,
+          "registers": 12132.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 77.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9449.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1577.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43348.0,
+      "registers": 34581.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 3.0
+    },
+    {
+      "name": "final70-dedicated-rejected-clock-binding",
+      "cpu_hz": 70875000,
+      "report_sha256": "24cc821db0baba0d3c4dd78bb1002bc19f4501537130537ec81302b6be43e34a",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4835.0,
+          "registers": 5160.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20628.0,
+          "registers": 12132.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 78.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9400.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1554.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43195.0,
+      "registers": 34581.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 4.0
+    },
+    {
+      "name": "control70-original-v3",
+      "cpu_hz": 70875000,
+      "report_sha256": "02a422d25b71be0f08679b12e22db15f7b2669f90842f58cc1b799d9be4b8d26",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4841.0,
+          "registers": 5160.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20718.0,
+          "registers": 12072.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 77.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9439.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1542.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43337.0,
+      "registers": 34521.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 4.0
+    },
+    {
+      "name": "authorized-identical-retry",
+      "cpu_hz": 70875000,
+      "report_sha256": "037c6e41e01d1013ff6c2d1a809892484bf612abb26e5172af55f79498189729",
+      "selected_module_inclusive_resources": {
+        "I_ips_ddr_top": {
+          "luts": 4841.0,
+          "registers": 5160.0,
+          "distributed_ram": 43.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_cpu": {
+          "luts": 20718.0,
+          "registers": 12072.0,
+          "distributed_ram": 1465.0,
+          "apm": 4.0,
+          "drm": 58.0
+        },
+        "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_recovery": {
+          "luts": 77.0,
+          "registers": 44.0,
+          "distributed_ram": 0.0,
+          "apm": 0.0,
+          "drm": 0.0
+        },
+        "u_mac_accel": {
+          "luts": 9439.0,
+          "registers": 10845.0,
+          "distributed_ram": 1880.0,
+          "apm": 173.0,
+          "drm": 8.0
+        },
+        "u_sd": {
+          "luts": 1542.0,
+          "registers": 867.0,
+          "distributed_ram": 256.0,
+          "apm": 0.0,
+          "drm": 0.0
+        }
+      },
+      "luts": 43337.0,
+      "registers": 34521.0,
+      "latches": 0.0,
+      "drm": 120.5,
+      "apm": 177.0,
+      "gpll": 4.0
+    }
+  ],
+  "search3_minus_search2": {
+    "luts": -82.0,
+    "registers": 0.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 0.0
+  },
+  "search3_minus_original_voice": {
+    "luts": 159.0,
+    "registers": -989.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 0.0
+  },
+  "search4_minus_search2": {
+    "luts": -21.0,
+    "registers": 61.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 0.0
+  },
+  "search4_minus_original_voice": {
+    "luts": 220.0,
+    "registers": -928.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 0.0
+  },
+  "control70_minus_original_voice": {
+    "luts": 209.0,
+    "registers": -988.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 1.0
+  },
+  "retry_minus_control70": {
+    "luts": 0.0,
+    "registers": 0.0,
+    "latches": 0.0,
+    "drm": 0.0,
+    "apm": 0.0,
+    "gpll": 0.0
+  }
+}

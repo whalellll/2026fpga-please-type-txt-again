@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "board_files": 9,
+  "board_ranks": 10,
+  "river_and_palaces": true,
+  "source_size": [
+    960,
+    540
+  ],
+  "board_rotation_clockwise_degrees": 90,
+  "board_opacity": 0.32,
+  "output_size": [
+    1920,
+    1080
+  ],
+  "offline_generated": true,
+  "runtime_blur": false,
+  "title": "中国象棋RISC-V对弈平台",
+  "title_font_family": "KaiTi",
+  "source_font_name": "simkai.ttf",
+  "source_font_sha256": "9dd76f7ab430edd091db24c3f18e71410325c1414141aad5fe67947873ffba06",
+  "font_program_redistributed": false,
+  "title_dimensions": [
+    896,
+    92
+  ],
+  "title_alpha_bits": 4,
+  "rom_bytes": 87706,
+  "pillow": "12.0.0",
+  "freetype": "2.14.1",
+  "header_sha256": "697cbeeaf52a95016685802f0e8103983b8eda82892ac2965b39a0cce048ddd8"
+}

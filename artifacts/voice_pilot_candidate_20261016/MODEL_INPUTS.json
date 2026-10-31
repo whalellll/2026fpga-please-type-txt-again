@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "scope": "Experimental CPU XQT1 candidates; not complete vocabulary/accuracy acceptance",
+  "models": {
+    "full-clip-candidate.xqt": {
+      "sha256": "932dfb647c967b4612fb23653c964ceeac925ab605e862bba0827a018125a567",
+      "bytes": 2612
+    },
+    "full-clip-holdout-eval.xqt": {
+      "sha256": "b5a65f3c899fcb01f5a0303fd110a2bdfee2f692f0681bff9da68466fcea288f",
+      "bytes": 2612
+    },
+    "vad-padding-candidate.xqt": {
+      "sha256": "d98f2f66f0b3f4634844416914bb800ccee407a4b1d2e851059bd8eab54f8c0f",
+      "bytes": 2612
+    },
+    "vad-padding-holdout-eval.xqt": {
+      "sha256": "f50a10630fbcf5b3b244482d2c71ea9018a3b3bdcd2bb736c8ab2e292b210598",
+      "bytes": 2612
+    }
+  },
+  "source_sha256": {
+    "linux/voice/train_pilot_classifier.py": "8d68c71d4d637a8b74859a9f41783ae280079dca6ec3af9a24c8f84b11a22d99",
+    "linux/voice/train_token_classifier.py": "685488a2cc881b8562079e0f5ad29be5385b0e6e76789ab1480fa24ff88084b0",
+    "linux/voice/train_tdnn_ctc.py": "79f414a880d3dcd2db543658f45c0f33522c084cacd5f49cfcca1cd5d88512fe",
+    "linux/voice/xqvoice_model.c": "fc09276034cb20192bc0016c94b0e0da6c1134d0ddd169b03420557c80837af6",
+    "linux/voice/xqvoice_features.c": "d4726c8cbdc1dd637fc9713315deef0f44c8c843bf092539d80a291f21a43414",
+    "linux/voice/xqvoice_daemon.c": "2ba89fff914ac1d12ef6ef74b6f6086f659d3b63f6d528495a4393a0a4feb630",
+    "sim/xqvoice_pilot_probe.c": "9fb04d78d573437db1270be415245258b76e7bf28b429c498ac2d7295dfe15e6",
+    "sim/xqvoice_segment_capture.c": "aacf2cf1fa5c7ad71ddcaa1d1adf793d33d9e30e39c099be3e25d85608d93811"
+  },
+  "data_fingerprint": "227f0a7426a7c523994b94cd32b0bfae8addd32decc666f3481cffe2a5f7ac4f"
+}

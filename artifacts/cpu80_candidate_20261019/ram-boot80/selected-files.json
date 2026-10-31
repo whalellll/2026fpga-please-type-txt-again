@@ -1,0 +1,32 @@
+{
+  "status": "RAM_BOOT_REPRODUCIBILITY_FILES_ONLY_NOT_BOARD_ACCEPTANCE",
+  "cpu_hz": 80000000,
+  "sys_hz": 49500000,
+  "scope": "Existing SD reads and RAM patch only; identical benchmark tools, GUI/voice overlay and frozen NNUE vectors as accepted75. No model regeneration or media writing.",
+  "files_sha256": {
+    "fw_jump.bin": "305e88afc9eac31a85f7b00a71148972e739653c9c80afb69758a91541a6ef37",
+    "gui-overlay.cpio": "b53fd261ee543181a3f5fb3647bd2970757b5d6de87f410b7f001975fb97e51f",
+    "link.ld": "bf0f646a93de321920ee8d606c772a73faa0da828885bde67444a302ef3e1db5",
+    "loader.bin": "3dd7c7ad7199f29b7c3b07daa5fe324f03e147d75da642df83ccc71fa3c8f8e4",
+    "loader.c": "5d7d9057e1bd62ca594eb152f2bc051d72b395815b9ff0f27e84f8bf5941c8f3",
+    "opensbi_timer_bridge.inc": "7d7580c0ab570ede63e5db96d5105155e2ab04ff61e46113450e4bd41d67a0fa",
+    "overlay-manifest.json": "2e282f210ef10f999b2a6e83cea31aa6e88abed90273a0e7d28db65258927194",
+    "soc.dtb": "98f6c3cad964b2ca6ecc7c1b1692018c4018184ce86eba8cf38e7020bcf5c4e7",
+    "soc.dts": "b877ae912876395654cf2d247f23f03b8049ad54dc1b40abf0947f5b116d655e",
+    "start.S": "d19a373a827957148dd117bc114103f46eca7cee186d31f31a862ba862c317c7",
+    "support/board-precheck-spec.json": "e78ea8c499f7f69c23a8470df4fd72b9ea3c53b52ffc8bc03c7320014314fdac",
+    "support/board_fast_commands.py": "f655dfcc854c16fed6c1741814426465a960be3d5da06cb4cbb5a83fea1d4b5d",
+    "support/build_boot80.py": "2681793c51c6ba8cbbcbe65b4488247f38ed59cebb3f04fdab48f25130ef0ee0",
+    "support/build_latency.sh": "1d6c1023e3ea945b7b9414d93e463010315ef69521147e4068ed223e78dcf8a4",
+    "support/build_latency_clint.sh": "f13e4a9b2568535ca4843ae64f63109b22722d4097b8ae1b155732029e4373ca",
+    "support/cpu75-nnue.vectors": "f74b6cd2c98af3170253fab0d3644f0076be3de6a5b56646cd052a7f85e94d89",
+    "support/final80-spec.json": "8fbb1a939a8dbbe66e52c01e14d590313423dfa69e8915e4899a8ac3868cca28",
+    "support/model80-audio-spec.json": "61d2918f686781114300c631a7d117679a88594a060d336b24c42eca75e69b69",
+    "support/nnue80-spec.json": "ddc30097d6f7c3f266fe52678adb41cbc98104c6209721465d01f2051b69dfd6",
+    "support/pikafish-driver-soak": "d1c1d1308bb6dc609dd2817e3c14f4016cfb92583397bdc732d188c8a0fbbf4c",
+    "support/pikafish-nnue-latency-clint": "4198609013006c55ec4e0178b532d318a20121f653bc86675224c0688ec209e5",
+    "support/pikafish-stageb-word-accept": "b8a1a100daf86d07c58ef3fc495580dc2bee215698db16d799fc162d5fc27dd8",
+    "support/prepare_ram80.py": "0cf4dc8cbe7cbd1608abafafc0c8106f953bb3ba54653c3af9b28d30cc327de8",
+    "support/verify80-spec.json": "f1e711c3092208186487efa693bfacf1cd5d9b15b223d230595be1dbe98f77c7"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "scope": "EXPERIMENTAL lossless tensor packing; NOT M0 or full-integer acceptance",
+  "detector_input": 640,
+  "source_graph_sha256": "40d820c418d6b2ab15607b107254955fb3771a5bdc0169b2fe5be1b48285bccb",
+  "models": {
+    "board": {
+      "file": "board.xqm",
+      "sha256": "fbd8a4e8bcd78918a44674eb69225f7d82ac4547ac24a777ea4b4b11cf495efe",
+      "bytes": 1024784,
+      "nodes": 21,
+      "outputs": [
+        10,
+        20
+      ],
+      "input_shape": [
+        3,
+        192,
+        192
+      ],
+      "output_shapes": [
+        [
+          8,
+          1,
+          1
+        ],
+        [
+          4,
+          48,
+          48
+        ]
+      ],
+      "labels": [
+        "board__features_0",
+        "board__features_3",
+        "board__features_6",
+        "board__features_9",
+        "board__features_12",
+        "board__features_15",
+        "head_0",
+        "board__head_1",
+        "head_2",
+        "board__head_3",
+        "head_4",
+        "interpolate",
+        "cat",
+        "board__decode12_0",
+        "interpolate_1",
+        "cat_1",
+        "board__decode24_0",
+        "interpolate_2",
+        "cat_2",
+        "board__decode48_0",
+        "board__corner_maps"
+      ],
+      "source_tensors": {
+        "board__features_0": "5624921410e6586ea03e8a119125452cc67d0a3359ee1332fb73b7c0e7e59f38",
+        "board__features_3": "d7a17b9adb512c3e375aafe388d3958cd1f5b12fe09db179dfbe03ccfbe56342",
+        "board__features_6": "33b596e9c02c954a48a1460c2f2f40a6f5e5ed056a12856baa21cc9de1bf4bbf",
+        "board__features_9": "133e39b99d63ab0d6535c8810f22f9e6908d99d0fc0cd9013b96a49757ed117a",
+        "board__features_12": "a61b6698d489474ee030af21c022cd7e843dea8f79108613aa88a2a6d3944082",
+        "board__features_15": "9ea42731ece07d1f5b6bb5a653f95ff60a600ec9b4a80f6b8045a3f7c436dbb7",
+        "board__head_1": "4e3498f268eafde8a1a5c17c53c38bb768282865acbb7dcbc46af446157b7cc1",
+        "board__head_3": "465edfaefdbb7545a4cac5f028dbe0824a1656ac98b7a2160ee044c72f429f11",
+        "board__decode12_0": "604e570e1ccd905124490849ed7b2120428fc17688e0b1ed53fa90443f0afee8",
+        "board__decode24_0": "e58026bfe8b79c736d85cdf75a0200b13cc4ec6c5ebc669ed27bdfe6c17f2cda",
+        "board__decode48_0": "cc8bf40c86759c56405740f1ed7590072ca2e526a17580406e2122e2f75fafda",
+        "board__corner_maps": "49e5a75f11140671e54b2fa8ac57128f1cd3987d080081610d594bd1ca9454ac"
+      }
+    },
+    "detector": {
+      "file": "detector.xqm",
+      "sha256": "d65b4b8686520ae1546d0a207c1bcb9f30efe0d40e7f5c8245c4dd11ff9ca09d",
+      "bytes": 5578752,
+      "nodes": 85,
+      "outputs": [
+        82,
+        83,
+        84
+      ],
+      "input_shape": [
+        3,
+        640,
+        640
+      ],
+      "output_shapes": [
+        [
+          57,
+          80,
+          80
+        ],
+        [
+          57,
+          40,
+          40
+        ],
+        [
+          57,
+          20,
+          20
+        ]
+      ],
+      "labels": [
+        "detector__model_0",
+        "detector__model_1",
+        "detector__model_2_cv1",
+        "detector__model_2_m_0_cv1",
+        "detector__model_2_m_0_cv2",
+        "add",
+        "detector__model_2_cv2",
+        "cat",
+        "detector__model_2_cv3",
+        "detector__model_3",
+        "detector__model_4_cv1",
+        "detector__model_4_m_0_cv1",
+        "detector__model_4_m_0_cv2",
+        "add_1",
+        "detector__model_4_m_1_cv1",
+        "detector__model_4_m_1_cv2",
+        "add_2",
+        "detector__model_4_cv2",
+        "cat_1",
+        "detector__model_4_cv3",
+        "detector__model_5",
+        "detector__model_6_cv1",
+        "detector__model_6_m_0_cv1",
+        "detector__model_6_m_0_cv2",
+        "add_3",
+        "detector__model_6_m_1_cv1",
+        "detector__model_6_m_1_cv2",
+        "add_4",
+        "detector__model_6_m_2_cv1",
+        "detector__model_6_m_2_cv2",
+        "add_5",
+        "detector__model_6_cv2",
+        "cat_2",
+        "detector__model_6_cv3",
+        "detector__model_7",
+        "detector__model_8_cv1",
+        "detector__model_8_m_0_cv1",
+        "detector__model_8_m_0_cv2",
+        "add_6",
+        "detector__model_8_cv2",
+        "cat_3",
+        "detector__model_8_cv3",
+        "detector__model_9_cv1",
+        "model_9_m",
+        "model_9_m_1",
+        "model_9_m_2",
+        "cat_4",
+        "detector__model_9_cv2",
+        "detector__model_10",
+        "model_11",
+        "cat_5",
+        "detector__model_13_cv1",
+        "detector__model_13_m_0_cv1",
+        "detector__model_13_m_0_cv2",
+        "detector__model_13_cv2",
+        "cat_6",
+        "detector__model_13_cv3",
+        "detector__model_14",
+        "model_15",
+        "cat_7",
+        "detector__model_17_cv1",
+        "detector__model_17_m_0_cv1",
+        "detector__model_17_m_0_cv2",
+        "detector__model_17_cv2",
+        "cat_8",
+        "detector__model_17_cv3",
+        "detector__model_18",
+        "cat_9",
+        "detector__model_20_cv1",
+        "detector__model_20_m_0_cv1",
+        "detector__model_20_m_0_cv2",
+        "detector__model_20_cv2",
+        "cat_10",
+        "detector__model_20_cv3",
+        "detector__model_21",
+        "cat_11",
+        "detector__model_23_cv1",
+        "detector__model_23_m_0_cv1",
+        "detector__model_23_m_0_cv2",
+        "detector__model_23_cv2",
+        "cat_12",
+        "detector__model_23_cv3",
+        "detector__model_24_m_0",
+        "detector__model_24_m_1",
+        "detector__model_24_m_2"
+      ],
+      "source_tensors": {
+        "detector__model_0": "61dba55abf21da9ae4914b2a2c0953b5472dba44ac3642a0209005fe60be3355",
+        "detector__model_1": "0ef4b7c28acaf528a636b94e964b0af51de2723f947819e663ac1710fd7899e4",
+        "detector__model_2_cv1": "28d373f9336e762b55f74b5704e7ee4e9c40e705a7228d5e4493036cd3d90c29",
+        "detector__model_2_m_0_cv1": "f1678cf1053c3f8c98118273de3382b7adac4612a67a119f9cc76005c98491af",
+        "detector__model_2_m_0_cv2": "f0ba79466978ec9b98fcf9bcb1c13ce739254e75e58db7ec0d6c4bfd229218a1",
+        "detector__model_2_cv2": "9a02349001ab4b06605ca6d4efec8ed562bfc85525ea93b447f85a6d60e65aa3",
+        "detector__model_2_cv3": "09cde26bffb7b954df9946a23aec276e221bc8c92fdf83166861252a1d8a005b",
+        "detector__model_3": "ef49dff484d84b609586a22f9f48bd799620e7206b3a076523a6da5d74f77add",
+        "detector__model_4_cv1": "73f3d7e61eb55e8c734be00439dd8a5c2d783dda24faf4fcf4fd3c7b349ac6ef",
+        "detector__model_4_m_0_cv1": "f7d1ef7bbf828e43fbf4b1e63c85ee1fb9961a171ee4e1118168048d9dee09f6",
+        "detector__model_4_m_0_cv2": "101db20e719c1f874155e2b6e800ed7801c023e89ea414537ec97a520c36d6f4",
+        "detector__model_4_m_1_cv1": "f477917f971719f255993e1e4377fb3c9c73a5befbaaaa42de6af4c61f838565",
+        "detector__model_4_m_1_cv2": "1a5946a674acbaf53214a1c8fa0b37964b5e4e77a858cd94597b47030af97c9d",
+        "detector__model_4_cv2": "802c3cbe7b7bba9790b7b4cc0c13bfea3892c6ac5b37d144f40fd9f2a00cb132",
+        "detector__model_4_cv3": "8347f9690e368d240a1f7342624bcbc6db8d33f4457fecafe0ce1eba9bc89212",
+        "detector__model_5": "a84021fc804537865a13309bf4aaa75ccb5505b43d123e561b1dbc1d6cb574e1",
+        "detector__model_6_cv1": "2da27e57f4b843e3ad6b934ad22bb770fc583514cf5eb657f202a251224f533b",
+        "detector__model_6_m_0_cv1": "ab1ea10e8eff26871651622f9cb0cde44cdff37324bbb277483c2c8fc7093663",
+        "detector__model_6_m_0_cv2": "7fc68032a32ecd695916da66901f2e018a51dd927805edf71eab8f499722250e",
+        "detector__model_6_m_1_cv1": "a0fc8ddf87ad72b828f2dbc074bf66b748a66daebd89adfb3a5c533b0b5b47a3",
+        "detector__model_6_m_1_cv2": "c13c201d54c1d7864200670f74bc5e77852849b012474bf5e93d664044cfa684",
+        "detector__model_6_m_2_cv1": "323b62f1354cd137c74ce8dc7e8c786743529fe2b9d4aba9c0e98ea5d5848d3b",
+        "detector__model_6_m_2_cv2": "a68fc2381b2f7a8517dfa59edc956a810110cf1b047c8023fab3128e7e35ada6",
+        "detector__model_6_cv2": "481e547b54363f7a855e5d464ebdd2d2d17122d3dbe3b4d87dadd3cbf95a11be",
+        "detector__model_6_cv3": "83832a21756f2cf868c39eee24ce0c033a5170e455c5749e1e3adbe0856e20b9",
+        "detector__model_7": "2cbbfe54a70070df7b3633ef64246669ba2f447d42c9d79c80628f60ec0e53c7",
+        "detector__model_8_cv1": "31fcf6fd2cb620bbaf0e0c453b2fbbe74f011934e36aa6c0d21708a17c3dab4a",
+        "detector__model_8_m_0_cv1": "f691a909b9f4641307ec5a2bb8cccf2374bb46d9c659f2354649bfe0de75dd24",
+        "detector__model_8_m_0_cv2": "046946256c5a0d15d9e964e1f0fa2f13ee6eca541a48ccc5cfe0dae731c15f54",
+        "detector__model_8_cv2": "c6b747f64b4b19b71d60655e7d2d33d8b252d5df2380f9343589e8db9cd5f256",
+        "detector__model_8_cv3": "9da240cfd00a752a1cb2aa0dd1c9ceae613d2221ebe31a4ef288cb6f7a1917a9",
+        "detector__model_9_cv1": "770e14767d1264019ce8c1702ac967532f6c7ba1fdd9c8e69afc59e91acdfd8e",
+        "detector__model_9_cv2": "3a4f2691d8084c8a1432b9d5ff8073b5055d886936d860892cc7dd6aaac412da",
+        "detector__model_10": "7189362daa2e4a05504b6fc6acff37bbdab76ed6535bb84cb4ead0def20cedc9",
+        "detector__model_13_cv1": "601c7921d590811c60bc0f4c77c1f892d0864a9c84eff8f9cd849f3daf0f2ca3",
+        "detector__model_13_m_0_cv1": "f63ae62543516c4538751f5c7f44eb154f6e0330b9c4347c995acdc69b915dbb",
+        "detector__model_13_m_0_cv2": "92c037279e86af02c0cf1057b0eaaff6d73b482fa1ddb4c2be5fc6192b32bc45",
+        "detector__model_13_cv2": "76c62e21750a2cf8ba16950022afb5c1c65acc833125c28505dec460cf0a2060",
+        "detector__model_13_cv3": "9b1a1555baf29e0c652382b7494caac5b267db506bde443851155f1a4143c43e",
+        "detector__model_14": "f3b92f5ca2fc30f28d4e8d878d8f6ff4f3b84e0288ebfac3a01928551445fc18",
+        "detector__model_17_cv1": "ddff4f94535336ff361923c9feba7b9d93cc08c6802d115a4bd1a83cbefb6d4f",
+        "detector__model_17_m_0_cv1": "5e5fc0b4ab3dc8b0085962ecb35b304e9631c0958471e75e5536816de4b9d234",
+        "detector__model_17_m_0_cv2": "bef1e819393fcdacf54481dba9ab10c12c7b7e90b8c32c6d1b37e9273180b7cf",
+        "detector__model_17_cv2": "251cf0224a581a79089b3b6d3d3f0a8387224c2c4c94cf251f93ba2faa011b59",
+        "detector__model_17_cv3": "7f6a3d25b9544894366be5e9f2db0f25e7b84c1e83bec5014c966f0a24a2642e",
+        "detector__model_18": "1e273dd8df142b9bee34b44045a38d1c1b7719846a91cfb9eab54d15c267785e",
+        "detector__model_20_cv1": "2e2eb92c10e2fbce98a6f81a1cb17b08b37049121de72b58d41a8c151b59725a",
+        "detector__model_20_m_0_cv1": "4ad8bc0f58c8397688ab90c01d7cad4d80c268ec74ab37b96320b50c8ae294df",
+        "detector__model_20_m_0_cv2": "c944231c9c544f1527a32498a659885c648f97dd0e4d00205b87c5fa1c0e3c04",
+        "detector__model_20_cv2": "87ed802895d7dcf3f7a86d1d62b7b8c2a201c94e1c92088093959be95be53ea3",
+        "detector__model_20_cv3": "3f58fc8dfebf3ef974d63dabfd067e485df2c94063052539a3bc0e43e7e37ed2",
+        "detector__model_21": "c10db7ad78f5c070282323a6f1d1a4992a5b4a6201388418e9576e2c5ebdd925",
+        "detector__model_23_cv1": "36bd5b9d1fec83cd963e99d61d69a40907c5387a3b0a1133f7aaa703c4c427f8",
+        "detector__model_23_m_0_cv1": "b37568d820332980cada89736b19fb9872a68781e86301c204a6f7cbf163f190",
+        "detector__model_23_m_0_cv2": "769e2bb6bf6f9d69632286c73628c2311c395d70b8e497c397fe8894c38edd31",
+        "detector__model_23_cv2": "d0374d6042f089d2090da814f3140a185985a6709b412477c9bae27dd84cbf16",
+        "detector__model_23_cv3": "29d365197a93146493d036e4044b06caf6f76222011eda8832130ee44fab1c80",
+        "detector__model_24_m_0": "2c2086dcf2a7fcaa353f6148d14967e86f347290ff1ac922ebe9f5a1950e7282",
+        "detector__model_24_m_1": "3f29ebe21ea04c5b808ae90221788367e556b40e76fcab98853d10cd737239de",
+        "detector__model_24_m_2": "4dd5e18d89c9cd4eb1903734d0de6be01ce4c954c9661d551e2f03244a27034c"
+      },
+      "anchors": [
+        [
+          [
+            10.0,
+            13.0
+          ],
+          [
+            16.0,
+            30.0
+          ],
+          [
+            33.0,
+            23.0
+          ]
+        ],
+        [
+          [
+            30.0,
+            61.0
+          ],
+          [
+            62.0,
+            45.0
+          ],
+          [
+            59.0,
+            119.0
+          ]
+        ],
+        [
+          [
+            116.0,
+            90.0
+          ],
+          [
+            156.0,
+            198.0
+          ],
+          [
+            373.0,
+            326.0
+          ]
+        ]
+      ],
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ]
+    },
+    "classifier": {
+      "file": "classifier.xqm",
+      "sha256": "fc03674b9f73f8c0d0fffd1cbdd10b4edebccd2056740d8aeec7e472b522697f",
+      "bytes": 592568,
+      "nodes": 9,
+      "outputs": [
+        8
+      ],
+      "input_shape": [
+        3,
+        32,
+        32
+      ],
+      "output_shapes": [
+        [
+          15,
+          1,
+          1
+        ]
+      ],
+      "labels": [
+        "classifier__features_0",
+        "classifier__features_3",
+        "classifier__features_6",
+        "classifier__features_9",
+        "classifier__features_12",
+        "classifier__features_15",
+        "classifier__features_18",
+        "mean",
+        "classifier__head"
+      ],
+      "source_tensors": {
+        "classifier__features_0": "6f5a3cd2a02db1181d139f2b0cb7d677c20d647c79660e0fbc029ba5c70fca51",
+        "classifier__features_3": "f0fff79c7068d146d6e56078f83234a3c47adf03e2607157861708bdf3a4bb67",
+        "classifier__features_6": "5a72ce40fa6394de5181599ba5c146f9ea8d25d447471a10f804f558e03e5518",
+        "classifier__features_9": "f6185c9170343e2079d5205139eb2892b0c94fa5be54c9b072ac82d9fb6c6ac1",
+        "classifier__features_12": "4af503bdb8c3de5b7593eab52438d52f5d03568f001f4f142dba2db7a94158ad",
+        "classifier__features_15": "3cd3b37ec8f99b9558ad8d1f8bd70008beec4c478004700a28b4e9a95ac5ad9a",
+        "classifier__features_18": "4ab30d47ea0631217d2e6d1821bf16c8b2c92eba078211c59d5b3c082ea9d310",
+        "classifier__head": "ebb0bbbc69fd4e3fa1164865a3cc0740191a40ad8a3e76b05860bbdf569fd7d8"
+      }
+    }
+  }
+}

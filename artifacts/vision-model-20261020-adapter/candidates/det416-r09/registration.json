@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "candidate": "det416-v2-band-r09",
+  "acceptance_status": "r12正式新相机域未达标；保留历史代码路径",
+  "selected_for_work": false,
+  "production_ready": false,
+  "full_integer_pipeline": false,
+  "detector_epoch": 39,
+  "detector_input": 416,
+  "model_sha256": {
+    "board": "73aa6b9a72ec67b9447843b151f4646b1c6f000f2218e25a27e0cc95cecd2825",
+    "detector": "00ee378484d492f4f715ca584dbc12b3fddaa7b4859ac0b93a25a155fcf8069e",
+    "classifier": "d184f7970f16311515110c008ca768b33e62ac43ffcf09f125085acc9905d3be"
+  },
+  "local_release": "build/picture-r09-20261021/adapter-inputs/r09_release_416/software",
+  "local_quantized_candidate": "build/picture-r09-20261021/delivery/P0E-B_detector降档/quantization_r09/candidate_r09_det416",
+  "source_manifest_sha256": "cce824fea66fec2cf1382024dcf6ef01f2a9f0248636422dcb8af73ecfe3c7cb",
+  "release_reconstructed": true,
+  "refinement": "B_trials80_bbox",
+  "candidate_filter": true,
+  "numeric_reference": "r08-exact-int64",
+  "rollback": "frozen640-v1 or r08 v2-band; original assets retained",
+  "new_camera_domain_suitable": false,
+  "superseded_by": "E-v1-640-v3c-r12"
+}

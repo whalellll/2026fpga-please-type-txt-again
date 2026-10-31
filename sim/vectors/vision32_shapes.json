@@ -1,0 +1,2706 @@
+{
+  "model_sha256": "463b20a814b07ac5aa7da3f20a07a0202368cc3c1716ca52efa0555927958c9a",
+  "graph_sha256": "825d28c5d5c01fec1ef4909aa136bfb9dbfeb56c7f43bfecc5a77d0077e80d8e",
+  "layers": [
+    {
+      "index": 0,
+      "name": "model.0.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "input_shapes": [
+        [
+          1,
+          3,
+          320,
+          320
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        3,
+        6,
+        6
+      ],
+      "kernel": [
+        6,
+        6
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "groups": 1
+    },
+    {
+      "index": 3,
+      "name": "model.1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        160,
+        160
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          160,
+          160
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 6,
+      "name": "model.2.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 9,
+      "name": "model.2.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        16,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 12,
+      "name": "model.2.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          16,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 15,
+      "name": "model.2.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        16,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 18,
+      "name": "model.2.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 21,
+      "name": "model.3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        80,
+        80
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          80,
+          80
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 24,
+      "name": "model.4.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 27,
+      "name": "model.4.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 30,
+      "name": "model.4.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 33,
+      "name": "model.4.m.1.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 36,
+      "name": "model.4.m.1.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 39,
+      "name": "model.4.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 42,
+      "name": "model.4.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 45,
+      "name": "model.5.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 48,
+      "name": "model.6.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 51,
+      "name": "model.6.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 54,
+      "name": "model.6.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 57,
+      "name": "model.6.m.1.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 60,
+      "name": "model.6.m.1.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 63,
+      "name": "model.6.m.2.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 66,
+      "name": "model.6.m.2.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 69,
+      "name": "model.6.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 72,
+      "name": "model.6.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 75,
+      "name": "model.7.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 78,
+      "name": "model.8.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 81,
+      "name": "model.8.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 84,
+      "name": "model.8.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 87,
+      "name": "model.8.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 90,
+      "name": "model.8.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 93,
+      "name": "model.9.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 99,
+      "name": "model.9.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        512,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          512,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 102,
+      "name": "model.10.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 107,
+      "name": "model.13.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 110,
+      "name": "model.13.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 113,
+      "name": "model.13.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 116,
+      "name": "model.13.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 119,
+      "name": "model.13.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 122,
+      "name": "model.14.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 127,
+      "name": "model.17.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 130,
+      "name": "model.17.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 133,
+      "name": "model.17.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          32,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 136,
+      "name": "model.17.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        32,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        32,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 139,
+      "name": "model.17.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 142,
+      "name": "model.18.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 146,
+      "name": "model.20.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 149,
+      "name": "model.20.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 152,
+      "name": "model.20.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 155,
+      "name": "model.20.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        64,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        64,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 158,
+      "name": "model.20.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 161,
+      "name": "model.21.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 165,
+      "name": "model.23.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 168,
+      "name": "model.23.m.0.cv1.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 171,
+      "name": "model.23.m.0.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "groups": 1
+    },
+    {
+      "index": 174,
+      "name": "model.23.cv2.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        128,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 177,
+      "name": "model.23.cv3.conv",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        256,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 180,
+      "name": "model.24.m.0",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        64,
+        40,
+        40
+      ],
+      "input_shapes": [
+        [
+          1,
+          64,
+          40,
+          40
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        40,
+        40
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        64,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 181,
+      "name": "model.24.m.1",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        128,
+        20,
+        20
+      ],
+      "input_shapes": [
+        [
+          1,
+          128,
+          20,
+          20
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        20,
+        20
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        128,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    {
+      "index": 182,
+      "name": "model.24.m.2",
+      "operator": "Conv2d",
+      "input_shape": [
+        1,
+        256,
+        10,
+        10
+      ],
+      "input_shapes": [
+        [
+          1,
+          256,
+          10,
+          10
+        ]
+      ],
+      "output_shape": [
+        1,
+        57,
+        10,
+        10
+      ],
+      "reference_dtype": "float32",
+      "weight_shape": [
+        57,
+        256,
+        1,
+        1
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "groups": 1
+    }
+  ]
+}

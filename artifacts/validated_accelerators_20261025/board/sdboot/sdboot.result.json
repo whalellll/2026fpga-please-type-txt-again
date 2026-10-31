@@ -1,0 +1,15 @@
+{
+  "status": "PRODUCTION_SD_BOOT_CRC_LINUX_ROOT_PASS_APPLICATIONS_PENDING",
+  "mode": "sdboot",
+  "port": "COM17",
+  "baud": 115200,
+  "dtr": false,
+  "rts": false,
+  "started_utc": "2026-10-25T10:03:16.448376+00:00",
+  "commands": [],
+  "cpu_hz": 60000000,
+  "loader_prefix": "VOICE_NNUE",
+  "host_elapsed_seconds": 119.67649849999998,
+  "uart_sha256": "b58536cf77a28af1498465b493ec037a12b3c50d665b0d26dbee010acf4a9cc4",
+  "completed_utc": "2026-10-25T10:05:16.319887+00:00"
+}

@@ -1,0 +1,277 @@
+{
+  "scope": "Original native build SHA and CRLF-to-LF normalized content SHA; Git may normalize text files.",
+  "inputs": {
+    "ip/ddr3_test/ddr3_test.idf": {
+      "build_sha256": "b600d6102995be4e76b060dd45786b5e1497bd2e7499bbc04b870de9355f2747",
+      "lf_normalized_sha256": "7073459a54322e49d70e6b3d63a5c540ed420794e4e65fca19be5db13a3aca3a"
+    },
+    "ip/camera_line_buffer/camera_line_buffer.idf": {
+      "build_sha256": "29662960044e8c117639f79059185c63128730bc876203a8cd24601d243c5a4b",
+      "lf_normalized_sha256": "1c74791a81fd7740dacdbd2d04b5a6cd1516e003a79f4a446b329a0ed43366f0"
+    },
+    "ip/ref_clock/ref_clock.v": {
+      "build_sha256": "3096a985bb1c4de9121a57837ef5ed57fa5c11477ba4c884a5d3055ba61a93f9",
+      "lf_normalized_sha256": "4b5f781f3bd1239e5b014fdf78daab5d59978e0d8f8e5a7dfbb44b4d8d6dfe53"
+    },
+    "rtl/vendor/VexRiscv_Linux.v": {
+      "build_sha256": "d7bca7135fbbb06246cbc8972d2ce8e4db08cf7baf0d0c4872b0b54e1f3b976d",
+      "lf_normalized_sha256": "43d493850395b08ae222466e140f4585f1c4b3950bb51a12add3cd05aa247ad0"
+    },
+    "rtl/cpu_v2_clint.v": {
+      "build_sha256": "726009b1081cfdcd5cbc07b4d08f7008c3fe7a98635703bef2e7d09863b5f0c7",
+      "lf_normalized_sha256": "ce98699cd2555d5728d94408e7b0a07d40ef72cb98a9881dfae9714bb4fcb0e2"
+    },
+    "rtl/cpu_v2_wb_axi_bridge.v": {
+      "build_sha256": "96bb0b6ca7dd5cd08c7d6d3063e1f52ea6003fb53b212f2aa34a406fc9ec3a4c",
+      "lf_normalized_sha256": "19e5330e9f1216c4949fd2d5c638ea3fac1fe5d2457d3af76c3a61fa76a5893e"
+    },
+    "rtl/cpu_v2_top.v": {
+      "build_sha256": "ac15fa7619905234ba7218e9cdc0bff6fce9affbedb47bdbeccbed41d94f9601",
+      "lf_normalized_sha256": "ba8b47df3d25c68b33337d0477149593f5316c3a9b28be912793949604ff3012"
+    },
+    "rtl/soc/uart_tx_fifo.v": {
+      "build_sha256": "4c311886770cacd2a1465fd0003669652746cd32bcb2a32fc1f9b659b10fd210",
+      "lf_normalized_sha256": "489a83e1c5d12f01d203acfbd8584f54e48c92b31427364ff1705825ec015fbc"
+    },
+    "rtl/soc/axi_1x2.v": {
+      "build_sha256": "7b7fec49e174cf08c45a71b308baf2428d0eadcc21e4a0e2a6b45d506c3f38d8",
+      "lf_normalized_sha256": "7436987b3cd794c29a7e22e688e047f137ebc9920e4ab87c4ca58153245b0ab6"
+    },
+    "rtl/soc/axi_2x1_arbiter.v": {
+      "build_sha256": "95098851bec877d869f22fd4e1caab5ef93bd31baa0a8852a409a91c087da0cf",
+      "lf_normalized_sha256": "c189d0f138dc8d26ff0b68b32d5bb896741510bb22b04c4d2c3fc5cf5f480999"
+    },
+    "rtl/soc/axi_boot_periph.v": {
+      "build_sha256": "0a40626d1205cfbd64da18db67f84ceea42bde54715aa9d9d88fbe093e8e0d40",
+      "lf_normalized_sha256": "23aadb942d85b2b2864786ee95b3cc7c363270016e63083abb10355b5d7bc9a4"
+    },
+    "rtl/soc/ch9350_hid_core.v": {
+      "build_sha256": "3ef8ad74275f410e475ef5810422ff1b72e463106b90713f124fe37255fb4146",
+      "lf_normalized_sha256": "26924be8ba28ac09c00f208433f4e91eb4195581a4c760042863a6820dd7b2c6"
+    },
+    "rtl/soc/axi_ddr_cdc.v": {
+      "build_sha256": "7aa7661e06a4e9dd254ec17de52d12bb42f5b4ac9192834569cdfb2649a79829",
+      "lf_normalized_sha256": "d7da7b2217a53f59944d96596838c8a312226516cc86f167baeb94c40353b24a"
+    },
+    "rtl/soc/ddr_native_read_arbiter.v": {
+      "build_sha256": "b03b689aca1a79866b98a225ccdd82628baa91836203d33117ab54113267183b",
+      "lf_normalized_sha256": "9042314226325c244f34e0a2d6ad46cf6d4b1066c2c4f72395a4098a73148372"
+    },
+    "rtl/soc/ddr_native_write_arbiter.v": {
+      "build_sha256": "cf51df49377fc2d1d4e414ffcf1ffbbedd2ebe78e5e23c8ac808cf472c2cdf11",
+      "lf_normalized_sha256": "9f8a82349ca0eeef1d59a8d41c030ecd9c5e3320f833cee8aaee502ed746a7cf"
+    },
+    "rtl/soc/spi_flash_mmio.v": {
+      "build_sha256": "f8d5389c70ba2ac4e4c4e0c1bc20c58820abff7664c11cd26f3989c3bf54ff3a",
+      "lf_normalized_sha256": "2f00f36ca3921c4c985035f85631f3701f79d1dcc1d1160a15a8bb9bade939b2"
+    },
+    "rtl/soc/sd_native_mmio.v": {
+      "build_sha256": "10c67a25d2a0fe2ff247eb7e1e2f69e6f80383c2a2604a393a581a3e2c54adba",
+      "lf_normalized_sha256": "6c475f77c6229bad8404a6e8ed83774b0bafdaaaaf6c7a5779bdc31ca4e1756f"
+    },
+    "rtl/audio/audio_mmio.v": {
+      "build_sha256": "c3c2db24a1fe2c048d6acc805c71c83382b0c5aa449e56377ed2c8301f3b3a77",
+      "lf_normalized_sha256": "c3c2db24a1fe2c048d6acc805c71c83382b0c5aa449e56377ed2c8301f3b3a77"
+    },
+    "rtl/audio/i2s_audio_duplex.v": {
+      "build_sha256": "130b038330e462b9ce66f1f618e6a7a6ac51ae6c1cd06972d4c88ef15f2be143",
+      "lf_normalized_sha256": "615f6388b16972c762690a69c35bb548680c95c8a45f87df033e1bffafe68d0e"
+    },
+    "rtl/camera/ov5640_power_on_delay.v": {
+      "build_sha256": "558e43000b52115094cea5baa12de47acfd53f2159d1143a844a34d2e6cb805c",
+      "lf_normalized_sha256": "f88815c44fee7f427b2144ddaddfd95d921fcf00409431931ebbd77572a7f307"
+    },
+    "rtl/camera/ov5640_sccb_write.v": {
+      "build_sha256": "08967fea518bc8637b2df22f0a0396410a15fe44f62f0fb1552d65c1c656a1b7",
+      "lf_normalized_sha256": "63cd3c3fd62f76c3d5eb4adee3036df60cda12522672abb19d73d75201ee67a1"
+    },
+    "rtl/camera/ov5640_register_table.v": {
+      "build_sha256": "db35ee0baace25b6a7e1959ef2f003c5d21bc2b1c879fadac4be948914f630af",
+      "lf_normalized_sha256": "df10100e741c7d4abf0cff96b739cacae53eb004473175abc44f5e68d2f81ddf"
+    },
+    "rtl/camera/ov5640_register_init.v": {
+      "build_sha256": "03d486334bbcd8cbc98202e52ec008a1dfb901811c3802a63f9160772b9c289b",
+      "lf_normalized_sha256": "6881d013c9a20537ee40cf2be3cbf03e661fa118ac3a976478ff32fe9535b817"
+    },
+    "rtl/camera/dual_ov5640_sensor.v": {
+      "build_sha256": "998405b08856f831ec9eae9671b3ede044ce2b50433184ab0889da39e82fff29",
+      "lf_normalized_sha256": "99f12a7c65720bcc80217ba6ce0c8ed375b3e5bde2a415d21f471eff3cda49b6"
+    },
+    "rtl/camera/ov5640_cmos2_capture.v": {
+      "build_sha256": "ae27136941c4a9cdda3f8de86eb8aa1373ce75c2e1504fbf296c6945294d9d26",
+      "lf_normalized_sha256": "6275ce1e88bcfa79f6199a0c1c415dbc7e9c4170fd7d14bb22f12a3138905b84"
+    },
+    "rtl/camera/camera_mmio.v": {
+      "build_sha256": "5e34c5ba2b16a689af8cbdaacc245c0ee5545a7578f012f58ae8388a19a23b5e",
+      "lf_normalized_sha256": "dd2dee031dcb77197dc4dcaed6351a7ecac7a20945927483b6bf8efaa1b1ba81"
+    },
+    "rtl/camera/camera_buffer_control.v": {
+      "build_sha256": "6632915028286bb5d53be769190b9b1f87b7450d20e96fd6cb5b3fd47ae7fad7",
+      "lf_normalized_sha256": "15aca8f0a283aa293caee603b42040ad7bce5a8f333a7f6f718e3c45d0a2b0be"
+    },
+    "rtl/camera/camera_frame_writer.v": {
+      "build_sha256": "9bdda9c5072870b3465c3efab14c605d7c48e3ce78df9d7c7202b0587c88598d",
+      "lf_normalized_sha256": "6d409b0db9dcb0f93f55725c43a13d2a2136d5b715ea052441f91c25a810ae45"
+    },
+    "rtl/mac_accel/mac_accel_dma_kernel.v": {
+      "build_sha256": "969b031440cb464153e08a94365d9344e149c10da864430a7817a955b24594df",
+      "lf_normalized_sha256": "ae9002b16b8239ad03537194213a9c0e63f5ef4e684c45f79c9d71cdf8c698eb"
+    },
+    "rtl/mac_accel/mac_accel_axi_master32.v": {
+      "build_sha256": "69e7f65b99bef8a78113be80a420239bf2ef718e61ee433265eec363dedefa36",
+      "lf_normalized_sha256": "5674d5dc13ed490d1db601585ce464f07ff535a0d1dfc0912185c419b1a4c9ee"
+    },
+    "rtl/mac_accel/xiangqi_sparse_eval.v": {
+      "build_sha256": "f64bd266b7edf478c42fa6aab07ac89936d9481d20b37f5db40d21d12e25c99d",
+      "lf_normalized_sha256": "37c8641d282c1a695f5ea16249ff0c0b311f0af2101df6a737b55c6315732cc8"
+    },
+    "rtl/mac_accel/pff1_stagea_gather.v": {
+      "build_sha256": "0ca8361ed47be173aec4e1003247f0637054daf29023a8491748e48b7c34c712",
+      "lf_normalized_sha256": "311fb63d288fa91193c2401f20abd343e5788a04467a339638c416dc029c0deb"
+    },
+    "rtl/mac_accel/mac_conv_descriptor_guard.v": {
+      "build_sha256": "60878ba234f7c836bc3b15c43aaac8b8fbb1471f688bdc0d8384ce55ba42a349",
+      "lf_normalized_sha256": "1c556e3a4ed2060dea3661276035c74c788adab0168900df2aa8172158c3748d"
+    },
+    "rtl/mac_accel/mac_conv_window.v": {
+      "build_sha256": "42198156c05f1bc6129fe869f4fc948f496bd2fd272e20b4eab682e3486c43c1",
+      "lf_normalized_sha256": "e342e5b709247ca612b40bd4f763d805922042826991b652deff95fa75edf30d"
+    },
+    "rtl/mac_accel/mac_conv_input_dma.v": {
+      "build_sha256": "6216975e5dee507aa2182ea39b232732dd9e98413537eca517590af4f0385bcb",
+      "lf_normalized_sha256": "0db7bd6351ddd4891ed2aa7f306178f70244aee80f3565b7949b496a26d04d8e"
+    },
+    "rtl/mac_accel/mac_weight_double_buffer.v": {
+      "build_sha256": "899a9aed17c7dcbf0be0fab381f1305f223b986e767488b2e4683994bdadc356",
+      "lf_normalized_sha256": "a7340e265880bd3ec5e8f5f4b60da1b050f2533c262e28662360fbb45f363bc2"
+    },
+    "rtl/mac_accel/mac_conv_weight_dma.v": {
+      "build_sha256": "65f21319778dca843e267e6fa3dc070766c94ca58edb91dcf93182d807b2f476",
+      "lf_normalized_sha256": "ed57f89dcddc5675d086c3685fc71ccf4fc27118ab2b21ec09319484891620d7"
+    },
+    "rtl/mac_accel/mac_conv_read_arbiter2.v": {
+      "build_sha256": "28fe3c76e85f1c36ce5aefb70c4073d565155d094de9de4eef00198e76326c73",
+      "lf_normalized_sha256": "e7c75b5df8ae08140a1ba7d58d9a498cf3717f89d3efaad601deda6e27de88ca"
+    },
+    "rtl/mac_accel/mac_conv_compute_core.v": {
+      "build_sha256": "915cc0d7714717362b16bd30c53e74c50c15bfb26c2ee08c5407051d64820d6c",
+      "lf_normalized_sha256": "915cc0d7714717362b16bd30c53e74c50c15bfb26c2ee08c5407051d64820d6c"
+    },
+    "rtl/mac_accel/mac_conv_compact_packer.v": {
+      "build_sha256": "a91d8633bdbf79f04df8f9e38f47cfcb14bb23d23ceb157a7942b2b6d94b1431",
+      "lf_normalized_sha256": "449010e8310995566fdaa6b706fb90cb4d9731ab2427513d4bccf7c673b0a365"
+    },
+    "rtl/mac_accel/mac_conv_compact_writer.v": {
+      "build_sha256": "7e6e40970554379945494fc808dfb7d7f5da49ca3a54fe71bd61160e5bbf1347",
+      "lf_normalized_sha256": "df8b97b2acf1c4f433f417b44458cf324e40e8c7a8cbc0d98e5f8232043c7947"
+    },
+    "rtl/mac_accel/mac_conv_rw_arbiter2.v": {
+      "build_sha256": "0661f164fff129c5850cf577206a978af048de6e0c748252af7f767036f58041",
+      "lf_normalized_sha256": "ca86ee876c06f1cf5fb5bbecf640a591f88ffb1696d4d93147a095bc923bd141"
+    },
+    "rtl/mac_accel/mac_conv_mmio_frontend.v": {
+      "build_sha256": "977eae3fc1bdfae3718a40ab16fc46be6e6bff38d49f925bc7c8f39a175335a0",
+      "lf_normalized_sha256": "e857f94d25aafd47fe6676ff4841a5d4fc6bf0617a72195886b0a9ffbff0dac9"
+    },
+    "rtl/mac_accel/mac_accel_ddr_kernel_top.v": {
+      "build_sha256": "0520a134c9d6b63b61cff6acb48826e54f44147e167d869388182782d8dac64b",
+      "lf_normalized_sha256": "514b4d81ab5c4a7a37325e15f74a3ac0bbdceedc90672a237f5345757ae3ec2c"
+    },
+    "rtl/mac_accel/MacAccelCore.v": {
+      "build_sha256": "1b2713ecf6c3fb3ddc9d04d2824a3b394fbcaf35f950139e4b5f44be2de00f22",
+      "lf_normalized_sha256": "1b2713ecf6c3fb3ddc9d04d2824a3b394fbcaf35f950139e4b5f44be2de00f22"
+    },
+    "rtl/eth/eth_mac_mmio.v": {
+      "build_sha256": "5692f21bee938604c5b0ac917e8daaf52c034fc13daa069570346e7432665d6c",
+      "lf_normalized_sha256": "2584267d0219e0d474db3ef7397b30017a47f3d6cbf166a2dc5186a5e3e4e0a8"
+    },
+    "rtl/eth/rgmii_interface.v": {
+      "build_sha256": "ae1a29191ec747659eadb679715d43965f80aaec82090be68e8bbb5fd84ffa9c",
+      "lf_normalized_sha256": "edfa85b7b10124f257d6805721b75edb1b412bd69380fbb5d73c1e108936d0b9"
+    },
+    "rtl/video/font_rom.v": {
+      "build_sha256": "66d9006ebb58e235fb8a9856e8dad01e9da0a08327c3b7485de6f814494184be",
+      "lf_normalized_sha256": "4a6135d8209653ee0c03c52cad76e091d289ce4bce86014a7bc8597316fac474"
+    },
+    "rtl/video/header_bitmap_rom.v": {
+      "build_sha256": "3e07e31fed862a0e70fc3d3da72808bf2435905cb42f7fce5f57caa06faf5996",
+      "lf_normalized_sha256": "cfde4645dc743a20d5d7d5412ab417697106f0d1aca62c58f42ba38bf2811725"
+    },
+    "rtl/video/header_logo_rom.v": {
+      "build_sha256": "7f0db3b21593a6a5f175e5524815804573c797dd50e5664cbeb4431b4d3d0bc4",
+      "lf_normalized_sha256": "0d8e06232a59f21a6cbd5d0fd1f98bbbf28d0c111cf581f665af12d288fca03b"
+    },
+    "rtl/video/uart_console_text.v": {
+      "build_sha256": "de8f875098dbd2dccec5fa795c8724a0892662668da8107440fcf5a7e21c27ec",
+      "lf_normalized_sha256": "a22a946b678ea6b2b4bc2811d30dd2d1cfc3721da26bd132d63555968450c43d"
+    },
+    "rtl/video/video_linux_console.v": {
+      "build_sha256": "01f789f60a2204f8c756f1f0de3d40a9dd05ce0bc2f0d04ede7d6fc515d2a70d",
+      "lf_normalized_sha256": "c4052976dce1a8f2bf731cb89c46f8a379db6804e56cf7ada24a41f641095c00"
+    },
+    "rtl/video/hid_gui_overlay.v": {
+      "build_sha256": "f3572f2ea6dd1423aa6b453f01e552267aed0a47736790eeae060cb84d18a5b8",
+      "lf_normalized_sha256": "15da2cfa67fb67b710db3d24f3be28a5b7937f00818df543316fee5a8d51b2be"
+    },
+    "rtl/video/video_fb_mmio.v": {
+      "build_sha256": "1b421174f90142518b179f3ad15a7a3d40891726290d0279a1a7d7276e8e89db",
+      "lf_normalized_sha256": "e115c9baee2532d4b40077d59b4b9939c4a61cef691e2cae2fcfa41c7c6625ae"
+    },
+    "rtl/video/video_fb_dma.v": {
+      "build_sha256": "755147733e568fa1279daf691fb9b2622de50b701fae2649fa9287b8dac4063d",
+      "lf_normalized_sha256": "cab95af7c933edd0ed7ba3b11642235c9896781dbcd3a26cf0333152a4ec128c"
+    },
+    "rtl/video/iic_dri.v": {
+      "build_sha256": "8516560f7ab3e27ef1bd19006b0d89fde9be31bb24a088bbe2d6a93e81c104a8",
+      "lf_normalized_sha256": "5f60bc8bcac110f0125a278c332065d2594874c465ec961c603662f92c16b13e"
+    },
+    "rtl/video/ms7200_ctl.v": {
+      "build_sha256": "c743651409a1791ecf9639fb0efb6a36f583060dd27732f3f48a629c8fab48dc",
+      "lf_normalized_sha256": "03f35d56553cfe4f13225b19d2c8e014b1ca92753673682184454bb6f817f13a"
+    },
+    "rtl/video/ms7210_ctl.v": {
+      "build_sha256": "22cc05ebff3d77c8878008ecaa67bc8f3fcd91f79a6afbb06ded719c0884701c",
+      "lf_normalized_sha256": "3f560778a6c6f065c61cd979558b30a68224bdbf74e0a8ca95bb01cb23bb90cb"
+    },
+    "rtl/video/ms72xx_tx_only.v": {
+      "build_sha256": "49812a329e1365156f103610d87efe56bc8a3ac75eae9fbb8e6311f5e5cd7f36",
+      "lf_normalized_sha256": "628feaa47ab9177a23020d528bfae8b54bc8eae0bc30110f4c8ec45b1e9cac12"
+    },
+    "rtl/video/pll_video.v": {
+      "build_sha256": "55a174d1b702051ed7ed569382447361f803378d4b5823d648e4c5f398a7fff8",
+      "lf_normalized_sha256": "9cc72a13ec94ac60da525868a8950dd2b57f0b15efa37aa0fca2042fcf3f69c4"
+    },
+    "rtl/soc/soc_v2_top.v": {
+      "build_sha256": "498c13546a1f2f99117fb02bee17d648443265202ed063be325e506f772c7fe2",
+      "lf_normalized_sha256": "f9785c9a84a188b1bfa216b2b7ece917c7b5597a1b94ef96d087b859a3088b93"
+    },
+    "pds/soc_v2_cpu_v2.tcl": {
+      "build_sha256": "669d215a3634bbf17e945669aacad1027d897866c99bced74429ac24106a424b",
+      "lf_normalized_sha256": "763d02fbc624f36d5f065b382e0c335d841d07f84970c68128f9f82b614a0644"
+    },
+    "pds/cpu_v2_soc.fdc": {
+      "build_sha256": "4ca08f0e6de38afbd121b2a4d372f55917d7978e9066adca2ce3c2ac3a834432",
+      "lf_normalized_sha256": "a87a909b5510f89ae7ee5411b1e5faa611c491b33d3be7ee7001d30ae6d9d2e6"
+    },
+    "pds/bootrom.hex": {
+      "build_sha256": "3a8de3a35bdb480e27547f8bde023c76d0fe030936931948c0eb47310f948eb4",
+      "lf_normalized_sha256": "9c3e12b38413ad34a832a544bb6a5caddf31aa8dfad32dd997323dfa922dd4e4"
+    },
+    "pds/font8x16.hex": {
+      "build_sha256": "6b7a0a0ed81811849a5465e91e238695b3607166a68889131ec2843552ef79d9",
+      "lf_normalized_sha256": "0abb6004def283034f721c28fc2d82e3454fccd3a79b4008896f1e57f7006b68"
+    },
+    "pds/header_bitmap.hex": {
+      "build_sha256": "767e39bc18cdca2ec83b9bde0278c6ee369c4906b0200fabb76bf0fff97f886f",
+      "lf_normalized_sha256": "7c0d3cdad525feb751d706874fcf5a0f783b1f887e98c985597896f0067ac86c"
+    },
+    "pds/header_logo_rgb332.hex": {
+      "build_sha256": "ab674f3ae280aada7fe4b64f5d4997a3253bc1b6ae6a729ed1d8bf9da3ab2968",
+      "lf_normalized_sha256": "13bf003545cd17bb6b37e3098c4a7e97372883f628a6dbc63d5f6cb10baced29"
+    },
+    "pds/yolo_incremental_ddr.pcf": {
+      "build_sha256": "d372c64b80eefe3ae52bbda64aa730e32e2fbbb5f9b6ad786bebd48f08da962d",
+      "lf_normalized_sha256": "bddc72ecf5a05c39906484f4f4b0f27b9447382ce1f3564acba395fb3a62b458"
+    }
+  }
+}

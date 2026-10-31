@@ -1,0 +1,18 @@
+{
+  "path": "/mnt/g/fpga/performance_soc_picture_main_20261026/build/main70-delivery-20261027-01/kit-04/compile-source",
+  "files_sha256": {
+    "support/host_test.c": "bfa0b45ef3f66143ca935b1e6704c6d1e31dae104007a045770a121f09611e71",
+    "support/link.ld": "a2378cda01ba679f7ccc96a2043dcd165e5ea853ddc57c365354ec15dbf2ac5f",
+    "support/loader.c": "94f15141f48cc1ceeb4e20533c85d854d29fdb3b65b44a470685d3a87a57cd63",
+    "support/payloads.h": "ec31c28ffd212798d2fdeaf5456424750d02a3c91f52a7d9766c106ccd8185d4",
+    "support/start.S": "d19a373a827957148dd117bc114103f46eca7cee186d31f31a862ba862c317c7",
+    "support/bootloader/crc32_fast.c": "7d8c262eaf77633a14a31886f4b8b2c7fe02b3b3bed095a4f2b10a90b67e9435",
+    "support/bootloader/crc32_fast.h": "a55f4959214d02dde02e841c8d296c6dcf432ebe34bdc38da05757c08a785f9e",
+    "support/bootloader/fat_ro.c": "f618b9d57e872b2dfca25a9a9d78260c475cc722a7fbda78281ed17049b3bae6",
+    "support/bootloader/fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c",
+    "support/bootloader/runtime.c": "2e12bcf521c435b4eb9758e4c8550727bbd84f021b33d8205538949339640a1d",
+    "support/bootloader/sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "support/bootloader/sd_native.c": "60173da5ae55399afa3ddd8f3cde99ef6a26f703d13bd08b71a81e45650f7746",
+    "support/bootloader/soc.h": "7e5c356fb23807fed4f7cb963c121dd08052ca84d535a0c275d91e8c1efd33fb"
+  }
+}

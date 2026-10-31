@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "scheme": "board-detect-v2",
+  "base_format_profile": "training-handoff-current-three-model-v1",
+  "purpose": "R2 three-model candidate + R1 evaluation/corrections/fallback patch; NOT M0 acceptance",
+  "piece_fit_enabled": false,
+  "sources": {
+    "r1": {
+      "directory": "../board_detect_v2_round1",
+      "manifest_sha256": "3b614beff3512dc2244813dbbcbb5f210383153c2473b84b0205eb7f604d8af3",
+      "archive_sha256": "ea911433d7d24bf09d126d2d29eea8bb18fec61f4dc26754a97b066a25208ea5"
+    },
+    "r2": {
+      "directory": "../vision-model-20261020",
+      "manifest_sha256": "1935184a3a25d17e116a65d97cbdd15e025af245008b69a6f2db10cd80c60619",
+      "archive_sha256": "7b41a943e09fdd92763a72fff6c2bc2c73b200f5f00dea5c1014ddb8cb4ab16b"
+    }
+  },
+  "files": {
+    "geometry_fallback/piece_fit.py": {
+      "source_package": "r1",
+      "source_path": "geometry_fallback/piece_fit.py",
+      "bytes": 12945,
+      "sha256": "6beb99ab979f56438e65d62bd202a16e0e563bf95e1391cc37d68266bfb848e6",
+      "reason": "Required piece_fit algorithm and synthetic vectors; stays disabled"
+    },
+    "geometry_fallback/test_geometry.py": {
+      "source_package": "r1",
+      "source_path": "geometry_fallback/test_geometry.py",
+      "bytes": 7628,
+      "sha256": "efcd8c04ab0d6e9be0d78110415937ae2b018a40ff80d515fbb5728e505d7bc5",
+      "reason": "Required piece_fit algorithm and synthetic vectors; stays disabled"
+    },
+    "geometry_fallback/test_vectors/vectors.json": {
+      "source_package": "r1",
+      "source_path": "geometry_fallback/test_vectors/vectors.json",
+      "bytes": 208865,
+      "sha256": "0345f3ee21145b3c40923c290b016c0946ee02c6a20dc1fe527d6eb2f405ba0f",
+      "reason": "Required piece_fit algorithm and synthetic vectors; stays disabled"
+    },
+    "geometry_fallback/test_vectors/vectors.tsv": {
+      "source_package": "r1",
+      "source_path": "geometry_fallback/test_vectors/vectors.tsv",
+      "bytes": 91731,
+      "sha256": "0f2c09cffbc14913f3bd02ff6a4f67c1facabd9556f4d22f38cae4af2d7f2d4c",
+      "reason": "Required piece_fit algorithm and synthetic vectors; stays disabled"
+    },
+    "geometry_fallback/c_ref/geometry_ref.c": {
+      "source_package": "r1",
+      "source_path": "geometry/c_ref/geometry_ref.c",
+      "bytes": 29082,
+      "sha256": "7dd2450bfc84031bc8078eaf6286eec1508cdcc9ff6498b0c9a38ef61024fe94",
+      "reason": "Delivered C piece_fit implementation and harness dependencies"
+    },
+    "geometry_fallback/c_ref/geometry_ref.h": {
+      "source_package": "r1",
+      "source_path": "geometry/c_ref/geometry_ref.h",
+      "bytes": 3940,
+      "sha256": "2f79d10bbaf4dd9b4f3da6c464e7032c9e0aa2e0ac6b29dea3f6459b94083c0c",
+      "reason": "Delivered C piece_fit implementation and harness dependencies"
+    },
+    "geometry_fallback/c_ref/test_harness.c": {
+      "source_package": "r1",
+      "source_path": "geometry/c_ref/test_harness.c",
+      "bytes": 13581,
+      "sha256": "905a534d2f45bd84bc978c30c307c860a33a0b4c03f50029f050707717c2bcd6",
+      "reason": "Delivered C piece_fit implementation and harness dependencies"
+    },
+    "geometry_fallback/c_ref/test_harness.exe": {
+      "source_package": "r1",
+      "source_path": "geometry/c_ref/test_harness.exe",
+      "bytes": 85088,
+      "sha256": "81388d4dbdfd32e8131e0ad5d59a35ba01783822004182e8a4ff909b83bb5bcd",
+      "reason": "Delivered C piece_fit implementation and harness dependencies"
+    },
+    "geometry/board_perspective.py": {
+      "source_package": "r1",
+      "source_path": "geometry/board_perspective.py",
+      "bytes": 7152,
+      "sha256": "065b03211fa19d9a915cebfd4a79ab683825863dae95f89249cc6e0351f6a3d3",
+      "reason": "Unchanged Python geometry dependency for R1 evaluation protocol"
+    },
+    "geometry_fallback/board_perspective.py": {
+      "source_package": "r1",
+      "source_path": "geometry/board_perspective.py",
+      "bytes": 7152,
+      "sha256": "065b03211fa19d9a915cebfd4a79ab683825863dae95f89249cc6e0351f6a3d3",
+      "reason": "Resolve piece_fit relative imports without editing delivered Python"
+    },
+    "geometry/geometry_contract.py": {
+      "source_package": "r1",
+      "source_path": "geometry/geometry_contract.py",
+      "bytes": 5127,
+      "sha256": "0948e16c1590edac1b8f32375f643aee562f276088f6d2e297026b3167847bb9",
+      "reason": "Unchanged Python geometry dependency for R1 evaluation protocol"
+    },
+    "geometry_fallback/geometry_contract.py": {
+      "source_package": "r1",
+      "source_path": "geometry/geometry_contract.py",
+      "bytes": 5127,
+      "sha256": "0948e16c1590edac1b8f32375f643aee562f276088f6d2e297026b3167847bb9",
+      "reason": "Resolve piece_fit relative imports without editing delivered Python"
+    },
+    "geometry/roi.py": {
+      "source_package": "r1",
+      "source_path": "geometry/roi.py",
+      "bytes": 1158,
+      "sha256": "653d84be26307cf60c6b68fbf72b2689812060546a8632b87f6cf29fc51c2209",
+      "reason": "Unchanged Python geometry dependency for R1 evaluation protocol"
+    },
+    "geometry_fallback/roi.py": {
+      "source_package": "r1",
+      "source_path": "geometry/roi.py",
+      "bytes": 1158,
+      "sha256": "653d84be26307cf60c6b68fbf72b2689812060546a8632b87f6cf29fc51c2209",
+      "reason": "Resolve piece_fit relative imports without editing delivered Python"
+    },
+    "geometry/piece_fit.py": {
+      "source_package": "r1",
+      "source_path": "geometry_fallback/piece_fit.py",
+      "bytes": 12945,
+      "sha256": "6beb99ab979f56438e65d62bd202a16e0e563bf95e1391cc37d68266bfb848e6",
+      "reason": "R1 test evaluator geometry dependency"
+    },
+    "evaluation/r1_test_eval_t1.py": {
+      "source_package": "r1",
+      "source_path": "tools/test_eval_t1.py",
+      "bytes": 17350,
+      "sha256": "1d467df14f518eb387c94f6405a85ab7d0b1fda5eb6fe39e8b9267abdcf22e06",
+      "reason": "Frozen R1 scoring protocol; adapter calls functions, not its CUDA main"
+    },
+    "dataset_corrections.json": {
+      "source_package": "r1",
+      "source_path": "report/dataset_corrections.json",
+      "bytes": 31441,
+      "sha256": "c99ceb46800aa7021066027c601b439a322b06aa18ee00878b00aff6f1fce368",
+      "reason": "Authoritative 81 corrections, including game 3; R2 subset is insufficient"
+    },
+    "fen_gt.json": {
+      "source_package": "r1",
+      "source_path": "report/fen_gt.json",
+      "bytes": 353493,
+      "sha256": "de06092f04fa2020b7b4002e045610b026973ee32f3302b23cb49a2e5eaceb09",
+      "reason": "1042 frame truth for later acceptance/regression"
+    }
+  },
+  "correction_count": 81,
+  "fen_record_count": 1042,
+  "c_reference_location_note": "R1 geometry_fallback contains Python/vectors; actual geom_piece_fit C body is geometry/c_ref/geometry_ref.c, copied unchanged",
+  "independence_note": "R2 training_manifest explicitly marks existing game 3 as reused failure-analysis data; numerical replay does not establish independence"
+}

@@ -1,0 +1,8 @@
+{
+    "status":  "NATIVE_FINAL_TAGE_PLACEMENT_EXACT_PASS_NOT_BOARD",
+    "run_id":  "9302a6212eac40b08fae353321f31d1c",
+    "snapshot_sha256":  "d4ad8399260a5a8b86eea8fba2d3f68cf60dd9668f8c1de6c3a25b0e2b427267",
+    "constraint_sha256":  "87e4720a5b1d07e22ab32a73ff118d5c0c343d68ebf48367be4564a9661125da",
+    "export_sha256":  "1f12f70b83d1e1cb82b0f160e4a019a6d78c766f533a37656bd24126920aa54f",
+    "pnr_adf_sha256":  "2ddf1a4c6abac0e5f8e420a8f5ead83b6c554ec8a40c845ceab8d6c7d04a1d8c"
+}

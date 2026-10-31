@@ -1,0 +1,31 @@
+/ # pid=$(cat /run/xiangqi-pikafish.pid 2>/dev/null); /etc/init.d/S95pikafish stop; n=0; while [ -n "$pid" ] && kill -0 "$pid" 2>/dev/null; do sleep 1; n=$((n+1)); [ "$n" -lt 180 ] || exit 1; done
+Stopping full Pikafish GUI: pid=85
+XQ LINUX PIKAFISH STOPPED
+/ # sha256sum /usr/bin/pikafish-stageb-board-accept /opt/pikafish/stageb-mac.bin /opt/pikafish/stageb-golden.bin
+0d1d67d31335b7a21cda3dc0ae5ee5f49c4b22e7f7a39a2306a19b9acee09c18  /usr/bin/pikafish-stageb-board-accept
+8c5cf0b7811b544799b0ed9821be118255be60be50358d15ffdf339cfb88c486  /opt/pikafish/stageb-mac.bin
+e958d54d62a01ecd15e1f3dac817b5b08e6c11e5ca0e01ba8a8ee1aa88e2c784  /opt/pikafish/stageb-golden.bin
+/ # /usr/bin/pikafish-stageb-board-accept /opt/pikafish/stageb-mac.bin /opt/pikafish/stageb-golden.bin
+PIKAFISH_STAGEB_BOARD_PACKS_VERIFIED pfsb_crc32=0836b938 mlps_crc32=8c4b6711 golden_crc32=5759e18a
+PIKAFISH_STAGEB_BOARD_DDR_READY bytes=593920 crc32=0836b938
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=0 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=1 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=2 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=3 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=4 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=5 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=6 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=7 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=8 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=9 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=10 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=11 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=12 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=13 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=14 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=15 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_GOLDEN_PASS buckets=16 cases=96 jobs=384 fc0_lanes=3072 pfsb_crc32=0836b938 cycles=2758917
+/ # /etc/init.d/S95pikafish start
+Starting full Pikafish GUI
+Full Pikafish GUI launched: pid=97
+/ #

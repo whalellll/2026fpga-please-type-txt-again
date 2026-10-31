@@ -1,0 +1,20 @@
+{
+  "status": "INTEGER_OPS_LOCAL_SOURCE_OFFLINE_BOARD_AB_SD18_AND_REPORT_BINDINGS_PASS",
+  "implementation_commit": "da0f914e08fbcdb7678a0b76cfdbe84fd349e6f7",
+  "evidence_sha256": {
+    "docs/Integer_Ops_Optimization_20261025.md": "125f468c61a2cf38e7b6acbbd7d37707affc9396e2ecda27397768bf0cc24834",
+    "README.md": "5e41d51fcd967e35a23f8d284cc3e2443e2cd37eee8f3b5e6675e34ca0e1a920",
+    "docs/validation/integer-ops-20261025/offline.json": "a6466bd6187f6b9cd00170ade3b2a6de283f8294eabd42102cf0ae33d2a45d77",
+    "docs/validation/integer-ops-20261025/board.json": "5295d6e5063dbb23dbde4b48b91ce4880ecff2340ad81701620037bacaff0e4c",
+    "docs/validation/integer-ops-20261025/sd.json": "0c96a22170ed7c46bbfb4a1f24f62b8b5addd6e7dc9e6428e92bbf543d3ebebd"
+  },
+  "new_equal_output_seconds": 57.18071233333334,
+  "old_equal_output_seconds": 86.130565,
+  "speedup": 1.5062870238115313,
+  "checker_sha256": "0f727209d8be12b86e49c28bfcf641960ceb4e3cfba60794c96098fb6f0a7aa9",
+  "board_runtime_in_ram": true,
+  "sd_candidate_only": true,
+  "physical_sd_written": false,
+  "formal_delivery": false,
+  "remote_pushed": false
+}

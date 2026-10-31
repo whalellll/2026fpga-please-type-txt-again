@@ -1,0 +1,61 @@
+{
+  "status": "PARTIAL_FAIL_NOT_BOARD_RELEASE",
+  "scope": "CPU70 real board tests; no RTL changes, no new PnR, no SD/Flash writes",
+  "cpu_hz": 70875000,
+  "sys_mac_timebase_hz": 49500000,
+  "bitstream_sha256": "0460ab2cf857c406f9018822ff8dc90b7ee8ab620ec03d49ac98aec5f754d84a",
+  "firmware_sha256": "72649f52dc1e096c29386796be00b8205ec4e45239f5bffd2f3bc9b1786024af",
+  "coremark": {
+    "status": "PASS",
+    "performance_runs": 3,
+    "validation_runs": 1,
+    "iterations_per_run": 6000,
+    "durations_seconds": [
+      16.03715836363636,
+      16.032922181818183,
+      16.032155333333332,
+      16.1106
+    ],
+    "mean_coremark_per_mhz": 5.2797599552211505,
+    "minimum_coremark_per_mhz": 5.278745943423434,
+    "median_coremark_per_mhz": 5.280140681533851,
+    "maximum_coremark_per_mhz": 5.280393240706166,
+    "mean_coremark": 374.2029868262991,
+    "minimum_coremark": 374.1311187401359,
+    "median_coremark": 374.2299708037117,
+    "maximum_coremark": 374.24787093504955
+  },
+  "tests": {
+    "mac_ddr_selftest": "PASS cycles=255",
+    "linux_boot": "PASS after RAM software fixes",
+    "pikafish_stageb_verify": "PASS initial driver and mmio-shadow sessions",
+    "gather_driver_golden": "PASS terms=1/3/256, 3072 lanes and invalid descriptor",
+    "resident_driver": "PASS immutable/restore, two files, 400 concurrent jobs",
+    "scheduler_3process_2thread": "FAIL got=0 expected=16, then UART unresponsive",
+    "pool_8contexts": "FAIL live contexts not isolated after slot0 reuse; no MAC RUN",
+    "audio_idle": "PASS 32000 samples, 0 overflow",
+    "audio_search": "PASS 96000 samples, 0 overflow in initial gather session",
+    "hdmi_user_confirmation": "PASS displays chessboard",
+    "official_all_bucket_golden": "NO_CONFIRMED_EXECUTION_RESULT",
+    "image_recognition_30fps": "NOT_TESTED",
+    "matched_old_bitstream_AB": "NOT_TESTED",
+    "full_windows_release_regression": "PENDING"
+  },
+  "final_gui_restore": {
+    "status": "PASS",
+    "gui_pid": 94,
+    "voice_pid": 100,
+    "backend": "driver",
+    "stageb_mode": "1",
+    "kernel_resident_bytes": 593920,
+    "engine": "ready",
+    "position": "initial",
+    "voice": "sd77 display-only",
+    "evidence_sha256": "b4d6557a0f93d614102a2fb05db9cf78885d8aa418d4d055cce7d177f5462ca6"
+  },
+  "notes": [
+    "First failed Linux boot trapped at uncached DTB lbu tail; fixed by word-safe CRC.",
+    "Old DT MMIO size/model phandle disabled gather in driver; fixed in RAM DTB and generator.",
+    "Overall functionality failed; passing microtests do not override scheduler/pool failures."
+  ]
+}

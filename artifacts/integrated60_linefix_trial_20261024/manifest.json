@@ -1,0 +1,114 @@
+{
+  "status": "INTEGRATED60_LINEFIX_FUNCTIONAL_TRIAL_STA_FAILED_NOT_RELEASE",
+  "run_id": "dc951f8b1b7f4cf9962e5f509f165d0f",
+  "created_utc": "2026-10-24T03:01:12.855074+00:00",
+  "native_root": "G:\\i60pnr4",
+  "cpu_hz": 60000000,
+  "sys_hz": 49500000,
+  "display": "1080p30",
+  "native_line_fix": true,
+  "sta_pass": false,
+  "strict_original_flow_pass": false,
+  "functional_trial_authorized": true,
+  "bitstream": {
+    "path": "soc_top.sbit",
+    "bytes": 3791112,
+    "sha256": "9ba02f105d6168e9445e9a15e2f7a1093d885229deae9e268994acdbe29f5ea1"
+  },
+  "violations": [
+    {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": -0.029,
+      "tns_ns": -0.029,
+      "violating_endpoints": 1,
+      "endpoints": 65567,
+      "abnormal": ""
+    },
+    {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": -0.017,
+      "tns_ns": -0.017,
+      "violating_endpoints": 1,
+      "endpoints": 65567,
+      "abnormal": ""
+    }
+  ],
+  "sta_focus": {
+    "cpu_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 1.281,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66926,
+      "abnormal": ""
+    },
+    "cpu_clk_hold": {
+      "corner": "fast",
+      "kind": "hold",
+      "clocks": [
+        "cpu_clk",
+        "cpu_clk"
+      ],
+      "wns_ns": 0.005,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 66926,
+      "abnormal": ""
+    },
+    "sys_clk_setup": {
+      "corner": "slow",
+      "kind": "setup",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": 3.227,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "endpoints": 65567,
+      "abnormal": ""
+    },
+    "sys_clk_hold": {
+      "corner": "slow",
+      "kind": "hold",
+      "clocks": [
+        "sys_clk",
+        "sys_clk"
+      ],
+      "wns_ns": -0.029,
+      "tns_ns": -0.029,
+      "violating_endpoints": 1,
+      "endpoints": 65567,
+      "abnormal": ""
+    }
+  },
+  "evidence_root": "docs/validation/integrated60-linefix-functional-trial-20261024-02",
+  "evidence_sha256": {
+    "build_snapshot.json": "c16756065885c4120ce23b300d3d6acbfc61784cea8c86568f2ba2d7c3ab9eb5",
+    "functional-coverage.json": "3357e9970c2665c558f937ce6fe4787056b212d7a377587739ca9983e8ff7da4",
+    "physical-launch.json": "4fa8bba7ec37115a3bc1eed5bf1471df3ebcf83b9287908af30e3a7b8edaf766",
+    "physical-summary.json": "5e8485412f194d6b58d593d3a06f4ce4e1dacdf77c295b09a48701b54f260df8",
+    "rtr.db.gz": "67698c6c7988718c2c27a2d04fa1f1ce46358768c35aa3400a65bc634c37326c",
+    "scope-negative-tests.json": "f54a10a4359efbd89ed4d80c14956ce18cf6a5163cc302412532ec75e2af7da2",
+    "soc_top.rtr.gz": "dc268835bb090af7b848bf5ae640572a9d42f5e837020f910c73e43787152e7f",
+    "soc_top.snr.gz": "42654a5fa1e1dd3e5f22832e9826151f13524ed8e56b7d8c819becdeac4a5e7b"
+  },
+  "board": false,
+  "flash": false,
+  "formal_delivery": false
+}

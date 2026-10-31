@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "deployment": {
+    "schema": 1,
+    "status": "ALL24_XQT1_RAM_MODEL_PROCESS_READY",
+    "model_sha256": "f31b38e2cf3a46eeb2bf6d59e2179a0038fd46907353843020f587a4a313ae90",
+    "model_bytes": 6020,
+    "architecture": [
+      40,
+      64,
+      32,
+      25
+    ],
+    "target": "/tmp/voice-gui-display/all24-20261016-f31b38e2.xqt",
+    "previous": {
+      "pid": 2134,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/pilot-20261016-d98f2f66.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "active": {
+      "pid": 2184,
+      "exe": "/tmp/voice-gui-display/xqvoice-display",
+      "argv": [
+        "/tmp/voice-gui-display/xqvoice-display",
+        "/dev/pango-audio0",
+        "/tmp/voice-gui-display/all24-20261016-f31b38e2.xqt",
+        "200",
+        "160",
+        "500"
+      ]
+    },
+    "runtime_source_unchanged": true,
+    "gui_restart": false,
+    "chess_actions_from_voice": false,
+    "sd_flash_rtl_kernel_changes": false,
+    "persistent": false,
+    "recognition_accuracy_accepted": false,
+    "live_speech_labelled_test": "PENDING",
+    "board_model_sha256_verified": true,
+    "display_only_ready_verified": true,
+    "date": "2026-10-16",
+    "source_model_inputs_sha256": "34d771f13cbef7ecf66f397e56763a7094b221148c88c7853ec22920c0e63efd",
+    "initial_read_only_precheck": "GUI binary SHA read exceeded25s; no model transfer/process switch occurred in that attempt. Shell prompt recovered; retry checked ASR SHA and GUI executable path.",
+    "gui_status_before": "red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "gui_status_after": "red engine=ready nodes=665 score=-62 red_win_permille=3 fen=rnbakab1r/9/4c1nc1/p1p1p1p1p/9/8P/P1P1P1P2/1C2C4/9/RNBAKABNR w - - 0 1",
+    "framebuffer_register_reads": [
+      "00000003",
+      "00000000",
+      "00000003",
+      "00000000"
+    ],
+    "raw_uart_sha256": "c7016bcf5dbdfc1bf248f2fcdf616a33793367574a6f0708b72c9835e0f5a001",
+    "deployment_helper_sha256": "92dc6c4190e0171a6039ae4dfb173351d3e90993cda80ab7effe43a387a06f37",
+    "process_readiness_only": true,
+    "recognition_accuracy_scope": "Training exploratory holdout12/24; no new labelled live speech test in this deployment",
+    "thresholds": {
+      "start": 200,
+      "stop": 160,
+      "token": 500
+    },
+    "recorder_closed_gracefully": true,
+    "limits": [
+      "Volatile RAM files and process argv only; reset loses this deployment",
+      "No new C/Python tensor parity suite or independent speech accuracy acceptance",
+      "Reserved blank, background and unknown rejection remain untrained",
+      "Score is an uncalibrated logit margin; GUI remains display-only"
+    ]
+  },
+  "models": {
+    "all24-candidate.xqt": {
+      "sha256": "f31b38e2cf3a46eeb2bf6d59e2179a0038fd46907353843020f587a4a313ae90",
+      "bytes": 6020
+    },
+    "rollback-five-word.xqt": {
+      "sha256": "d98f2f66f0b3f4634844416914bb800ccee407a4b1d2e851059bd8eab54f8c0f",
+      "bytes": 2612
+    }
+  }
+}
