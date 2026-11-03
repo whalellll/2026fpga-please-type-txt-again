@@ -1,0 +1,24 @@
+{
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "current_cpu_source_commit": "b1164e42737a081cc640a2113c76a53d0c91a97a",
+  "commands": [
+    "remove_constraint {ddr3_test.rcf}",
+    "add_constraint {G:/fpga/build/cpu125-coremark60-20261102-01/pnr-preflight-05/native-priority.rcf} -pnr_set pnr_1",
+    "add_constraint {G:/fpga/build/cpu125-coremark60-20261102-01/pnr-preflight-05/native-placement.pcf} -pnr_set pnr_1",
+    "pnr -input_db_file {G:/fpga/build/cpu125-coremark60-20261102-01/source/pds/prj_tasks/pnr_1/device_map/soc_top_map.adf} -plc_decongestion 4 -gplace_seed 3 -mode normal -fix_hold_violation_in_route TRUE -fix_hold_violation_threshold_for_clock_path_cross_srb 200 -fix_hold_violation_threshold_for_clk_tree 200",
+    "report_timing -report_max_skew"
+  ],
+  "native_identity_sha256": "3769b472ae1ea760ed370b3b06586daa8fe8a3d6cb15e442d6ea701493bfec63",
+  "preflight_sha256": "bb0f4d9c9e856f46e8dbfb0b7bf60693d0c8bad8ebb32b3a23b47d24bb5c330f",
+  "controller_sha256": "d5017c270e581e5c53f5563e405f84fa841f7765df88c4a2e5de5fff91fd3ea7",
+  "pds_shell_sha256": "32983ea8e0cf0498481e5ae8ff75fcdd4ee329f2efb83dea9d8eee85583931cc",
+  "actual_route_constraint_sha256": {
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-priority.rcf": "3a7a8597374da9e0299091875ee768c14766540449f3b3e172ec4d879bc2549a",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-placement.pcf": "6c763507cc2684248c3f738022c8e6fb0bbc31260b020ea88d51bc8095ca37bc"
+  },
+  "fdc_sha256": "62cc27587ff49883faf8f40ceeb640fc4a4e9f1b16ca3102ff40c62402c4b688",
+  "snapshot_sha256": "e029712ce824cb941e85099e11f97e5a99fd6357de5ebb42f803ff42e385a8a2",
+  "native_map_adf_sha256": "8c3389c35620b8fa7b0feec012187027b5109aecaef9db7e90dbd285a5ad1d1d",
+  "launch_memory_receipt_sha256": "a60e64a09b51eec045f1937259a48d3ed5056b8270744c1eaade3ad8ad0a8e40",
+  "single_job_timeout_seconds": 14400
+}

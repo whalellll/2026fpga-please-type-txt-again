@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accelerator Model Compatibility"
+  short_description: "Help with Accelerator Model Compatibility tasks"
+  default_prompt: "Use $accelerator-model-compatibility to inspect the current project, apply its constraints, and produce verifiable changes and evidence."

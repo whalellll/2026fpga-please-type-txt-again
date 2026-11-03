@@ -1,0 +1,286 @@
+
+SoC V4.2 bootloader - RV32IMA/Sv32 / DDR3 / RGMII / Flash / native MicroSD
+Linux entry must be OpenSBI, not the kernel directly. Type help.
+Automatic MicroSD boot in 2 seconds; press any key to stop...
+MicroSD Linux boot
+Mounted FAT32 volume, cluster bytes=32768
+Waiting for DDR training...
+DDR startup delay complete
+Loading fw_jump.bin to 0x18000000, bytes=264680
+MicroSD payload DMA active
+ done, 31 ms, 8415 KiB/s
+Loading Image to 0x00400000, bytes=7480792
+MicroSD payload DMA active
+....... done, 787 ms, 9285 KiB/s
+Loading rootfs.cpio to 0x03000000, bytes=8445440
+MicroSD payload DMA active
+........ done, 926 ms, 8912 KiB/s
+Loading cpu_v2.dtb to 0x1a000000, bytes=2423
+MicroSD payload DMA active
+ done, 1 ms, 3104 KiB/s
+Loading pikafish.pff to 0x10000000, bytes=68122688
+MicroSD payload DMA active
+................................................................ done, 7726 ms, 8610 KiB/s
+Loading pikafish.atk to 0x15000000, bytes=34603072
+MicroSD payload DMA active
+................................. done, 3901 ms, 8663 KiB/s
+PFF1 DMA preload ready: physical=0x10000000 uncached=0x90000000 bytes=68122688
+PFA1 DMA preload ready: physical=0x15000000 uncached=0x95000000 bytes=34603072
+MicroSD total: bytes=118919095, 13433 ms, 8645 KiB/s
+Starting OpenSBI at 0x18000000
+
+OpenSBI v1.3
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|___/_____|
+        | |
+        |_|
+
+Platform Name             : PG2L100H V3 Linux HID+XQ
+Platform Features         : medeleg
+Platform HART Count       : 1
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer @ 49500000Hz
+Platform Console Device   : litex_uart
+Platform HSM Device       : ---
+Platform PMU Device       : ---
+Platform Reboot Device    : ---
+Platform Shutdown Device  : ---
+Platform Suspend Device   : ---
+Platform CPPC Device      : ---
+Firmware Base             : 0x18000000
+Firmware Size             : 314 KB
+Firmware RW Offset        : 0x40000
+Firmware RW Size          : 58 KB
+Firmware Heap Offset      : 0x46000
+Firmware Heap Size        : 34 KB (total), 2 KB (reserved), 8 KB (used), 23 KB (free)
+Firmware Scratch Size     : 4096 B (total), 452 B (used), 3644 B (free)
+Runtime SBI Version       : 1.0
+
+Domain0 Name              : root
+Domain0 Boot HART         : 0
+Domain0 HARTs             : 0*
+Domain0 Region00          : 0x02000000-0x0200ffff M: (I,R,W) S/U: ()
+Domain0 Region01          : 0x18040000-0x1804ffff M: (R,W) S/U: ()
+Domain0 Region02          : 0x18000000-0x1803ffff M: (R,X) S/U: ()
+Domain0 Region03          : 0x00000000-0xffffffff M: (R,W,X) S/U: (R,W,X)
+Domain0 Next Address      : 0x00400000
+Domain0 Next Arg1         : 0x1a000000
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+Domain0 SysSuspend        : yes
+
+Boot HART ID              : 0
+Boot HART Domain          : root
+Boot HART Priv Version    : unknown
+Boot HART Base ISA        : rv32ima
+Boot HART ISA Extensions  : time
+Boot HART PMP Count       : 0
+Boot HART PMP Granularity : 0
+Boot HART PMP Address Bits: 0
+Boot HART MHPM Count      : 0
+Boot HART MIDELEG         : 0x00000222
+Boot HART MEDELEG         : 0x0000b109
+[    0.000000] Linux version 5.14.0 (yuu@yuu) (riscv64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #1 SMP Tue Sep 29 17:50:33 CST 2026
+[    0.000000] OF: fdt: Ignoring memory range 0x0 - 0x400000
+[    0.000000] Machine model: PG2L100H V3 Linux HID+XQ
+[    0.000000] earlycon: liteuart0 at MMIO 0x1fe001e0 (options '115200n8')
+[    0.000000] printk: bootconsole [liteuart0] enabled
+[    0.000000] OF: reserved mem: OVERLAP DETECTED!
+[    0.000000] mmode_resv1@18000000 (0x18000000--0x18040000) overlaps with opensbi-high@18000000 (0x18000000--0x18100000)
+[    0.000000] OF: reserved mem: OVERLAP DETECTED!
+[    0.000000] opensbi-high@18000000 (0x18000000--0x18100000) overlaps with mmode_resv0@18040000 (0x18040000--0x18050000)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000400000-0x000000001bffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000400000-0x0000000000ffffff]
+[    0.000000]   node   0: [mem 0x0000000001000000-0x00000000010fffff]
+[    0.000000]   node   0: [mem 0x0000000001100000-0x0000000001ffffff]
+[    0.000000]   node   0: [mem 0x0000000002000000-0x000000000200ffff]
+[    0.000000]   node   0: [mem 0x0000000002010000-0x000000000fffffff]
+[    0.000000]   node   0: [mem 0x0000000010000000-0x00000000171fffff]
+[    0.000000]   node   0: [mem 0x0000000017200000-0x0000000017ffffff]
+[    0.000000]   node   0: [mem 0x0000000018000000-0x00000000180fffff]
+[    0.000000]   node   0: [mem 0x0000000018100000-0x000000001affffff]
+[    0.000000]   node   0: [mem 0x000000001b000000-0x000000001b5fffff]
+[    0.000000]   node   0: [mem 0x000000001b600000-0x000000001bffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000400000-0x000000001bffffff]
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10003
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI v0.2 HSM extension detected
+[    0.000000] riscv: ISA extensions aim
+[    0.000000] riscv: ELF capabilities aim
+[    0.000000] percpu: Embedded 10 pages/cpu s19532 r0 d21428 u40960
+[    0.000000] pcpu-alloc: s19532 r0 d21428 u40960 alloc=10*4096
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 112776
+[    0.000000] Kernel command line: console=liteuart0 earlycon root=/dev/ram0 loglevel=8 clocksource=jiffies
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Sorting __ex_table...
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 309576K/454656K available (5647K kernel code, 573K rwdata, 865K rodata, 215K init, 223K bss, 145080K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 32 local interrupts mapped
+[    0.000000] random: get_random_bytes called from start_kernel+0x488/0x5fc with crng_init=0
+[    0.000000] riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0xb6a8d2541, max_idle_ns: 440795202836 ns
+[    0.000209] sched_clock: 64 bits at 49MHz, resolution 20ns, wraps every 4398046511094ns
+[    0.029131] Console: colour dummy device 80x25
+[    0.042622] Calibrating delay loop (skipped), value calculated using timer frequency.. 99.00 BogoMIPS (lpj=198000)
+[    0.070952] pid_max: default: 32768 minimum: 301
+[    0.127216] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.146467] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.478472] ASID allocator using 9 bits (512 entries)
+[    0.526344] rcu: Hierarchical SRCU implementation.
+[    0.627270] smp: Bringing up secondary CPUs ...
+[    0.640772] smp: Brought up 1 node, 1 CPU
+[    0.733394] devtmpfs: initialized
+[    1.206854] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    1.231432] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    1.360807] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    3.885152] pps_core: LinuxPPS API ver. 1 registered
+[    3.898649] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    3.924693] PTP clock support registered
+[    3.985712] FPGA manager framework
+[    6.785288] NET: Registered PF_INET protocol family
+[    6.822355] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    6.955495] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+[    6.978588] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    6.999633] TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    7.020046] TCP: Hash tables configured (established 4096 bind 4096)
+[    7.050992] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    7.070625] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    7.124499] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    7.485654] Unpacking initramfs...
+[    7.961980] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[   11.541007] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[   11.558599] io scheduler mq-deadline registered
+[   11.569701] io scheduler kyber registered
+[   47.303160] 1fe001e0.serial: ttyLXU0 at MMIO 0x0 (irq = 0, base_baud = 0) is a liteuart
+[   47.326155] printk: console [liteuart0] enabled
+[   47.326155] printk: console [liteuart0] enabled
+[   47.344748] printk: bootconsole [liteuart0] disabled
+[   47.344748] printk: bootconsole [liteuart0] disabled
+[   50.265489] pango-mac 1fe10000.mac-accel: dense MAC scheduler ready: /dev/pango-mac0, 8 private contexts of 1048576 bytes
+[   50.405543] i2c /dev entries driver
+[   50.969264] NET: Registered PF_INET6 protocol family
+[   52.121906] Segment Routing with IPv6
+[   52.144499] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[   52.350747] NET: Registered PF_PACKET protocol family
+[   55.331497] Freeing initrd memory: 8244K
+[   55.463263] Freeing unused kernel image (initmem) memory: 212K
+[   55.477097] Kernel memory protection not selected by kernel config.
+[   55.492333] Run /init as init process
+[   55.504523]   with arguments:
+[   55.512119]     /init
+[   55.519314]   with environment:
+[   55.527519]     HOME=/
+[   55.535057]     TERM=linux
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving random seed: [   91.489313] random: dd: uninitialized urandom read (512 bytes read)
+OK
+Starting network: OK
+Starting full Pikafish GUI
+Full Pikafish GUI launched: pid=64
+[  106.399463] Linux userspace initialized; root shell next
+
+LINUX_BOOT_TO_SHELL_SECONDS=106.399463
+
+
+/ # XQ LINUX HARDWARE READY; drawing initial framebuffer
+XQ LINUX ENGINE DIRECT START
+XQ LINUX GUI READY; full Pikafish and official NNUE loading
+XQ LINUX INPUT READY; engine loading asynchronously
+XQ LINUX ENGINE INIT stage=attacks-map-start elapsed_ms=0 delta_ms=0
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=9488
+XQ LINUX ENGINE INIT stage=attacks-map-ready elapsed_ms=140 delta_ms=140
+XQ LINUX ENGINE INIT stage=attacks-ready elapsed_ms=6012 delta_ms=5872
+XQ LINUX ENGINE INIT stage=position-ready elapsed_ms=6052 delta_ms=40
+XQ LINUX ENGINE INIT stage=constructor-start elapsed_ms=6084 delta_ms=32
+info string PIKAFISH_PFF1_VIEW_MMAP physical=268435456 bytes=68122688 cacheable=1
+info string PIKAFISH_PFF1_STAGE stage=source-ready elapsed_ms=208
+info string PIKAFISH_PFF1_STAGE stage=header-ready elapsed_ms=272
+info string PIKAFISH_PFF1_STAGE stage=layout-ready elapsed_ms=360
+info string PIKAFISH_PFF1_LOAD bytes=68122688
+info string PIKAFISH_PFF1_FEATURE_CRC_SKIPPED bytes=67548352 reason=sd-crc16-host-verified
+info string PIKAFISH_PFF1_STAGE stage=feature-crc-skipped elapsed_ms=432
+info string PIKAFISH_PFF1_VIEW_READY direct_bytes=67548352 mlp_direct_bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=view-bind-ready elapsed_ms=492
+info string PIKAFISH_PFF1_SECTION_READY name=MLPS bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-crc-ready elapsed_ms=6880
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=0 bytes=35204
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=1 bytes=70408
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=2 bytes=105612
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=3 bytes=140816
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=4 bytes=176020
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=11288
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=5 bytes=211224
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=6 bytes=246428
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=7 bytes=281632
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=8 bytes=316836
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=9 bytes=352040
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=10 bytes=387244
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=11 bytes=422448
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=12 bytes=457652
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=13 bytes=492856
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=14 bytes=528060
+info string PIKAFISH_PFF1_MLPS_STACK_READY stack=15 bytes=563264
+info string PIKAFISH_PFF1_STAGE stage=mlps-ready elapsed_ms=11016
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=13088
+PIKAFISH_MAC_RUNTIME_READY id=4d41434b version=00020100 poll_limit=1000000 ddr=0x1b000000
+PIKAFISH_STAGEB_ACCEL_READY version=00020000 stacks=16 mlps_crc32=8c4b6711 pfsb_crc32=7261d3e8 model=2f6c8ed9 mode=1 resident=loaded copied_bytes=593920
+info string PIKAFISH_PFF1_STAGE stage=stageb-prepare elapsed_ms=39224
+info string PIKAFISH_PFF1_READY bytes=68122688
+info string PIKAFISH_PFF1_STAGE stage=ready elapsed_ms=39288
+XQ LINUX ENGINE DETAIL stage=constructor-body-start
+XQ LINUX ENGINE DETAIL stage=resize-start
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-start bytes=41230336
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=14888
+XQ LINUX ENGINE DETAIL stage=shared-histories-alloc-ready bytes=41230336
+XQ LINUX ENGINE DETAIL stage=thread-create-start thread=0
+XQ LINUX ENGINE DETAIL stage=thread-create-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-start
+XQ LINUX ENGINE DETAIL stage=worker-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=worker-local-history-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-pawn-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=shared-continuation-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=local-correction-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-start thread=0
+XQ LINUX ENGINE DETAIL stage=nnue-cache-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=worker-clear-ready thread=0
+XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-ready
+XQ LINUX ENGINE DETAIL stage=tt-alloc-start mib=8
+XQ LINUX ENGINE WAIT phase=nnue mouse_frames=0 video_frames=16688
+XQ LINUX ENGINE DETAIL stage=tt-alloc-ready bytes=8388608
+XQ LINUX ENGINE DETAIL stage=tt-fresh-zero-skip
+XQ LINUX ENGINE DETAIL stage=resize-ready
+XQ LINUX ENGINE INIT stage=constructor-ready elapsed_ms=63844 delta_ms=57760
+XQ LINUX ENGINE INIT stage=options-ready elapsed_ms=63964 delta_ms=120
+XQ LINUX ENGINE INIT stage=verify-start elapsed_ms=64012 delta_ms=48
+info string NNUE evaluation using pff1-view:0x10000000:68122688 (0MiB, (62083, 1024, 32, 32, 1))
+info string Network replica 1: Local memory.
+XQ LINUX ENGINE INIT stage=verify-ready elapsed_ms=64252 delta_ms=240
+XQ LINUX ENGINE DIRECT CORE READY
+XQ LINUX PIKAFISH PFF1 READY
+XQ LINUX ENGINE DIRECT OK
+XQ LINUX PIKAFISH READY

@@ -1,0 +1,12 @@
+{
+  "source_filename": "NotoSerifSC-VF.ttf",
+  "source_family": "Noto Serif SC",
+  "source_sha256": "a4aed9985a5916fbf6690456f8732a9fccd517938e353165d4142b4f11a39280",
+  "copyright": "© 2017-2023 Adobe (http://www.adobe.com/).",
+  "weight": 550,
+  "subset_family": "Xiangqi Piece Serif",
+  "fonttools_version": "4.60.1",
+  "subset_sha256": "95838d02f8e469cb84e517d61365dae2b0c3ac9449caed39e2722ee35011ce7b",
+  "license": "SIL Open Font License 1.1",
+  "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Serif/LICENSE"
+}

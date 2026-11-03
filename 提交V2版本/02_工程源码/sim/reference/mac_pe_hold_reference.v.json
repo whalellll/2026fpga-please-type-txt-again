@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "source": "G:\\fpga\\c80p9\\rtl\\mac_accel\\MacAccelCore.v",
+  "native_run": "4839c9437eb64c2886a0c64db27e5d48",
+  "raw_sha256": "930e1d913ffa911c4757ab719152808eb1b44add2e8a4ff48725a429d4053a6c",
+  "gzip_sha256": "71df4479aa83638a6efbd79c18f1ded41f439cb736d38ec293aeaffef4e049cb",
+  "scope": "Frozen pre-change functional oracle; native STA failed, no board acceptance."
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "isa": "rv32ima_zicsr_zifencei_zbc",
+  "zbc": true,
+  "supervisor": true,
+  "architecture": {
+    "aluEntries": 4,
+    "memEntries": 2,
+    "fallbackSets": 64,
+    "fallbackHash": true,
+    "rasDepth": 2
+  },
+  "cache": {
+    "lineBytes": 32,
+    "l1Sets": 128,
+    "iWays": 2,
+    "dWays": 2,
+    "l2Sets": 512,
+    "l2Ways": 1
+  },
+  "mode": { "synthesis": true, "socProbes": false }
+}

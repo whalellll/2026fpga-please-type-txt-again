@@ -1,0 +1,25 @@
+{
+  "run_cpu_runtime_llvm.ps1": {
+    "original_sha256": "64ee4d729ec080fcb1d0ef6a25bc8789e57bf34b37e215823df345d51fbec5f2",
+    "portable_sha256": "fd7c0b0bd2aafcd501a632aaa04223cdb375a6edf6d32e723b9f70f2eba02a32"
+  },
+  "simulation_tools_llvm.ps1": {
+    "original_sha256": "af8891c4725f6ab4be85e90fa83321af9faf458b27988c4638bdaebc49769931",
+    "portable_sha256": "380403a647898244e7efd564de97a33f76a149e43b3972e9b896020ed0cd6feb"
+  },
+  "run_cpu_test_isolated.sh": {
+    "original_sha256": "b8ca8d4bbb55c76ebd1ce8b237dbc4aacb18437e67a4a8b8fd445c6fdbff82d1",
+    "portable_template_sha256": "b8ca8d4bbb55c76ebd1ce8b237dbc4aacb18437e67a4a8b8fd445c6fdbff82d1",
+    "scope": "Original qualified template; runtime adapter replaces only workspace/tool paths, never program/oracle/expected traps."
+  },
+  "generate_qualified_architecture.py": {
+    "original_sha256": "f1bc62dc9cc20755bb4d6f778a1254eee838f24cb66d8fc89681f65ca7aec712",
+    "portable_template_sha256": "f1bc62dc9cc20755bb4d6f778a1254eee838f24cb66d8fc89681f65ca7aec712",
+    "scope": "Original qualified template; runtime adapter replaces only workspace/tool paths, never program/oracle/expected traps."
+  },
+  "architecture-flow.sh": {
+    "original_sha256": "a097fdff03e0b8007a78ff880a67e9b90c3eb59a2384d9bb29ed8494c7c70722",
+    "portable_template_sha256": "a097fdff03e0b8007a78ff880a67e9b90c3eb59a2384d9bb29ed8494c7c70722",
+    "scope": "Original qualified template; runtime adapter replaces only workspace/tool paths, never program/oracle/expected traps."
+  }
+}

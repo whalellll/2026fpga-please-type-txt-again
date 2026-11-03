@@ -1,0 +1,12 @@
+
+###### DRM constraint ########
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/baseDataMem_ext/Memory/gopdrm_18k} DRM_40_0 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/histCp_ext/Memory_2/gopdrm_36k_inv} DRM_40_90 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_0_ext/Memory/gopdrm_18k} DRM_40_120 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_0_ext/Memory_1/gopdrm_18k} DRM_40_30 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_1_ext/Memory/gopdrm_18k} DRM_40_186 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_1_ext/Memory_1/gopdrm_18k} DRM_40_60 DRM0
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_2_ext/Memory/gopdrm_18k} DRM_40_120 DRM1
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_2_ext/Memory_1/gopdrm_18k} DRM_40_60 DRM1
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_3_ext/Memory/gopdrm_18k} DRM_40_186 DRM1
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_3_ext/Memory_1/gopdrm_18k} DRM_40_30 DRM1

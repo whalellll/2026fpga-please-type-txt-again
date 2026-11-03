@@ -1,0 +1,10 @@
+{
+  "status": "UNCHANGED_ACCEPTED_DIAGNOSTIC_PAYLOAD_REUSED_FOR_FRESH_JOINT_EXECUTION",
+  "files_sha256": {
+    "probe.c": "16b50c569b393cfb9ef0ff558f7cb55e00c8b021939eeccc4adb9b1bf17fca36",
+    "probe.stripped": "2edc089f075b260a8c2342c6c334aff0b305626c3d044a1c87f44b742e723538",
+    "probe.stripped.gz": "5c29af6d3c05762fe058ccf1a2d0d36a59eba5f17fda20490f3fa569f7a3aae8"
+  },
+  "prior_upload_receipt_sha256": "b08763cb50dc95b5089106b3fb3988df95b177198549bf676701ac74a1c8abbf",
+  "board_executed": false
+}

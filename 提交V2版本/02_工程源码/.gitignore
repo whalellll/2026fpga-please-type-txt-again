@@ -1,0 +1,142 @@
+# Generated caches and local diagnostics
+.codex_sparse_work/
+log/
+debug/
+**/logbackup/
+**/__pycache__/
+*.py[cod]
+*.log
+*.lock
+*.elf
+!/artifacts/bootloader.elf
+!/artifacts/mac_selftest.elf
+!/artifacts/mac_benchmark.elf
+!/artifacts/xiangqi_sparse_eval_selftest.elf
+!/artifacts/xiangqi_fb_demo.elf
+!/artifacts/xiangqi_sd.elf
+!/artifacts/pf_ft_stage_a_board.elf
+!/artifacts/pf_mlp_stage_b_board.elf
+*.map
+*.o
+*.obj
+*.vvp
+*.part
+*.disasm.txt
+*.size.txt
+artifacts/bootloader_obj/
+sim/linux_capability.hex
+artifacts/selftest/
+artifacts/SHA256SUMS.txt
+artifacts/hello.bin
+artifacts/hello.build.json
+artifacts/hdmi_header_preview.png
+artifacts/AllReport.*
+linux/boot/soc.decoded.dts
+scripts/pds_*_run.tcl
+
+# Keep the portable GUI project; databases are rebuilt from Tcl + FDC.
+# NNUE/YOLO DDR and timing constraint experiments are retained as sources.
+/pds/*
+!/pds/soc.tcl
+!/pds/soc_post_synth.tcl
+!/pds/soc.fdc
+!/pds/ddr3_test.rcf
+!/pds/soc_gui.pds
+!/pds/audit_cpu_sys_cdc_ads.py
+!/pds/nnue_ddr_*
+!/pds/yolo_*
+
+# Camera files belong in user data directories.
+**/CMOS2_*.png
+**/CMOS2_*.json
+**/.camera_*.rgb565.part
+IMG[0-9][0-9][0-9][0-9][0-9].PNG
+IMG[0-9][0-9][0-9][0-9][0-9].JSON
+IMG[0-9][0-9][0-9][0-9][0-9].TMP
+JSN[0-9][0-9][0-9][0-9][0-9].TMP
+
+# Reproducible Pikafish cross-build staging (final binaries live in artifacts/).
+build/
+sw/*/build/
+artifacts/pikafish-reference-x86_64
+
+# Local Linux memory-layout and SD bring-up probe outputs
+artifacts/pff1-linux-probe
+artifacts/vision-model-*/**
+!artifacts/vision-model-*/manifest.json
+# R1, like R2, is an immutable external training delivery. Keep its identity,
+# not model tensors, dumps or caches, in the source checkpoint.
+artifacts/board_detect_v2_round1/**
+!artifacts/board_detect_v2_round1/manifest.json
+# The adapter is engineering source, not a training-model payload/cache.
+!artifacts/vision-model-20261020-adapter/
+!artifacts/vision-model-20261020-adapter/*.py
+!artifacts/vision-model-20261020-adapter/*.ps1
+!artifacts/vision-model-20261020-adapter/*.sh
+!artifacts/vision-model-20261020-adapter/*.json
+!artifacts/vision-model-20261020-adapter/*.txt
+!artifacts/vision-model-20261020-adapter/*.md
+!artifacts/vision-model-20261020-adapter/runtime/
+!artifacts/vision-model-20261020-adapter/runtime/**
+!artifacts/vision-model-20261020-adapter/candidates/
+!artifacts/vision-model-20261020-adapter/candidates/**/
+!artifacts/vision-model-20261020-adapter/candidates/**/registration.json
+!artifacts/vision-model-20261020-adapter/evaluation/
+!artifacts/vision-model-20261020-adapter/evaluation/*.py
+!artifacts/vision-model-20261020-adapter/geometry/
+!artifacts/vision-model-20261020-adapter/geometry/*.py
+!artifacts/vision-model-20261020-adapter/label-policy-user-original-game3-20261020/
+!artifacts/vision-model-20261020-adapter/label-policy-user-original-game3-20261020/*.json
+!artifacts/vision-model-20261020-adapter/geometry_fallback/
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/*.py
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/*.c
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/*.h
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/*.json
+!artifacts/vision-model-20261020-adapter/geometry_fallback/**/*.tsv
+/artifacts/Picture_Linux_Build_*.zip
+/artifacts/Picture_Linux_Build_*.zip.sha256.txt
+/artifacts/Picture_SD_Candidate_*.zip
+/artifacts/Picture_SD_Candidate_*.zip.sha256.txt
+
+# Compact, bounded Picture UART receipts are part of the checkpoint evidence.
+!/docs/validation/picture-board-20261017/*.log
+# Bounded Picture receipts keep their original names for hash/provenance links.
+!/docs/validation/picture-*/**/*.log
+# Preserve original raw receipts locally; publish redacted copies at closeout.
+/docs/validation/picture-background-board-20261019/gui-stub-01.log
+/docs/validation/picture-background-board-20261019/user-assisted-capture-01.log
+/docs/validation/picture-roi-board-20261020/roi-preview-captures-01.log
+# Local host-oracle libraries are reproducible caches, not validation sources.
+/docs/validation/picture-p21-runtime-20261020/**/*.so
+# Training-set predictions are evaluation evidence, not camera captures.
+!/docs/validation/picture-p20-*/**/predictions/IMG[0-9][0-9][0-9][0-9][0-9].json
+# User-authorized r12 formal acceptance annotations, without embedded photos.
+!/docs/validation/picture-r12-engineering-20261022/truth_v2/IMG[0-9][0-9][0-9][0-9][0-9].json
+artifacts/rootfs-layout-probe.cpio
+artifacts/sd_rootfs_crc_test.bin
+artifacts/sd_rootfs_crc_test.elf
+artifacts/sd_rootfs_crc_test.map
+
+# Previously tracked release evidence must not be hidden by generic suffix rules.
+!/artifacts/SHA256SUMS.txt
+!/artifacts/board_pikafish_stageb_golden.log
+!/artifacts/xiangqi_hdmi.disasm.txt
+!/artifacts/xiangqi_hdmi.map
+!/artifacts/xiangqi_hdmi.size.txt
+!/artifacts/xiangqi_sd.disasm.txt
+!/artifacts/xiangqi_sd.map
+!/artifacts/xiangqi_sd.size.txt
+!/vision/evidence/conv_array2_banked_board_20261001.log
+!/vision/evidence/conv_array2_banked_cram_20261001.log
+!/vision/evidence/conv_array2_banked_linux_20261001.log
+!/vision/evidence/stage2_compute_board_20260924.log
+!/vision/evidence/stage2_delivery_gui_board_accept_20260929.log
+!/vision/evidence/stage2_delivery_gui_boot_20260929.log
+!/vision/evidence/stage2_delivery_gui_idle_20260929.log
+!/vision/evidence/stage2_delivery_gui_pikafish_20260929.log
+!/vision/evidence/stage2_t5_board_accept_20260929.log
+!/vision/evidence/stage2_t5_gui_idle_20260929.log
+!/vision/evidence/stage2_t5_pikafish_20260929.log
+!/vision/evidence/trained_conv_tile_board_sd_accept_20260930.log
+!/vision/evidence/trained_conv_tile_cram_program_20260930.log

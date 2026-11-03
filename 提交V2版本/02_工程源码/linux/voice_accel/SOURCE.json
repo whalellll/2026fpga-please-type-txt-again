@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Software intake only; no board or hardware acceptance",
+  "sources": [
+    {
+      "target": "linux/voice_accel/pango_voice_uapi.h",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/audio/pango_voice_uapi.h",
+      "imported_sha256": "7102f768e8f060452824cb2bd14afdc08231c68c4ba396025ce1ce6a47997fda"
+    },
+    {
+      "target": "linux/voice_accel/kernel/pango_voice.c",
+      "source_ref": "127ff9a5b517f0f298ab91492d07ef2a1cf44f5b",
+      "source_path": "linux/audio/kernel/pango_voice.c",
+      "imported_sha256": "49ba80768b962bcde1165597efee2769be3f74d8363b945c2530e0f218a0d04c"
+    }
+  ]
+}

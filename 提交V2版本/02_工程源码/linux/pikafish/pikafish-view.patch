@@ -1,0 +1,169 @@
+diff --git a/src/nnue/nnue_accumulator.h b/src/nnue/nnue_accumulator.h
+--- a/src/nnue/nnue_accumulator.h
++++ b/src/nnue/nnue_accumulator.h
+@@ -85,8 +85,12 @@ struct AccumulatorCaches {
+ 
+         // To initialize a refresh entry, we set all its bitboards empty,
+         // so we put the biases in the accumulation, without any weights on top
+-        void clear(const std::array<BiasType, L1>& biases) {
+-            accumulation = biases;
++        template<typename BiasStorage>
++        void clear(const BiasStorage& biases) {
++            if (biases.data() != nullptr)
++                std::memcpy(accumulation.data(), biases.data(), sizeof(accumulation));
++            else
++                accumulation.fill(0);
+             std::memset(reinterpret_cast<std::byte*>(this) + offsetof(Entry, psqtAccumulation), 0,
+                         sizeof(Entry) - offsetof(Entry, psqtAccumulation));
+         }
+diff --git a/src/nnue/nnue_feature_transformer.h b/src/nnue/nnue_feature_transformer.h
+--- a/src/nnue/nnue_feature_transformer.h
++++ b/src/nnue/nnue_feature_transformer.h
+@@ -27,6 +27,9 @@
+ #include <iterator>
+ 
+ #include "../position.h"
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++    #include "../pikafish_pff1_view.h"
++#endif
+ #include "../types.h"
+ #include "nnue_accumulator.h"
+ #include "nnue_architecture.h"
+@@ -89,11 +92,29 @@ class FeatureTransformer {
+     static constexpr IndexType ThreatWeightSize      = ThreatInputDimensions * HalfDimensions;
+     static constexpr IndexType ThreatPsqtWeightSize  = ThreatInputDimensions * PSQTBuckets;
+ 
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++    using BiasesArray       = Pff1ArrayView<BiasType, HalfDimensions>;
++    using WeightArray       = Pff1ArrayView<WeightType, HalfDimensions * PsqDimensions>;
++    using ThreatWeightArray = Pff1ArrayView<ThreatWeightType, ThreatWeightSize>;
++    using PsqtWeightArray   = Pff1ArrayView<PSQTWeightType, PSQTBuckets * PsqDimensions>;
++    using ThreatPsqtArray   = Pff1ArrayView<PSQTWeightType, ThreatPsqtWeightSize>;
++#else
+     using BiasesArray       = std::array<BiasType, HalfDimensions>;
+     using WeightArray       = std::array<WeightType, HalfDimensions * PsqDimensions>;
+     using ThreatWeightArray = std::array<ThreatWeightType, ThreatWeightSize>;
+     using PsqtWeightArray   = std::array<PSQTWeightType, PSQTBuckets * PsqDimensions>;
+     using ThreatPsqtArray   = std::array<PSQTWeightType, ThreatPsqtWeightSize>;
++#endif
++
++    static constexpr usize BiasesBytes = HalfDimensions * sizeof(BiasType);
++    static constexpr usize WeightsBytes =
++      HalfDimensions * PsqDimensions * sizeof(WeightType);
++    static constexpr usize ThreatWeightsBytes =
++      ThreatWeightSize * sizeof(ThreatWeightType);
++    static constexpr usize PsqtWeightsBytes =
++      PSQTBuckets * PsqDimensions * sizeof(PSQTWeightType);
++    static constexpr usize ThreatPsqtWeightsBytes =
++      ThreatPsqtWeightSize * sizeof(PSQTWeightType);
+ 
+     // Size of forward propagation buffer
+     static constexpr usize BufferSize = OutputDimensions * sizeof(OutputType);
+@@ -142,19 +160,33 @@ class FeatureTransformer {
+     }
+ 
+     void permute_weights() {
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++        static_assert(PackusEpi16Order[0] == 0 && PackusEpi16Order[1] == 1
++                      && PackusEpi16Order[2] == 2 && PackusEpi16Order[3] == 3
++                      && PackusEpi16Order[4] == 4 && PackusEpi16Order[5] == 5
++                      && PackusEpi16Order[6] == 6 && PackusEpi16Order[7] == 7,
++                      "PFF1 direct view requires scalar/file lane order");
++#else
+         permute<16>(biases, PackusEpi16Order);
+         permute<8>(weights, PackusEpi16Order);
+         permute<8>(threatWeights, PackusEpi16Order);
++#endif
+     }
+ 
+     void unpermute_weights() {
++#if !defined(PIKAFISH_PFF1_DIRECT_VIEW)
+         permute<16>(biases, InversePackusEpi16Order);
+         permute<8>(weights, InversePackusEpi16Order);
+         permute<8>(threatWeights, InversePackusEpi16Order);
++#endif
+     }
+ 
+     // Read network parameters
+     bool read_parameters(std::istream& stream) {
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++        (void) stream;
++        return false;
++#else
+         read_leb_128(stream, biases);
+ 
+         read_little_endian(stream, threatWeights.data(), ThreatWeightSize);
+@@ -165,10 +197,15 @@ class FeatureTransformer {
+         permute_weights();
+ 
+         return !stream.fail();
++#endif
+     }
+ 
+     // Write network parameters
+     bool write_parameters(std::ostream& stream) const {
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++        (void) stream;
++        return false;
++#else
+         std::unique_ptr<FeatureTransformer> copy = std::make_unique<FeatureTransformer>(*this);
+ 
+         copy->unpermute_weights();
+@@ -183,17 +220,33 @@ class FeatureTransformer {
+         write_leb_128<PSQTWeightType>(stream, copy->psqtWeights);
+ 
+         return !stream.fail();
++#endif
+     }
+ 
+     usize get_content_hash() const {
+         usize h = 0;
+ 
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++        if (biases.data() == nullptr || weights.data() == nullptr
++            || psqtWeights.data() == nullptr || threatWeights.data() == nullptr
++            || threatPsqtWeights.data() == nullptr)
++            return 0;
++        hash_combine(h, hash_bytes(reinterpret_cast<const char*>(biases.data()), BiasesBytes));
++        hash_combine(h, hash_bytes(reinterpret_cast<const char*>(weights.data()), WeightsBytes));
++        hash_combine(h, hash_bytes(reinterpret_cast<const char*>(psqtWeights.data()),
++                                   PsqtWeightsBytes));
++        hash_combine(h, hash_bytes(reinterpret_cast<const char*>(threatWeights.data()),
++                                   ThreatWeightsBytes));
++        hash_combine(h, hash_bytes(reinterpret_cast<const char*>(threatPsqtWeights.data()),
++                                   ThreatPsqtWeightsBytes));
++#else
+         hash_combine(h, get_raw_data_hash(biases));
+         hash_combine(h, get_raw_data_hash(weights));
+         hash_combine(h, get_raw_data_hash(psqtWeights));
+ 
+         hash_combine(h, get_raw_data_hash(threatWeights));
+         hash_combine(h, get_raw_data_hash(threatPsqtWeights));
++#endif
+ 
+        hash_combine(h, get_hash_value());
+ 
+diff --git a/src/shm.h b/src/shm.h
+--- a/src/shm.h
++++ b/src/shm.h
+@@ -528,6 +528,12 @@ struct SystemWideSharedConstant {
+     // Content is addressed by its hash. An additional discriminator can be added to account for differences
+     // that are not present in the content, for example NUMA node allocation.
+     SystemWideSharedConstant(const T& value, usize discriminator = 0) {
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++        // Direct-view objects contain process-local mmap pointers and always
++        // use the local fallback, so hashing their large payload is redundant.
++        (void) discriminator;
++        backend = SharedMemoryBackendFallback<T>("", value);
++#else
+         usize content_hash    = std::hash<T>{}(value);
+         usize executable_hash = hash_string(getExecutablePathHash());
+ 
+@@ -557,6 +563,7 @@ struct SystemWideSharedConstant {
+         {
+             backend = SharedMemoryBackendFallback<T>(shm_name, value);
+         }
++#endif
+     }
+ 
+     SystemWideSharedConstant(const SystemWideSharedConstant&)            = delete;

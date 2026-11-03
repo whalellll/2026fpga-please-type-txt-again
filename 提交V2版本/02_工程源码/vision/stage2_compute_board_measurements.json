@@ -1,0 +1,17 @@
+{
+  "0": {
+    "mode": "compute",
+    "input_ddr_bytes": 409600,
+    "weight_ddr_bytes": 3456,
+    "output_ddr_bytes": 409600,
+    "window_count": 25600,
+    "tap_count": 921600,
+    "stall_cycles": 14119561,
+    "cycles": 15466918,
+    "bitstream_sha256": "56ac5655b1923980df87120e84df4f4ce318caab6ef4b1ae1da1eb0a85706a92",
+    "test_image_sha256": "108a19c09158266ec4fda97db397b3b18c3e61a3030fc8d2bfbfe8a0908ee2a3",
+    "marker": "MAC_CONV_FULL_FIRST_LAYER_PASS",
+    "crc32": "eb240272",
+    "board_log": "vision/evidence/stage2_compute_board_20260924.log"
+  }
+}

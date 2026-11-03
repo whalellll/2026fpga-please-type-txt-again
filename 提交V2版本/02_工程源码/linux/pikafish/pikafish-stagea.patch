@@ -1,0 +1,161 @@
+diff --git a/src/nnue/nnue_accumulator.cpp b/src/nnue/nnue_accumulator.cpp
+index 3ee7c48..b8916fb 100644
+--- a/src/nnue/nnue_accumulator.cpp
++++ b/src/nnue/nnue_accumulator.cpp
+@@ -27,6 +27,10 @@
+ #include "nnue_feature_transformer.h"  // IWYU pragma: keep
+ #include "simd.h"
+ 
++#if defined(PIKAFISH_STAGEA_ACCEL)
++    #include "../pikafish_stagea_accel.h"
++#endif
++
+ namespace Stockfish::Eval::NNUE {
+ 
+ using namespace SIMD;
+@@ -205,6 +209,35 @@ namespace {
+ 
+ constexpr IndexType Dimensions = FeatureTransformer::OutputDimensions;
+ 
++#if defined(PIKAFISH_STAGEA_ACCEL)
++
++struct StageATerms {
++    std::array<const i8*, StageAAccel::MaxTerms> rows{};
++    std::array<i8, StageAAccel::MaxTerms>        coefficients{};
++    usize                                        count = 0;
++
++    template<typename List>
++    bool append(const List& list, const i8* weights, i8 coefficient) {
++        if ((coefficient != 1 && coefficient != -1)
++            || count + static_cast<usize>(list.size()) > StageAAccel::MaxTerms)
++            return false;
++        for (int i = 0; i < list.ssize(); ++i)
++        {
++            rows[count] = weights + static_cast<usize>(list[i]) * Dimensions;
++            coefficients[count] = coefficient;
++            ++count;
++        }
++        return true;
++    }
++};
++
++bool apply_stage_a(const i16* base, i16* out, const StageATerms& terms) {
++    return StageAAccel::apply(base, out, terms.rows.data(), terms.coefficients.data(),
++                              terms.count);
++}
++
++#endif
++
+ #ifdef USE_RVV
+ 
+ struct Tiling {
+@@ -448,22 +481,33 @@ void apply_combined(Color                              perspective,
+     const auto& fromPsqtAcc = from.psqtAccumulation[perspective];
+     auto&       toPsqtAcc   = to.psqtAccumulation[perspective];
+ 
+-    Tile     acc;
+-    PsqtTile psqt;
+-
+-    for (IndexType j = 0; j < Dimensions; increment_index(j))
++    bool stageAHandled = false;
++#if defined(PIKAFISH_STAGEA_ACCEL)
++    StageATerms terms;
++    if (terms.append(psqRemoved, featureTransformer.weights.data(), -1)
++        && terms.append(psqAdded, featureTransformer.weights.data(), +1)
++        && terms.append(thrRemoved, featureTransformer.threatWeights.data(), -1)
++        && terms.append(thrAdded, featureTransformer.threatWeights.data(), +1))
++        stageAHandled = apply_stage_a(fromAcc.data(), toAcc.data(), terms);
++#endif
++    if (!stageAHandled)
+     {
+-        acc = load_tile(j, fromAcc.data());
++        Tile acc;
++        for (IndexType j = 0; j < Dimensions; increment_index(j))
++        {
++            acc = load_tile(j, fromAcc.data());
+ 
+-        acc = apply_psq_features<-1, true>(j, acc, psqRemoved, featureTransformer);
+-        acc = apply_psq_features<+1, true>(j, acc, psqAdded, featureTransformer);
++            acc = apply_psq_features<-1, true>(j, acc, psqRemoved, featureTransformer);
++            acc = apply_psq_features<+1, true>(j, acc, psqAdded, featureTransformer);
+ 
+-        acc = apply_threat_features<-1>(j, acc, thrRemoved, featureTransformer);
+-        acc = apply_threat_features<+1>(j, acc, thrAdded, featureTransformer);
++            acc = apply_threat_features<-1>(j, acc, thrRemoved, featureTransformer);
++            acc = apply_threat_features<+1>(j, acc, thrAdded, featureTransformer);
+ 
+-        store_tile(j, toAcc.data(), acc);
++            store_tile(j, toAcc.data(), acc);
++        }
+     }
+ 
++    PsqtTile psqt;
+     for (IndexType j = 0; j < PSQTBuckets; increment_psqt_index(j))
+     {
+         psqt = load_psqt(j, fromPsqtAcc.data());
+@@ -725,23 +769,57 @@ void update_accumulator_refresh_cache(Color                     perspective,
+ 
+     accumulator.computed[perspective] = true;
+ 
+-    Tile     acc;
+-    PsqtTile psqt;
+-
+-    for (IndexType j = 0; j < Dimensions; increment_index(j))
++#if defined(PIKAFISH_STAGEA_ACCEL)
++    bool        cacheHandled = false;
++    StageATerms cacheTerms;
++    if (cacheTerms.append(removed, featureTransformer.weights.data(), -1)
++        && cacheTerms.append(added, featureTransformer.weights.data(), +1))
++        cacheHandled =
++          apply_stage_a(entry.accumulation.data(), entry.accumulation.data(), cacheTerms);
++    if (!cacheHandled)
+     {
+-        acc = load_tile(j, entry.accumulation.data());
++        Tile acc;
++        for (IndexType j = 0; j < Dimensions; increment_index(j))
++        {
++            acc = load_tile(j, entry.accumulation.data());
++            acc = apply_psq_features<-1>(j, acc, removed, featureTransformer);
++            acc = apply_psq_features<+1>(j, acc, added, featureTransformer);
++            store_tile(j, entry.accumulation.data(), acc);
++        }
++    }
+ 
+-        acc = apply_psq_features<-1>(j, acc, removed, featureTransformer);
+-        acc = apply_psq_features<+1>(j, acc, added, featureTransformer);
++    bool        threatHandled = false;
++    StageATerms threatTerms;
++    if (threatTerms.append(active, featureTransformer.threatWeights.data(), +1))
++        threatHandled = apply_stage_a(entry.accumulation.data(),
++                                      accumulator.accumulation[perspective].data(), threatTerms);
++    if (!threatHandled)
++    {
++        Tile acc;
++        for (IndexType j = 0; j < Dimensions; increment_index(j))
++        {
++            acc = load_tile(j, entry.accumulation.data());
++            acc = apply_threat_features<+1>(j, acc, active, featureTransformer);
++            store_tile(j, accumulator.accumulation[perspective].data(), acc);
++        }
++    }
++#else
++    Tile acc;
++    for (IndexType j = 0; j < Dimensions; increment_index(j))
++    {
++        acc = load_tile(j, entry.accumulation.data());
+ 
+-        store_tile(j, entry.accumulation.data(), acc);
++        acc = apply_psq_features<-1>(j, acc, removed, featureTransformer);
++        acc = apply_psq_features<+1>(j, acc, added, featureTransformer);
++        store_tile(j, entry.accumulation.data(), acc);
+ 
+         acc = apply_threat_features<+1>(j, acc, active, featureTransformer);
+ 
+         store_tile(j, accumulator.accumulation[perspective].data(), acc);
+     }
++#endif
+ 
++    PsqtTile psqt;
+     for (IndexType j = 0; j < PSQTBuckets; increment_psqt_index(j))
+     {
+         psqt = load_psqt(j, entry.psqtAccumulation.data());

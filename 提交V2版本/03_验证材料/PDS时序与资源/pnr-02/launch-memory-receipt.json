@@ -1,0 +1,17 @@
+{
+  "stable_samples": 2,
+  "samples": [
+    {
+      "free_commit": 11610087424,
+      "commit_limit": 42604318720,
+      "free_physical": 10324279296,
+      "observed_utc": "2026-11-02T09:05:17.994624+00:00"
+    },
+    {
+      "free_commit": 11667910656,
+      "commit_limit": 42604318720,
+      "free_physical": 10347347968,
+      "observed_utc": "2026-11-02T09:05:23.667882+00:00"
+    }
+  ]
+}

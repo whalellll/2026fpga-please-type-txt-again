@@ -1,0 +1,31 @@
+--- a/lib/sbi/sbi_timer.c
++++ b/lib/sbi/sbi_timer.c
+@@ -145,7 +145,27 @@
+ 		csr_write(CSR_STIMECMP, next_event);
+ #endif
+ 	} else if (timer_dev && timer_dev->timer_event_start) {
+-		timer_dev->timer_event_start(next_event);
++		/* PG2L100H V3.5 exposes CPU cycles (59.4 MHz) through TIME, while
++		 * the physical ACLINT MTIME advances at the 49.5 MHz SYS clock.
++		 * SBI timer deadlines are in TIME units, so translate the remaining
++		 * interval at each arm rather than comparing unlike absolute counts.
++		 */
++		if (timer_dev->timer_value) {
++			u64 now_time = get_ticks();
++			u64 now_mtime = timer_dev->timer_value();
++			u64 remaining = next_event > now_time ?
++					 next_event - now_time : 0;
++			u64 mtime_delta = (remaining / 6) * 5 +
++					  (remaining % 6) * 5 / 6;
++			u64 mtime_deadline = next_event == (u64)-1 ?
++					 (u64)-1 : now_mtime + mtime_delta;
++			if (next_event != (u64)-1 &&
++			    mtime_deadline == now_mtime)
++				mtime_deadline++;
++			timer_dev->timer_event_start(mtime_deadline);
++		} else {
++			timer_dev->timer_event_start(next_event);
++		}
+ 		csr_clear(CSR_MIP, MIP_STIP);
+ 	}
+ 	csr_set(CSR_MIE, MIP_MTIP);

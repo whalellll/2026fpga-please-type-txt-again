@@ -1,0 +1,24 @@
+{
+  "status": "RAM_ONLY_ZBC_BOARD_TEST_COMPILED_NOT_EXECUTED",
+  "vectors": 1344,
+  "operations_per_vector": 3,
+  "onehot_combinations": 1024,
+  "edge_combinations": 64,
+  "random_pairs": 256,
+  "dependency_chain": 128,
+  "x0_write_cases": 1344,
+  "entry": "0x01000000",
+  "memory_region_bytes": 65536,
+  "board_accessed": false,
+  "inputs_sha256": {
+    "build.log": "0f49eb9dce5b4e3d8fe17a90487d25e4c6348157bfa36a4fd19e49114a8ca20d",
+    "build.ps1": "3849b7a939571c5a569f410f98daac11f2857d0ba666fc12995bbb8e2d83a926",
+    "link.ld": "8777929f3bc76bf83b55aee7b866d87aa8150ff6bc8cb6a01caf9ed74474187e",
+    "selftest.bin": "997f755eb18df676ad17cbb5b1bec5fd9f008d26c2aaad4ef9862c9fbc3e85fb",
+    "selftest.build.json": "04d831a7139167af06e1026d0bf19a83feadadf8ce704f7bd7481cd8bb9a53dc",
+    "selftest.c": "55ed065f2a9a3adaef6c897ec58b4a297cc98d0fef1931c71f747edebf1e2f5a",
+    "selftest.elf": "656f82432df1ea4c7665081f438929219f932dcf04e688addb967f653760124f",
+    "start.S": "d342c98a8961fc5c639c2a554fdc6803a186b820c5b095548b2e08a653124b1c"
+  },
+  "scope": "Independent Python GF(2) golden constants. Actual CLMUL/CLMULH/CLMULR, dependencies and x0 writes run on board only after predecessor completion and resource release. Build success is not an execution pass."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "profile": "cpu80_rf_baseprobe_8772706c_v1",
+  "source_native_run": "8772706c4ebe4e1fbf8363b23872f18e",
+  "source_report_sha256": "f4fd686e28f0a69e54b9dfc0fd1e8174fbf5cd78583333b6048c4fc1c19a64a2",
+  "targets": [
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_dispatch_io_robRaddr_0 [3]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_dispatch_io_robRaddr_2 [3]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3080 [1]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3090 [0]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3089",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/N3697 [3]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3100 [1]",
+    "u_cpu/u_cpu_wrapper/u_cpu/core/_N116458"
+  ]
+}

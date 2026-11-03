@@ -1,0 +1,71 @@
+diff --git a/src/nnue/network.cpp b/src/nnue/network.cpp
+--- a/src/nnue/network.cpp
++++ b/src/nnue/network.cpp
+@@ -133,6 +133,6 @@ NetworkOutput Network::evaluate(const Position&    pos,
+     const int  bucket     = PSQFeatureSet::make_layer_stack_bucket(pos);
+     const auto psqt       = featureTransformer.transform(pos, accumulatorStack, cache,
+                                                          transformedFeatures, bucket, nnzInfo);
+-    const auto positional = network[bucket].propagate(transformedFeatures, nnzInfo);
++    const auto positional = network[bucket].propagate(transformedFeatures, nnzInfo, bucket);
+     return {static_cast<Value>(psqt / OutputScale), static_cast<Value>(positional / OutputScale)};
+ }
+diff --git a/src/nnue/nnue_architecture.h b/src/nnue/nnue_architecture.h
+--- a/src/nnue/nnue_architecture.h
++++ b/src/nnue/nnue_architecture.h
+@@ -31,6 +31,10 @@
+ #include "nnue_common.h"
+ #include "nnz_helper.h"
+ 
++#if defined(PIKAFISH_STAGEB_ACCEL)
++    #include "../pikafish_stageb_accel.h"
++#endif
++
+ namespace Stockfish::Eval::NNUE {
+ 
+ // Input features used in evaluation function
+@@ -105,9 +109,18 @@ struct NetworkArchitecture {
+     }
+ 
+     i32 propagate(const TransformedFeatureType* transformedFeatures,
++                  const NNZInfo<L1>&            nnzInfo) const {
++        return propagate(transformedFeatures, nnzInfo, LayerStacks);
++    }
++
++    i32 propagate(const TransformedFeatureType* transformedFeatures,
+-                  const NNZInfo<L1>&            nnzInfo) const {
++                  const NNZInfo<L1>&            nnzInfo,
++                  IndexType                     bucket) const {
+         struct alignas(CacheLineSize) Buffer {
+             alignas(CacheLineSize) typename decltype(fc_0)::OutputBuffer fc_0_out;
++#if defined(PIKAFISH_STAGEB_ACCEL)
++            alignas(CacheLineSize) typename decltype(fc_0)::OutputBuffer fc_0_cpu;
++#endif
+             alignas(CacheLineSize) typename decltype(ac_sqr_0)::OutputType
+               concat_buffer[ceil_to_multiple<IndexType>(FC_0_OUTPUTS * 2 + FC_1_OUTPUTS * 2, 32)];
+             alignas(CacheLineSize) typename decltype(fc_1)::OutputBuffer fc_1_out;
+@@ -116,8 +125,23 @@ struct NetworkArchitecture {
+         };
+ 
+         Buffer buffer;
+-
+-        fc_0.propagate(transformedFeatures, buffer.fc_0_out, nnzInfo);
++        bool   stageBHandled = false;
++#if defined(PIKAFISH_STAGEB_ACCEL)
++        const bool stageBVerify = bucket < LayerStacks && StageBAccel::verify_mode();
++        if (bucket < LayerStacks)
++            stageBHandled = StageBAccel::fc0(bucket, transformedFeatures, buffer.fc_0_out);
++        if (stageBHandled && stageBVerify)
++        {
++            fc_0.propagate(transformedFeatures, buffer.fc_0_cpu, nnzInfo);
++            StageBAccel::verify(bucket, buffer.fc_0_out, buffer.fc_0_cpu);
++            for (IndexType lane = 0; lane < FC_0_OUTPUTS; ++lane)
++                buffer.fc_0_out[lane] = buffer.fc_0_cpu[lane];
++        }
++#else
++        (void) bucket;
++#endif
++        if (!stageBHandled)
++            fc_0.propagate(transformedFeatures, buffer.fc_0_out, nnzInfo);
+ #if defined(USE_PAIR_ACTIVATIONS)
+         ac_sqr_0.propagate_pair(buffer.fc_0_out, buffer.concat_buffer,
+                                 buffer.concat_buffer + FC_0_OUTPUTS);

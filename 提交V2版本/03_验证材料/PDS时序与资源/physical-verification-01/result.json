@@ -1,0 +1,607 @@
+{
+  "status": "PDS25_FINAL30_PAIRED_SITES_165_PINS_39_PRIORITIES_20_MAX_SKEW_READBACK_PASS_NOT_BOARD",
+  "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "pnr_adf_sha256": "267001ad9a113796a86203b107d6745d53d2cb11d4060b36b096d722016408d0",
+  "released_tage_actual_site": [
+    "DRM_40_60",
+    "DRM1"
+  ],
+  "slots_verified": 30,
+  "pins_verified": 165,
+  "priority_nets_verified": 39,
+  "max_skew_rows_verified": 20,
+  "paired_slot_aliases": [
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[2]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[3]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[4]/opit_0_L6Q",
+      "actual_export_slot": "FF3",
+      "paired_lut_slot": "FYD",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[5]/opit_0_L6Q",
+      "actual_export_slot": "FF3",
+      "paired_lut_slot": "FYD",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[6]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[7]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[8]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[9]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[10]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[11]/opit_0_L6Q",
+      "actual_export_slot": "FF3",
+      "paired_lut_slot": "FYD",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[12]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[13]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[14]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[15]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[16]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[18]/opit_0_L6Q",
+      "actual_export_slot": "FF3",
+      "paired_lut_slot": "FYD",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[20]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[21]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[22]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[23]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[26]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[28]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[29]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[30]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[17]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[19]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[24]/opit_0_L6Q",
+      "actual_export_slot": "FF1",
+      "paired_lut_slot": "FYB",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[25]/opit_0_L6Q",
+      "actual_export_slot": "FF0",
+      "paired_lut_slot": "FYA",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[27]/opit_0_L6Q",
+      "actual_export_slot": "FF2",
+      "paired_lut_slot": "FYC",
+      "primitive": "gopLUT6Q"
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[31]/opit_0_L6Q",
+      "actual_export_slot": "FF3",
+      "paired_lut_slot": "FYD",
+      "primitive": "gopLUT6Q"
+    }
+  ],
+  "alias_policy": "PDS25 exports the registered gopLUT6Q at FF0..FF3; input FY A..D names identify the corresponding paired LUT site. Require the exact final gopLUT6Q primitive and same CLM; do not apply this normalization to other cells or FFAPP slots.",
+  "export_sha256": {
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\physical-readback-01\\csr-final.pcf": "38f3c54448c713fc2ba8257ef23eab820b9e6bc35bb6008ed0533a4414d3bf51",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\physical-readback-01\\io-final.pcf": "91efd5c13e1575aba8631383eba97710af063130754cd33bba3751632a7eb04a",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\physical-readback-01\\tage-final.pcf": "8b3347ece6fac3dea0b5510315073b98c52ad50d5fc5f6114ef64964557dfe98"
+  },
+  "max_skew": [
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1206",
+        "Slack": "5.293",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.899",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1212",
+        "Slack": "5.807",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.385",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1233",
+        "Slack": "5.133",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "2.059",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1227",
+        "Slack": "3.513",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "3.679",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1218",
+        "Slack": "6.001",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.191",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1209",
+        "Slack": "5.668",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.524",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1215",
+        "Slack": "5.426",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.766",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1230",
+        "Slack": "5.280",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.912",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1224",
+        "Slack": "5.873",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.319",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "slow",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1221",
+        "Slack": "5.859",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.333",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "bcb126146867253f55b5aa559da731a445230d0fe749c3acd917dbf6280ca78b"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1206",
+        "Slack": "5.806",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.386",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1212",
+        "Slack": "6.111",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.081",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1233",
+        "Slack": "5.681",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.511",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1227",
+        "Slack": "4.576",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "2.616",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1218",
+        "Slack": "6.228",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "0.964",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1209",
+        "Slack": "5.988",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.204",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1215",
+        "Slack": "5.851",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.341",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1230",
+        "Slack": "5.720",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.472",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1224",
+        "Slack": "6.153",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.039",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    },
+    {
+      "corner": "fast",
+      "fields": {
+        "Path": "MaxSkew Path 7.192ns, Line Num 1221",
+        "Slack": "6.138",
+        "Logic Levels": "",
+        "High Fanout": "",
+        "Start Point": "",
+        "End Point": "",
+        "Launch Clock": "",
+        "Capture Clock": "",
+        "Clock Skew": "",
+        "Data Delay": "",
+        "Required Skew": "7.192",
+        "Actual Skew": "1.054",
+        "Relative Delay": "",
+        "Relative CPR": ""
+      },
+      "xml_sha256": "b8921906a81dd21d3e7229879dcc4df217d02f1667c033c894aefa42df6fe4c0"
+    }
+  ],
+  "final_sta_pass": true,
+  "board_tested": false,
+  "recorded_utc": "2026-11-02T09:20:24.927322+00:00"
+}

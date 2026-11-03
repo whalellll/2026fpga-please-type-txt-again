@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accelerator Performance"
+  short_description: "Help with Accelerator Performance tasks"
+  default_prompt: "Use $accelerator-performance to inspect the current project, apply its constraints, and produce verifiable changes and evidence."

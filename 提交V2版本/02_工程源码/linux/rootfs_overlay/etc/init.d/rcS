@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# Start every Buildroot init script in lexical order.
+for i in /etc/init.d/S??* ; do
+    [ ! -f "$i" ] && continue
+    case "$i" in
+        *.sh)
+            (
+                trap - INT QUIT TSTP
+                set start
+                . "$i"
+            )
+            ;;
+        *)
+            "$i" start
+            ;;
+    esac
+done
+unset i
+
+# Report the moment normal userspace initialisation has completed.  This SoC
+# uses jiffies as Linux's stable clocksource, so /proc/uptime can undercount
+# while the 49.5 MHz CPU is busy.  printk timestamps use the RISC-V hardware
+# time counter and are the accurate Linux-entry-to-shell measurement here.
+# BusyBox init starts the no-login root getty as soon as this script returns.
+if [ -w /dev/kmsg ]; then
+    printf '<6>Linux userspace initialized; root shell next\n' > /dev/kmsg
+    boot_line="$(dmesg | tail -n 1)"
+    boot_seconds="${boot_line#*[}"
+    boot_seconds="${boot_seconds%%]*}"
+    set -- $boot_seconds
+    boot_seconds="$1"
+elif [ -r /proc/uptime ]; then
+    IFS=' ' read -r boot_seconds unused < /proc/uptime
+fi
+if [ -n "$boot_seconds" ]; then
+    printf '\nLINUX_BOOT_TO_SHELL_SECONDS=%s\n\n' "$boot_seconds"
+fi
+unset boot_line boot_seconds unused

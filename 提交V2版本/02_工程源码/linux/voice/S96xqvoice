@@ -1,0 +1,45 @@
+#!/bin/sh
+
+PIDFILE=/run/xqvoice.pid
+
+start_voice() {
+    if [ ! -x /usr/bin/xqvoice ] || [ ! -r /opt/xqvoice/xqvoice.xqv ]; then
+        echo "XQVoice image is incomplete"
+        return 1
+    fi
+    if [ ! -c /dev/pango-audio0 ]; then
+        echo "XQVoice audio device is unavailable"
+        return 1
+    fi
+    if [ -s "$PIDFILE" ]; then
+        pid="$(cat "$PIDFILE")"
+        if kill -0 "$pid" 2>/dev/null; then
+            echo "XQVoice already running: pid=$pid"
+            return 0
+        fi
+        rm -f "$PIDFILE"
+    fi
+    /usr/bin/xqvoice /dev/pango-audio0 /opt/xqvoice/xqvoice.xqv \
+        >/dev/console 2>&1 &
+    pid=$!
+    echo "$pid" > "$PIDFILE"
+    echo "XQVoice launched: pid=$pid"
+}
+
+stop_voice() {
+    if [ ! -s "$PIDFILE" ]; then
+        return 0
+    fi
+    pid="$(cat "$PIDFILE")"
+    if kill -0 "$pid" 2>/dev/null; then
+        kill "$pid"
+    fi
+    rm -f "$PIDFILE"
+}
+
+case "$1" in
+    start) start_voice ;;
+    stop) stop_voice ;;
+    restart) stop_voice; start_voice ;;
+    *) echo "Usage: $0 {start|stop|restart}" >&2; exit 1 ;;
+esac

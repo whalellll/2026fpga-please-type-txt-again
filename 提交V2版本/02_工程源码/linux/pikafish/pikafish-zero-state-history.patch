@@ -1,0 +1,447 @@
+diff --git a/src/engine.cpp b/src/engine.cpp
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -47,7 +47,11 @@ namespace Stockfish {
+ 
+ namespace NN = Eval::NNUE;
+ 
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++int MaxThreads = 1;
++#else
+ int MaxThreads = std::max(1024, 4 * int(get_hardware_concurrency()));
++#endif
+ 
+ // The default configuration will attempt to group L3 domains up to 32 threads.
+ // This size was found to be a good balance between the Elo gain of increased
+diff --git a/src/history.h b/src/history.h
+--- a/src/history.h
++++ b/src/history.h
+@@ -25,6 +25,7 @@
+ #include <cassert>
+ #include <cmath>
+ #include <cstdint>
++#include <cstring>
+ #include <cstdlib>
+ #include <limits>
+ #include <type_traits>  // IWYU pragma: keep
+@@ -52,7 +53,7 @@ static_assert((CORRHIST_BASE_SIZE & (CORRHIST_BASE_SIZE - 1)) == 0,
+ // the entry. The first template parameter T is the base type of the array,
+ // and the second template parameter D limits the range of updates in [-D, D]
+ // when we update values with the << operator
+-template<typename T, int D, bool Shared = false>
++template<typename T, int D, bool Shared = false, int InitialValue = 0>
+ struct StatsEntry {
+     static_assert(std::is_integral_v<T> && std::is_signed_v<T>, "Not a signed integer type");
+     static_assert(D > 0 && D <= std::numeric_limits<T>::max()
+@@ -60,12 +61,24 @@ struct StatsEntry {
+                   "D can lead to overflows");
+ 
+    private:
+-    std::conditional_t<Shared, RelaxedAtomic<T>, T> entry;
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++    // Embedded history tables are touched only by the sole search worker.
++    // Other cross-thread state keeps using RelaxedAtomic normally.
++    using EntryStorage = T;
++#else
++    using EntryStorage = std::conditional_t<Shared, RelaxedAtomic<T>, T>;
++#endif
++    EntryStorage entry;
+ 
+    public:
+-    void operator=(const T& v) { entry = v; }
++    void operator=(const T& v) {
++        const int encoded = int(v) - InitialValue;
++        assert(encoded >= std::numeric_limits<T>::min()
++               && encoded <= std::numeric_limits<T>::max());
++        entry = T(encoded);
++    }
+ 
+-    operator T() const { return entry; }
++    operator T() const { return T(int(T(entry)) + InitialValue); }
+ 
+     void operator<<(int bonus) {
+         // Make sure that bonus is in range [-D, D]
+@@ -88,10 +101,16 @@ using Stats = MultiArray<StatsEntry<T, D>, Sizes...>;
+ template<typename T, int D, usize... Sizes>
+ using AtomicStats = MultiArray<StatsEntry<T, D, true>, Sizes...>;
+ 
++template<typename T, int D, int InitialValue, usize... Sizes>
++using OffsetStats = MultiArray<StatsEntry<T, D, false, InitialValue>, Sizes...>;
++
++template<typename T, int D, int InitialValue, usize... Sizes>
++using OffsetAtomicStats = MultiArray<StatsEntry<T, D, true, InitialValue>, Sizes...>;
++
+ // DynStats is a dynamically sized array of Stats, used for thread-shared histories
+ // which should scale with the total number of threads. The SizeMultiplier gives
+ // the per-thread allocation count of T.
+-template<typename T, int SizeMultiplier>
++template<typename T, int SizeMultiplier, int InitialValue = 0>
+ struct DynStats {
+     explicit DynStats(usize s) {
+         size = s * SizeMultiplier;
+@@ -98,3 +117,7 @@ struct DynStats {
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++        data = make_unique_large_page_fresh_zero<T[]>(size);
++#else
+         data = make_unique_large_page<T[]>(size);
++#endif
+     }
+     // Sets all values in the range to 0
+@@ -103,6 +126,14 @@ struct DynStats {
+         assert(start < size);
+         usize end = threadIdx + 1 == numaTotal ? size : u64(threadIdx + 1) * size / numaTotal;
+ 
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++        if (value == InitialValue)
++        {
++            static_assert(std::is_trivially_copyable_v<T>);
++            std::memset(data.get() + start, 0, (end - start) * sizeof(T));
++            return;
++        }
++#endif
+         while (start < end)
+             data[start++].fill(value);
+     }
+@@ -125,17 +156,30 @@ struct DynStats {
+ // during the current search, and is used for reduction and move ordering decisions.
+ // It uses 2 tables (one for each color) indexed by the move's from and to squares,
+ // see https://www.chessprogramming.org/Butterfly_Boards
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++using ButterflyHistory = OffsetStats<i16, 7183, -5, COLOR_NB, UINT_16_HISTORY_SIZE>;
++#else
+ using ButterflyHistory = Stats<i16, 7183, COLOR_NB, UINT_16_HISTORY_SIZE>;
++#endif
+ 
+ // LowPlyHistory is addressed by ply and move's from and to squares, used
+ // to improve move ordering near the root
+ using LowPlyHistory = Stats<i16, 7183, LOW_PLY_HISTORY_SIZE, UINT_16_HISTORY_SIZE>;
+ 
+ // CapturePieceToHistory is addressed by a move's [piece][to][captured piece type]
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++using CapturePieceToHistory =
++  OffsetStats<i16, 10692, -607, PIECE_NB, SQUARE_NB, PIECE_TYPE_NB>;
++#else
+ using CapturePieceToHistory = Stats<i16, 10692, PIECE_NB, SQUARE_NB, PIECE_TYPE_NB>;
++#endif
+ 
+ // PieceToHistory is like ButterflyHistory but is addressed by a move's [piece][to]
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++using PieceToHistory = OffsetAtomicStats<i16, 30000, -436, PIECE_NB, SQUARE_NB>;
++#else
+ using PieceToHistory = AtomicStats<i16, 30000, PIECE_NB, SQUARE_NB>;
++#endif
+ 
+ // ContinuationHistory is the combined history of a given pair of moves, usually
+ // the current one given a previous one. The nested history table is based on
+@@ -143,7 +187,13 @@ using ContinuationHistory = MultiArray<PieceToHistory, PIECE_NB, SQUARE_NB>;
+ using ContinuationHistory = MultiArray<PieceToHistory, PIECE_NB, SQUARE_NB>;
+ 
+ // PawnHistory is addressed by the pawn structure and a move's [piece][to]
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++using PawnHistory =
++  DynStats<OffsetAtomicStats<i16, 8192, -1247, PIECE_NB, SQUARE_NB>,
++           PAWN_HISTORY_BASE_SIZE, -1247>;
++#else
+ using PawnHistory = DynStats<AtomicStats<i16, 8192, PIECE_NB, SQUARE_NB>, PAWN_HISTORY_BASE_SIZE>;
++#endif
+ 
+ // Correction histories record differences between the static evaluation of
+ // positions and their search score. It is used to improve the static evaluation
+@@ -154,12 +204,12 @@ enum CorrHistType {
+     Continuation,  // Combined history of move pairs
+ };
+ 
+-template<typename T, int D>
++template<typename T, int D, int InitialValue = 0>
+ struct CorrectionBundle {
+-    StatsEntry<T, D, true> pawn;
+-    StatsEntry<T, D, true> minor;
+-    StatsEntry<T, D, true> nonPawnWhite;
+-    StatsEntry<T, D, true> nonPawnBlack;
++    StatsEntry<T, D, true, InitialValue> pawn;
++    StatsEntry<T, D, true, InitialValue> minor;
++    StatsEntry<T, D, true, InitialValue> nonPawnWhite;
++    StatsEntry<T, D, true, InitialValue> nonPawnBlack;
+ 
+     void operator=(T val) {
+         pawn         = val;
+@@ -176,7 +226,11 @@ struct CorrHistTypedef;
+ 
+ template<>
+ struct CorrHistTypedef<PieceTo> {
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++    using type = OffsetStats<i16, CORRECTION_HISTORY_LIMIT, 7, PIECE_NB, SQUARE_NB>;
++#else
+     using type = Stats<i16, CORRECTION_HISTORY_LIMIT, PIECE_NB, SQUARE_NB>;
++#endif
+ };
+ 
+ template<>
+@@ -186,9 +240,15 @@ struct CorrHistTypedef<Continuation> {
+ 
+ }
+ 
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++using UnifiedCorrectionHistory =
++  DynStats<MultiArray<CorrectionBundle<i16, CORRECTION_HISTORY_LIMIT, -6>, COLOR_NB>,
++           CORRHIST_BASE_SIZE, -6>;
++#else
+ using UnifiedCorrectionHistory =
+   DynStats<MultiArray<CorrectionBundle<i16, CORRECTION_HISTORY_LIMIT>, COLOR_NB>,
+            CORRHIST_BASE_SIZE>;
++#endif
+ 
+ template<CorrHistType T>
+ using CorrectionHistory = typename Detail::CorrHistTypedef<T>::type;
+@@ -206,7 +266,12 @@ struct SharedHistories {
+ struct SharedHistories {
+     SharedHistories(usize threadCount) :
+         correctionHistory(threadCount),
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++        continuationHistoryBlock(
++          make_unique_large_page_fresh_zero<ContinuationHistoryBlock>()),
++#else
+         continuationHistoryBlock(make_unique_large_page<ContinuationHistoryBlock>()),
++#endif
+         pawnHistory(threadCount) {
+         assert((threadCount & (threadCount - 1)) == 0 && threadCount != 0);
+         sizeMinus1         = correctionHistory.get_size() - 1;
+diff --git a/src/memory.h b/src/memory.h
+--- a/src/memory.h
++++ b/src/memory.h
+@@ -161,6 +161,44 @@ memory_allocator(ALLOC_FUNC alloc_func, usize num) {
+     return reinterpret_cast<ElementType*>(raw_memory + array_offset);
+ }
+ 
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++// Linux anonymous large-page mappings are already zero-filled. These helpers
++// start the lifetime of trivial history objects without value-initializing and
++// rewriting every byte of those fresh pages.
++template<typename T, typename ALLOC_FUNC>
++inline std::enable_if_t<!std::is_array_v<T>, T*>
++memory_allocator_fresh_zero(ALLOC_FUNC alloc_func) {
++    static_assert(std::is_trivially_default_constructible_v<T>);
++    static_assert(std::is_trivially_destructible_v<T>);
++    void* raw_memory = alloc_func(sizeof(T));
++    if (raw_memory == nullptr)
++        report_failed_allocation(sizeof(T));
++    ASSERT_ALIGNED(raw_memory, alignof(T));
++    return new (raw_memory) T;
++}
++
++template<typename T, typename ALLOC_FUNC>
++inline std::enable_if_t<std::is_array_v<T>, std::remove_extent_t<T>*>
++memory_allocator_fresh_zero(ALLOC_FUNC alloc_func, usize num) {
++    using ElementType = std::remove_extent_t<T>;
++    static_assert(std::is_trivially_default_constructible_v<ElementType>);
++    static_assert(std::is_trivially_destructible_v<ElementType>);
++
++    const usize array_offset = std::max(sizeof(usize), alignof(ElementType));
++    const usize bytes        = array_offset + num * sizeof(ElementType);
++    char*       raw_memory   = reinterpret_cast<char*>(alloc_func(bytes));
++    if (raw_memory == nullptr)
++        report_failed_allocation(bytes);
++    ASSERT_ALIGNED(raw_memory, alignof(T));
++
++    new (raw_memory) usize(num);
++    for (usize i = 0; i < num; ++i)
++        new (raw_memory + array_offset + i * sizeof(ElementType)) ElementType;
++
++    return reinterpret_cast<ElementType*>(raw_memory + array_offset);
++}
++#endif
++
+ //
+ //
+ // aligned large page unique ptr
+@@ -207,6 +245,25 @@ std::enable_if_t<std::is_array_v<T>, LargePagePtr<T>> make_unique_large_page(usi
+     return LargePagePtr<T>(memory);
+ }
+ 
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++template<typename T>
++std::enable_if_t<!std::is_array_v<T>, LargePagePtr<T>> make_unique_large_page_fresh_zero() {
++    static_assert(alignof(T) <= 4096);
++    T* obj = memory_allocator_fresh_zero<T>(aligned_large_pages_alloc);
++    return LargePagePtr<T>(obj);
++}
++
++template<typename T>
++std::enable_if_t<std::is_array_v<T>, LargePagePtr<T>>
++make_unique_large_page_fresh_zero(usize num) {
++    using ElementType = std::remove_extent_t<T>;
++    static_assert(alignof(ElementType) <= 4096);
++    ElementType* memory =
++      memory_allocator_fresh_zero<T>(aligned_large_pages_alloc, num);
++    return LargePagePtr<T>(memory);
++}
++#endif
++
+ //
+ //
+ // aligned unique ptr
+diff --git a/src/search.cpp b/src/search.cpp
+--- a/src/search.cpp
++++ b/src/search.cpp
+@@ -25,6 +25,7 @@
+ #include <cmath>
+ #include <cstdint>
+ #include <cstdio>
++#include <cstring>
+ #include <cstdlib>
+ #include <initializer_list>
+ #include <string>
+@@ -647,7 +648,7 @@ void Search::Worker::undo_null_move(Position& pos) { pos.undo_null_move(); }
+ 
+ 
+ // Reset histories, usually before a new game
+-void Search::Worker::clear() {
++void Search::Worker::clear(bool freshHistoryStorage) {
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     auto report = [this](const char* stage) {
+         std::printf("XQ LINUX ENGINE DETAIL stage=%s thread=%zu\n", stage, threadIdx);
+@@ -655,8 +656,15 @@ void Search::Worker::clear() {
+     };
+     report("worker-clear-start");
+ #endif
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++    static_assert(std::is_trivially_copyable_v<ButterflyHistory>);
++    static_assert(std::is_trivially_copyable_v<CapturePieceToHistory>);
++    std::memset(&mainHistory, 0, sizeof(mainHistory));
++    std::memset(&captureHistory, 0, sizeof(captureHistory));
++#else
+     mainHistory.fill(-5);
+     captureHistory.fill(-607);
++#endif
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("worker-local-history-ready");
+     report("shared-correction-clear-start");
+@@ -664,23 +672,32 @@ void Search::Worker::clear() {
+ 
+     // Each thread clears its part of the dynamically-sized shared histories.
+     // The constant-size continuation history is initialized by thread 0 of each NUMA node.
+-    sharedHistory.correctionHistory.clear_range(-6, numaThreadIdx, numaTotal);
++    if (!freshHistoryStorage)
++        sharedHistory.correctionHistory.clear_range(-6, numaThreadIdx, numaTotal);
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("shared-correction-clear-ready");
+     report("shared-pawn-clear-start");
+ #endif
+-    sharedHistory.pawnHistory.clear_range(-1247, numaThreadIdx, numaTotal);
++    if (!freshHistoryStorage)
++        sharedHistory.pawnHistory.clear_range(-1247, numaThreadIdx, numaTotal);
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("shared-pawn-clear-ready");
+     report("shared-continuation-clear-start");
+ #endif
+ 
+-    if (numaThreadIdx == 0)
++    if (!freshHistoryStorage && numaThreadIdx == 0)
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++    {
++        static_assert(std::is_trivially_copyable_v<ContinuationHistoryBlock>);
++        std::memset(&continuationHistory, 0, sizeof(continuationHistory));
++    }
++#else
+         for (bool inCheck : {false, true})
+             for (StatsType c : {NoCaptures, Captures})
+                 for (auto& to : continuationHistory[inCheck][c])
+                     for (auto& h : to)
+                         h.fill(-436);
++#endif
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("shared-continuation-clear-ready");
+ #endif
+@@ -690,9 +707,14 @@ void Search::Worker::clear() {
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("local-correction-clear-start");
+ #endif
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++    static_assert(std::is_trivially_copyable_v<decltype(continuationCorrectionHistory)>);
++    std::memset(&continuationCorrectionHistory, 0, sizeof(continuationCorrectionHistory));
++#else
+     for (auto& to : continuationCorrectionHistory)
+         for (auto& h : to)
+             h.fill(7);
++#endif
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+     report("local-correction-clear-ready");
+ #endif
+diff --git a/src/search.h b/src/search.h
+--- a/src/search.h
++++ b/src/search.h
+@@ -303,7 +303,7 @@ class Worker {
+ 
+     // Called at instantiation to initialize reductions tables.
+     // Reset histories, usually before a new game.
+-    void clear();
++    void clear(bool freshHistoryStorage = false);
+ 
+     // Called when the program receives the UCI 'go' command.
+     // It searches from the root position and outputs the "bestmove".
+diff --git a/src/thread.cpp b/src/thread.cpp
+--- a/src/thread.cpp
++++ b/src/thread.cpp
+@@ -98,9 +98,9 @@ void Thread::start_searching() {
+ }
+ 
+ // Clears the histories for the thread worker (usually before a new game)
+-void Thread::clear_worker() {
++void Thread::clear_worker(bool freshHistoryStorage) {
+     assert(worker != nullptr);
+-    run_custom_job([this]() { worker->clear(); });
++    run_custom_job([this, freshHistoryStorage]() { worker->clear(freshHistoryStorage); });
+ }
+ 
+ // Blocks on the condition variable until the thread has finished searching
+@@ -270,7 +270,13 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+         std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-start");
+         std::fflush(stdout);
+ #endif
+-        clear();
++        clear(
++#if defined(PIKAFISH_EMBEDDED_SINGLE_THREAD)
++          true
++#else
++          false
++#endif
++        );
+ #if defined(PIKAFISH_EMBEDDED_GUI)
+         std::puts("XQ LINUX ENGINE DETAIL stage=threadpool-initial-clear-ready");
+         std::fflush(stdout);
+@@ -282,12 +288,12 @@ void ThreadPool::set(const NumaConfig&                           numaConfig,
+ 
+ 
+ // Sets threadPool data to initial values
+-void ThreadPool::clear() {
++void ThreadPool::clear(bool freshHistoryStorage) {
+     if (threads.empty())
+         return;
+ 
+     for (auto&& th : threads)
+-        th->clear_worker();
++        th->clear_worker(freshHistoryStorage);
+ 
+     for (auto&& th : threads)
+         th->wait_for_search_finished();
+diff --git a/src/thread.h b/src/thread.h
+--- a/src/thread.h
++++ b/src/thread.h
+@@ -80,7 +80,7 @@ class Thread {
+ 
+     void idle_loop();
+     void start_searching();
+-    void clear_worker();
++    void clear_worker(bool freshHistoryStorage = false);
+     void run_custom_job(std::function<void()> f);
+ 
+     void ensure_network_replicated();
+@@ -133,7 +133,7 @@ class ThreadPool {
+     void  run_on_thread(usize threadId, std::function<void()> f);
+     void  wait_on_thread(usize threadId);
+     usize num_threads() const;
+-    void  clear();
++    void  clear(bool freshHistoryStorage = false);
+     void  set(const NumaConfig& numaConfig,
+               Search::SharedState,
+               const Search::SearchManager::UpdateContext&);

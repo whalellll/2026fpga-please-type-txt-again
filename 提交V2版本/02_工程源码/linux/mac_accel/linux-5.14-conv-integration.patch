@@ -1,0 +1,41 @@
+diff --git a/drivers/misc/Kconfig b/drivers/misc/Kconfig
+--- a/drivers/misc/Kconfig
++++ b/drivers/misc/Kconfig
+@@ -482,6 +482,29 @@ config HISI_HIKEY_USB
+ 	  switching between the dual-role USB-C port and the USB-A host ports
+ 	  using only one USB controller.
+ 
++config PANGO_MAC_ACCEL
++	tristate "Pango dense MAC accelerator scheduler"
++	depends on OF && MMU
++	help
++	  Own the dense MAC v2 register and reserved DDR apertures on the
++	  PG2L100H SoC.  The driver exposes /dev/pango-mac0.  Every open file
++	  receives an isolated 1 MiB shadow mapping, while RUN ioctls are
++	  serialized onto the single hardware engine.  This prevents threads
++	  and processes from overwriting one another's accelerator data.
++
++	  Say Y for the performance_soc_linux production image.
++
++config PANGO_AUDIO_CAPTURE
++	tristate "Pango AUD1 capture FIFO"
++	depends on OF
++	help
++	  Own the AUD1 I2S capture registers on the PG2L100H SoC and expose
++	  the mono 16 kHz stream as /dev/pango-audio0.  The hardware has no
++	  interrupt, so the driver uses bounded sleepable polling and permits
++	  one destructive FIFO reader.
++
++	  Say Y when building the voice-command image.
++
+ source "drivers/misc/c2port/Kconfig"
+ source "drivers/misc/eeprom/Kconfig"
+ source "drivers/misc/cb710/Kconfig"
+diff --git a/drivers/misc/Makefile b/drivers/misc/Makefile
+--- a/drivers/misc/Makefile
++++ b/drivers/misc/Makefile
+@@ -59,3 +59,5 @@ obj-$(CONFIG_UACCE) 		+= uacce/
+ obj-$(CONFIG_XILINX_SDFEC)	+= xilinx_sdfec.o
+ obj-$(CONFIG_HISI_HIKEY_USB)	+= hisi_hikey_usb.o
++obj-$(CONFIG_PANGO_MAC_ACCEL)	+= pango_mac.o
++obj-$(CONFIG_PANGO_AUDIO_CAPTURE) += pango_audio.o

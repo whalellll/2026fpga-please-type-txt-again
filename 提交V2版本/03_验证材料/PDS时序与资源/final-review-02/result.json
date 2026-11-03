@@ -1,0 +1,395 @@
+{
+  "status": "PDS25_CPU125_ROUTED_ALL_CORNER_STA_PASS_PHYSICAL_READBACK_AND_TOOL_QUALIFICATION_PENDING",
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+  "pnr_attempt": "pnr-02",
+  "snapshot_sha256": "e029712ce824cb941e85099e11f97e5a99fd6357de5ebb42f803ff42e385a8a2",
+  "inputs_verified": 523,
+  "tool_version": "2025.2 build211867",
+  "cpu_hz": 125000000,
+  "sys_hz": 49500000,
+  "clocks": {
+    "free_clk": 37.037,
+    "ref_clk": 8.0,
+    "rst_clk": 8.0,
+    "ddrphy_sysclk": 8.0,
+    "phy_dq_clk_0": 1.0,
+    "phy_dq_sysclk_0": 8.0,
+    "phy_dq_clk_1": 1.0,
+    "phy_dq_sysclk_1": 8.0,
+    "camera2_pclk": 10.0,
+    "rgmii_rxc": 8.0,
+    "rgmii_txc": 8.0,
+    "pix_clk": 13.468,
+    "sys_clk": 20.202,
+    "sd_native_clk": 40.404,
+    "camera1_sccb_clk": 99999.9,
+    "camera2_sccb_clk": 99999.9,
+    "i2c_cfg_clk": 141.43,
+    "cpu_clk": 7.992
+  },
+  "clock_count": 18,
+  "headline": "All Constraints Met.",
+  "summary_rows": 124,
+  "coverage_delta": {
+    "previous_rows": 128,
+    "current_rows": 124,
+    "removed_normal_cross_domain_rows": [
+      [
+        "Hold",
+        "Fast",
+        "cpu_clk",
+        "sys_clk"
+      ],
+      [
+        "Hold",
+        "Fast",
+        "sys_clk",
+        "cpu_clk"
+      ],
+      [
+        "Hold",
+        "Slow",
+        "cpu_clk",
+        "sys_clk"
+      ],
+      [
+        "Hold",
+        "Slow",
+        "sys_clk",
+        "cpu_clk"
+      ]
+    ],
+    "added_rows": [],
+    "rationale": "All original clock periods and48 CDC directives unchanged. Targeted register mapping restores source tag propagation; normal synchronous cross-clock rows may disappear once the original max-delay/hold exceptions cover their physical starts. Retain exception reports separately; do not silently drop other summary coverage."
+  },
+  "exception_report_encoding": "gb18030",
+  "exception_checks": [
+    {
+      "type": "set_max_delay(setup)",
+      "corner": "Slow",
+      "paths": 48,
+      "worst_slack_ns": 0.222,
+      "fdc_lines": [
+        1205,
+        1208,
+        1211,
+        1214,
+        1217,
+        1220,
+        1223,
+        1226,
+        1229,
+        1232,
+        1237,
+        1239,
+        1241,
+        1243,
+        1245,
+        1248,
+        1250,
+        1252,
+        1254
+      ]
+    },
+    {
+      "type": "set_max_delay(recovery)",
+      "corner": "Slow",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_min_delay(hold)",
+      "corner": "Slow",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_min_delay(removal)",
+      "corner": "Slow",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_multicycle_path(setup)",
+      "corner": "Slow",
+      "paths": 6,
+      "worst_slack_ns": 0.209,
+      "fdc_lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "type": "set_multicycle_path(hold)",
+      "corner": "Slow",
+      "paths": 6,
+      "worst_slack_ns": 0.468,
+      "fdc_lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "type": "set_multicycle_path(recovery)",
+      "corner": "Slow",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_multicycle_path(removal)",
+      "corner": "Slow",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_max_delay(setup)",
+      "corner": "Fast",
+      "paths": 48,
+      "worst_slack_ns": 2.896,
+      "fdc_lines": [
+        1205,
+        1208,
+        1211,
+        1214,
+        1217,
+        1220,
+        1223,
+        1226,
+        1229,
+        1232,
+        1237,
+        1239,
+        1241,
+        1243,
+        1245,
+        1248,
+        1250,
+        1252,
+        1254
+      ]
+    },
+    {
+      "type": "set_max_delay(recovery)",
+      "corner": "Fast",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_min_delay(hold)",
+      "corner": "Fast",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_min_delay(removal)",
+      "corner": "Fast",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_multicycle_path(setup)",
+      "corner": "Fast",
+      "paths": 6,
+      "worst_slack_ns": 2.73,
+      "fdc_lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "type": "set_multicycle_path(hold)",
+      "corner": "Fast",
+      "paths": 6,
+      "worst_slack_ns": 0.088,
+      "fdc_lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "type": "set_multicycle_path(recovery)",
+      "corner": "Fast",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    },
+    {
+      "type": "set_multicycle_path(removal)",
+      "corner": "Fast",
+      "paths": 0,
+      "worst_slack_ns": null,
+      "fdc_lines": []
+    }
+  ],
+  "exception_violations": [],
+  "cpu_timing": [
+    {
+      "check": "Setup",
+      "corner": "Slow",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.139,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 66082
+    },
+    {
+      "check": "Hold",
+      "corner": "Slow",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.121,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 65757
+    },
+    {
+      "check": "Setup",
+      "corner": "Fast",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 2.952,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 66082
+    },
+    {
+      "check": "Hold",
+      "corner": "Fast",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.088,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 65757
+    }
+  ],
+  "violating_summary_rows": [],
+  "final_sta_pass": true,
+  "constraints": {
+    "status": "COMPILER_ONLY_NATIVE_IDENTITY_AND_ALL_BOOT_BITS_PASS_READY_PNR",
+    "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+    "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+    "native_inputs_verified": 523,
+    "cpu_hz": 125000000,
+    "sys_hz": 49500000,
+    "sta_cpu_period_ns": 7.992,
+    "cdc_limit_ns": 7.192,
+    "resources": {
+      "lut": 45787.0,
+      "ff": 34226.0,
+      "lutram": 1946.0,
+      "drm": 126.5,
+      "apm": 76.0
+    },
+    "native_priority_rcf": "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-priority.rcf",
+    "native_placement_pcf": "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-placement.pcf",
+    "placements_retained": [
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[2]/opit_0_L6Q} CLMA_261_96 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[3]/opit_0_L6Q} CLMA_261_96 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[4]/opit_0_L6Q} CLMA_261_78 FYD",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[5]/opit_0_L6Q} CLMA_261_108 FYD",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[6]/opit_0_L6Q} CLMA_291_84 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[7]/opit_0_L6Q} CLMA_261_78 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[8]/opit_0_L6Q} CLMA_261_108 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[9]/opit_0_L6Q} CLMA_249_126 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[10]/opit_0_L6Q} CLMA_249_126 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[11]/opit_0_L6Q} CLMA_261_96 FYD",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[12]/opit_0_L6Q} CLMA_261_78 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[13]/opit_0_L6Q} CLMA_261_78 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[14]/opit_0_L6Q} CLMA_261_79 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[15]/opit_0_L6Q} CLMA_261_108 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[16]/opit_0_L6Q} CLMA_291_84 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[17]/opit_0_L6Q} CLMS_291_91 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[18]/opit_0_L6Q} CLMA_273_114 FYD",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[19]/opit_0_L6Q} CLMS_291_91 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[20]/opit_0_L6Q} CLMA_261_108 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[21]/opit_0_L6Q} CLMA_261_96 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[22]/opit_0_L6Q} CLMA_273_132 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[23]/opit_0_L6Q} CLMA_309_114 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[24]/opit_0_L6Q} CLMS_291_121 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[25]/opit_0_L6Q} CLMS_291_121 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[26]/opit_0_L6Q} CLMA_273_114 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[27]/opit_0_L6Q} CLMS_291_121 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[28]/opit_0_L6Q} CLMA_273_114 FYA",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[29]/opit_0_L6Q} CLMA_273_114 FYB",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[30]/opit_0_L6Q} CLMA_249_126 FYC",
+      "def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[31]/opit_0_L6Q} CLMS_291_121 FYD"
+    ],
+    "priority_constraints_kept": [
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [0]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [1]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/adj_wrdqs [0]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [61]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [10]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdata_mask [7]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/ftqAlloc [3]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbData [0]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rs_alu1/issueUsesFast",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_alu0_io_wbData [20]",
+      "u_video/s4_fx [1]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbValid",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_rs_alu0_io_issueRobid [1]",
+      "u_eth/tx_pos [5]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [41]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdq [58]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/memShadowRobid [4]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_lsu/stqPa_1 [26]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/pdInsts_2 [28]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3100 [1]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [135]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_cke [5]",
+      "I_ips_ddr_top/u_ddrphy_top/phy_wrdata_en [1]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [273]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/all_group_ca_dly",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [112]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_odt [3]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_ras_n [0]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_we_n [0]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [204]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [24]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [32]",
+      "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [97]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tQRdata_2 [6]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_2_1 [0]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/cache/tagOut_0 [12]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/fcTransferCandidate",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_2_1 [3]",
+      "u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_3_1 [0]"
+    ],
+    "map_adf_sha256": "8c3389c35620b8fa7b0feec012187027b5109aecaef9db7e90dbd285a5ad1d1d",
+    "native_identity_sha256": "3769b472ae1ea760ed370b3b06586daa8fe8a3d6cb15e442d6ea701493bfec63",
+    "parent_preflight_sha256": "c381e814680eaa9a226e5883371d0234199bb99bce6b54f987009b2d5622f69d",
+    "route_constraint_sha256": {
+      "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-priority.rcf": "3a7a8597374da9e0299091875ee768c14766540449f3b3e172ec4d879bc2549a",
+      "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\pnr-preflight-05\\native-placement.pcf": "6c763507cc2684248c3f738022c8e6fb0bbc31260b020ea88d51bc8095ca37bc"
+    },
+    "scope": "Exact193 native module connectivity except verified boot INIT. Existing bounded native CPU/CDC proofs preserve original scope. Fresh map actual30 sites/39 nets, unchanged strict125FDC and original pin constraints. Final timing/physical/board remain separate."
+  },
+  "artifact_sha256": {
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\report_timing\\soc_top.rtr": "6d2b7fae0ff239ec08dfe7af7532f3c437dff4ebf5d0355bc94022cdda677e34",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\report_timing\\soc_top_exception.rtr": "7b80341edbfc19458ebf948da38aba24f54eaef7ec2181f604e41c4fcb4ef727",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\run_place.log": "73779875bd86b6a5763c4be681e660797ba0e691d90204206cf2aa74602691f6",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\run_route.log": "bbe077e0c23cd8913d4ddd4e0b0b1a0531fb4d67a556c8945199cef5fe36225e",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\run_route_optimize.log": "e70a9a77fc744ae0b7a076ba1b822479cec91ae736627c3497999930a4ab8df8",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\soc_top_plc.adf": "85a42aee5d050234b0ab3d93cc176b98e78aa7dc088f5f61c51f700344db96b7",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\soc_top_route.adf": "28ad1eebb5a740ba2c6ac855697f7f1b4eff3e6e6ba132d912bb8c2f7fab9b18",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\soc_top_pnr.adf": "267001ad9a113796a86203b107d6745d53d2cb11d4060b36b096d722016408d0",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\soc_top_route.netlist": "dbf2e360b9f02d20acd97b06ba865906c3055653cbcee4cc62f953f982061f52",
+    "G:\\fpga\\build\\cpu125-coremark60-20261102-01\\source\\pds\\prj_tasks\\pnr_1\\place_route\\soc_top_route_optimize.netlist": "4915a855869e4cef27446b55d299ad36808a0059d73c84324a2dd6f945de612b"
+  },
+  "full_native_control_and_cdc_qualification_pass": false,
+  "board_tested": false,
+  "remote_pushed": false,
+  "formal_delivery": false,
+  "recorded_utc": "2026-11-02T09:19:33.030220+00:00"
+}

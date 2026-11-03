@@ -1,0 +1,2 @@
+# P4 native DRM inventory and critical loop reviewed in physical-p5.json.
+def_inst_site {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tagMem_2_ext/Memory_1/gopdrm_18k} DRM_256_30 DRM0

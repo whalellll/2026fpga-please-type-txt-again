@@ -1,0 +1,330 @@
+diff --git a/src/main.cpp b/src/main.cpp
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -27,6 +27,12 @@
+ 
+ using namespace Stockfish;
+ 
++#ifdef PIKAFISH_EMBEDDED_GUI
++extern "C" int xiangqi_pikafish_gui_main(void);
++
++int main() { return xiangqi_pikafish_gui_main(); }
++
++#else
+ #ifdef UNIVERSAL_BINARY
+ namespace Stockfish {
+ 
+@@ -59,3 +65,4 @@ int main(int argc, char* argv[]) { return Stockfish::main(argc, argv); }
+ int main(int argc, char* argv[]) { return Stockfish::main(argc, argv); }
+     #endif
+ #endif
++#endif
+diff --git a/src/engine.h b/src/engine.h
+--- a/src/engine.h
++++ b/src/engine.h
+@@ -53,7 +53,9 @@ class Engine {
+     using InfoFull  = Search::InfoFull;
+     using InfoIter  = Search::InfoIteration;
+ 
+-    Engine(std::optional<std::filesystem::path> path = std::nullopt);
++    Engine(std::optional<std::filesystem::path> path = std::nullopt,
++           usize initialHashMiB = 16,
++           std::optional<std::filesystem::path> initialNetwork = std::nullopt);
+ 
+     // Cannot be movable due to components holding backreferences to fields
+     Engine(const Engine&)            = delete;
+@@ -95,6 +97,8 @@ class Engine {
+ 
+     void                                 verify_network() const;
+     std::unique_ptr<Eval::NNUE::Network> get_default_network();
++    std::unique_ptr<Eval::NNUE::Network> get_network(
++      const std::filesystem::path& file);
+     void                                 load_network(const std::filesystem::path& file);
+     void save_network(const std::optional<std::filesystem::path>& file);
+ 
+diff --git a/src/engine.cpp b/src/engine.cpp
+--- a/src/engine.cpp
++++ b/src/engine.cpp
+@@ -54,13 +54,19 @@ int MaxThreads = std::max(1024, 4 * int(get_hardware_concurrency()));
+ // PR#6526). The user can always explicitly override this behavior.
+ constexpr NumaAutoPolicy DefaultNumaPolicy = BundledL3Policy{32};
+ 
+-Engine::Engine(std::optional<std::filesystem::path> path) :
++Engine::Engine(std::optional<std::filesystem::path> path,
++               usize initialHashMiB,
++               std::optional<std::filesystem::path> initialNetwork) :
+     binaryDirectory(path ? CommandLine::get_binary_directory(*path) : std::filesystem::path{}),
+     numaContext(NumaConfig::from_system(DefaultNumaPolicy)),
+     states(new std::deque<StateInfo>(1)),
+     threads(),
+     networkFile{std::nullopt, ""},
+-    network(numaContext, get_default_network()) {
++    network(numaContext,
++            initialNetwork ? get_network(*initialNetwork) : get_default_network()) {
++
++    const std::string initialEvalFile = initialNetwork ? initialNetwork->string()
++                                                       : std::string(EvalFileDefaultName);
+ 
+     pos.set(StartFEN, &states->back());
+ 
+@@ -85,7 +91,7 @@ Engine::Engine(std::optional<std::filesystem::path> path) :
+       }));
+ 
+     options.add(  //
+-      "Hash", Option(16, 1, MaxHashMB, [this](const Option& o) {
++      "Hash", Option(initialHashMiB, 1, MaxHashMB, [this](const Option& o) {
+           set_tt_size(o);
+           return std::nullopt;
+       }));
+@@ -109,7 +115,7 @@ Engine::Engine(std::optional<std::filesystem::path> path) :
+     options.add("UCI_ShowWDL", Option(false));
+ 
+     options.add(  //
+-      "EvalFile", Option(EvalFileDefaultName, [this](const Option& o) {
++      "EvalFile", Option(initialEvalFile.c_str(), [this](const Option& o) {
+           load_network(path_from_utf8(std::string(o)));
+           return std::nullopt;
+       }));
+@@ -272,9 +278,15 @@ void Engine::verify_network() const {
+ 
+ std::unique_ptr<Eval::NNUE::Network> Engine::get_default_network() {
+ 
++    return get_network({});
++}
++
++std::unique_ptr<Eval::NNUE::Network>
++Engine::get_network(const std::filesystem::path& file) {
++
+     auto network_ = std::make_unique<NN::Network>();
+ 
+-    network_->load(binaryDirectory, std::filesystem::path{}, networkFile);
++    network_->load(binaryDirectory, file, networkFile);
+ 
+     return network_;
+ }
+diff --git a/src/nnue/layers/affine_transform.h b/src/nnue/layers/affine_transform.h
+--- a/src/nnue/layers/affine_transform.h
++++ b/src/nnue/layers/affine_transform.h
+@@ -179,10 +179,29 @@ class AffineTransform {
+     // Read network parameters
+     bool read_parameters(std::istream& stream) {
+         read_little_endian<BiasType>(stream, biases, OutputDimensions);
+         for (IndexType i = 0; i < OutputDimensions * PaddedInputDimensions; ++i)
+             weights[get_weight_index(i)] = read_little_endian<WeightType>(stream);
+ 
+         return !stream.fail();
+     }
++
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++    bool read_parameters_flat(const char*& cursor, const char* end) {
++        if (!read_pff1_direct(cursor, end, biases, sizeof(biases)))
++            return false;
++#if !defined(ENABLE_SEQ_OPT)
++        return read_pff1_direct(cursor, end, weights, sizeof(weights));
++#else
++        for (IndexType i = 0; i < OutputDimensions * PaddedInputDimensions; ++i)
++        {
++            WeightType value;
++            if (!read_pff1_direct(cursor, end, &value, sizeof(value)))
++                return false;
++            weights[get_weight_index(i)] = value;
++        }
++        return true;
++#endif
++    }
++#endif
+ 
+     // Write network parameters
+diff --git a/src/nnue/layers/affine_transform_sparse_input.h b/src/nnue/layers/affine_transform_sparse_input.h
+--- a/src/nnue/layers/affine_transform_sparse_input.h
++++ b/src/nnue/layers/affine_transform_sparse_input.h
+@@ -93,10 +93,30 @@ class AffineTransformSparseInput {
+     // Read network parameters
+     bool read_parameters(std::istream& stream) {
+         read_little_endian<BiasType>(stream, biases, OutputDimensions);
+         for (IndexType i = 0; i < OutputDimensions * PaddedInputDimensions; ++i)
+             weights[get_weight_index(i)] = read_little_endian<WeightType>(stream);
+ 
+         return !stream.fail();
+     }
++
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++    bool read_parameters_flat(const char*& cursor, const char* end) {
++        if (!read_pff1_direct(cursor, end, biases, sizeof(biases)))
++            return false;
++#if !(defined(USE_SSSE3) || defined(USE_LSX) || defined(USE_LASX) || (USE_NEON >= 8) \
++      || defined(USE_RVV))
++        return read_pff1_direct(cursor, end, weights, sizeof(weights));
++#else
++        for (IndexType i = 0; i < OutputDimensions * PaddedInputDimensions; ++i)
++        {
++            WeightType value;
++            if (!read_pff1_direct(cursor, end, &value, sizeof(value)))
++                return false;
++            weights[get_weight_index(i)] = value;
++        }
++        return true;
++#endif
++    }
++#endif
+ 
+     // Write network parameters
+diff --git a/src/nnue/nnue_architecture.h b/src/nnue/nnue_architecture.h
+--- a/src/nnue/nnue_architecture.h
++++ b/src/nnue/nnue_architecture.h
+@@ -91,6 +91,14 @@ struct NetworkArchitecture {
+             && fc_2.read_parameters(stream);
+     }
+ 
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++    bool read_parameters_flat(const char*& cursor, const char* end) {
++        return fc_0.read_parameters_flat(cursor, end)
++            && fc_1.read_parameters_flat(cursor, end)
++            && fc_2.read_parameters_flat(cursor, end);
++    }
++#endif
++
+     // Write network parameters
+     bool write_parameters(std::ostream& stream) const {
+         return fc_0.write_parameters(stream) && ac_0.write_parameters(stream)
+diff --git a/src/nnue/nnue_common.h b/src/nnue/nnue_common.h
+--- a/src/nnue/nnue_common.h
++++ b/src/nnue/nnue_common.h
+@@ -105,6 +105,25 @@ constexpr IntType ceil_to_multiple(IntType n, IntType base) {
+ }
+ 
+ 
++#if defined(PIKAFISH_PFF1_DIRECT_VIEW)
++// Keep the RV32 direct-view copy simple and bounded. Volatile source loads
++// avoid target-libc memcpy variants that issue wide accesses on this SoC.
++inline bool read_pff1_direct(const char*& cursor, const char* end, void* output,
++                             usize bytes) {
++    if (cursor == nullptr || end == nullptr || cursor > end
++        || bytes > static_cast<usize>(end - cursor))
++        return false;
++
++    const auto* input = reinterpret_cast<volatile const unsigned char*>(cursor);
++    auto* destination = static_cast<unsigned char*>(output);
++    for (usize i = 0; i < bytes; ++i)
++        destination[i] = input[i];
++    cursor += bytes;
++    return true;
++}
++#endif
++
++
+ // Utility to read an integer (signed or unsigned, any size)
+ // from a stream in little-endian order. We swap the byte order after the read if
+ // necessary to return a result with the byte ordering of the compiling machine.
+diff --git a/src/nnue/network.cpp b/src/nnue/network.cpp
+--- a/src/nnue/network.cpp
++++ b/src/nnue/network.cpp
+@@ -157,7 +157,11 @@ void Network::verify(const std::function<void(std::string_view)>& f,
+             f(msg);
+         }
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        return;
++#else
+         exit(EXIT_FAILURE);
++#endif
+     }
+ 
+     if (f)
+diff --git a/src/shm.h b/src/shm.h
+--- a/src/shm.h
++++ b/src/shm.h
+@@ -524,6 +524,13 @@ struct SystemWideSharedConstant {
+ 
+     SystemWideSharedConstant() = default;
+ 
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    // The board is a single-process, single-NUMA-node target. Adopt the
++    // already-decoded NNUE allocation instead of hashing and copying 68 MiB.
++    explicit SystemWideSharedConstant(std::unique_ptr<T>&& value) :
++        directObject(std::move(value)) {}
++#endif
++
+ 
+     // Content is addressed by its hash. An additional discriminator can be added to account for differences
+     // that are not present in the content, for example NUMA node allocation.
+@@ -563,9 +570,16 @@ struct SystemWideSharedConstant {
+ 
+     SystemWideSharedConstant(SystemWideSharedConstant&& other) noexcept :
+-        backend(std::move(other.backend)) {}
++        backend(std::move(other.backend))
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        , directObject(std::move(other.directObject))
++#endif
++    {}
+ 
+     SystemWideSharedConstant& operator=(SystemWideSharedConstant&& other) noexcept {
+         backend = std::move(other.backend);
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        directObject = std::move(other.directObject);
++#endif
+         return *this;
+     }
+ 
+@@ -577,6 +592,10 @@ struct SystemWideSharedConstant {
+     bool operator!=(std::nullptr_t) const noexcept { return get_ptr() != nullptr; }
+ 
+     SystemWideSharedConstantAllocationStatus get_status() const {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        if (directObject)
++            return SystemWideSharedConstantAllocationStatus::LocalMemory;
++#endif
+         return std::visit(
+           [](const auto& end) -> SystemWideSharedConstantAllocationStatus {
+               if constexpr (std::is_same_v<std::decay_t<decltype(end)>, std::monostate>)
+@@ -594,6 +613,10 @@ struct SystemWideSharedConstant {
+     }
+ 
+     std::optional<std::string> get_error_message() const {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        if (directObject)
++            return std::nullopt;
++#endif
+         return std::visit(
+           [](const auto& end) -> std::optional<std::string> {
+               if constexpr (std::is_same_v<std::decay_t<decltype(end)>, std::monostate>)
+@@ -611,6 +634,10 @@ struct SystemWideSharedConstant {
+ 
+    private:
+     auto get_ptr() const {
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        if (directObject)
++            return static_cast<void*>(directObject.get());
++#endif
+         return std::visit(
+           [](const auto& end) -> void* {
+               if constexpr (std::is_same_v<std::decay_t<decltype(end)>, std::monostate>)
+@@ -626,6 +653,9 @@ struct SystemWideSharedConstant {
+     }
+ 
+     std::variant<std::monostate, SharedMemoryBackend<T>, SharedMemoryBackendFallback<T>> backend;
++#if defined(PIKAFISH_EMBEDDED_GUI)
++    std::unique_ptr<T> directObject;
++#endif
+ };
+ 
+ 
+diff --git a/src/numa.h b/src/numa.h
+--- a/src/numa.h
++++ b/src/numa.h
+@@ -1619,6 +1619,15 @@ class LazyNumaReplicatedSystemWide: public NumaReplicatedBase {
+         instances.clear();
+ 
+         const NumaConfig& cfg = get_numa_config();
++#if defined(PIKAFISH_EMBEDDED_GUI)
++        // The embedded GUI has one CPU and one process. Preserve ownership of
++        // the loaded network and avoid the upstream shared-memory hash/copy.
++        assert(!cfg.requires_memory_replication());
++        assert(cfg.num_numa_nodes() == 1);
++        instances.emplace_back(SystemWideSharedConstant<T>(std::move(source)));
++        return;
++#endif
++
+         // We just need to make sure the first instance is there.
+         // Note that we cannot move here as we need to reallocate the data
+         // on the correct NUMA node.

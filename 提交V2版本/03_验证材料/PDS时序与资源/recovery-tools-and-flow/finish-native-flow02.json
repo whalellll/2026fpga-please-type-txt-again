@@ -1,0 +1,36 @@
+{
+  "status": "CPU125_CM60_ZERO_HARDWARE_DELTA_NATIVE_STA_PHYSICAL_BITSTREAM_PASS_BOARD_PENDING",
+  "owner_pid": 129016,
+  "started_utc": "2026-11-02T09:05:13.443550+00:00",
+  "attempt": 2,
+  "steps": [
+    {
+      "script": "run_pnr_compiler_only.py",
+      "exit_code": 0,
+      "log_sha256": "e95592db5dd28514dd64c26363eba700a90e949f59ed74cb1807565ea46b36bb"
+    },
+    {
+      "script": "collect_final_attempt02.py",
+      "exit_code": 0,
+      "log_sha256": "976a9e0c8202234582f4d329c635121720ce313769f4a620f60c1743e695bf11"
+    },
+    {
+      "script": "export_physical.py",
+      "exit_code": 0,
+      "log_sha256": "2a035731adf8b995a39104c2f7569ca8a3712ded96d96288b2db65d3e5ca43c8"
+    },
+    {
+      "script": "verify_physical.py",
+      "exit_code": 0,
+      "log_sha256": "c845226941f24e04971d4440a9fd28c31f0ae3cab56aeddcc50ebedfe888e7ef"
+    },
+    {
+      "script": "generate_candidate_bitstream.py",
+      "exit_code": 0,
+      "log_sha256": "624543908f2c72a80fc1c1fea552e25117e01c89fb63575edb3d98a73f4789fe"
+    }
+  ],
+  "current_command": "generate_candidate_bitstream.py",
+  "child_pid": null,
+  "completed_utc": "2026-11-02T09:21:09.856071+00:00"
+}

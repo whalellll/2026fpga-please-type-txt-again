@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETE_REBUILT_CPU125_PERFORMANCE_VALIDATION_CRC_PASS_NOT_FORMAL",
+  "runs": [
+    {
+      "name": "full-fixed100-01",
+      "mode": "performance",
+      "cpu_hz": 125000000,
+      "sys_hz": 49500000,
+      "ticks": 6565619,
+      "iterations": 100,
+      "duration_seconds": 0.1326387676767677,
+      "coremark_per_mhz": 6.031419124381113,
+      "crc": {
+        "seedcrc": "e9f5",
+        "[0]crclist": "e714",
+        "[0]crcmatrix": "1fd7",
+        "[0]crcstate": "8e3a",
+        "[0]crcfinal": "988c"
+      },
+      "formal": false,
+      "board_tested": false,
+      "wall_seconds": 94.85173749999376,
+      "model_sha256": "ddc3c90f622a848a113d3d42a43a2bf588c9ffeada8134fb65c7b6ee165a4ab3",
+      "rtl_sha256": "97abbc7927c1736f0d0241525b6ecafc2654f21e89f73019846d0da156ccef31",
+      "log_sha256": "6077f60f04f3cf67639210273f92702ea9c94442255ca51047c2ca52cbc4f409",
+      "scope": "Complete production-source rebuild;100 iterations only, not official-duration board acceptance"
+    },
+    {
+      "name": "full-fixed100-01",
+      "mode": "validation",
+      "cpu_hz": 125000000,
+      "sys_hz": 49500000,
+      "ticks": 6586913,
+      "iterations": 100,
+      "duration_seconds": 0.1330689494949495,
+      "coremark_per_mhz": 6.011920910447731,
+      "crc": {
+        "seedcrc": "18f2",
+        "[0]crclist": "e3c1",
+        "[0]crcmatrix": "0747",
+        "[0]crcstate": "8d84",
+        "[0]crcfinal": "844d"
+      },
+      "formal": false,
+      "board_tested": false,
+      "wall_seconds": 99.20433759997832,
+      "model_sha256": "ddc3c90f622a848a113d3d42a43a2bf588c9ffeada8134fb65c7b6ee165a4ab3",
+      "rtl_sha256": "97abbc7927c1736f0d0241525b6ecafc2654f21e89f73019846d0da156ccef31",
+      "log_sha256": "b0bdb7238caf58ffe7a70000d8032f6acf9b0d50e0ea331228458730ea0e1d6b",
+      "scope": "Complete production-source rebuild;100 iterations only, not official-duration board acceptance"
+    }
+  ],
+  "binding_sha256": "6cfa97974c45d013778795f1ea88e44ca831bfac85d2cc2dd9fcc27bf55d54b6"
+}

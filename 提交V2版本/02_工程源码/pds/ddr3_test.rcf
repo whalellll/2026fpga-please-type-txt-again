@@ -1,0 +1,60 @@
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [1]}
+# Candidate data priorities from the compact-bank route's final slow-corner
+# DDR PHY setup paths. Keep the vendor gate priorities above.
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/adj_wrdqs [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [61]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [10]}
+# The 44,437-LUT compact profile leaves exactly one slow-corner setup
+# violation on group 2 write mask bit 7 (-0.396 ns after hold repair).
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdata_mask [7]}
+# Final multi-corner STA of the HID-count candidate found 30.486 ns routing
+# delay on this 66-load CPU FTQ address net (-13.995 ns slow setup). Prioritize
+# the measured net without altering CPU RTL, clock period, or timing exceptions.
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/ftqAlloc [3]}
+
+# Four measured slow-corner setup paths from run034de111 (CPU/pixel).
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbData [0]}
+# The old MDU bit31 name is absent after native replication/packing in d9ad97c.
+# Replace it with the measured ALU1 issue selector (-0.073ns CPU setup).
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rs_alu1/issueUsesFast}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_alu0_io_wbData [20]}
+def_route -prior_net {u_video/s4_fx [1]}
+
+# P4 measured CPU issue, Ethernet CRC and DDR write-data routes.
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbValid}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_rs_alu0_io_issueRobid [1]}
+def_route -prior_net {u_eth/tx_pos [5]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [41]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdq [58]}
+
+# P5 final slow-corner CPU ROB and LSU paths, fanout 253 and 111.
+
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/memShadowRobid [4]}
+
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_lsu/stqPa_1 [26]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/pdInsts_2 [28]}
+
+# Same measured CPU path: fanout46,1.226ns route to the ALU1 operand selector.
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rs_alu1/N1294 [0]}
+
+# CPU80 RF-read route priorities bound to a10eb164 final STA report.
+# Native report SHA256 d38e2508e9bbdcef7deca5c0c366716cd1c0489a0359b49a035a8bc5c7ed95be
+# Shared read control nets:107/111 fanout and32-load select routes.
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_dispatch_io_robRaddr_0 [3]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_dispatch_io_robRaddr_2 [3]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3080 [1]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3090 [0]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3089}
+
+# CPU80 base-probe read cone: final8772706c report SHA256 f4fd686e28f0a69e54b9dfc0fd1e8174fbf5cd78583333b6048c4fc1c19a64a2
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/N3697 [3]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3100 [1]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/_N116458}
+
+# CPU120 merged candidate03: common DDR CA alignment route;3 failed slow endpoints,3.011ns shared net.
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [135]}
+
+# Candidate05 remaining measured6ps CKE5 and write-data-enable paths.
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_cke [5]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/phy_wrdata_en [1]}

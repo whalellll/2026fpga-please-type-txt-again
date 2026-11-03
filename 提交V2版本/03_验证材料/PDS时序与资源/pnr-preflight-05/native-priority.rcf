@@ -1,0 +1,40 @@
+# Parent130trial05 hints matched to exact fresh125 mapped nets; failed06 D-cache additions rejected.
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_ioclk_gate [1]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/adj_wrdqs [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [61]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [10]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdata_mask [7]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/ftqAlloc [3]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbData [0]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rs_alu1/issueUsesFast}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_alu0_io_wbData [20]}
+def_route -prior_net {u_video/s4_fx [1]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_fu_mdu_io_wbValid}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/_u_rs_alu0_io_issueRobid [1]}
+def_route -prior_net {u_eth/tx_pos [5]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdq [41]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdq [58]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/memShadowRobid [4]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/memory/u_lsu/stqPa_1 [26]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/pdInsts_2 [28]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_rob/registerFile/N3100 [1]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [135]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_cke [5]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/phy_wrdata_en [1]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [273]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/all_group_ca_dly}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [112]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_odt [3]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_ras_n [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_we_n [0]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [204]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [24]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [32]}
+def_route -prior_net {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_addr [97]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/tQRdata_2 [6]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_2_1 [0]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/cache/tagOut_0 [12]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/fcTransferCandidate}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_2_1 [3]}
+def_route -prior_net {u_cpu/u_cpu_wrapper/u_cpu/core/frontend/tage/qHash_3_1 [0]}

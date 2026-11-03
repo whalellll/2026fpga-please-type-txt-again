@@ -1,0 +1,402 @@
+{
+  "status": "CPU80_RESIDENT_KEY_SOURCE_31_OPTIONAL_CSR_SITES_NATIVE_EXECUTION_AND_FINAL_STA_PENDING",
+  "selected": [
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/N1131/gateop",
+      "cell_type": "gopLUT6",
+      "reference_site": [
+        "CLMA_273_132",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_219_175",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[2]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_96",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMS_207_97",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[3]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_96",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_219_103",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[4]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_78",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_219_61",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[5]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_108",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_261_78",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[6]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_291_84",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_261_78",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[7]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_78",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_219_61",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[8]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_108",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_219_61",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[9]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_249_126",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_219_61",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[10]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_249_126",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_243_90",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[11]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_96",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_243_90",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[12]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_78",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_261_96",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[13]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_78",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_243_66",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[14]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_79",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_243_90",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[15]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_108",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_273_121",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[16]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_291_84",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_249_108",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[17]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_91",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_273_121",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[18]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_273_114",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_261_115",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[19]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_91",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_261_115",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[20]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_108",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_249_108",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[21]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_261_96",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_273_121",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[22]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_273_132",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_249_108",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[23]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_309_114",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_261_96",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[24]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_121",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_249_108",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[25]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_121",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_261_96",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[26]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_273_114",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_249_96",
+        "FYA"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[27]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_121",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_261_115",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[28]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_273_114",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_273_121",
+        "FYB"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[29]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_273_114",
+        "FYB"
+      ],
+      "failed_site": [
+        "CLMA_243_90",
+        "FYC"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[30]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMA_249_126",
+        "FYC"
+      ],
+      "failed_site": [
+        "CLMA_261_96",
+        "FYD"
+      ]
+    },
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/sepc[31]/opit_0_L6Q",
+      "cell_type": "gopLUT6Q",
+      "reference_site": [
+        "CLMS_291_121",
+        "FYD"
+      ],
+      "failed_site": [
+        "CLMA_261_78",
+        "FYA"
+      ]
+    }
+  ],
+  "reference_pnr_sha256": "c535e9d2c029ea205bc78b8096131a352657da4f23d101b5be21452021497139",
+  "failed_pnr_sha256": "5d838c9c4702fa872a2c540e448f4463da8bc4bc64acee5298c248a3a247a605",
+  "schema": 1,
+  "cpu_hz": 80000000,
+  "sys_hz": 49500000,
+  "cpu_rtl_sha256": "ec5d7a42ba07cb1f3d3273260f7c115f679f41569a461181d3e66ba6cbcc6df0",
+  "timing_accepted": false,
+  "trial_note": "Exact unchanged CPU RTL; same32 CSR placements retained as trial inputs only, new native execution/type/site readback and all-corner STA required.",
+  "removed_constraints": [
+    {
+      "cell": "u_cpu/u_cpu_wrapper/u_cpu/core/backend/u_csr_trap/mcause[8]/opit_0_L5Q",
+      "cell_type": "gopLUT6L5Q",
+      "reference_site": [
+        "CLMA_273_120",
+        "FYA"
+      ],
+      "failed_site": [
+        "CLMA_219_73",
+        "FYB"
+      ]
+    }
+  ],
+  "removed_constraint_reason": "Runff4df178 native PhysicalConstraintEditor-0023 proves old L5Q packed instance absent. No replacement name/site guessed; register RTL remains unchanged. Native functional-netlist/constraint export requires completedPNR and rejected pre-PNR input; attempts preserved.",
+  "prior_native_map_sha256": "595444fcb3193ef2401279bf2c107671d5289b01cfdddf0bd0a298c4971ff033",
+  "cpu_source_commit": "f51c989488350510abc295ea18c1f87abb5e946c"
+}

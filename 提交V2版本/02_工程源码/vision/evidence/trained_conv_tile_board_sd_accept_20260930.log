@@ -1,0 +1,33 @@
+DDR startup delay complete
+ARP 0xc0a80102...
+ARP timeout
+Automatic netboot failed, error 2
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3>
+soc-v3> xqboot
+MicroSD Xiangqi GUI boot
+Mounted FAT32 volume, cluster bytes=32768
+Loading xqmodel.bin to 0x0f000000, bytes=207792
+MicroSD payload DMA active
+ done, 22 ms, 9295 KiB/s
+Loading xiangqi.bin to 0x01000000, bytes=6980
+MicroSD payload DMA active
+ done, 5 ms, 1493 KiB/s
+Xiangqi model verified, CRC32=0x51f2d900
+Starting Xiangqi GUI at 0x01000000
+MAC_CONV_TRAINED_TILE_BOARD_PASS output_crc32=c49864b6 compute_cycles=000094fb

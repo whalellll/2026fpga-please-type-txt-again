@@ -1,0 +1,9 @@
+# Candidate placement experiment only; no clock or timing exceptions.
+# PAP_REGION coordinates are floorplan (xmin,xmax,ymin,ymax).
+# Keep all package/PHY locations in cpu_v2_soc.fdc. Constrain only the
+# register/logic alignment blocks, which contain no package IO/PLL instances.
+define_global_attribute {PAP_REGION} {nnue_ddr_bank0(106,119,57,123);nnue_ddr_bank1(106,119,135,190);}
+define_attribute {i:I_ips_ddr_top.u_ddrphy_top.ddrphy_slice_top.i_dqs_group[0].ddrphy_data_slice.ddrphy_dqs_rddata_align} {PAP_REGION} {nnue_ddr_bank0}
+define_attribute {i:I_ips_ddr_top.u_ddrphy_top.ddrphy_slice_top.i_dqs_group[1].ddrphy_data_slice.ddrphy_dqs_rddata_align} {PAP_REGION} {nnue_ddr_bank0}
+define_attribute {i:I_ips_ddr_top.u_ddrphy_top.ddrphy_slice_top.i_dqs_group[2].ddrphy_data_slice.ddrphy_dqs_rddata_align} {PAP_REGION} {nnue_ddr_bank1}
+define_attribute {i:I_ips_ddr_top.u_ddrphy_top.ddrphy_slice_top.i_dqs_group[3].ddrphy_data_slice.ddrphy_dqs_rddata_align} {PAP_REGION} {nnue_ddr_bank1}

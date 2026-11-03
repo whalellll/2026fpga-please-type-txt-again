@@ -1,0 +1,9 @@
+{
+  "status": "FINAL_NATIVE_PHYSICAL_EXPORT_COMPLETE",
+  "pnr_adf_sha256": "267001ad9a113796a86203b107d6745d53d2cb11d4060b36b096d722016408d0",
+  "files": {
+    "csr-final.pcf": "38f3c54448c713fc2ba8257ef23eab820b9e6bc35bb6008ed0533a4414d3bf51",
+    "io-final.pcf": "91efd5c13e1575aba8631383eba97710af063130754cd33bba3751632a7eb04a",
+    "tage-final.pcf": "8b3347ece6fac3dea0b5510315073b98c52ad50d5fc5f6114ef64964557dfe98"
+  }
+}

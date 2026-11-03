@@ -1,0 +1,1 @@
+G:/fpga/workspace/tools/riscv32-gcc16/lib/gcc/riscv32-unknown-elf/16.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: warning: G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-02\payload.elf has a LOAD segment with RWX permissions

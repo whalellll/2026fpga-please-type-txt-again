@@ -1,0 +1,8 @@
+{
+  "profile": "bram_1024_128_sync_v1",
+  "logical_weight_bytes": 9216,
+  "physical_weight_bytes": 12288,
+  "drm36k_equivalent": 3,
+  "read_latency_cycles": 1,
+  "clock_domain": "sys_clk"
+}

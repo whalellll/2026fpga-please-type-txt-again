@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fpga Timing Optimization"
+  short_description: "Help with Fpga Timing Optimization tasks"
+  default_prompt: "Use $fpga-timing-optimization to inspect the current project, apply its constraints, and produce verifiable changes and evidence."

@@ -1,0 +1,24 @@
+{
+  "name": "full-fixed100-01",
+  "mode": "validation",
+  "cpu_hz": 125000000,
+  "sys_hz": 49500000,
+  "ticks": 6586913,
+  "iterations": 100,
+  "duration_seconds": 0.1330689494949495,
+  "coremark_per_mhz": 6.011920910447731,
+  "crc": {
+    "seedcrc": "18f2",
+    "[0]crclist": "e3c1",
+    "[0]crcmatrix": "0747",
+    "[0]crcstate": "8d84",
+    "[0]crcfinal": "844d"
+  },
+  "formal": false,
+  "board_tested": false,
+  "wall_seconds": 99.20433759997832,
+  "model_sha256": "ddc3c90f622a848a113d3d42a43a2bf588c9ffeada8134fb65c7b6ee165a4ab3",
+  "rtl_sha256": "97abbc7927c1736f0d0241525b6ecafc2654f21e89f73019846d0da156ccef31",
+  "log_sha256": "b0bdb7238caf58ffe7a70000d8032f6acf9b0d50e0ea331228458730ea0e1d6b",
+  "scope": "Compiler screening; reused matched boot objects, full rebuild required"
+}

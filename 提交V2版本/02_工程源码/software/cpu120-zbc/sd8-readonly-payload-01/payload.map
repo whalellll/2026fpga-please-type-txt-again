@@ -1,0 +1,267 @@
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.memcmp   0x00000000       0x34 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.delay_cycles
+                0x00000000       0x1c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.console_getc_timeout
+                0x00000000       0x48 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.parse_u32
+                0x00000000       0xb4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.crc32_update
+                0x00000000       0x44 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.ddr_entry_valid
+                0x00000000       0x54 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.ddr_contiguous_limit
+                0x00000000       0x40 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .rodata.ddr_wait_ready.str1.4
+                0x00000000       0x3c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.ddr_wait_ready
+                0x00000000       0xb8 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .rodata.xmodem_receive.str1.4
+                0x00000000       0x22 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text.xmodem_receive
+                0x00000000      0x3d0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .bss.waited.0  0x00000000        0x4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.fill_write_buffer
+                0x00000000       0x88 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_card_present
+                0x00000000       0x50 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_card_raw_present
+                0x00000000       0x50 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_read_sector
+                0x00000000       0x44 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_write_sector
+                0x00000000      0x3d4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_write_sectors
+                0x00000000      0x68c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .rodata.fat_ro_error_string.str1.4
+                0x00000000       0x12 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_ro_error_string
+                0x00000000       0x30 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .rodata.str1.4
+                0x00000000       0xbb G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .rodata.CSWTCH.99
+                0x00000000       0x28 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+ .data          0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+ .bss           0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+DDR              0x01000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+LOAD G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+LOAD G:/fpga/workspace/tools/riscv32-gcc16/lib/gcc/riscv32-unknown-elf/16.2.0\libgcc.a
+
+.text           0x01000000     0x3e8c
+ *(.text.start)
+ .text.start    0x01000000       0x3c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+                0x01000000                _start
+ *(.text*)
+ .text.reader   0x0100003c       0x14 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .text.progress
+                0x01000050       0x60 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .text.fail.isra.0
+                0x010000b0       0x64 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .text.startup.main
+                0x01000114      0x370 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                0x01000114                main
+ .text.memcpy   0x01000484       0x24 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x01000484                memcpy
+ .text.memset   0x010004a8       0x1c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x010004a8                memset
+ .text.read_mtime_ticks32
+                0x010004c4        0xc G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x010004c4                read_mtime_ticks32
+ .text.console_putc
+                0x010004d0       0x20 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x010004d0                console_putc
+ .text.console_puts
+                0x010004f0       0x34 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x010004f0                console_puts
+ .text.console_hex
+                0x01000524       0x58 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x01000524                console_hex
+ .text.console_dec
+                0x0100057c       0x90 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x0100057c                console_dec
+ .text.ddr_range_valid
+                0x0100060c       0x64 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                0x0100060c                ddr_range_valid
+ .text.copy_buffer
+                0x01000670       0x78 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.wait_operation.constprop.0
+                0x010006e8      0x100 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.run_command.constprop.0
+                0x010007e8       0x98 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.read_data_command
+                0x01000880      0x37c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.run_app_command
+                0x01000bfc      0x13c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.run_r1_command
+                0x01000d38       0xe8 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_read_sectors.part.0
+                0x01000e20      0x39c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .text.sd_release
+                0x010011bc       0xc8 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                0x010011bc                sd_release
+ .text.sd_card_info
+                0x01001284        0xc G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                0x01001284                sd_card_info
+ .text.sd_init  0x01001290      0x670 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                0x01001290                sd_init
+ .text.sd_read_sectors
+                0x01001900       0x50 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                0x01001900                sd_read_sectors
+ .text.fat_parse_boot_sector
+                0x01001950      0x4bc G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_cluster_lba
+                0x01001e0c       0x8c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_next_cluster
+                0x01001e98      0x1dc G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_process_short_entry
+                0x01002074      0x620 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_scan_directory_sector
+                0x01002694      0x1dc G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .text.fat_ro_mount
+                0x01002870      0x2b4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+                0x01002870                fat_ro_mount
+ .text.fat_ro_find
+                0x01002b24      0x3c0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+                0x01002b24                fat_ro_find
+ .text.fat_ro_load
+                0x01002ee4      0x524 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+                0x01002ee4                fat_ro_load
+ .text.block    0x01003408      0x2f0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+ .text.xq_sha256_hex
+                0x010036f8      0x268 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+                0x010036f8                xq_sha256_hex
+ *(.rodata*)
+ .rodata.progress.str1.4
+                0x01003960      0x385 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                                 0x14 (size before relaxing)
+ .rodata.fail.isra.0.str1.4
+                0x01003ce5        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                                 0x23 (size before relaxing)
+ .rodata.main.str1.4
+                0x01003ce5        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                                 0xca (size before relaxing)
+ .rodata.str1.4
+                0x01003ce5        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                                0x239 (size before relaxing)
+ *fill*         0x01003ce5        0x3 
+ .rodata.files  0x01003ce8       0x60 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .rodata.h.1    0x01003d48       0x11 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .rodata.sd_read_sectors.part.0.str1.4
+                0x01003d59        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                                 0x39 (size before relaxing)
+ *fill*         0x01003d59        0x3 
+ .rodata.fat_lfn_offsets
+                0x01003d5c        0xd G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .rodata.xq_sha256_hex.str1.4
+                0x01003d69        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+                                 0x11 (size before relaxing)
+ *fill*         0x01003d69        0x3 
+ .rodata.constants
+                0x01003d6c      0x100 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+ .rodata        0x01003e6c       0x20 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+
+.rela.dyn       0x01003e8c        0x0
+ .rela.text.start
+                0x01003e8c        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+
+.data           0x01003e8c        0x0
+                0x0100468c                        __global_pointer$ = (. + 0x800)
+ *(.data*)
+ *(.sdata*)
+
+.bss            0x01003e8c      0x490
+                0x01003e8c                        . = ALIGN (0x4)
+                0x01003e8c                        __bss_start = .
+ *(.bss*)
+ .bss.volume    0x01003e8c      0x45c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .bss.preerase_supported
+                0x010042e8        0x4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .bss.last_hw_error
+                0x010042ec        0x4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .bss.bus4_enabled
+                0x010042f0        0x4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .bss.card_initialized
+                0x010042f4        0x4 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .bss.card_info
+                0x010042f8       0x24 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ *(.sbss*)
+ *(COMMON)
+                0x0100431c                        . = ALIGN (0x4)
+                0x0100431c                        __bss_end = .
+                0x0100fff0                        __stack_top = ((ORIGIN (DDR) + LENGTH (DDR)) - 0x10)
+                0x00000001                        ASSERT ((__bss_end < (__stack_top - 0x2000)), SD8 payload leaves insufficient stack)
+OUTPUT(G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\payload.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x5e
+ .riscv.attributes
+                0x00000000       0x5c G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\start.S.o
+ .riscv.attributes
+                0x0000005c       0x5e G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .riscv.attributes
+                0x000000ba       0x5e G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .riscv.attributes
+                0x00000118       0x5e G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .riscv.attributes
+                0x00000176       0x5e G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .riscv.attributes
+                0x000001d4       0x5e G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o
+                                 0x13 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\main.c.o
+ .note.GNU-stack
+                0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\runtime.c.o
+ .note.GNU-stack
+                0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\sd_native.c.o
+ .note.GNU-stack
+                0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\fat_ro.c.o
+ .note.GNU-stack
+                0x00000000        0x0 G:\fpga\build\pds25-cpu120-zbc-fc1-20261101-01\sd8-readonly-payload-01\xq_sha256.c.o

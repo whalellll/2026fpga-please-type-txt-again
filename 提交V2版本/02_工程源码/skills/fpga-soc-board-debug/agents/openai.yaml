@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fpga Soc Board Debug"
+  short_description: "Help with Fpga Soc Board Debug tasks"
+  default_prompt: "Use $fpga-soc-board-debug to inspect the current project, apply its constraints, and produce verifiable changes and evidence."

@@ -1,0 +1,30 @@
+--- a/lib/sbi/sbi_timer.c
++++ b/lib/sbi/sbi_timer.c
+@@ -18,6 +18,8 @@
+ #include <sbi/sbi_scratch.h>
+ #include <sbi/sbi_timer.h>
+ 
++#include "pg2l_timer_bridge.h"
++
+ static unsigned long time_delta_off;
+ static u64 (*get_time_val)(void);
+ static const struct sbi_timer_device *timer_dev = NULL;
+@@ -145,7 +147,17 @@
+ 		csr_write(CSR_STIMECMP, next_event);
+ #endif
+ 	} else if (timer_dev && timer_dev->timer_event_start) {
+-		timer_dev->timer_event_start(next_event);
++		/* PG2L V3.5 TIME counts CPU cycles; ACLINT counts SYS cycles.
++		 * The exact ratio is generated from this candidate's clocks.json.
++		 */
++		if (timer_dev->timer_value) {
++			u64 now_time = get_ticks();
++			u64 now_mtime = timer_dev->timer_value();
++			timer_dev->timer_event_start(
++				pg2l_timer_deadline(next_event, now_time, now_mtime));
++		} else {
++			timer_dev->timer_event_start(next_event);
++		}
+ 		csr_clear(CSR_MIP, MIP_STIP);
+ 	}
+ 	csr_set(CSR_MIE, MIP_MTIP);

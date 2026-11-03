@@ -1,0 +1,23 @@
+
+SoC V4.2 bootloader - RV32IMA/Sv32 / DDR3 / RGMII / Flash / native MicroSD
+Linux entry must be OpenSBI, not the kernel directly. Type help.
+Automatic MicroSD boot in 2 seconds; press any key to stop...
+Automatic MicroSD boot stopped.
+soc-v3> info
+SYS_ID=0x53563300 DDR=ready SYS_HZ=49500000 CAPS=0x0000001f ETH_ID=0x45544831 SPI_ID=0x53504931 FLASH_JEDEC=0x000b4018 SD_ID=0x53444e32 SD=present MAC_ID=0x4d41434b MAC_VER=0x00020100
+soc-v3> loadx 0x01000000
+Start XMODEM-CRC transfer now...
+received 8192 bytes
+soc-v3> boot 0x01000000
+CONV_CASE_PASS id=0 taps=56 input=224 weight=128 reuse=56 cycles=227 stalls=0 tap_xor=00e0b070 weight_digest=74513326
+CONV_CASE_PASS id=1 taps=441 input=196 weight=1536 reuse=49 cycles=1360 stalls=0 tap_xor=000000fb weight_digest=5a672328
+CONV_CASE_PASS id=2 taps=1296 input=196 weight=3456 reuse=36 cycles=1521 stalls=0 tap_xor=0044f89c weight_digest=3e5a76c8
+CONV_CASE_PASS id=3 taps=921600 input=409600 weight=3456 reuse=25600 cycles=1342468 stalls=0 tap_xor=0008c8c8 weight_digest=281f3d98
+MAC_CONV_STAGE2_BOARD_PASS
+MAC_CONV_COMPUTE_BOARD_PASS output=144 input=196 weight=3456 taps=324 reuse=9 compute_cycles=3503 weight_cycles=2721
+CONV_COMPUTE_CASE_PASS id=10 output=20 taps=4 compute_cycles=127 weight_cycles=145
+CONV_COMPUTE_CASE_PASS id=11 output=72 taps=81 compute_cycles=810 weight_cycles=1112
+CONV_COMPUTE_CASE_PASS id=12 output=5 taps=1 compute_cycles=46 weight_cycles=145
+CONV_COMPUTE_CASE_PASS id=13 output=16 taps=1 compute_cycles=94 weight_cycles=145
+MAC_CONV_FULL_FIRST_LAYER_PASS output=409600 input=409600 weight=3456 taps=921600 reuse=25600 crc=eb240272 compute_cycles=10092320 weight_cycles=2725 stalls=8741115
+MAC_CONV_COMPUTE_SUITE_BOARD_PASS

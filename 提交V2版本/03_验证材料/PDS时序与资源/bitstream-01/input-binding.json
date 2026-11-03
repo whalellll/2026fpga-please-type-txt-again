@@ -1,0 +1,14 @@
+{
+  "status": "RUNNING_LOCAL_CANDIDATE_BITSTREAM_GENERATION_NOT_BOARD",
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+  "command": "gen_bit_stream -force_to_run -create_bit_file TRUE -create_bin_file",
+  "owner_pid": 126804,
+  "started_utc": "2026-11-02T09:20:25.265173+00:00",
+  "pnr_adf_sha256": "267001ad9a113796a86203b107d6745d53d2cb11d4060b36b096d722016408d0",
+  "final_review_sha256": "122174e25c6137f891c9f56f70fccd5ccfe7e6f9b037366ea1c3a0beba3a81e7",
+  "controller_sha256": "4514208b00ce623112a522507c667cf731206a3c6032b768ff35317cd7925a64",
+  "board_tested": false,
+  "remote_pushed": false,
+  "formal_delivery": false
+}

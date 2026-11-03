@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "profile": "cpu120_ddr_ca_data_5a5e46_v2",
+  "source_native_run": "5a5e466ca8894bd0a4022b22afcc9e49",
+  "source_report_sha256": "b5226a821e39be02c924c78e9c4d66fb3dea8c7282a64f555ee8170463e82ab9",
+  "targets": [
+    "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/debug_data [135]",
+    "I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/adj_cke [5]",
+    "I_ips_ddr_top/u_ddrphy_top/phy_wrdata_en [1]"
+  ],
+  "base_source_report_sha256": "d04e73d267ae1dd173f2f20bbc2496033e61e9ba6a0232e426f5af83cf808d40"
+}

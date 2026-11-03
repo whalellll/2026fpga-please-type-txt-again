@@ -1,0 +1,98 @@
+{
+  "status": "CPU125_CM60_ROUTED_ALL_CORNER_STA_PHYSICAL_BITSTREAM_PASS_BOARD_PENDING",
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "cpu_source_commit": "b1164e42737a081cc640a2113c76a53d0c91a97a",
+  "implementation_commit": "a6e0009b",
+  "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+  "pnr_attempt": "pnr-02",
+  "tool_version": "2025.2 build211867",
+  "cpu_hz": 125000000,
+  "sys_hz": 49500000,
+  "compiler_profile": "cm60-unroll2-lto-branch1",
+  "cpu_period_ns": 7.992,
+  "cdc_limit_ns": 7.192,
+  "cpu_timing": [
+    {
+      "check": "Setup",
+      "corner": "Slow",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.139,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 66082
+    },
+    {
+      "check": "Hold",
+      "corner": "Slow",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.121,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 65757
+    },
+    {
+      "check": "Setup",
+      "corner": "Fast",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 2.952,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 66082
+    },
+    {
+      "check": "Hold",
+      "corner": "Fast",
+      "launch": "cpu_clk",
+      "capture": "cpu_clk",
+      "wns_ns": 0.088,
+      "tns_ns": 0.0,
+      "violating_endpoints": 0,
+      "total_endpoints": 65757
+    }
+  ],
+  "final_sta_pass": true,
+  "physical_readback_pass": true,
+  "resources": {
+    "lut": 45787.0,
+    "ff": 34226.0,
+    "lutram": 1946.0,
+    "drm": 126.5,
+    "apm": 76.0
+  },
+  "hardware_resource_delta": {
+    "lut": 0,
+    "ff": 0,
+    "lutram": 0,
+    "drm": 0,
+    "apm": 0
+  },
+  "short_diagnostic_coremark_per_mhz": {
+    "performance": 6.031419124381113,
+    "validation": 6.011920910447731
+  },
+  "diagnostic_iterations": 100,
+  "formal_board_coremark": false,
+  "pnr_adf_sha256": "267001ad9a113796a86203b107d6745d53d2cb11d4060b36b096d722016408d0",
+  "artifact_sha256": {
+    "artifacts/soc_top.sbit": "70cdcf20d1a96de79d369d1d23b183ec283e8598a580a18acc4d0b2b454ea12e",
+    "artifacts/soc_v2_top.sbit": "70cdcf20d1a96de79d369d1d23b183ec283e8598a580a18acc4d0b2b454ea12e",
+    "artifacts/soc_top.bin": "6fd6cd64e39e1d0dc22b3030ad8e13dae7beed578914fe63aaa9543b2d65a776",
+    "artifacts/bootloader.bin": "12d881436b746fb49c312ceba786ca5411084f27471ec67e923bcf01fa5a7c24",
+    "artifacts/bootloader.build.json": "bde7a39deb17e457a72bc28276584d80406567be664aab16d73fad1de928be1c",
+    "artifacts/bootrom.hex": "ed6a66183a8b47f12bdbd22872f9895ba52662b77e960166f85c44071664bf0c",
+    "rtl/cpu/CoreTop.sv": "97abbc7927c1736f0d0241525b6ecafc2654f21e89f73019846d0da156ccef31",
+    "rtl/cpu/source.json": "9b1f4c3e6dea6ef5a560ad7ca9aac144c60c6a7082040717a0844b8433384c32"
+  },
+  "evidence_root": "docs/validation/cpu125-cm60-small-20261102/routed-sbit",
+  "branch": "candidate/cpu125-coremark60-20261102-01",
+  "authorization": "2026-11-02: 推送到独立分支; 生成sbit并提交",
+  "board_tested": false,
+  "board_deferred_by_user": true,
+  "main_promoted": false,
+  "formal_delivery": false,
+  "evidence_scope": "Fresh full routed STA and physical readback for this boot ROM; not board acceptance. Historical CPU120 delivery evidence and generic old reports retain their original identities. Use the current manifest and routed-sbit reports for this candidate.",
+  "recorded_utc": "2026-11-02T09:21:23.678746+00:00"
+}

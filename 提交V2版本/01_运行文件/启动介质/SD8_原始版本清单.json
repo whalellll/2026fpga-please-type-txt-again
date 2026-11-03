@@ -1,0 +1,131 @@
+{
+  "status": "JOINT_CPU120_ZBC_SD8_RUNTIME_IDENTITY_REBOUND_STATIC_HASH_CRC_PASS_BOARD_PENDING",
+  "source_commit": "4253258cbd1fe23dc3cfd4d6ff029e85086a959c",
+  "cpu_source_commit": "b1164e42737a081cc640a2113c76a53d0c91a97a",
+  "native_run": "75198114550743ada4e4015ad5cbf4e2",
+  "bitstream_sha256": "bf31b974d060a462654769e2896bcbb33fe596c9d59c13357a8ce27fe7fc8bbf",
+  "cpu_hz": 120000000,
+  "sys_hz": 49500000,
+  "sbi_ratio": [
+    33,
+    80
+  ],
+  "rootfs_cpio_size_unchanged": true,
+  "dtb_and_initrd_bounds_unchanged": true,
+  "cpio_changes": [
+    {
+      "name": "usr/bin/start-main-xinyi",
+      "bytes": 2171,
+      "before_sha256": "93546e2bf84538335c35eeee8cc826f68026e0406ee6a3775b99392e07667fc8",
+      "after_sha256": "f1d2c9431d389fba39a828de94c68134b6c8004623604cee713944a373b9332d"
+    },
+    {
+      "name": "etc/main-current-cram.sha256",
+      "bytes": 65,
+      "before_sha256": "fb33eb88eb62199b1436be14f68e8fe3722d62134a321c5668dc2f95add4d6d5",
+      "after_sha256": "6a1f6d60d0e68421bb1d31c697ae5d46298250c50b0ab217f055b902d61ae4c9"
+    },
+    {
+      "name": "etc/cpu120-software.json",
+      "bytes": 1253,
+      "before_sha256": "1a775a750cf5c4684a5d4bbe4b668b57843330fffe881131036f779dff715804",
+      "after_sha256": "c5adc530633b263ec3d89a32f51f72fb14824c1ef282514f10e8f8243ceee639"
+    },
+    {
+      "name": "opt/main-xinyi/runtime.sha256",
+      "bytes": 5442,
+      "before_sha256": "5f7087395a7405e0c62f9f94836f9377a097b12794abdcd9edf2cbe3d789d2b7",
+      "after_sha256": "7c4f54259a00dce756a37cd62e756c42f34a7c8d5d0589b9697ee3625e9411cf"
+    }
+  ],
+  "sd_root_files": {
+    "Image.mmode": {
+      "bytes": 14052,
+      "sha256": "780b52ff54002974510eb6618566d9801d5500a11122fc053e6f29ef115a9347"
+    },
+    "mmode.dtb": {
+      "bytes": 2747,
+      "sha256": "c0839cb76491d53a4985e793dc512f4d134910e160629b138fded7758b974d65"
+    },
+    "fw_jump.bin": {
+      "bytes": 266448,
+      "sha256": "0ab480bcc4782cb60a150e59c0b9963ea80538a4498c4a82e7b420a7035e5daf"
+    },
+    "Image": {
+      "bytes": 7505584,
+      "sha256": "1c86665512c8bfde803e55e20a4425823898d0035bf46470f36372f8fc4c0963"
+    },
+    "rootfs.cpio": {
+      "bytes": 36487680,
+      "sha256": "43343b721e31d9f9d510e702a6a5dd90ab73cc5766a9073e42f82f719f141912"
+    },
+    "soc.dtb": {
+      "bytes": 2747,
+      "sha256": "c0839cb76491d53a4985e793dc512f4d134910e160629b138fded7758b974d65"
+    },
+    "pikafish.pff": {
+      "bytes": 68122688,
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    "pikafish.atk": {
+      "bytes": 34603072,
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    }
+  },
+  "payloads": [
+    {
+      "name": "fw_jump.bin",
+      "address": 402653184,
+      "bytes": 266448,
+      "crc32": "b661b51a",
+      "sha256": "0ab480bcc4782cb60a150e59c0b9963ea80538a4498c4a82e7b420a7035e5daf"
+    },
+    {
+      "name": "Image",
+      "address": 4194304,
+      "bytes": 7505584,
+      "crc32": "75b957cf",
+      "sha256": "1c86665512c8bfde803e55e20a4425823898d0035bf46470f36372f8fc4c0963"
+    },
+    {
+      "name": "rootfs.cpio",
+      "address": 50331648,
+      "bytes": 36487680,
+      "crc32": "ca3649bf",
+      "sha256": "43343b721e31d9f9d510e702a6a5dd90ab73cc5766a9073e42f82f719f141912"
+    },
+    {
+      "name": "soc.dtb",
+      "address": 436207616,
+      "bytes": 2747,
+      "crc32": "ca074860",
+      "sha256": "c0839cb76491d53a4985e793dc512f4d134910e160629b138fded7758b974d65"
+    },
+    {
+      "name": "pikafish.pff",
+      "address": 268435456,
+      "bytes": 68122688,
+      "crc32": "80322636",
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    {
+      "name": "pikafish.atk",
+      "address": 352321536,
+      "bytes": 34603072,
+      "crc32": "cba1dd72",
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    }
+  ],
+  "software_binaries_unchanged": {
+    "usr/bin/xinyi-one": "2bd6d75cee571672ad605923d659c8ec395c4eb2b66a1dcd988f9e7636e6a68e",
+    "usr/bin/xinyi-engine": "bc1d432aa11f127e25a5fb7ee974df1ac29f41e8c3a5ad3edb6213c6b0647210",
+    "usr/bin/pikafish-nnue-latency-clint": "9bbfdfff8899d07f963f148c4a535249f51a297f6b33815e1c68110af1f5ae4e",
+    "usr/bin/xqvoice-voice3": "6e36a0e64b86e8677bbc062c75b008f42f323daeca14bc5f9fd3ee74e59394b5",
+    "usr/bin/picture-new-bench": "279cc1b53c37614f9560d810063a9bb408a082cace130426b7ab852708463f42"
+  },
+  "physical_media_written": false,
+  "board_tested": false,
+  "formal_delivery_complete": false,
+  "created_utc": "2026-11-01T11:17:09.430611+00:00",
+  "scope": "Only fixed-length runtime bitstream/source/run binding and corresponding runtime.sha256 entries change inside CPIO. Complete original CPIO header/order/padding retained. Payload CRC table rebuilt; SBI/kernel/DTBs/models and all application binaries unchanged. Requires actual new SD deployment and direct boot before publication/delivery."
+}

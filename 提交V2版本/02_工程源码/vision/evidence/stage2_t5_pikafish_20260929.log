@@ -1,0 +1,34 @@
+^C
+/ #
+/ # sha256sum /usr/bin/pikafish-stageb-board-accept /opt/pikafish/stageb-mac.bin
+
+ /opt/pikafish/stageb-golden.bin; printf 'BOARD_CMD_%s\n' '4edf5bb395184fd6bc68b
+
+18ab35e3fa3'
+725728997aaebea0c1b90c59640478d2234a6f1a8d29fb1c75d7def78936b037  /usr/bin/pikafish-stageb-board-accept
+9707836b14e84c74e05921f0872ff2c17391e879a06f569c542f485c09834197  /opt/pikafish/stageb-mac.bin
+66162169b5f4f4d58b1864a16e2b7182dd6cf96ac68a7c618de20b1a4a7ab6c4  /opt/pikafish/stageb-golden.bin
+BOARD_CMD_4edf5bb395184fd6bc68b18ab35e3fa3
+/ # /usr/bin/pikafish-stageb-board-accept /opt/pikafish/stageb-mac.bin /opt/pika
+
+fish/stageb-golden.bin
+PIKAFISH_STAGEB_BOARD_PACKS_VERIFIED pfsb_crc32=7261d3e8 mlps_crc32=8c4b6711 golden_crc32=5759e18a
+PIKAFISH_STAGEB_BOARD_DDR_READY bytes=593920 crc32=7261d3e8
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=0 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=1 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=2 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=3 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=4 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=5 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=6 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=7 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=8 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=9 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=10 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=11 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=12 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=13 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=14 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_BUCKET_PASS bucket=15 cases=6 jobs=24
+PIKAFISH_STAGEB_BOARD_GOLDEN_PASS buckets=16 cases=96 jobs=384 fc0_lanes=3072 pfsb_crc32=7261d3e8 cycles=2778239
+/ #

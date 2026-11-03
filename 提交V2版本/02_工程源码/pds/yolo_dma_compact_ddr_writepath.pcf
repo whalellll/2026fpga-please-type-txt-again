@@ -1,0 +1,336 @@
+# Candidate DDR control and write-path placement; no STA exceptions.
+# Exact current native names only; no packed-cell alias substitution.
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[0]/opit_0_inv_L6Q} CLMA_333_858 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[10]/opit_0_inv_L6Q} CLMA_345_900 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[11]/opit_0_inv_L6Q} CLMS_309_865 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[12]/opit_0_inv_L6Q} CLMA_315_840 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[13]/opit_0_inv_L6Q} CLMA_315_840 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[14]/opit_0_inv_L6Q} CLMA_333_816 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[15]/opit_0_inv_L6Q} CLMS_339_829 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[16]/opit_0_inv_L6Q} CLMA_333_787 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[17]/opit_0_inv_L6Q} CLMA_339_774 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[18]/opit_0_inv_L6Q} CLMA_357_726
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[19]/opit_0_inv_L6Q} CLMA_333_745 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[1]/opit_0_inv_L6Q} CLMS_339_967 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[20]/opit_0_inv_L6Q} CLMS_327_733 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[21]/opit_0_inv_L6Q} CLMS_291_721 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[22]/opit_0_inv_L6Q} CLMS_309_739 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[23]/opit_0_inv_L6Q} CLMA_303_805 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[24]/opit_0_inv_L6Q} CLMS_339_793 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[25]/opit_0_inv_L6Q} CLMS_309_805 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[26]/opit_0_inv_L6Q} CLMA_333_828 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[27]/opit_0_inv_L6Q} CLMS_327_805 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[28]/opit_0_inv_L6Q} CLMS_327_805 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[29]/opit_0_inv_L6Q} CLMA_309_786 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[2]/opit_0_inv_L6Q} CLMA_333_883 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[30]/opit_0_inv_L6Q} CLMA_339_792 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[31]/opit_0_inv_L6Q} CLMA_303_834 FYB
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[3]/opit_0_inv_L6Q} CLMA_351_960 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[4]/opit_0_inv_L6Q} CLMS_309_895 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[5]/opit_0_inv_L6Q} CLMS_309_943 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[6]/opit_0_inv_L6Q} CLMA_309_888 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[7]/opit_0_inv_L6Q} CLMA_351_972 FYA
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[8]/opit_0_inv_L6Q} CLMA_333_858 FYD
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_dfi/phy_wrdata_d[9]/opit_0_inv_L6Q} CLMA_309_888 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_data_slice_wrlvl/wrlvl_dqs/opit_0_inv} CLMA_351_780
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_data_slice_wrlvl/wrlvl_dqs_en/opit_0_inv_L6QL5} CLMA_357_847 FYC
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/ck_dqs_diff[1]/opit_0_inv_L6QL5Q1} CLMS_327_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[0]/opit_0_inv_srl} CLMS_339_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[10]/opit_0_inv_srl} CLMA_327_660
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[11]/opit_0_inv_srl} CLMS_345_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[12]/opit_0_inv_srl} CLMS_327_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[13]/opit_0_inv_srl} CLMS_339_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[14]/opit_0_inv_srl} CLMA_351_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[15]/opit_0_inv_srl} CLMA_351_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[16]/opit_0_inv_srl} CLMA_339_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[17]/opit_0_inv_srl} CLMA_339_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[18]/opit_0_inv_srl} CLMS_327_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[19]/opit_0_inv_srl} CLMS_345_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[1]/opit_0_inv_srl} CLMA_357_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[20]/opit_0_inv_srl} CLMA_315_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[21]/opit_0_inv_srl} CLMS_339_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[22]/opit_0_inv_srl} CLMS_351_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[23]/opit_0_inv_srl} CLMS_345_601
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[24]/opit_0_inv_srl} CLMA_339_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[25]/opit_0_inv_srl} CLMA_357_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[26]/opit_0_inv_srl} CLMS_327_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[27]/opit_0_inv_srl} CLMS_351_619
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[28]/opit_0_inv_srl} CLMS_327_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[29]/opit_0_inv_srl} CLMA_345_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[2]/opit_0_inv_srl} CLMA_345_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[30]/opit_0_inv_srl} CLMS_351_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[31]/opit_0_inv_srl} CLMS_345_601
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[32]/opit_0_inv_srl} CLMS_327_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[33]/opit_0_inv_srl} CLMA_339_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[34]/opit_0_inv_srl} CLMA_327_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[35]/opit_0_inv_srl} CLMA_339_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[36]/opit_0_inv_srl} CLMA_315_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[37]/opit_0_inv_srl} CLMS_339_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[38]/opit_0_inv_srl} CLMA_333_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[39]/opit_0_inv_srl} CLMS_339_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[3]/opit_0_inv_srl} CLMS_345_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[40]/opit_0_inv_srl} CLMA_333_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[41]/opit_0_inv_srl} CLMA_357_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[42]/opit_0_inv_srl} CLMA_327_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[43]/opit_0_inv_srl} CLMA_339_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[44]/opit_0_inv_srl} CLMA_315_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[45]/opit_0_inv_srl} CLMA_345_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[46]/opit_0_inv_srl} CLMA_333_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[47]/opit_0_inv_srl} CLMA_333_606
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[48]/opit_0_inv_srl} CLMS_327_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[49]/opit_0_inv_srl} CLMS_351_619
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[4]/opit_0_inv_srl} CLMA_315_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[50]/opit_0_inv_srl} CLMA_327_660
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[51]/opit_0_inv_srl} CLMA_351_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[52]/opit_0_inv_srl} CLMA_333_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[53]/opit_0_inv_srl} CLMA_351_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[54]/opit_0_inv_srl} CLMA_351_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[55]/opit_0_inv_srl} CLMA_351_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[56]/opit_0_inv_srl} CLMS_327_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[57]/opit_0_inv_srl} CLMA_357_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[58]/opit_0_inv_srl} CLMA_339_660
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[59]/opit_0_inv_srl} CLMS_351_619
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[5]/opit_0_inv_srl} CLMA_351_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[60]/opit_0_inv_srl} CLMA_333_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[61]/opit_0_inv_srl} CLMS_351_619
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[62]/opit_0_inv_srl} CLMA_339_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[63]/opit_0_inv_srl} CLMA_351_594
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[6]/opit_0_inv_srl} CLMA_351_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[7]/opit_0_inv_srl} CLMA_339_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[8]/opit_0_inv_srl} CLMA_345_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[9]/opit_0_inv_srl} CLMA_345_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_dqs_rddata_align/rdvalid_r1/opit_0_inv} CLMA_357_697
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N28[1]/LUT6_inst} CLMS_351_805
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N642_0/LUT6D_inst} CLMA_357_757
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[0]/LUT6_inst} CLMA_357_757
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[2]/LUT6_inst} CLMA_357_756
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[4]/LUT6_inst} CLMS_351_757
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[6]/LUT6_inst} CLMA_357_745
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_en_r[3]/opit_0_inv_L6QQ} CLMA_357_685
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_r[3]/opit_0_inv_L6QQ} CLMA_285_756
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_data_slice_wrlvl/wrlvl_dqs/opit_0_inv} CLMA_357_751
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/ck_dqs_diff[1]/opit_0_inv_L6QL5Q1} CLMA_309_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[0]/opit_0_inv_srl} CLMS_285_643
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[10]/opit_0_inv_srl} CLMS_291_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[11]/opit_0_inv_srl} CLMS_291_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[12]/opit_0_inv_srl} CLMS_291_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[13]/opit_0_inv_srl} CLMS_309_625
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[14]/opit_0_inv_srl} CLMA_291_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[15]/opit_0_inv_srl} CLMA_315_612
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[16]/opit_0_inv_srl} CLMA_309_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[17]/opit_0_inv_srl} CLMA_315_612
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[18]/opit_0_inv_srl} CLMA_291_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[19]/opit_0_inv_srl} CLMS_291_607
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[1]/opit_0_inv_srl} CLMS_309_625
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[20]/opit_0_inv_srl} CLMA_273_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[21]/opit_0_inv_srl} CLMA_309_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[22]/opit_0_inv_srl} CLMA_291_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[23]/opit_0_inv_srl} CLMA_333_606
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[24]/opit_0_inv_srl} CLMS_291_607
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[25]/opit_0_inv_srl} CLMA_315_612
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[26]/opit_0_inv_srl} CLMA_291_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[27]/opit_0_inv_srl} CLMS_291_607
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[28]/opit_0_inv_srl} CLMA_267_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[29]/opit_0_inv_srl} CLMA_303_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[2]/opit_0_inv_srl} CLMA_291_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[30]/opit_0_inv_srl} CLMA_285_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[31]/opit_0_inv_srl} CLMA_309_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[32]/opit_0_inv_srl} CLMA_309_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[33]/opit_0_inv_srl} CLMA_303_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[34]/opit_0_inv_srl} CLMA_291_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[35]/opit_0_inv_srl} CLMS_291_607
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[36]/opit_0_inv_srl} CLMA_303_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[37]/opit_0_inv_srl} CLMA_309_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[38]/opit_0_inv_srl} CLMA_303_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[39]/opit_0_inv_srl} CLMA_315_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[3]/opit_0_inv_srl} CLMA_291_624
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[40]/opit_0_inv_srl} CLMA_309_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[41]/opit_0_inv_srl} CLMA_309_630
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[42]/opit_0_inv_srl} CLMS_285_643
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[43]/opit_0_inv_srl} CLMS_309_601
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[44]/opit_0_inv_srl} CLMS_309_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[45]/opit_0_inv_srl} CLMS_309_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[46]/opit_0_inv_srl} CLMA_303_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[47]/opit_0_inv_srl} CLMS_309_595
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[48]/opit_0_inv_srl} CLMS_285_643
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[49]/opit_0_inv_srl} CLMA_315_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[4]/opit_0_inv_srl} CLMS_291_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[50]/opit_0_inv_srl} CLMA_291_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[51]/opit_0_inv_srl} CLMA_309_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[52]/opit_0_inv_srl} CLMA_291_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[53]/opit_0_inv_srl} CLMS_309_625
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[54]/opit_0_inv_srl} CLMA_291_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[55]/opit_0_inv_srl} CLMA_315_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[56]/opit_0_inv_srl} CLMA_303_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[57]/opit_0_inv_srl} CLMA_315_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[58]/opit_0_inv_srl} CLMS_291_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[59]/opit_0_inv_srl} CLMA_309_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[5]/opit_0_inv_srl} CLMS_309_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[60]/opit_0_inv_srl} CLMA_291_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[61]/opit_0_inv_srl} CLMS_309_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[62]/opit_0_inv_srl} CLMS_285_691
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[63]/opit_0_inv_srl} CLMA_315_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[6]/opit_0_inv_srl} CLMA_303_690
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[7]/opit_0_inv_srl} CLMA_315_612
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[8]/opit_0_inv_srl} CLMA_291_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[9]/opit_0_inv_srl} CLMA_303_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_dqs_rddata_align/rdvalid_r1/opit_0_inv} CLMA_315_649
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/N28[1]/LUT6_inst} CLMS_351_805
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[0]/LUT6_inst} CLMA_357_733
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[2]/LUT6_inst} CLMA_357_738
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[4]/LUT6_inst} CLMA_357_750
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[6]/LUT6_inst} CLMA_357_732
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_r[3]/opit_0_inv_L6QQ} CLMS_309_853
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_data_slice_wrlvl/wrlvl_dqs/opit_0_inv} CLMA_357_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/ck_dqs_diff[1]/opit_0_inv_L6Q} CLMA_327_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[0]/opit_0_inv_srl} CLMA_309_642
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[10]/opit_0_inv_srl} CLMS_291_667
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[11]/opit_0_inv_srl} CLMA_309_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[12]/opit_0_inv_srl} CLMA_315_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[13]/opit_0_inv_srl} CLMA_315_661
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[14]/opit_0_inv_srl} CLMA_315_661
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[15]/opit_0_inv_srl} CLMA_333_690
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[16]/opit_0_inv_srl} CLMS_309_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[17]/opit_0_inv_srl} CLMA_327_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[18]/opit_0_inv_srl} CLMA_309_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[19]/opit_0_inv_srl} CLMA_303_685
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[1]/opit_0_inv_srl} CLMA_315_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[20]/opit_0_inv_srl} CLMS_309_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[21]/opit_0_inv_srl} CLMA_327_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[22]/opit_0_inv_srl} CLMA_339_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[23]/opit_0_inv_srl} CLMA_339_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[24]/opit_0_inv_srl} CLMA_291_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[25]/opit_0_inv_srl} CLMA_315_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[26]/opit_0_inv_srl} CLMA_291_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[27]/opit_0_inv_srl} CLMA_303_673
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[28]/opit_0_inv_srl} CLMA_303_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[29]/opit_0_inv_srl} CLMA_327_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[2]/opit_0_inv_srl} CLMS_285_667
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[30]/opit_0_inv_srl} CLMA_327_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[31]/opit_0_inv_srl} CLMA_333_691
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[32]/opit_0_inv_srl} CLMA_315_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[33]/opit_0_inv_srl} CLMA_315_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[34]/opit_0_inv_srl} CLMS_291_667
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[35]/opit_0_inv_srl} CLMA_309_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[36]/opit_0_inv_srl} CLMS_309_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[37]/opit_0_inv_srl} CLMA_315_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[38]/opit_0_inv_srl} CLMA_309_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[39]/opit_0_inv_srl} CLMA_333_690
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[3]/opit_0_inv_srl} CLMA_309_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[40]/opit_0_inv_srl} CLMA_315_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[41]/opit_0_inv_srl} CLMA_315_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[42]/opit_0_inv_srl} CLMS_285_667
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[43]/opit_0_inv_srl} CLMA_309_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[44]/opit_0_inv_srl} CLMA_315_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[45]/opit_0_inv_srl} CLMA_315_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[46]/opit_0_inv_srl} CLMA_303_685
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[47]/opit_0_inv_srl} CLMS_327_697
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[48]/opit_0_inv_srl} CLMA_309_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[49]/opit_0_inv_srl} CLMA_315_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[4]/opit_0_inv_srl} CLMA_315_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[50]/opit_0_inv_srl} CLMS_285_667
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[51]/opit_0_inv_srl} CLMA_303_697
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[52]/opit_0_inv_srl} CLMA_303_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[53]/opit_0_inv_srl} CLMA_315_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[54]/opit_0_inv_srl} CLMA_303_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[55]/opit_0_inv_srl} CLMA_339_696
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[56]/opit_0_inv_srl} CLMS_309_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[57]/opit_0_inv_srl} CLMA_315_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[58]/opit_0_inv_srl} CLMA_291_648
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[59]/opit_0_inv_srl} CLMS_309_691
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[5]/opit_0_inv_srl} CLMA_315_661
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[60]/opit_0_inv_srl} CLMA_315_654
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[61]/opit_0_inv_srl} CLMS_327_685
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[62]/opit_0_inv_srl} CLMA_303_684
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[63]/opit_0_inv_srl} CLMS_345_691
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[6]/opit_0_inv_srl} CLMA_327_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[7]/opit_0_inv_srl} CLMA_339_696
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[8]/opit_0_inv_srl} CLMA_303_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[9]/opit_0_inv_srl} CLMA_309_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_dqs_rddata_align/rdvalid_r1/opit_0_inv} CLMA_315_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/N28[1]/LUT6_inst} CLMA_357_697
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[0]/LUT6_inst} CLMA_357_703
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[2]/LUT6_inst} CLMA_357_715
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[4]/LUT6_inst} CLMA_357_696
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[6]/LUT6_inst} CLMA_357_708
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_r[3]/opit_0_inv_L6QQ} CLMA_345_744
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_data_slice_wrlvl/wrlvl_dqs/opit_0_inv} CLMA_357_678
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/ck_dqs_diff[1]/opit_0_inv_L6QL5Q1} CLMA_315_655
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[0]/opit_0_inv_srl} CLMA_333_618
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[10]/opit_0_inv_srl} CLMA_339_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[11]/opit_0_inv_srl} CLMA_315_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[12]/opit_0_inv_srl} CLMA_333_606
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[13]/opit_0_inv_srl} CLMA_315_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[14]/opit_0_inv_srl} CLMS_339_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[15]/opit_0_inv_srl} CLMS_327_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[16]/opit_0_inv_srl} CLMA_333_541
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[17]/opit_0_inv_srl} CLMA_315_571
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[18]/opit_0_inv_srl} CLMA_339_582
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[19]/opit_0_inv_srl} CLMA_315_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[1]/opit_0_inv_srl} CLMS_327_565
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[20]/opit_0_inv_srl} CLMA_333_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[21]/opit_0_inv_srl} CLMA_315_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[22]/opit_0_inv_srl} CLMS_339_577
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[23]/opit_0_inv_srl} CLMS_339_631
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[24]/opit_0_inv_srl} CLMA_333_541
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[25]/opit_0_inv_srl} CLMA_315_571
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[26]/opit_0_inv_srl} CLMA_339_582
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[27]/opit_0_inv_srl} CLMA_315_571
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[28]/opit_0_inv_srl} CLMS_327_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[29]/opit_0_inv_srl} CLMA_315_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[2]/opit_0_inv_srl} CLMA_333_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[30]/opit_0_inv_srl} CLMS_351_565
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[31]/opit_0_inv_srl} CLMA_339_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[32]/opit_0_inv_srl} CLMA_333_559
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[33]/opit_0_inv_srl} CLMA_303_571
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[34]/opit_0_inv_srl} CLMS_339_577
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[35]/opit_0_inv_srl} CLMS_309_595
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[36]/opit_0_inv_srl} CLMA_339_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[37]/opit_0_inv_srl} CLMS_309_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[38]/opit_0_inv_srl} CLMA_339_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[39]/opit_0_inv_srl} CLMS_327_637
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[3]/opit_0_inv_srl} CLMA_315_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[40]/opit_0_inv_srl} CLMA_333_559
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[41]/opit_0_inv_srl} CLMS_327_565
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[42]/opit_0_inv_srl} CLMS_339_577
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[43]/opit_0_inv_srl} CLMS_309_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[44]/opit_0_inv_srl} CLMS_327_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[45]/opit_0_inv_srl} CLMS_309_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[46]/opit_0_inv_srl} CLMA_339_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[47]/opit_0_inv_srl} CLMA_327_660
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[48]/opit_0_inv_srl} CLMA_333_559
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[49]/opit_0_inv_srl} CLMA_303_570
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[4]/opit_0_inv_srl} CLMS_339_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[50]/opit_0_inv_srl} CLMS_345_577
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[51]/opit_0_inv_srl} CLMS_309_595
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[52]/opit_0_inv_srl} CLMS_327_595
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[53]/opit_0_inv_srl} CLMA_315_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[54]/opit_0_inv_srl} CLMA_351_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[55]/opit_0_inv_srl} CLMS_327_625
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[56]/opit_0_inv_srl} CLMA_351_558
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[57]/opit_0_inv_srl} CLMA_309_564
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[58]/opit_0_inv_srl} CLMS_339_577
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[59]/opit_0_inv_srl} CLMS_309_583
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[5]/opit_0_inv_srl} CLMA_309_600
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[60]/opit_0_inv_srl} CLMA_333_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[61]/opit_0_inv_srl} CLMA_315_588
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[62]/opit_0_inv_srl} CLMS_345_601
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[63]/opit_0_inv_srl} CLMA_315_672 FFAPP3
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[6]/opit_0_inv_srl} CLMS_339_613
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[7]/opit_0_inv_srl} CLMA_327_636
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[8]/opit_0_inv_srl} CLMA_333_559
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rddata_r1[9]/opit_0_inv_srl} CLMA_303_571
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_dqs_rddata_align/rdvalid_r1/opit_0_inv} CLMS_345_589
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/N28[1]/LUT6_inst} CLMA_357_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[0]/LUT6_inst} CLMS_351_697
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[2]/LUT6_inst} CLMA_351_690
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[4]/LUT6_inst} CLMA_357_691
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/N659[6]/LUT6_inst} CLMA_351_690
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/adj_wrdata_mask_3[0]/LUT6_inst} CLMS_327_673
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/adj_wrdata_mask_3[4]/LUT6_inst} CLMA_333_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/adj_wrdata_mask_3[6]/LUT6_inst} CLMA_333_679
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_mask_r[3]/opit_0_inv} CLMA_327_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_mask_r[6]/opit_0_inv} CLMA_327_666
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_mask_r[7]/opit_0_inv} CLMA_327_672
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/ddrphy_wdata_path_adj/phy_wrdata_r[3]/opit_0_inv_L6QQ} CLMS_285_703
+def_inst_site {I_ips_ddr_top/u_ddrphy_top/u_dll_update_n_sync/sig_async_r1[0]/opit_0_inv_srl} CLMA_351_564

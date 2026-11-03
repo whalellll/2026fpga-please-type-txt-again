@@ -1,0 +1,7 @@
+# Install into an isolated --target directory beside the training output.
+# NumPy/protobuf/packaging come from the pinned training environment.
+onnx==1.17.0
+onnxruntime==1.20.1
+coloredlogs==15.0.1
+humanfriendly==10.0
+flatbuffers==24.3.25

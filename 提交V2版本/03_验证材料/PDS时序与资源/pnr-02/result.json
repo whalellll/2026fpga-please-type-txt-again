@@ -1,0 +1,384 @@
+{
+  "status": "PDS25_CPU125_PLACE_ROUTE_AND_TIMING_REPORT_COMPLETED_REVIEW_ALL_CORNERS",
+  "created_utc": "2026-11-02T06:27:32.869755+00:00",
+  "parent_soc": "6a355cb344104b597e7cae0cab612412bccf04f1",
+  "parent_cpu": "b1164e42737a081cc640a2113c76a53d0c91a97a",
+  "cpu_hz": 125000000,
+  "sys_hz": 49500000,
+  "target_coremark_per_mhz_exclusive_minimum": 6.0,
+  "hardware_changes": false,
+  "formal_coremark_pass": false,
+  "board_tested": false,
+  "remote_pushed": true,
+  "main_merged": false,
+  "formal_delivery": false,
+  "selected_profile": "cm60-unroll2-lto-branch1",
+  "diagnostic100_performance": 6.031419124381113,
+  "diagnostic100_validation": 6.011920910447731,
+  "source_correctness_pass": true,
+  "full_five_firmware_pass": true,
+  "profile_fixture_checks": 10,
+  "capacity_fixture_checks": 11,
+  "added_instructions": [],
+  "new_bitstream_sta_pass": false,
+  "board_blocker": "No UART devices currently enumerated",
+  "source_commit": "aac96d8ccf77f84d69747e96b448bc34421eaaa4",
+  "cpu_source_commit": "b1164e42737a081cc640a2113c76a53d0c91a97a",
+  "sta_cpu_period_ns": 7.992,
+  "cdc_limit_ns": 7.192,
+  "parent_commit": "6a355cb344104b597e7cae0cab612412bccf04f1",
+  "parent_candidate": "G:\\fpga\\build\\pds25-cpu125-20261101-04",
+  "pds_version": "2025.2",
+  "pds_shell": "G:/fpga/PDS_2025.2-ads-win64/pango/PDS_2025.2-ads/bin/pds_shell.exe",
+  "pds_shell_sha256": "32983ea8e0cf0498481e5ae8ff75fcdd4ee329f2efb83dea9d8eee85583931cc",
+  "final_sta_pass": false,
+  "owner_pid": 130780,
+  "started_utc": "2026-11-02T06:54:06.515639+00:00",
+  "steps": [
+    {
+      "command": "add_design \"../ip/ddr3_test/ddr3_test.idf\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../ip/camera_line_buffer/camera_line_buffer.idf\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../ip/ref_clock/ref_clock.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/cpu/CoreTop.sv\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/clint.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/cpu_top.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/uart_tx_fifo.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/axi_1x2.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/axi_2x1_arbiter.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/axi_boot_periph.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/ch9350_hid_core.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/axi_ddr_cdc.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/axi_cpu_sys_cdc.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/ddr_native_read_arbiter.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/ddr_native_write_arbiter.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/spi_flash_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/sd_native_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/audio_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/i2s_audio_duplex.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/voice_feature_core.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/voice_classifier_core.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/voice_cnn_tile_core.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/audio/voice_accel_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/ov5640_power_on_delay.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/ov5640_sccb_write.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/ov5640_register_table.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/ov5640_register_init.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/dual_ov5640_sensor.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/ov5640_cmos2_capture.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/camera_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/camera_sd_hud.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/camera_buffer_control.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/camera/camera_frame_writer.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_accel_dma_kernel.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_accel_axi_master32.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/xiangqi_sparse_eval.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_accel_ddr_kernel_top.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/MacAccelCore.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/pff1_stagea_gather.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/nnue_stream_transform.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/nnue_mlp_chain.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/pikafish_mlp_dedicated.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/vision32_pe.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/vision32_layer.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/nnue_pipeline_frontend.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/pikafish_eval_batch.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_mmio_frontend.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_compute_core.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_input_dma.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_weight_dma.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_window.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_read_arbiter2.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_rw_arbiter2.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_compact_packer.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_compact_writer.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_conv_descriptor_guard.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/mac_accel/mac_weight_double_buffer.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/eth/eth_mac_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/eth/rgmii_interface.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/font_rom.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/header_bitmap_rom.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/header_logo_rom.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/uart_console_text.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/video_linux_console.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/hid_gui_overlay.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/video_fb_mmio.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/video_fb_dma.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/iic_dri.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/ms7200_ctl.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/ms7210_ctl.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/ms72xx_tx_only.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/pll_video.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/video/pll_cpu.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_design \"../rtl/soc/soc_top.v\"",
+      "ok": true
+    },
+    {
+      "command": "add_constraint \"soc.fdc\"",
+      "ok": true
+    },
+    {
+      "command": "add_constraint \"ddr3_test.rcf\"",
+      "ok": true
+    },
+    {
+      "command": "set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676",
+      "ok": true
+    },
+    {
+      "command": "compile -top_module soc_top -system_verilog",
+      "ok": true
+    },
+    {
+      "command": "synthesize -ads",
+      "ok": true
+    }
+  ],
+  "native_run": "42ad23ef557d4d13ba91500b8a680c59",
+  "snapshot_sha256": "e029712ce824cb941e85099e11f97e5a99fd6357de5ebb42f803ff42e385a8a2",
+  "current_command": "report_timing -report_max_skew",
+  "completed_utc": "2026-11-02T09:19:28.698133+00:00",
+  "map_adf_sha256": "8c3389c35620b8fa7b0feec012187027b5109aecaef9db7e90dbd285a5ad1d1d",
+  "map_report_sha256": "4ac05d7610919ce7a8caa0303a4ecd13b9af8d7ed20f2bcabdc4845b5a596bcc",
+  "inventory_sha256": "db149ce3a920449df70e4cd9f37a2e6108afed472191ff1c2c2b94bb79b24e49",
+  "native_identity": "native-identity-03/result.json",
+  "native_hardware_delta": {
+    "lut": 0,
+    "ff": 0,
+    "lutram": 0,
+    "drm": 0,
+    "apm": 0
+  },
+  "pnr_started": false,
+  "pnr_wait_stopped": true,
+  "board_deferred_by_user": true,
+  "active_owner_pid": null,
+  "latest_host_blocker": "Free commit below8GiB threshold",
+  "preserved_utc": "2026-11-02T07:22:35.927478+00:00",
+  "preservation_commit": "630c2e4c3a6258088c682dd8797b7039baa48ffc",
+  "previous_native_owner_pid": 125744,
+  "remote_branch": "candidate/cpu125-coremark60-20261102-01",
+  "remote_commit": "630c2e4c3a6258088c682dd8797b7039baa48ffc",
+  "remote_readback_receipt": "remote-publication.json",
+  "candidate_publication_authorized": true,
+  "pnr_started_utc": "2026-11-02T09:05:23.961897+00:00",
+  "pds_session_pid": 114012
+}

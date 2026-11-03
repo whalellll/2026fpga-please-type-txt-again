@@ -1,0 +1,34 @@
+^C
+
+/ #
+/ # echo MAC_CONV_SHELL_ALIVE_preflight; printf 'MAC_CONV_CMD_%s\n' 'c96f0980645
+
+e44aba68279c604fd7798'
+MAC_CONV_SHELL_ALIVE_preflight
+MAC_CONV_CMD_c96f0980645e44aba68279c604fd7798
+/ # ^C
+/ #
+/ # echo MAC_CONV_IDLE_ALIVE_20; printf 'MAC_CONV_CMD_%s\n' 'c37f54c5698a4623a2f
+
+0bbc34fe3c1db'
+MAC_CONV_IDLE_ALIVE_20
+MAC_CONV_CMD_c37f54c5698a4623a2f0bbc34fe3c1db
+/ # echo MAC_CONV_IDLE_ALIVE_40; printf 'MAC_CONV_CMD_%s\n' 'eb73ee8331634e229a2
+
+45e40f080e119'
+MAC_CONV_IDLE_ALIVE_40
+MAC_CONV_CMD_eb73ee8331634e229a245e40f080e119
+/ # echo MAC_CONV_IDLE_ALIVE_60; printf 'MAC_CONV_CMD_%s\n' 'd4fb5693fe2a43328df
+
+d06bc6cf0721e'
+MAC_CONV_IDLE_ALIVE_60
+MAC_CONV_CMD_d4fb5693fe2a43328dfd06bc6cf0721e
+/ # pango-mac-scheduler-test -1
+PANGO_MAC_SCHEDULER_TEST_PASS processes=3 threads_per_process=2 jobs=0
+/ # echo MAC_CONV_SHELL_ALIVE_scheduler_-1; printf 'MAC_CONV_CMD_%s\n' '9626367d
+
+0fe84c3da65eaba3cded01cb'
+MAC_CONV_SHELL_ALIVE_scheduler_-1
+MAC_CONV_CMD_9626367d0fe84c3da65eaba3cded01cb
+/ # ^C
+/ #

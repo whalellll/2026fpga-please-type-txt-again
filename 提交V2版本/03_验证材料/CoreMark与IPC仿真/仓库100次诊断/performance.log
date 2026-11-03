@@ -1,0 +1,37 @@
+SIM_CLOCK_QUANTIZATION cpu_half_fs=4000000 sys_half_fs=10101010
+Console ready. Type help.
+soc> info
+SYS_ID=0x53563300 DDR=ready SYS_HZ=49500000 CPU_HZ=125000000 TIMEBASE_HZ=49500000 CAPS=0x0000001f ETH_ID=0x00000000 SPI_ID=0x00000000 FLASH_JEDEC=0x0020ba18 SD_ID=0x00000000 SD=absent AUDIO_ID=0x00000000 MAC_ID=0x00000000 MAC_VER=0x00000000
+soc> coremark
+CoreMark v1.0: RV32IMA, boot BRAM, automatic >=10 s calibration
+CPU_HZ=125000000
+SYS_HZ=49500000
+TIMEBASE_HZ=49500000
+COREMARK_MODE=performance
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 6565619
+Total time (secs): 0.132639
+Iterations/Sec   : 753.927391
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 100
+Compiler version : riscv32-unknown-elf-gcc 16.2.0
+Compiler flags   : -O2 -fno-if-conversion -fno-if-conversion2 -funroll-loops --param=max-unroll-times=2 -flto -mbranch-cost=1 -march=rv32ima_zicsr_zifencei_zbc -mabi=ilp32
+Memory location  : boot BRAM (static)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x988c
+Errors detected
+PORT_TICKS64 : 6565619
+COREMARK_FAIL
+CoreMark/MHz: 6.031 (CPU_HZ=125000000)
+COREMARK_DONE
+CoreMark command failed validation.
+soc> 
+CPU_PRODUCTION_COREMARK_DONE mode=performance pilot=1 cycles=6748019 real_timer_cycles=6652733 cpu_hz=125000000 timer_stimulus_scale=1 observed_cpu_cycles_timer_release_to_prompt=16799831
+- sim\tb_cpu_integration.sv:684: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 136ms; walltime 94.773 s; speed 1.438 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB

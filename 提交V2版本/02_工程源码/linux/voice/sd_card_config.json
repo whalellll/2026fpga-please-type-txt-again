@@ -1,0 +1,48 @@
+{
+  "cid": "f40101c3803919885333324703534453",
+  "sectors": 62333952,
+  "partition_lba": 32,
+  "volume_serial": 909919679,
+  "fat_type": 32,
+  "boot_files": [
+    {
+      "name": "Image",
+      "present": true,
+      "bytes": 7480792
+    },
+    {
+      "name": "rootfs.cpio",
+      "present": true,
+      "bytes": 10152448
+    },
+    {
+      "name": "fw_jump.bin",
+      "present": true,
+      "bytes": 264680
+    },
+    {
+      "name": "soc.dtb",
+      "present": true,
+      "bytes": 2323
+    },
+    {
+      "name": "vaimage.bin",
+      "present": true,
+      "bytes": 7480856
+    },
+    {
+      "name": "vafs.bin",
+      "present": true,
+      "bytes": 8445952
+    },
+    {
+      "name": "va.dtb",
+      "present": true,
+      "bytes": 2443
+    }
+  ],
+  "binary_path": "/tmp/voice-sd/xqvoice-sd-f3bdb8d0",
+  "binary_sha256": "f3bdb8d03fdabf330bf626ebd26a91e69d0a59c0e9a697559f302123e22ab5c8",
+  "capture_binary_path": "/tmp/voice-sd/xqaudio-capture-3356cb60",
+  "capture_binary_sha256": "3356cb600ba05b5cb7416466eeb974935b56159ba62f7d921d92f37a2ad8e3f2"
+}

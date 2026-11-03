@@ -1,0 +1,66 @@
+^C
+/ #
+/ # echo MAC_CONV_SHELL_ALIVE_preflight; printf 'MAC_CONV_CMD_%s\n' '825976c60a8
+
+545268459e1b67b18fd22'
+MAC_CONV_SHELL_ALIVE_preflight
+MAC_CONV_CMD_825976c60a8545268459e1b67b18fd22
+/ # ^C
+/ #
+/ # echo MAC_CONV_IDLE_ALIVE_20; printf 'MAC_CONV_CMD_%s\n' 'b6e9a7c590744c09a86
+
+983dd0f88c71d'
+MAC_CONV_IDLE_ALIVE_20
+MAC_CONV_CMD_b6e9a7c590744c09a86983dd0f88c71d
+/ # echo MAC_CONV_IDLE_ALIVE_40; printf 'MAC_CONV_CMD_%s\n' '8ea45b8f24944a38ae2
+
+237262e8b9880'
+MAC_CONV_IDLE_ALIVE_40
+MAC_CONV_CMD_8ea45b8f24944a38ae2237262e8b9880
+/ # echo MAC_CONV_IDLE_ALIVE_60; printf 'MAC_CONV_CMD_%s\n' '523307364e554590a9d
+
+9f3ae5c9352f0'
+MAC_CONV_IDLE_ALIVE_60
+MAC_CONV_CMD_523307364e554590a9d9f3ae5c9352f0
+/ # pango-mac-conv-window-test
+pointwise taps=56 input=224 weight=128 output=0 reuse=56 cycles=269 stalls=0 tap_xor=00e0b070 weight_digest=74513326
+tail_tile taps=441 input=196 weight=1536 output=0 reuse=49 cycles=1650 stalls=0 tap_xor=000000fb weight_digest=5a672328
+six_by_six taps=1296 input=196 weight=3456 output=0 reuse=36 cycles=1547 stalls=0 tap_xor=0044f89c weight_digest=3e5a76c8
+first_layer taps=921600 input=409600 weight=3456 output=0 reuse=25600 cycles=1432157 stalls=0 tap_xor=0008c8c8 weight_digest=281f3d98
+PANGO_MAC_CONV_WINDOW_BOARD_PASS
+/ # echo MAC_CONV_SHELL_ALIVE_window; printf 'MAC_CONV_CMD_%s\n' '47ea628e43084e
+
+629c814c5d5b4db036'
+MAC_CONV_SHELL_ALIVE_window
+MAC_CONV_CMD_47ea628e43084e629c814c5d5b4db036
+/ # ^C
+/ #
+/ # pango-mac-conv-compute-test
+PANGO_MAC_CONV_COMPUTE_BOARD_PASS bytes=144 cycles=5582 windows=324
+PANGO_MAC_CONV_SHAPE_BOARD_PASS case=pointwise bytes=320 crc32=344efaaf input=80 weight=128 windows=20 cycles=1810
+PANGO_MAC_CONV_SHAPE_BOARD_PASS case=three_by_three bytes=144 crc32=c674620c input=100 weight=896 windows=81 cycles=1869
+/ # echo MAC_CONV_SHELL_ALIVE_compute; printf 'MAC_CONV_CMD_%s\n' 'ade2d54dc5044
+
+dcc9ce506e485e28196'
+MAC_CONV_SHELL_ALIVE_compute
+MAC_CONV_CMD_ade2d54dc5044dcc9ce506e485e28196
+/ # ^C
+/ #
+/ # pango-mac-pool-test
+PANGO_MAC_POOL_TEST_PASS contexts=8 bytes=1048576 opens=9 open_us=992000
+/ # echo MAC_CONV_SHELL_ALIVE_pool; printf 'MAC_CONV_CMD_%s\n' '380d19fb32b44a43
+
+b98ef7391ff61c5f'
+MAC_CONV_SHELL_ALIVE_pool
+MAC_CONV_CMD_380d19fb32b44a43b98ef7391ff61c5f
+/ # ^C
+/ #
+/ # pango-mac-scheduler-test 64
+PANGO_MAC_SCHEDULER_TEST_PASS processes=3 threads_per_process=2 jobs=384
+/ # echo MAC_CONV_SHELL_ALIVE_scheduler_64; printf 'MAC_CONV_CMD_%s\n' '9495cb24
+
+a44e495889eca74f8c2b2d8f'
+MAC_CONV_SHELL_ALIVE_scheduler_64
+MAC_CONV_CMD_9495cb24a44e495889eca74f8c2b2d8f
+/ # ^C
+/ #

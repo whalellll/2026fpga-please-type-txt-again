@@ -1,0 +1,29 @@
+{
+    "compiler":  "riscv32-unknown-elf-gcc",
+    "compiler_target":  "riscv32-unknown-elf",
+    "compiler_version":  "16.2.0",
+    "compiler_sha256":  "e1ca0bb0ca138a597885e61b174f40744b3e8e08b4317c6ecb5f708623a746a6",
+    "march":  "rv32ima_zicsr_zifencei_zbc",
+    "abi":  "ilp32",
+    "optimization":  "-O2; explicit general Zbc instruction vectors; RAM-only test",
+    "elf":  "selftest.elf",
+    "elf_sha256":  "656f82432df1ea4c7665081f438929219f932dcf04e688addb967f653760124f",
+    "elf_metadata":  {
+                         "ElfMembers":  1,
+                         "ElfClass":  "ELF32",
+                         "Flags":  "0x0 (soft-float ABI, no RVC)",
+                         "Architectures":  [
+                                               "rv32i2p1_m2p0_a2p1_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0_zbc1p0"
+                                           ]
+                     },
+    "code_validation":  {
+                            "CodeStart":  "0x01000000",
+                            "CodeEndExclusive":  "0x010003d8",
+                            "BytesChecked":  984,
+                            "Result":  "rv32ima_zicsr_zifencei_zbc mnemonic/width whitelist; no vlenb; rodata excluded by linker symbols",
+                            "ExplicitIllegalInstructionFixture":  false
+                        },
+    "binary":  "selftest.bin",
+    "binary_sha256":  "997f755eb18df676ad17cbb5b1bec5fd9f008d26c2aaad4ef9862c9fbc3e85fb",
+    "libgcc":  null
+}

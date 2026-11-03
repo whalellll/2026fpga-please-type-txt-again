@@ -1,0 +1,181 @@
+diff --git a/src/attacks.h b/src/attacks.h
+index 1b2e5b4..c8948f5 100644
+--- a/src/attacks.h
++++ b/src/attacks.h
+@@ -21,6 +21,7 @@
+ 
+ #include <array>
+ #include <cassert>
++#include <cstddef>
+ #include <initializer_list>
+ #include <utility>
+ 
+@@ -40,7 +41,7 @@ using MagicMask = Bitboard;
+ // Magic holds all magic bitboards relevant data for a single square
+ struct Magic {
+     Bitboard   mask;
+-    MagicMask* attacks;
++    const MagicMask* attacks;
+     unsigned   shift;
+ #ifdef USE_PEXT
+     Bitboard pseudoAttacks;
+@@ -68,6 +69,8 @@ struct Magic {
+ };
+ 
+ void         init();
++bool         init_precomputed(const MagicMask* rookTable, std::size_t rookCount,
++                              const MagicMask* cannonTable, std::size_t cannonCount);
+ const Magic& magic(Square s, PieceType pt);
+ 
+ extern Bitboard LineBB[SQUARE_NB][SQUARE_NB];
+diff --git a/src/attacks.cpp b/src/attacks.cpp
+index bd3da2c..45128ca 100644
+--- a/src/attacks.cpp
++++ b/src/attacks.cpp
+@@ -19,6 +19,7 @@
+ #include "attacks.h"
+ 
+ #include <array>
++#include <memory>
+ 
+ #ifndef USE_PEXT
+     #include "magics.h"
+@@ -41,24 +42,60 @@ Magic BishopMagics[SQUARE_NB];
+ Magic KnightMagics[SQUARE_NB];
+ Magic KnightToMagics[SQUARE_NB];
+ 
+-std::array<MagicMask, 0x108000> RookTable;      // To store rook attacks
+-std::array<MagicMask, 0x108000> CannonTable;    // To store cannon attacks
++constexpr std::size_t RookTableSize   = 0x108000;
++constexpr std::size_t CannonTableSize = 0x108000;
++
++std::unique_ptr<MagicMask[]> RookTableStorage;
++std::unique_ptr<MagicMask[]> CannonTableStorage;
+ std::array<MagicMask, 0x228>    BishopTable;    // To store bishop attacks
+ std::array<MagicMask, 0x380>    KnightTable;    // To store knight attacks
+ std::array<MagicMask, 0x3E0>    KnightToTable;  // To store by knight attacks
+ 
+ template<PieceType pt>
+-void init_magics(MagicMask table[], Magic magics[] IF_NOT_PEXT(, const Bitboard magicsInit[]));
++void init_magics(const MagicMask table[], MagicMask writableTable[], Magic magics[]
++                 IF_NOT_PEXT(, const Bitboard magicsInit[]));
++
++void init_tables(const MagicMask rookTable[], MagicMask writableRookTable[],
++                 const MagicMask cannonTable[], MagicMask writableCannonTable[]);
+ 
+ }
+ 
+ void init() {
+ 
+-    init_magics<ROOK>(RookTable.data(), RookMagics IF_NOT_PEXT(, RookMagicsInit));
+-    init_magics<CANNON>(CannonTable.data(), CannonMagics IF_NOT_PEXT(, RookMagicsInit));
+-    init_magics<BISHOP>(BishopTable.data(), BishopMagics IF_NOT_PEXT(, BishopMagicsInit));
+-    init_magics<KNIGHT>(KnightTable.data(), KnightMagics IF_NOT_PEXT(, KnightMagicsInit));
+-    init_magics<KNIGHT_TO>(KnightToTable.data(), KnightToMagics IF_NOT_PEXT(, KnightToMagicsInit));
++    RookTableStorage   = std::make_unique<MagicMask[]>(RookTableSize);
++    CannonTableStorage = std::make_unique<MagicMask[]>(CannonTableSize);
++    init_tables(RookTableStorage.get(), RookTableStorage.get(), CannonTableStorage.get(),
++                CannonTableStorage.get());
++}
++
++bool init_precomputed(const MagicMask* rookTable, std::size_t rookCount,
++                      const MagicMask* cannonTable, std::size_t cannonCount) {
++
++    if (!rookTable || !cannonTable || rookCount != RookTableSize
++        || cannonCount != CannonTableSize)
++        return false;
++
++    RookTableStorage.reset();
++    CannonTableStorage.reset();
++    init_tables(rookTable, nullptr, cannonTable, nullptr);
++    return true;
++}
++
++namespace {
++
++void init_tables(const MagicMask rookTable[], MagicMask writableRookTable[],
++                 const MagicMask cannonTable[], MagicMask writableCannonTable[]) {
++
++    init_magics<ROOK>(rookTable, writableRookTable, RookMagics
++                     IF_NOT_PEXT(, RookMagicsInit));
++    init_magics<CANNON>(cannonTable, writableCannonTable, CannonMagics
++                       IF_NOT_PEXT(, RookMagicsInit));
++    init_magics<BISHOP>(BishopTable.data(), BishopTable.data(), BishopMagics
++                       IF_NOT_PEXT(, BishopMagicsInit));
++    init_magics<KNIGHT>(KnightTable.data(), KnightTable.data(), KnightMagics
++                       IF_NOT_PEXT(, KnightMagicsInit));
++    init_magics<KNIGHT_TO>(KnightToTable.data(), KnightToTable.data(), KnightToMagics
++                          IF_NOT_PEXT(, KnightToMagicsInit));
+ 
+     for (Square s1 = SQ_A0; s1 <= SQ_I9; ++s1)
+     {
+@@ -93,6 +130,8 @@ void init() {
+     }
+ }
+ 
++}
++
+ const Magic& magic(Square s, PieceType pt) {
+ 
+     assert(is_ok(s));
+@@ -118,10 +157,11 @@ namespace {
+ 
+ // Computes all rook, cannon, bishop and knight attacks at startup.
+ template<PieceType pt>
+-void init_magics(MagicMask table[], Magic magics[] IF_NOT_PEXT(, const Bitboard magicsInit[])) {
++void init_magics(const MagicMask table[], MagicMask writableTable[], Magic magics[]
++                 IF_NOT_PEXT(, const Bitboard magicsInit[])) {
+ 
+     Bitboard edges, b;
+-    u64      size = 0;
++    u64      offset = 0;
+ 
+     for (Square s = SQ_A0; s <= SQ_I9; ++s)
+     {
+@@ -151,27 +191,32 @@ void init_magics(MagicMask table[], Magic magics[] IF_NOT_PEXT(, const Bitboard
+         m.shift = 128 - popcount(m.mask);
+ #endif
+ 
+-        // Set the offset for the attacks table of the square. We have individual
+-        // table sizes for each square with "Fancy Magic Bitboards".
+-        m.attacks = s == SQ_A0 ? table : magics[s - 1].attacks + size;
++        // Set the offset for the attacks table of the square.  With a
++        // precomputed image, calculating the segment size replaces the costly
++        // occupancy enumeration while preserving the exact Fancy Magic layout.
++        m.attacks = table + offset;
++        const u64 size = u64(1) << popcount(m.mask);
+ 
+-        // Use Carry-Rippler trick to enumerate all subsets of masks[s] and
+-        // store the corresponding attack bitboard in m.attacks.
+-        b = size = 0;
+-        do
++        if (writableTable)
+         {
+-            Bitboard attacks =
+-              pt == ROOK || pt == CANNON ? sliding_attack<pt>(s, b) : lame_leaper_attack<pt>(s, b);
++            // Use Carry-Rippler trick to enumerate all subsets of masks[s] and
++            // store the corresponding attack bitboard in the writable table.
++            b = 0;
++            do
++            {
++                Bitboard attacks = pt == ROOK || pt == CANNON ? sliding_attack<pt>(s, b)
++                                                              : lame_leaper_attack<pt>(s, b);
+ 
+ #ifdef USE_PEXT
+-            m.attacks[m.index(b)] = u32(pext(attacks, m.pseudoAttacks, 16));
++                writableTable[offset + m.index(b)] = u32(pext(attacks, m.pseudoAttacks, 16));
+ #else
+-            m.attacks[m.index(b)] = attacks;
++                writableTable[offset + m.index(b)] = attacks;
+ #endif
+ 
+-            size++;
+-            b = (b - m.mask) & m.mask;
+-        } while (b);
++                b = (b - m.mask) & m.mask;
++            } while (b);
++        }
++        offset += size;
+     }
+ }
+ 

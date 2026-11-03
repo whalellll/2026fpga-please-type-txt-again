@@ -1,0 +1,78 @@
+{
+  "status": "READONLY_SD8_SHA256_VOLATILE_PAYLOAD_BUILT_HOST_ORACLE_PASS_NOT_EXECUTED",
+  "entry": "0x01000000",
+  "buffer": "0x03000000",
+  "buffer_capacity": 134217728,
+  "expected_sd_files": {
+    "Image.mmode": {
+      "bytes": 14052,
+      "sha256": "780b52ff54002974510eb6618566d9801d5500a11122fc053e6f29ef115a9347"
+    },
+    "mmode.dtb": {
+      "bytes": 2747,
+      "sha256": "c0839cb76491d53a4985e793dc512f4d134910e160629b138fded7758b974d65"
+    },
+    "fw_jump.bin": {
+      "bytes": 266448,
+      "sha256": "0ab480bcc4782cb60a150e59c0b9963ea80538a4498c4a82e7b420a7035e5daf"
+    },
+    "Image": {
+      "bytes": 7505584,
+      "sha256": "1c86665512c8bfde803e55e20a4425823898d0035bf46470f36372f8fc4c0963"
+    },
+    "rootfs.cpio": {
+      "bytes": 36487680,
+      "sha256": "43343b721e31d9f9d510e702a6a5dd90ab73cc5766a9073e42f82f719f141912"
+    },
+    "soc.dtb": {
+      "bytes": 2747,
+      "sha256": "c0839cb76491d53a4985e793dc512f4d134910e160629b138fded7758b974d65"
+    },
+    "pikafish.pff": {
+      "bytes": 68122688,
+      "sha256": "de0906fa1bea82248523eb39fc6b2956613b02ae675ccf67eef3f392de939260"
+    },
+    "pikafish.atk": {
+      "bytes": 34603072,
+      "sha256": "2235f0b1cca2e447a828bf1c7c7247237580603026d6152954da07efca2d474c"
+    }
+  },
+  "sha256_host_oracle_lengths": [
+    0,
+    1,
+    7,
+    55,
+    56,
+    63,
+    64,
+    65,
+    119,
+    120,
+    127,
+    128,
+    129,
+    1024,
+    1000000
+  ],
+  "read_functions_retained": true,
+  "sd_flash_write_symbols_absent": true,
+  "source_files_sha256": {
+    "expected.h": "e3cf39b03b0664396a5934861a4a095cc3ab3385ef2fa4d6b86e80794f2108aa",
+    "fat_ro.c": "f618b9d57e872b2dfca25a9a9d78260c475cc722a7fbda78281ed17049b3bae6",
+    "fat_ro.h": "eb1f5bc25ffc894285a2843123ef45e8470c8ee1a3285ffa0b0ae9b8d0f1be5c",
+    "host.c": "60994b540b8aba2d8e45a6fe352f6351e3a2a23f6e37717a6637b5153986a4bd",
+    "link.ld": "f3b7e068b53e56688503e887c6844b802fc964c9e69dcae3698ad48ae8dd9db9",
+    "main.c": "37cc9b837dee6f5f157506cb5a8d2972536d9d372c42c3dd934c1fdf7f482d47",
+    "runtime.c": "2e12bcf521c435b4eb9758e4c8550727bbd84f021b33d8205538949339640a1d",
+    "sd.h": "739bd07731b8e1d40b7e5b4c4603b75232696398b6a5f6b0a7b9ddbb16b82586",
+    "sd_native.c": "60173da5ae55399afa3ddd8f3cde99ef6a26f703d13bd08b71a81e45650f7746",
+    "soc.h": "b152b7fdad7ed9d62354a0019912a0e000465e31da915440f1bf8d50700d3ded",
+    "start.S": "efe4f45c9aa169fa1c198b65412df77f13b9ef0fcb7d155b2add8a2fdaf65e82",
+    "xq_sha256.c": "38dd9d0d0e2dfd29c81a023a5d1afa148132a43a5316636cc1f5034fd7ecd014",
+    "xq_sha256.h": "cda5de1816751b69938263cddb502e006140527431516d1504f75de0ab2efcf5"
+  },
+  "payload_sha256": "c20bf63b01ebc745cd8fccc87a4c01a5e0f9028e4b880e91c65066a8c86d26f5",
+  "payload_bytes": 16012,
+  "board_accessed": false,
+  "scope": "Unchanged native read-only FAT and SD read API plus unchanged accepted SHA256 implementation. Linked write/Flash functions removed by gc-sections. Compare complete actual eight files to final package bytes and bind a later actual readback receipt to the ZIP hash; build/host checks do not claim media acceptance."
+}

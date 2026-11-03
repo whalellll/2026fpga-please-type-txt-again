@@ -1,0 +1,3 @@
+call,iterations,list_calls,cycles,retired,zero,single,dual,flush,exception,zero_ib_empty,zero_ic_wait,zero_head_wait,zero_rob_empty
+1,10,20,1679730,2473417,229964,426115,1023651,4521,0,22757,13064,114776,20741
+2,100,200,16524628,24735238,2049542,4214934,10260152,28533,0,71550,10243,1068487,59584

@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# Matched CUDA wheel pair; see the official PyTorch previous-version matrix.
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+
+# YOLOv5 7.0.14 bundles upstream YOLOv5 source commit 5deff1471dede726f6399be43e7073ee7ed3a7d4.
+yolov5==7.0.14
+setuptools==80.9.0
+
+# Keep NumPy/OpenCV on a well-tested YOLOv5 v7 combination.
+numpy==1.26.4
+opencv-python==4.10.0.84
